@@ -1,0 +1,21 @@
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE / éditeurs
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Build / packaging
+dist/
+*.zip
+node_modules/
+
+# Logs et temporaires
+*.log
+.cache/
+tmp/
+temp/

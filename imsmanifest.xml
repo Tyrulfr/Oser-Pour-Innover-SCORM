@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest identifier="OSER-POUR-INNOVER-MODULE1" version="1.1"
+  xmlns="http://www.imsproject.org/xsd/imscp_rootv1p1p2"
+  xmlns:adlcp="http://www.adlnet.org/xsd/adlcp_rootv1p2"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.imsproject.org/xsd/imscp_rootv1p1p2 imscp_rootv1p1p2.xsd http://www.imsglobal.org/xsd/imsmd_rootv1p2p1 imsmd_rootv1p2p1.xsd http://www.adlnet.org/xsd/adlcp_rootv1p2 adlcp_rootv1p2.xsd">
+
+  <metadata>
+    <schema>ADL SCORM</schema>
+    <schemaversion>1.2</schemaversion>
+  </metadata>
+
+  <organizations default="OSER-M1-ORG">
+    <organization identifier="OSER-M1-ORG">
+      <metadata>
+        <title>Module 1 : Sensibilisation — OSER POUR INNOVER</title>
+      </metadata>
+      <title>Module 1 : Sensibilisation</title>
+      <item identifier="ITEM-M1" identifierref="RES-M1">
+        <title>Sommaire Module 1</title>
+      </item>
+    </organization>
+  </organizations>
+
+  <resources>
+    <resource identifier="RES-M1" type="webcontent" adlcp:scormtype="sco" href="modules/module1/index.html">
+      <file href="modules/module1/index.html"/>
+      <file href="modules/module1/sommaire_sequence1.html"/>
+      <file href="modules/module1/sommaire_sequence2.html"/>
+      <file href="modules/module1/sommaire_sequence3.html"/>
+      <file href="modules/module1/grain1.html"/>
+      <file href="modules/module1/grain2.html"/>
+      <file href="modules/module1/grain3.html"/>
+      <file href="modules/module1/grain4.html"/>
+      <file href="modules/module1/grain5.html"/>
+      <file href="modules/module1/grain6.html"/>
+      <file href="modules/module1/grain7.html"/>
+      <file href="modules/module1/grain8.html"/>
+      <file href="modules/module1/grain9.html"/>
+      <file href="modules/module1/grain10.html"/>
+      <file href="modules/module1/grain11.html"/>
+      <file href="modules/module1/grain12.html"/>
+      <file href="modules/module1/grain13.html"/>
+      <file href="modules/module1/grain14.html"/>
+      <file href="modules/module1/grain15.html"/>
+      <file href="modules/module1/grain16.html"/>
+      <file href="modules/module1/grain17.html"/>
+      <file href="modules/module1/grain18.html"/>
+      <file href="modules/module1/grain_exp21.html"/>
+      <file href="scorm-runtime/scorm-api.js"/>
+    </resource>
+  </resources>
+</manifest>
