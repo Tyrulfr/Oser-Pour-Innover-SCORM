@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Capsule - Manuel d'Oslo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    :root{--bordeaux:#580F45;--orange:#F48C2E;--teal:#2EAF7D;--blue:#2A325E;--bg-page:#F0F2F5;--bg-card:#FFFFFF;--text-main:#2A325E;--text-light:#555;--shadow:0 10px 30px rgba(0,0,0,.08)}
+    body.dark-mode{--bg-page:#1A1D2E;--bg-card:#232742;--text-main:#EAEAEA;--text-light:#BBB;--shadow:0 10px 30px rgba(0,0,0,.35)}
+    *{box-sizing:border-box;transition:all .25s ease}
+    body{margin:0;padding-bottom:100px;font-family:'Open Sans',sans-serif;background:var(--bg-page);color:var(--text-main);line-height:1.6}
+    h1,h2,h3,h4{font-family:'Montserrat',sans-serif;color:var(--bordeaux)}
+    body.dark-mode h1,body.dark-mode h2,body.dark-mode h3{color:var(--orange)}
+    .top-bar{background:var(--bg-card);padding:1rem 5%;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;z-index:1000;box-shadow:0 2px 10px rgba(0,0,0,.1);border-bottom:3px solid var(--bordeaux)}
+    .btn-back{text-decoration:none;color:var(--text-main);font-weight:700;display:flex;align-items:center;gap:10px}
+    .btn-back:hover{color:var(--orange)}
+    .theme-btn{background:none;border:none;cursor:pointer;font-size:1.2rem;color:var(--text-main)}
+    .content-container{max-width:1200px;margin:2rem auto;padding:0 1.5rem}
+    .hero-title{font-size:clamp(2rem,4vw,3rem);font-weight:900;margin-bottom:.5rem;line-height:1.15}
+    .hero-subtitle{font-size:1.1rem;color:var(--text-light);margin-bottom:2rem;border-left:4px solid var(--orange);padding-left:15px;max-width:900px}
+    .def-box{background:linear-gradient(135deg,var(--blue),var(--bordeaux));color:#fff;padding:2rem;border-radius:18px;margin:2rem 0;box-shadow:0 10px 20px rgba(42,50,94,.2)}
+    .def-quote{font-size:1.15rem;font-weight:500;text-align:center;display:block;font-style:italic;line-height:1.7}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1.5rem;margin:2rem 0}
+    .card{background:var(--bg-card);border-radius:18px;padding:1.5rem;box-shadow:var(--shadow)}
+    .card h3{margin-top:0}
+    .pill-row{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:1rem}.pill{padding:.35rem .7rem;border-radius:999px;font-size:.8rem;font-weight:700;background:rgba(0,0,0,.05)}
+    body.dark-mode .pill{background:rgba(255,255,255,.08)}
+    .big-list{list-style:none;padding:0;margin:0;display:grid;gap:.8rem}
+    .big-list li{display:flex;gap:.8rem;align-items:flex-start;background:rgba(0,0,0,.04);padding:.8rem;border-radius:12px}
+    body.dark-mode .big-list li{background:rgba(255,255,255,.05)}
+    .chip{width:14px;height:14px;border-radius:50%;flex:0 0 14px;margin-top:.35rem;background:var(--teal)}
+    .quiz-box{margin-top:3rem;padding:2rem;background:var(--bg-card);border-radius:15px;border-left:5px solid var(--bordeaux);box-shadow:var(--shadow)}
+    .quiz-option{margin-bottom:12px;padding:.8rem 1rem;border-radius:10px;background:rgba(0,0,0,.03)}
+    body.dark-mode .quiz-option{background:rgba(255,255,255,.05)}
+    .action-footer{position:fixed;bottom:0;left:0;right:0;background:var(--bg-card);padding:1rem 5%;border-top:1px solid #ddd;display:flex;justify-content:flex-end;align-items:center;z-index:1000;box-shadow:0 -5px 20px rgba(0,0,0,.1)}
+    .btn-validate{background:var(--teal);color:white;border:none;padding:12px 30px;border-radius:50px;font-weight:800;font-size:1rem;cursor:pointer;display:flex;align-items:center;gap:10px;box-shadow:0 5px 15px rgba(46,175,125,.3)}
+    .modal-overlay{position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,.7);display:none;justify-content:center;align-items:center;z-index:2000;opacity:0}
+    .modal-overlay.active{display:flex;opacity:1}
+    .modal-box{background:var(--bg-card);padding:2rem;border-radius:15px;max-width:760px;width:min(92vw,760px);text-align:left;border-top:5px solid var(--orange);position:relative;max-height:90vh;overflow-y:auto;transform:translateY(20px)}
+    .modal-overlay.active .modal-box{transform:translateY(0)}
+    .modal-title{font-family:'Montserrat',sans-serif;font-size:1.5rem;color:var(--bordeaux);margin-bottom:.5rem;font-weight:900;display:flex;align-items:center;gap:10px}
+    .modal-highlight{background:rgba(0,0,0,.05);padding:1rem;border-radius:8px;margin-bottom:1rem;font-style:italic;border-left:3px solid #ccc;font-weight:600}
+    body.dark-mode .modal-highlight{background:rgba(255,255,255,.06)}
+    .modal-text{font-size:1rem;line-height:1.7;color:var(--text-main);margin-bottom:1rem;white-space:pre-line}
+    .modal-btn{background:var(--orange);color:#fff;border:none;padding:10px 25px;border-radius:5px;cursor:pointer;font-weight:bold;float:right}
+    .close-icon{position:absolute;top:12px;right:18px;font-size:1.5rem;cursor:pointer;color:#aaa}
+    .close-icon:hover{color:var(--bordeaux)}
+    @media (max-width: 768px){.grid{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <nav class="top-bar">
+    <a href="sommaire_sequence1.html#grain20" class="btn-back"><i class="fa-solid fa-list"></i> Sommaire</a>
+    <div style="font-weight:800;color:var(--bordeaux)">Capsule - Manuel d'Oslo</div>
+    <button class="theme-btn" onclick="toggleTheme()"><i class="fa-solid fa-moon"></i></button>
+  </nav>
+  <div class="content-container">
+    <h1 class="hero-title">Le Manuel d'Oslo : définir et mesurer l'innovation</h1>
+    <div class="hero-subtitle">Référence internationale OCDE-Eurostat pour collecter, interpréter et comparer les données sur l'innovation dans les organisations et les entreprises .</div>
+    <div class="def-box">
+      <span class="def-quote"><i class="fa-solid fa-book-open" style="opacity:.8;margin-right:10px"></i>
+      Le Manuel d'Oslo définit l'innovation comme un produit, un procédé, une méthode de commercialisation ou une méthode organisationnelle nouveau ou sensiblement amélioré, mis en œuvre ou mis à disposition .
+      </span>
+    </div>
+    <div class="grid">
+      <div class="card">
+        <h3><i class="fa-solid fa-bullseye"></i> À quoi sert-il ?</h3>
+        <ul class="big-list">
+          <li><span class="chip"></span><div>Harmoniser la mesure de l'innovation entre pays et secteurs .</div></li>
+          <li><span class="chip"></span><div>Définir un langage commun pour les enquêtes, les politiques et les indicateurs .</div></li>
+          <li><span class="chip"></span><div>Élargir la notion d'innovation au-delà de la seule technologie, en incluant l'organisation, le marketing et les services .</div></li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3><i class="fa-solid fa-layer-group"></i> Les 4 domaines</h3>
+        <ul class="big-list">
+          <li><span class="chip"></span><div><strong>Produit</strong> : bien ou service nouveau/amélioré .</div></li>
+          <li><span class="chip"></span><div><strong>Procédé</strong> : méthode de production ou de distribution .</div></li>
+          <li><span class="chip"></span><div><strong>Organisation</strong> : pratiques, lieux de travail, relations externes .</div></li>
+          <li><span class="chip"></span><div><strong>Commercialisation</strong> : méthode de marketing ou de mise en marché .</div></li>
+        </ul>
+      </div>
+    </div>
+    <div class="grid">
+      <div class="card">
+        <h3><i class="fa-solid fa-clipboard-list"></i> Ce que mesure le manuel</h3>
+        <p>Il ne mesure pas seulement la R&D, mais aussi les activités d'innovation : conception, organisation, finance, commercialisation, expérimentation et mise en œuvre .</p>
+        <div class="pill-row"><span class="pill">Innovation de produit</span><span class="pill">Innovation de procédé</span><span class="pill">Innovation organisationnelle</span><span class="pill">Innovation de commercialisation</span></div>
+      </div>
+      <div class="card">
+        <h3><i class="fa-solid fa-school"></i> Exemple pour l'éducation numérique</h3>
+        <p>Un nouveau module interactif, une scénarisation pédagogique révisée, un changement d'organisation du tutorat ou une nouvelle stratégie de diffusion peuvent tous relever de l'innovation au sens du Manuel d'Oslo s'ils sont mis en œuvre et améliorent l'activité .</p>
+      </div>
+    </div>
+    <div class="quiz-box">
+      <h3><i class="fa-solid fa-clipboard-question"></i> Quiz de validation</h3>
+      <p>Quelle affirmation correspond le mieux au Manuel d'Oslo ?</p>
+      <div class="quiz-option"><input type="radio" name="q" value="wrong"> Il ne concerne que la recherche fondamentale.</div>
+      <div class="quiz-option"><input type="radio" name="q" value="correct"> Il donne un cadre pour mesurer plusieurs formes d'innovation, pas seulement technologique.</div>
+      <div class="quiz-option"><input type="radio" name="q" value="wrong"> Il remplace les indicateurs financiers des entreprises.</div>
+    </div>
+  </div>
+  <div class="action-footer"><button class="btn-validate" onclick="finishGrain()">Terminer ce Grain <i class="fa-solid fa-check"></i></button></div>
+  <div class="modal-overlay" id="modal"><div class="modal-box"><span class="close-icon" onclick="closeModal()">&times;</span><div class="modal-title" id="modalTitle"></div><div class="modal-highlight" id="modalHighlight"></div><div class="modal-text" id="modalText"></div><button class="modal-btn" onclick="closeModal()">Continuer</button></div></div>
+  <script>
+    const details = {
+      title: "Manuel d'Oslo",
+      highlight: "Référence OCDE-Eurostat pour mesurer l'innovation.",
+      text: "Le Manuel d'Oslo fournit un cadre international de concepts, définitions et méthodes pour recueillir et interpréter les données sur l'innovation. Il a progressivement élargi la notion d'innovation au-delà du seul technologique pour inclure produit, procédé, organisation et commercialisation."
+    };
+    function openModal(){document.getElementById('modalTitle').innerText = details.title;document.getElementById('modalHighlight').innerText = details.highlight;document.getElementById('modalText').innerText = details.text;document.getElementById('modal').classList.add('active')}
+    function closeModal(){document.getElementById('modal').classList.remove('active')}
+    function toggleTheme(){document.body.classList.toggle('dark-mode')}
+    function finishGrain(){const a=document.querySelector('input[name="q"]:checked');if(!a)return alert('Veuillez répondre au quiz.');alert(a.value==='correct'?'Bravo ! Le Manuel d'Oslo couvre plusieurs formes d'innovation.':'Pas tout à fait. Le Manuel d'Oslo va bien au-delà de la seule technologie.');}
+    document.body.addEventListener('dblclick',openModal)
+  </script>
+</body>
+</html>
+

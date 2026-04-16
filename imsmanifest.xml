@@ -13,11 +13,11 @@
   <organizations default="OSER-M1-ORG">
     <organization identifier="OSER-M1-ORG">
       <metadata>
-        <title>Module 1 : Sensibilisation — OSER POUR INNOVER</title>
+        <title>Module 0 : Sensibilisation — L'esprit d'innover</title>
       </metadata>
-      <title>Module 1 : Sensibilisation</title>
+      <title>Module 0 : Sensibilisation</title>
       <item identifier="ITEM-M1" identifierref="RES-M1">
-        <title>Sommaire Module 1</title>
+        <title>Sommaire Module 0</title>
       </item>
     </organization>
   </organizations>
@@ -46,8 +46,10 @@
       <file href="modules/module1/grain16.html"/>
       <file href="modules/module1/grain17.html"/>
       <file href="modules/module1/grain18.html"/>
+      <file href="modules/module1/grain20.html"/>
       <file href="modules/module1/grain_exp21.html"/>
       <file href="scorm-runtime/scorm-api.js"/>
     </resource>
   </resources>
 </manifest>
+

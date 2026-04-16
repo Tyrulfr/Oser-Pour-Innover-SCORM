@@ -1,30 +1,54 @@
-# Oser Pour Innover — SCORM
+# L'esprit d'innover — SCORM (projet modulaire)
 
-Formation e-learning SCORM « Oser Pour Innover » (Module 1 : Sensibilisation).
+Formation e-learning SCORM « L'esprit d'innover ». Chaque module est un **paquet SCORM 2004 (4th Edition)** indépendant, prêt à être zippé et déployé sur un LMS (Moodle, etc.).
 
 ## Structure du projet
 
-- **imsmanifest.xml** — Manifeste SCORM 1.2 (point d’entrée : `modules/module1/index.html`)
-- **scorm-runtime/** — API JS pour communiquer avec le LMS
-- **modules/module1/** — Sommaire, 3 séquences, grains (quiz, progression, scores)
-- **docs/** — Documentation (suspend_data, Moodle)
+```
+projet-scorm-pedagogique/
+├── README.md
+├── build.sh / build.ps1   # Génèrent les ZIP SCORM (lecture partagée sous Windows)
+├── scorm-api/
+│   └── SCORM_API.js
+├── modules/
+│   ├── module0-avancement/   # Module 0 : Sensibilisation (imsmanifest + pages + grains)
+│   └── module1-retours/      # Module 1 : Retours d'expérience (témoignages)
+├── tests/
+└── docs/
+```
 
-## Package SCORM pour Moodle (module 1)
+- **Module 0** (`module0-avancement/`) : sensibilisation, 3 séquences, grains.
+- **Module 1** (`module1-retours/`) : témoignages (ex. Sylvia Cohen-Kaminsky).
 
-Un manifeste **SCORM 1.2** est fourni à la racine. Pour obtenir un package prêt à déposer dans Moodle :
+## Build (créer les ZIP SCORM)
 
-1. **Fermer** les fichiers du projet dans l’éditeur (éviter les fichiers verrouillés).
-2. **Créer un ZIP** à la racine du projet contenant **uniquement** :
-   - `imsmanifest.xml`
-   - le dossier `scorm-runtime/`
-   - le dossier `modules/`
-3. **Sous Windows (PowerShell)** :
-   ```powershell
-   cd "chemin\vers\Oser-Pour-Innover-SCORM"
-   Compress-Archive -Path imsmanifest.xml, scorm-runtime, modules -DestinationPath Oser-Pour-Innover-Module1-SCORM.zip -Force
-   ```
-4. Dans Moodle : **Ajouter une ressource ou une activité** → **Paquetage SCORM** → déposer le fichier `.zip`.
+- **PowerShell (recommandé)** :
+  ```powershell
+  .\build.ps1
+  ```
+  Produit à la racine du projet :
+  - `module0-avancement.zip` — à déposer dans Moodle pour le Module 0
+  - `module1-retours.zip` — pour le Module 1
 
-**Guide détaillé** : voir **`docs/MOODLE_SCORM_MODULE1.md`** (paramètres Moodle, dépannage).
+- **Git Bash / WSL** :
+  ```bash
+  ./build.sh
+  ```
+  Même sortie si les dossiers `modules/module0-avancement` et `modules/module1-retours` existent.
 
-Voir `docs/SCORM_SUSPEND_DATA.md` pour les règles sur les données de reprise (suspend_data).
+- **Creer_ZIP_SCORM_Module1.ps1** : délègue à `build.ps1` (ancienne structure SCORM_MODULE1_A_ZIPPER obsolète).
+
+## Déploiement LMS
+
+1. Lancer `.\build.ps1` (ou `./build.sh`).
+2. Moodle : **Paquetage SCORM** → déposer `module0-avancement.zip` ou `module1-retours.zip`.
+3. Voir **docs/MOODLE_SCORM_MODULE1.md** (déploiement Module 0).
+
+## Documentation
+
+- **docs/MOODLE_SCORM_MODULE1.md** — Moodle, dépannage.
+- **docs/SCORM_SUSPEND_DATA.md** — suspend_data.
+
+## Tracking
+
+- `LMSInitialize` / `LMSCommit` / `LMSFinish`, CMI 2004 : `cmi.completion_status`, `cmi.score.scaled`, `cmi.suspend_data`.

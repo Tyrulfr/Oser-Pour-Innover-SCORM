@@ -12,9 +12,9 @@
   </metadata>
   <organizations default="default_org">
     <organization identifier="default_org">
-      <title>Oser Pour Innover</title>
+      <title>L'esprit d'innover</title>
       <item identifier="item_module1" identifierref="resource_module1">
-        <title>Module 1</title>
+        <title>Module 0</title>
       </item>
       <item identifier="item_module2" identifierref="resource_module2">
         <title>Module 2</title>
