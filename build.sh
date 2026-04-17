@@ -1,6 +1,6 @@
-#!/usr/bin/env bash
+﻿#!/usr/bin/env bash
 # Build SCORM ZIP : contenu du module a la racine du ZIP (imsmanifest.xml au root).
-# Module 0 (sensibilisation) puis Module 1 (retours) si dossiers presents.
+# Module Ressources (sensibilisation) puis Module 1 (retours) si dossiers presents.
 set -e
 ROOT="$(cd "$(dirname "$0")" && pwd)"
 
@@ -16,5 +16,5 @@ build_one() {
   fi
 }
 
-build_one "module0-avancement" "module0-avancement.zip"
+build_one "module-r-avancement" "module-r-avancement.zip"
 build_one "module1-retours" "module1-retours.zip"

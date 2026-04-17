@@ -1,4 +1,4 @@
-# build.ps1 - Cree les ZIP SCORM (module0-avancement, module1-retours) avec lecture partagee
+# build.ps1 - Cree les ZIP SCORM (module-r-avancement, module1-retours) avec lecture partagee
 # Chaque ZIP a imsmanifest.xml a la racine pour Moodle.
 $ErrorActionPreference = "Stop"
 Add-Type -AssemblyName System.IO.Compression.FileSystem
@@ -31,7 +31,7 @@ function Build-ModuleZip {
     Write-Host "Build OK: $zipName ($size Ko)"
 }
 
-# Module 0 : Sensibilisation (paquet SCORM autonome)
-Build-ModuleZip -modulePath "modules\module0-avancement" -zipName "module0-avancement.zip"
+# Module Ressources : Sensibilisation (paquet SCORM autonome)
+Build-ModuleZip -modulePath "modules\module-r-avancement" -zipName "module-r-avancement.zip"
 # Module 1 : Retours d'experience / temoignages
 Build-ModuleZip -modulePath "modules\module1-retours" -zipName "module1-retours.zip"

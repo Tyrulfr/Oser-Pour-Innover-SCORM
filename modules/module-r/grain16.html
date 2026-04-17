@@ -1,0 +1,412 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../../scorm-runtime/scorm-api.js"></script>
+    <title>CAPSULE 16 : Disruption d'usage (selon RID) | L'esprit d'innover</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* --- Styles de base --- */
+        :root { --bordeaux: #580F45; --orange: #F48C2E; --teal: #2EAF7D; --blue: #2A325E; --bg-page: #F8F9FA; --bg-card: #FFFFFF; --text-main: #2A325E; --text-light: #555; }
+        body.dark-mode { --bg-page: #1A1D2E; --bg-card: #232742; --text-main: #EAEAEA; --text-light: #BBB; }
+        * { box-sizing: border-box; transition: all 0.3s ease; }
+        body { margin: 0; padding: 0; font-family: 'Open Sans', sans-serif; background-color: var(--bg-page); color: var(--text-main); line-height: 1.6; padding-bottom: 100px; background-image: radial-gradient(rgba(42, 50, 94, 0.1) 1px, transparent 1px); background-size: 30px 30px; }
+        body.dark-mode { background-image: radial-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 1px); }
+        h1, h2, h3, h4 { font-family: 'Montserrat', sans-serif; color: var(--bordeaux); }
+        body.dark-mode h1, body.dark-mode h2, body.dark-mode h3 { color: var(--orange); }
+        
+        /* Navigation */
+        .top-bar { background: var(--bg-card); padding: 1rem 5%; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 10px rgba(0,0,0,0.1); border-bottom: 3px solid var(--bordeaux); }
+        .btn-back { text-decoration: none; color: var(--text-main); font-weight: 700; display: flex; align-items: center; gap: 10px; }
+        .btn-back:hover { color: var(--orange); }
+        
+        .content-container { max-width: 1100px; margin: 2rem auto; padding: 0 1.5rem; }
+        .hero-title { font-size: 2.5rem; font-weight: 900; margin-bottom: 0.5rem; line-height: 1.2; }
+        .hero-subtitle { font-size: 1.1rem; color: var(--text-light); margin-bottom: 2rem; border-left: 4px solid var(--orange); padding-left: 15px; }
+        
+        .def-box { background: linear-gradient(135deg, var(--blue), var(--bordeaux)); color: white; padding: 2rem; border-radius: 15px; margin: 2rem 0; box-shadow: 0 10px 20px rgba(42, 50, 94, 0.2); position: relative; }
+        .def-quote { font-size: 1.2rem; font-weight: 500; text-align: center; margin-bottom: 1rem; display: block; font-style: italic; }
+
+        /* --- DYSON CARDS --- */
+        .dyson-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 1.5rem;
+            margin: 3rem 0;
+        }
+
+        .d-card {
+            background: var(--bg-card);
+            padding: 1.5rem;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            text-align: center;
+            border-top: 5px solid #ccc;
+            transition: transform 0.2s;
+        }
+        .d-card:hover { transform: translateY(-5px); }
+
+        .d-icon { font-size: 2.5rem; margin-bottom: 1rem; }
+        .d-title { font-weight: 800; font-size: 1.1rem; margin-bottom: 0.5rem; }
+        .d-desc { font-size: 0.9rem; color: var(--text-light); }
+
+        /* Couleurs Dyson */
+        .card-speed { border-color: var(--orange); }
+        .card-speed .d-icon { color: var(--orange); }
+
+        .card-energy { border-color: var(--teal); }
+        .card-energy .d-icon { color: var(--teal); }
+
+        .card-hygiene { border-color: var(--blue); }
+        .card-hygiene .d-icon { color: var(--blue); }
+
+        .card-money { border-color: var(--bordeaux); }
+        .card-money .d-icon { color: var(--bordeaux); }
+
+        /* --- SCHEMA SVG --- */
+        .schema-wrapper {
+            background: white;
+            border-radius: 20px;
+            padding: 2rem;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            overflow-x: auto;
+            margin: 4rem 0;
+            border: 1px solid #ddd;
+        }
+        body.dark-mode .schema-wrapper { background: #232742; border-color: #444; }
+
+        .dyson-svg { width: 100%; height: auto; font-family: 'Open Sans', sans-serif; }
+
+        /* SVG Elements */
+        .svg-header { font-family: 'Montserrat', sans-serif; font-weight: 900; font-size: 20px; fill: var(--bordeaux); text-anchor: middle; text-transform: uppercase; }
+        body.dark-mode .svg-header { fill: white; }
+
+        .svg-col-title { font-weight: 800; font-size: 16px; fill: #333; text-anchor: middle; }
+        .svg-sub { font-size: 12px; fill: var(--blue); font-style: italic; text-anchor: middle; }
+        .svg-text { font-size: 13px; fill: #555; }
+        .svg-bullet { font-size: 12px; fill: #555; }
+        .svg-card { fill: #ffffff; stroke: #ddd; stroke-width: 1; }
+        
+        body.dark-mode .svg-col-title { fill: white; }
+        body.dark-mode .svg-text, body.dark-mode .svg-bullet { fill: #ccc; }
+        body.dark-mode .svg-sub { fill: var(--teal); }
+        body.dark-mode .svg-card { fill: #2b2f3b; stroke: #444; }
+
+        /* Drawings */
+        .draw-stroke { fill: none; stroke: #333; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+        .draw-fill { fill: #f0f0f0; stroke: #333; stroke-width: 2; }
+        body.dark-mode .draw-stroke { stroke: #ccc; }
+        body.dark-mode .draw-fill { fill: #444; stroke: #ccc; }
+
+        /* Arrows */
+        .arrow-solid { stroke: var(--orange); stroke-width: 3; fill: none; }
+        .arrow-dotted { stroke: var(--orange); stroke-width: 3; fill: none; stroke-dasharray: 6,4; }
+
+        /* Market pull �?" matrice complète ; focus visuel sur usage �?" technologie */
+        .mp-process-svg { display: block; max-width: 100%; min-height: 300px; margin: 0 auto; }
+        .mp-svg-title { font-family: 'Montserrat', sans-serif; font-weight: 900; font-size: 15px; text-anchor: middle; text-transform: uppercase; fill: var(--bordeaux); }
+        .mp-svg-sub { font-size: 11px; text-anchor: middle; font-style: italic; fill: var(--blue); }
+        .mp-box-muted { fill: #f2f2f2; stroke: #c8c8c8; stroke-width: 1.4; }
+        .mp-lbl-muted { font-size: 12px; font-weight: 600; text-anchor: middle; fill: #5c5c5c; }
+        .mp-lbl-muted-teal { fill: #2d7a68; font-weight: 700; }
+        .mp-box-focus-u { fill: #fff5eb; stroke: var(--orange); stroke-width: 3; }
+        .mp-box-focus-t { fill: #ecfdf6; stroke: var(--teal); stroke-width: 3; }
+        .mp-lbl-focus { font-size: 12px; font-weight: 800; text-anchor: middle; fill: #1a1a1a; }
+        .mp-link-focus { fill: none; stroke: var(--orange); stroke-width: 4; stroke-dasharray: 5 4; stroke-linecap: round; stroke-linejoin: round; }
+        .mp-flow-muted-o { fill: none; stroke: var(--orange); stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; opacity: 0.42; }
+        .mp-line-company { stroke: #6b7fc7; stroke-width: 1.8; stroke-linecap: round; opacity: 0.55; }
+        .mp-line-company-dash { stroke: #6b7fc7; stroke-width: 1.8; stroke-dasharray: 4 4; stroke-linecap: round; opacity: 0.5; }
+        .mp-company-box { fill: #7b8ec9; stroke: #6a7db8; stroke-width: 1.5; opacity: 0.72; }
+        .mp-lbl-company { font-size: 12px; font-weight: 700; text-anchor: middle; fill: #fff; opacity: 0.95; }
+        .mp-dot-muted { fill: #8c8c8c; opacity: 0.65; }
+        .mp-flow-blue-muted { fill: none; stroke: #6b7fc7; stroke-width: 1.85; stroke-linecap: round; opacity: 0.55; }
+        body.dark-mode .mp-svg-title { fill: #fff; }
+        body.dark-mode .mp-svg-sub { fill: #9fd4c0; }
+        body.dark-mode .mp-box-muted { fill: #2a2d38; stroke: #555; }
+        body.dark-mode .mp-lbl-muted { fill: #aaa; }
+        body.dark-mode .mp-lbl-muted-teal { fill: #5cb89a; }
+        body.dark-mode .mp-box-focus-u { fill: #3d2e26; stroke: var(--orange); }
+        body.dark-mode .mp-box-focus-t { fill: #1e3530; stroke: var(--teal); }
+        body.dark-mode .mp-lbl-focus { fill: #f0f0f0; }
+        
+        /* Footer & Modal */
+        .action-footer { position: fixed; bottom: 0; left: 0; right: 0; background: var(--bg-card); padding: 1rem 5%; border-top: 1px solid #ddd; display: flex; justify-content: flex-end; align-items: center; z-index: 1000; box-shadow: 0 -5px 20px rgba(0,0,0,0.1); }
+        .btn-validate { background: var(--teal); color: white; border: none; padding: 12px 30px; border-radius: 50px; font-weight: 800; font-size: 1rem; cursor: pointer; display: flex; align-items: center; gap: 10px; box-shadow: 0 5px 15px rgba(46, 175, 125, 0.3); }
+        .btn-validate:hover { transform: translateY(-3px); box-shadow: 0 8px 20px rgba(46, 175, 125, 0.4); }
+
+        .modal-overlay { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.7); display: none; justify-content: center; align-items: center; z-index: 2000; opacity: 0; transition: opacity 0.3s ease; }
+        .modal-overlay.active { display: flex; opacity: 1; }
+        .modal-box { background: var(--bg-card); padding: 2rem; border-radius: 15px; max-width: 500px; text-align: center; border-top: 5px solid var(--orange); transform: translateY(20px); transition: transform 0.3s ease; }
+        .modal-overlay.active .modal-box { transform: translateY(0); }
+        .modal-title { font-family: 'Montserrat', sans-serif; font-size: 1.5rem; color: var(--bordeaux); margin-bottom: 0.5rem; font-weight: 900; }
+        .modal-text { font-size: 1rem; line-height: 1.6; color: var(--text-main); margin-bottom: 1.5rem; text-align: left; }
+        .modal-btn { background: var(--orange); color: white; border: none; padding: 10px 25px; border-radius: 5px; cursor: pointer; font-weight: bold; float: right; }
+
+    </style>
+</head>
+<body data-module="module1" data-grain="grain16">
+
+    <nav class="top-bar">
+        <a href="sommaire_sequence3.html" class="btn-back"><i class="fa-solid fa-list"></i> Sommaire</a>
+        <div style="font-weight: 800; color: var(--bordeaux);">Capsule 16</div>
+        <button onclick="toggleTheme()" style="background:none; border:none; cursor:pointer; font-size:1.2rem; color:var(--text-main);"><i class="fa-solid fa-moon"></i></button>
+    </nav>
+    <div id="progress-widget" class="progress-widget"></div>
+
+    <div class="content-container">
+        
+        <h1 class="hero-title">Disruption d'usage (selon RID)</h1>
+        <div class="hero-subtitle">Illustration concrète de disruption d'usage selon RID : comment James Dyson a révolutionné le marché des sèche-mains.</div>
+
+        <div class="def-box">
+            <span class="def-quote">
+                <i class="fa-solid fa-bolt" style="opacity:0.8; margin-right:10px;"></i>
+                Selon RID, une <strong>disruption</strong> nécessite une compréhension supérieure de l'utilisateur final (stratégie <em>Need Seeker</em>). 
+                Il faut objectiver et prioriser les "Seaux de Valeur" (Value Buckets) pour démarrer le processus.
+            </span>
+        </div>
+
+        <h2 style="margin-top:3rem; text-align:center; color:var(--bordeaux);">L'Exemple Dyson Airblade</h2>
+        
+        <!-- DYSON CARDS -->
+        <div class="dyson-grid">
+            <div class="d-card card-speed">
+                <i class="fa-solid fa-gauge-high d-icon"></i>
+                <div class="d-title">Beaucoup plus rapide</div>
+                <div class="d-desc">Séchage en < 15 sec (2x plus vite). Protocole NSF P335 créé par Dyson.</div>
+            </div>
+            <div class="d-card card-energy">
+                <i class="fa-solid fa-leaf d-icon"></i>
+                <div class="d-title">Efficacité �?nergétique</div>
+                <div class="d-desc">6 fois moins d'électricité consommée que les modèles classiques.</div>
+            </div>
+            <div class="d-card card-hygiene">
+                <i class="fa-solid fa-hands-bubbles d-icon"></i>
+                <div class="d-title">Très Hygiénique</div>
+                <div class="d-desc">Sans contact, filtre HEPA, pas de bac, -40% de bactéries.</div>
+            </div>
+            <div class="d-card card-money">
+                <i class="fa-solid fa-piggy-bank d-icon"></i>
+                <div class="d-title">Très �?conomique</div>
+                <div class="d-desc">Pas de maintenance, 4x moins cher par an à l'usage.</div>
+            </div>
+        </div>
+
+        <!-- Market pull �?" matrice complète (focus visuel : usage �?' technologie) -->
+        <div class="schema-wrapper">
+            <svg class="dyson-svg mp-process-svg" viewBox="0 0 900 340" role="img" aria-label="Market pull �?" le nouvel usage implique la nouvelle technologie (flèche descendante)">
+                <defs>
+                    <marker id="g16fO" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+                        <path d="M0,0 L0,6 L9,3 z" fill="var(--orange)" />
+                    </marker>
+                    <marker id="g16mO" markerWidth="7" markerHeight="7" refX="6" refY="2.5" orient="auto">
+                        <path d="M0,0 L0,5 L6,2.5 z" fill="#c4a080" />
+                    </marker>
+                    <marker id="g16mB" markerWidth="7" markerHeight="7" refX="6" refY="2.5" orient="auto">
+                        <path d="M0,0 L0,5 L6,2.5 z" fill="#8b9dc9" />
+                    </marker>
+                </defs>
+
+                <text x="450" y="32" class="mp-svg-title">Market pull innovation process</text>
+                <text x="450" y="50" class="mp-svg-sub">Processus d'innovation tiré par le marché (RID) �?" focus : le nouvel usage appelle la nouvelle technologie</text>
+
+                <g transform="translate(-50,50)">
+                    <rect x="120" y="135" width="120" height="50" class="mp-box-muted" rx="6" ry="6" />
+                    <text x="180" y="151" class="mp-lbl-muted mp-lbl-muted-teal">
+                        <tspan x="180" y="151">Besoins</tspan>
+                        <tspan x="180" dy="14">non</tspan>
+                        <tspan x="180" dy="14">formulés</tspan>
+                    </text>
+
+                    <rect x="230" y="92" width="100" height="28" class="mp-box-focus-u" rx="6" ry="6" />
+                    <text x="280" y="110" class="mp-lbl-focus">Nouvel usage</text>
+                    <rect x="210" y="202" width="140" height="28" class="mp-box-focus-t" rx="6" ry="6" />
+                    <text x="280" y="220" class="mp-lbl-focus">Nouvelle technologie</text>
+
+                    <line x1="280" y1="122" x2="280" y2="200" class="mp-link-focus" marker-end="url(#g16fO)" />
+
+                    <rect x="390" y="139" width="140" height="44" class="mp-box-muted" rx="6" ry="6" />
+                    <text x="460" y="155" class="mp-lbl-muted">
+                        <tspan x="460" y="155">Nouvelle expérience</tspan>
+                        <tspan x="460" dy="14">(utilisateurs pilotes)</tspan>
+                    </text>
+                    <path d="M 330,106 L 460,106 L 460,139" class="mp-flow-muted-o" fill="none" marker-end="url(#g16mO)" />
+                    <path d="M 340,216 L 460,216 L 460,183" class="mp-flow-muted-o" fill="none" marker-end="url(#g16mO)" />
+
+                    <rect x="580" y="147" width="100" height="28" class="mp-box-muted" rx="6" ry="6" />
+                    <text x="630" y="165" class="mp-lbl-muted">Nouveau besoin</text>
+                    <path d="M 530,161 L 580,161" class="mp-flow-muted-o" fill="none" marker-end="url(#g16mO)" />
+                    <path d="M 680,161 L 740,161" class="mp-flow-blue-muted" fill="none" marker-end="url(#g16mB)" />
+
+                    <rect x="495" y="262" width="100" height="28" class="mp-company-box" rx="6" ry="6" />
+                    <text x="545" y="280" class="mp-lbl-company">Entreprise</text>
+                    <line x1="545" y1="262" x2="280" y2="230" class="mp-line-company-dash" fill="none" />
+                    <line x1="545" y1="262" x2="280" y2="120" class="mp-line-company-dash" fill="none" />
+                    <line x1="545" y1="262" x2="630" y2="175" class="mp-line-company" fill="none" />
+                    <line x1="545" y1="262" x2="800" y2="178" class="mp-line-company" fill="none" />
+                    <circle cx="280" cy="230" r="3" class="mp-dot-muted" />
+                    <circle cx="280" cy="120" r="3" class="mp-dot-muted" />
+                    <circle cx="630" cy="175" r="3" class="mp-dot-muted" />
+                    <circle cx="800" cy="178" r="3" class="mp-dot-muted" />
+
+                    <rect x="740" y="134" width="120" height="44" class="mp-box-muted" rx="6" ry="6" />
+                    <text x="800" y="150" class="mp-lbl-muted mp-lbl-muted-teal">
+                        <tspan x="800" y="150">Nouvelle demande</tspan>
+                        <tspan x="800" dy="14">du marché</tspan>
+                    </text>
+                    <path d="M 800,134 L 800,60 L 280,60 L 280,92" class="mp-flow-muted-o" fill="none" marker-end="url(#g16mO)" />
+                    <path d="M 800,178 L 800,255 L 280,255 L 280,230" class="mp-flow-muted-o" fill="none" marker-end="url(#g16mO)" />
+                </g>
+            </svg>
+        </div>
+
+        <div class="info-box" style="background: rgba(255, 215, 0, 0.1); border-left-color: var(--rid-yellow);">
+            <h4><i class="fa-solid fa-diagram-project"></i> Logique du Schéma</h4>
+            <p>Vous voyez la <strong>matrice complète du market pull</strong> (RID). Les zones et flèches <strong>en tons neutres ou atténués</strong> situent le processus dans son ensemble (marché, expérience, entreprise, boucles). Les deux blocs <strong>surbrillance orange et vert</strong> (« Nouvel usage », « Nouvelle technologie ») et la <strong>flèche verticale orange épaisse en pointillés</strong> entre eux indiquent le <strong>focus pédagogique</strong> : le <strong>nouvel usage implique la nouvelle technologie</strong> (sens du haut vers le bas), au c�"ur d'une logique <em>Need Seeker</em> (ex. Dyson Airblade). Dans le cas de l'Airblade, la technologie induite par le besoin d'un plan d'air pulsé à 640 km/h est celle d'un tout nouveau moteur électrique brushless à très haute vitesse qui a fait l'objet de plusieurs brevets.</p>
+        </div>
+
+        <!-- Quiz -->
+        <div style="margin-top: 4rem; padding: 2rem; background: var(--bg-card); border-radius: 15px; border: 1px solid #ddd; border-left: 5px solid var(--teal);">
+            <h3><i class="fa-solid fa-clipboard-question"></i> Quiz de Validation</h3>
+            <p>Dans le processus d'innovation Dyson de l'Airblade (Need Seeker), qu'est-ce qui a poussé à mettre au point une nouvelle technologie ?</p>
+            <form id="quizForm">
+                <div style="margin-bottom: 10px;">
+                    <input type="radio" id="q16a" name="q16" value="wrong">
+                    <label for="q16a">L'amélioration d'une technologie sur laquelle on travaillait déjà.</label>
+                </div>
+                <div style="margin-bottom: 10px;">
+                    <input type="radio" id="q16b" name="q16" value="correct">
+                    <label for="q16b">Le nouvel usage identifié.</label>
+                </div>
+                <div style="margin-bottom: 10px;">
+                    <input type="radio" id="q16c" name="q16" value="wrong">
+                    <label for="q16c">Le département marketing.</label>
+                </div>
+            </form>
+        </div>
+
+    </div>
+
+    <!-- Footer Action -->
+    <div class="action-footer">
+        <button type="button" class="btn-validate" id="btnFinishGrain" onclick="if(typeof finishGrain==='function'){finishGrain();}return false;">Terminer ce Grain <i class="fa-solid fa-check"></i></button>
+    </div>
+
+    <!-- Modal pour Feedback -->
+    <div class="modal-overlay" id="feedbackModal">
+        <div class="modal-box">
+            <div id="modalIcon" style="font-size: 3rem; margin-bottom: 10px;"></div>
+            <div class="modal-title" id="modalTitle">Titre</div>
+            <p id="modalMessage">Message</p>
+            <button type="button" class="modal-btn" id="btnModalClose">Continuer</button>
+        </div>
+    </div>
+
+    <script>
+        // Theme Management
+        var GRAIN_ID = 'grain16';
+        var SOMMAIRE_URL = 'sommaire_sequence3.html';
+        function getState() {
+            var fromAPI = (typeof ScormAPI !== 'undefined' && ScormAPI.isAvailable()) ? (ScormAPI.getSuspendData() || '') : '';
+            var fromLS = ''; try { fromLS = localStorage.getItem('module-r_suspend') || ''; } catch (e) {}
+            function parse(r) { if (!r) return {}; try { return JSON.parse(r); } catch (e) { return {}; } }
+            var a = parse(fromAPI), b = parse(fromLS);
+            var c = { completed: [], scores: {}, theme: a.theme || b.theme };
+            var seen = {}; (a.completed || []).concat(b.completed || []).forEach(function (g) { if (!seen[g]) { seen[g] = 1; c.completed.push(g); } });
+            var so = {}; [a.scores, b.scores].forEach(function (s) { if (s) for (var k in s) if (s[k] !== undefined) so[k] = s[k]; }); c.scores = so;
+            return c;
+        }
+        function setState(o) { var s = JSON.stringify(o); if (s.length > 4000) return; if (typeof ScormAPI !== 'undefined' && ScormAPI.isAvailable()) { ScormAPI.setSuspendData(s); ScormAPI.commit(); } try { localStorage.setItem('module-r_suspend', s); } catch (e) {} }
+        function scormMarkCompleted(score) {
+            var state = getState();
+            state.completed = state.completed || [];
+            state.scores = state.scores || {};
+            if (state.completed.indexOf(GRAIN_ID) === -1) state.completed.push(GRAIN_ID);
+            state.scores[GRAIN_ID] = (score !== undefined) ? score : 1;
+            setState(state);
+            if (typeof ScormAPI !== 'undefined' && ScormAPI.isAvailable()) {
+                var all = ['grain1','grain2','grain3','grain4','grain5','grain6','grain7','grain8','grain9','grain10','grain11','grain12','grain13','grain_exp21','grain14','grain15','grain16','grain17','grain18'];
+                var comp = state.completed || [], sc = state.scores || {};
+                var n = 0, tot = 0;
+                for (var i = 0; i < all.length; i++) {
+                    if (comp.indexOf(all[i]) !== -1) n++;
+                    tot += (sc[all[i]] === 1 ? 1 : 0);
+                }
+                var pct = all.length ? Math.round((n / all.length) * 100) : 0;
+                var scorePct = all.length ? Math.round((tot / all.length) * 100) : 0;
+                ScormAPI.setScore(scorePct, 0, 100);
+                ScormAPI.setLessonStatus(pct >= 100 ? 'completed' : 'incomplete');
+                ScormAPI.commit();
+            }
+        }
+        function toggleTheme() { document.body.classList.toggle('dark-mode'); var state = getState(); state.theme = document.body.classList.contains('dark-mode') ? 'dark' : 'light'; setState(state); }
+        if (getState().theme === 'dark') document.body.classList.add('dark-mode');
+
+        // Modal Logic
+        const modal = document.getElementById('feedbackModal');
+        const modalTitle = document.getElementById('modalTitle');
+        const modalMsg = document.getElementById('modalMessage');
+        const modalIcon = document.getElementById('modalIcon');
+        const modalBox = modal.querySelector('.modal-box');
+        const modalBtn = modal.querySelector('.modal-btn');
+
+        function showModal(title, msg, type) {
+            modalTitle.innerText = title;
+            modalMsg.innerText = msg;
+            modal.classList.add('active');
+            
+            if(type === 'success') {
+                modalIcon.innerHTML = '<i class="fa-solid fa-circle-check" style="color: var(--teal);"></i>';
+                modalTitle.style.color = 'var(--teal)';
+                modalBox.style.borderTopColor = 'var(--teal)';
+                modalBtn.style.backgroundColor = 'var(--teal)';
+            } else {
+                modalIcon.innerHTML = '<i class="fa-solid fa-circle-xmark" style="color: var(--orange);"></i>';
+                modalTitle.style.color = 'var(--orange)';
+                modalBox.style.borderTopColor = 'var(--orange)';
+                modalBtn.style.backgroundColor = 'var(--orange)';
+            }
+        }
+
+        function closeModal() {
+            modal.classList.remove('active');
+        }
+
+        // Validation : répondre au quiz valide le grain ; le score (0/1) est enregistré indépendamment.
+        function finishGrain() {
+            const radios = document.getElementsByName('q16'); 
+            let val = ""; 
+            for(const r of radios) if(r.checked) val = r.value;
+            if (val === "") { alert("Veuillez sélectionner une réponse au quiz."); return; }
+            var score = (val === "correct") ? 1 : 0;
+            try { scormMarkCompleted(score); } catch (e) { try { var st = getState(); st.completed = st.completed || []; st.scores = st.scores || {}; if (st.completed.indexOf(GRAIN_ID) === -1) st.completed.push(GRAIN_ID); st.scores[GRAIN_ID] = score; setState(st); } catch (e2) {} }
+            if (val === "correct") { 
+                showModal("Correct !", "Exact : c'est le nouvel usage identifié qui a poussé à mettre au point une nouvelle technologie �?" en Need Seeker, l'usage précède et oriente la techno (comme sur le schéma, du haut vers le bas).", "success");
+                setTimeout(() => { const btn = document.getElementById('btnModalClose'); if(btn) { btn.innerText = "Retour au Sommaire"; btn.onclick = function() { window.location.href = SOMMAIRE_URL + '#grain16'; }; } }, 100);
+            } else { 
+                showModal("Incorrect", "Regardez la flèche verticale pointillée : elle va du nouvel usage (en haut) vers la nouvelle technologie (en bas) �?" l'usage détermine la technologie. Le grain est validé ; vous pouvez retourner au sommaire.", "error");
+                setTimeout(() => { const btn = document.getElementById('btnModalClose'); if(btn) { btn.innerText = "Retour au Sommaire"; btn.onclick = function() { window.location.href = SOMMAIRE_URL + '#grain16'; }; } }, 100);
+            }
+        }
+        function initGrain() {
+            try {
+                var btnFinish = document.getElementById('btnFinishGrain');
+                var btnClose = document.getElementById('btnModalClose');
+                if (btnFinish) {
+                    btnFinish.addEventListener('click', finishGrain);
+                    btnFinish.onclick = function(e) { e.preventDefault(); finishGrain(); };
+                }
+                if (btnClose) {
+                    btnClose.addEventListener('click', closeModal);
+                    btnClose.onclick = function(e) { e.preventDefault(); closeModal(); };
+                }
+            } catch (e) { console.warn('initGrain:', e); }
+        }
+        if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', initGrain);
+        else setTimeout(initGrain, 0);
+    </script>
+</body>
+</html>

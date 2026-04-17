@@ -1,4 +1,4 @@
-# À exécuter dans la racine du repo (Oser-Pour-Innover-SCORM)
+﻿# �? exécuter dans la racine du repo (Oser-Pour-Innover-SCORM)
 # Assure les 3 branches main, develop, sauv avec le même premier commit
 
 $list = git branch --list

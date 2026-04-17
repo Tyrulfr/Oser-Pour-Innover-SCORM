@@ -1,6 +1,6 @@
-/**
- * SCORM 2004 API — Wrapper partagé (Initialize/Terminate, CMI 2004)
- * L'esprit d'innover — Projet modulaire SCORM
+﻿/**
+ * SCORM 2004 API �?" Wrapper partagé (Initialize/Terminate, CMI 2004)
+ * L'esprit d'innover �?" Projet modulaire SCORM
  * Utilisation : <script src="SCORM_API.js"></script> puis ScormAPI.* ou API.LMS*.
  * Compatible LMS SCORM 2004 (4th Edition). Aliases LMS* pour usage identique au 1.2.
  */

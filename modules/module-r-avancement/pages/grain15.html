@@ -1,0 +1,541 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../SCORM_API.js"></script>
+    <title>CAPSULE 15 : Innovation Radicale (RID) | L'esprit d'innover</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* --- Styles de base --- */
+        :root { --bordeaux: #580F45; --orange: #F48C2E; --teal: #2EAF7D; --blue: #2A325E; --bg-page: #F8F9FA; --bg-card: #FFFFFF; --text-main: #2A325E; --text-light: #555; }
+        body.dark-mode { --bg-page: #1A1D2E; --bg-card: #232742; --text-main: #EAEAEA; --text-light: #BBB; }
+        * { box-sizing: border-box; transition: all 0.3s ease; }
+        body { margin: 0; padding: 0; font-family: 'Open Sans', sans-serif; background-color: var(--bg-page); color: var(--text-main); line-height: 1.6; padding-bottom: 100px; background-image: radial-gradient(rgba(42, 50, 94, 0.1) 1px, transparent 1px); background-size: 30px 30px; }
+        body.dark-mode { background-image: radial-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 1px); }
+        h1, h2, h3, h4 { font-family: 'Montserrat', sans-serif; color: var(--bordeaux); }
+        body.dark-mode h1, body.dark-mode h2, body.dark-mode h3 { color: var(--orange); }
+        
+        /* Navigation */
+        .top-bar { background: var(--bg-card); padding: 1rem 5%; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 10px rgba(0,0,0,0.1); border-bottom: 3px solid var(--bordeaux); }
+        .btn-back { text-decoration: none; color: var(--text-main); font-weight: 700; display: flex; align-items: center; gap: 10px; }
+        .btn-back:hover { color: var(--orange); }
+        
+        .content-container { max-width: 1000px; margin: 2rem auto; padding: 0 1.5rem; }
+        .hero-title { font-size: 2.5rem; font-weight: 900; margin-bottom: 0.5rem; line-height: 1.2; }
+        .hero-subtitle { font-size: 1.1rem; color: var(--text-light); margin-bottom: 2rem; border-left: 4px solid var(--orange); padding-left: 15px; }
+        
+        .def-box { background: linear-gradient(135deg, var(--blue), var(--bordeaux)); color: white; padding: 2rem; border-radius: 15px; margin: 2rem 0; box-shadow: 0 10px 20px rgba(42, 50, 94, 0.2); position: relative; }
+        .def-quote { font-size: 1.2rem; font-weight: 500; text-align: center; margin-bottom: 1rem; display: block; font-style: italic; }
+
+        /* --- DIAGRAM STRUCTURE (GRID) --- */
+        .rid-diagram {
+            display: grid;
+            grid-template-columns: 52px 60px 1fr 1fr; /* Col 1: Radicalité, Col 2: Perçu/Non perçu, Col 3�?"4: contenu */
+            /* Rows: L1, L2, L3, Separator(15px), L4, L5 */
+            grid-template-rows: auto auto auto 15px auto auto;
+            gap: 15px 20px;
+            margin: 4rem 0;
+            position: relative;
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            align-items: center;
+        }
+        body.dark-mode .rid-diagram { background: #232742; }
+
+        /* Axe vertical « Radicalité de l'innovation » */
+        .radicalite-axis {
+            grid-column: 1;
+            grid-row: 1 / 7;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            gap: 8px;
+            padding: 4px 8px 4px 0;
+            border-right: 1px solid rgba(88, 15, 69, 0.2);
+        }
+        body.dark-mode .radicalite-axis { border-right-color: rgba(255,255,255,0.12); }
+        .radicalite-arrow-icon { color: var(--bordeaux); font-size: 1rem; flex-shrink: 0; }
+        body.dark-mode .radicalite-arrow-icon { color: var(--orange); }
+        .radicalite-axis-body {
+            display: flex;
+            flex-direction: row;
+            align-items: stretch;
+            justify-content: center;
+            gap: 8px;
+            flex: 1;
+            width: 100%;
+            min-height: 120px;
+        }
+        .radicalite-axis-line {
+            width: 4px;
+            flex-shrink: 0;
+            border-radius: 3px;
+            background: linear-gradient(to bottom, var(--bordeaux), var(--orange));
+        }
+        body.dark-mode .radicalite-axis-line {
+            background: linear-gradient(to bottom, var(--orange), var(--teal));
+        }
+        .radicalite-axis-label {
+            writing-mode: vertical-rl;
+            transform: rotate(180deg);
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 800;
+            font-size: 0.72rem;
+            color: var(--bordeaux);
+            letter-spacing: 0.04em;
+            line-height: 1.35;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        body.dark-mode .radicalite-axis-label { color: var(--orange); }
+
+        /* --- LEFT SCALE (COL 2) --- */
+        .scale-box {
+            writing-mode: vertical-rl;
+            transform: rotate(180deg);
+            text-align: center;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 800;
+            text-transform: uppercase;
+            font-size: 0.85rem;
+            letter-spacing: 1px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            border-radius: 8px;
+        }
+
+        .scale-perceived {
+            grid-column: 2;
+            grid-row: 1 / 4; /* Span Levels 1-3 */
+            background: rgba(42, 50, 94, 0.05);
+            color: var(--bordeaux);
+            border-left: 5px solid var(--bordeaux);
+        }
+        body.dark-mode .scale-perceived { background: rgba(255,255,255,0.05); color: var(--orange); border-color: var(--orange); }
+
+        .scale-not-perceived {
+            grid-column: 2;
+            grid-row: 5 / 7; /* Span Levels 4-5 */
+            background: rgba(0,0,0,0.03);
+            color: #888;
+            border-left: 5px solid #999;
+        }
+        body.dark-mode .scale-not-perceived { background: rgba(255,255,255,0.02); color: #aaa; border-color: #666; }
+
+        /* --- SEPARATOR LINE --- */
+        .separator-line {
+            grid-column: 2 / -1;
+            grid-row: 4;
+            height: 2px;
+            background-image: linear-gradient(to right, #ccc 50%, transparent 50%);
+            background-position: top;
+            background-size: 15px 2px;
+            background-repeat: repeat-x;
+            width: 100%;
+            align-self: center;
+        }
+
+        /* --- RID ZONE (OVERLAY TRANSPARENT) --- */
+        .rid-zone-bg {
+            grid-column: 3 / -1;
+            grid-row: 1 / 3; /* Englobe L1 et L2 (texte + exemples) */
+            
+            background-color: rgba(255, 215, 0, 0.15); /* Jaune transparent */
+            border: none;
+            
+            border-radius: 10px;
+            position: relative;
+            z-index: 0; /* Derrière le contenu */
+            margin: 0;
+            padding: 10px;
+            align-self: stretch;
+            justify-self: stretch;
+            pointer-events: none; /* Permet de voir et cliquer au travers si besoin */
+        }
+        body.dark-mode .rid-zone-bg { 
+            background-color: rgba(255, 215, 0, 0.1); 
+            border-color: rgba(255, 215, 0, 0.5); 
+        }
+
+        .rid-badge {
+            position: absolute;
+            top: -12px; right: 20px;
+            background: var(--rid-yellow, #FFD700);
+            color: black;
+            font-weight: 800;
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-size: 0.68rem;
+            line-height: 1.25;
+            max-width: min(300px, 92%);
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+            z-index: 10;
+        }
+
+        /* --- LEVELS CONTENT --- */
+        .level-row { display: contents; }
+
+        /* Center Column: Text */
+        .center-text {
+            position: relative;
+            z-index: 1; /* En dessous du cartouche jaune (z-index 5) */
+            padding: 10px 0;
+            text-align: right; 
+            border-right: none;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .level-title { font-weight: 800; font-size: 1rem; color: var(--text-main); margin-bottom: 5px; }
+        .level-subtitle { font-size: 0.85rem; color: var(--text-light); font-style: italic; line-height: 1.4; }
+
+        /* Right Column: Examples */
+        .right-example {
+            position: relative;
+            z-index: 1;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            background: rgba(0,0,0,0.02);
+            padding: 10px;
+            border-radius: 8px;
+            justify-self: center;
+        }
+        body.dark-mode .right-example { background: rgba(255,255,255,0.05); }
+
+        .ex-icons { font-size: 1.2rem; color: var(--text-main); display: flex; align-items: center; gap: 8px; min-width: 70px; justify-content: center; }
+        .ex-arrow { color: var(--teal); font-size: 0.9rem; }
+        .ex-text { font-size: 0.85rem; font-weight: 600; color: var(--text-main); }
+
+        /* Specific Colors for Titles */
+        .title-1 { color: var(--bordeaux); }
+        .title-2 { color: var(--orange); }
+        .title-3 { color: var(--teal); }
+        .title-4 { color: var(--blue); }
+        .title-5 { color: #666; }
+        
+        body.dark-mode .title-1 { color: #ff80ab; }
+        body.dark-mode .title-2 { color: #ffcc80; }
+        body.dark-mode .title-3 { color: #80cbc4; }
+        body.dark-mode .title-4 { color: #90caf9; }
+        body.dark-mode .title-5 { color: #bdbdbd; }
+
+
+        @media (max-width: 768px) {
+            .rid-diagram { grid-template-columns: 1fr; }
+            .radicalite-axis { display: none; }
+            .scale-perceived, .scale-not-perceived { grid-column: 1; }
+            .separator-line { grid-column: 1 / -1; }
+            .scale-box { writing-mode: horizontal-tb; transform: none; width: 100%; height: auto; margin-bottom: 10px; }
+            .rid-zone-bg { display: none; } /* Simplification mobile */
+            .rid-diagram .center-text,
+            .rid-diagram .right-example { grid-column: 1 !important; }
+            .separator-line { display: block; width: 100%; margin: 20px 0; }
+            .center-text { text-align: left; border-right: none; border-bottom: 1px solid #eee; }
+            .right-example { width: 100%; }
+        }
+
+        .info-box {
+            background: rgba(46, 175, 125, 0.1);
+            border-left: 5px solid var(--teal);
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin: 3rem 0;
+        }
+        
+        .source-footer { margin-top: 4rem; padding-top: 1rem; border-top: 1px solid #ddd; font-size: 0.75rem; color: #888; font-style: italic; }
+        .source-footer p { margin: 0.65rem 0; line-height: 1.5; }
+        .source-footer p:first-child { margin-top: 0; }
+        .source-footer p:last-child { margin-bottom: 0; }
+        .source-footer a { color: var(--bordeaux); font-style: normal; }
+        body.dark-mode .source-footer a { color: var(--orange); }
+
+        /* Footer & Modal */
+        .action-footer { position: fixed; bottom: 0; left: 0; right: 0; background: var(--bg-card); padding: 1rem 5%; border-top: 1px solid #ddd; display: flex; justify-content: flex-end; align-items: center; z-index: 1000; box-shadow: 0 -5px 20px rgba(0,0,0,0.1); }
+        .btn-validate { background: var(--teal); color: white; border: none; padding: 12px 30px; border-radius: 50px; font-weight: 800; font-size: 1rem; cursor: pointer; display: flex; align-items: center; gap: 10px; box-shadow: 0 5px 15px rgba(46, 175, 125, 0.3); }
+        .btn-validate:hover { transform: translateY(-3px); box-shadow: 0 8px 20px rgba(46, 175, 125, 0.4); }
+
+        .modal-overlay { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.7); display: none; justify-content: center; align-items: center; z-index: 2000; opacity: 0; transition: opacity 0.3s ease; }
+        .modal-overlay.active { display: flex; opacity: 1; }
+        .modal-box { background: var(--bg-card); padding: 2rem; border-radius: 15px; max-width: 500px; text-align: left; border-top: 5px solid var(--orange); transform: translateY(20px); transition: transform 0.3s ease; }
+        .modal-overlay.active .modal-box { transform: translateY(0); }
+        .modal-title { font-family: 'Montserrat', sans-serif; font-size: 1.5rem; color: var(--bordeaux); margin-bottom: 0.5rem; font-weight: 900; }
+        .modal-text { font-size: 1rem; line-height: 1.6; color: var(--text-main); margin-bottom: 1.5rem; text-align: left; }
+        .modal-btn { background: var(--orange); color: white; border: none; padding: 10px 25px; border-radius: 5px; cursor: pointer; font-weight: bold; float: right; }
+
+    </style>
+</head>
+<body data-module="module1" data-grain="grain15">
+
+    <nav class="top-bar">
+        <a href="sommaire_sequence3.html#grain15" class="btn-back"><i class="fa-solid fa-list"></i> Sommaire</a>
+        <div style="font-weight: 800; color: var(--bordeaux);">Capsule 15</div>
+        <button onclick="toggleTheme()" style="background:none; border:none; cursor:pointer; font-size:1.2rem; color:var(--text-main);"><i class="fa-solid fa-moon"></i></button>
+    </nav>
+    <div id="progress-widget" class="progress-widget"></div>
+
+    <div class="content-container">
+        
+        <h1 class="hero-title">Qu'est-ce que l'Innovation Radicale (selon RID) ?</h1>
+        <div class="hero-subtitle">Une échelle basée sur l'impact perçu par les utilisatrices et utilisateurs.</div>
+
+        <div class="def-box">
+            <span class="def-quote">
+                <i class="fa-solid fa-user-astronaut" style="opacity:0.8; margin-right:10px;"></i>
+                Pour la méthodologie RID, une innovation radicale centrée sur les utilisatrices et utilisateurs <strong>impacte nécessairement leur activité ou leur (User) eXpérience (UX)</strong>.
+            </span>
+        </div>
+
+        <!-- DIAGRAMME �?CHELLE -->
+        <div class="rid-diagram">
+
+            <div class="radicalite-axis" role="img" aria-label="Radicalité de l'innovation (échelle verticale)">
+                <i class="fa-solid fa-arrow-up radicalite-arrow-icon" aria-hidden="true"></i>
+                <div class="radicalite-axis-body">
+                    <div class="radicalite-axis-line" aria-hidden="true"></div>
+                    <span class="radicalite-axis-label">Radicalité de l'innovation</span>
+                </div>
+            </div>
+
+            <!-- ZONE RID (Fond Jaune Transparent - Overlay) -->
+            <div class="rid-zone-bg">
+                <div class="rid-badge">Disruptions d'usage considérées dans RID</div>
+            </div>
+
+            <!-- COL 2 : SCALE LABELS -->
+            <div class="scale-box scale-perceived">
+                <i class="fa-solid fa-eye" style="margin-bottom:5px; transform: rotate(90deg);"></i> Perçu par les utilisatrices et utilisateurs
+            </div>
+            <div class="scale-box scale-not-perceived">
+                <i class="fa-solid fa-eye-slash" style="margin-bottom:5px; transform: rotate(90deg);"></i> Non perçu
+            </div>
+
+            <!-- NIV 1 (RID) - Disruption -->
+            <div class="level-row">
+                <div class="center-text" style="grid-column: 3; grid-row: 1;">
+                    <div class="level-title title-1">Rupture de l'activité</div>
+                    <div class="level-subtitle">Le changement est tel que l'activité est interrompue et l'expérience des utilisatrices et utilisateurs est transformée durablement.</div>
+                </div>
+                <div class="right-example" style="grid-column: 4; grid-row: 1;">
+                    <div class="ex-icons"><i class="fa-solid fa-map"></i> <i class="fa-solid fa-arrow-right ex-arrow"></i> <i class="fa-solid fa-location-dot" style="color:var(--teal);"></i></div>
+                    <div class="ex-text">Cartes vers GPS</div>
+                </div>
+            </div>
+
+            <!-- NIV 2 (RID) - Definite Improvement -->
+            <div class="level-row">
+                <div class="center-text" style="grid-column: 3; grid-row: 2;">
+                    <div class="level-title title-2">Amélioration nette de l'activité</div>
+                    <div class="level-subtitle">Amélioration significative sur plusieurs performances, apparition d'une performance unique.</div>
+                </div>
+                <div class="right-example" style="grid-column: 4; grid-row: 2;">
+                    <div class="ex-icons"><i class="fa-solid fa-record-vinyl"></i> <i class="fa-solid fa-arrow-right ex-arrow"></i> <i class="fa-solid fa-compact-disc" style="color:var(--teal);"></i></div>
+                    <div class="ex-text">Vinyle vers CD</div>
+                </div>
+            </div>
+
+            <!-- NIV 3 (Hors RID cadre, mais Perceived) - Slight Improvement -->
+            <div class="level-row">
+                <div class="center-text" style="grid-column: 3; grid-row: 3;">
+                    <div class="level-title title-3">Légère amélioration de l'activité</div>
+                    <div class="level-subtitle">Nouvelle fonction, nouvel ensemble fonctionnel, amélioration des performances.</div>
+                </div>
+                <div class="right-example" style="grid-column: 4; grid-row: 3;">
+                    <div class="ex-icons"><i class="fa-regular fa-credit-card"></i> <i class="fa-solid fa-arrow-right ex-arrow"></i> <i class="fa-solid fa-mobile-screen" style="color:var(--teal);"></i></div>
+                    <div class="ex-text">Paiement par téléphone</div>
+                </div>
+            </div>
+
+            <!-- SEPARATOR (Row 4) -->
+            <div class="separator-line"></div>
+
+            <!-- NIV 4 (Not Perceived) - Internal Change -->
+            <div class="level-row">
+                <div class="center-text" style="grid-column: 3; grid-row: 5;">
+                    <div class="level-title title-4">Changement interne de la solution</div>
+                    <div class="level-subtitle">Impact sur l'assemblage, le stockage et les coûts de production.</div>
+                </div>
+                <div class="right-example" style="grid-column: 4; grid-row: 5;">
+                    <div class="ex-icons"><i class="fa-solid fa-scroll"></i></div>
+                    <div class="ex-text">Du tissage à la navette au tissage sans navette</div>
+                </div>
+            </div>
+
+            <!-- NIV 5 (Not Perceived) - Process Change -->
+            <div class="level-row">
+                <div class="center-text" style="grid-column: 3; grid-row: 6;">
+                    <div class="level-title title-5">Changement de processus ou d'organisation</div>
+                    <div class="level-subtitle">Impact sur les coûts, le temps, la fiabilité, la flexibilité, la marge.</div>
+                </div>
+                <div class="right-example" style="grid-column: 4; grid-row: 6;">
+                    <div class="ex-icons"><i class="fa-solid fa-people-carry-box"></i></div>
+                    <div class="ex-text">Passage au Lean Manufacturing</div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="info-box">
+            <h4><i class="fa-solid fa-scale-balanced"></i> Changement de paradigme</h4>
+            <p>De manière complémentaire à l'échelle d'intensité de l'innovation de Henderson &amp; Clark (1990) basée sur les degrés de présence d'une nouvelle technologie (diamant 1 du Triple Diamant) et d'adoption d'une nouvelle architecture (diamant 3), Bernard Yannou et François Cluzel (2024) introduisent une échelle de <strong>« radicalité perçue de l'innovation par les usagers »</strong> (diamant 2).</p>
+            <p>Cette échelle est fondamentale quand on veut être un leader en innovation Need Seeker, ou suivre une Stratégie Océan Bleu.</p>
+        </div>
+
+        <div class="source-footer">
+            <p><strong>RID.</strong> Yannou, Bernard, et François Cluzel (2024). <em>Radical Innovation Design: A systematic and usage-driven innovation methodology to ensure usefulness for users and profitability for companies.</em> EDP Sciences. <a href="https://doi.org/10.1051/978-2-7598-3066-4" target="_blank" rel="noopener noreferrer">https://doi.org/10.1051/978-2-7598-3066-4</a>.</p>
+            <p><strong>Henderson &amp; Clark (1990).</strong> Henderson, Rebecca M., et Kim B. Clark. «&nbsp;Architectural Innovation: The Reconfiguration of Existing Product Technologies and the Failure of Established Firms&nbsp;». <em>Administrative Science Quarterly</em>, vol.&nbsp;35, n°&nbsp;1, 1990, p.&nbsp;9�?"30.</p>
+        </div>
+
+        <!-- Quiz -->
+        <div style="margin-top: 4rem; padding: 2rem; background: var(--bg-card); border-radius: 15px; border: 1px solid #ddd; border-left: 5px solid var(--bordeaux);">
+            <h3><i class="fa-solid fa-clipboard-question"></i> Quiz de Validation</h3>
+            <p>Selon RID, une innovation majeure dans l'usine de fabrication qui réduit les coûts de 20% sans changer le produit est-elle "radicale" ?</p>
+            <form id="quizForm">
+                <div style="margin-bottom: 10px;">
+                    <input type="radio" id="q15a" name="q15" value="wrong">
+                    <label for="q15a">Oui, car l'impact économique est énorme.</label>
+                </div>
+                <div style="margin-bottom: 10px;">
+                    <input type="radio" id="q15b" name="q15" value="correct">
+                    <label for="q15b">Non, car elle n'est pas perçue par les utilisatrices et utilisateurs.</label>
+                </div>
+                <div style="margin-bottom: 10px;">
+                    <input type="radio" id="q15c" name="q15" value="wrong">
+                    <label for="q15c">Oui, si elle utilise une technologie de rupture.</label>
+                </div>
+            </form>
+        </div>
+
+    </div>
+
+    <!-- Footer Action -->
+    <div class="action-footer">
+        <button type="button" class="btn-validate" id="btnFinishGrain" onclick="if(typeof finishGrain==='function'){finishGrain();}return false;">Terminer ce Grain <i class="fa-solid fa-check"></i></button>
+    </div>
+
+    <!-- Modal pour Feedback -->
+    <div class="modal-overlay" id="feedbackModal">
+        <div class="modal-box">
+            <div id="modalIcon" style="font-size: 3rem; margin-bottom: 10px;"></div>
+            <div class="modal-title" id="modalTitle">Titre</div>
+            <p id="modalMessage">Message</p>
+            <button type="button" class="modal-btn" id="btnModalClose">Continuer</button>
+        </div>
+    </div>
+
+    <script>
+        // Theme Management
+        var GRAIN_ID = 'grain15';
+        var SOMMAIRE_URL = 'sommaire_sequence3.html';
+        function getState() {
+            var fromAPI = (typeof ScormAPI !== 'undefined' && ScormAPI.isAvailable()) ? (ScormAPI.getSuspendData() || '') : '';
+            var fromLS = ''; try { fromLS = localStorage.getItem('module-r_suspend') || ''; } catch (e) {}
+            function parse(r) { if (!r) return {}; try { return JSON.parse(r); } catch (e) { return {}; } }
+            var a = parse(fromAPI), b = parse(fromLS);
+            var c = { completed: [], scores: {}, theme: a.theme || b.theme };
+            var seen = {}; (a.completed || []).concat(b.completed || []).forEach(function (g) { if (!seen[g]) { seen[g] = 1; c.completed.push(g); } });
+            var so = {}; [a.scores, b.scores].forEach(function (s) { if (s) for (var k in s) if (s[k] !== undefined) so[k] = s[k]; }); c.scores = so;
+            return c;
+        }
+        function setState(o) { var s = JSON.stringify(o); if (s.length > 4000) return; if (typeof ScormAPI !== 'undefined' && ScormAPI.isAvailable()) { ScormAPI.setSuspendData(s); ScormAPI.commit(); } try { localStorage.setItem('module-r_suspend', s); } catch (e) {} }
+        function scormMarkCompleted(score) {
+            var state = getState();
+            state.completed = state.completed || [];
+            state.scores = state.scores || {};
+            if (state.completed.indexOf(GRAIN_ID) === -1) state.completed.push(GRAIN_ID);
+            state.scores[GRAIN_ID] = (score !== undefined) ? score : 1;
+            setState(state);
+            if (typeof ScormAPI !== 'undefined' && ScormAPI.isAvailable()) {
+                var all = ['grain1','grain2','grain3','grain4','grain5','grain6','grain7','grain8','grain9','grain10','grain11','grain12','grain13','grain_exp21','grain14','grain15','grain16','grain17','grain18'];
+                var comp = state.completed || [], sc = state.scores || {};
+                var n = 0, tot = 0;
+                for (var i = 0; i < all.length; i++) {
+                    if (comp.indexOf(all[i]) !== -1) n++;
+                    tot += (sc[all[i]] === 1 ? 1 : 0);
+                }
+                var pct = all.length ? Math.round((n / all.length) * 100) : 0;
+                var scorePct = all.length ? Math.round((tot / all.length) * 100) : 0;
+                ScormAPI.setScore(scorePct, 0, 100);
+                ScormAPI.setLessonStatus(pct >= 100 ? 'completed' : 'incomplete');
+                ScormAPI.commit();
+            }
+        }
+        function toggleTheme() { document.body.classList.toggle('dark-mode'); var state = getState(); state.theme = document.body.classList.contains('dark-mode') ? 'dark' : 'light'; setState(state); }
+        if (getState().theme === 'dark') document.body.classList.add('dark-mode');
+
+        // Modal Logic
+        var modal = document.getElementById('feedbackModal');
+        var modalTitle = document.getElementById('modalTitle');
+        var modalMsg = document.getElementById('modalMessage');
+        var modalIcon = document.getElementById('modalIcon');
+        var modalBox = modal ? modal.querySelector('.modal-box') : null;
+        var modalBtn = modal ? modal.querySelector('.modal-btn') : null;
+
+        function showModal(title, msg, type) {
+            modalTitle.innerText = title;
+            modalMsg.innerText = msg;
+            modal.classList.add('active');
+            
+            if(type === 'success') {
+                modalIcon.innerHTML = '<i class="fa-solid fa-circle-check" style="color: var(--teal);"></i>';
+                modalTitle.style.color = 'var(--teal)';
+                modalBox.style.borderTopColor = 'var(--teal)';
+                modalBtn.style.backgroundColor = 'var(--teal)';
+            } else {
+                modalIcon.innerHTML = '<i class="fa-solid fa-circle-xmark" style="color: var(--orange);"></i>';
+                modalTitle.style.color = 'var(--orange)';
+                modalBox.style.borderTopColor = 'var(--orange)';
+                modalBtn.style.backgroundColor = 'var(--orange)';
+            }
+        }
+
+        function closeModal() {
+            modal.classList.remove('active');
+        }
+
+        // Validation : répondre au quiz valide le grain ; le score (0/1) est enregistré indépendamment.
+        function finishGrain() {
+            const radios = document.getElementsByName('q15'); 
+            let val = ""; 
+            for(const r of radios) if(r.checked) val = r.value;
+            if (val === "") { alert("Veuillez sélectionner une réponse au quiz."); return; }
+            var score = (val === "correct") ? 1 : 0;
+            try { scormMarkCompleted(score); } catch (e) { try { var st = getState(); st.completed = st.completed || []; st.scores = st.scores || {}; if (st.completed.indexOf(GRAIN_ID) === -1) st.completed.push(GRAIN_ID); st.scores[GRAIN_ID] = score; setState(st); } catch (e2) {} }
+            if (val === "correct") { 
+                showModal("Correct !", "C'est exact. Pour RID, la radicalité se mesure à l'aune du changement d'usage pour l'humain, pas de la performance interne.", "success");
+                setTimeout(() => { const btn = document.getElementById('btnModalClose'); if(btn) { btn.innerText = "Retour au Sommaire"; btn.onclick = function() { window.location.href = SOMMAIRE_URL + '#grain15'; }; } }, 100);
+            } else { 
+                showModal("Incorrect", "Regardez le bas de l'échelle : 'Internal change' et 'Process change' sont dans la zone 'Not perceived'. Le grain est validé ; vous pouvez retourner au sommaire.", "error");
+                setTimeout(() => { const btn = document.getElementById('btnModalClose'); if(btn) { btn.innerText = "Retour au Sommaire"; btn.onclick = function() { window.location.href = SOMMAIRE_URL + '#grain15'; }; } }, 100);
+            }
+        }
+        function initGrain() {
+            try {
+                var btnFinish = document.getElementById('btnFinishGrain');
+                var btnClose = document.getElementById('btnModalClose');
+                if (btnFinish) {
+                    btnFinish.addEventListener('click', finishGrain);
+                    btnFinish.onclick = function(e) { e.preventDefault(); finishGrain(); };
+                }
+                if (btnClose) {
+                    btnClose.addEventListener('click', closeModal);
+                    btnClose.onclick = function(e) { e.preventDefault(); closeModal(); };
+                }
+            } catch (e) { console.warn('initGrain:', e); }
+        }
+        if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', initGrain);
+        else setTimeout(initGrain, 0);
+    </script>
+</body>
+</html>

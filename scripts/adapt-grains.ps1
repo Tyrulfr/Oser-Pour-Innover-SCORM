@@ -1,4 +1,4 @@
-# Adapte les grains site -> SCORM (module1)
+﻿# Adapte les grains site -> SCORM (module1)
 $src = "c:\Users\cduboi4\Documents\Ingénierie\01_INNOV\04_Conception\projet_inno_pui\pages\apprenant\cours\sensibilisation\module1"
 $dst = "c:\Users\cduboi4\Documents\Ingénierie\01_INNOV\04_Conception\Oser-Pour-Innover-SCORM\modules\module1"
 

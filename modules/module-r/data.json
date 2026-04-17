@@ -1,0 +1,4 @@
+﻿{
+  "description": "Structure des états à sauver en suspend_data (optionnel)",
+  "fields": ["progress", "currentSlide", "answers"]
+}

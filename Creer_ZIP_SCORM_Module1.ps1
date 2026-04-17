@@ -1,7 +1,7 @@
-# Creer_ZIP_SCORM_Module1.ps1
+﻿# Creer_ZIP_SCORM_Module1.ps1
 # DEPRECATED : l'ancienne structure SCORM_MODULE1_A_ZIPPER n'existe plus.
 # Utiliser a la place :  .\build.ps1
-# Genere module0-avancement.zip (Module 0 sensibilisation) et module1-retours.zip (Module 1 temoignages).
+# Genere module-r-avancement.zip (Module Ressources sensibilisation) et module1-retours.zip (Module 1 temoignages).
 
 $ErrorActionPreference = "Stop"
 $scriptDir = Split-Path -Parent $MyInvocation.MyCommand.Path
