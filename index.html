@@ -38,6 +38,40 @@
         .btn-primary { background: var(--bordeaux); border: 2px solid var(--bordeaux); color: white; }
         .btn-secondary { background: transparent; border: 2px solid var(--orange); color: var(--orange); }
         footer { padding: 20px; text-align: center; font-size: 0.8rem; opacity: 0.6; }
+
+        /* Tuile SCORM (téléchargement ZIP) */
+        .scorm-tile {
+            position: fixed;
+            bottom: 18px;
+            right: 18px;
+            z-index: 1000;
+            text-decoration: none;
+            color: white;
+            background: linear-gradient(135deg, var(--bordeaux), var(--orange));
+            border-radius: 16px;
+            padding: 12px 14px;
+            box-shadow: 0 12px 30px rgba(0,0,0,0.18);
+            font-weight: 900;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            transition: transform 0.2s ease, filter 0.2s ease;
+        }
+        .scorm-tile:hover { transform: translateY(-2px); filter: brightness(1.05); }
+        .scorm-tile .scorm-icon {
+            width: 38px;
+            height: 38px;
+            border-radius: 12px;
+            background: rgba(255,255,255,0.16);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            font-size: 1.05rem;
+        }
+        .scorm-tile .scorm-text { display: flex; flex-direction: column; line-height: 1.1; }
+        .scorm-tile .scorm-title { font-size: 1rem; }
+        .scorm-tile .scorm-sub { font-size: 0.78rem; opacity: 0.92; font-weight: 800; }
     </style>
 </head>
 <body>
@@ -48,14 +82,8 @@
     <section class="hero">
         <h1>OSER POUR<br><span style="color: var(--orange);">INNOVER</span></h1>
         <p class="subtitle">Plateforme de sensibilisation a l'innovation avec un acces web simple aux modules HTML et une conservation de la couche SCORM pour l'exploitation LMS.</p>
-        <p class="hero-note">Le site public s'appuie sur un portail d'entree clair, tandis que les fichiers techniques SCORM restent dans le projet sans etre exposes comme navigation principale.</p>
+        <p class="hero-note">Le site web se consulte via des pages HTML publiques. Les paquets SCORM (ZIP) sont accessibles via la tuile « SCORM » en bas à droite.</p>
         <div class="cards-container">
-            <div class="card" onclick="window.location.href='modules/index.html'">
-                <i class="fa-solid fa-rocket icon user-icon"></i>
-                <h3>Portail de sensibilisation</h3>
-                <p>Point d'entree principal du site pour naviguer entre les modules HTML du parcours.</p>
-                <span class="btn btn-outline">Ouvrir le portail</span>
-            </div>
             <div class="card" onclick="window.location.href='modules/module0/index.html'">
                 <i class="fa-solid fa-lightbulb icon module-icon"></i>
                 <h3>Module M1</h3>
@@ -71,6 +99,14 @@
         </div>
     </section>
     <footer>&copy; 2026 OSER POUR INNOVER - V 1.0</footer>
+
+    <a class="scorm-tile" href="modules/scorm-download.html" aria-label="Télécharger les paquets SCORM">
+        <span class="scorm-icon"><i class="fa-solid fa-graduation-cap"></i></span>
+        <span class="scorm-text">
+            <span class="scorm-title">SCORM</span>
+            <span class="scorm-sub">Télécharger</span>
+        </span>
+    </a>
     <script>
         function toggleTheme() {
             document.body.classList.toggle('dark-mode');

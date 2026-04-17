@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SCORM - Télécharger | OSER POUR INNOVER</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    :root { --bordeaux:#580F45; --orange:#F48C2E; --teal:#2EAF7D; --blue:#2A325E; --bg:#F8F9FA; --card:#fff; --text:#2A325E; --muted:#666; }
+    body { margin:0; padding:0; font-family:'Open Sans', sans-serif; background:var(--bg); color:var(--text); line-height:1.7; padding-bottom:60px; }
+    body.dark-mode { background:#1A1D2E; color:#EAEAEA; }
+    h1 { font-family:'Montserrat', sans-serif; color:var(--bordeaux); margin:0 0 1rem; font-size:2.2rem; }
+    body.dark-mode h1 { color:var(--orange); }
+    a { color:inherit; }
+    .top { background:var(--card); border-bottom:3px solid var(--bordeaux); padding:1rem 5%; position:sticky; top:0; z-index:10; display:flex; justify-content:space-between; align-items:center; gap:12px; }
+    .btn-back { text-decoration:none; font-weight:800; display:flex; gap:10px; align-items:center; }
+    .btn { display:inline-flex; align-items:center; gap:10px; padding:10px 14px; border-radius:14px; font-weight:900; text-decoration:none; border:2px solid var(--bordeaux); background:transparent; }
+    .btn-primary { background:var(--bordeaux); color:#fff; border-color:var(--bordeaux); }
+    .container { max-width:980px; margin:2.2rem auto; padding:0 1.5rem; }
+    .card { background:var(--card); border:1px solid rgba(0,0,0,0.06); border-radius:18px; padding:1.4rem 1.5rem; box-shadow:0 10px 30px rgba(0,0,0,0.04); }
+    .grid { display:grid; gap:1.2rem; grid-template-columns:1fr; margin-top:1.2rem; }
+    .list { margin:0; padding-left:1.2rem; color:var(--muted); }
+    code { background: rgba(0,0,0,0.05); padding:2px 6px; border-radius:8px; }
+    .small { color:var(--muted); font-size:0.95rem; }
+    @media (min-width: 820px){ .grid { grid-template-columns: 1fr 1fr; } }
+  </style>
+</head>
+<body>
+  <nav class="top">
+    <a href="../index.html" class="btn-back"><i class="fa-solid fa-chevron-left"></i> Accueil</a>
+    <button type="button" onclick="toggleTheme()" style="background:none;border:none;cursor:pointer;font-size:1.2rem;color:var(--text)"><i class="fa-solid fa-moon"></i></button>
+  </nav>
+
+  <div class="container">
+    <h1><i class="fa-solid fa-file-zipper" style="margin-right:10px;color:var(--bordeaux)"></i> Paquets SCORM (ZIP)</h1>
+
+    <div class="card">
+      <p class="small" style="margin:0 0 1rem;">
+        Les ZIP SCORM sont <strong>générés</strong> à partir des dossiers du projet.
+        Ils ne sont pas commités dans Git (règle <code>*.zip</code> dans <code>.gitignore</code>), donc la génération se fait localement.
+      </p>
+      <p class="small" style="margin:0 0 1rem;">
+        Utilisez soit <code>build.ps1</code> (Windows/PowerShell) soit <code>build.sh</code> (Git Bash/WSL).
+      </p>
+      <ul class="list">
+        <li><code>.\build.ps1</code> → génère <code>module0-avancement.zip</code> et <code>module1-retours.zip</code></li>
+        <li><code>./build.sh</code> → même résultat si les dossiers existent</li>
+      </ul>
+      <div style="margin-top:1.2rem; display:flex; gap:12px; flex-wrap:wrap;">
+        <a class="btn btn-primary" href="../build.ps1"><i class="fa-brands fa-windows"></i> Ouvrir build.ps1</a>
+        <a class="btn" href="../build.sh"><i class="fa-solid fa-terminal"></i> Ouvrir build.sh</a>
+        <a class="btn" href="../README.md"><i class="fa-solid fa-book"></i> Détails README</a>
+      </div>
+    </div>
+
+    <div class="grid">
+      <div class="card">
+        <h2 style="margin:0 0 0.5rem; font-size:1.2rem;"><i class="fa-solid fa-layer-group" style="color:var(--teal); margin-right:8px;"></i> Module 0 (Sensibilisation)</h2>
+        <p class="small" style="margin:0 0 0.8rem;">Paquet à déposer dans Moodle pour le Module 0.</p>
+        <ul class="list">
+          <li><code>module0-avancement.zip</code></li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h2 style="margin:0 0 0.5rem; font-size:1.2rem;"><i class="fa-solid fa-comments" style="color:var(--orange); margin-right:8px;"></i> Module 1 (Retours)</h2>
+        <p class="small" style="margin:0 0 0.8rem;">Paquet à déposer dans Moodle pour le Module 1.</p>
+        <ul class="list">
+          <li><code>module1-retours.zip</code></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function toggleTheme() {
+      document.body.classList.toggle('dark-mode');
+      try { localStorage.setItem('theme', document.body.classList.contains('dark-mode') ? 'dark' : 'light'); } catch (e) {}
+    }
+    window.onload = function () {
+      try {
+        if (localStorage.getItem('theme') === 'dark') document.body.classList.add('dark-mode');
+      } catch (e) {}
+    };
+  </script>
+</body>
+</html>
