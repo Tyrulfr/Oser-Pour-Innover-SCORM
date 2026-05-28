@@ -1,4 +1,4 @@
-﻿# Creer_ZIP_SCORM_Module1.ps1
+# Creer_ZIP_SCORM_Module1.ps1
 # DEPRECATED : l'ancienne structure SCORM_MODULE1_A_ZIPPER n'existe plus.
 # Utiliser a la place :  .\build.ps1
 # Genere module-r-avancement.zip (Module Ressources sensibilisation) et module1-retours.zip (Module 1 temoignages).

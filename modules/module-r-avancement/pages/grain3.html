@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
@@ -213,7 +213,7 @@
         .back-list li:last-child { border-bottom: none; }
         .back-list i { color: var(--teal); font-size: 1.1rem; width: 25px; text-align: center; }
 
-        /* --- SCH�?MA YANNOU & CLUZEL (CSS) --- */
+        /* --- SCHÉMA YANNOU & CLUZEL (CSS) --- */
         .yannou-container {
             display: flex;
             flex-wrap: nowrap;
@@ -397,7 +397,7 @@
             <div class="flip-card" onclick="this.classList.toggle('flipped')">
                 <div class="flip-card-inner">
                     <div class="flip-card-front">
-                        <h4><i class="fa-solid fa-users-gear" style="color:var(--teal); font-size: 2rem; display:block; margin-bottom:10px;"></i> �?quipe Multidisciplinaire</h4>
+                        <h4><i class="fa-solid fa-users-gear" style="color:var(--teal); font-size: 2rem; display:block; margin-bottom:10px;"></i> Équipe Multidisciplinaire</h4>
                         <p>L'innovation ne se fait pas seul. Elle nécessite des profils variés pour croiser les regards.</p>
                         <div class="flip-indicator"><i class="fa-solid fa-rotate"></i> Retourner pour voir l'équipe</div>
                     </div>
@@ -433,7 +433,7 @@
             </div>
         </div>
 
-        <!-- SCH�?MA DESSIN�? EN CSS -->
+        <!-- SCHÉMA DESSINÉ EN CSS -->
         <div style="margin-top: 4rem; text-align: center;">
             <h3 style="color: var(--bordeaux); margin-bottom: 0.5rem;">Chaîne de Valeur de l'Innovation</h3>
             <p style="color: var(--text-light); font-size: 0.9rem; margin-bottom: 1.5rem;">Décomposition des étapes clés</p>
@@ -456,7 +456,7 @@
                     <div class="y-title">Commercial</div>
                     <div class="y-desc">Conception Commerciale</div>
                 </div>
-                <div class="y-methodo-label">M�?THODOLOGIE INNOVANTE</div>
+                <div class="y-methodo-label">MÉTHODOLOGIE INNOVANTE</div>
             </div>
 
             <p style="margin-top: 25px; font-size: 0.8rem; color: var(--text-light); font-style: italic;">
@@ -479,7 +479,7 @@
                 </div>
                 <div style="margin-bottom: 10px;">
                     <input type="radio" id="q3c" name="q3" value="wrong">
-                    <label for="q3c">�?liminer le besoin de recherche</label>
+                    <label for="q3c">Éliminer le besoin de recherche</label>
                 </div>
             </form>
         </div>
@@ -580,7 +580,7 @@
                 var score = (val === 'correct') ? 1 : 0;
                 try { scormMarkCompleted(score); } catch (e) { try { var st = getState(); st.completed = st.completed || []; st.scores = st.scores || {}; if (st.completed.indexOf(GRAIN_ID) === -1) st.completed.push(GRAIN_ID); st.scores[GRAIN_ID] = score; setState(st); } catch (e2) {} }
                 if (val === 'correct') { 
-                    showModal('Exactement !', "L'Innovation utilise le savoir (créé par la recherche) pour générer de la valeur (économique ou sociale).", 'success');
+                    showModal('Exactement !', "L'Innovation utilise le savoir (créé par la recherche) pour générer de la valeur (Économique ou sociale).", 'success');
                     setTimeout(function() { var btn = document.getElementById('btnModalClose'); if (btn) { btn.innerText = 'Retour au Sommaire'; btn.onclick = function() { window.location.href = SOMMAIRE_URL + '#grain3'; }; } }, 100);
                 } else { 
                     showModal('Inverse', "Transformer l'argent en savoir, c'est la Recherche. L'Innovation fait le chemin inverse. Le grain est validé ; vous pouvez retourner au sommaire.", 'error');

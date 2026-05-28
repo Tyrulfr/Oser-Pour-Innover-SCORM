@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
@@ -28,7 +28,7 @@
         .def-box { background: linear-gradient(135deg, var(--blue), var(--bordeaux)); color: white; padding: 2rem; border-radius: 15px; margin: 2rem 0; box-shadow: 0 10px 20px rgba(42, 50, 94, 0.2); position: relative; }
         .def-quote { font-size: 1.2rem; font-weight: 500; text-align: center; margin-bottom: 1rem; display: block; font-style: italic; }
 
-        /* --- STYLES DU SCH�?MA --- */
+        /* --- STYLES DU SCHÉMA --- */
         .complex-diagram-wrapper {
             background: var(--bg-card);
             border-radius: 20px;
@@ -69,7 +69,7 @@
         .node-icon { font-size: 1.5rem; margin-bottom: 5px; color: var(--text-light); }
         .node-text-top { position: absolute; top: -25px; left: 50%; transform: translateX(-50%); width: 100%; font-size: 0.75rem; color: #888; font-weight: 600; }
 
-        /* --- CLASSE POUR LE PRIV�? (BLEU) --- */
+        /* --- CLASSE POUR LE PRIVÉ (BLEU) --- */
         .private-node {
             border-color: var(--blue) !important;
             color: var(--blue) !important;
@@ -85,7 +85,7 @@
         }
         .private-label i { color: var(--blue) !important; }
 
-        /* --- POSITIONNEMENT DES NOEUDS COMPACT�? --- */
+        /* --- POSITIONNEMENT DES NOEUDS COMPACTÉ --- */
         
         /* 1. INPUTS (Gauche) */
         #node-prive { 
@@ -113,7 +113,7 @@
         #node-spinoff { top: 150px; left: 820px; width: 120px; }
         #node-startup { top: 310px; left: 820px; width: 120px; }
         
-        /* 6. MARCH�? & SOCI�?T�? */
+        /* 6. MARCHÉ & SOCIÉTÉ */
         #node-market { top: 450px; left: 820px; width: 140px; }
         #node-society { top: 550px; left: 390px; border-color: #666; border-radius: 50%; width: 100px; height: 100px; }
 
@@ -192,7 +192,7 @@
         <div class="def-box">
             <span class="def-quote">
                 <i class="fa-solid fa-info-circle" style="opacity:0.8; margin-right:10px;"></i>
-                Ce schéma illustre comment l'argent investi en recherche se transforme en innovation et en valeur économique pour la société.
+                Ce schéma illustre comment l'argent investi en recherche se transforme en innovation et en valeur Économique pour la société.
             </span>
         </div>
 
@@ -231,13 +231,13 @@
                 <!-- 7. LOOP: VENTE -> FINANCE -->
                 <path d="M 620 70 L 190 70 L 190 230" stroke="#F48C2E" stroke-width="2" stroke-dasharray="5,5" fill="none" marker-end="url(#arrowhead-loop)" />
 
-                <!-- 8. STARTUP -> MARCH�? -->
+                <!-- 8. STARTUP -> MARCHÉ -->
                 <line x1="880" y1="360" x2="890" y2="450" stroke="#aaa" stroke-width="2" marker-end="url(#arrowhead)" />
 
                 <!-- 9. LOOP: STARTUP -> FINANCE -->
                 <path d="M 900 370 L 900 650 L 190 650 L 190 300" stroke="#F48C2E" stroke-width="2" stroke-dasharray="5,5" fill="none" marker-end="url(#arrowhead-loop)" />
 
-                <!-- 10. MARCH�? -> SOCI�?T�? -->
+                <!-- 10. MARCHÉ -> SOCIÉTÉ -->
                 <path d="M 820 490 Q 660 550 490 580" stroke="#aaa" stroke-width="2" fill="none" marker-end="url(#arrowhead)" />
 
             </svg>
@@ -390,14 +390,14 @@
 
         const definitions = {
             "Privé": "Investissements R&D d'entreprises ou fonds privés (VC, Business Angels).",
-            "Public": "Financement public (�?tat, ANR, Europe) pour la recherche amont.",
+            "Public": "Financement public (État, ANR, Europe) pour la recherche amont.",
             "Financement": "Ressources nécessaires pour lancer les projets de recherche.",
             "R&T": "Recherche & Technologie : Exploration scientifique.",
             "Connaissances": "Stock de savoir, brevets et technologies disponibles.",
             "Science Ouverte": "Diffusion libre du savoir pour le bien commun.",
             "Développement": "Transformation de l'invention en produit (Prototypage).",
             "Innovation": "Processus global transformant une idée ou invention en un produit/service créant de la valeur pour les utilisatrices et utilisateurs.",
-            "Valorisation": "Donner une valeur économique à la recherche.",
+            "Valorisation": "Donner une valeur Économique à la recherche.",
             "Lancement": "Mise sur le marché du produit final.",
             "Vente Directe": "Cession de brevet à une autre entreprise.",
             "Licence": "Droit d'utilisation contre redevances (finance la recherche).",

@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
@@ -58,7 +58,7 @@
         .btn-validate { background: var(--teal); color: white; border: none; padding: 12px 30px; border-radius: 50px; font-weight: 800; font-size: 1rem; cursor: pointer; display: flex; align-items: center; gap: 10px; box-shadow: 0 5px 15px rgba(46, 175, 125, 0.3); }
         .btn-validate:hover { transform: translateY(-3px); box-shadow: 0 8px 20px rgba(46, 175, 125, 0.4); }
 
-        /* Custom Modal �?" z-index élevé pour s'afficher dans l'iframe Moodle */
+        /* Custom Modal — z-index élevé pour s'afficher dans l'iframe Moodle */
         .modal-overlay { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.7); display: none; justify-content: center; align-items: center; z-index: 99999; opacity: 0; transition: opacity 0.3s ease; }
         .modal-overlay.active { display: flex !important; opacity: 1 !important; }
         .modal-box { background: var(--bg-card); padding: 2rem; border-radius: 15px; max-width: 400px; text-align: center; border-top: 5px solid var(--orange); transform: translateY(20px); transition: transform 0.3s ease; }
@@ -89,7 +89,7 @@
                 <i class="fa-solid fa-quote-left" style="opacity:0.5; margin-right:10px;"></i>
                 L'innovation est à la fois un <span style="text-decoration:underline;">processus</span> et un <span style="text-decoration:underline;">résultat</span>, dans lequel quelque chose de <span style="text-decoration:underline;">nouveau</span> est créé qui apporte de la <span style="text-decoration:underline;">valeur</span> à certaines personnes.
                 <br><br>
-                Autrement dit, une innovation est une invention (nouveauté) qui rencontre son marché (personnes qui en ont un usage, une utilité) en créant de la valeur socio-économique.
+                Autrement dit, une innovation est une invention (nouveauté) qui rencontre son marché (personnes qui en ont un usage, une utilité) en créant de la valeur socio-Économique.
             </span>
         </div>
 
@@ -108,8 +108,8 @@
             <div class="pillar-card">
                 <i class="fa-solid fa-box pillar-icon"></i>
                 <span class="pillar-title">2. "Quelque chose"</span>
-                <p>Comment caractériser le résultat d�?Tune innovation ?</p>
-                <p>Les résultats innovants sont de nature différente (produit, service, organisation, système, mission, logiciel�?�). Par conséquent, les méthodes de conception innovante doivent être adaptées à la <strong>nature du résultat attendu</strong>.</p>
+                <p>Comment caractériser le résultat d’une innovation ?</p>
+                <p>Les résultats innovants sont de nature différente (produit, service, organisation, système, mission, logiciel…). Par conséquent, les méthodes de conception innovante doivent être adaptées à la <strong>nature du résultat attendu</strong>.</p>
             </div>
 
             <!-- Pilier 3 : La Nouveauté -->
@@ -132,7 +132,7 @@
         <!-- Section Piège -->
         <div class="trap-box">
             <i class="fa-solid fa-triangle-exclamation trap-icon"></i>
-            <h3>Attention : Nouveauté �?� Valeur</h3>
+            <h3>Attention : Nouveauté ≠ Valeur</h3>
             <p>La simple nouveauté technique ou conceptuelle ne garantit pas la valeur.</p>
             <p style="font-weight:bold; margin-top:10px;">"Comment et pourquoi pensez-vous que cette nouveauté pourrait améliorer quelque chose ?"</p>
         </div>
@@ -152,7 +152,7 @@
                         <li><strong>Employées et employés :</strong> Conditions de travail, fierté, outils.</li>
                         <li><strong>Actionnaires & Investisseurs :</strong> Retour sur investissement.</li>
                         <li><strong>Acteurs de la chaîne de valeur :</strong> Fournisseurs, distributeurs.</li>
-                        <li><strong>Nations & Société :</strong> Impact écologique, social, économique.</li>
+                        <li><strong>Nations & Société :</strong> Impact Écologique, social, Économique.</li>
                     </ul>
                 </div>
             </div>
@@ -285,7 +285,7 @@
                         if (btn) { btn.innerText = 'Retour au Sommaire'; btn.onclick = function() { window.location.href = SOMMAIRE_URL + '#grain1'; }; }
                     }, 100);
                 } else { 
-                    showModal('Pas tout à fait', "Relisez la section 'Attention : Nouveauté �?� Valeur'. La valeur est indispensable. Le grain est validé ; vous pouvez retourner au sommaire.", 'error');
+                    showModal('Pas tout à fait', "Relisez la section 'Attention : Nouveauté ≠ Valeur'. La valeur est indispensable. Le grain est validé ; vous pouvez retourner au sommaire.", 'error');
                     setTimeout(function() {
                         var btn = document.getElementById('btnModalClose');
                         if (btn) { btn.innerText = 'Retour au Sommaire'; btn.onclick = function() { window.location.href = SOMMAIRE_URL + '#grain1'; }; }

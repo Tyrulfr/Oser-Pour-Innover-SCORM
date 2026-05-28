@@ -1,4 +1,4 @@
-﻿#!/usr/bin/env bash
+#!/usr/bin/env bash
 # Build SCORM ZIP : contenu du module a la racine du ZIP (imsmanifest.xml au root).
 # Module Ressources (sensibilisation) puis Module 1 (retours) si dossiers presents.
 set -e

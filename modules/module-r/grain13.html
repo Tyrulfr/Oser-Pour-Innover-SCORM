@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
@@ -178,7 +178,7 @@
             <span class="def-quote">
                 <i class="fa-solid fa-route" style="opacity:0.8; margin-right:10px;"></i>
                 La <strong>CJM</strong> décrit l'expérience d'un utilisateur ou d'une utilisatrice (Persona) sur une durée donnée.
-                Elle permet de comprendre ses comportements, pensées et émotions à chaque étape.
+                Elle permet de comprendre ses comportements, pensées et Émotions à chaque étape.
             </span>
         </div>
 
@@ -186,7 +186,7 @@
         <div class="persona-context">
             <div class="pc-avatar"><i class="fa-solid fa-user-graduate"></i></div>
             <div class="pc-info">
-                <h3>Romane, �?tudiante</h3>
+                <h3>Romane, Étudiante</h3>
                 <p>Scénario : Une journée type (Cours + Activités perso).</p>
                 <div class="pc-tags">
                     <span class="pc-tag">Budget limité</span>
@@ -287,11 +287,11 @@
         <!-- Quiz -->
         <div style="margin-top: 4rem; padding: 2rem; background: var(--bg-card); border-radius: 15px; border: 1px solid #ddd; border-left: 5px solid var(--teal);">
             <h3><i class="fa-solid fa-clipboard-question"></i> Quiz de Validation</h3>
-            <p>En vous appuyant sur la frise (étiquettes d�?Thumeur et détails au clic), quelle <strong>douleur (pain point)</strong> revient à <strong>plusieurs étapes</strong> du parcours de Romane ?</p>
+            <p>En vous appuyant sur la frise (étiquettes d’humeur et détails au clic), quelle <strong>douleur (pain point)</strong> revient à <strong>plusieurs étapes</strong> du parcours de Romane ?</p>
             <form id="quizForm">
                 <div style="margin-bottom: 10px;">
                     <input type="radio" id="q13a" name="q13" value="wrong">
-                    <label for="q13a">L�?Tindisponibilité du vélo en libre-service aux heures de pointe.</label>
+                    <label for="q13a">L’indisponibilité du vélo en libre-service aux heures de pointe.</label>
                 </div>
                 <div style="margin-bottom: 10px;">
                     <input type="radio" id="q13b" name="q13" value="correct">
@@ -427,11 +427,11 @@
             var score = (val === "correct") ? 1 : 0;
             try { scormMarkCompleted(score); } catch (e) { try { var st = getState(); st.completed = st.completed || []; st.scores = st.scores || {}; if (st.completed.indexOf(GRAIN_ID) === -1) st.completed.push(GRAIN_ID); st.scores[GRAIN_ID] = score; setState(st); } catch (e2) {} }
             if (val === "correct") { 
-                showModal("Bien vu !", "Sur cette CJM, le frein budgétaire est un pain point récurrent : il apparaît clairement sur la frise (retour, soirée) et dans plusieurs observations au clic. C�?Test exactement le type d�?Tirritant qu�?Ton cherche à cartographier.", "success");
+                showModal("Bien vu !", "Sur cette CJM, le frein budgétaire est un pain point récurrent : il apparaît clairement sur la frise (retour, soirée) et dans plusieurs observations au clic. C’est exactement le type d’irritant qu’on cherche à cartographier.", "success");
                 setTimeout(() => { const btn = document.getElementById('btnModalClose'); if(btn) { btn.innerText = "Retour au Sommaire"; btn.onclick = function() { window.location.href = SOMMAIRE_URL + '#grain13'; }; } }, 100);
             } else { 
                 modalTitle.innerText = "Pas tout à fait";
-                modalMsg.innerText = "Relisez la question : il s�?Tagit d�?Tune douleur qui se répète sur le parcours. Sur la frise, l�?Tétiquette « trop cher » revient à plusieurs moments ; les autres options concernent surtout une seule étape. Le grain est validé ; vous pouvez retourner au sommaire.";
+                modalMsg.innerText = "Relisez la question : il s’agit d’une douleur qui se répète sur le parcours. Sur la frise, l’étiquette « trop cher » revient à plusieurs moments ; les autres options concernent surtout une seule étape. Le grain est validé ; vous pouvez retourner au sommaire.";
                 modalIcon.innerHTML = '<i class="fa-solid fa-circle-xmark" style="color: var(--orange);"></i>';
                 modalTitle.style.color = 'var(--orange)';
                 modalBox.style.borderTopColor = 'var(--orange)';

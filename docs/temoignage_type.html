@@ -1,15 +1,15 @@
-﻿<!--
+<!--
 ================================================================================
-  MATRICE : Page témoignage �?" L'esprit d'innover
+  MATRICE : Page témoignage — L'esprit d'innover
 ================================================================================
   Ce fichier est le modèle pour toutes les pages "témoignage" du module 2.
   Pour créer une nouvelle page témoignage :
   1. Copier ce fichier vers modules/module2/temoignage_NOM.html (ou modules/module1-retours/pages/temoignage_NOM.html pour le package SCORM).
-  2. Remplacer tous les blocs marqués [PLACEHOLDER] ou [�? REMPLACER] ci-dessous.
+  2. Remplacer tous les blocs marqués [PLACEHOLDER] ou [À REMPLACER] ci-dessous.
   3. Dans le package SCORM : adapter les chemins (../SCORM_API.js, ../index.html).
   4. Depuis modules/module2 (hors SCORM) : utiliser ../../scorm-api/SCORM_API.js et index.html.
 
-  �?léments à personnaliser :
+  Éléments à personnaliser :
   - <title> : "Témoignage : Prénom Nom | L'esprit d'innover"
   - data-grain : identifiant unique (ex. temoignage_loic)
   - .hero-title : titre principal (ex. "Du CNRS à la Deeptech")
@@ -18,7 +18,7 @@
   - .video-meta : "Prénom Nom (Organisation) - Durée : MM:SS"
   - iframe src : URL YouTube embed (ex. https://www.youtube.com/embed/VIDEO_ID)
   - .video-footer : texte de contexte
-  - 3 �- .point-card : icône (Font Awesome), .point-title, .point-text
+  - 3 × .point-card : icône (Font Awesome), .point-title, .point-text
   - .quiz-question : la question
   - 3 options : value="correct" sur la bonne réponse, value="wrong" sur les autres
   - mText (réponse correcte) et mText (réponse incorrecte) dans checkQuiz()
@@ -89,33 +89,33 @@
     </nav>
 
     <div class="content-container">
-        <!-- [�? REMPLACER] Titre principal du témoignage -->
-        <h1 class="hero-title">[Titre principal �?" ex. Du labo à la startup]</h1>
+        <!-- [À REMPLACER] Titre principal du témoignage -->
+        <h1 class="hero-title">[Titre principal — ex. Du labo à la startup]</h1>
         <div class="hero-subtitle">[Sous-titre / accroche en une phrase.]</div>
 
         <div class="video-card">
             <div class="video-header">
                 <div class="play-icon"><i class="fa-solid fa-play"></i></div>
                 <div class="video-title-group">
-                    <!-- [�? REMPLACER] Titre affiché au-dessus de la vidéo -->
+                    <!-- [À REMPLACER] Titre affiché au-dessus de la vidéo -->
                     <h3>[Titre de la vidéo]</h3>
-                    <!-- [�? REMPLACER] Prénom Nom (Organisation) - Durée : MM:SS -->
+                    <!-- [À REMPLACER] Prénom Nom (Organisation) - Durée : MM:SS -->
                     <div class="video-meta">[Prénom Nom] ([Organisation]) - Durée : [MM:SS]</div>
                 </div>
             </div>
             <div class="video-wrapper">
-                <!-- [�? REMPLACER] Remplacer VIDEO_ID par l'ID YouTube (ex. pour https://www.youtube.com/watch?v=VIDEO_ID) -->
+                <!-- [À REMPLACER] Remplacer VIDEO_ID par l'ID YouTube (ex. pour https://www.youtube.com/watch?v=VIDEO_ID) -->
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
             <div class="video-footer">
                 <i class="fa-solid fa-circle-info" style="color:var(--teal); margin-right:5px;"></i>
-                <strong>Contexte :</strong> [Texte de contexte en 1�?"2 phrases : de quoi parle le témoignage, domaine, enjeu.]
+                <strong>Contexte :</strong> [Texte de contexte en 1–2 phrases : de quoi parle le témoignage, domaine, enjeu.]
             </div>
         </div>
 
         <h2 style="margin-top: 4rem; color:var(--bordeaux);">Les points clés du témoignage</h2>
         <div class="points-grid">
-            <!-- Carte 1 : [�? REMPLACER] icône (classe Font Awesome), titre, texte -->
+            <!-- Carte 1 : [À REMPLACER] icône (classe Font Awesome), titre, texte -->
             <div class="point-card">
                 <div class="point-icon"><i class="fa-solid fa-[icone]"></i></div>
                 <div class="point-title">[Titre point clé 1]</div>
@@ -137,7 +137,7 @@
 
         <div class="quiz-section">
             <h3><i class="fa-solid fa-clipboard-check"></i> Compréhension de la vidéo</h3>
-            <!-- [�? REMPLACER] Question du quiz -->
+            <!-- [À REMPLACER] Question du quiz -->
             <p class="quiz-question">[Selon [Prénom Nom], quelle est la bonne réponse ?]</p>
             <form id="videoQuiz">
                 <div class="quiz-option">
@@ -172,7 +172,7 @@
     </div>
 
     <script>
-        // [�? REMPLACER] Identifiant unique du grain (même que data-grain), ex. temoignage_loic
+        // [À REMPLACER] Identifiant unique du grain (même que data-grain), ex. temoignage_loic
         var GRAIN_ID = 'temoignage_XXX';
 
         function parseState(str) { try { return str ? JSON.parse(str) : {}; } catch (e) { return {}; } }
@@ -206,12 +206,12 @@
             var modal = document.getElementById('resultModal'); var mTitle = document.getElementById('mTitle'); var mText = document.getElementById('mText'); var mBox = modal.querySelector('.modal-box'); var mBtn = document.getElementById('btnModalClose');
             if (val === 'correct') {
                 mTitle.innerText = 'Exactement !'; mTitle.style.color = 'var(--teal)'; mBox.style.borderTopColor = 'var(--teal)'; mBtn.style.backgroundColor = 'var(--teal)';
-                // [�? REMPLACER] Message de feedback en cas de bonne réponse
+                // [À REMPLACER] Message de feedback en cas de bonne réponse
                 mText.innerText = "[Message à afficher quand la réponse est correcte.]";
                 modal.classList.add('active'); markCompleted(100);
             } else if (val === 'wrong') {
                 mTitle.innerText = 'Pas tout à fait'; mTitle.style.color = 'var(--orange)'; mBox.style.borderTopColor = 'var(--orange)'; mBtn.style.backgroundColor = 'var(--orange)';
-                // [�? REMPLACER] Message de feedback en cas de mauvaise réponse (indice pour réécouter)
+                // [À REMPLACER] Message de feedback en cas de mauvaise réponse (indice pour réécouter)
                 mText.innerText = "[Indice : où réécouter dans la vidéo, ou reformulation.]";
                 modal.classList.add('active');
             } else { alert('Veuillez sélectionner une réponse.'); }

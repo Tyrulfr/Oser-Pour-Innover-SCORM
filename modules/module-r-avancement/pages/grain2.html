@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
@@ -189,7 +189,7 @@
                         <p>La forme la plus classique. Innover sur l'objet tangible (le bien) ou la prestation immatérielle fournie (le service).</p>
                         <div class="flip-indicator"><i class="fa-solid fa-rotate"></i> Retourner</div>
                     </div>
-                    <!-- FACE ARRI�^RE -->
+                    <!-- FACE ARRIÈRE -->
                     <div class="flip-card-back">
                         <div class="back-title">Exemples Concrets</div>
                         <ul class="example-list">
@@ -211,7 +211,7 @@
                         <p>Une combinaison intégrée. On ne vend plus juste un produit, mais l'usage et les services associés.</p>
                         <div class="flip-indicator"><i class="fa-solid fa-rotate"></i> Retourner</div>
                     </div>
-                    <!-- FACE ARRI�^RE -->
+                    <!-- FACE ARRIÈRE -->
                     <div class="flip-card-back">
                         <div class="back-title">L'Usage avant tout</div>
                         <ul class="example-list">
@@ -223,17 +223,17 @@
                 </div>
             </div>
 
-            <!-- CARTE 3 : Modèle �?conomique -->
+            <!-- CARTE 3 : Modèle Économique -->
             <div class="flip-card" onclick="this.classList.toggle('flipped')">
                 <div class="flip-card-inner">
                     <!-- FACE AVANT -->
                     <div class="flip-card-front">
                         <i class="fa-solid fa-chart-pie pillar-icon"></i>
-                        <span class="pillar-title">3. Modèle �?conomique</span>
+                        <span class="pillar-title">3. Modèle Économique</span>
                         <p>Innover sur la façon dont l'organisation crée, délivre et capture de la valeur.</p>
                         <div class="flip-indicator"><i class="fa-solid fa-rotate"></i> Retourner</div>
                     </div>
-                    <!-- FACE ARRI�^RE -->
+                    <!-- FACE ARRIÈRE -->
                     <div class="flip-card-back">
                         <div class="back-title">Changer les règles</div>
                         <ul class="example-list">
@@ -255,7 +255,7 @@
                         <p>Processus internes, logistique, management, méthodes de travail. L'innovation invisible mais puissante.</p>
                         <div class="flip-indicator"><i class="fa-solid fa-rotate"></i> Retourner</div>
                     </div>
-                    <!-- FACE ARRI�^RE -->
+                    <!-- FACE ARRIÈRE -->
                     <div class="flip-card-back">
                         <div class="back-title">L'Envers du Décor</div>
                         <ul class="example-list">
@@ -282,7 +282,7 @@
                         <span class="tag-item" onclick="showDefinition('Réglementation')">Réglementation</span>
                         <span class="tag-item" onclick="showDefinition('Processus')">Processus</span>
                         <span class="tag-item" onclick="showDefinition('Logiciel')">Logiciel</span>
-                        <span class="tag-item" onclick="showDefinition('�?tude')">�?tude</span>
+                        <span class="tag-item" onclick="showDefinition('Étude')">Étude</span>
                         <span class="tag-item" onclick="showDefinition('Programme Scolaire')">Programme Scolaire</span>
                         <span class="tag-item" onclick="showDefinition('Soins de Santé')">Soins de Santé</span>
                         <span class="tag-item" onclick="showDefinition('Vision')">Vision</span>
@@ -390,7 +390,7 @@
             "Réglementation": "Création de nouveaux cadres légaux ou normatifs (ex: RGPD, lois bioéthiques, crédits carbone).",
             "Processus": "Amélioration des méthodes de fabrication, de gestion ou de logistique (ex: Lean management).",
             "Logiciel": "Développement de nouveaux algorithmes, applications ou plateformes numériques.",
-            "�?tude": "Nouvelles méthodologies de recherche, de collecte de données ou d'analyse.",
+            "Étude": "Nouvelles méthodologies de recherche, de collecte de données ou d'analyse.",
             "Programme Scolaire": "Innovation pédagogique, nouveaux cursus ou méthodes d'apprentissage.",
             "Soins de Santé": "Nouveaux parcours de soins, protocoles médicaux ou approches thérapeutiques.",
             "Vision": "Innovation prospective qui change la perception du monde ou d'un marché.",
@@ -451,7 +451,7 @@
                 var score = (val === 'correct') ? 1 : 0;
                 try { scormMarkCompleted(score); } catch (e) { try { var st = getState(); st.completed = st.completed || []; st.scores = st.scores || {}; if (st.completed.indexOf(GRAIN_ID) === -1) st.completed.push(GRAIN_ID); st.scores[GRAIN_ID] = score; setState(st); } catch (e2) {} }
                 if (val === 'correct') { 
-                    showModal('Exactement !', "L'innovation couvre aussi bien les processus, les modèles économiques que l'organisation.", 'success');
+                    showModal('Exactement !', "L'innovation couvre aussi bien les processus, les modèles Économiques que l'organisation.", 'success');
                     setTimeout(function() { var btn = document.getElementById('btnModalClose'); if (btn) { btn.innerText = 'Retour au Sommaire'; btn.onclick = function() { window.location.href = SOMMAIRE_URL + '#grain2'; }; } }, 100);
                 } else { 
                     showModal('Incorrect', "L'innovation n'est pas limitée à la technologie ou au produit. L'organisation est un champ majeur d'innovation. Le grain est validé ; vous pouvez retourner au sommaire.", 'error');

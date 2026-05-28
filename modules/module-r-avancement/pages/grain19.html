@@ -1,10 +1,10 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="fr">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <script src="../SCORM_API.js"></script>
-  <title>CAPSULE 19 : �?chelle TRL | L'esprit d'innover</title>
+  <title>CAPSULE 19 : Échelle TRL | L'esprit d'innover</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
@@ -104,7 +104,7 @@
         </ul>
       </div>
       <div class="card">
-        <h3><i class="fa-solid fa-briefcase"></i> �? quoi sert le TRL ?</h3>
+        <h3><i class="fa-solid fa-briefcase"></i> À quoi sert le TRL ?</h3>
         <div class="use-cases">
           <div class="use-case"><strong>Décider</strong><br>Savoir si un projet relève de la recherche, du prototypage ou du déploiement.</div>
           <div class="use-case"><strong>Financer</strong><br>Associer les bons dispositifs au bon niveau de maturité.</div>
@@ -115,7 +115,7 @@
     </div>
     <div class="quiz-box">
       <h3><i class="fa-solid fa-clipboard-question"></i> Quiz de compréhension</h3>
-      <p>�? quel moment peut-on dire qu'une technologie est <strong>prouvée en conditions réelles d'exploitation</strong> ?</p>
+      <p>À quel moment peut-on dire qu'une technologie est <strong>prouvée en conditions réelles d'exploitation</strong> ?</p>
       <form id="quizForm">
         <div class="quiz-option"><input type="radio" id="a1" name="qtrl" value="wrong"> <label for="a1">TRL 3 - preuve de concept expérimentale</label></div>
         <div class="quiz-option"><input type="radio" id="a2" name="qtrl" value="wrong"> <label for="a2">TRL 6 - prototype démontré en environnement représentatif</label></div>
@@ -137,14 +137,14 @@
   </div>
   <script>
     const trlData = [
-      {n:1, cls:'c1', icon:'fa-flask', title:'TRL 1', short:'Principes de base observés', highlight:'On identifie un phénomène ou un principe scientifique pertinent.', text:'�? ce stade, on est au niveau de la recherche fondamentale. On observe, on documente, on comprend.\n\nExemple : un laboratoire repère une propriété physique ou chimique qui pourrait, un jour, être utile dans une application.'},
+      {n:1, cls:'c1', icon:'fa-flask', title:'TRL 1', short:'Principes de base observés', highlight:'On identifie un phénomène ou un principe scientifique pertinent.', text:'À ce stade, on est au niveau de la recherche fondamentale. On observe, on documente, on comprend.\n\nExemple : un laboratoire repère une propriété physique ou chimique qui pourrait, un jour, être utile dans une application.'},
       {n:2, cls:'c2', icon:'fa-lightbulb', title:'TRL 2', short:'Concept technologique formulé', highlight:'Le principe observé commence à être transformé en idée d\'application.', text:'La technologie n\'existe pas encore, mais l\'on peut formuler un concept d\'usage ou une piste de solution.\n\nExemple : imaginer qu\'une propriété repérée en laboratoire pourrait servir à concevoir un capteur.'},
       {n:3, cls:'c3', icon:'fa-vial-circle-check', title:'TRL 3', short:'Preuve de concept', highlight:'On vérifie expérimentalement qu\'une idée peut fonctionner.', text:'C\'est la première démonstration de faisabilité. La preuve est encore partielle, souvent en laboratoire, mais elle rend le concept crédible.\n\nExemple : un montage expérimental montre que le capteur peut effectivement détecter un signal.'},
       {n:4, cls:'c4', icon:'fa-cubes', title:'TRL 4', short:'Validation en laboratoire', highlight:'Les composants sont intégrés et testés dans un environnement maîtrisé.', text:'On passe d\'une preuve ponctuelle à une première structuration technique. Les briques sont assemblées et évaluées ensemble.\n\nExemple : un prototype rudimentaire est testé avec plusieurs composants couplés.'},
       {n:5, cls:'c5', icon:'fa-industry', title:'TRL 5', short:'Validation en environnement représentatif', highlight:'Le prototype est confronté à un contexte plus proche du réel.', text:'On teste la technologie dans un cadre qui ressemble aux conditions futures d\'usage, sans être encore pleinement opérationnel.\n\nExemple : le capteur est essayé dans une plateforme pilote ou un environnement simulé.'},
       {n:6, cls:'c6', icon:'fa-screwdriver-wrench', title:'TRL 6', short:'Démonstration du prototype', highlight:'Le système fonctionne de manière crédible dans un environnement pertinent.', text:'Le prototype devient plus robuste. Il permet d\'évaluer la faisabilité technique et les premiers enjeux de déploiement.\n\nExemple : une version alpha est démontrée devant des partenaires ou testeurs.'},
       {n:7, cls:'c7', icon:'fa-rocket', title:'TRL 7', short:'Prototype opérationnel', highlight:'La solution est testée dans un environnement réel ou quasi réel.', text:'On franchit un cap important : le prototype n\'est plus seulement démonstratif, il devient opérationnel.\n\nExemple : une solution est testée sur un vrai site, avec de vrais utilisateurs ou opérateurs.'},
-      {n:8, cls:'c8', icon:'fa-certificate', title:'TRL 8', short:'Système qualifié', highlight:'La solution finale est stabilisée, industrialisable ou certifiable.', text:'Le système est complet, qualifié et prêt pour la mise en �"uvre. Les exigences réglementaires, qualité ou de production sont prises en compte.\n\nExemple : le produit final est validé et prêt à être mis sur le marché ou intégré à une chaîne de production.'},
+      {n:8, cls:'c8', icon:'fa-certificate', title:'TRL 8', short:'Système qualifié', highlight:'La solution finale est stabilisée, industrialisable ou certifiable.', text:'Le système est complet, qualifié et prêt pour la mise en œuvre. Les exigences réglementaires, qualité ou de production sont prises en compte.\n\nExemple : le produit final est validé et prêt à être mis sur le marché ou intégré à une chaîne de production.'},
       {n:9, cls:'c9', icon:'fa-check-double', title:'TRL 9', short:'Système prouvé en réel', highlight:'La technologie est exploitée avec succès dans son environnement réel.', text:'C\'est le stade de maturité maximale. La solution fonctionne dans la réalité et a démontré sa valeur en exploitation.\n\nExemple : un produit est commercialisé, utilisé, maintenu et éprouvé sur le terrain.'}
     ];
     const timeline = document.getElementById('timeline');

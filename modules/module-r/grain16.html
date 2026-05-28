@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
@@ -105,7 +105,7 @@
         .arrow-solid { stroke: var(--orange); stroke-width: 3; fill: none; }
         .arrow-dotted { stroke: var(--orange); stroke-width: 3; fill: none; stroke-dasharray: 6,4; }
 
-        /* Market pull �?" matrice complète ; focus visuel sur usage �?" technologie */
+        /* Market pull — matrice complète ; focus visuel sur usage ↔ technologie */
         .mp-process-svg { display: block; max-width: 100%; min-height: 300px; margin: 0 auto; }
         .mp-svg-title { font-family: 'Montserrat', sans-serif; font-weight: 900; font-size: 15px; text-anchor: middle; text-transform: uppercase; fill: var(--bordeaux); }
         .mp-svg-sub { font-size: 11px; text-anchor: middle; font-style: italic; fill: var(--blue); }
@@ -180,7 +180,7 @@
             </div>
             <div class="d-card card-energy">
                 <i class="fa-solid fa-leaf d-icon"></i>
-                <div class="d-title">Efficacité �?nergétique</div>
+                <div class="d-title">Efficacité Énergétique</div>
                 <div class="d-desc">6 fois moins d'électricité consommée que les modèles classiques.</div>
             </div>
             <div class="d-card card-hygiene">
@@ -190,14 +190,14 @@
             </div>
             <div class="d-card card-money">
                 <i class="fa-solid fa-piggy-bank d-icon"></i>
-                <div class="d-title">Très �?conomique</div>
+                <div class="d-title">Très Économique</div>
                 <div class="d-desc">Pas de maintenance, 4x moins cher par an à l'usage.</div>
             </div>
         </div>
 
-        <!-- Market pull �?" matrice complète (focus visuel : usage �?' technologie) -->
+        <!-- Market pull — matrice complète (focus visuel : usage → technologie) -->
         <div class="schema-wrapper">
-            <svg class="dyson-svg mp-process-svg" viewBox="0 0 900 340" role="img" aria-label="Market pull �?" le nouvel usage implique la nouvelle technologie (flèche descendante)">
+            <svg class="dyson-svg mp-process-svg" viewBox="0 0 900 340" role="img" aria-label="Market pull — le nouvel usage implique la nouvelle technologie (flèche descendante)">
                 <defs>
                     <marker id="g16fO" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
                         <path d="M0,0 L0,6 L9,3 z" fill="var(--orange)" />
@@ -211,7 +211,7 @@
                 </defs>
 
                 <text x="450" y="32" class="mp-svg-title">Market pull innovation process</text>
-                <text x="450" y="50" class="mp-svg-sub">Processus d'innovation tiré par le marché (RID) �?" focus : le nouvel usage appelle la nouvelle technologie</text>
+                <text x="450" y="50" class="mp-svg-sub">Processus d'innovation tiré par le marché (RID) — focus : le nouvel usage appelle la nouvelle technologie</text>
 
                 <g transform="translate(-50,50)">
                     <rect x="120" y="135" width="120" height="50" class="mp-box-muted" rx="6" ry="6" />
@@ -265,7 +265,7 @@
 
         <div class="info-box" style="background: rgba(255, 215, 0, 0.1); border-left-color: var(--rid-yellow);">
             <h4><i class="fa-solid fa-diagram-project"></i> Logique du Schéma</h4>
-            <p>Vous voyez la <strong>matrice complète du market pull</strong> (RID). Les zones et flèches <strong>en tons neutres ou atténués</strong> situent le processus dans son ensemble (marché, expérience, entreprise, boucles). Les deux blocs <strong>surbrillance orange et vert</strong> (« Nouvel usage », « Nouvelle technologie ») et la <strong>flèche verticale orange épaisse en pointillés</strong> entre eux indiquent le <strong>focus pédagogique</strong> : le <strong>nouvel usage implique la nouvelle technologie</strong> (sens du haut vers le bas), au c�"ur d'une logique <em>Need Seeker</em> (ex. Dyson Airblade). Dans le cas de l'Airblade, la technologie induite par le besoin d'un plan d'air pulsé à 640 km/h est celle d'un tout nouveau moteur électrique brushless à très haute vitesse qui a fait l'objet de plusieurs brevets.</p>
+            <p>Vous voyez la <strong>matrice complète du market pull</strong> (RID). Les zones et flèches <strong>en tons neutres ou atténués</strong> situent le processus dans son ensemble (marché, expérience, entreprise, boucles). Les deux blocs <strong>surbrillance orange et vert</strong> (« Nouvel usage », « Nouvelle technologie ») et la <strong>flèche verticale orange épaisse en pointillés</strong> entre eux indiquent le <strong>focus pédagogique</strong> : le <strong>nouvel usage implique la nouvelle technologie</strong> (sens du haut vers le bas), au cœur d'une logique <em>Need Seeker</em> (ex. Dyson Airblade). Dans le cas de l'Airblade, la technologie induite par le besoin d'un plan d'air pulsé à 640 km/h est celle d'un tout nouveau moteur électrique brushless à très haute vitesse qui a fait l'objet de plusieurs brevets.</p>
         </div>
 
         <!-- Quiz -->
@@ -384,10 +384,10 @@
             var score = (val === "correct") ? 1 : 0;
             try { scormMarkCompleted(score); } catch (e) { try { var st = getState(); st.completed = st.completed || []; st.scores = st.scores || {}; if (st.completed.indexOf(GRAIN_ID) === -1) st.completed.push(GRAIN_ID); st.scores[GRAIN_ID] = score; setState(st); } catch (e2) {} }
             if (val === "correct") { 
-                showModal("Correct !", "Exact : c'est le nouvel usage identifié qui a poussé à mettre au point une nouvelle technologie �?" en Need Seeker, l'usage précède et oriente la techno (comme sur le schéma, du haut vers le bas).", "success");
+                showModal("Correct !", "Exact : c'est le nouvel usage identifié qui a poussé à mettre au point une nouvelle technologie — en Need Seeker, l'usage précède et oriente la techno (comme sur le schéma, du haut vers le bas).", "success");
                 setTimeout(() => { const btn = document.getElementById('btnModalClose'); if(btn) { btn.innerText = "Retour au Sommaire"; btn.onclick = function() { window.location.href = SOMMAIRE_URL + '#grain16'; }; } }, 100);
             } else { 
-                showModal("Incorrect", "Regardez la flèche verticale pointillée : elle va du nouvel usage (en haut) vers la nouvelle technologie (en bas) �?" l'usage détermine la technologie. Le grain est validé ; vous pouvez retourner au sommaire.", "error");
+                showModal("Incorrect", "Regardez la flèche verticale pointillée : elle va du nouvel usage (en haut) vers la nouvelle technologie (en bas) — l'usage détermine la technologie. Le grain est validé ; vous pouvez retourner au sommaire.", "error");
                 setTimeout(() => { const btn = document.getElementById('btnModalClose'); if(btn) { btn.innerText = "Retour au Sommaire"; btn.onclick = function() { window.location.href = SOMMAIRE_URL + '#grain16'; }; } }, 100);
             }
         }
