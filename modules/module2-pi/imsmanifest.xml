@@ -1,0 +1,37 @@
+  <?xml version="1.0" encoding="UTF-8"?>
+  <manifest identifier="OSER-MODULE2-PI" version="1.0"
+    xmlns="http://www.imsglobal.org/xsd/imscp_v1p1"
+    xmlns:adlcp="http://www.adlnet.org/xsd/adlcp_v1p3"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.imsglobal.org/xsd/imscp_v1p1 imscp_v1p1.xsd
+                        http://www.imsglobal.org/xsd/imsmd_v1p2 imsmd_v1p2p2.xsd
+                        http://www.adlnet.org/xsd/adlcp_v1p3 adlcp_v1p3.xsd">
+
+    <metadata>
+      <schema>ADL SCORM</schema>
+      <schemaversion>2004 4th Edition</schemaversion>
+    </metadata>
+
+    <organizations default="OSER-M2-PI-ORG">
+      <organization identifier="OSER-M2-PI-ORG">
+        <metadata>
+          <title>Module 2 : Protéger et Valoriser la PI — L'esprit d'innover</title>
+        </metadata>
+        <title>Module 2 : Protéger et Valoriser la PI</title>
+        <item identifier="ITEM-M2" identifierref="RES-M2">
+          <title>Sommaire Module 2</title>
+        </item>
+      </organization>
+    </organizations>
+
+    <resources>
+      <resource identifier="RES-M2" type="webcontent" adlcp:scormtype="sco" href="index.html">
+        <file href="index.html"/>
+        <file href="SCORM_API.js"/>
+        <file href="pages/grain_reflexe_declaration.html"/>
+<file href="pages/grain_strategie_pi.html"/>
+<file href="pages/grain_copro_mandataire.html"/>
+<file href="pages/grain_transfert_licensing.html"/>
+      </resource>
+    </resources>
+  </manifest>

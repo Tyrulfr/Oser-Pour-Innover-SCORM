@@ -1,0 +1,37 @@
+  <?xml version="1.0" encoding="UTF-8"?>
+  <manifest identifier="OSER-MODULE3-ECO" version="1.0"
+    xmlns="http://www.imsglobal.org/xsd/imscp_v1p1"
+    xmlns:adlcp="http://www.adlnet.org/xsd/adlcp_v1p3"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.imsglobal.org/xsd/imscp_v1p1 imscp_v1p1.xsd
+                        http://www.imsglobal.org/xsd/imsmd_v1p2 imsmd_v1p2p2.xsd
+                        http://www.adlnet.org/xsd/adlcp_v1p3 adlcp_v1p3.xsd">
+
+    <metadata>
+      <schema>ADL SCORM</schema>
+      <schemaversion>2004 4th Edition</schemaversion>
+    </metadata>
+
+    <organizations default="OSER-M3-ECO-ORG">
+      <organization identifier="OSER-M3-ECO-ORG">
+        <metadata>
+          <title>Module 3 : Naviguer dans l'écosystème — L'esprit d'innover</title>
+        </metadata>
+        <title>Module 3 : Naviguer dans l'écosystème</title>
+        <item identifier="ITEM-M3" identifierref="RES-M3">
+          <title>Sommaire Module 3</title>
+        </item>
+      </organization>
+    </organizations>
+
+    <resources>
+      <resource identifier="RES-M3" type="webcontent" adlcp:scormtype="sco" href="index.html">
+        <file href="index.html"/>
+        <file href="SCORM_API.js"/>
+        <file href="pages/grain_transfert_maturation.html"/>
+<file href="pages/grain_incubation_structures.html"/>
+<file href="pages/grain_financement_developpement.html"/>
+<file href="pages/grain_lieux_formations.html"/>
+      </resource>
+    </resources>
+  </manifest>

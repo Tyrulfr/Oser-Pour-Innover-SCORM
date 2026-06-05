@@ -35,3 +35,8 @@ function Build-ModuleZip {
 Build-ModuleZip -modulePath "modules\module-r-avancement" -zipName "module-r-avancement.zip"
 # Module 1 : Retours d'experience / temoignages
 Build-ModuleZip -modulePath "modules\module1-retours" -zipName "module1-retours.zip"
+Build-ModuleZip -modulePath "modules\module2-pi" -zipName "module2-pi.zip"
+Build-ModuleZip -modulePath "modules\module3-ecosysteme" -zipName "module3-ecosysteme.zip"
+Build-ModuleZip -modulePath "modules\module4-partenariats" -zipName "module4-partenariats.zip"
+Build-ModuleZip -modulePath "modules\module5-action" -zipName "module5-action.zip"
+Build-ModuleZip -modulePath "modules\module6-synthese" -zipName "module6-synthese.zip"
