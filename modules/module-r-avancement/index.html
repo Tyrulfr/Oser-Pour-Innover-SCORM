@@ -53,6 +53,17 @@
             color: var(--text-main);
         }
         .reference-note .ref-title { font-weight: 800; color: var(--bordeaux); margin-bottom: 0.35rem; }
+        .reference-note .ref-card {
+            margin-top: 0.55rem;
+            background: rgba(42, 50, 94, 0.04);
+            border: 1px solid rgba(42, 50, 94, 0.2);
+            border-radius: 10px;
+            padding: 0.8rem 0.9rem;
+        }
+        body.dark-mode .reference-note .ref-card {
+            background: rgba(255,255,255,0.04);
+            border-color: rgba(255,255,255,0.18);
+        }
         .reference-note a { color: var(--blue); font-weight: 700; text-decoration: underline; }
         body.dark-mode .reference-note a { color: var(--orange); }
 
@@ -147,13 +158,13 @@
 <body data-module="module1">
 
     <nav class="top-bar">
-        <button type="button" onclick="history.back()" class="btn-back" aria-label="Retour"><i class="fa-solid fa-chevron-left"></i> Retour</button>
+        <a href="../../index.html" class="btn-back" aria-label="Retour au portail"><i class="fa-solid fa-chevron-left"></i> Portail</a>
 
         <div class="nav-center">
             <span class="brand-logo-link" title="L'esprit d'innover">
-                <img src="assets/logo_oser_pour_innover.png" alt="L'esprit d'innover" onerror="this.style.display='none'" />
+                <img src="assets/logo_oser_pour_innover.png" alt="L'esprit d'innover" onerror="this.src='../document/assets/image/logo_oser_pour_innover.png'" />
             </span>
-            <div class="breadcrumbs">Sensibilisation <span class="separator">/</span> Module Ressources</div>
+            <div class="breadcrumbs">Accueil <span class="separator">/</span> Sensibilisation <span class="separator">/</span> Module Ressources</div>
         </div>
 
         <button type="button" onclick="toggleTheme()" style="background:none; border:none; cursor:pointer; font-size:1.2rem; color:var(--text-main);" aria-label="Thème"><i class="fa-solid fa-moon"></i></button>
@@ -175,7 +186,7 @@
             <div class="sequence-card seq-1" onclick="goTo('pages/sommaire_sequence1.html')">
                 <div class="sequence-card-header">
                     <div class="sequence-card-number">1</div>
-                    <h2 class="sequence-card-title"><i class="fa-solid fa-cloud-sun"></i> Dissiper le Brouillard</h2>
+                    <h2 class="sequence-card-title"><i class="fa-solid fa-cloud-sun"></i> De quoi parle-t-on ?</h2>
                 </div>
                 <div class="sequence-card-body">
                     <p class="sequence-card-desc">Définitions, vocabulaire et concepts fondamentaux pour comprendre l'innovation.</p>
@@ -224,12 +235,13 @@
             </div>
         </div>
 
-        <section class="reference-note" aria-label="Référence bibliographique du module 0">
-            <div class="ref-title"><i class="fa-solid fa-book-open-reader"></i> Référence principale du module 0</div>
-            <div>Yannou, Bernard, et François Cluzel. <em>Radical Innovation Design: A systematic and usage-driven innovation methodology to ensure usefulness for users and profitability for companies.</em> EDP Sciences, 2024. DOI : <a href="https://doi.org/10.1051/978-2-7598-3066-4" target="_blank" rel="noopener noreferrer">https://doi.org/10.1051/978-2-7598-3066-4</a>.</div>
-            <div style="margin-top:0.45rem;">
-                <img src="assets/cc-by-nc-nd.png" alt="Licence Creative Commons CC-BY-NC-ND" style="height:42px; width:auto;" />
+        <section class="reference-note" aria-label="Références bibliographiques du module Ressources">
+            <div class="ref-title"><i class="fa-solid fa-book-open-reader"></i> Références du module Ressources</div>
+            <div class="ref-card">
+                <div>Yannou, Bernard, et François Cluzel. <em>Radical Innovation Design: A systematic and usage-driven innovation methodology to ensure usefulness for users and profitability for companies.</em> EDP Sciences, 2024. DOI : <a href="https://doi.org/10.1051/978-2-7598-3066-4" target="_blank" rel="noopener noreferrer">https://doi.org/10.1051/978-2-7598-3066-4</a>.</div>
+                <div style="margin-top:0.45rem;">Cet ouvrage, sous licence CC BY-NC-ND et dont la réalisation a été financée par le programme Science Ouverte de l'Université Paris-Saclay, est téléchargeable en accès gratuit. Les adaptations éventuelles de son contenu ont été approuvées et supervisées par les auteurs.</div>
             </div>
+            <div class="ref-card">Henao Uribe, Monica, et al. <em>Oser pour innover</em>, fascicule 1 &amp; 2. 2026.</div>
         </section>
 
     </div>

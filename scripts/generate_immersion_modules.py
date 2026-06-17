@@ -803,42 +803,42 @@ def manifest_xml(mod: dict) -> str:
     files = "\n".join(
         f'      <file href="pages/{g["file"]}"/>' for g in mod["grains"]
     )
-    return textwrap.dedent(f"""\
-        <?xml version="1.0" encoding="UTF-8"?>
-        <manifest identifier="{mod["manifest_id"]}" version="1.0"
-          xmlns="http://www.imsglobal.org/xsd/imscp_v1p1"
-          xmlns:adlcp="http://www.adlnet.org/xsd/adlcp_v1p3"
-          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-          xsi:schemaLocation="http://www.imsglobal.org/xsd/imscp_v1p1 imscp_v1p1.xsd
-                              http://www.imsglobal.org/xsd/imsmd_v1p2 imsmd_v1p2p2.xsd
-                              http://www.adlnet.org/xsd/adlcp_v1p3 adlcp_v1p3.xsd">
+    # La déclaration <?xml doit être en première ligne, sans espace (requis Moodle / SCORM).
+    return f"""<?xml version="1.0" encoding="UTF-8"?>
+<manifest identifier="{mod["manifest_id"]}" version="1.0"
+  xmlns="http://www.imsglobal.org/xsd/imscp_v1p1"
+  xmlns:adlcp="http://www.adlnet.org/xsd/adlcp_v1p3"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.imsglobal.org/xsd/imscp_v1p1 imscp_v1p1.xsd
+                      http://www.imsglobal.org/xsd/imsmd_v1p2 imsmd_v1p2p2.xsd
+                      http://www.adlnet.org/xsd/adlcp_v1p3 adlcp_v1p3.xsd">
 
-          <metadata>
-            <schema>ADL SCORM</schema>
-            <schemaversion>2004 4th Edition</schemaversion>
-          </metadata>
+  <metadata>
+    <schema>ADL SCORM</schema>
+    <schemaversion>2004 4th Edition</schemaversion>
+  </metadata>
 
-          <organizations default="{mod["org_id"]}">
-            <organization identifier="{mod["org_id"]}">
-              <metadata>
-                <title>Module {mod["num"]} : {mod["title"]} — L'esprit d'innover</title>
-              </metadata>
-              <title>Module {mod["num"]} : {mod["title"]}</title>
-              <item identifier="ITEM-M{mod["num"]}" identifierref="RES-M{mod["num"]}">
-                <title>Sommaire Module {mod["num"]}</title>
-              </item>
-            </organization>
-          </organizations>
+  <organizations default="{mod["org_id"]}">
+    <organization identifier="{mod["org_id"]}">
+      <metadata>
+        <title>Module {mod["num"]} : {mod["title"]} — L'esprit d'innover</title>
+      </metadata>
+      <title>Module {mod["num"]} : {mod["title"]}</title>
+      <item identifier="ITEM-M{mod["num"]}" identifierref="RES-M{mod["num"]}">
+        <title>Sommaire Module {mod["num"]}</title>
+      </item>
+    </organization>
+  </organizations>
 
-          <resources>
-            <resource identifier="RES-M{mod["num"]}" type="webcontent" adlcp:scormtype="sco" href="index.html">
-              <file href="index.html"/>
-              <file href="SCORM_API.js"/>
-        {files}
-            </resource>
-          </resources>
-        </manifest>
-        """)
+  <resources>
+    <resource identifier="RES-M{mod["num"]}" type="webcontent" adlcp:scormtype="sco" href="index.html">
+      <file href="index.html"/>
+      <file href="SCORM_API.js"/>
+{files}
+    </resource>
+  </resources>
+</manifest>
+"""
 
 
 def generate_module(mod: dict) -> None:

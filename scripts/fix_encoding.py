@@ -11,7 +11,6 @@ CLEAN_COMMIT = "16e7ec9"
 
 MAPPINGS = [
     ("modules/module0-avancement/pages", "modules/module-r-avancement/pages"),
-    ("modules/module0", "modules/module-r"),
 ]
 
 RENAME_IN_CLEAN = [
@@ -123,7 +122,6 @@ def main() -> int:
     extra = [
         "modules/module-r-avancement/index.html",
         "modules/module-r-avancement/SCORM_API.js",
-        "modules/module-r/index.html",
         "modules/scorm-download.html",
         "modules/module1-retours/pages/temoignage_silvia.html",
         "modules/module1/temoignage_silvia.html",
@@ -131,7 +129,6 @@ def main() -> int:
     ]
     old_extra = {
         "modules/module-r-avancement/index.html": "modules/module0-avancement/index.html",
-        "modules/module-r/index.html": "modules/module0/index.html",
         "modules/module-r-avancement/SCORM_API.js": "modules/module0-avancement/SCORM_API.js",
         "scorm-api/SCORM_API.js": "scorm-api/SCORM_API.js",
     }

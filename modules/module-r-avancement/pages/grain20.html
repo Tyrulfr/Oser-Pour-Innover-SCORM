@@ -49,6 +49,10 @@
     .modal-btn{background:var(--orange);color:#fff;border:none;padding:10px 25px;border-radius:5px;cursor:pointer;font-weight:bold;float:right}
     .close-icon{position:absolute;top:12px;right:18px;font-size:1.5rem;cursor:pointer;color:#aaa}
     .close-icon:hover{color:var(--bordeaux)}
+    .source-link-box{text-align:center;margin:1.5rem 0 2rem}
+    .source-link{display:inline-flex;align-items:center;gap:.55rem;color:var(--teal);font-weight:700;text-decoration:none;padding:.65rem 1.1rem;border-radius:999px;background:rgba(46,175,125,.1);border:1px solid rgba(46,175,125,.25)}
+    .source-link:hover{color:var(--orange);border-color:rgba(244,140,46,.35);background:rgba(244,140,46,.08)}
+    body.dark-mode .source-link{background:rgba(46,175,125,.12);border-color:rgba(255,255,255,.15)}
     @media (max-width: 768px){.grid{grid-template-columns:1fr}}
   </style>
 </head>
@@ -59,20 +63,26 @@
     <button class="theme-btn" onclick="toggleTheme()"><i class="fa-solid fa-moon"></i></button>
   </nav>
   <div class="content-container">
-    <h1 class="hero-title">Le Manuel d'Oslo : définir et mesurer l'innovation</h1>
-    <div class="hero-subtitle">Référence internationale OCDE-Eurostat pour collecter, interpréter et comparer les données sur l'innovation dans les organisations et les entreprises .</div>
+    <h1 class="hero-title">Le Manuel d'Oslo : définir et structurer la mesure de l'innovation</h1>
+    <div class="hero-subtitle">Référence internationale OCDE-Eurostat : cadre méthodologique pour collecter, interpréter et comparer les données sur l'innovation dans les organisations et les entreprises.</div>
     <div class="def-box">
       <span class="def-quote"><i class="fa-solid fa-book-open" style="opacity:.8;margin-right:10px"></i>
-      Le Manuel d'Oslo définit l'innovation comme un produit, un procédé, une méthode de commercialisation ou une méthode organisationnelle nouveau ou sensiblement amélioré, mis en œuvre ou mis à disposition .
+      Le Manuel d'Oslo définit l'innovation comme l'introduction ou la mise à disposition d'un produit, d'un procédé, d'une méthode de commercialisation ou d'une méthode organisationnelle, nouveau ou sensiblement amélioré.
       </span>
     </div>
+    <p class="source-link-box">
+      <a class="source-link" href="https://ec.europa.eu/eurostat/fr/web/products-manuals-and-guidelines/-/ks-01-18-852" target="_blank" rel="noopener noreferrer">
+        <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+        Consulter le Manuel d'Oslo 2018 (OCDE-Eurostat)
+      </a>
+    </p>
     <div class="grid">
       <div class="card">
         <h3><i class="fa-solid fa-bullseye"></i> À quoi sert-il ?</h3>
         <ul class="big-list">
-          <li><span class="chip"></span><div>Harmoniser la mesure de l'innovation entre pays et secteurs .</div></li>
-          <li><span class="chip"></span><div>Définir un langage commun pour les enquêtes, les politiques et les indicateurs .</div></li>
-          <li><span class="chip"></span><div>Élargir la notion d'innovation au-delà de la seule technologie, en incluant l'organisation, le marketing et les services .</div></li>
+          <li><span class="chip"></span><div>Proposer un cadre pour harmoniser la mesure de l'innovation entre pays et secteurs.</div></li>
+          <li><span class="chip"></span><div>Définir un langage commun pour les enquêtes, les politiques et les indicateurs.</div></li>
+          <li><span class="chip"></span><div>Élargir la notion d'innovation au-delà de la seule technologie, en incluant l'organisation, le marketing et les services.</div></li>
         </ul>
       </div>
       <div class="card">
@@ -87,8 +97,8 @@
     </div>
     <div class="grid">
       <div class="card">
-        <h3><i class="fa-solid fa-clipboard-list"></i> Ce que mesure le manuel</h3>
-        <p>Il ne mesure pas seulement la R&D, mais aussi les activités d'innovation : conception, organisation, finance, commercialisation, expérimentation et mise en œuvre .</p>
+        <h3><i class="fa-solid fa-clipboard-list"></i> Ce que le cadre permet d'analyser</h3>
+        <p>Le Manuel d'Oslo constitue un référentiel méthodologique pour analyser les activités d'innovation au niveau des organisations et des économies : conception, organisation, finance, commercialisation, expérimentation et mise en œuvre, au-delà de la seule R&D.</p>
         <div class="pill-row"><span class="pill">Innovation de produit</span><span class="pill">Innovation de procédé</span><span class="pill">Innovation organisationnelle</span><span class="pill">Innovation de commercialisation</span></div>
       </div>
       <div class="card">
@@ -100,7 +110,7 @@
       <h3><i class="fa-solid fa-clipboard-question"></i> Quiz de validation</h3>
       <p>Quelle affirmation correspond le mieux au Manuel d'Oslo ?</p>
       <div class="quiz-option"><input type="radio" name="q" value="wrong"> Il ne concerne que la recherche fondamentale.</div>
-      <div class="quiz-option"><input type="radio" name="q" value="correct"> Il donne un cadre pour mesurer plusieurs formes d'innovation, pas seulement technologique.</div>
+      <div class="quiz-option"><input type="radio" name="q" value="correct"> Il propose un cadre méthodologique pour mesurer plusieurs formes d'innovation, pas seulement technologique.</div>
       <div class="quiz-option"><input type="radio" name="q" value="wrong"> Il remplace les indicateurs financiers des entreprises.</div>
     </div>
   </div>
@@ -109,8 +119,8 @@
   <script>
     const details = {
       title: "Manuel d'Oslo",
-      highlight: "Référence OCDE-Eurostat pour mesurer l'innovation.",
-      text: "Le Manuel d'Oslo fournit un cadre international de concepts, définitions et méthodes pour recueillir et interpréter les données sur l'innovation. Il a progressivement élargi la notion d'innovation au-delà du seul technologique pour inclure produit, procédé, organisation et commercialisation."
+      highlight: "Le Manuel d'Oslo sert de référence internationale pour la mesure de l'innovation.",
+      text: "Le Manuel d'Oslo fournit un cadre international de concepts, définitions et méthodes pour recueillir et interpréter les données sur l'innovation. Il définit, structure et guide la mesure de l'innovation — au-delà du seul technologique, en incluant produit, procédé, organisation et commercialisation."
     };
     function openModal(){document.getElementById('modalTitle').innerText = details.title;document.getElementById('modalHighlight').innerText = details.highlight;document.getElementById('modalText').innerText = details.text;document.getElementById('modal').classList.add('active')}
     function closeModal(){document.getElementById('modal').classList.remove('active')}

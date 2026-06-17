@@ -1,36 +1,36 @@
-  <?xml version="1.0" encoding="UTF-8"?>
-  <manifest identifier="OSER-MODULE5-ACTION" version="1.0"
-    xmlns="http://www.imsglobal.org/xsd/imscp_v1p1"
-    xmlns:adlcp="http://www.adlnet.org/xsd/adlcp_v1p3"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://www.imsglobal.org/xsd/imscp_v1p1 imscp_v1p1.xsd
-                        http://www.imsglobal.org/xsd/imsmd_v1p2 imsmd_v1p2p2.xsd
-                        http://www.adlnet.org/xsd/adlcp_v1p3 adlcp_v1p3.xsd">
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest identifier="OSER-MODULE5-ACTION" version="1.0"
+  xmlns="http://www.imsglobal.org/xsd/imscp_v1p1"
+  xmlns:adlcp="http://www.adlnet.org/xsd/adlcp_v1p3"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.imsglobal.org/xsd/imscp_v1p1 imscp_v1p1.xsd
+                      http://www.imsglobal.org/xsd/imsmd_v1p2 imsmd_v1p2p2.xsd
+                      http://www.adlnet.org/xsd/adlcp_v1p3 adlcp_v1p3.xsd">
 
-    <metadata>
-      <schema>ADL SCORM</schema>
-      <schemaversion>2004 4th Edition</schemaversion>
-    </metadata>
+  <metadata>
+    <schema>ADL SCORM</schema>
+    <schemaversion>2004 4th Edition</schemaversion>
+  </metadata>
 
-    <organizations default="OSER-M5-ACTION-ORG">
-      <organization identifier="OSER-M5-ACTION-ORG">
-        <metadata>
-          <title>Module 5 : Passer à l'action — L'esprit d'innover</title>
-        </metadata>
-        <title>Module 5 : Passer à l'action</title>
-        <item identifier="ITEM-M5" identifierref="RES-M5">
-          <title>Sommaire Module 5</title>
-        </item>
-      </organization>
-    </organizations>
+  <organizations default="OSER-M5-ACTION-ORG">
+    <organization identifier="OSER-M5-ACTION-ORG">
+      <metadata>
+        <title>Module 5 : Passer à l'action — L'esprit d'innover</title>
+      </metadata>
+      <title>Module 5 : Passer à l'action</title>
+      <item identifier="ITEM-M5" identifierref="RES-M5">
+        <title>Sommaire Module 5</title>
+      </item>
+    </organization>
+  </organizations>
 
-    <resources>
-      <resource identifier="RES-M5" type="webcontent" adlcp:scormtype="sco" href="index.html">
-        <file href="index.html"/>
-        <file href="SCORM_API.js"/>
-        <file href="pages/grain_dispositifs_collaborations.html"/>
-<file href="pages/grain_test_positionnement.html"/>
-<file href="pages/grain_simulation.html"/>
-      </resource>
-    </resources>
-  </manifest>
+  <resources>
+    <resource identifier="RES-M5" type="webcontent" adlcp:scormtype="sco" href="index.html">
+      <file href="index.html"/>
+      <file href="SCORM_API.js"/>
+      <file href="pages/grain_dispositifs_collaborations.html"/>
+      <file href="pages/grain_test_positionnement.html"/>
+      <file href="pages/grain_simulation.html"/>
+    </resource>
+  </resources>
+</manifest>
