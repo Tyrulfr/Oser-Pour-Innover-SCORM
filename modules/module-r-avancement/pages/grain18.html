@@ -29,6 +29,8 @@
         
         .def-box { background: linear-gradient(135deg, var(--blue), var(--bordeaux)); color: white; padding: 2rem; border-radius: 15px; margin: 2rem 0; box-shadow: 0 10px 20px rgba(42, 50, 94, 0.2); position: relative; }
         .def-quote { font-size: 1.2rem; font-weight: 500; text-align: center; margin-bottom: 1rem; display: block; font-style: italic; }
+        .def-source { margin: 0; font-size: 0.92rem; opacity: 0.92; text-align: center; }
+        .def-source a { color: #fff; text-decoration: underline; }
 
         /* --- STRATEGY SECTIONS --- */
         .strategy-section {
@@ -79,6 +81,8 @@
         .svg-sub { font-size: 11px; fill: #666; text-anchor: middle; font-style: italic; }
         .svg-label { font-size: 12px; font-weight: 700; text-anchor: middle; }
         .svg-item { font-size: 11px; fill: #444; }
+        .schema-legend { margin-top: 12px; font-size: 0.92rem; color: var(--text-main); display: flex; justify-content: center; align-items: center; gap: 10px; }
+        .legend-line-blue { width: 28px; height: 0; border-top: 3px solid #4169E1; border-radius: 999px; display: inline-block; }
         
         /* SVG Shapes */
         .svg-box { fill: white; stroke: #ccc; stroke-width: 2; rx: 8; }
@@ -136,8 +140,9 @@
         <div class="def-box">
             <span class="def-quote">
                 <i class="fa-solid fa-chart-gantt" style="opacity:0.8; margin-right:10px;"></i>
-                Selon une Étude de Booz & Company, les entreprises suivent l'une de ces trois stratégies. Bien que difficile, la stratégie <strong>Need Seeker</strong> offre le plus grand potentiel de performance à long terme.
+                Une étude réalisée par Booz & Company révèle que les entreprises suivent au moins l'une des trois stratégies d'innovation suivantes (et souvent plusieurs à la fois) : Market Reader, Technology Driver, et Need Seeker, selon qu'elles se focalisent au départ respectivement sur le marché, la technologie, ou le client. Selon cette même étude, suivre une stratégie Need Seeker, bien que plus difficile à mettre en œuvre, offre la meilleure garantie pour la performance financière de l’entreprise.
             </span>
+            <p class="def-source"><strong>Référence :</strong> Jaruzelski, B., Loehr, J., & Holman, R. (2011). <em>The Global Innovation 1000: Why Culture Is Key</em>. Strategy+Business (Booz & Company). <a href="https://www.strategy-business.com/article/11404" target="_blank" rel="noopener noreferrer">https://www.strategy-business.com/article/11404</a></p>
         </div>
 
         <!-- 1. MARKET READER -->
@@ -206,8 +211,8 @@
                     <rect x="495" y="262" width="100" height="28" class="svg-term-box" style="fill:#4169E1; stroke:#4169E1;" />
                     <text x="545" y="280" class="svg-label" fill="#fff">Entreprise</text>
                     <!-- Connexions depuis Company (bleu royal) -->
-                    <line x1="545" y1="262" x2="280" y2="230" stroke="#4169E1" stroke-width="2" stroke-dasharray="4 4" />
-                    <line x1="545" y1="262" x2="280" y2="120" stroke="#4169E1" stroke-width="2" stroke-dasharray="4 4" />
+                    <line x1="545" y1="262" x2="280" y2="230" stroke="#4169E1" stroke-width="2" />
+                    <line x1="545" y1="262" x2="280" y2="120" stroke="#4169E1" stroke-width="2" />
                     <line x1="545" y1="262" x2="630" y2="175" stroke="#4169E1" stroke-width="2" />
                     <line x1="545" y1="262" x2="800" y2="178" stroke="#4169E1" stroke-width="2" />
                     <circle cx="280" cy="230" r="3" fill="#4169E1" />
@@ -228,6 +233,7 @@
                     <path d="M 800,178 L 800,255 L 280,255 L 280,230" class="svg-arrow-flow" stroke="var(--orange)" marker-end="url(#arrowOrangeMarketTech)" style="marker-end: url(#arrowOrangeMarketTech); stroke-width: 2;" />
                     </g>
                 </svg>
+                <div class="schema-legend"><span class="legend-line-blue" aria-hidden="true"></span> Les endroits où l’innovation démarre pour cette stratégie.</div>
             </div>
         </div>
 
@@ -240,7 +246,7 @@
                     <div class="strat-companies">Exemples : <strong>Google, 3M, Bosch, Siemens</strong></div>
                 </div>
             </div>
-            <p>Ces entreprises dépendent de leurs capacités technologiques internes. L'innovation vient du laboratoire et cherche ensuite son marché ("Technology Push").</p>
+            <p>Ces entreprises dépendent de leurs capacités technologiques internes. L'innovation vient du laboratoire et cherche ensuite son marché.</p>
             
             <div class="svg-container">
                 <svg class="strat-svg" id="schema-2-tech-push" viewBox="0 0 900 340">
@@ -256,7 +262,7 @@
                         </marker>
                     </defs>
                     
-                    <text x="450" y="50" class="svg-head" fill="var(--blue)">Schéma 2 - Processus d'innovation tiré par la technologie</text>
+                    <text x="450" y="50" class="svg-head" fill="var(--blue)">Schéma 2 - Processus d'innovation poussé par la technologie</text>
                     <g transform="translate(-50,50)">
                     <!-- Colonne 1 -->
                     <rect x="120" y="135" width="120" height="50" class="svg-term-box" />
@@ -273,7 +279,7 @@
                     <text x="280" y="220" class="svg-label" fill="#555">Nouvelle technologie</text>
 
                     <!-- Flèche entre New Usage et New Technology -->
-                    <line x1="280" y1="200" x2="280" y2="122" class="svg-arrow-flow" stroke="#4169E1" stroke-dasharray="4 4" marker-end="url(#arrowRoyalMarketS2)" style="stroke-width: 2; marker-end: url(#arrowRoyalMarketS2);" />
+                    <line x1="280" y1="200" x2="280" y2="122" class="svg-arrow-flow" stroke="#4169E1" marker-end="url(#arrowRoyalMarketS2)" style="stroke-width: 2; marker-end: url(#arrowRoyalMarketS2);" />
                     <circle cx="280" cy="200" r="3" fill="#4169E1" />
 
                     <!-- Colonne 3 -->
@@ -296,10 +302,11 @@
                     <path d="M 680,161 L 740,161" class="svg-arrow-flow" stroke="var(--orange)" marker-end="url(#arrowOrangeMarketS2)" style="stroke-width: 2; marker-end: url(#arrowOrangeMarketS2);" />
 
                     <!-- Company (ligne 6, entre colonnes 3 et 4) -->
-                    <rect x="145" y="232" width="100" height="28" class="svg-term-box" style="fill:#4169E1; stroke:#4169E1;" />
-                    <text x="195" y="250" class="svg-label" fill="#fff">Entreprise</text>
+                    <rect x="130" y="232" width="100" height="28" class="svg-term-box" style="fill:#4169E1; stroke:#4169E1;" />
+                    <text x="180" y="250" class="svg-label" fill="#fff">Entreprise</text>
                     <!-- Flèche Company vers New Technology (bleu royal) -->
-                    <path d="M 195,232 L 220,216" class="svg-arrow-flow" stroke="#4169E1" marker-end="url(#arrowRoyalMarketS2)" style="stroke-width: 2; marker-end: url(#arrowRoyalMarketS2);" />
+                    <path d="M 180,232 L 210,216" class="svg-arrow-flow" stroke="#4169E1" style="stroke-width: 2;" />
+                    <circle cx="210" cy="216" r="3" fill="#4169E1" />
 
                     <!-- Colonne 5 -->
                     <rect x="740" y="134" width="120" height="44" class="svg-term-box" />
@@ -325,7 +332,7 @@
                     <div class="strat-companies">Exemples : <strong>Apple, Dyson, Décathlon</strong></div>
                 </div>
             </div>
-            <p>Ces entreprises s'engagent directement avec les clientes et clients pour générer de nouvelles idées. Elles développent des produits basés sur une compréhension supérieure des utilisatrices et utilisateurs finaux. La technologie est une conséquence du besoin identifié.</p>
+            <p>Ces entreprises s'engagent directement avec les clientes et clients pour générer de nouvelles idées. Elles développent des produits basés sur une compréhension supérieure des utilisatrices et utilisateurs finaux. La technologie est une conséquence éventuelle du besoin identifié.</p>
             
             <div class="svg-container">
                 <svg class="strat-svg" id="schema-3-need-seeker" viewBox="0 0 900 340">
@@ -531,7 +538,7 @@
             var score = (val === "correct") ? 1 : 0;
             try { scormMarkCompleted(score); } catch (e) { try { var st = getState(); st.completed = st.completed || []; st.scores = st.scores || {}; if (st.completed.indexOf(GRAIN_ID) === -1) st.completed.push(GRAIN_ID); st.scores[GRAIN_ID] = score; setState(st); } catch (e2) {} }
             if (val === "correct") { 
-                showModal("Correct !", "C'est le 'Tech Push'. Risqué, mais puissant si la techno trouve son public.", "success");
+                showModal("Correct !", "C'est le 'Tech Push'. Risqué, mais puissant si la technologie permet de mieux répondre à un besoin et est adoptée par le public.", "success");
                 setTimeout(() => { const btn = document.getElementById('btnModalClose'); if(btn) { btn.innerText = "Retour au Sommaire"; btn.onclick = function() { window.location.href = SOMMAIRE_URL + '#grain18'; }; } }, 100);
             } else { 
                 showModal("Incorrect", "Le Market Reader écoute le marché existant. Ici on parle de 'pousser' une technologie interne. Le grain est validé ; vous pouvez retourner au sommaire.", "error");

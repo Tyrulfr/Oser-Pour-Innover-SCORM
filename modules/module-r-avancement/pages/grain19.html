@@ -33,6 +33,18 @@
     .def-box{background:linear-gradient(135deg,var(--blue),var(--bordeaux));color:#fff;padding:2rem;border-radius:18px;margin:2rem 0;box-shadow:0 10px 20px rgba(42,50,94,.2)}
     .def-quote{font-size:1.15rem;font-weight:500;text-align:center;display:block;font-style:italic;line-height:1.7}
     .timeline-wrap{background:var(--bg-card);border-radius:18px;padding:2rem;box-shadow:var(--shadow);margin:2rem 0}
+    .scales-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1rem;margin:1.25rem 0 0}
+    .scale-card{background:rgba(0,0,0,.04);border-radius:14px;padding:1rem;border-left:5px solid transparent}
+    body.dark-mode .scale-card{background:rgba(255,255,255,.05)}
+    .scale-card h4{margin:.2rem 0 .5rem;font-size:1rem}
+    .scale-card p{margin:0;font-size:.93rem;color:var(--text-main)}
+    .scale-trl{border-left-color:#2A325E}
+    .scale-drl{border-left-color:#F48C2E}
+    .scale-mrl{border-left-color:#2EAF7D}
+    .note-most-used{margin-top:1rem;padding:.8rem 1rem;border-radius:12px;background:rgba(42,50,94,.08);font-size:.92rem}
+    body.dark-mode .note-most-used{background:rgba(255,255,255,.08)}
+    .usage-note{margin-top:1rem;padding:1rem;border-left:5px solid var(--bordeaux);background:rgba(88,15,69,.08);border-radius:10px}
+    body.dark-mode .usage-note{background:rgba(255,255,255,.08)}
     .timeline{display:grid;grid-template-columns:repeat(9,1fr);gap:.8rem;align-items:stretch}
     .trl-step{border-radius:16px;padding:1rem;text-align:center;color:#fff;cursor:pointer;min-height:150px;display:flex;flex-direction:column;justify-content:space-between;box-shadow:var(--shadow)}
     .trl-step:hover{transform:translateY(-6px) scale(1.01)}
@@ -82,12 +94,31 @@
   <div id="progress-widget" class="progress-widget"></div>
 
   <div class="content-container">
-    <h1 class="hero-title">Le TRL, ou comment situer la maturité d'une innovation</h1>
-    <div class="hero-subtitle">Le <strong>Technology Readiness Level</strong> est une échelle de 9 niveaux qui aide à situer une technologie entre l'idée scientifique initiale et la solution prouvée en conditions réelles. Il permet de parler d'innovation avec un langage commun, structuré et utile pour décider, financer et piloter. </div>
+    <h1 class="hero-title">Les échelles de maturité d'une innovation</h1>
+    <div class="hero-subtitle">Avant de parler d'usage, il faut distinguer les principales échelles de maturité : <strong>TRL</strong>, <strong>DRL</strong> et <strong>MRL</strong>.</div>
     <div class="def-box">
       <span class="def-quote"><i class="fa-solid fa-rocket" style="opacity:.8;margin-right:10px"></i>
-        Une innovation ne passe pas brutalement de l'idée au marché. Elle traverse des paliers de maturation. Le TRL sert précisément à les nommer, les objectiver et réduire l'incertitude.
+        Une innovation ne passe pas brutalement de l'idée au marché. Elle traverse des paliers de maturation. Ces échelles servent à nommer ces paliers, objectiver l'avancement et réduire l'incertitude.
       </span>
+    </div>
+    <div class="timeline-wrap">
+      <h2 style="text-align:center;margin-top:0">Définitions des trois échelles</h2>
+      <div class="scales-grid">
+        <div class="scale-card scale-trl">
+          <h4>TRL - Technology Readiness Level</h4>
+          <p>Mesure la maturité technologique d'une innovation, de l'idée scientifique à la technologie prouvée en conditions réelles.</p>
+        </div>
+        <div class="scale-card scale-drl">
+          <h4>DRL - Development Readiness Level</h4>
+          <p>Mesure la maturité du développement d'un projet (intégration, validation, avancée des activités de développement).</p>
+        </div>
+        <div class="scale-card scale-mrl">
+          <h4>MRL - Manufacturing Readiness Level</h4>
+          <p>Mesure la maturité industrielle, c'est-à-dire la capacité à fabriquer de manière robuste, répétable et à plus grande échelle.</p>
+        </div>
+      </div>
+      <p class="note-most-used"><strong>En pratique, l'échelle la plus utilisée reste la TRL.</strong> Selon les contextes, elle peut être complétée par d'autres approches (par exemple l'échelle de maturité industrielle, et parfois des approches orientées marché).</p>
+      <p class="note-most-used" style="margin-top:.6rem">Dans certaines pratiques, l'acronyme <strong>MRL</strong> est aussi utilisé pour <strong>Marketing Readiness Level</strong> (maturité marché). Cette lecture complète la TRL sur la préparation commerciale (besoin, proposition de valeur, adoption), alors que la version <em>Manufacturing</em> complète la TRL sur la capacité de production.</p>
     </div>
     <div class="timeline-wrap">
       <h2 style="text-align:center;margin-top:0">L'échelle TRL de 1 à 9</h2>
@@ -104,22 +135,23 @@
         </ul>
       </div>
       <div class="card">
-        <h3><i class="fa-solid fa-briefcase"></i> À quoi sert le TRL ?</h3>
+        <h3><i class="fa-solid fa-briefcase"></i> Dans l'usage du TRL</h3>
         <div class="use-cases">
           <div class="use-case"><strong>Décider</strong><br>Savoir si un projet relève de la recherche, du prototypage ou du déploiement.</div>
           <div class="use-case"><strong>Financer</strong><br>Associer les bons dispositifs au bon niveau de maturité.</div>
           <div class="use-case"><strong>Piloter</strong><br>Définir des étapes, des preuves attendues et des livrables.</div>
           <div class="use-case"><strong>Communiquer</strong><br>Parler de l'avancement d'un projet sans ambiguïté entre chercheurs, ingénieurs, décideurs et partenaires.</div>
         </div>
+        <div class="usage-note"><strong>Important :</strong> le TRL ne suffit pas à lui seul pour piloter toute l'innovation (marché, industrialisation, modèle économique). Il est souvent complété par d'autres lectures selon le contexte.</div>
       </div>
     </div>
     <div class="quiz-box">
       <h3><i class="fa-solid fa-clipboard-question"></i> Quiz de compréhension</h3>
-      <p>À quel moment peut-on dire qu'une technologie est <strong>prouvée en conditions réelles d'exploitation</strong> ?</p>
+      <p>Dans la grille TRL, à quel intervalle se situe généralement la zone la plus risquée, souvent appelée <strong>« vallée de la mort »</strong> ?</p>
       <form id="quizForm">
-        <div class="quiz-option"><input type="radio" id="a1" name="qtrl" value="wrong"> <label for="a1">TRL 3 - preuve de concept expérimentale</label></div>
-        <div class="quiz-option"><input type="radio" id="a2" name="qtrl" value="wrong"> <label for="a2">TRL 6 - prototype démontré en environnement représentatif</label></div>
-        <div class="quiz-option"><input type="radio" id="a3" name="qtrl" value="correct"> <label for="a3">TRL 9 - système prouvé en conditions réelles</label></div>
+        <div class="quiz-option"><input type="radio" id="a1" name="qtrl" value="wrong"> <label for="a1">TRL 1 à 3</label></div>
+        <div class="quiz-option"><input type="radio" id="a2" name="qtrl" value="correct"> <label for="a2">TRL 4 à 6</label></div>
+        <div class="quiz-option"><input type="radio" id="a3" name="qtrl" value="wrong"> <label for="a3">TRL 7 à 9</label></div>
       </form>
     </div>
   </div>
@@ -137,15 +169,15 @@
   </div>
   <script>
     const trlData = [
-      {n:1, cls:'c1', icon:'fa-flask', title:'TRL 1', short:'Principes de base observés', highlight:'On identifie un phénomène ou un principe scientifique pertinent.', text:'À ce stade, on est au niveau de la recherche fondamentale. On observe, on documente, on comprend.\n\nExemple : un laboratoire repère une propriété physique ou chimique qui pourrait, un jour, être utile dans une application.'},
-      {n:2, cls:'c2', icon:'fa-lightbulb', title:'TRL 2', short:'Concept technologique formulé', highlight:'Le principe observé commence à être transformé en idée d\'application.', text:'La technologie n\'existe pas encore, mais l\'on peut formuler un concept d\'usage ou une piste de solution.\n\nExemple : imaginer qu\'une propriété repérée en laboratoire pourrait servir à concevoir un capteur.'},
-      {n:3, cls:'c3', icon:'fa-vial-circle-check', title:'TRL 3', short:'Preuve de concept', highlight:'On vérifie expérimentalement qu\'une idée peut fonctionner.', text:'C\'est la première démonstration de faisabilité. La preuve est encore partielle, souvent en laboratoire, mais elle rend le concept crédible.\n\nExemple : un montage expérimental montre que le capteur peut effectivement détecter un signal.'},
-      {n:4, cls:'c4', icon:'fa-cubes', title:'TRL 4', short:'Validation en laboratoire', highlight:'Les composants sont intégrés et testés dans un environnement maîtrisé.', text:'On passe d\'une preuve ponctuelle à une première structuration technique. Les briques sont assemblées et évaluées ensemble.\n\nExemple : un prototype rudimentaire est testé avec plusieurs composants couplés.'},
-      {n:5, cls:'c5', icon:'fa-industry', title:'TRL 5', short:'Validation en environnement représentatif', highlight:'Le prototype est confronté à un contexte plus proche du réel.', text:'On teste la technologie dans un cadre qui ressemble aux conditions futures d\'usage, sans être encore pleinement opérationnel.\n\nExemple : le capteur est essayé dans une plateforme pilote ou un environnement simulé.'},
-      {n:6, cls:'c6', icon:'fa-screwdriver-wrench', title:'TRL 6', short:'Démonstration du prototype', highlight:'Le système fonctionne de manière crédible dans un environnement pertinent.', text:'Le prototype devient plus robuste. Il permet d\'évaluer la faisabilité technique et les premiers enjeux de déploiement.\n\nExemple : une version alpha est démontrée devant des partenaires ou testeurs.'},
-      {n:7, cls:'c7', icon:'fa-rocket', title:'TRL 7', short:'Prototype opérationnel', highlight:'La solution est testée dans un environnement réel ou quasi réel.', text:'On franchit un cap important : le prototype n\'est plus seulement démonstratif, il devient opérationnel.\n\nExemple : une solution est testée sur un vrai site, avec de vrais utilisateurs ou opérateurs.'},
-      {n:8, cls:'c8', icon:'fa-certificate', title:'TRL 8', short:'Système qualifié', highlight:'La solution finale est stabilisée, industrialisable ou certifiable.', text:'Le système est complet, qualifié et prêt pour la mise en œuvre. Les exigences réglementaires, qualité ou de production sont prises en compte.\n\nExemple : le produit final est validé et prêt à être mis sur le marché ou intégré à une chaîne de production.'},
-      {n:9, cls:'c9', icon:'fa-check-double', title:'TRL 9', short:'Système prouvé en réel', highlight:'La technologie est exploitée avec succès dans son environnement réel.', text:'C\'est le stade de maturité maximale. La solution fonctionne dans la réalité et a démontré sa valeur en exploitation.\n\nExemple : un produit est commercialisé, utilisé, maintenu et éprouvé sur le terrain.'}
+      {n:1, cls:'c1', icon:'fa-flask', title:'TRL 1', short:'Principes de base observés et rapportés', highlight:'Plus bas niveau de maturité technologique.', text:'La recherche scientifique commence à se traduire en recherche appliquée et développement. Les exemples peuvent inclure des études papiers des propriétés de base d\'une technologie.'},
+      {n:2, cls:'c2', icon:'fa-lightbulb', title:'TRL 2', short:'Concepts ou applications formulés', highlight:'L\'invention débute.', text:'Une fois les principes de base observés, les applications pratiques peuvent être inventées. L\'application est spéculative et il n\'y a aucune preuve ou analyse détaillée pour étayer cette hypothèse. Les exemples sont toujours limités à des études papier.'},
+      {n:3, cls:'c3', icon:'fa-vial-circle-check', title:'TRL 3', short:'Preuve caractéristique du concept', highlight:'Une R&D active est initiée.', text:'Ceci inclut des études analytiques et des études en laboratoire afin de valider physiquement les prévisions analytiques des éléments séparés de la technologie. Les exemples incluent des composants qui ne sont pas encore intégrés ou représentatifs.'},
+      {n:4, cls:'c4', icon:'fa-cubes', title:'TRL 4', short:'Validation en laboratoire', highlight:'Les composants technologiques de base sont intégrés.', text:'Les composants sont intégrés afin d\'établir que toutes les parties fonctionnent ensemble. C\'est une « basse fidélité » comparée au système final. Les exemples incluent l\'intégration ad hoc du matériel en laboratoire.'},
+      {n:5, cls:'c5', icon:'fa-industry', title:'TRL 5', short:'Validation en environnement significatif', highlight:'La fidélité de la technologie s\'accroît significativement.', text:'Les composants technologiques basiques sont intégrés avec des éléments raisonnablement réalistes afin que la technologie soit testée dans un environnement simulé. Les exemples incluent l\'intégration « haute fidélité » en laboratoire des composants.'},
+      {n:6, cls:'c6', icon:'fa-screwdriver-wrench', title:'TRL 6', short:'Démonstration du prototype', highlight:'Avancée majeure de maturité technologique.', text:'Le modèle ou le système prototype représentatif (bien au-delà de l\'artefact testé en TRL 5) est testé dans un environnement significatif. Les exemples incluent le test d\'un prototype dans un laboratoire « haute fidélité » ou dans un environnement opérationnel simulé.'},
+      {n:7, cls:'c7', icon:'fa-rocket', title:'TRL 7', short:'Prototype en environnement opérationnel', highlight:'Avancée majeure par rapport à TRL 6.', text:'Le système prototype est démontré dans un environnement opérationnel, tel qu\'un avion ou un véhicule. Les exemples incluent le test du prototype sur un avion d\'essai.'},
+      {n:8, cls:'c8', icon:'fa-certificate', title:'TRL 8', short:'Système réel complet qualifié', highlight:'La technologie fonctionne sous sa forme finale.', text:'La preuve a été apportée que la technologie fonctionne avec les conditions attendues. Dans la plupart des cas, cette TRL représente la fin du développement de vrais systèmes. Les exemples incluent des tests de développement et l\'évaluation du système afin de déterminer s\'il respecte les spécifications du design.'},
+      {n:9, cls:'c9', icon:'fa-check-double', title:'TRL 9', short:'Système réel prouvé en mission', highlight:'Fin des derniers aspects de développement.', text:'Application réelle de la technologie sous sa forme finale et en conditions de mission, semblables à celles rencontrées lors de tests opérationnels et d\'évaluation. Les exemples incluent l\'utilisation du système sous conditions de mission opérationnelle.'}
     ];
     const timeline = document.getElementById('timeline');
     trlData.forEach(function(item){
@@ -155,13 +187,41 @@
       el.addEventListener('click', function(){ openTRL(item); });
       timeline.appendChild(el);
     });
+    var pendingRedirect = null;
     function openTRL(item){
       document.getElementById('mTitle').innerHTML = '<i class="fa-solid ' + item.icon + '"></i> ' + item.title;
       document.getElementById('mHighlight').innerText = item.highlight;
       document.getElementById('mText').innerText = item.text;
+      document.getElementById('btnModalClose').innerText = 'Fermer';
+      pendingRedirect = null;
       document.getElementById('detailModal').classList.add('active');
     }
-    function closeModal(){ document.getElementById('detailModal').classList.remove('active'); }
+    function showQuizFeedback(score){
+      if (score === 1) {
+        document.getElementById('mTitle').innerHTML = '<i class="fa-solid fa-circle-check"></i> Résultat du quiz';
+        document.getElementById('mHighlight').innerText = 'Bravo !';
+        document.getElementById('mText').innerText = 'Exact. La zone TRL 4 à 6 est souvent la plus risquée : la technologie est crédible, mais pas encore sécurisée pour un déploiement.';
+        document.getElementById('btnModalClose').innerText = 'Retour au sommaire';
+        pendingRedirect = SOMMAIRE_URL + '#grain19';
+      } else {
+        document.getElementById('mTitle').innerHTML = '<i class="fa-solid fa-circle-xmark"></i> Résultat du quiz';
+        document.getElementById('mHighlight').innerText = 'Réponse incorrecte';
+        document.getElementById('mText').innerText = 'La bonne réponse est TRL 4 à 6 : c\'est généralement la zone la plus critique (« vallée de la mort »). Merci de recommencer.';
+        document.getElementById('btnModalClose').innerText = 'Réessayer';
+        pendingRedirect = null;
+        var checked = document.querySelector('input[name="qtrl"]:checked');
+        if (checked) checked.checked = false;
+      }
+      document.getElementById('detailModal').classList.add('active');
+    }
+    function closeModal(){
+      document.getElementById('detailModal').classList.remove('active');
+      if (pendingRedirect) {
+        var nextUrl = pendingRedirect;
+        pendingRedirect = null;
+        window.location.href = nextUrl;
+      }
+    }
     document.getElementById('btnModalClose').addEventListener('click', closeModal);
     document.getElementById('detailModal').addEventListener('click', function(e){ if(e.target.id === 'detailModal') closeModal(); });
     var GRAIN_ID = 'grain19';
@@ -197,10 +257,10 @@
       var checked = document.querySelector('input[name="qtrl"]:checked');
       if (!checked) { alert('Veuillez répondre au quiz.'); return; }
       var score = (checked.value === 'correct') ? 1 : 0;
-      try { scormMarkCompleted(score); } catch (e) {}
-      if (score === 1) alert('Bravo ! Le TRL 9 correspond bien à une technologie prouvée en conditions réelles.');
-      else alert('Pas tout à fait. Le TRL 9 correspond à une technologie prouvée en conditions réelles.');
-      window.location.href = SOMMAIRE_URL + '#grain19';
+      if (score === 1) {
+        try { scormMarkCompleted(score); } catch (e) {}
+      }
+      showQuizFeedback(score);
     });
   </script>
 </body>

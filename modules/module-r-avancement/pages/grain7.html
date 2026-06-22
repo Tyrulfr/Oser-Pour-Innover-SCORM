@@ -139,57 +139,92 @@
         }
         .cycle-container {
             position: relative;
-            width: 320px;
-            height: 320px;
+            width: 360px;
+            height: 360px;
             margin: 40px auto;
+            --cycle-r: 124px;
         }
-        
-        /* SVG Arrows Layer */
+
+        /* Anneau R=118 — flèches SVG + écussons HTML cliquables */
         .cycle-svg {
             position: absolute;
-            top: 0; left: 0;
-            width: 100%; height: 100%;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            overflow: visible;
             pointer-events: none;
             z-index: 0;
         }
 
+        .cycle-arrow {
+            fill: none;
+            stroke: #888;
+            stroke-width: 4;
+            stroke-linecap: butt;
+        }
+
+        .cycle-orbit {
+            position: absolute;
+            inset: 0;
+            z-index: 2;
+            pointer-events: none;
+        }
+
+        .cycle-spoke {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 0;
+            height: 0;
+            transform: rotate(var(--angle));
+        }
+
         .cycle-node {
             position: absolute;
-            width: 100px;
-            height: 100px;
-            background: white;
+            top: 0;
+            left: 0;
+            width: 92px;
+            height: 92px;
+            margin: -46px 0 0 -46px;
+            padding: 0;
+            transform: translateY(calc(-1 * var(--cycle-r))) rotate(calc(-1 * var(--angle)));
+            background: var(--bg-card);
             border-radius: 50%;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
             cursor: pointer;
-            z-index: 2;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-            transition: all 0.3s;
+            pointer-events: auto;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.12);
+            transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease, color 0.3s ease;
             border: 3px solid #ccc;
+            font-family: 'Open Sans', sans-serif;
         }
-        .cycle-node:hover { transform: scale(1.1); box-shadow: 0 8px 25px rgba(0,0,0,0.15); }
-        
-        .c-icon { font-size: 1.8rem; margin-bottom: 5px; }
-        .c-label { font-size: 0.7rem; font-weight: 800; text-transform: uppercase; }
+        .cycle-node:hover {
+            transform: translateY(calc(-1 * var(--cycle-r))) rotate(calc(-1 * var(--angle))) scale(1.04);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+        }
 
-        /* Specific Node Styles */
-        .node-discover { top: 0; left: 50%; transform: translateX(-50%); border-color: var(--blue); color: var(--blue); }
+        .c-icon { font-size: 1.65rem; margin-bottom: 2px; }
+        .c-label { font-size: 0.56rem; font-weight: 800; text-transform: uppercase; line-height: 1.1; }
+
+        .node-discover { --angle: 0deg; border-color: var(--blue); color: var(--blue); }
         .node-discover:hover { background: var(--blue); color: white; }
 
-        .node-design { bottom: 20px; right: -10px; border-color: var(--orange); color: var(--orange); }
+        .node-design { --angle: 120deg; border-color: var(--orange); color: var(--orange); }
         .node-design:hover { background: var(--orange); color: white; }
 
-        .node-evaluate { bottom: 20px; left: -10px; border-color: var(--teal); color: var(--teal); }
+        .node-evaluate { --angle: 240deg; border-color: var(--teal); color: var(--teal); }
         .node-evaluate:hover { background: var(--teal); color: white; }
 
-        /* Center User Node */
         .node-center {
             position: absolute;
-            top: 50%; left: 50%; 
+            top: 50%;
+            left: 50%;
             transform: translate(-50%, -50%);
-            width: 110px; height: 110px;
+            width: 100px;
+            height: 100px;
             background: var(--bg-card);
             border: 4px solid var(--bordeaux);
             border-radius: 50%;
@@ -197,11 +232,13 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            z-index: 1;
+            z-index: 3;
             color: var(--bordeaux);
+            box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+            pointer-events: none;
         }
-        .node-center .c-icon { font-size: 2.5rem; margin-bottom: 2px; }
-        .node-center .c-label { font-size: 0.8rem; }
+        .node-center .c-icon { font-size: 2.2rem; margin-bottom: 2px; }
+        .node-center .c-label { font-size: 0.58rem; font-weight: 800; }
 
         /* Info Box RID */
         .rid-box {
@@ -281,46 +318,48 @@
             <p style="margin-bottom: 2rem;">Un cycle centré sur l'usager, alternant observation, conception et évaluation.</p>
             
             <div class="cycle-container">
-                <!-- SVG ARROWS -->
-                <svg class="cycle-svg" width="100%" height="100%" viewBox="0 0 320 320">
+                <svg class="cycle-svg" viewBox="0 0 360 360" aria-hidden="true">
                     <defs>
-                        <marker id="arrowhead-cycle" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
-                            <polygon points="0 0, 10 3.5, 0 7" fill="#ccc" />
+                        <marker id="arrowhead-cycle" markerWidth="7" markerHeight="5" refX="6" refY="2.5" orient="auto">
+                            <polygon points="0 0, 7 2.5, 0 5" fill="#888" />
                         </marker>
                     </defs>
-                    <!-- Arc Discover -> Design -->
-                    <path d="M 180 20 Q 280 20 280 180" fill="none" stroke="#ccc" stroke-width="3" stroke-dasharray="5,5" marker-end="url(#arrowhead-cycle)" />
-                    <!-- Arc Design -> Evaluate -->
-                    <path d="M 260 260 Q 160 330 60 260" fill="none" stroke="#ccc" stroke-width="3" stroke-dasharray="5,5" marker-end="url(#arrowhead-cycle)" />
-                    <!-- Arc Evaluate -> Discover -->
-                    <path d="M 40 180 Q 40 20 140 20" fill="none" stroke="#ccc" stroke-width="3" stroke-dasharray="5,5" marker-end="url(#arrowhead-cycle)" />
+                    <!-- Rotation globale +30° conservant les espaces flèche/écusson -->
+                    <path class="cycle-arrow" marker-end="url(#arrowhead-cycle)"
+                          d="M 241.5 72.3 A 124 124 0 0 1 304.0 180.5" />
+                    <path class="cycle-arrow" marker-end="url(#arrowhead-cycle)"
+                          d="M 242.5 287.1 A 124 124 0 0 1 117.5 287.1" />
+                    <path class="cycle-arrow" marker-end="url(#arrowhead-cycle)"
+                          d="M 56.0 180.5 A 124 124 0 0 1 118.5 72.3" />
                 </svg>
 
-                <!-- CENTER NODE -->
                 <div class="node-center">
                     <i class="fa-solid fa-user-large c-icon"></i>
                     <span class="c-label">Notre Usager</span>
                 </div>
 
-                <!-- DISCOVER NODE -->
-                <div class="cycle-node node-discover" onclick="showCycleDetails('Decouverte')">
-                    <i class="fa-solid fa-users-viewfinder c-icon"></i>
-                    <span class="c-label">Découverte</span>
-                </div>
-
-                <!-- DESIGN NODE -->
-                <div class="cycle-node node-design" onclick="showCycleDetails('Conception')">
-                    <i class="fa-solid fa-pen-ruler c-icon"></i>
-                    <span class="c-label">Conception</span>
-                </div>
-
-                <!-- EVALUATE NODE -->
-                <div class="cycle-node node-evaluate" onclick="showCycleDetails('Evaluer')">
-                    <i class="fa-solid fa-stopwatch c-icon"></i>
-                    <span class="c-label">Evaluer</span>
+                <div class="cycle-orbit">
+                    <div class="cycle-spoke" style="--angle:0deg">
+                        <button type="button" class="cycle-node node-discover" onclick="showCycleDetails('Decouverte')">
+                            <i class="fa-solid fa-users-viewfinder c-icon"></i>
+                            <span class="c-label">Découverte</span>
+                        </button>
+                    </div>
+                    <div class="cycle-spoke" style="--angle:120deg">
+                        <button type="button" class="cycle-node node-design" onclick="showCycleDetails('Conception')">
+                            <i class="fa-solid fa-pen-ruler c-icon"></i>
+                            <span class="c-label">Conception</span>
+                        </button>
+                    </div>
+                    <div class="cycle-spoke" style="--angle:240deg">
+                        <button type="button" class="cycle-node node-evaluate" onclick="showCycleDetails('Evaluer')">
+                            <i class="fa-solid fa-stopwatch c-icon"></i>
+                            <span class="c-label">Evaluer</span>
+                        </button>
+                    </div>
                 </div>
             </div>
-            <p style="margin-top:15px; font-size:0.8rem; color:#888;"><em>Cliquez sur les cercles pour voir les activités.</em></p>
+            <p style="margin-top:15px; font-size:0.8rem; color:#888;"><em>Cliquez sur les écussons pour voir les activités.</em></p>
         </div>
 
         <h2 id="raisonnement">Les 4 Modes de Raisonnement</h2>
@@ -336,7 +375,7 @@
                         <span class="flip-help">Cliquer pour voir un exemple</span>
                     </div>
                     <div class="reasoning-face reasoning-back">
-                        <span class="r-example-title">Exemple en conception innovante</span>
+                        <span class="r-example-title">Déduction</span>
                         <span class="r-example">En appliquant une norme ergonomique générale, une équipe en déduit que la poignée d'un nouvel outil doit avoir un diamètre précis pour convenir à la majorité des utilisateurs.</span>
                     </div>
                 </div>
@@ -350,7 +389,7 @@
                         <span class="flip-help">Cliquer pour voir un exemple</span>
                     </div>
                     <div class="reasoning-face reasoning-back">
-                        <span class="r-example-title">Exemple en conception innovante</span>
+                        <span class="r-example-title">Induction</span>
                         <span class="r-example">Après avoir observé plusieurs utilisateurs qui détournent un même objet pour stabiliser leur smartphone, une équipe induit qu'un besoin général existe pour un support compact universel.</span>
                     </div>
                 </div>
@@ -364,7 +403,7 @@
                         <span class="flip-help">Cliquer pour voir un exemple</span>
                     </div>
                     <div class="reasoning-face reasoning-back">
-                        <span class="r-example-title">Exemple en conception innovante</span>
+                        <span class="r-example-title">Abduction sélective</span>
                         <span class="r-example">Constatant que les usagers perdent régulièrement leurs accessoires électroniques, les concepteurs supposent qu'un système d'attache magnétique - déjà efficace pour d'autres objets - pourrait répondre au problème.</span>
                     </div>
                 </div>
@@ -378,7 +417,7 @@
                         <span class="flip-help">Cliquer pour voir un exemple</span>
                     </div>
                     <div class="reasoning-face reasoning-back">
-                        <span class="r-example-title">Exemple en conception innovante</span>
+                        <span class="r-example-title">Abduction innovante</span>
                         <span class="r-example">Face à la difficulté de transporter des colis de tailles variées en logistique urbaine, l'équipe imagine des contenants auto-déployables capables d'ajuster leur volume selon le contenu, un concept encore inexistant.</span>
                     </div>
                 </div>
@@ -506,11 +545,12 @@
 
         // Specific function for Cycle popups
         function showCycleDetails(step) {
-            let content = "";
-            let color = "";
-            let title = "";
+            if (!modal || !modalTitle || !modalMsg || !modalBox || !modalBtn) return;
+            var content = "";
+            var color = "";
+            var title = "";
 
-            if(step === 'Decouverte') {
+            if (step === 'Decouverte') {
                 title = "Découverte";
                 content = "<ul style='text-align:left; padding-left:20px;'><li>Observer les usagers sur leur lieu de travail</li><li>Écouter les problèmes et suggestions</li><li>Apprendre ce qui est significatif</li></ul>";
                 color = "var(--blue)";
@@ -526,12 +566,19 @@
 
             modalTitle.innerText = title;
             modalMsg.innerHTML = content;
-            modalIcon.innerHTML = '<i class="fa-solid fa-circle-info" style="color: '+color+';"></i>';
+            modalIcon.innerHTML = '<i class="fa-solid fa-circle-info" style="color: ' + color + ';"></i>';
             modalTitle.style.color = color;
             modalBox.style.borderTopColor = color;
             modalBtn.style.backgroundColor = color;
+            modalBtn.innerText = 'Continuer';
+            modalBtn.onclick = function(e) { e.preventDefault(); closeModal(); };
             modal.classList.add('active');
+            modal.style.display = 'flex';
+            modal.style.opacity = '1';
         }
+        window.showCycleDetails = showCycleDetails;
+        window.showModal = showModal;
+        window.closeModal = closeModal;
 
         function closeModal() {
             if (modal) { modal.classList.remove('active'); modal.style.display = 'none'; modal.style.opacity = '0'; }

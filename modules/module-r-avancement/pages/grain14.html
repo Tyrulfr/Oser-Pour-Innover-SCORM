@@ -200,7 +200,7 @@
             <div class="matrix-grid">
                 
                 <!-- Titre AXE X (Haut) -->
-                <div class="axis-x-title">Lien entre les composants (Architecture)</div>
+                <div class="axis-x-title">LIENS ENTRE LES COMPOSANTS (ARCHIECTURE)</div>
 
                 <!-- En-têtes Colonnes -->
                 <div class="header-cell" style="grid-column: 3; grid-row: 2;">
@@ -211,7 +211,7 @@
                 </div>
 
                 <!-- Titre AXE Y (Gauche - Colonne 1) -->
-                <div class="axis-y-title">Concepts Clés<br>(Technologie)</div>
+                <div class="axis-y-title">TECHNOLOGIES<br>DE REFERENCE</div>
 
                 <!-- En-têtes Lignes (Gauche - Colonne 2) -->
                 <div class="header-cell header-cell-vertical" style="grid-column: 2; grid-row: 3;">
@@ -230,7 +230,7 @@
                     <div class="q-desc">On améliore l'existant sans rien bouleverser.</div>
                     <div class="q-example">
                         <i class="fa-brands fa-usb q-icon"></i>
-                        <span>Clé USB (Capacité +)</span>
+                        <span>Augmentation de la capacité d’une clé USB</span>
                     </div>
                 </div>
 
@@ -243,7 +243,7 @@
                     <div class="q-desc">Mêmes composants, mais organisés différemment.</div>
                     <div class="q-example">
                         <i class="fa-solid fa-car-side q-icon"></i>
-                        <span>Traction Avant</span>
+                        <span>Propulsion arrière -> Traction avant</span>
                     </div>
                 </div>
 
@@ -253,10 +253,10 @@
                         <div class="q-title">Modulaire</div>
                         <div class="q-number">3</div>
                     </div>
-                    <div class="q-desc">Nouvelle techno dans une structure existante.</div>
+                    <div class="q-desc">Nouvelle technologie dans une structure existante.</div>
                     <div class="q-example">
                         <i class="fa-solid fa-key q-icon"></i>
-                        <span>Clé sans contact</span>
+                        <span>Clé mécanique de voiture -> Clé sans contact</span>
                     </div>
                 </div>
 
@@ -266,10 +266,10 @@
                         <div class="q-title">Radicale</div>
                         <div class="q-number">4</div>
                     </div>
-                    <div class="q-desc">Rupture totale : nouvelle techno ET nouvelle architecture.</div>
+                    <div class="q-desc">Rupture totale : nouvelle technologie ET nouvelle architecture.</div>
                     <div class="q-example">
                         <i class="fa-solid fa-computer q-icon"></i>
-                        <span>Machine à écrire > PC</span>
+                        <span>Machine à écrire -> PC et traitement de texte</span>
                     </div>
                 </div>
 
@@ -278,7 +278,8 @@
 
         <div class="info-box">
             <h4><i class="fa-solid fa-sitemap"></i> Analyse du Modèle</h4>
-            <p>Ce modèle de Henderson & Clark (1990) est fondamental car il montre que l'innovation n'est pas seulement technologique. Elle peut être <strong>architecturale</strong> (changer la façon dont les composants sont liés) ou <strong>modulaire</strong> (changer un composant clé sans toucher au reste). Chaque type a des impacts différents sur l'organisation industrielle, les investissements et la gestion des risques.</p>
+            <p>Ce modèle de Henderson & Clark (1990) montre que l'innovation n'est pas seulement d’ordre <strong>technologique</strong>, elle peut aussi être <strong>architecturale</strong> (façon dont les composants sont liés, assemblés). Ces deux types d’innovation ont des impacts différents sur l'organisation industrielle, les investissements et la gestion des risques. En effet, le lancement d’une nouvelle technologie dans un produit nécessite des tests de validation et une industrialisation soignés, alors que l’adoption d’une nouvelle architecture produit nécessite un réarrangement des lignes de production et remet en question ce qu’on savait de la fiabilité du produit. On voit que seule la dimension <strong>usages / besoin</strong> n’est pas considérée ici.</p>
+            <p style="margin-top: 12px; font-size: 0.9rem;"><strong>Référence :</strong> Henderson, R. M., & Clark, K. B. (1990). <em>Architectural Innovation: The Reconfiguration of Existing Product Technologies and the Failure of Established Firms</em>. <em>Administrative Science Quarterly</em>, 35(1), 9-30. <a href="https://doi.org/10.2307/2393549" target="_blank" rel="noopener noreferrer">https://doi.org/10.2307/2393549</a></p>
         </div>
 
         <!-- Quiz -->
@@ -401,7 +402,7 @@
                 showModal("Correct !", "C'est bien une innovation architecturale : on change l'organisation des composants sans changer la technologie fondamentale.", "success");
                 setTimeout(() => { const btn = document.getElementById('btnModalClose'); if(btn) { btn.innerText = "Retour au Sommaire"; btn.onclick = function() { window.location.href = SOMMAIRE_URL + '#grain14'; }; } }, 100);
             } else { 
-                showModal("Incorrect", "Regardez la matrice : Architecture changée + Techno inchangée = Quadrant 2 (Orange). Le grain est validé ; vous pouvez retourner au sommaire.", "error");
+                showModal("Incorrect", "Regardez la matrice : Architecture changée + Technologie inchangée = Quadrant 2 (Orange). Le grain est validé ; vous pouvez retourner au sommaire.", "error");
                 setTimeout(() => { const btn = document.getElementById('btnModalClose'); if(btn) { btn.innerText = "Retour au Sommaire"; btn.onclick = function() { window.location.href = SOMMAIRE_URL + '#grain14'; }; } }, 100);
             }
         }

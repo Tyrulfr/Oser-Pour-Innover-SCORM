@@ -115,8 +115,10 @@
         .mp-box-focus-u { fill: #fff5eb; stroke: var(--orange); stroke-width: 3; }
         .mp-box-focus-t { fill: #ecfdf6; stroke: var(--teal); stroke-width: 3; }
         .mp-lbl-focus { font-size: 12px; font-weight: 800; text-anchor: middle; fill: #1a1a1a; }
-        .mp-link-focus { fill: none; stroke: var(--orange); stroke-width: 4; stroke-dasharray: 5 4; stroke-linecap: round; stroke-linejoin: round; }
-        .mp-flow-muted-o { fill: none; stroke: var(--orange); stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; opacity: 0.42; }
+        .mp-link-focus { fill: none; stroke: #f0821a; stroke-width: 4; stroke-dasharray: 5 4; stroke-linecap: butt; stroke-linejoin: round; }
+        .mp-flow-muted-o { fill: none; stroke: #f0821a; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; opacity: 0.42; }
+        .mp-flow-strong-o { fill: none; stroke: #f0821a; stroke-width: 2.8; stroke-linecap: butt; stroke-linejoin: round; opacity: 0.95; }
+        .mp-flow-thick-o { fill: none; stroke: #f0821a; stroke-width: 4.4; stroke-linecap: butt; stroke-linejoin: round; }
         .mp-line-company { stroke: #6b7fc7; stroke-width: 1.8; stroke-linecap: round; opacity: 0.55; }
         .mp-line-company-dash { stroke: #6b7fc7; stroke-width: 1.8; stroke-dasharray: 4 4; stroke-linecap: round; opacity: 0.5; }
         .mp-company-box { fill: #7b8ec9; stroke: #6a7db8; stroke-width: 1.5; opacity: 0.72; }
@@ -164,12 +166,11 @@
         <div class="def-box">
             <span class="def-quote">
                 <i class="fa-solid fa-bolt" style="opacity:0.8; margin-right:10px;"></i>
-                Selon RID, une <strong>disruption</strong> nécessite une compréhension supérieure de l'utilisateur final (stratégie <em>Need Seeker</em>). 
-                Il faut objectiver et prioriser les "Seaux de Valeur" (Value Buckets) pour démarrer le processus.
+                Selon RID, une <strong>disruption d’usage</strong> nécessite une de prendre conscience d’un besoin non trivial d’un utilisateur (ici impliqué dans le séchage de mains). Ceci est rendu possible dans la méthodologie par l’objectivation et la priorisation de Poches de Valeur (Value Buckets) qui feront l’objet de séances d’idéation.
             </span>
         </div>
 
-        <h2 style="margin-top:3rem; text-align:center; color:var(--bordeaux);">L'Exemple Dyson Airblade</h2>
+        <h2 style="margin-top:3rem; text-align:center; color:var(--bordeaux);">L’exemple du sèche-mains Airblade de Dyson</h2>
         
         <!-- DYSON CARDS -->
         <div class="dyson-grid">
@@ -199,26 +200,26 @@
         <div class="schema-wrapper">
             <svg class="dyson-svg mp-process-svg" viewBox="0 0 900 340" role="img" aria-label="Market pull — le nouvel usage implique la nouvelle technologie (flèche descendante)">
                 <defs>
-                    <marker id="g16fO" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
-                        <path d="M0,0 L0,6 L9,3 z" fill="var(--orange)" />
+                    <marker id="g16fO" markerWidth="12" markerHeight="12" refX="10.8" refY="5" orient="auto" markerUnits="userSpaceOnUse">
+                        <path d="M0,0 L0,10 L10.8,5 z" fill="#f0821a" />
                     </marker>
-                    <marker id="g16mO" markerWidth="7" markerHeight="7" refX="6" refY="2.5" orient="auto">
-                        <path d="M0,0 L0,5 L6,2.5 z" fill="#c4a080" />
+                    <marker id="g16mO" markerWidth="9" markerHeight="9" refX="7.8" refY="4" orient="auto" markerUnits="userSpaceOnUse">
+                        <path d="M0,0 L0,8 L7.8,4 z" fill="#f0821a" />
                     </marker>
-                    <marker id="g16mB" markerWidth="7" markerHeight="7" refX="6" refY="2.5" orient="auto">
-                        <path d="M0,0 L0,5 L6,2.5 z" fill="#8b9dc9" />
+                    <marker id="g16mB" markerWidth="9" markerHeight="9" refX="7.8" refY="4" orient="auto" markerUnits="userSpaceOnUse">
+                        <path d="M0,0 L0,8 L7.8,4 z" fill="#8b9dc9" />
                     </marker>
                 </defs>
 
-                <text x="450" y="32" class="mp-svg-title">Market pull innovation process</text>
+                <text x="450" y="32" class="mp-svg-title">Stratégie d’innovation Need Seeker</text>
                 <text x="450" y="50" class="mp-svg-sub">Processus d'innovation tiré par le marché (RID) — focus : le nouvel usage appelle la nouvelle technologie</text>
 
                 <g transform="translate(-50,50)">
-                    <rect x="120" y="135" width="120" height="50" class="mp-box-muted" rx="6" ry="6" />
-                    <text x="180" y="151" class="mp-lbl-muted mp-lbl-muted-teal">
-                        <tspan x="180" y="151">Besoins</tspan>
-                        <tspan x="180" dy="14">non</tspan>
-                        <tspan x="180" dy="14">formulés</tspan>
+                    <rect x="80" y="135" width="120" height="50" class="mp-box-muted" rx="6" ry="6" />
+                    <text x="140" y="151" class="mp-lbl-muted mp-lbl-muted-teal">
+                        <tspan x="140" y="151">Besoins</tspan>
+                        <tspan x="140" dy="14">non</tspan>
+                        <tspan x="140" dy="14">formulés</tspan>
                     </text>
 
                     <rect x="230" y="92" width="100" height="28" class="mp-box-focus-u" rx="6" ry="6" />
@@ -226,15 +227,15 @@
                     <rect x="210" y="202" width="140" height="28" class="mp-box-focus-t" rx="6" ry="6" />
                     <text x="280" y="220" class="mp-lbl-focus">Nouvelle technologie</text>
 
-                    <line x1="280" y1="200" x2="280" y2="122" class="mp-link-focus" marker-start="url(#g16fOR)" marker-end="url(#g16fO)" />
+                    <line x1="280" y1="202" x2="280" y2="120" class="mp-link-focus" marker-end="url(#g16fO)" />
 
                     <rect x="390" y="139" width="140" height="44" class="mp-box-muted" rx="6" ry="6" />
                     <text x="460" y="155" class="mp-lbl-muted">
                         <tspan x="460" y="155">Nouvelle expérience</tspan>
                         <tspan x="460" dy="14">(utilisateurs pilotes)</tspan>
                     </text>
-                    <path d="M 330,106 L 460,106 L 460,139" class="mp-flow-muted-o" fill="none" marker-end="url(#g16mO)" />
-                    <path d="M 340,216 L 460,216 L 460,183" class="mp-flow-muted-o" fill="none" marker-end="url(#g16mO)" />
+                    <path d="M 330,106 L 460,106 L 460,139" class="mp-flow-strong-o" fill="none" marker-end="url(#g16fO)" />
+                    <path d="M 340,216 L 460,216 L 460,183" class="mp-flow-strong-o" fill="none" marker-end="url(#g16fO)" />
 
                     <rect x="580" y="147" width="100" height="28" class="mp-box-muted" rx="6" ry="6" />
                     <text x="630" y="165" class="mp-lbl-muted">Nouveau besoin</text>
@@ -242,15 +243,13 @@
                     <path d="M 680,161 L 740,161" class="mp-flow-blue-muted" fill="none" marker-end="url(#g16mB)" />
 
                     <rect x="495" y="262" width="100" height="28" class="mp-company-box" rx="6" ry="6" />
-                    <text x="545" y="280" class="mp-lbl-company">Entreprise</text>
-                    <line x1="545" y1="262" x2="280" y2="230" class="mp-line-company-dash" fill="none" />
+                    <text x="545" y="280" class="mp-lbl-company">Dyson</text>
+                    <line x1="545" y1="262" x2="140" y2="185" class="mp-line-company-dash" fill="none" />
                     <line x1="545" y1="262" x2="280" y2="120" class="mp-line-company-dash" fill="none" />
-                    <line x1="545" y1="262" x2="630" y2="175" class="mp-line-company" fill="none" />
-                    <line x1="545" y1="262" x2="800" y2="178" class="mp-line-company" fill="none" />
-                    <circle cx="280" cy="230" r="3" class="mp-dot-muted" />
+                    <circle cx="140" cy="185" r="3" class="mp-dot-muted" />
                     <circle cx="280" cy="120" r="3" class="mp-dot-muted" />
-                    <circle cx="630" cy="175" r="3" class="mp-dot-muted" />
-                    <circle cx="800" cy="178" r="3" class="mp-dot-muted" />
+
+                    <path d="M 200,160 L 230,106" class="mp-flow-thick-o" fill="none" marker-end="url(#g16fO)" />
 
                     <rect x="740" y="134" width="120" height="44" class="mp-box-muted" rx="6" ry="6" />
                     <text x="800" y="150" class="mp-lbl-muted mp-lbl-muted-teal">
@@ -264,8 +263,8 @@
         </div>
 
         <div class="info-box" style="background: rgba(255, 215, 0, 0.1); border-left-color: var(--rid-yellow);">
-            <h4><i class="fa-solid fa-diagram-project"></i> Logique du Schéma</h4>
-            <p>Vous voyez la <strong>matrice complète du market pull</strong> (RID). Les zones et flèches <strong>en tons neutres ou atténués</strong> situent le processus dans son ensemble (marché, expérience, entreprise, boucles). Les deux blocs <strong>surbrillance orange et vert</strong> (« Nouvel usage », « Nouvelle technologie ») et la <strong>flèche verticale orange épaisse en pointillés</strong> entre eux indiquent le <strong>focus pédagogique</strong> : le <strong>nouvel usage implique la nouvelle technologie</strong> (sens du haut vers le bas), au cœur d'une logique <em>Need Seeker</em> (ex. Dyson Airblade). Dans le cas de l'Airblade, la technologie induite par le besoin d'un plan d'air pulsé à 640 km/h est celle d'un tout nouveau moteur électrique brushless à très haute vitesse qui a fait l'objet de plusieurs brevets.</p>
+            <h4><i class="fa-solid fa-diagram-project"></i> L’imagination de nouveaux usages a précédé le développement d’une nouvelle technologie brevetée</h4>
+            <p>Dans le cas de l’Airblade, la technologie induite par le besoin d’un plan d’air pulsé à 640 km/h est celle d’un tout nouveau moteur électrique brushless à très haute vitesse qui a fait l’objet de plusieurs brevets.</p>
         </div>
 
         <!-- Quiz -->

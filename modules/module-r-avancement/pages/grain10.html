@@ -29,6 +29,20 @@
         .def-quote { font-size: 1.2rem; font-weight: 500; text-align: center; margin-bottom: 1rem; display: block; font-style: italic; }
 
         /* --- DIAMOND DIAGRAM CONTAINER --- */
+        @font-face {
+            font-family: 'ZT Nature';
+            src: local('ZT Nature');
+            font-display: swap;
+        }
+        .diamond-wrapper {
+            --chart-prune: #63003C;
+            --chart-blue: #1d3258;
+            --chart-orange: #f0821a;
+            --chart-green: #00ae68;
+            --chart-blue-soft: #dbe3ef;
+            --chart-orange-soft: #fbe2c8;
+            --chart-neutral: #8a8f9b;
+        }
         .diamond-wrapper {
             background: var(--bg-card);
             padding: 2rem 1rem;
@@ -56,14 +70,13 @@
 
         /* Styles des titres EXTÉRIEURS */
         .dd-label-title {
-            font-family: 'Montserrat', sans-serif;
+            font-family: 'ZT Nature', 'Montserrat', sans-serif;
             font-weight: 900;
-            text-transform: uppercase;
-            fill: var(--text-main);
+            fill: #1d3258;
             font-size: 22px;
             pointer-events: none;
         }
-        body.dark-mode .dd-label-title { fill: white; }
+        body.dark-mode .dd-label-title { fill: #EAEAEA; }
 
         .dd-list-text {
             font-size: 18px;
@@ -80,25 +93,24 @@
         }
 
         .oblique-text {
-            font-family: 'Montserrat', sans-serif;
+            font-family: 'ZT Nature', 'Montserrat', sans-serif;
             font-weight: 800;
             fill: var(--bordeaux);
             font-size: 13px;
-            text-transform: uppercase;
         }
-        body.dark-mode .oblique-text { fill: var(--orange); }
+        body.dark-mode .oblique-text { fill: #f0821a; }
 
         .phase-bracket {
             fill: none;
-            stroke: #ccc;
+            stroke: var(--chart-neutral, #8a8f9b);
             stroke-width: 2;
             stroke-dasharray: 5,5;
         }
         .phase-label {
             font-weight: 800;
-            fill: #888;
+            fill: var(--chart-blue, #1d3258);
             font-size: 16px;
-            text-transform: uppercase;
+            font-family: 'ZT Nature', 'Montserrat', sans-serif;
         }
 
         /* Info Cards */
@@ -153,110 +165,110 @@
                         <feDropShadow dx="2" dy="4" stdDeviation="3" flood-opacity="0.2"/>
                     </filter>
                     <linearGradient id="leftDiamondGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-                        <stop offset="0%" stop-color="#f6cd63"/>
-                        <stop offset="100%" stop-color="#e99f57"/>
+                        <stop offset="0%" stop-color="#f5b16a"/>
+                        <stop offset="100%" stop-color="#f0821a"/>
                     </linearGradient>
                     <linearGradient id="rightDiamondGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-                        <stop offset="0%" stop-color="#526fb0"/>
-                        <stop offset="100%" stop-color="#33a59a"/>
+                        <stop offset="0%" stop-color="#36507f"/>
+                        <stop offset="100%" stop-color="#00ae68"/>
                     </linearGradient>
                     <marker id="loopArrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
                         <path d="M 0 0 L 8 4 L 0 8 z" fill="rgba(255,255,255,0.9)"/>
                     </marker>
                     <marker id="extArrowOrange" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
-                        <path d="M 0 0 L 10 5 L 0 10 z" fill="#b57c1b"/>
+                        <path d="M 0 0 L 10 5 L 0 10 z" fill="#f0821a"/>
                     </marker>
                     <marker id="extArrowBlue" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
-                        <path d="M 0 0 L 10 5 L 0 10 z" fill="#27588c"/>
+                        <path d="M 0 0 L 10 5 L 0 10 z" fill="#1d3258"/>
                     </marker>
                     <marker id="sysArrowGray" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
-                        <path d="M 0 0 L 10 5 L 0 10 z" fill="#9a9a9a"/>
+                        <path d="M 0 0 L 10 5 L 0 10 z" fill="#8a8f9b"/>
                     </marker>
                 </defs>
 
                 <!-- Bandeaux hauts -->
-                <rect x="70" y="18" width="470" height="46" rx="6" fill="#8ec0d8"/>
-                <rect x="548" y="18" width="470" height="46" rx="6" fill="#d8a44b"/>
-                <text x="305" y="48" text-anchor="middle" class="dd-label-title" style="font-size:18px; fill:#23495a;">1 - POSER LE BON PROBLÈME</text>
-                <text x="783" y="48" text-anchor="middle" class="dd-label-title" style="font-size:18px; fill:#5a3d0a;">2 - CONCEVOIR LA BONNE SOLUTION</text>
+                <rect x="70" y="18" width="470" height="46" rx="6" fill="#dbe3ef"/>
+                <rect x="548" y="18" width="470" height="46" rx="6" fill="#fbe2c8"/>
+                <text x="305" y="48" text-anchor="middle" class="dd-label-title" style="font-size:18px; fill:#1d3258;">1 - Poser le bon problème</text>
+                <text x="783" y="48" text-anchor="middle" class="dd-label-title" style="font-size:18px; fill:#63003C;">2 - Concevoir la bonne solution</text>
 
                 <!-- Diamants -->
                 <polygon points="90,280 300,110 510,280 300,450" fill="url(#leftDiamondGrad)" class="triangle-path" onclick="showPhase('discover')" filter="url(#shadow)"/>
                 <polygon points="510,280 720,110 930,280 720,450" fill="url(#rightDiamondGrad)" class="triangle-path" onclick="showPhase('develop')" filter="url(#shadow)"/>
 
                 <!-- Front/Back -->
-                <text x="300" y="92" text-anchor="middle" class="dd-label-title" style="font-size:15px; fill:#666;">FRONT-END</text>
-                <text x="720" y="92" text-anchor="middle" class="dd-label-title" style="font-size:15px; fill:#666;">BACK-END</text>
+                <text x="300" y="92" text-anchor="middle" class="dd-label-title" style="font-size:15px; fill:#5b667a;">Front-end</text>
+                <text x="720" y="92" text-anchor="middle" class="dd-label-title" style="font-size:15px; fill:#5b667a;">Back-end</text>
 
                 <!-- Libellés verticaux -->
-                <text x="90" y="200" text-anchor="middle" class="dd-label-title" style="font-size:17px; fill:#333;" transform="rotate(-90, 90, 200)">GÉNÉRAUX</text>
-                <text x="90" y="354" text-anchor="middle" class="dd-label-title" style="font-size:17px; fill:#333;" transform="rotate(-90, 90, 354)">PROBLÈMES</text>
-                <text x="510" y="354" text-anchor="middle" class="dd-label-title" style="font-size:17px; fill:#333;" transform="rotate(-90, 510, 354)">PROBLÈMES</text>
-                <text x="510" y="200" text-anchor="middle" class="dd-label-title" style="font-size:17px; fill:#333;" transform="rotate(-90, 510, 200)">SPÉCIFIQUES</text>
-                <text x="930" y="354" text-anchor="middle" class="dd-label-title" style="font-size:17px; fill:#333;" transform="rotate(-90, 930, 354)">SOLUTION</text>
-                <text x="930" y="200" text-anchor="middle" class="dd-label-title" style="font-size:17px; fill:#333;" transform="rotate(-90, 930, 200)">SPÉCIFIQUES</text>
+                <text x="90" y="200" text-anchor="middle" class="dd-label-title" style="font-size:17px; fill:#1d3258;" transform="rotate(-90, 90, 200)">Généraux</text>
+                <text x="90" y="354" text-anchor="middle" class="dd-label-title" style="font-size:17px; fill:#1d3258;" transform="rotate(-90, 90, 354)">Problèmes</text>
+                <text x="510" y="354" text-anchor="middle" class="dd-label-title" style="font-size:17px; fill:#1d3258;" transform="rotate(-90, 510, 354)">Problèmes</text>
+                <text x="510" y="200" text-anchor="middle" class="dd-label-title" style="font-size:17px; fill:#1d3258;" transform="rotate(-90, 510, 200)">Spécifiques</text>
+                <text x="930" y="354" text-anchor="middle" class="dd-label-title" style="font-size:17px; fill:#1d3258;" transform="rotate(-90, 930, 354)">Solution</text>
+                <text x="930" y="200" text-anchor="middle" class="dd-label-title" style="font-size:17px; fill:#1d3258;" transform="rotate(-90, 930, 200)">Spécifiques</text>
 
                 <!-- Boucles systémiques (Diamant 1) -->
                 <path d="M 215 230 C 255 195, 335 195, 372 230" fill="none" stroke="rgba(255,255,255,0.9)" stroke-width="3" marker-end="url(#loopArrow)"/>
                 <path d="M 372 322 C 332 355, 252 355, 215 322" fill="none" stroke="rgba(255,255,255,0.9)" stroke-width="3" marker-end="url(#loopArrow)"/>
-                <text x="294" y="195" class="dd-list-text dd-text-front" style="font-size:14px;">BESOINS</text>
-                <text x="294" y="366" class="dd-list-text dd-text-front" style="font-size:14px;">EMPATHIE</text>
+                <text x="294" y="195" class="dd-list-text dd-text-front" style="font-size:14px;">Besoins</text>
+                <text x="294" y="366" class="dd-list-text dd-text-front" style="font-size:14px;">Empathie</text>
 
                 <!-- Boucles systémiques (Diamant 2) -->
                 <path d="M 632 230 C 672 195, 752 195, 790 230" fill="none" stroke="rgba(255,255,255,0.9)" stroke-width="3" marker-end="url(#loopArrow)"/>
                 <path d="M 790 322 C 750 355, 670 355, 632 322" fill="none" stroke="rgba(255,255,255,0.9)" stroke-width="3" marker-end="url(#loopArrow)"/>
-                <text x="711" y="195" class="dd-list-text dd-text-front" style="font-size:14px;">TESTS</text>
-                <text x="711" y="366" class="dd-list-text dd-text-front" style="font-size:14px;">RÉVISION</text>
+                <text x="711" y="195" class="dd-list-text dd-text-front" style="font-size:14px;">Tests</text>
+                <text x="711" y="366" class="dd-list-text dd-text-front" style="font-size:14px;">Révision</text>
 
                 <!-- Flèches systémiques entre les deux diamants -->
-                <path d="M 425 160 C 495 110, 555 110, 625 160" fill="none" stroke="#9a9a9a" stroke-width="4" marker-end="url(#sysArrowGray)"/>
-                <path d="M 625 398 C 555 448, 495 448, 425 398" fill="none" stroke="#9a9a9a" stroke-width="4" marker-end="url(#sysArrowGray)"/>
-                <text x="525" y="456" text-anchor="middle" class="dd-label-title" style="font-size:14px; fill:#7a7a7a;">PROCESSUS ITÉRATIF</text>
+                <path d="M 425 160 C 495 110, 555 110, 625 160" fill="none" stroke="#8a8f9b" stroke-width="4" marker-end="url(#sysArrowGray)"/>
+                <path d="M 625 398 C 555 448, 495 448, 425 398" fill="none" stroke="#8a8f9b" stroke-width="4" marker-end="url(#sysArrowGray)"/>
+                <text x="525" y="456" text-anchor="middle" class="dd-label-title" style="font-size:14px; fill:#5b667a;">Processus itératif</text>
 
                 <!-- Textes internes -->
-                <text x="205" y="282" class="dd-list-text dd-text-front" style="font-size:26px; font-style:italic;">RECHERCHE</text>
-                <text x="395" y="282" class="dd-list-text dd-text-front" style="font-size:26px; font-style:italic;">ÉCLAIRAGES</text>
-                <text x="625" y="282" class="dd-list-text dd-text-front" style="font-size:26px; font-style:italic;">IDÉATION</text>
-                <text x="825" y="282" class="dd-list-text dd-text-front" style="font-size:26px; font-style:italic;">PROTOTYPES</text>
+                <text x="205" y="282" class="dd-list-text dd-text-front" style="font-size:26px; font-style:italic;">Recherche</text>
+                <text x="395" y="282" class="dd-list-text dd-text-front" style="font-size:26px; font-style:italic;">Éclairages</text>
+                <text x="625" y="282" class="dd-list-text dd-text-front" style="font-size:26px; font-style:italic;">Idéation</text>
+                <text x="825" y="282" class="dd-list-text dd-text-front" style="font-size:26px; font-style:italic;">Prototypes</text>
 
                 <!-- Sorties lisibles -->
-                <circle cx="90" cy="280" r="14" fill="#7c3f98" stroke="#fff" stroke-width="2"/>
-                <circle cx="510" cy="280" r="14" fill="#7c3f98" stroke="#fff" stroke-width="2"/>
-                <circle cx="930" cy="280" r="10" fill="#7c3f98" stroke="#fff" stroke-width="2"/>
+                <circle cx="90" cy="280" r="14" fill="#63003C" stroke="#fff" stroke-width="2"/>
+                <circle cx="510" cy="280" r="14" fill="#63003C" stroke="#fff" stroke-width="2"/>
+                <circle cx="930" cy="280" r="10" fill="#63003C" stroke="#fff" stroke-width="2"/>
 
                 <!-- Appels externes (traduits) -->
-                <circle cx="230" cy="352" r="12" fill="none" stroke="#b57c1b" stroke-width="4"/>
-                <circle cx="395" cy="352" r="12" fill="none" stroke="#b57c1b" stroke-width="4"/>
-                <circle cx="650" cy="352" r="12" fill="none" stroke="#27588c" stroke-width="4"/>
-                <circle cx="815" cy="352" r="12" fill="none" stroke="#27588c" stroke-width="4"/>
+                <circle cx="230" cy="352" r="12" fill="none" stroke="#f0821a" stroke-width="4"/>
+                <circle cx="395" cy="352" r="12" fill="none" stroke="#f0821a" stroke-width="4"/>
+                <circle cx="650" cy="352" r="12" fill="none" stroke="#1d3258" stroke-width="4"/>
+                <circle cx="815" cy="352" r="12" fill="none" stroke="#1d3258" stroke-width="4"/>
 
-                <line x1="125" y1="446" x2="220" y2="360" stroke="#b57c1b" stroke-width="3"/>
-                <text x="25" y="466" class="dd-label-title" style="font-size:12px; fill:#b57c1b;">Compréhension</text>
-                <text x="25" y="484" class="dd-label-title" style="font-size:12px; fill:#b57c1b;">du problème</text>
+                <line x1="125" y1="446" x2="220" y2="360" stroke="#f0821a" stroke-width="3"/>
+                <text x="25" y="466" class="dd-label-title" style="font-size:12px; fill:#f0821a;">Compréhension</text>
+                <text x="25" y="484" class="dd-label-title" style="font-size:12px; fill:#f0821a;">du problème</text>
 
-                <line x1="365" y1="458" x2="385" y2="360" stroke="#b57c1b" stroke-width="3"/>
-                <text x="300" y="476" class="dd-label-title" style="font-size:12px; fill:#b57c1b;">Réduction du</text>
-                <text x="300" y="494" class="dd-label-title" style="font-size:12px; fill:#b57c1b;">périmètre</text>
+                <line x1="365" y1="458" x2="385" y2="360" stroke="#f0821a" stroke-width="3"/>
+                <text x="300" y="476" class="dd-label-title" style="font-size:12px; fill:#f0821a;">Réduction du</text>
+                <text x="300" y="494" class="dd-label-title" style="font-size:12px; fill:#f0821a;">périmètre</text>
 
-                <line x1="640" y1="462" x2="640" y2="360" stroke="#27588c" stroke-width="3"/>
-                <text x="575" y="476" class="dd-label-title" style="font-size:12px; fill:#27588c;">Solutions</text>
-                <text x="575" y="494" class="dd-label-title" style="font-size:12px; fill:#27588c;">potentielles</text>
+                <line x1="640" y1="462" x2="640" y2="360" stroke="#1d3258" stroke-width="3"/>
+                <text x="575" y="476" class="dd-label-title" style="font-size:12px; fill:#1d3258;">Solutions</text>
+                <text x="575" y="494" class="dd-label-title" style="font-size:12px; fill:#1d3258;">potentielles</text>
 
-                <line x1="895" y1="452" x2="825" y2="360" stroke="#27588c" stroke-width="3"/>
-                <text x="900" y="450" class="dd-label-title" style="font-size:12px; fill:#27588c;">Solutions qui</text>
-                <text x="900" y="468" class="dd-label-title" style="font-size:12px; fill:#27588c;">fonctionnent et</text>
-                <text x="900" y="486" class="dd-label-title" style="font-size:12px; fill:#27588c;">reçoivent des retours</text>
+                <line x1="895" y1="452" x2="825" y2="360" stroke="#1d3258" stroke-width="3"/>
+                <text x="900" y="450" class="dd-label-title" style="font-size:12px; fill:#1d3258;">Solutions qui</text>
+                <text x="900" y="468" class="dd-label-title" style="font-size:12px; fill:#1d3258;">fonctionnent et</text>
+                <text x="900" y="486" class="dd-label-title" style="font-size:12px; fill:#1d3258;">reçoivent des retours</text>
 
                 <!-- Frise process -->
-                <rect x="80" y="522" width="180" height="28" fill="#f6df72"/>
-                <rect x="260" y="522" width="180" height="28" fill="#f2be7f"/>
-                <rect x="440" y="522" width="180" height="28" fill="#8f8fbe"/>
-                <rect x="620" y="522" width="180" height="28" fill="#8ec6b8"/>
-                <text x="170" y="542" text-anchor="middle" class="dd-label-title" style="font-size:14px;">DÉCOUVRIR</text>
-                <text x="350" y="542" text-anchor="middle" class="dd-label-title" style="font-size:14px;">DÉFINIR</text>
-                <text x="530" y="542" text-anchor="middle" class="dd-label-title" style="font-size:14px;">DÉVELOPPER</text>
-                <text x="710" y="542" text-anchor="middle" class="dd-label-title" style="font-size:14px;">LIVRER</text>
-                <polygon points="800,522 860,536 800,550" fill="#8ec6b8"/>
+                <rect x="80" y="522" width="180" height="28" fill="#fbe2c8"/>
+                <rect x="260" y="522" width="180" height="28" fill="#f6b779"/>
+                <rect x="440" y="522" width="180" height="28" fill="#c8d4e8"/>
+                <rect x="620" y="522" width="180" height="28" fill="#9adbbf"/>
+                <text x="170" y="542" text-anchor="middle" class="dd-label-title" style="font-size:14px;">Découvrir</text>
+                <text x="350" y="542" text-anchor="middle" class="dd-label-title" style="font-size:14px;">Définir</text>
+                <text x="530" y="542" text-anchor="middle" class="dd-label-title" style="font-size:14px;">Développer</text>
+                <text x="710" y="542" text-anchor="middle" class="dd-label-title" style="font-size:14px;">Livrer</text>
+                <polygon points="800,522 860,536 800,550" fill="#9adbbf"/>
 
             </svg>
         </div>
@@ -264,11 +276,11 @@
         <div class="info-grid">
             <div class="info-card card-problem">
                 <h4><i class="fa-solid fa-magnifying-glass"></i> Diamant 1 : Problème</h4>
-                <p>Ce premier diamant mène à la formulation d'une <strong>Question Qualifiée</strong>. Il s'agit d'identifier le <em>vrai</em> problème à résoudre (Ambition, Périmètre) avant de chercher des solutions.</p>
+                <p>Ce premier diamant mène à la formulation d'une ou plusieurs <strong>Question.s Qualifiée.s</strong>. Il s'agit d'identifier le.s <em>vrai.s</em> problème.s à résoudre avant de chercher des solutions.</p>
             </div>
             <div class="info-card card-solution">
                 <h4><i class="fa-solid fa-box-open"></i> Diamant 2 : Solution</h4>
-                <p>Le second diamant transforme la question en une proposition de valeur concrète, le <strong>MVP</strong> (Produit Minimum Viable), prêt à être lancé et testé sur le marché.</p>
+                <p>Le second diamant transforme la.les question.s qualifiée.s d’innovation en une proposition de valeur, puis un concept de solution, une première solution détaillée dont on fera un prototype (MVP ou Produit Minimum Viable) pour le tester avant, enfin, d’en faire une version industrielle prêt à être lancé sur le marché.</p>
             </div>
         </div>
 
@@ -360,9 +372,9 @@
         // Données des phases (traduites et enrichies)
         const phases = {
             'discover': {
-                title: "DÉCOUVRIR (Divergence)",
-                icon: '<i class="fa-solid fa-binoculars" style="color:#2A325E;"></i>',
-                color: '#2A325E',
+                title: "Découvrir (divergence)",
+                icon: '<i class="fa-solid fa-binoculars" style="color:#1d3258;"></i>',
+                color: '#1d3258',
                 text: `
                     <strong>Exploration large du problème :</strong>
                     <ul style="text-align:left; padding-left:20px; margin-top:10px;">
@@ -374,13 +386,13 @@
                 `
             },
             'define': {
-                title: "DÉFINIR (Convergence)",
-                icon: '<i class="fa-solid fa-filter" style="color:#2EAF7D;"></i>',
-                color: '#2EAF7D',
+                title: "Définir (convergence)",
+                icon: '<i class="fa-solid fa-filter" style="color:#00ae68;"></i>',
+                color: '#00ae68',
                 text: `
                     <strong>Focalisation et Sélection :</strong>
                     <ul style="text-align:left; padding-left:20px; margin-top:10px;">
-                        <li><i class="fa-solid fa-user-tag"></i> <strong>Synthèse :</strong> Création de Personas et Customer Journeys.</li>
+                        <li><i class="fa-solid fa-user-tag"></i> <strong>Synthèse :</strong> Création de personas et Customer Journeys.</li>
                         <li><i class="fa-solid fa-bullseye"></i> <strong>Cadrage :</strong> Définition du périmètre d'ambition.</li>
                         <li><i class="fa-solid fa-check-double"></i> <strong>Validation :</strong> Sign-off sur la "Question Qualifiée".</li>
                     </ul>
@@ -388,9 +400,9 @@
                 `
             },
             'develop': {
-                title: "DÉVELOPPER (Divergence)",
-                icon: '<i class="fa-solid fa-lightbulb" style="color:#F48C2E;"></i>',
-                color: '#F48C2E',
+                title: "Développer (divergence)",
+                icon: '<i class="fa-solid fa-lightbulb" style="color:#f0821a;"></i>',
+                color: '#f0821a',
                 text: `
                     <strong>Création de solutions :</strong>
                     <ul style="text-align:left; padding-left:20px; margin-top:10px;">
@@ -402,9 +414,9 @@
                 `
             },
             'deliver': {
-                title: "LIVRER (Convergence)",
-                icon: '<i class="fa-solid fa-rocket" style="color:#580F45;"></i>',
-                color: '#580F45',
+                title: "Livrer (convergence)",
+                icon: '<i class="fa-solid fa-rocket" style="color:#63003C;"></i>',
+                color: '#63003C',
                 text: `
                     <strong>Finalisation et Lancement :</strong>
                     <ul style="text-align:left; padding-left:20px; margin-top:10px;">

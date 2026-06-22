@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="../SCORM_API.js"></script>
-    <title>CAPSULE 12 : La Méthode Persona | L'esprit d'innover</title>
+    <title>CAPSULE 12 : La méthode des personas | L'esprit d'innover</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -154,7 +154,7 @@
 
     <div class="content-container">
         
-        <h1 class="hero-title">Outil #1 : La Méthode Persona</h1>
+        <h1 class="hero-title">Outil #1 : La méthode des personas</h1>
         <div class="hero-subtitle">Donner un visage humain aux segments de marché.</div>
 
         <div class="def-box">
@@ -210,25 +210,27 @@
 
         <div class="critique-box">
             <div class="critique-title"><i class="fa-solid fa-triangle-exclamation"></i> Limites & Points de Vigilance</div>
-            <p>Bien que très populaire (Cooper, 1999), la méthode Persona a ses limites :</p>
+            <p>Bien que très populaire (Cooper, 1999), la méthode des personas a ses limites :</p>
             <ul style="margin-top:10px; padding-left:20px; line-height:1.6;">
-                <li><strong>Manque de preuves empiriques :</strong> Risque de baser le persona sur des stéréotypes plutôt que sur des données réelles (Miaskiewicz & Kozar, 2011).</li>
+                <li><strong>Manque de preuves empiriques :</strong> Risque de baser les personas sur des stéréotypes plutôt que sur des données réelles (Miaskiewicz & Kozar, 2011).</li>
                 <li><strong>Solution :</strong> Il est recommandé d'utiliser des méthodes statistiques (Big Data) pour valider les archétypes (Stevenson & Mattson, 2019) ou de les combiner avec des scénarios d'usage (Vallet et al, 2020).</li>
             </ul>
         </div>
 
         <div class="source-footer">
             SOURCES :<br>
-            Cooper, A. (1999). The inmates are running the asylum. Macmillan.<br>
-            Grudin J., & Pruitt J. (2002). Personas, Participatory Design and Product Development.<br>
-            Gonzalez de Heredia A. et al. (2018). Personas for policy-making.<br>
-            Stevenson P., & Mattson C (2019). The Personification of Big Data.
+            Cooper, A. (1999). <em>The inmates are running the asylum: Why high-tech products drive us crazy and how to restore the sanity</em>. Indianapolis, IN: Macmillan.<br>
+            Grudin, J., & Pruitt, J. (2002). Personas, Participatory Design and Product Development: An Infrastructure for Engagement. In <em>Proceedings of the Participatory Design Conference 2002</em> (pp. 144-161).<br>
+            Gonzalez de Heredia, A., Goodman-Deane, J., Waller, S., Clarkson, P. J., Justel, D., Iriarte, I., & Hernández, J. (2018). Personas for Policy-making and Healthcare Design. <em>Proceedings of the DESIGN 2018 15th International Design Conference</em>, 2645-2656. <a href="https://doi.org/10.21278/idc.2018.0438" target="_blank" rel="noopener noreferrer">https://doi.org/10.21278/idc.2018.0438</a><br>
+            Stevenson, P. D., & Mattson, C. A. (2019). The Personification of Big Data. <em>Proceedings of the Design Society: International Conference on Engineering Design</em>, 1(1), 4019-4028. <a href="https://doi.org/10.1017/dsi.2019.409" target="_blank" rel="noopener noreferrer">https://doi.org/10.1017/dsi.2019.409</a><br>
+            Miaskiewicz, T., & Kozar, K. A. (2011). Personas and user-centered design: How can personas benefit product design processes? <em>Design Studies</em>, 32(5), 417-430. <a href="https://doi.org/10.1016/j.destud.2011.03.003" target="_blank" rel="noopener noreferrer">https://doi.org/10.1016/j.destud.2011.03.003</a><br>
+            Vallet, F., Puchinger, J., Millonig, A., Lamé, G., & Nicolaï, I. (2020). Tangible futures: Combining scenario thinking and personas - A pilot study on urban mobility. <em>Futures</em>, 117, 102513. <a href="https://doi.org/10.1016/j.futures.2020.102513" target="_blank" rel="noopener noreferrer">https://doi.org/10.1016/j.futures.2020.102513</a>
         </div>
 
         <!-- Quiz -->
         <div style="margin-top: 4rem; padding: 2rem; background: var(--bg-card); border-radius: 15px; border: 1px solid #ddd; border-left: 5px solid var(--teal);">
             <h3><i class="fa-solid fa-clipboard-question"></i> Quiz de Validation</h3>
-            <p>Quel est l'intérêt principal de la méthode Persona dans un projet d'innovation ?</p>
+            <p>Quel est l'intérêt principal de la méthode des personas dans un projet d'innovation ?</p>
             <form id="quizForm">
                 <div style="margin-bottom: 10px;">
                     <input type="radio" id="q13a" name="q13" value="correct">
@@ -341,10 +343,10 @@
             var score = (val === "correct") ? 1 : 0;
             try { scormMarkCompleted(score); } catch (e) { try { var st = getState(); st.completed = st.completed || []; st.scores = st.scores || {}; if (st.completed.indexOf(GRAIN_ID) === -1) st.completed.push(GRAIN_ID); st.scores[GRAIN_ID] = score; setState(st); } catch (e2) {} }
             if (val === "correct") { 
-                showModal("Exactement !", "La méthode Persona aligne l'équipe sur les besoins, contextes et motivations des utilisateurs pour guider les choix de conception.", "success");
+                showModal("Exactement !", "La méthode des personas aligne l'équipe sur les besoins, contextes et motivations des utilisateurs pour guider les choix de conception.", "success");
                 setTimeout(() => { const btn = document.getElementById('btnModalClose'); if(btn) { btn.innerText = "Retour au Sommaire"; btn.onclick = function() { window.location.href = SOMMAIRE_URL + '#grain12'; }; } }, 100);
             } else { 
-                showModal("Pas tout à fait", "Indice : l'objectif d'un Persona est d'aider l'équipe a mieux comprendre les utilisateurs pour prendre de meilleures décisions de conception. Le grain est validé ; vous pouvez retourner au sommaire.", "error");
+                showModal("Pas tout à fait", "Indice : l'objectif des personas est d'aider l'équipe a mieux comprendre les utilisateurs pour prendre de meilleures décisions de conception. Le grain est validé ; vous pouvez retourner au sommaire.", "error");
                 setTimeout(() => { const btn = document.getElementById('btnModalClose'); if(btn) { btn.innerText = "Retour au Sommaire"; btn.onclick = function() { window.location.href = SOMMAIRE_URL + '#grain12'; }; } }, 100);
             }
         }
