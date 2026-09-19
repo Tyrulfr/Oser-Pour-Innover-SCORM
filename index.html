@@ -25,18 +25,24 @@
         body.dark-mode h1 { color: white; }
         .subtitle { font-size: 1.2rem; max-width: 760px; margin-bottom: 1.5rem; opacity: 0.85; }
         .hero-note { max-width: 760px; margin: 0 auto 2.5rem; font-size: 1rem; opacity: 0.8; }
-        .cards-container { display: flex; gap: 2rem; flex-wrap: wrap; justify-content: center; width: 100%; max-width: 1120px; }
-        .card { background: var(--white); border: 1px solid #eee; border-radius: 15px; padding: 2rem; min-width: 280px; max-width: 340px; text-align: center; box-shadow: 0 10px 20px rgba(0,0,0,0.05); cursor: pointer; transition: transform 0.3s; }
+        .cards-container { display: flex; gap: 1.5rem; flex-wrap: wrap; justify-content: center; width: 100%; max-width: 1180px; }
+        .card { background: var(--white); border: 1px solid #eee; border-radius: 15px; padding: 1.75rem 1.5rem; width: 320px; max-width: 100%; text-align: center; box-shadow: 0 10px 20px rgba(0,0,0,0.05); cursor: pointer; transition: transform 0.3s; }
         body.dark-mode .card { background: #232742; border-color: #333; }
         .card:hover { transform: translateY(-5px); border-color: var(--orange); }
-        .icon { font-size: 2.5rem; margin-bottom: 1rem; display: block; }
+        .icon { font-size: 2.2rem; margin-bottom: 0.85rem; display: block; }
         .user-icon { color: var(--teal); }
         .module-icon { color: var(--bordeaux); }
         .module2-icon { color: var(--orange); }
-        .btn { display: inline-block; margin-top: 1.5rem; padding: 10px 25px; border-radius: 50px; font-weight: bold; font-size: 0.9rem; }
+        .module3-icon { color: var(--teal); }
+        .module4-icon { color: var(--blue); }
+        .card h3 { font-family: 'Montserrat', sans-serif; font-size: 1.15rem; margin: 0 0 0.6rem; }
+        .card p { font-size: 0.92rem; margin: 0; opacity: 0.9; line-height: 1.45; }
+        .btn { display: inline-block; margin-top: 1.25rem; padding: 10px 22px; border-radius: 50px; font-weight: bold; font-size: 0.85rem; }
         .btn-outline { background: transparent; border: 2px solid var(--teal); color: var(--teal); }
         .btn-primary { background: var(--bordeaux); border: 2px solid var(--bordeaux); color: white; }
         .btn-secondary { background: transparent; border: 2px solid var(--orange); color: var(--orange); }
+        .btn-teal { background: transparent; border: 2px solid var(--teal); color: var(--teal); }
+        .btn-blue { background: transparent; border: 2px solid var(--blue); color: var(--blue); }
         footer { padding: 20px; text-align: center; font-size: 0.8rem; opacity: 0.6; }
 
         /* Tuile SCORM (téléchargement ZIP) */
@@ -91,10 +97,34 @@
                 <span class="btn btn-primary">Accéder aux Modules Ressources</span>
             </div>
             <div class="card" onclick="window.location.href='modules/module1-retours/index.html'">
-                <i class="fa-solid fa-comments icon module2-icon"></i>
+                <i class="fa-solid fa-seedling icon module2-icon"></i>
                 <h3>Module 1</h3>
-                <p>Identifier le potentiel d’innovation — 4 grains (T1–T4), vidéo témoin + vidéos expert.</p>
+                <p>Identifier le potentiel d’innovation — T1–T4 (+ E1–E7).</p>
                 <span class="btn btn-secondary">Accéder au Module 1</span>
+            </div>
+            <div class="card" onclick="window.location.href='modules/module2-pi/index.html'">
+                <i class="fa-solid fa-shield-halved icon module3-icon"></i>
+                <h3>Module 2</h3>
+                <p>Protéger et valoriser les résultats — T5–T6 (+ E8–E11).</p>
+                <span class="btn btn-teal">Accéder au Module 2</span>
+            </div>
+            <div class="card" onclick="window.location.href='modules/module3-ecosysteme/index.html'">
+                <i class="fa-solid fa-handshake-angle icon module4-icon"></i>
+                <h3>Module 3</h3>
+                <p>Se faire accompagner et financer — T7–T8 (+ E12–E15, E13bis).</p>
+                <span class="btn btn-blue">Accéder au Module 3</span>
+            </div>
+            <div class="card" onclick="window.location.href='modules/module4-partenariats/index.html'">
+                <i class="fa-solid fa-rocket icon module2-icon"></i>
+                <h3>Module 4</h3>
+                <p>Entreprendre et faire grandir le projet — T9–T10 (+ E16–E19).</p>
+                <span class="btn btn-secondary">Accéder au Module 4</span>
+            </div>
+            <div class="card" onclick="window.location.href='modules/module5-action/index.html'">
+                <i class="fa-solid fa-people-group icon module-icon"></i>
+                <h3>Module 5</h3>
+                <p>Collaborer et évoluer dans le métier — T11–T12 (+ E20–E23).</p>
+                <span class="btn btn-primary">Accéder au Module 5</span>
             </div>
         </div>
     </section>
