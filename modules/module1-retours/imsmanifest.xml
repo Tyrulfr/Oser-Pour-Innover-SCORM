@@ -1,37 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<manifest identifier="OSER-POUR-INNOVER-MODULE2" version="1.2"
+<manifest identifier="OSER-POUR-INNOVER-MODULE2" version="1.4"
   xmlns="http://www.imsglobal.org/xsd/imscp_v1p1"
   xmlns:adlcp="http://www.adlnet.org/xsd/adlcp_v1p3"
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://www.imsglobal.org/xsd/imscp_v1p1 imscp_v1p1.xsd
                       http://www.imsglobal.org/xsd/imsmd_v1p2 imsmd_v1p2p2.xsd
                       http://www.adlnet.org/xsd/adlcp_v1p3 adlcp_v1p3.xsd">
-
   <metadata>
     <schema>ADL SCORM</schema>
     <schemaversion>2004 4th Edition</schemaversion>
   </metadata>
-
   <organizations default="OSER-M2-ORG">
     <organization identifier="OSER-M2-ORG">
       <metadata>
-        <title>Module 1 : L'innovation une continuité de la recherche — L'esprit d'innover</title>
+        <title>Module 1 — Identifier le potentiel d’innovation — L'esprit d'innover — L'esprit d'innover</title>
       </metadata>
-      <title>Module 1 : L'innovation une continuité de la recherche</title>
+      <title>Module 1 — Identifier le potentiel d’innovation — L'esprit d'innover</title>
       <item identifier="ITEM-M2" identifierref="RES-M2">
-        <title>Sommaire Module 1</title>
+        <title>Sommaire</title>
       </item>
     </organization>
   </organizations>
-
   <resources>
     <resource identifier="RES-M2" type="webcontent" adlcp:scormtype="sco" href="index.html">
       <file href="index.html"/>
       <file href="SCORM_API.js"/>
-      <file href="pages/grain_pourquoi_oser.html"/>
-      <file href="pages/grain_du_labo_au_terrain.html"/>
-      <file href="pages/grain_sortir_du_labo.html"/>
-      <file href="pages/temoignage_silvia.html"/>
+      <file href="pages/grain_t1_pourquoi_oser.html"/>
+      <file href="pages/grain_t2_recherche_innovation.html"/>
+      <file href="pages/grain_t3_besoin_poc.html"/>
+      <file href="pages/grain_t4_idee_freins_leviers.html"/>
     </resource>
   </resources>
 </manifest>

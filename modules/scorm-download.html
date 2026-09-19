@@ -13,6 +13,7 @@
     body.dark-mode { background:#1A1D2E; color:#EAEAEA; }
     h1 { font-family:'Montserrat', sans-serif; color:var(--bordeaux); margin:0 0 1rem; font-size:2.2rem; }
     body.dark-mode h1 { color:var(--orange); }
+    h2 { margin:0 0 0.5rem; font-size:1.15rem; }
     a { color:inherit; }
     .top { background:var(--card); border-bottom:3px solid var(--bordeaux); padding:1rem 5%; position:sticky; top:0; z-index:10; display:flex; justify-content:space-between; align-items:center; gap:12px; }
     .btn-back { text-decoration:none; font-weight:800; display:flex; gap:10px; align-items:center; }
@@ -38,38 +39,49 @@
 
     <div class="card">
       <p class="small" style="margin:0 0 1rem;">
-        Les ZIP SCORM sont <strong>générés</strong> à partir des dossiers du projet.
-        Ils ne sont pas commités dans Git (règle <code>*.zip</code> dans <code>.gitignore</code>), donc la génération se fait localement.
+        MOOC « L’Esprit d’innover ! Pourquoi pas Vous ! » — <strong>6 modules, 13 grains</strong>.
+        Un grain = vidéo témoin chorale (T) +, sauf T13, une ou plusieurs vidéos expert (E).
       </p>
-      <p class="small" style="margin:0 0 1rem;">
-        Utilisez soit <code>build.ps1</code> (Windows/PowerShell) soit <code>build.sh</code> (Git Bash/WSL).
+      <p class="small" style="margin:0;">
+        Génération : <code>./build.sh</code> ou <code>.\build.ps1</code> depuis la racine du projet.
       </p>
-      <ul class="list">
-        <li><code>.\build.ps1</code> é' génère <code>module-r-avancement.zip</code> et <code>module1-retours.zip</code></li>
-        <li><code>./build.sh</code> é' même résultat si les dossiers existent</li>
-      </ul>
-      <div style="margin-top:1.2rem; display:flex; gap:12px; flex-wrap:wrap;">
-        <a class="btn btn-primary" href="../build.ps1"><i class="fa-brands fa-windows"></i> Ouvrir build.ps1</a>
-        <a class="btn" href="../build.sh"><i class="fa-solid fa-terminal"></i> Ouvrir build.sh</a>
-        <a class="btn" href="../README.md"><i class="fa-solid fa-book"></i> Détails README</a>
-      </div>
     </div>
 
     <div class="grid">
       <div class="card">
-        <h2 style="margin:0 0 0.5rem; font-size:1.2rem;"><i class="fa-solid fa-layer-group" style="color:var(--teal); margin-right:8px;"></i> Modules Ressources (Sensibilisation)</h2>
-        <p class="small" style="margin:0 0 0.8rem;">Paquet à déposer dans Moodle pour les Modules Ressources.</p>
-        <ul class="list">
-          <li><code>module-r-avancement.zip</code></li>
-        </ul>
+        <h2><i class="fa-solid fa-layer-group" style="color:var(--teal); margin-right:8px;"></i> Modules Ressources</h2>
+        <p class="small">Sensibilisation (hors parcours 13 grains).</p>
+        <ul class="list"><li><code>module-r-avancement.zip</code></li></ul>
       </div>
-
       <div class="card">
-        <h2 style="margin:0 0 0.5rem; font-size:1.2rem;"><i class="fa-solid fa-comments" style="color:var(--orange); margin-right:8px;"></i> Module 1 (Genèse d’une innovation)</h2>
-        <p class="small" style="margin:0 0 0.8rem;">Paquet à déposer dans Moodle pour le Module 1.</p>
-        <ul class="list">
-          <li><code>module1-retours.zip</code></li>
-        </ul>
+        <h2><i class="fa-solid fa-1" style="color:var(--orange); margin-right:8px;"></i> Module 1</h2>
+        <p class="small">Identifier le potentiel d’innovation — T1–T4</p>
+        <ul class="list"><li><code>module1-retours.zip</code></li></ul>
+      </div>
+      <div class="card">
+        <h2><i class="fa-solid fa-2" style="color:var(--bordeaux); margin-right:8px;"></i> Module 2</h2>
+        <p class="small">Protéger et valoriser les résultats — T5–T6</p>
+        <ul class="list"><li><code>module2-pi.zip</code></li></ul>
+      </div>
+      <div class="card">
+        <h2><i class="fa-solid fa-3" style="color:var(--blue); margin-right:8px;"></i> Module 3</h2>
+        <p class="small">Se faire accompagner et financer — T7–T8</p>
+        <ul class="list"><li><code>module3-ecosysteme.zip</code></li></ul>
+      </div>
+      <div class="card">
+        <h2><i class="fa-solid fa-4" style="color:var(--orange); margin-right:8px;"></i> Module 4</h2>
+        <p class="small">Entreprendre et faire grandir le projet — T9–T10</p>
+        <ul class="list"><li><code>module4-partenariats.zip</code></li></ul>
+      </div>
+      <div class="card">
+        <h2><i class="fa-solid fa-5" style="color:var(--teal); margin-right:8px;"></i> Module 5</h2>
+        <p class="small">Collaborer et évoluer dans le métier — T11–T12</p>
+        <ul class="list"><li><code>module5-action.zip</code></li></ul>
+      </div>
+      <div class="card">
+        <h2><i class="fa-solid fa-6" style="color:var(--bordeaux); margin-right:8px;"></i> Module 6</h2>
+        <p class="small">Passer à l’action — T13 (clôture, sans expert)</p>
+        <ul class="list"><li><code>module6-synthese.zip</code></li></ul>
       </div>
     </div>
   </div>
@@ -80,9 +92,7 @@
       try { localStorage.setItem('theme', document.body.classList.contains('dark-mode') ? 'dark' : 'light'); } catch (e) {}
     }
     window.onload = function () {
-      try {
-        if (localStorage.getItem('theme') === 'dark') document.body.classList.add('dark-mode');
-      } catch (e) {}
+      try { if (localStorage.getItem('theme') === 'dark') document.body.classList.add('dark-mode'); } catch (e) {}
     };
   </script>
 </body>
