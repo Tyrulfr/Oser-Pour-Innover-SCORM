@@ -21,10 +21,6 @@
         .btn-back { text-decoration: none; color: var(--text-main); font-weight: 700; display: flex; align-items: center; gap: 10px; font-size: 1.1rem; background: none; border: none; cursor: pointer; padding: 0; font-family: inherit; }
         .btn-back:hover { color: var(--orange); }
         .nav-center { display: flex; flex-direction: column; align-items: center; gap: 0; }
-        .brand-logo-link { display: block; line-height: 0; margin-bottom: -8px; pointer-events: none; }
-        .brand-logo-link img { height: 108px; width: auto; max-width: 540px; object-fit: contain; display: block; vertical-align: bottom; }
-        .breadcrumbs { font-size: 0.85rem; color: var(--text-light); margin-top: 0; }
-        .breadcrumbs .separator { opacity: 0.4; margin: 0 5px; }
         .content-container { max-width: 1200px; margin: 2rem auto; padding: 0 1.5rem; }
 
         .hero-section { text-align: center; margin-bottom: 4rem; padding: 3rem 1rem; background: linear-gradient(135deg, var(--bordeaux), var(--blue)); border-radius: 20px; color: white; box-shadow: 0 10px 30px rgba(88, 15, 69, 0.3); }
@@ -71,8 +67,6 @@
     <nav class="top-bar">
         <a href="../index.html" class="btn-back"><i class="fa-solid fa-chevron-left"></i> Retour</a>
         <div class="nav-center">
-            <span class="brand-logo-link"><img src="../assets/logo_oser_pour_innover.png" alt="L'esprit d'innover" onerror="this.style.display='none'" /></span>
-            <div class="breadcrumbs">Sensibilisation <span class="separator">/</span> Module Ressources <span class="separator">/</span> Séquence 3</div>
         </div>
         <button type="button" onclick="toggleTheme()" style="background:none; border:none; cursor:pointer; font-size:1.2rem; color:var(--text-main);" aria-label="Thème"><i class="fa-solid fa-moon"></i></button>
     </nav>
@@ -88,6 +82,7 @@
             <div class="progress-bar-container"><div id="hero-progress-bar" class="progress-bar" style="width: 0%"></div></div>
             <p id="hero-progress-label" style="font-size:0.9rem; margin-top:10px; opacity:0.95; font-weight:700;">0 % réalisé · 5 leçons</p>
         </div>
+        <iframe title="Lecteur vidéo" src="https://emedia.paris-saclay.fr/permalink/v126d51337497us3nyxd/iframe/" allowfullscreen="allowfullscreen" allow="autoplay" style="border: 0; width: 100%; height: 550px;"></iframe>
 
         <div class="grains-grid">
             <div class="grain-card border-blue" id="grain18">

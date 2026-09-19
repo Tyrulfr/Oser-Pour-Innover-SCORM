@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<manifest identifier="OSER-POUR-INNOVER-MODULE2" version="1.1"
+<manifest identifier="OSER-POUR-INNOVER-MODULE2" version="1.2"
   xmlns="http://www.imsglobal.org/xsd/imscp_v1p1"
   xmlns:adlcp="http://www.adlnet.org/xsd/adlcp_v1p3"
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -15,11 +15,11 @@
   <organizations default="OSER-M2-ORG">
     <organization identifier="OSER-M2-ORG">
       <metadata>
-        <title>Module 2 : Retours d'Expérience — L'esprit d'innover</title>
+        <title>Module 1 : L'innovation une continuité de la recherche — L'esprit d'innover</title>
       </metadata>
-      <title>Module 2 : Retours d'Expérience</title>
+      <title>Module 1 : L'innovation une continuité de la recherche</title>
       <item identifier="ITEM-M2" identifierref="RES-M2">
-        <title>Sommaire Module 2</title>
+        <title>Sommaire Module 1</title>
       </item>
     </organization>
   </organizations>
@@ -28,6 +28,9 @@
     <resource identifier="RES-M2" type="webcontent" adlcp:scormtype="sco" href="index.html">
       <file href="index.html"/>
       <file href="SCORM_API.js"/>
+      <file href="pages/grain_pourquoi_oser.html"/>
+      <file href="pages/grain_du_labo_au_terrain.html"/>
+      <file href="pages/grain_sortir_du_labo.html"/>
       <file href="pages/temoignage_silvia.html"/>
     </resource>
   </resources>

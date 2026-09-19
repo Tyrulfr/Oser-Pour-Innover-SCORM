@@ -15,11 +15,11 @@
   <organizations default="OSER-M1-ORG">
     <organization identifier="OSER-M1-ORG">
       <metadata>
-        <title>Module Ressources : Sensibilisation —" L'esprit d'innover</title>
+        <title>Modules Ressources : Sensibilisation — L'esprit d'innover</title>
       </metadata>
-      <title>Module Ressources : Sensibilisation</title>
+      <title>Modules Ressources : Sensibilisation</title>
       <item identifier="ITEM-M1" identifierref="RES-M1">
-        <title>Sommaire Module Ressources</title>
+        <title>Sommaire Modules Ressources</title>
       </item>
     </organization>
   </organizations>

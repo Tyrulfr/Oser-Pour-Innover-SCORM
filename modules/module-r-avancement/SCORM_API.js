@@ -29,7 +29,6 @@
   };
 
   var api = findAPI(typeof window !== 'undefined' ? window : global);
-
   function callGetValue(key) {
     if (!api) return '';
     try {

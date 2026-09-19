@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sommaire Module 2 : Retours d'Expérience | L'esprit d'innover</title>
+    <title>Sommaire Module 1 : L'innovation une continuité de la recherche | L'esprit d'innover</title>
     <script src="SCORM_API.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
@@ -36,6 +36,8 @@
         .progress-bar { width: 20%; height: 100%; background: var(--orange); border-radius: 5px; transition: width 1s ease; }
 
         .grains-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 2rem; }
+        .section-title { font-size: 1.8rem; font-weight: 800; margin: 0 0 1.5rem 0; color: var(--bordeaux); }
+        body.dark-mode .section-title { color: var(--orange); }
 
         .grain-card { background: var(--bg-card); border-radius: 15px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.05); transition: transform 0.3s, box-shadow 0.3s; display: flex; flex-direction: column; position: relative; border-top: 5px solid var(--teal); }
         .grain-card:hover { transform: translateY(-10px); box-shadow: 0 15px 30px rgba(0,0,0,0.1); }
@@ -64,7 +66,7 @@
         .icon-bordeaux { color: var(--bordeaux); background: rgba(88, 15, 69, 0.1); }
     </style>
 </head>
-<body data-module="module2">
+<body data-module="module1">
 
     <nav class="top-bar">
         <a href="../../index.html" class="btn-back"><i class="fa-solid fa-chevron-left"></i> Portail</a>
@@ -78,69 +80,49 @@
     <div class="content-container">
 
         <div class="hero-section">
-            <h1 class="hero-title">Module 2 : Retours d'Expérience</h1>
-            <p class="hero-desc">L'innovation racontée par ceux qui la font. Plongez dans les parcours réels de chercheurs devenus entrepreneurs.</p>
+            <h1 class="hero-title">Module 1 : L'innovation une continuité de la recherche</h1>
+            <p class="hero-desc">L'innovation racontée par ceux qui la font. Trois grains mêlant vidéo témoin et vidéo expert.</p>
             <div class="progress-bar-container"><div class="progress-bar" id="hero-progress-bar" style="width: 0%"></div></div>
-            <p style="font-size:0.8rem; margin-top:10px; opacity:0.8;"><span id="progress-text">0</span> / 1 ressource</p>
+            <p style="font-size:0.8rem; margin-top:10px; opacity:0.8;"><span id="progress-text">0</span> / 3 grains</p>
         </div>
 
         <div class="grains-grid">
 
-            <div class="grain-card locked">
+            <div class="grain-card border-orange">
                 <div class="card-number">01</div>
                 <div class="card-body">
-                    <div class="card-icon"><i class="fa-solid fa-flag-checkered"></i></div>
-                    <div class="card-title">Introduction au Module</div>
-                    <div class="card-desc">Pourquoi les témoignages sont essentiels pour comprendre la réalité du terrain et de la "Vallée de la Mort".</div>
+                    <div class="card-icon icon-orange"><i class="fa-solid fa-video"></i></div>
+                    <div class="card-title">Pourquoi oser ?</div>
+                    <div class="card-desc">Vidéo témoin + vidéo expert.</div>
                 </div>
-                <div class="card-footer"><span class="btn-locked"><i class="fa-solid fa-person-digging"></i> Bientôt</span></div>
+                <div class="card-footer"><a href="pages/grain_pourquoi_oser.html" class="btn-start">Accéder <i class="fa-solid fa-play"></i></a></div>
             </div>
 
-            <div class="grain-card border-orange">
+            <div class="grain-card border-blue">
                 <div class="card-number">02</div>
                 <div class="card-body">
-                    <div class="card-icon icon-orange"><i class="fa-solid fa-video"></i></div>
-                    <div class="card-title">Témoignage : S. Cohen-Kaminsky</div>
-                    <div class="card-desc">Du laboratoire CNRS à la Deeptech. Découvrez comment structurer une équipe et changer de posture.</div>
+                    <div class="card-icon icon-blue"><i class="fa-solid fa-video"></i></div>
+                    <div class="card-title">Du labo au terrain</div>
+                    <div class="card-desc">Vidéo témoin + vidéo expert.</div>
                 </div>
-                <div class="card-footer"><a href="pages/temoignage_silvia.html" class="btn-start">Visionner <i class="fa-solid fa-play"></i></a></div>
+                <div class="card-footer"><a href="pages/grain_du_labo_au_terrain.html" class="btn-start">Accéder <i class="fa-solid fa-play"></i></a></div>
             </div>
 
-            <div class="grain-card locked">
+            <div class="grain-card">
                 <div class="card-number">03</div>
                 <div class="card-body">
                     <div class="card-icon"><i class="fa-solid fa-video"></i></div>
-                    <div class="card-title">Témoignage : Loïc Rajjou</div>
-                    <div class="card-desc">Retour d'expérience sur la valorisation de la recherche en biotechnologie végétale.</div>
+                    <div class="card-title">Sortir du labo</div>
+                    <div class="card-desc">Vidéo témoin + vidéo expert.</div>
                 </div>
-                <div class="card-footer"><span class="btn-locked"><i class="fa-solid fa-person-digging"></i> Bientôt</span></div>
-            </div>
-
-            <div class="grain-card locked">
-                <div class="card-number">04</div>
-                <div class="card-body">
-                    <div class="card-icon"><i class="fa-solid fa-user-tie"></i></div>
-                    <div class="card-title">Le Regard de l'Expert</div>
-                    <div class="card-desc">Analyse croisée des parcours par un Chargé de Mission Valorisation. Les pièges à éviter.</div>
-                </div>
-                <div class="card-footer"><span class="btn-locked"><i class="fa-solid fa-person-digging"></i> Bientôt</span></div>
-            </div>
-
-            <div class="grain-card border-bordeaux locked">
-                <div class="card-number">05</div>
-                <div class="card-body">
-                    <div class="card-icon icon-bordeaux"><i class="fa-solid fa-star"></i></div>
-                    <div class="card-title">Synthèse du Module</div>
-                    <div class="card-desc">Ce qu'il faut retenir pour votre propre parcours. Check-list de maturité.</div>
-                </div>
-                <div class="card-footer"><span class="btn-locked"><i class="fa-solid fa-lock"></i> Verrouillé</span></div>
+                <div class="card-footer"><a href="pages/grain_sortir_du_labo.html" class="btn-start">Accéder <i class="fa-solid fa-play"></i></a></div>
             </div>
 
         </div>
     </div>
 
     <script>
-        var PAGES_MODULE2 = ['temoignage_silvia'];
+        var PAGES_MODULE2 = ['grain_pourquoi_oser', 'grain_du_labo_au_terrain', 'grain_sortir_du_labo'];
 
         function parseState(str) {
             try { return str ? JSON.parse(str) : {}; } catch (e) { return {}; }
@@ -161,8 +143,10 @@
         function getState() {
             var fromAPI = (typeof ScormAPI !== 'undefined' && ScormAPI.isAvailable()) ? (ScormAPI.getSuspendData() || '') : '';
             var fromLS = '';
-            try { fromLS = localStorage.getItem('module2_suspend') || ''; } catch (e) {}
-            return mergeStates(parseState(fromAPI), parseState(fromLS));
+            try { fromLS = localStorage.getItem('module1_suspend') || ''; } catch (e) {}
+            var fromLegacy = '';
+            try { fromLegacy = localStorage.getItem('module2_suspend') || ''; } catch (e) {}
+            return mergeStates(mergeStates(parseState(fromAPI), parseState(fromLS)), parseState(fromLegacy));
         }
         function setState(o) {
             var s = JSON.stringify(o);
@@ -171,7 +155,7 @@
                 ScormAPI.setSuspendData(s);
                 ScormAPI.commit();
             }
-            try { localStorage.setItem('module2_suspend', s); } catch (e) {}
+            try { localStorage.setItem('module1_suspend', s); } catch (e) {}
         }
 
         function toggleTheme() {
@@ -193,7 +177,8 @@
             if (bar) bar.style.width = pct + '%';
             if (text) text.textContent = (state.completed || []).filter(function (g) { return PAGES_MODULE2.indexOf(g) !== -1; }).length;
             if (typeof ScormAPI !== 'undefined' && ScormAPI.isAvailable()) {
-                var scorePct = PAGES_MODULE2.length ? Math.round(((state.scores || {})[PAGES_MODULE2[0]] === 1 ? 1 : 0) / PAGES_MODULE2.length * 100) : 0;
+                var doneScores = PAGES_MODULE2.filter(function (g) { return (state.scores || {})[g] === 1; }).length;
+                var scorePct = PAGES_MODULE2.length ? Math.round((doneScores / PAGES_MODULE2.length) * 100) : 0;
                 ScormAPI.setScore(scorePct, 0, 100);
                 if (pct >= 100) ScormAPI.setLessonStatus('completed');
                 ScormAPI.commit();

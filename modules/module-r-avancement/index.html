@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sommaire Module Ressources : Sensibilisation | L'esprit d'innover</title>
+    <title>Sommaire Modules Ressources : Sensibilisation | L'esprit d'innover</title>
     <script src="SCORM_API.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         /* --- Styles de base --- */
@@ -15,23 +15,31 @@
         * { box-sizing: border-box; transition: all 0.3s ease; }
         body { margin: 0; padding: 0; font-family: 'Open Sans', sans-serif; background-color: var(--bg-page); color: var(--text-main); line-height: 1.6; padding-bottom: 100px; background-image: radial-gradient(rgba(42, 50, 94, 0.1) 1px, transparent 1px); background-size: 30px 30px; }
         body.dark-mode { background-image: radial-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 1px); }
-        h1, h2, h3, h4 { font-family: 'Montserrat', sans-serif; color: var(--bordeaux); }
+        h1, h2, h3, h4 { font-family: 'Open Sans', sans-serif; font-weight: 700; color: var(--bordeaux); }
         body.dark-mode h1, body.dark-mode h2, body.dark-mode h3 { color: var(--orange); }
+        .hero-title,
+        .hero-desc,
+        .sequence-card-title,
+        .sequence-card-desc,
+        .stat-number,
+        .stat-label,
+        .btn-sequence,
+        .progress-widget .progress-label,
+        .progress-widget .bar-pct,
+        .hero-meta {
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 700;
+        }
 
         /* Navigation */
-        .top-bar { background: var(--bg-card); padding: 1rem 5%; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 10px rgba(0,0,0,0.1); border-bottom: 3px solid var(--bordeaux); min-height: 120px; }
+        .top-bar { background: var(--bg-card); padding: 0.8rem 5%; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 10px rgba(0,0,0,0.1); border-bottom: 3px solid var(--bordeaux); }
 
         .btn-back { text-decoration: none; color: var(--text-main); font-weight: 700; display: flex; align-items: center; gap: 10px; font-size: 1.1rem; background: none; border: none; cursor: pointer; padding: 0; font-family: inherit; }
         .btn-back:hover { color: var(--orange); }
 
         .nav-center { display: flex; flex-direction: column; align-items: center; gap: 0; }
-        .brand-logo-link { display: block; line-height: 0; margin-bottom: -8px; pointer-events: none; }
-        .brand-logo-link img { height: 108px; width: auto; max-width: 540px; object-fit: contain; display: block; vertical-align: bottom; }
         .brand-name { font-weight: 900; font-size: 1.2rem; color: var(--bordeaux); letter-spacing: 1px; }
         body.dark-mode .brand-name { color: var(--orange); }
-
-        .breadcrumbs { font-size: 0.85rem; color: var(--text-light); margin-top: 0; }
-        .breadcrumbs .separator { opacity: 0.4; margin: 0 5px; }
 
         .content-container { max-width: 1200px; margin: 2rem auto; padding: 0 1.5rem; }
 
@@ -161,10 +169,6 @@
         <a href="../../index.html" class="btn-back" aria-label="Retour au portail"><i class="fa-solid fa-chevron-left"></i> Portail</a>
 
         <div class="nav-center">
-            <span class="brand-logo-link" title="L'esprit d'innover">
-                <img src="assets/logo_oser_pour_innover.png" alt="L'esprit d'innover" onerror="this.src='../document/assets/image/logo_oser_pour_innover.png'" />
-            </span>
-            <div class="breadcrumbs">Accueil <span class="separator">/</span> Sensibilisation <span class="separator">/</span> Module Ressources</div>
         </div>
 
         <button type="button" onclick="toggleTheme()" style="background:none; border:none; cursor:pointer; font-size:1.2rem; color:var(--text-main);" aria-label="Thème"><i class="fa-solid fa-moon"></i></button>
@@ -177,10 +181,10 @@
     <div class="content-container">
 
         <div class="hero-section">
-            <h1 class="hero-title">Module Ressources : Sensibilisation à l'Innovation</h1>
+            <h1 class="hero-title">Modules Ressources : Sensibilisation à l'Innovation</h1>
             <p class="hero-desc">Découvrez les fondamentaux, le vocabulaire et les processus clés pour comprendre comment transformer une idée en valeur réelle.</p>
             <div class="progress-bar-container"><div id="hero-progress-bar" class="progress-bar" style="width: 0%"></div></div>
-            <p style="font-size:0.8rem; margin-top:10px; opacity:0.8;">21 Leçons réparties en 3 Séquences</p>
+            <p class="hero-meta" style="font-size:0.8rem; margin-top:10px; opacity:0.8;">21 Leçons réparties en 3 Séquences</p>
         </div>
         <div class="sequences-grid">
             <div class="sequence-card seq-1" onclick="goTo('pages/sommaire_sequence1.html')">
@@ -235,8 +239,8 @@
             </div>
         </div>
 
-        <section class="reference-note" aria-label="Références bibliographiques du module Ressources">
-            <div class="ref-title"><i class="fa-solid fa-book-open-reader"></i> Références du module Ressources</div>
+        <section class="reference-note" aria-label="Références bibliographiques des Modules Ressources">
+            <div class="ref-title"><i class="fa-solid fa-book-open-reader"></i> Références des Modules Ressources</div>
             <div class="ref-card">
                 <div>Yannou, Bernard, et François Cluzel. <em>Radical Innovation Design: A systematic and usage-driven innovation methodology to ensure usefulness for users and profitability for companies.</em> EDP Sciences, 2024. DOI : <a href="https://doi.org/10.1051/978-2-7598-3066-4" target="_blank" rel="noopener noreferrer">https://doi.org/10.1051/978-2-7598-3066-4</a>.</div>
                 <div style="margin-top:0.45rem;">Cet ouvrage, sous licence CC BY-NC-ND et dont la réalisation a été financée par le programme Science Ouverte de l'Université Paris-Saclay, est téléchargeable en accès gratuit. Les adaptations éventuelles de son contenu ont été approuvées et supervisées par les auteurs.</div>
