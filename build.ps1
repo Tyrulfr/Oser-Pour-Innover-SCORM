@@ -11,7 +11,7 @@ function Build-ModuleZip {
     $zipPath = Join-Path $root $zipName
     if (-not (Test-Path $src)) { Write-Warning "Source introuvable: $src"; return }
     if (Test-Path $zipPath) { Remove-Item $zipPath -Force }
-    $files = Get-ChildItem -Path $src -Recurse -File
+    $files = Get-ChildItem -Path $src -Recurse -File | Where-Object { $_.Name -ne '.DS_Store' }
     $baseLen = $src.TrimEnd('\').Length + 1
     $zip = [System.IO.Compression.ZipFile]::Open($zipPath, 'Create')
     try {

@@ -8,7 +8,10 @@ build_one() {
   local zipname="$2"
   if [ -d "$ROOT/modules/$dir" ]; then
     cd "$ROOT/modules/$dir"
-    zip -r "$ROOT/$zipname" .
+    # zip ajoute au lieu de remplacer : sans suppression prealable, les fichiers
+    # supprimes du module resteraient dans le paquet.
+    rm -f "$ROOT/$zipname"
+    zip -r -q "$ROOT/$zipname" . -x ".DS_Store" "*/.DS_Store" "__MACOSX/*"
     echo "Build OK: $zipname"
   else
     echo "Skip (absent): modules/$dir"
