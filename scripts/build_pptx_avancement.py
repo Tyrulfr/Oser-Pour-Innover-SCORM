@@ -125,24 +125,26 @@ def blank(prs):
 def slide_indicateurs(prs):
     s = blank(prs)
     slide_head(s, "Avancement du MOOC — indicateurs",
-               "Le dispositif est livré et packagé. L'effort se concentre désormais sur le remplissage.")
+               "SPOC Paris-Saclay. Le dispositif est livré et packagé : l'effort porte sur le remplissage.")
 
     kpis = [
         ("13 / 13", "Vidéos témoins", "filmées · montage V1 en validation", "teal"),
-        ("14 / 23", "Vidéos expert", "filmées · V0 à valider", "orange"),
-        ("0 / 36", "Vidéos intégrées", "36 emplacements câblés, 0 rempli", "bordeaux"),
-        ("176", "Incrustations", "propositions à arbitrer", "blue"),
+        ("15 / 25", "Vidéos expert", "filmées · V0 à valider", "orange"),
+        ("0 / 38", "Vidéos intégrées", "37 emplacements câblés · 1 à créer", "bordeaux"),
+        ("76", "Intro / outro", "segments · 40 à 57 min à produire", "blue"),
+        ("176", "Incrustations", "propositions à arbitrer", "teal"),
     ]
-    w, gap, top, h = 1.96, 0.19, 1.46, 1.30
+    gap, top, h = 0.17, 1.46, 1.30
+    w = (8.41 - gap * (len(kpis) - 1)) / len(kpis)
     for i, (value, label, sub, accent) in enumerate(kpis):
         left = 0.84 + i * (w + gap)
         card(s, left, top, w, h, accent, fill=TINT[accent])
-        text_box(s, left + 0.06, top + 0.14, w - 0.12, 0.42,
-                 [(value, 24, True, ACCENT[accent])], align=PP_ALIGN.CENTER)
-        text_box(s, left + 0.06, top + 0.60, w - 0.12, 0.22,
-                 [(label, 11, True, BLUE)], align=PP_ALIGN.CENTER)
-        text_box(s, left + 0.08, top + 0.85, w - 0.16, 0.38,
-                 [(sub, 8.5, False, GREY)], align=PP_ALIGN.CENTER)
+        text_box(s, left + 0.05, top + 0.13, w - 0.10, 0.38,
+                 [(value, 21, True, ACCENT[accent])], align=PP_ALIGN.CENTER)
+        text_box(s, left + 0.05, top + 0.56, w - 0.10, 0.20,
+                 [(label, 10, True, BLUE)], align=PP_ALIGN.CENTER)
+        text_box(s, left + 0.07, top + 0.79, w - 0.14, 0.44,
+                 [(sub, 8, False, GREY)], align=PP_ALIGN.CENTER)
 
     text_box(s, 0.84, 3.00, 8.41, 0.24,
              [("État des rushes expert par module", 12.5, True, BLUE)])
@@ -162,8 +164,8 @@ def slide_indicateurs(prs):
                  [(state, 8.5, False, GREY)], align=PP_ALIGN.CENTER)
 
     text_box(s, 0.84, 4.10, 8.41, 0.24,
-             [("Les 3 modules verts sont intégrables dès validation des V1 témoin et V0 expert.",
-               10.5, True, TEAL)])
+             [("Les 4 modules verts sont intégrables dès validation des V1/V0 — mais M2 ou M5 "
+               "accueillera la capsule PACTE.", 10.5, True, TEAL)])
 
     card(s, 0.84, 4.42, 8.41, 0.58, "blue", fill=TINT["blue"], radius=0.14)
     text_box(s, 1.02, 4.52, 8.05, 0.40,
@@ -177,33 +179,37 @@ def slide_indicateurs(prs):
 # --------------------------------------------------------------------- slide 2
 def slide_decisions(prs):
     s = blank(prs)
-    slide_head(s, "Trois décisions attendues",
-               "Le calendrier ne tient que si ces trois points sont tranchés cette semaine.")
+    slide_head(s, "Quatre points à trancher",
+               "Le calendrier ne tient que si ces quatre points sont arbitrés dans les prochains jours.")
 
     items = [
-        ("bordeaux", "1", "E12 / E14 — Fatoumata",
-         "Au planning du 11/09, non importées en V0. Absentes du plateau du 24/09.",
-         "Bloque 100 % du module 3", "T7 = E12 + E13 · T8 = E14 + E15"),
-        ("orange", "2", "Décompte des experts",
-         "L'architecture donne 14 capsules filmées, 15 sont annoncées.",
-         "23 ou 24 emplacements ?", "Un slot à ouvrir si 24e expert"),
-        ("teal", "3", "Périmètre SPOC / MOOC",
-         "Aucune différenciation à ce jour : les paquets sont en variante unique.",
-         "Fixe les seuils de réussite", "À trancher avant production des quiz"),
+        ("bordeaux", "E12 / E14",
+         "Capsules Fatoumata, non importées en V0 et absentes du 24/09.",
+         "Bloque le module 3", "T7 et T8 incomplets"),
+        ("orange", "Capsule loi PACTE",
+         "Sujet apparu en captation, sans emplacement prévu.",
+         "M2 ou M5 à arbitrer", "25e capsule · lecteur à créer"),
+        ("teal", "Scripts intro / outro",
+         "À valider avant mi-octobre, tournage derrière.",
+         "76 segments à produire", "38 vidéos × intro + outro"),
+        ("blue", "Charge des quiz",
+         "Aucune estimation de charge à ce jour.",
+         "13 formatifs + 1 finale", "évaluation sommative · 0 implémenté"),
     ]
-    w, gap, top, h = 2.637, 0.25, 1.46, 2.72
-    for i, (accent, mark, title, body, impact, detail) in enumerate(items):
+    gap, top, h = 0.25, 1.46, 2.72
+    w = (8.41 - gap * (len(items) - 1)) / len(items)
+    for i, (accent, title, body, impact, detail) in enumerate(items):
         left = 0.84 + i * (w + gap)
         card(s, left, top, w, h, accent)
-        badge(s, left + w / 2 - 0.26, top + 0.20, 0.52, accent, mark, size=18)
-        text_box(s, left + 0.16, top + 0.86, w - 0.32, 0.26,
-                 [(title, 12.5, True, ACCENT[accent])], align=PP_ALIGN.CENTER)
-        text_box(s, left + 0.18, top + 1.16, w - 0.36, 0.62,
-                 [(body, 9.5, False, GREY)], align=PP_ALIGN.CENTER)
-        text_box(s, left + 0.16, top + 1.88, w - 0.32, 0.26,
-                 [(impact, 11, True, BLUE)], align=PP_ALIGN.CENTER)
-        text_box(s, left + 0.18, top + 2.18, w - 0.36, 0.40,
-                 [(detail, 8.5, False, GREY_LIGHT)], align=PP_ALIGN.CENTER)
+        badge(s, left + w / 2 - 0.24, top + 0.20, 0.48, accent, str(i + 1), size=16)
+        text_box(s, left + 0.12, top + 0.82, w - 0.24, 0.28,
+                 [(title, 11.5, True, ACCENT[accent])], align=PP_ALIGN.CENTER)
+        text_box(s, left + 0.14, top + 1.14, w - 0.28, 0.68,
+                 [(body, 9, False, GREY)], align=PP_ALIGN.CENTER)
+        text_box(s, left + 0.12, top + 1.90, w - 0.24, 0.28,
+                 [(impact, 9.5, True, BLUE)], align=PP_ALIGN.CENTER)
+        text_box(s, left + 0.14, top + 2.22, w - 0.28, 0.42,
+                 [(detail, 8, False, GREY_LIGHT)], align=PP_ALIGN.CENTER)
 
     card(s, 0.84, 4.42, 8.41, 0.58, "orange", fill=TINT["orange"], radius=0.14)
     text_box(s, 1.02, 4.52, 8.05, 0.40,
@@ -222,11 +228,11 @@ def slide_trajectoire(prs):
 
     lots = [
         ("teal", "1", "Lot 1 — MR, M2, M5, M6",
-         "Rushes experts complets · intégrable dès validation des V1/V0", "Prêt"),
+         "Rushes complets · sous réserve du rattachement de la capsule PACTE", "Prêt"),
         ("orange", "2", "Lot 2 — M1, M4",
          "Débloqué par le plateau du 24/09 : E2, E3, E4, E17, E18", "Octobre"),
         ("bordeaux", "3", "Lot 3 — M3",
-         "Suspendu à la décision sur E12 / E14 — aucun rush disponible", "Sans date"),
+         "Suspendu à E12 / E14 · E13bis tournée, E13 et E15 le 24/09", "Sans date"),
     ]
     top, h, gap = 1.44, 0.66, 0.08
     for i, (accent, num, title, body, tag) in enumerate(lots):
@@ -242,7 +248,7 @@ def slide_trajectoire(prs):
         ("teal", "Décembre 2026", "Ouverture partielle",
          "MR, M2, M5, M6 — suppose d'accepter une ouverture module par module"),
         ("blue", "Fin janvier 2027", "Parcours complet",
-         "Sous réserve que E12 / E14 soient tournées en octobre"),
+         "Sous réserve de E12 / E14 en octobre et du volume intro / outro"),
     ]
     jw, jtop, jh = 4.08, 3.72, 0.90
     for i, (accent, when, what, cond) in enumerate(jalons):
@@ -253,14 +259,15 @@ def slide_trajectoire(prs):
         text_box(s, left + 0.18, jtop + 0.34, jw - 0.36, 0.24, [(what, 11, True, BLUE)])
         text_box(s, left + 0.18, jtop + 0.58, jw - 0.36, 0.28, [(cond, 8.5, False, GREY)])
 
-    card(s, 0.84, 4.70, 8.41, 0.52, "bordeaux", fill=TINT["bordeaux"], radius=0.14)
+    card(s, 0.84, 4.70, 8.41, 0.52, "blue", fill=TINT["blue"], radius=0.14)
     text_box(s, 1.02, 4.80, 8.05, 0.34,
-             [("Angle mort : 13 quiz d'évaluation formative et 1 évaluation sommative à produire — "
-               "0 implémenté dans M1 à M6, charge non estimée à ce jour.", 10, True, BORDEAUX)])
+             [("Périmètre : SPOC Paris-Saclay — le terme « MOOC » est conservé en communication. "
+               "Une éventuelle déclinaison à périmètre élargi est un sujet ultérieur du projet.",
+               10, False, BLUE)])
 
     text_box(s, 0.84, 5.32, 7.10, 0.22,
-             [("Hypothèses : montage V0 ≈ 3 sem. après tournage · 1 cycle de validation (2 + 2 sem.) "
-               "· aucun re-tournage · 2 sem. de recette LMS.", 8, False, GREY_LIGHT)])
+             [("Hypothèses : montage V0 ≈ 3 sem. · validation 2 + 2 sem. · recette LMS 2 sem. "
+               "· 76 intro / outro non chiffrés.", 8, False, GREY_LIGHT)])
     text_box(s, 7.94, 5.32, 1.31, 0.22,
              [(DATE_LABEL, 8.5, False, GREY_LIGHT)], align=PP_ALIGN.RIGHT)
 
