@@ -14,6 +14,10 @@ dist/
 *.zip
 node_modules/
 
+# Environnements Python
+.venv/
+__pycache__/
+
 # Logs et temporaires
 *.log
 .cache/
