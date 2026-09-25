@@ -68,6 +68,7 @@
                 feedback.textContent = item.feedbackOk;
                 attemptLabel.textContent = "Bien vu";
                 check.disabled = true;
+                if (global.ProgressApp) global.ProgressApp.markQuiz(kind + "-" + (item._qid || item.objectif || "q"), true, attempts, item.question);
                 if (onDone) onDone(true);
                 return;
             }
@@ -78,6 +79,7 @@
                 feedback.textContent = item.feedbackKo + " " + item.feedbackOk;
                 attemptLabel.textContent = "Correction affichée";
                 check.disabled = true;
+                if (global.ProgressApp) global.ProgressApp.markQuiz(kind + "-" + (item._qid || item.objectif || "q"), false, attempts, item.question);
                 if (onDone) onDone(false);
             } else {
                 feedback.textContent = item.feedbackKo + " Il vous reste " + (MAX_ATTEMPTS - attempts) + " tentative(s).";
@@ -132,6 +134,7 @@
 
         function show() {
             wrap.innerHTML = "";
+            items[index]._qid = "q" + index;
             renderItem(wrap, items[index], "formative", function () {
                 if (index < items.length - 1) {
                     var next = el("button", {
@@ -156,14 +159,20 @@
     function renderMr(host, cards) {
         (cards || []).forEach(function (card) {
             host.appendChild(el("aside", { className: "mr-card" }, [
-                el("p", { className: "mr-kicker", text: "Module Ressources" }),
+                el("p", { className: "mr-kicker", text: "Vient du Module Ressources" }),
                 el("h2", { text: card.title }),
                 el("p", { text: card.why }),
                 el("div", { className: "mr-actions" }, [
-                    el("a", { className: "mr-btn", href: card.href, target: "_blank", rel: "noopener", html: '<i class="fa-solid fa-arrow-up-right-from-square"></i> Ouvrir la capsule' }),
-                    card.siteHref ? el("a", { className: "mr-btn ghost", href: card.siteHref, target: "_blank", rel: "noopener", text: "Ouvrir sur le site" }) : null
+                    el("a", {
+                        className: "mr-btn",
+                        href: card.href,
+                        onclick: function () {
+                            if (global.ProgressApp) global.ProgressApp.markMr(card.href);
+                        },
+                        html: '<i class="fa-solid fa-book-open"></i> Consulter la capsule'
+                    })
                 ]),
-                el("p", { className: "mr-note", text: "Revenez ensuite ici : une question s’appuie sur cette capsule. Si le lien ne s’ouvre pas dans le LMS, passez par Accueil → Modules Ressources." })
+                el("p", { className: "mr-note", text: "Consultation uniquement : pas de quiz ici. La validation de cette capsule se fait dans le module Ressources. Revenez ensuite : une question du grain s’appuie sur ce contenu." })
             ]));
         });
     }
@@ -205,6 +214,10 @@
                 onclick: function () {
                     btn.classList.toggle("is-flipped");
                     btn.setAttribute("aria-pressed", btn.classList.contains("is-flipped") ? "true" : "false");
+                    if (global.ProgressApp) {
+                        var flipped = host.querySelectorAll(".memory-card.is-flipped").length;
+                        global.ProgressApp.markMemory(flipped, cards.length);
+                    }
                 }
             });
             btn.appendChild(el("div", { className: "memory-inner" }, [
@@ -233,30 +246,6 @@
         ]));
     }
 
-    function renderPlusLoin(host, cards) {
-        if (!cards || !cards.length) return;
-        var items = cards.map(function (card) {
-            return el("li", { className: "plus-loin-item" }, [
-                el("div", {}, [
-                    el("strong", { text: card.title }),
-                    el("span", { text: card.why })
-                ]),
-                el("a", {
-                    href: card.href,
-                    target: "_blank",
-                    rel: "noopener",
-                    html: '<i class="fa-solid fa-arrow-up-right-from-square"></i> Ouvrir'
-                })
-            ]);
-        });
-        host.appendChild(el("aside", { className: "plus-loin" }, [
-            el("p", { className: "plus-loin-kicker", text: "Module Ressources" }),
-            el("h2", { text: "Pour aller plus loin !" }),
-            el("p", { className: "plus-loin-lead", text: "Ces capsules approfondissent le grain. Elles ne sont pas exigées pour valider." }),
-            el("ul", { className: "plus-loin-list" }, items)
-        ]));
-    }
-
     function mediaWhen(media, when) {
         if (!media) return null;
         if ((media.when || "after-t") === when) return media;
@@ -271,7 +260,10 @@
         var memory = document.getElementById("eval-memory");
         if (afterT) {
             renderMedia(afterT, mediaWhen(bank.media, "after-t"));
-            if (bank.micro) renderItem(afterT, bank.micro, "micro");
+            if (bank.micro) {
+                bank.micro._qid = "micro";
+                renderItem(afterT, bank.micro, "micro");
+            }
             if (bank.mrEarly) renderMr(afterT, bank.mrEarly);
         }
         if (afterE) {
@@ -282,7 +274,6 @@
         }
         if (memory) {
             renderMemory(memory, bank.memory);
-            renderPlusLoin(memory, bank.plusLoin);
         }
     }
 

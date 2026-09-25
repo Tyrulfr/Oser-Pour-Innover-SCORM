@@ -25,6 +25,10 @@
     <resource identifier="RES-M6" type="webcontent" adlcp:scormtype="sco" href="index.html">
       <file href="index.html"/>
       <file href="SCORM_API.js"/>
+      <file href="progress.js"/>
+      <file href="eval-bank.js"/>
+      <file href="eval.js"/>
+      <file href="eval.css"/>
       <file href="pages/grain_t13_conclusion.html"/>
     </resource>
   </resources>

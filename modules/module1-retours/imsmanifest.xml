@@ -25,6 +25,12 @@
     <resource identifier="RES-M2" type="webcontent" adlcp:scormtype="sco" href="index.html">
       <file href="index.html"/>
       <file href="SCORM_API.js"/>
+      <file href="pages/mr-grain19.html"/>
+      <file href="pages/mr-grain10.html"/>
+      <file href="progress.js"/>
+      <file href="eval-bank.js"/>
+      <file href="eval.js"/>
+      <file href="eval.css"/>
       <file href="pages/grain_t1_pourquoi_oser.html"/>
       <file href="pages/grain_t2_recherche_innovation.html"/>
       <file href="pages/grain_t3_besoin_poc.html"/>

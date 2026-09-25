@@ -25,6 +25,10 @@
     <resource identifier="RES-M2" type="webcontent" adlcp:scormtype="sco" href="index.html">
       <file href="index.html"/>
       <file href="SCORM_API.js"/>
+      <file href="progress.js"/>
+      <file href="eval-bank.js"/>
+      <file href="eval.js"/>
+      <file href="eval.css"/>
       <file href="pages/grain_t5_protection_valorisation.html"/>
       <file href="pages/grain_t6_transfert_licensing.html"/>
     </resource>

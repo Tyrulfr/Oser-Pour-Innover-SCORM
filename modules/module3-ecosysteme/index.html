@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sommaire Module 3 — Se faire accompagner et financer | L'esprit d'innover</title>
     <script src="SCORM_API.js"></script>
+    <script src="progress.js?v=5"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -46,16 +47,6 @@ body.dark-mode h1, body.dark-mode h2, body.dark-mode h3 { color: var(--orange); 
 
         .hero-section { background: linear-gradient(135deg, var(--blue), var(--teal)); }
     
-.plus-loin { margin: 2.5rem auto 0; max-width: 1200px; padding: 1.5rem 1.6rem; background: var(--bg-card); border-radius: 18px; border-left: 5px solid var(--orange); box-shadow: 0 8px 20px rgba(0,0,0,0.06); }
-.plus-loin-kicker { font-size: 0.75rem; font-weight: 800; letter-spacing: 0.04em; text-transform: uppercase; color: var(--orange); margin: 0 0 0.25rem; }
-.plus-loin h2 { margin: 0 0 0.45rem; font-size: 1.35rem; }
-.plus-loin-lead { color: var(--text-light); margin: 0 0 1rem; }
-.plus-loin-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 0.65rem; }
-.plus-loin-item { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 0.6rem 1rem; padding: 0.8rem 1rem; border-radius: 12px; background: rgba(244,140,46,0.08); }
-.plus-loin-item strong { display: block; }
-.plus-loin-item span { display: block; font-size: 0.88rem; color: var(--text-light); margin-top: 0.15rem; }
-.plus-loin-item a { font-weight: 800; color: var(--orange); text-decoration: none; white-space: nowrap; }
-.plus-loin-item a:hover { color: var(--bordeaux); }
 </style>
 </head>
 <body data-module="module3-ecosysteme">
@@ -93,64 +84,11 @@ body.dark-mode h1, body.dark-mode h2, body.dark-mode h3 { color: var(--orange); 
                 <div class="card-footer"><a href="pages/grain_t8_financements.html" class="btn-start">Accéder <i class="fa-solid fa-play"></i></a></div>
             </div>
         </div>
-        <aside class="plus-loin">
-            <p class="plus-loin-kicker">Module Ressources</p>
-            <h2>Pour aller plus loin !</h2>
-            <p class="plus-loin-lead">Approfondir ce module avec les capsules déjà disponibles.</p>
-            <ul class="plus-loin-list">
-                <li class="plus-loin-item"><div><strong>1.5 — La chaîne de valeur</strong><span>Flux de financement du labo vers l’usage.</span></div><a href="../module-r-avancement/pages/grain5.html" target="_blank" rel="noopener">Ouvrir <i class="fa-solid fa-arrow-up-right-from-square"></i></a></li>
-                <li class="plus-loin-item"><div><strong>2.9 — Échelles de maturité</strong><span>Lier un financement à un niveau de preuve.</span></div><a href="../module-r-avancement/pages/grain19.html" target="_blank" rel="noopener">Ouvrir <i class="fa-solid fa-arrow-up-right-from-square"></i></a></li>
-            </ul>
-        </aside>
     </div>
     <script>
-        var PAGES = ["grain_t7_accompagnement", "grain_t8_financements"];
-        var SUSPEND_KEY = 'module3_ecosysteme_suspend';
-        function parseState(str) { try { return str ? JSON.parse(str) : {}; } catch (e) { return {}; } }
-        function mergeStates(a, b) {
-            var c = { completed: [], scores: {}, theme: a.theme || b.theme || 'light' };
-            var seen = {};
-            (a.completed || []).concat(b.completed || []).forEach(function (g) { if (!seen[g]) { seen[g] = true; c.completed.push(g); } });
-            var scores = {}; [a.scores, b.scores].forEach(function (s) { if (s) for (var k in s) if (s[k] !== undefined) scores[k] = s[k]; });
-            c.scores = scores; return c;
-        }
-        function getState() {
-            var fromAPI = (typeof ScormAPI !== 'undefined' && ScormAPI.isAvailable()) ? (ScormAPI.getSuspendData() || '') : '';
-            var fromLS = ''; try { fromLS = localStorage.getItem(SUSPEND_KEY) || ''; } catch (e) {}
-            return mergeStates(parseState(fromAPI), parseState(fromLS));
-        }
-        function setState(o) {
-            var s = JSON.stringify(o); if (s.length > 4000) return;
-            if (typeof ScormAPI !== 'undefined' && ScormAPI.isAvailable()) { ScormAPI.setSuspendData(s); ScormAPI.commit(); }
-            try { localStorage.setItem(SUSPEND_KEY, s); } catch (e) {}
-        }
-        function toggleTheme() {
-            document.body.classList.toggle('dark-mode');
-            var state = getState(); state.theme = document.body.classList.contains('dark-mode') ? 'dark' : 'light'; setState(state);
-        }
-        function refreshProgress() {
-            var state = getState();
-            var n = (state.completed || []).filter(function (g) { return PAGES.indexOf(g) !== -1; }).length;
-            var pct = PAGES.length ? Math.round((n / PAGES.length) * 100) : 0;
-            var bar = document.getElementById('hero-progress-bar');
-            var text = document.getElementById('progress-text');
-            if (bar) bar.style.width = pct + '%';
-            if (text) text.textContent = n;
-            if (typeof ScormAPI !== 'undefined' && ScormAPI.isAvailable()) {
-                var doneScores = PAGES.filter(function (g) { return (state.scores || {})[g] === 1; }).length;
-                var scorePct = PAGES.length ? Math.round((doneScores / PAGES.length) * 100) : 0;
-                ScormAPI.setScore(scorePct, 0, 100);
-                if (pct >= 100) ScormAPI.setLessonStatus('completed');
-                ScormAPI.commit();
-            }
-        }
-        window.addEventListener('load', function () {
-            if (typeof ScormAPI !== 'undefined') ScormAPI.LMSInitialize();
-            var state = getState(); if (state.theme === 'dark') document.body.classList.add('dark-mode');
-            refreshProgress();
-        });
-        window.addEventListener('beforeunload', function () {
-            if (typeof ScormAPI !== 'undefined') { ScormAPI.LMSCommit(); ScormAPI.LMSFinish(); }
+        ProgressApp.boot({
+            suspendKey: "module3_ecosysteme_suspend",
+            pages: ["grain_t7_accompagnement", "grain_t8_financements"]
         });
     </script>
 </body>

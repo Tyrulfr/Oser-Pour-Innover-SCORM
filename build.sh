@@ -4,12 +4,16 @@ set -e
 ROOT="$(cd "$(dirname "$0")" && pwd)"
 
 SHARED="$ROOT/modules/_shared"
+API="$ROOT/scorm-api/SCORM_API.js"
 copy_shared() {
   local dir="$1"
+  if [ -f "$API" ] && [ -d "$ROOT/modules/$dir" ]; then
+    cp "$API" "$ROOT/modules/$dir/SCORM_API.js"
+  fi
   case "$dir" in
     module1-retours|module2-pi|module3-ecosysteme|module4-partenariats|module5-action|module6-synthese)
       if [ -d "$SHARED" ] && [ -d "$ROOT/modules/$dir" ]; then
-        cp "$SHARED/eval.css" "$SHARED/eval.js" "$SHARED/eval-bank.js" "$ROOT/modules/$dir/"
+        cp "$SHARED/eval.css" "$SHARED/eval.js" "$SHARED/eval-bank.js" "$SHARED/progress.js" "$ROOT/modules/$dir/"
       fi
       ;;
   esac

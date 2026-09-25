@@ -1,12 +1,9 @@
 window.EVAL_BANK = (function () {
-    var SITE = "https://tyrulfr.github.io/Oser-Pour-Innover-SCORM/modules/module-r-avancement/pages/";
-
     function mr(file, title, why) {
         return {
             title: title,
             why: why,
-            href: "../../module-r-avancement/pages/" + file,
-            siteHref: SITE + file
+            href: file
         };
     }
 
@@ -78,11 +75,6 @@ window.EVAL_BANK = (function () {
                 { front: "Une innovation naît-elle d’un seul Eurêka ?", back: "Non. Plusieurs chemins : pas de côté, besoin, rencontre, années de recherche." },
                 { front: "Techno remarquable = innovation ?", back: "Non. Elle le devient en rencontrant un besoin, mieux que les solutions existantes." },
                 { front: "Que faire d’une intuition de domaine ?", back: "La confronter au terrain : qui, quelles difficultés, quelles situations." }
-            ],
-            plusLoin: [
-                mr("grain1.html", "1.1 — Définition & fondamentaux", "Clarifier ce qu’est une innovation : processus et résultat, nouveauté et valeur."),
-                mr("grain4.html", "1.4 — Le nuage de vocabulaire", "Invention vs innovation : le lexique qui évite de prendre une techno pour une innovation."),
-                mr("grain18.html", "3.1 — Les 3 stratégies", "Need Seeker, Market Reader, Technology Driver : d’où part une innovation.")
             ]
         },
 
@@ -114,7 +106,7 @@ window.EVAL_BANK = (function () {
                     { title: "4. Preuve", text: "Ce qui montre que le besoin existe vraiment." }
                 ]
             },
-            mr: [mr("grain10.html", "2.4 — Cadrage du problème", "Pour passer d’une techno à un problème, on cadre d’abord (Double diamant), on ne commence pas par prototyper la solution.")],
+            mr: [mr("mr-grain10.html", "2.4 — Cadrage du problème", "Capsule du Module Ressources, incluse ici en consultation (sans quiz). Pour passer d’une techno à un problème, on cadre d’abord (Double diamant).")],
             quiz: [
                 {
                     objectif: "Valider un besoin sur le terrain",
@@ -151,10 +143,6 @@ window.EVAL_BANK = (function () {
                 { front: "Une étude bibliographique suffit-elle ?", back: "Non. Il faut aller voir de vrais industriels / utilisateurs." },
                 { front: "Par quoi commencer : un problème ou une solution ?", back: "Cadrer le problème d’abord (Double diamant), puis le résoudre." },
                 { front: "La techno est-elle déjà le problème ?", back: "Non. Le problème se formule côté usage, situation et preuve." }
-            ],
-            plusLoin: [
-                mr("grain18.html", "3.1 — Les 3 stratégies", "Technology Driver vs Need Seeker : d’où vous partez change la façon de cadrer le problème."),
-                mr("grain1.html", "1.1 — Définition & fondamentaux", "Revenir à la différence entre nouveauté technique et valeur créée.")
             ]
         },
 
@@ -186,7 +174,7 @@ window.EVAL_BANK = (function () {
                     { title: "MVP", text: "Produit minimal utilisable par un client." }
                 ]
             },
-            mr: [mr("grain19.html", "2.9 — Les échelles de maturité", "E4 devait porter POC / prototype / MVP / TRL. Cette capsule le fait déjà : situez votre niveau de preuve, puis revenez.")],
+            mr: [mr("mr-grain19.html", "2.9 — Les échelles de maturité", "Capsule du Module Ressources, incluse ici en consultation (sans quiz). E4 n’est pas encore là : situez votre niveau de preuve (TRL), puis revenez.")],
             quiz: [
                 {
                     objectif: "Interpréter un pivot",
@@ -238,10 +226,6 @@ window.EVAL_BANK = (function () {
                 { front: "Un pivot, c’est un échec ?", back: "Non. C’est une décision : on ajuste la cible et parfois la techno." },
                 { front: "Où trouve-t-on le vrai problème de marché ?", back: "Jamais au seul banc d’essai : sur le terrain, auprès des acteurs." },
                 { front: "À quoi sert le TRL ici ?", back: "À nommer son niveau de preuve et la prochaine incertitude à lever." }
-            ],
-            plusLoin: [
-                mr("grain3.html", "1.3 — L’innovation est un processus", "Le dérisquage n’est pas un saut : c’est une suite d’étapes que l’on pilote."),
-                mr("grain5.html", "1.5 — La chaîne de valeur", "Associer un niveau de preuve aux flux de financement et de valeur.")
             ]
         },
 
@@ -312,10 +296,6 @@ window.EVAL_BANK = (function () {
                 { front: "Que faire avant de parler publiquement ?", back: "Se poser la valorisation. Outil : déclaration d’invention." },
                 { front: "Protéger, est-ce mettre la recherche en pause ?", back: "Non. Brevet et expériences peuvent avancer en parallèle." },
                 { front: "Faut-il tout savoir avant d’aller en valorisation ?", back: "Non. Expliquer le résultat, le nouveau, le problème, l’avancement." }
-            ],
-            plusLoin: [
-                mr("grain3.html", "1.3 — L’innovation est un processus", "Protéger avant de divulguer fait partie du processus, ça ne le met pas en pause."),
-                mr("grain5.html", "1.5 — La chaîne de valeur", "Voir où se situent protection et premier financement, du labo vers l’usage.")
             ]
         },
 
@@ -386,10 +366,6 @@ window.EVAL_BANK = (function () {
                 { front: "Brevet ou secret ?", back: "Souvent les deux. Secret si la copie est indétectable." },
                 { front: "Publier avant de déposer ?", back: "La publication détruit la nouveauté. Plus de brevet possible." },
                 { front: "À quoi sert la FTO ?", back: "Savoir si l’on peut exploiter sans dépendre d’un brevet tiers." }
-            ],
-            plusLoin: [
-                mr("grain5.html", "1.5 — La chaîne de valeur", "La PI est un actif : elle circule avec la valeur, du laboratoire au marché."),
-                mr("grain4.html", "1.4 — Le nuage de vocabulaire", "Nommer clairement invention, innovation, secret, brevet.")
             ]
         },
 
@@ -470,10 +446,6 @@ window.EVAL_BANK = (function () {
                 { front: "Licence ou start-up : quand se le demander ?", back: "Dès le début : ça conditionne recherche et maturation." },
                 { front: "Qui reste propriétaire en licence ?", back: "L’établissement. L’industriel exploite contre redevance." },
                 { front: "Une licence transfère-t-elle le brevet ?", back: "Non. C’est un louage du droit d’exploiter, souvent borné." }
-            ],
-            plusLoin: [
-                mr("grain5.html", "1.5 — La chaîne de valeur", "Licence ou création d’entreprise : deux façons de faire circuler la valeur."),
-                mr("grain2.html", "1.2 — Sur quoi innover ?", "Le champ n’est pas que le produit : service, organisation, procédé.")
             ]
         },
 
@@ -498,10 +470,6 @@ window.EVAL_BANK = (function () {
                 { front: "Peut-on avancer seul ?", back: "Rarement. Plus le projet est ambitieux, plus il faut des acteurs." },
                 { front: "Sur quoi parient les investisseurs, selon Jean-Jacques ?", back: "Sur une équipe humaine complémentaire, pas sur la seule techno." },
                 { front: "À quoi servent Design Spot / fablabs (E13bis) ?", back: "Passer de l’idée à une preuve concrète et travailler l’usage tôt." }
-            ],
-            plusLoin: [
-                mr("grain5.html", "1.5 — La chaîne de valeur", "Situer incubateurs, SATT et financeurs dans le parcours du labo à l’usage."),
-                mr("grain9.html", "2.3 — Le front-end innovation", "L’accompagnement sert surtout au flou du début, pas à tout faire seul.")
             ]
         },
 
@@ -533,7 +501,7 @@ window.EVAL_BANK = (function () {
                     { title: "Après", text: "Investisseurs ou clients." }
                 ]
             },
-            mr: [mr("grain5.html", "1.5 — La chaîne de valeur", "E14 n’est pas là. Cette capsule montre déjà les flux parallèles de financement et de création de valeur, du labo vers l’usage.")],
+            mr: [mr("mr-grain5.html", "1.5 — La chaîne de valeur", "Capsule du Module Ressources, incluse ici en consultation (sans quiz). E14 n’est pas là : elle montre les flux de financement et de valeur, du labo vers l’usage.")],
             quiz: [
                 {
                     objectif: "Choisir le moment de création",
@@ -570,10 +538,6 @@ window.EVAL_BANK = (function () {
                 { front: "Pourquoi ne pas créer trop tôt ?", back: "Des aides anti-création deviennent inaccessibles." },
                 { front: "Pockin Lab, dans la chorale, sert à quoi ?", back: "Une année pour une preuve de concept, encore lié au labo." },
                 { front: "Innover, ce n’est que inventer ?", back: "Non. Il faut aussi faire circuler valeur et financements." }
-            ],
-            plusLoin: [
-                mr("grain19.html", "2.9 — Les échelles de maturité", "Associer un financement au bon niveau de preuve (et à la « vallée de la mort »)."),
-                mr("grain3.html", "1.3 — L’innovation est un processus", "Les aides anti-création puis post-création sont des étapes, pas un unique chèque.")
             ]
         },
 
@@ -598,10 +562,6 @@ window.EVAL_BANK = (function () {
                 { front: "Faut-il tout savoir faire ?", back: "Non. Aller chercher des experts (marché, PI, finance, vente)." },
                 { front: "Un profil business suffit-il ?", back: "Pas s’il ne comprend pas les enjeux du secteur." },
                 { front: "Qui compose l’entourage utile ?", back: "Noyau fondateur, conseils, comité scientifique, réseau." }
-            ],
-            plusLoin: [
-                mr("grain10.html", "2.4 — Cadrage du problème", "Une équipe se construit autour d’un problème partagé, pas seulement de profils."),
-                mr("grain12.html", "2.6 — La méthode des personas", "Clarifier qui est concerné aide à choisir les compétences à aller chercher.")
             ]
         },
 
@@ -621,7 +581,7 @@ window.EVAL_BANK = (function () {
                 feedbackOk: "IA / jumeau numérique parlaient aux scientifiques ; les décideurs entendent ROI et bénéfice.",
                 feedbackKo: "Adapter, ce n’est pas se taire : c’est changer de posture et de vocabulaire."
             },
-            mr: [mr("grain4.html", "1.4 — Le nuage de vocabulaire", "E18 n’est pas encore là. Cette capsule travaille déjà le lexique projet : invention ≠ innovation, s’adapter à qui vous écoute.")],
+            mr: [mr("mr-grain4.html", "1.4 — Le nuage de vocabulaire", "Capsule du Module Ressources, incluse ici en consultation (sans quiz). E18 n’est pas encore là : invention ≠ innovation, adapter le lexique à qui vous écoute.")],
             quiz: [
                 {
                     objectif: "Choisir les mots qui donnent envie de recontacter",
@@ -658,10 +618,6 @@ window.EVAL_BANK = (function () {
                 { front: "Que changer dans son discours ?", back: "Bénéfices et gains pour l’autre, pas seulement la techno." },
                 { front: "Comment s’apprend ce langage ?", back: "En discutant, en se formant (incubateur, SATT, HEC…)." },
                 { front: "Invention = innovation ?", back: "Non. L’innovation implique valeur et usage, pas seulement du nouveau." }
-            ],
-            plusLoin: [
-                mr("grain1.html", "1.1 — Définition & fondamentaux", "Le bon mot change selon que l’on parle de nouveauté ou de valeur."),
-                mr("grain11.html", "2.5 — Design Thinking : principes", "Empathie et test : le langage se cale sur l’interlocuteur, pas sur le labo.")
             ]
         },
 
@@ -737,10 +693,6 @@ window.EVAL_BANK = (function () {
                 { front: "Faut-il naître entrepreneur ?", back: "Non. Les compétences s’apprennent, par tâtonnements." },
                 { front: "Doit-on quitter la recherche ?", back: "Non. On peut concilier : comité scientifique, double casquette." },
                 { front: "Que rend visible l’innovation ?", back: "L’utilité de la recherche — Muriel parle d’intégrateur social." }
-            ],
-            plusLoin: [
-                mr("grain1.html", "1.1 — Définition & fondamentaux", "Innover n’oblige pas à quitter la recherche : c’est un processus et un résultat."),
-                mr("grain3.html", "1.3 — L’innovation est un processus", "Voir l’engagement comme une suite d’apprentissages, pas une reconversion.")
             ]
         },
 
@@ -823,10 +775,6 @@ window.EVAL_BANK = (function () {
                 { front: "Collaboration = prestation ?", back: "Non. On ne se contente pas d’acheter des résultats." },
                 { front: "Premier réflexe avant de parler ?", back: "NDA + connaissances propres formalisées." },
                 { front: "À quoi ressemble l’équilibre ?", back: "Chacun apporte, chacun attend, chacun y gagne. Et c’est écrit." }
-            ],
-            plusLoin: [
-                mr("grain10.html", "2.4 — Cadrage du problème", "Une collaboration tient si le besoin de chaque partie est cadré, pas seulement mis en relation."),
-                mr("grain11.html", "2.5 — Design Thinking : principes", "Écouter l’autre (empathie) avant de contractualiser.")
             ]
         },
 
@@ -882,11 +830,6 @@ window.EVAL_BANK = (function () {
                 { front: "Par quoi commencer ?", back: "Un problème terrain. L’idée vient ensuite." },
                 { front: "Attendre d’être sûr ?", back: "Si vous attendez, vous ne sauterez jamais." },
                 { front: "Quel premier pas ?", back: "Discuter avec des entrepreneurs. Vous ne serez pas seul." }
-            ],
-            plusLoin: [
-                mr("grain10.html", "2.4 — Cadrage du problème", "Revenir au problème terrain avant de « sauter »."),
-                mr("grain19.html", "2.9 — Les échelles de maturité", "Nommer son niveau de preuve pour choisir le prochain pas."),
-                mr("sommaire_sequence1.html", "Séquence 1 — De quoi parle-t-on ?", "Revoir définitions et vocabulaire si un terme bloque encore.")
             ]
         }
     };
