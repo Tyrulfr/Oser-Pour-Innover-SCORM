@@ -727,10 +727,10 @@ def index_html(mod: dict) -> str:
         <body data-module="{mod["data_module"]}">
 
             <nav class="top-bar">
-                <a href="../portal_sensi.html" class="btn-back"><i class="fa-solid fa-chevron-left"></i> Portail</a>
+                <a href="../../index.html" class="btn-back"><i class="fa-solid fa-chevron-left"></i> Accueil</a>
                 <div class="nav-center">
                     <span class="brand-logo-link"><img src="../document/assets/image/logo_oser_pour_innover.png" alt="L'esprit d'innover" onerror="this.style.display='none'" /></span>
-                    <div class="breadcrumbs">Accueil <span class="separator">/</span> Sensibilisation <span class="separator">/</span> Module {mod["num"]}</div>
+                    <div class="breadcrumbs">Accueil <span class="separator">/</span> Module {mod["num"]}</div>
                 </div>
                 <button type="button" onclick="toggleTheme()" style="background:none; border:none; cursor:pointer; font-size:1.2rem; color:var(--text-main);" aria-label="Thème"><i class="fa-solid fa-moon"></i></button>
             </nav>
@@ -777,7 +777,7 @@ def dev_index_html(mod: dict) -> str:
         <body data-module="{mod["data_module"]}">
 
             <nav class="top-bar">
-                <a href="../portal_sensi.html" class="btn-back"><i class="fa-solid fa-chevron-left"></i> Portail</a>
+                <a href="../../index.html" class="btn-back"><i class="fa-solid fa-chevron-left"></i> Accueil</a>
                 <span class="brand-text">L'esprit d'innover</span>
                 <button type="button" onclick="toggleTheme()" style="background:none; border:none; cursor:pointer; font-size:1.2rem; color:var(--text-main);" aria-label="Thème"><i class="fa-solid fa-moon"></i></button>
             </nav>
