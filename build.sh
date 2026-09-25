@@ -3,10 +3,23 @@
 set -e
 ROOT="$(cd "$(dirname "$0")" && pwd)"
 
+SHARED="$ROOT/modules/_shared"
+copy_shared() {
+  local dir="$1"
+  case "$dir" in
+    module1-retours|module2-pi|module3-ecosysteme|module4-partenariats|module5-action|module6-synthese)
+      if [ -d "$SHARED" ] && [ -d "$ROOT/modules/$dir" ]; then
+        cp "$SHARED/eval.css" "$SHARED/eval.js" "$SHARED/eval-bank.js" "$ROOT/modules/$dir/"
+      fi
+      ;;
+  esac
+}
+
 build_one() {
   local dir="$1"
   local zipname="$2"
   if [ -d "$ROOT/modules/$dir" ]; then
+    copy_shared "$dir"
     cd "$ROOT/modules/$dir"
     # zip ajoute au lieu de remplacer : sans suppression prealable, les fichiers
     # supprimes du module resteraient dans le paquet.

@@ -8,11 +8,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../eval.css?v=2">
+
     <style>
         :root { --bordeaux: #580F45; --orange: #F48C2E; --teal: #2EAF7D; --blue: #2A325E; --bg-page: #F8F9FA; --bg-card: #FFFFFF; --text-main: #2A325E; --text-light: #555; }
         body.dark-mode { --bg-page: #1A1D2E; --bg-card: #232742; --text-main: #EAEAEA; --text-light: #BBB; }
         * { box-sizing: border-box; transition: all 0.3s ease; }
-        body { margin: 0; padding: 0; font-family: 'Open Sans', sans-serif; background-color: var(--bg-page); color: var(--text-main); line-height: 1.6; padding-bottom: 100px; background-image: radial-gradient(rgba(42, 50, 94, 0.1) 1px, transparent 1px); background-size: 30px 30px; }
+        body { margin: 0; padding: 0; font-family: 'Open Sans', sans-serif; background-color: var(--bg-page); color: var(--text-main); line-height: 1.6; padding-bottom: 170px; background-image: radial-gradient(rgba(42, 50, 94, 0.1) 1px, transparent 1px); background-size: 30px 30px; }
         body.dark-mode { background-image: radial-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 1px); }
         h1, h2, h3, h4 { font-family: 'Montserrat', sans-serif; color: var(--bordeaux); }
         body.dark-mode h1, body.dark-mode h2, body.dark-mode h3 { color: var(--orange); }
@@ -66,6 +68,8 @@
                 <strong>Logique pédagogique :</strong> le témoin ouvre le grain (récits choraux). Experts associés : E20 Concilier recherche et engagement · E21 Innover comme apprentissage (TRL, pivot, MVP).
             </div>
         </div>
+        <div id="eval-after-t"></div>
+
 
 
         <div class="video-card">
@@ -95,10 +99,15 @@
             </div>
         </div>
 
+
+        <div id="eval-after-e"></div>
+        <div id="eval-memory"></div>
     </div>
     <div class="action-footer">
         <a href="../index.html" class="btn-validate" onclick="markCompleted(100)">Retour au Sommaire <i class="fa-solid fa-list"></i></a>
     </div>
+    <script src="../eval-bank.js?v=2"></script>
+    <script src="../eval.js?v=2"></script>
     <script>
         var GRAIN_ID = 'grain_t11_evolution_metier';
         var SUSPEND_KEY = 'module5_action_suspend';
@@ -136,6 +145,7 @@
         window.addEventListener('load', function () {
             if (typeof ScormAPI !== 'undefined') ScormAPI.LMSInitialize();
             var state = getState(); if (state.theme === 'dark') document.body.classList.add('dark-mode');
+            if (window.EvalApp) EvalApp.mount(GRAIN_ID);
         });
         window.addEventListener('beforeunload', function () {
             if (typeof ScormAPI !== 'undefined') { ScormAPI.LMSCommit(); ScormAPI.LMSFinish(); }
