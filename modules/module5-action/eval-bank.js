@@ -495,7 +495,7 @@ window.EVAL_BANK = (function () {
                 title: "Frise entendue dans la chorale",
                 lead: "Les mots viennent de T8, pas d’un expert encore manquant.",
                 steps: [
-                    { title: "Anti-création", text: "Valorisation univ. / CNRS, Pockin Lab, prématuration." },
+                    { title: "Anti-création", text: "Valorisation univ. / CNRS, POC'in Lab, prématuration." },
                     { title: "Marches", text: "i-Lab, recrutement, preuves plus solides." },
                     { title: "Création", text: "On bascule : certaines aides se ferment." },
                     { title: "Après", text: "Investisseurs ou clients." }
@@ -536,7 +536,7 @@ window.EVAL_BANK = (function () {
             ],
             memory: [
                 { front: "Pourquoi ne pas créer trop tôt ?", back: "Des aides anti-création deviennent inaccessibles." },
-                { front: "Pockin Lab, dans la chorale, sert à quoi ?", back: "Une année pour une preuve de concept, encore lié au labo." },
+                { front: "POC'in Lab, dans la chorale, sert à quoi ?", back: "Une année pour une preuve de concept, encore lié au labo." },
                 { front: "Innover, ce n’est que inventer ?", back: "Non. Il faut aussi faire circuler valeur et financements." }
             ]
         },
