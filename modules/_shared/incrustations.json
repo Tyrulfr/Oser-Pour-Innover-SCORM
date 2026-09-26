@@ -1,0 +1,1757 @@
+{
+  "date": "2026-09-21",
+  "videos": {
+    "T1": {
+      "code": "T1",
+      "nb": 7,
+      "items": [
+        {
+          "debut": "00:00:13",
+          "fin": "00:00:15",
+          "type": "concept",
+          "ecran": "Pas de côté",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Origine : sérendipité scientifique, objectif T1."
+        },
+        {
+          "debut": "00:00:48",
+          "fin": "00:00:56",
+          "type": "concept",
+          "ecran": "Impact sociétal",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Ce qui distingue chercher et innover."
+        },
+        {
+          "debut": "00:02:10",
+          "fin": "00:02:17",
+          "type": "concept",
+          "ecran": "Besoin identifié",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Origine market-pull / manque d’usage."
+        },
+        {
+          "debut": "00:03:43",
+          "fin": "00:03:45",
+          "type": "schema",
+          "ecran": "Tiré par le marché",
+          "schema": "Tech-push | Market-pull",
+          "developpe": "",
+          "pourquoi": "Vocabulaire du schéma de valorisation (F2 p. 6-7), calé sur le market-pull."
+        },
+        {
+          "debut": "00:03:56",
+          "fin": "00:04:08",
+          "type": "concept",
+          "ecran": "Une rencontre",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Origine par rencontre, pas par labo seul."
+        },
+        {
+          "debut": "00:04:20",
+          "fin": "00:04:25",
+          "type": "schema",
+          "ecran": "Idée → Impact",
+          "schema": "Recherche → Propulsion → Adoption",
+          "developpe": "",
+          "pourquoi": "Parcours progressif de Loïc : extrait du cycle F2, pas le schéma à 12 nœuds."
+        },
+        {
+          "debut": "00:05:26",
+          "fin": "00:05:46",
+          "type": "schema",
+          "ecran": "Invention ≠ Innovation",
+          "schema": "Invention ≠ Innovation",
+          "developpe": "",
+          "pourquoi": "Transformer un résultat en solution : distinction F1 §4.2."
+        }
+      ]
+    },
+    "T2": {
+      "code": "T2",
+      "nb": 6,
+      "items": [
+        {
+          "debut": "00:00:13",
+          "fin": "00:00:18",
+          "type": "concept",
+          "ecran": "Usage et utilité",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Question centrale T2 : besoin réel."
+        },
+        {
+          "debut": "00:00:20",
+          "fin": "00:00:27",
+          "type": "concept",
+          "ecran": "Problème concret",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Le besoin se dit par un problème patient."
+        },
+        {
+          "debut": "00:01:04",
+          "fin": "00:01:08",
+          "type": "concept",
+          "ecran": "Pour qui ?",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Bénéficiaire identifiable (producteurs)."
+        },
+        {
+          "debut": "00:02:00",
+          "fin": "00:02:11",
+          "type": "schema",
+          "ecran": "Sortir du labo",
+          "schema": "Idée → Prototype → Expérimentation",
+          "developpe": "",
+          "pourquoi": "Preuve d’usage hors labo : extrait de la phase amont du cycle F2."
+        },
+        {
+          "debut": "00:03:06",
+          "fin": "00:03:08",
+          "type": "schema",
+          "ecran": "Trois défis",
+          "schema": "Techno · Réglementaire · Terrain",
+          "developpe": "",
+          "pourquoi": "Spécifique au récit (pas un schéma du fascicule)."
+        },
+        {
+          "debut": "00:05:34",
+          "fin": "00:05:52",
+          "type": "concept",
+          "ecran": "Jusqu’au patient",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Bénéficiaire final, pas seulement le brevet."
+        }
+      ]
+    },
+    "T3": {
+      "code": "T3",
+      "nb": 7,
+      "items": [
+        {
+          "debut": "00:00:22",
+          "fin": "00:00:29",
+          "type": "acronyme",
+          "ecran": "SATT",
+          "schema": "",
+          "developpe": "Société d’accélération du transfert de technologies",
+          "pourquoi": "Première rencontre pédagogique du sigle (dit « ASAT » à l’oral)."
+        },
+        {
+          "debut": "00:00:52",
+          "fin": "00:01:03",
+          "type": "concept",
+          "ecran": "Étude de marché",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Preuve d’usage, pas seulement preuve scientifique."
+        },
+        {
+          "debut": "00:01:19",
+          "fin": "00:01:39",
+          "type": "concept",
+          "ecran": "Pivot",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Le terrain fait changer de cible."
+        },
+        {
+          "debut": "00:02:40",
+          "fin": "00:02:50",
+          "type": "acronyme",
+          "ecran": "SATT",
+          "schema": "",
+          "developpe": "Société d’accélération du transfert de technologies",
+          "pourquoi": "L’orale développe le sigle : l’écran ancre le nom officiel."
+        },
+        {
+          "debut": "00:04:47",
+          "fin": "00:04:51",
+          "type": "concept",
+          "ecran": "Sortir du labo",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Message central T3."
+        },
+        {
+          "debut": "00:05:57",
+          "fin": "00:06:08",
+          "type": "concept",
+          "ecran": "Vrai problème de marché",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Preuve scientifique ≠ preuve d’usage."
+        },
+        {
+          "debut": "00:06:19",
+          "fin": "00:06:31",
+          "type": "schema",
+          "ecran": "Vers l’adoption",
+          "schema": "Transfert → Adoption",
+          "developpe": "",
+          "pourquoi": "Clients / business plan : phase « mise en service au collectif » du cycle F2."
+        }
+      ]
+    },
+    "T4": {
+      "code": "T4",
+      "nb": 7,
+      "items": [
+        {
+          "debut": "00:00:20",
+          "fin": "00:00:26",
+          "type": "schema",
+          "ecran": "Idée et preuve",
+          "schema": "Brevet ∥ expérience",
+          "developpe": "",
+          "pourquoi": "Deux niveaux de preuve en parallèle."
+        },
+        {
+          "debut": "00:01:05",
+          "fin": "00:01:13",
+          "type": "schema",
+          "ecran": "Prématuration",
+          "schema": "Protection → Maturation → Transfert",
+          "developpe": "",
+          "pourquoi": "Situer la prématuration sur la chaîne de valorisation du fascicule 2."
+        },
+        {
+          "debut": "00:01:19",
+          "fin": "00:01:35",
+          "type": "concept",
+          "ecran": "Preuve de concept",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Viabilité technique, pas encore marché."
+        },
+        {
+          "debut": "00:01:48",
+          "fin": "00:01:56",
+          "type": "acronyme",
+          "ecran": "PoCkin Lab",
+          "schema": "",
+          "developpe": "Preuve de concept in lab — prématuration Université Paris-Saclay",
+          "pourquoi": "Dispositif nommé ; première fois dans le parcours."
+        },
+        {
+          "debut": "00:03:19",
+          "fin": "00:03:27",
+          "type": "concept",
+          "ecran": "Pivot technologique",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Le terrain impose de changer de formulation."
+        },
+        {
+          "debut": "00:04:14",
+          "fin": "00:04:20",
+          "type": "schema",
+          "ecran": "Trois freins",
+          "schema": "Temps · Légitimité · Échec",
+          "developpe": "",
+          "pourquoi": "Leviers personnels du grain."
+        },
+        {
+          "debut": "00:05:23",
+          "fin": "00:05:31",
+          "type": "concept",
+          "ecran": "Se jeter à l’eau",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Décision malgré l’incertitude."
+        }
+      ]
+    },
+    "T5": {
+      "code": "T5",
+      "nb": 7,
+      "items": [
+        {
+          "debut": "00:00:20",
+          "fin": "00:00:41",
+          "type": "concept",
+          "ecran": "Protéger tôt",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Réflexe avant divulgation."
+        },
+        {
+          "debut": "00:00:49",
+          "fin": "00:01:09",
+          "type": "acronyme",
+          "ecran": "PI",
+          "schema": "",
+          "developpe": "Propriété intellectuelle",
+          "pourquoi": "Sujet du grain ; sigle à poser."
+        },
+        {
+          "debut": "00:01:28",
+          "fin": "00:01:51",
+          "type": "concept",
+          "ecran": "Déclaration d’invention",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Premier geste vers la valorisation."
+        },
+        {
+          "debut": "00:01:51",
+          "fin": "00:01:56",
+          "type": "schema",
+          "ecran": "Brevet ou secret",
+          "schema": "Brevet | Secret",
+          "developpe": "",
+          "pourquoi": "Choix de stratégie : extrait du tableau des types de protection F1 p. 9-10."
+        },
+        {
+          "debut": "00:02:24",
+          "fin": "00:02:30",
+          "type": "concept",
+          "ecran": "Secret industriel",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Alternative au brevet."
+        },
+        {
+          "debut": "00:02:44",
+          "fin": "00:02:48",
+          "type": "concept",
+          "ecran": "Pas le vivant",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Limite de brevetabilité (application, pas l’organisme)."
+        },
+        {
+          "debut": "00:05:09",
+          "fin": "00:05:16",
+          "type": "concept",
+          "ecran": "Le plus tôt possible",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Conseil opératoire du grain."
+        }
+      ]
+    },
+    "T6": {
+      "code": "T6",
+      "nb": 5,
+      "items": [
+        {
+          "debut": "00:00:19",
+          "fin": "00:00:20",
+          "type": "schema",
+          "ecran": "Deux voies",
+          "schema": "Licence | Création",
+          "developpe": "",
+          "pourquoi": "Objectif T6 : extrait de la chaîne de valorisation F2."
+        },
+        {
+          "debut": "00:01:19",
+          "fin": "00:01:39",
+          "type": "concept",
+          "ecran": "Licence exclusive",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Mécanisme de transfert."
+        },
+        {
+          "debut": "00:01:39",
+          "fin": "00:01:49",
+          "type": "schema",
+          "ecran": "Licence ≠ Cession",
+          "schema": "Licence ≠ Cession",
+          "developpe": "",
+          "pourquoi": "Transfert de propriété du brevet : distinction F1 p. 8."
+        },
+        {
+          "debut": "00:02:14",
+          "fin": "00:02:20",
+          "type": "concept",
+          "ecran": "Licence d’exploitation",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "L’organisme reste propriétaire, l’entreprise exploite."
+        },
+        {
+          "debut": "00:03:20",
+          "fin": "00:03:27",
+          "type": "schema",
+          "ecran": "Mixte",
+          "schema": "Brevet + secret",
+          "developpe": "",
+          "pourquoi": "La voie de PI suit la voie de transfert."
+        }
+      ]
+    },
+    "T7": {
+      "code": "T7",
+      "nb": 6,
+      "items": [
+        {
+          "debut": "00:00:14",
+          "fin": "00:00:19",
+          "type": "concept",
+          "ecran": "S’entourer",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "On n’avance pas seul, objectif T7."
+        },
+        {
+          "debut": "00:00:32",
+          "fin": "00:00:49",
+          "type": "schema",
+          "ecran": "Écosystème",
+          "schema": "Université → SATT → Incubateurs",
+          "developpe": "",
+          "pourquoi": "INRAE, incubateurs, SATT : bandeau du schéma de valorisation F2."
+        },
+        {
+          "debut": "00:02:12",
+          "fin": "00:02:24",
+          "type": "acronyme",
+          "ecran": "SATT",
+          "schema": "",
+          "developpe": "Société d’accélération du transfert de technologies",
+          "pourquoi": "Ici la SATT est l’acteur d’accompagnement (sujet T7)."
+        },
+        {
+          "debut": "00:02:46",
+          "fin": "00:02:56",
+          "type": "acronyme",
+          "ecran": "i-Lab",
+          "schema": "",
+          "developpe": "Concours d’innovation Bpifrance",
+          "pourquoi": "Première occurrence du concours."
+        },
+        {
+          "debut": "00:03:50",
+          "fin": "00:04:00",
+          "type": "concept",
+          "ecran": "Pitch",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Mise en visibilité via l’écosystème."
+        },
+        {
+          "debut": "00:04:56",
+          "fin": "00:05:08",
+          "type": "schema",
+          "ecran": "Continuum",
+          "schema": "PoCkin Lab → SATT",
+          "developpe": "",
+          "pourquoi": "Prématuration puis maturation : même colonne que F2, calée sur les dispositifs nommés."
+        }
+      ]
+    },
+    "T8": {
+      "code": "T8",
+      "nb": 7,
+      "items": [
+        {
+          "debut": "00:00:21",
+          "fin": "00:00:25",
+          "type": "schema",
+          "ecran": "Non-dilutif | Dilutif",
+          "schema": "Non-dilutif | Dilutif",
+          "developpe": "",
+          "pourquoi": "Avant / après création : extrait du tableau des financements F2 p. 15 (pas les 6 critères)."
+        },
+        {
+          "debut": "00:00:25",
+          "fin": "00:00:34",
+          "type": "concept",
+          "ecran": "Créer trop tôt",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Message central T8 : ne pas créer trop tôt."
+        },
+        {
+          "debut": "00:01:01",
+          "fin": "00:01:11",
+          "type": "acronyme",
+          "ecran": "PoCkin Lab",
+          "schema": "",
+          "developpe": "Financement de prématuration (laboratoire)",
+          "pourquoi": "Aide non dilutive, stade précoce."
+        },
+        {
+          "debut": "00:01:46",
+          "fin": "00:02:00",
+          "type": "acronyme",
+          "ecran": "i-Lab",
+          "schema": "",
+          "developpe": "Concours d’innovation Bpifrance",
+          "pourquoi": "Marche de financement + recrutement."
+        },
+        {
+          "debut": "00:02:37",
+          "fin": "00:03:00",
+          "type": "acronyme",
+          "ecran": "Loi PACTE",
+          "schema": "",
+          "developpe": "Plan d’action pour la croissance et la transformation des entreprises",
+          "pourquoi": "Premier croisement du dispositif concours scientifique."
+        },
+        {
+          "debut": "00:03:14",
+          "fin": "00:03:24",
+          "type": "schema",
+          "ecran": "Temps partagé",
+          "schema": "60 % labo · 40 % start-up",
+          "developpe": "",
+          "pourquoi": "Levier concret pour entreprendre sans tout quitter."
+        },
+        {
+          "debut": "00:04:51",
+          "fin": "00:04:57",
+          "type": "acronyme",
+          "ecran": "BPI",
+          "schema": "",
+          "developpe": "Bpifrance",
+          "pourquoi": "Financeur public, sujet du grain."
+        }
+      ]
+    },
+    "T9": {
+      "code": "T9",
+      "nb": 7,
+      "items": [
+        {
+          "debut": "00:00:16",
+          "fin": "00:00:19",
+          "type": "concept",
+          "ecran": "Savoirs manquants",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Compétences manquantes, objectif T9."
+        },
+        {
+          "debut": "00:00:29",
+          "fin": "00:00:32",
+          "type": "concept",
+          "ecran": "Aller chercher des experts",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Complémentarité d’équipe."
+        },
+        {
+          "debut": "00:01:01",
+          "fin": "00:01:04",
+          "type": "schema",
+          "ecran": "Noyau fondateur",
+          "schema": "Médical · Direction · Science",
+          "developpe": "",
+          "pourquoi": "Équipe, pas un héros seul."
+        },
+        {
+          "debut": "00:01:25",
+          "fin": "00:01:42",
+          "type": "concept",
+          "ecran": "Comité stratégique",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Entourage au-delà des cofondateurs."
+        },
+        {
+          "debut": "00:01:42",
+          "fin": "00:01:48",
+          "type": "concept",
+          "ecran": "Comité scientifique",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Place du chercheur dans l’entreprise."
+        },
+        {
+          "debut": "00:03:29",
+          "fin": "00:03:42",
+          "type": "acronyme",
+          "ecran": "CEO",
+          "schema": "",
+          "developpe": "Directeur ou directrice général(e)",
+          "pourquoi": "Rôle à pourvoir ; sigle du grain."
+        },
+        {
+          "debut": "00:05:45",
+          "fin": "00:05:50",
+          "type": "concept",
+          "ecran": "Les projets pivotent",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "L’équipe survit à la techno."
+        }
+      ]
+    },
+    "T10": {
+      "code": "T10",
+      "nb": 6,
+      "items": [
+        {
+          "debut": "00:00:13",
+          "fin": "00:00:18",
+          "type": "concept",
+          "ecran": "Adapter le vocabulaire",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Objectif T10 : autre langue que celle des pairs."
+        },
+        {
+          "debut": "00:00:39",
+          "fin": "00:00:53",
+          "type": "concept",
+          "ecran": "Moins de jargon",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Partir de la valeur, pas de la techno."
+        },
+        {
+          "debut": "00:01:41",
+          "fin": "00:01:50",
+          "type": "concept",
+          "ecran": "Changer de posture",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Le langage suit l’interlocuteur."
+        },
+        {
+          "debut": "00:03:49",
+          "fin": "00:03:51",
+          "type": "acronyme",
+          "ecran": "Market access",
+          "schema": "",
+          "developpe": "Accès au marché",
+          "pourquoi": "Terme métier à poser la première fois."
+        },
+        {
+          "debut": "00:04:00",
+          "fin": "00:04:20",
+          "type": "concept",
+          "ecran": "Langue de l’entrepreneuriat",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Apprentissage, pas don."
+        },
+        {
+          "debut": "00:05:17",
+          "fin": "00:05:19",
+          "type": "concept",
+          "ecran": "Rendre désirable",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Valeur pour l’interlocuteur."
+        }
+      ]
+    },
+    "T11": {
+      "code": "T11",
+      "nb": 4,
+      "items": [
+        {
+          "debut": "00:00:57",
+          "fin": "00:01:00",
+          "type": "concept",
+          "ecran": "Intégrateur social",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "L’innovation rend la recherche lisible."
+        },
+        {
+          "debut": "00:01:00",
+          "fin": "00:01:05",
+          "type": "schema",
+          "ecran": "Deux casquettes",
+          "schema": "Comité scientifique + labo",
+          "developpe": "",
+          "pourquoi": "Concilier, objectif T11."
+        },
+        {
+          "debut": "00:01:45",
+          "fin": "00:01:55",
+          "type": "concept",
+          "ecran": "Application concrète",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Retour pour le chercheur."
+        },
+        {
+          "debut": "00:02:14",
+          "fin": "00:02:20",
+          "type": "acronyme",
+          "ecran": "MVP",
+          "schema": "",
+          "developpe": "Minimum Viable Product — premier produit viable",
+          "pourquoi": "Première occurrence du sigle."
+        }
+      ]
+    },
+    "T12": {
+      "code": "T12",
+      "nb": 5,
+      "items": [
+        {
+          "debut": "00:00:22",
+          "fin": "00:00:32",
+          "type": "acronyme",
+          "ecran": "RISE",
+          "schema": "",
+          "developpe": "Programme CNRS de coaching entrepreneurs",
+          "pourquoi": "Première occurrence ; autre structure que la SATT."
+        },
+        {
+          "debut": "00:00:32",
+          "fin": "00:00:43",
+          "type": "schema",
+          "ecran": "Université · Incubateur",
+          "schema": "Université · Incubateur",
+          "developpe": "",
+          "pourquoi": "IncubAlliance à l’université : extrait de l’écosystème F1, pas le schéma à 9 groupes."
+        },
+        {
+          "debut": "00:01:04",
+          "fin": "00:01:14",
+          "type": "concept",
+          "ecran": "Concours de pitch",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Mise en visibilité."
+        },
+        {
+          "debut": "00:01:28",
+          "fin": "00:01:39",
+          "type": "concept",
+          "ecran": "Luminage",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Programme technique local."
+        },
+        {
+          "debut": "00:02:18",
+          "fin": "00:02:21",
+          "type": "concept",
+          "ecran": "Cohorte",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Accompagnement entre pairs."
+        }
+      ]
+    },
+    "T13": {
+      "code": "T13",
+      "nb": 5,
+      "items": [
+        {
+          "debut": "00:00:13",
+          "fin": "00:00:15",
+          "type": "concept",
+          "ecran": "Il faut y aller",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Appel à l’action, objectif T13."
+        },
+        {
+          "debut": "00:00:19",
+          "fin": "00:00:25",
+          "type": "concept",
+          "ecran": "Un problème d’abord",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Pas besoin d’une idée révolutionnaire."
+        },
+        {
+          "debut": "00:00:40",
+          "fin": "00:00:44",
+          "type": "concept",
+          "ecran": "On n’est pas seul",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Écosystème déjà vu, conclusion."
+        },
+        {
+          "debut": "00:01:10",
+          "fin": "00:01:15",
+          "type": "concept",
+          "ecran": "Parler aux entrepreneurs",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Geste concret."
+        },
+        {
+          "debut": "00:03:03",
+          "fin": "00:03:06",
+          "type": "concept",
+          "ecran": "Oser innover",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Mot de clôture."
+        }
+      ]
+    },
+    "E1": {
+      "code": "E1",
+      "nb": 7,
+      "items": [
+        {
+          "debut": "00:00:57",
+          "fin": "00:01:02",
+          "type": "schema",
+          "ecran": "Invention ≠ Innovation",
+          "schema": "Invention ≠ Innovation",
+          "developpe": "",
+          "pourquoi": "Objectif E1 : une techno n’est pas encore une innovation (F1 §4.2)."
+        },
+        {
+          "debut": "00:01:02",
+          "fin": "00:01:08",
+          "type": "concept",
+          "ecran": "Rencontre d’un besoin",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Condition pour qu’il y ait innovation."
+        },
+        {
+          "debut": "00:01:11",
+          "fin": "00:01:17",
+          "type": "schema",
+          "ecran": "Tech-push | Market-pull",
+          "schema": "Tech-push | Market-pull",
+          "developpe": "",
+          "pourquoi": "Première famille d’origines : entrées du schéma de valorisation F2."
+        },
+        {
+          "debut": "00:01:52",
+          "fin": "00:01:56",
+          "type": "concept",
+          "ecran": "Rencontre inattendue",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Seconde famille (Sylvia, Jean-Jacques)."
+        },
+        {
+          "debut": "00:02:33",
+          "fin": "00:02:40",
+          "type": "schema",
+          "ecran": "Trois ingrédients",
+          "schema": "Science · Utilité · Méthode",
+          "developpe": "",
+          "pourquoi": "Ce qu’il faut retenir, pas le récit."
+        },
+        {
+          "debut": "00:03:12",
+          "fin": "00:03:16",
+          "type": "concept",
+          "ecran": "Structures de valorisation",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Où faire le premier pas."
+        },
+        {
+          "debut": "00:03:35",
+          "fin": "00:03:37",
+          "type": "concept",
+          "ecran": "Ce qui déclenche",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Passage à l’action."
+        }
+      ]
+    },
+    "E5": {
+      "code": "E5",
+      "nb": 6,
+      "items": [
+        {
+          "debut": "00:00:28",
+          "fin": "00:00:31",
+          "type": "concept",
+          "ecran": "Dérisquer pas à pas",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Objectif E5."
+        },
+        {
+          "debut": "00:00:34",
+          "fin": "00:00:41",
+          "type": "concept",
+          "ecran": "Jalon commercial",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Critère de décision, pas seulement techno."
+        },
+        {
+          "debut": "00:01:26",
+          "fin": "00:01:30",
+          "type": "concept",
+          "ecran": "Pivot, pas échec",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Lecture pédagogique du terrain T3."
+        },
+        {
+          "debut": "00:02:17",
+          "fin": "00:02:23",
+          "type": "schema",
+          "ecran": "Techno ⇄ Marché",
+          "schema": "Techno ⇄ Marché",
+          "developpe": "",
+          "pourquoi": "Jalons technique et commercial : extrait de l’approche hybride TRL/DRL. Le sigle DRL n’est pas dit, on ne l’affiche pas."
+        },
+        {
+          "debut": "00:02:30",
+          "fin": "00:02:42",
+          "type": "schema",
+          "ecran": "Prématuration / maturation",
+          "schema": "Protection → Maturation → Transfert",
+          "developpe": "",
+          "pourquoi": "Situer le projet sur la chaîne de valorisation F2."
+        },
+        {
+          "debut": "00:02:59",
+          "fin": "00:03:05",
+          "type": "acronyme",
+          "ecran": "SATT",
+          "schema": "",
+          "developpe": "Société d’accélération du transfert de technologies",
+          "pourquoi": "Sujet du grain : qui aller voir pour le jalon."
+        }
+      ]
+    },
+    "E6": {
+      "code": "E6",
+      "nb": 7,
+      "items": [
+        {
+          "debut": "00:00:21",
+          "fin": "00:00:27",
+          "type": "concept",
+          "ecran": "Réflexe de publier",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Le piège avant toute protection."
+        },
+        {
+          "debut": "00:00:42",
+          "fin": "00:00:51",
+          "type": "concept",
+          "ecran": "Communication publique",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Divulgation = risque pour la nouveauté."
+        },
+        {
+          "debut": "00:00:51",
+          "fin": "00:00:56",
+          "type": "acronyme",
+          "ecran": "DI",
+          "schema": "",
+          "developpe": "Déclaration d’invention",
+          "pourquoi": "Sujet de la vidéo ; première définition claire."
+        },
+        {
+          "debut": "00:02:25",
+          "fin": "00:02:30",
+          "type": "schema",
+          "ecran": "Puis la maturation",
+          "schema": "Protection → Maturation → Transfert",
+          "developpe": "",
+          "pourquoi": "La DI ouvre la chaîne de valorisation du fascicule 2."
+        },
+        {
+          "debut": "00:03:24",
+          "fin": "00:03:28",
+          "type": "concept",
+          "ecran": "Lever la main",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "La DI comme premier échange, pas un brevet."
+        },
+        {
+          "debut": "00:04:12",
+          "fin": "00:04:15",
+          "type": "concept",
+          "ecran": "Point de départ",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "La DI n’arrête pas la publication, elle l’anticipe."
+        },
+        {
+          "debut": "00:04:51",
+          "fin": "00:04:56",
+          "type": "concept",
+          "ecran": "En parler tôt",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Geste attendu de l’apprenant."
+        }
+      ]
+    },
+    "E7": {
+      "code": "E7",
+      "nb": 5,
+      "items": [
+        {
+          "debut": "00:00:14",
+          "fin": "00:00:21",
+          "type": "concept",
+          "ecran": "Chargé de valorisation",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Objectif E7 : à qui parler."
+        },
+        {
+          "debut": "00:03:09",
+          "fin": "00:03:13",
+          "type": "concept",
+          "ecran": "Dialogue deux mondes",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Rôle d’interface académique / socio-éco."
+        },
+        {
+          "debut": "00:03:30",
+          "fin": "00:03:32",
+          "type": "concept",
+          "ecran": "Formaliser",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Accords, pas seulement la mise en relation."
+        },
+        {
+          "debut": "00:03:52",
+          "fin": "00:03:58",
+          "type": "concept",
+          "ecran": "Sans toutes les réponses",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Premier contact tôt."
+        },
+        {
+          "debut": "00:04:16",
+          "fin": "00:04:27",
+          "type": "schema",
+          "ecran": "Ce qu’il apporte",
+          "schema": "Conseils · Contacts · Cadre",
+          "developpe": "",
+          "pourquoi": "Avec quoi arriver / ce qu’on en retire."
+        }
+      ]
+    },
+    "E8": {
+      "code": "E8",
+      "nb": 7,
+      "items": [
+        {
+          "debut": "00:00:07",
+          "fin": "00:00:13",
+          "type": "acronyme",
+          "ecran": "INPI",
+          "schema": "",
+          "developpe": "Institut national de la propriété industrielle",
+          "pourquoi": "Première occurrence ; l’institution du grain."
+        },
+        {
+          "debut": "00:01:12",
+          "fin": "00:01:18",
+          "type": "schema",
+          "ecran": "Brevet ou secret",
+          "schema": "Brevet | Secret",
+          "developpe": "",
+          "pourquoi": "Objectif E8 : extrait du tableau des types de protection F1."
+        },
+        {
+          "debut": "00:01:39",
+          "fin": "00:01:45",
+          "type": "concept",
+          "ecran": "Publier tue la nouveauté",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Lien avec T5 / E6."
+        },
+        {
+          "debut": "00:01:51",
+          "fin": "00:01:54",
+          "type": "concept",
+          "ecran": "Savoir-faire",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Nommer le secret documenté."
+        },
+        {
+          "debut": "00:02:42",
+          "fin": "00:02:51",
+          "type": "acronyme",
+          "ecran": "NDA",
+          "schema": "",
+          "developpe": "Accord de confidentialité",
+          "pourquoi": "Mesure contractuelle du secret."
+        },
+        {
+          "debut": "00:04:01",
+          "fin": "00:04:08",
+          "type": "concept",
+          "ecran": "Rétro-ingénierie ?",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Critère de choix brevet vs secret."
+        },
+        {
+          "debut": "00:04:55",
+          "fin": "00:04:59",
+          "type": "concept",
+          "ecran": "Lever des fonds",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Le brevet rassure l’investisseur — pont vers E9."
+        }
+      ]
+    },
+    "E9": {
+      "code": "E9",
+      "nb": 8,
+      "items": [
+        {
+          "debut": "00:00:19",
+          "fin": "00:00:29",
+          "type": "concept",
+          "ecran": "Levier stratégique",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Objectif E9 : la PI n’est pas un tampon."
+        },
+        {
+          "debut": "00:00:29",
+          "fin": "00:00:35",
+          "type": "concept",
+          "ecran": "Actifs immatériels",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Ce que l’on protège vraiment."
+        },
+        {
+          "debut": "00:00:52",
+          "fin": "00:00:55",
+          "type": "concept",
+          "ecran": "Explorer l’existant",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Avant la R&D."
+        },
+        {
+          "debut": "00:02:26",
+          "fin": "00:02:29",
+          "type": "concept",
+          "ecran": "Déclaration d’invention",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Dans un organisme public, l’invention appartient à l’employeur."
+        },
+        {
+          "debut": "00:03:57",
+          "fin": "00:04:04",
+          "type": "concept",
+          "ecran": "Barrière à l’entrée",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Effet investisseur des brevets / marques."
+        },
+        {
+          "debut": "00:04:21",
+          "fin": "00:04:25",
+          "type": "concept",
+          "ecran": "Audit PI",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Ce que regardera une levée de fonds."
+        },
+        {
+          "debut": "00:05:02",
+          "fin": "00:05:15",
+          "type": "schema",
+          "ecran": "Pilier, pas option",
+          "schema": "Protection → Maturation → Transfert",
+          "developpe": "",
+          "pourquoi": "Synthèse E9 : même colonne que le schéma de valorisation F2."
+        },
+        {
+          "debut": "00:05:26",
+          "fin": "00:05:34",
+          "type": "schema",
+          "ecran": "Outils de PI",
+          "schema": "Brevet · Marque · Secret",
+          "developpe": "",
+          "pourquoi": "Brevets, marques, secrets, dessins : extrait du tableau F1, pas les durées/territoires."
+        }
+      ]
+    },
+    "E10": {
+      "code": "E10",
+      "nb": 6,
+      "items": [
+        {
+          "debut": "00:00:17",
+          "fin": "00:00:20",
+          "type": "schema",
+          "ecran": "Licence ou création",
+          "schema": "Licence | Création",
+          "developpe": "",
+          "pourquoi": "Question structurante : extrait de la chaîne de valorisation F2."
+        },
+        {
+          "debut": "00:00:37",
+          "fin": "00:00:41",
+          "type": "schema",
+          "ecran": "Quatre voies",
+          "schema": "Licence · Création · Co-dev · Partenariat",
+          "developpe": "",
+          "pourquoi": "Élargir au-delà du binôme du fascicule (récit E10)."
+        },
+        {
+          "debut": "00:01:36",
+          "fin": "00:01:39",
+          "type": "schema",
+          "ecran": "Trois critères",
+          "schema": "Projet · Écosystème · Posture",
+          "developpe": "",
+          "pourquoi": "Grille de choix."
+        },
+        {
+          "debut": "00:02:40",
+          "fin": "00:02:42",
+          "type": "concept",
+          "ecran": "Question de posture",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Légitimité académique vs engagement."
+        },
+        {
+          "debut": "00:02:46",
+          "fin": "00:02:48",
+          "type": "schema",
+          "ecran": "Licence ≠ Cession",
+          "schema": "Licence ≠ Cession",
+          "developpe": "",
+          "pourquoi": "Licence ou transfert de propriété : distinction F1 p. 8."
+        },
+        {
+          "debut": "00:04:16",
+          "fin": "00:04:20",
+          "type": "concept",
+          "ecran": "Maturité de la techno",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Plus on a de preuve, plus on négocie."
+        }
+      ]
+    },
+    "E11": {
+      "code": "E11",
+      "nb": 7,
+      "items": [
+        {
+          "debut": "00:01:07",
+          "fin": "00:01:30",
+          "type": "concept",
+          "ecran": "Licence = louage",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Objectif E11 : mécanisme, pas le choix de voie."
+        },
+        {
+          "debut": "00:01:36",
+          "fin": "00:01:42",
+          "type": "schema",
+          "ecran": "Exclusive ou non",
+          "schema": "1 licencié  |  plusieurs",
+          "developpe": "",
+          "pourquoi": "Clause déterminante."
+        },
+        {
+          "debut": "00:02:10",
+          "fin": "00:02:25",
+          "type": "schema",
+          "ecran": "Licence ≠ Cession",
+          "schema": "Licence ≠ Cession",
+          "developpe": "",
+          "pourquoi": "La cession transfère la propriété : distinction F1 p. 8."
+        },
+        {
+          "debut": "00:02:43",
+          "fin": "00:02:49",
+          "type": "concept",
+          "ecran": "Co-développement",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Risques et résultats partagés."
+        },
+        {
+          "debut": "00:03:15",
+          "fin": "00:03:23",
+          "type": "concept",
+          "ecran": "Copropriété",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Conséquence du contrat de collaboration."
+        },
+        {
+          "debut": "00:04:02",
+          "fin": "00:04:07",
+          "type": "schema",
+          "ecran": "Prestation | Collaboration",
+          "schema": "Prestation | Collaboration",
+          "developpe": "",
+          "pourquoi": "Contraste du grain : extrait des modalités partenariales F2 p. 7."
+        },
+        {
+          "debut": "00:05:14",
+          "fin": "00:05:17",
+          "type": "concept",
+          "ecran": "Le contrat fait loi",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Conseil de clôture."
+        }
+      ]
+    },
+    "E13bis": {
+      "code": "E13bis",
+      "nb": 6,
+      "items": [
+        {
+          "debut": "00:00:05",
+          "fin": "00:00:10",
+          "type": "concept",
+          "ecran": "Design Spot",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Autre structure que SATT / incubateur, objectif E13bis."
+        },
+        {
+          "debut": "00:00:41",
+          "fin": "00:00:52",
+          "type": "schema",
+          "ecran": "Plateformes",
+          "schema": "Fablab · Fabrique · POC",
+          "developpe": "",
+          "pourquoi": "Autres acteur·rices de l’écosystème F1 : extrait, pas le schéma à 9 groupes."
+        },
+        {
+          "debut": "00:01:33",
+          "fin": "00:01:39",
+          "type": "concept",
+          "ecran": "Besoin et usage",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Le design n’est pas le styling."
+        },
+        {
+          "debut": "00:01:58",
+          "fin": "00:02:05",
+          "type": "concept",
+          "ecran": "Expérience utilisateur",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Valeur du design en amont."
+        },
+        {
+          "debut": "00:03:15",
+          "fin": "00:03:18",
+          "type": "concept",
+          "ecran": "Complémentarité",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Pas un parcours unique."
+        },
+        {
+          "debut": "00:03:18",
+          "fin": "00:03:21",
+          "type": "concept",
+          "ecran": "La bonne ressource",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Au bon moment."
+        }
+      ]
+    },
+    "E16": {
+      "code": "E16",
+      "nb": 6,
+      "items": [
+        {
+          "debut": "00:00:53",
+          "fin": "00:01:04",
+          "type": "concept",
+          "ecran": "Équipe, pas CV",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Objectif E16 : compétences collectives."
+        },
+        {
+          "debut": "00:01:08",
+          "fin": "00:01:11",
+          "type": "concept",
+          "ecran": "Savoirs manquants",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Ancrage T9."
+        },
+        {
+          "debut": "00:01:47",
+          "fin": "00:01:58",
+          "type": "concept",
+          "ecran": "L’équipe survit",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Les projets pivotent."
+        },
+        {
+          "debut": "00:02:09",
+          "fin": "00:02:14",
+          "type": "schema",
+          "ecran": "Diriger ou non",
+          "schema": "CEO  |  Scientifique",
+          "developpe": "",
+          "pourquoi": "Place du chercheur."
+        },
+        {
+          "debut": "00:03:50",
+          "fin": "00:03:54",
+          "type": "concept",
+          "ecran": "Casting du dirigeant",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Alignement, pas un profil générique."
+        },
+        {
+          "debut": "00:04:33",
+          "fin": "00:04:36",
+          "type": "concept",
+          "ecran": "Pas d’ego",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Collaboration dans l’équipe."
+        }
+      ]
+    },
+    "E19": {
+      "code": "E19",
+      "nb": 6,
+      "items": [
+        {
+          "debut": "00:00:22",
+          "fin": "00:00:29",
+          "type": "concept",
+          "ecran": "Ça s’apprend",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Objectif E19 : pas de profil type."
+        },
+        {
+          "debut": "00:00:42",
+          "fin": "00:00:47",
+          "type": "concept",
+          "ecran": "Langue de l’entrepreneuriat",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Métaphore T10, ici enseignée."
+        },
+        {
+          "debut": "00:01:42",
+          "fin": "00:01:51",
+          "type": "schema",
+          "ecran": "Essai → Pivot → Essai",
+          "schema": "Essai → Pivot → Essai",
+          "developpe": "",
+          "pourquoi": "Tâtonnements : le cycle F2 « est rarement linéaire »."
+        },
+        {
+          "debut": "00:02:21",
+          "fin": "00:02:29",
+          "type": "concept",
+          "ecran": "En discutant",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Apprentissage par la pratique."
+        },
+        {
+          "debut": "00:02:53",
+          "fin": "00:02:56",
+          "type": "concept",
+          "ecran": "Essai, retour, correction",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Posture entrepreneuriale."
+        },
+        {
+          "debut": "00:04:51",
+          "fin": "00:04:58",
+          "type": "concept",
+          "ecran": "Une langue de plus",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "On reste chercheur."
+        }
+      ]
+    },
+    "E20": {
+      "code": "E20",
+      "nb": 6,
+      "items": [
+        {
+          "debut": "00:00:20",
+          "fin": "00:00:29",
+          "type": "concept",
+          "ecran": "Enrichir le métier",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Objectif E20 : pas une reconversion."
+        },
+        {
+          "debut": "00:01:15",
+          "fin": "00:01:19",
+          "type": "concept",
+          "ecran": "Intégrateur social",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Utilité visible de la recherche."
+        },
+        {
+          "debut": "00:01:45",
+          "fin": "00:01:52",
+          "type": "schema",
+          "ecran": "Double posture",
+          "schema": "Labo + entreprise",
+          "developpe": "",
+          "pourquoi": "Articuler les casquettes."
+        },
+        {
+          "debut": "00:01:52",
+          "fin": "00:02:01",
+          "type": "concept",
+          "ecran": "Impartialité",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Condition de la double casquette."
+        },
+        {
+          "debut": "00:03:05",
+          "fin": "00:03:09",
+          "type": "schema",
+          "ecran": "Deux temporalités",
+          "schema": "Recherche ≠ marché",
+          "developpe": "",
+          "pourquoi": "Ce qu’il faut concilier."
+        },
+        {
+          "debut": "00:03:35",
+          "fin": "00:03:40",
+          "type": "concept",
+          "ecran": "Pas renoncer",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Message de clôture."
+        }
+      ]
+    },
+    "E21": {
+      "code": "E21",
+      "nb": 6,
+      "items": [
+        {
+          "debut": "00:00:30",
+          "fin": "00:00:45",
+          "type": "concept",
+          "ecran": "Réduire l’inconnu",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Objectif E21 : innover = apprendre."
+        },
+        {
+          "debut": "00:01:00",
+          "fin": "00:01:13",
+          "type": "schema",
+          "ecran": "Échelle TRL",
+          "schema": "TRL 1 → 9",
+          "developpe": "Technology Readiness Level",
+          "pourquoi": "Première occurrence. Extraire 1→9 ; le tableau ISO 9 lignes reste dans le fascicule / E4."
+        },
+        {
+          "debut": "00:01:54",
+          "fin": "00:01:57",
+          "type": "concept",
+          "ecran": "Pivot",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Impasse → virage, pas échec."
+        },
+        {
+          "debut": "00:02:52",
+          "fin": "00:03:04",
+          "type": "acronyme",
+          "ecran": "MVP",
+          "schema": "",
+          "developpe": "Minimum Viable Product",
+          "pourquoi": "Ici le sigle est enseigné (après T11)."
+        },
+        {
+          "debut": "00:03:18",
+          "fin": "00:03:23",
+          "type": "concept",
+          "ecran": "Logique d’apprentissage",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Indépendante du secteur."
+        },
+        {
+          "debut": "00:04:17",
+          "fin": "00:04:24",
+          "type": "concept",
+          "ecran": "Pas un casse-cou",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Posture de l’innovateur."
+        }
+      ]
+    },
+    "E22": {
+      "code": "E22",
+      "nb": 6,
+      "items": [
+        {
+          "debut": "00:00:29",
+          "fin": "00:00:39",
+          "type": "concept",
+          "ecran": "Collaboration équilibrée",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Objectif E22."
+        },
+        {
+          "debut": "00:00:43",
+          "fin": "00:00:50",
+          "type": "schema",
+          "ecran": "Apports / attentes",
+          "schema": "Chacun apporte · chacun gagne",
+          "developpe": "",
+          "pourquoi": "Équilibre, pas prestation."
+        },
+        {
+          "debut": "00:00:56",
+          "fin": "00:01:05",
+          "type": "schema",
+          "ecran": "Prestation | Collaboration",
+          "schema": "Prestation | Collaboration",
+          "developpe": "",
+          "pourquoi": "Le récit oppose les deux cadres : extrait F2 p. 7."
+        },
+        {
+          "debut": "00:03:02",
+          "fin": "00:03:07",
+          "type": "acronyme",
+          "ecran": "NDA",
+          "schema": "",
+          "developpe": "Accord de confidentialité",
+          "pourquoi": "Avant toute info sensible."
+        },
+        {
+          "debut": "00:03:41",
+          "fin": "00:03:44",
+          "type": "schema",
+          "ecran": "Trois contraintes",
+          "schema": "Objectifs · Moyens · Temps",
+          "developpe": "",
+          "pourquoi": "Dimensionner la collab."
+        },
+        {
+          "debut": "00:05:01",
+          "fin": "00:05:05",
+          "type": "concept",
+          "ecran": "Se protéger en amont",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Réflexe avant de parler."
+        }
+      ]
+    },
+    "E23": {
+      "code": "E23",
+      "nb": 8,
+      "items": [
+        {
+          "debut": "00:00:30",
+          "fin": "00:00:33",
+          "type": "concept",
+          "ecran": "Sécuriser",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Objectif E23."
+        },
+        {
+          "debut": "00:00:33",
+          "fin": "00:00:41",
+          "type": "concept",
+          "ecran": "Confidentialité d’abord",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Réflexe avant tout tiers."
+        },
+        {
+          "debut": "00:00:41",
+          "fin": "00:00:49",
+          "type": "concept",
+          "ecran": "Accord de confidentialité",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Outil, pas le discours."
+        },
+        {
+          "debut": "00:01:08",
+          "fin": "00:01:16",
+          "type": "concept",
+          "ecran": "Connaissances propres",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "État des lieux avant collab."
+        },
+        {
+          "debut": "00:01:51",
+          "fin": "00:02:01",
+          "type": "schema",
+          "ecran": "Preuves et titres",
+          "schema": "Brevet · Logiciel · Soleau",
+          "developpe": "",
+          "pourquoi": "Enveloppe Soleau, brevets, logiciels : extrait du tableau F1 p. 9-10."
+        },
+        {
+          "debut": "00:02:19",
+          "fin": "00:02:30",
+          "type": "concept",
+          "ecran": "Contrat de collaboration",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Cadre PI, usage, publication."
+        },
+        {
+          "debut": "00:02:30",
+          "fin": "00:02:33",
+          "type": "acronyme",
+          "ecran": "PI",
+          "schema": "",
+          "developpe": "Propriété intellectuelle",
+          "pourquoi": "Ici le terme est défini pour le grain juridique."
+        },
+        {
+          "debut": "00:04:44",
+          "fin": "00:04:49",
+          "type": "concept",
+          "ecran": "Porte de sortie",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Clause de résiliation, équilibre."
+        }
+      ]
+    }
+  }
+}

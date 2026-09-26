@@ -1,0 +1,109 @@
+/* Couche de relecture des incrustations — site seulement, hors ZIP SCORM. */
+.video-header {
+    justify-content: flex-start;
+}
+.incrust-toggle {
+    margin-left: auto;
+    flex-shrink: 0;
+    border: 1px solid rgba(42, 50, 94, 0.22);
+    background: var(--bg-card, #fff);
+    color: var(--text-main, #2A325E);
+    border-radius: 999px;
+    padding: 8px 14px;
+    font-size: 0.78rem;
+    font-weight: 800;
+    letter-spacing: 0.01em;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+.incrust-toggle:hover { color: var(--orange, #F48C2E); border-color: var(--orange, #F48C2E); }
+.video-card.is-incrust-on .incrust-toggle {
+    background: var(--teal, #2EAF7D);
+    border-color: var(--teal, #2EAF7D);
+    color: #fff;
+}
+.incrust-stage { position: relative; }
+.incrust-layer {
+    position: absolute;
+    inset: 0;
+    z-index: 4;
+    pointer-events: none;
+    display: none;
+    align-items: flex-end;
+    justify-content: center;
+    padding: 0 3% 12%;
+    text-align: center;
+    isolation: isolate;
+    transform: translateZ(0);
+}
+.video-card.is-incrust-on .incrust-layer { display: flex; }
+.video-wrapper iframe { z-index: 0; }
+.incrust-now {
+    display: none;
+    padding: 0.85rem 1.4rem;
+    background: #1b1f33;
+    color: #fff;
+    font-size: 0.92rem;
+    line-height: 1.35;
+}
+.video-card.is-incrust-on .incrust-now { display: block; }
+.incrust-now strong { font-family: Montserrat, sans-serif; }
+.incrust-layer.is-empty .incrust-panel { opacity: 0.72; }
+.incrust-panel {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    max-width: min(92%, 720px);
+    padding: 12px 18px 10px;
+    border-radius: 16px;
+    background: rgba(10, 12, 24, 0.62);
+    color: #fff;
+    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.28);
+    backdrop-filter: blur(6px);
+}
+.incrust-kicker {
+    font-size: 0.68rem;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    opacity: 0.8;
+}
+.incrust-label {
+    font-family: Montserrat, sans-serif;
+    font-weight: 900;
+    font-size: clamp(1.15rem, 2.6vw, 1.85rem);
+    line-height: 1.15;
+}
+.incrust-schema {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+.incrust-node {
+    background: rgba(255, 255, 255, 0.14);
+    border: 1px solid rgba(255, 255, 255, 0.28);
+    border-radius: 999px;
+    padding: 6px 12px;
+    font-weight: 800;
+    font-size: 0.95rem;
+}
+.incrust-arrow { opacity: 0.7; font-weight: 900; }
+.incrust-pourquoi {
+    font-size: 0.78rem;
+    line-height: 1.35;
+    opacity: 0.88;
+    max-width: 46rem;
+}
+.incrust-developpe {
+    font-size: 0.82rem;
+    font-weight: 700;
+    opacity: 0.92;
+}
+body.dark-mode .incrust-toggle {
+    border-color: rgba(255, 255, 255, 0.22);
+}
