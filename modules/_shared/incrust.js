@@ -7,6 +7,8 @@
     var DATA_URL = new URL("incrustations.json", document.currentScript.src).href;
     var cards = [];
     var bound = false;
+    var MIN_HOLD = 4.5;
+    var HOLD_PAD = 2;
 
     function toSec(tc) {
         var parts = String(tc || "").trim().split(":");
@@ -14,6 +16,20 @@
         if (parts.length === 2) return (+parts[0] * 60) + parseFloat(parts[1]);
         var n = parseFloat(tc);
         return isFinite(n) ? n : 0;
+    }
+
+    function windowOf(items, index) {
+        var it = items[index];
+        var start = toSec(it.debut);
+        var end = toSec(it.fin);
+        if (end < start) end = start;
+        var hold = Math.max(end + HOLD_PAD, start + MIN_HOLD);
+        if (index + 1 < items.length) {
+            var nextStart = toSec(items[index + 1].debut);
+            if (nextStart > start) hold = Math.min(hold, nextStart - 0.15);
+        }
+        if (hold < end) hold = end;
+        return { start: start, end: hold };
     }
 
     function videoCode(card) {
@@ -28,15 +44,53 @@
     }
 
     function currentItem(items, t) {
-        var i, it, start, end;
+        var i, win;
         for (i = 0; i < items.length; i++) {
-            it = items[i];
-            start = toSec(it.debut);
-            end = toSec(it.fin);
-            if (end < start) end = start;
-            if (t >= start && t <= end + 0.35) return it;
+            win = windowOf(items, i);
+            if (t >= win.start && t <= win.end) return items[i];
         }
         return null;
+    }
+
+    function itemIndex(items, item) {
+        var i;
+        for (i = 0; i < items.length; i++) {
+            if (items[i] === item) return i;
+        }
+        return -1;
+    }
+
+    function labelOf(item) {
+        return item.ecran || item.schema || "Incrustation";
+    }
+
+    function seekTo(iframe, seconds) {
+        if (!iframe || !iframe.contentWindow) return;
+        var win = iframe.contentWindow;
+        var t = Math.max(0, seconds);
+        var payloads = [
+            { event: "command", func: "seekTo", args: [t, true] },
+            JSON.stringify({ event: "command", func: "seekTo", args: [t, true] }),
+            { method: "seekTo", value: t },
+            { method: "setCurrentTime", value: t },
+            { action: "seek", time: t },
+            { action: "setCurrentTime", currentTime: t },
+            { type: "player:seek", currentTime: t }
+        ];
+        payloads.forEach(function (msg) {
+            try { win.postMessage(msg, "*"); } catch (e) {}
+        });
+    }
+
+    function highlightJump(card, item) {
+        var jumps = card.querySelectorAll(".incrust-jump");
+        var items = card._incrustItems || [];
+        var idx = itemIndex(items, item);
+        jumps.forEach(function (btn, i) {
+            var on = i === idx;
+            btn.classList.toggle("is-current", on);
+            btn.setAttribute("aria-current", on ? "true" : "false");
+        });
     }
 
     function schemaHtml(text) {
@@ -66,10 +120,9 @@
         var panel = layer.querySelector(".incrust-panel");
         if (!item) {
             layer.classList.add("is-empty");
-            panel.innerHTML = '<div class="incrust-kicker">Proposition d’incrustation</div>' +
-                '<div class="incrust-label">En attente du prochain calage</div>' +
-                '<div class="incrust-pourquoi">Lancez la lecture. Les mots-clés et schémas apparaissent au timecode du dérushage.</div>';
-            if (now) now.textContent = "Incrustations actives — lancez la lecture pour voir le calage.";
+            panel.innerHTML = '<div class="incrust-waiting">Proposition d’incrustation</div>';
+            if (now) now.textContent = "Proposition d’incrustation";
+            highlightJump(card, null);
             return;
         }
         layer.classList.remove("is-empty");
@@ -87,6 +140,42 @@
                 escapeHtml(item.ecran || item.schema || "") +
                 (item.pourquoi ? " — " + escapeHtml(item.pourquoi) : "");
         }
+        highlightJump(card, item);
+    }
+
+    function goToItem(card, item) {
+        if (!item) return;
+        if (card._incrustPinned === item) {
+            card._incrustPinned = null;
+            highlightJump(card, currentItem(card._incrustItems || [], card._incrustTime || 0));
+            render(card, currentItem(card._incrustItems || [], card._incrustTime || 0), card._incrustTime || 0);
+            return;
+        }
+        card._incrustPinned = item;
+        if (!card.classList.contains("is-incrust-on")) {
+            card.classList.add("is-incrust-on");
+            var toggle = card.querySelector(".incrust-toggle");
+            if (toggle) toggle.setAttribute("aria-pressed", "true");
+        }
+        render(card, item, toSec(item.debut));
+        seekTo(card.querySelector("iframe"), toSec(item.debut) + 0.15);
+    }
+
+    function buildJumps(card, video) {
+        var nav = document.createElement("div");
+        nav.className = "incrust-jumps";
+        nav.setAttribute("role", "tablist");
+        nav.setAttribute("aria-label", "Aller à une proposition d’incrustation");
+        video.items.forEach(function (item, i) {
+            var b = document.createElement("button");
+            b.type = "button";
+            b.className = "incrust-jump";
+            b.title = (item.debut || "") + " — " + labelOf(item);
+            b.innerHTML = "<span>" + (i + 1) + "</span> " + escapeHtml(labelOf(item));
+            b.addEventListener("click", function () { goToItem(card, item); });
+            nav.appendChild(b);
+        });
+        return nav;
     }
 
     function decorate(card, video) {
@@ -102,7 +191,12 @@
         btn.addEventListener("click", function () {
             var on = card.classList.toggle("is-incrust-on");
             btn.setAttribute("aria-pressed", on ? "true" : "false");
-            if (on) render(card, currentItem(video.items, card._incrustTime || 0), card._incrustTime || 0);
+            if (!on) {
+                card._incrustPinned = null;
+                highlightJump(card, null);
+                return;
+            }
+            render(card, card._incrustPinned || currentItem(video.items, card._incrustTime || 0), card._incrustTime || 0);
         });
         header.appendChild(btn);
         var stage = document.createElement("div");
@@ -116,8 +210,10 @@
         var now = document.createElement("div");
         now.className = "incrust-now";
         stage.insertAdjacentElement("afterend", now);
+        now.insertAdjacentElement("afterend", buildJumps(card, video));
         card._incrustItems = video.items;
         card._incrustTime = 0;
+        card._incrustPinned = null;
         render(card, null, 0);
         cards.push(card);
     }
@@ -125,8 +221,20 @@
     function applyTime(card, seconds) {
         if (seconds == null || !isFinite(seconds)) return;
         card._incrustTime = seconds;
+        var items = card._incrustItems || [];
+        var live = currentItem(items, seconds);
+        if (card._incrustPinned) {
+            var idx = itemIndex(items, card._incrustPinned);
+            var win = idx >= 0 ? windowOf(items, idx) : null;
+            if (win && seconds >= win.start && seconds <= win.end) {
+                card._incrustPinned = null;
+            } else if (card.classList.contains("is-incrust-on")) {
+                render(card, card._incrustPinned, seconds);
+                return;
+            }
+        }
         if (!card.classList.contains("is-incrust-on")) return;
-        render(card, currentItem(card._incrustItems || [], seconds), seconds);
+        render(card, live, seconds);
     }
 
     function toNumber(value) {
