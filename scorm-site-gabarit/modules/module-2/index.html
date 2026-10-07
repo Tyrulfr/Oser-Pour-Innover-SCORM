@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module 2</title>
+    <script src="SCORM_API.js"></script>
+    <script src="progress.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root { --accent: #2A325E; --teal: #2EAF7D; --orange: #F48C2E; --bg: #F8F9FA; --card: #fff; }
+        body { margin: 0; font-family: 'Open Sans', sans-serif; background: var(--bg); color: var(--accent); padding-bottom: 80px; }
+        .top-bar { background: var(--card); padding: 0.9rem 5%; display: flex; justify-content: space-between; align-items: center; border-bottom: 3px solid var(--accent); }
+        .btn-back { text-decoration: none; color: inherit; font-weight: 700; }
+        .content { max-width: 1100px; margin: 2rem auto; padding: 0 1.4rem; }
+        .hero { background: linear-gradient(135deg, var(--teal), var(--accent)); color: #fff; border-radius: 18px; padding: 2.4rem 1.4rem; text-align: center; }
+        .hero h1 { font-family: Montserrat, sans-serif; margin: 0 0 0.6rem; }
+        .grains-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 1.4rem; margin-top: 2rem; }
+        .grain-card { background: var(--card); border-radius: 14px; overflow: hidden; box-shadow: 0 8px 20px rgba(0,0,0,0.06); display: flex; flex-direction: column; position: relative; border-top: 5px solid var(--teal); }
+        .card-number { position: absolute; top: 12px; right: 14px; font-size: 1.6rem; font-weight: 900; opacity: 0.08; }
+        .card-body { padding: 1.6rem 1.3rem; flex: 1; }
+        .card-icon { width: 52px; height: 52px; border-radius: 50%; display: flex; align-items: center; justify-content: center; background: rgba(46,175,125,0.12); color: var(--teal); margin-bottom: 0.8rem; }
+        .code-pill { font-size: 0.75rem; font-weight: 800; color: var(--teal); margin-bottom: 0.35rem; }
+        .card-title { font-family: Montserrat, sans-serif; font-weight: 800; margin-bottom: 0.4rem; }
+        .card-desc { font-size: 0.92rem; opacity: 0.75; }
+        .card-footer { padding: 0.9rem 1.3rem; border-top: 1px solid #eee; text-align: right; }
+        .btn-start { background: var(--accent); color: #fff; text-decoration: none; padding: 8px 16px; border-radius: 999px; font-weight: 700; font-size: 0.85rem; }
+    </style>
+</head>
+<body>
+    <nav class="top-bar">
+        <a class="btn-back" href="../../index.html">Accueil</a>
+        <strong>Nouveau programme</strong>
+        <span></span>
+    </nav>
+    <div class="content">
+        <div class="hero">
+            <h1>Module 2</h1>
+            <p>Présentation du second module.</p>
+            <p>1 grain(s)</p>
+        </div>
+        <div class="grains-grid">
+
+            <div class="grain-card">
+                <div class="card-number">01</div>
+                <div class="card-body">
+                    <div class="card-icon"><i class="fa-solid fa-play"></i></div>
+                    <div class="code-pill">Grain 1</div>
+                    <div class="card-title">Premier grain</div>
+                    <div class="card-desc">À compléter</div>
+                </div>
+                <div class="card-footer"><a href="pages/grain-1.html" class="btn-start">Accéder</a></div>
+            </div>
+        </div>
+    </div>
+    <script>
+        ProgressApp.boot({ suspendKey: "module2_suspend", pages: ["grain-1"] });
+    </script>
+</body>
+</html>

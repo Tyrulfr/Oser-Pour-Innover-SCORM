@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deuxième grain</title>
+    <script src="../SCORM_API.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../eval.css">
+    <style>
+        :root { --accent: #2A325E; --teal: #2EAF7D; --bg: #F8F9FA; --card: #fff; --muted: #555; }
+        body { margin: 0; font-family: 'Open Sans', sans-serif; background: var(--bg); color: var(--accent); padding-bottom: 140px; }
+        .top-bar { background: var(--card); padding: 0.9rem 5%; display: flex; justify-content: space-between; align-items: center; border-bottom: 3px solid var(--accent); }
+        .btn-back { text-decoration: none; color: inherit; font-weight: 700; }
+        .content { max-width: 920px; margin: 2rem auto; padding: 0 1.4rem; }
+        .hero-title { font-family: Montserrat, sans-serif; font-size: 2rem; margin: 0 0 0.4rem; }
+        .hero-subtitle { opacity: 0.75; border-left: 4px solid var(--teal); padding-left: 12px; }
+        .video-card { background: var(--card); border-radius: 18px; overflow: hidden; box-shadow: 0 12px 28px rgba(0,0,0,0.06); margin: 2rem 0; }
+        .video-header { padding: 1.2rem 1.4rem; border-bottom: 1px solid #eee; }
+        .video-wrapper { min-height: 220px; background: #111; color: #fff; display: flex; align-items: center; justify-content: center; text-align: center; padding: 2rem; }
+        .video-wrapper p { max-width: 28rem; opacity: 0.85; }
+        .action-footer { position: fixed; bottom: 0; left: 0; right: 0; background: var(--card); padding: 1rem 5%; display: flex; justify-content: flex-end; box-shadow: 0 -6px 18px rgba(0,0,0,0.08); }
+        .btn-validate { background: var(--accent); color: #fff; text-decoration: none; padding: 12px 22px; border-radius: 999px; font-weight: 800; }
+    </style>
+</head>
+<body data-grain="grain-2">
+    <nav class="top-bar">
+        <a class="btn-back" href="../index.html">Retour</a>
+        <strong>Module 1</strong>
+        <span></span>
+    </nav>
+    <div class="content">
+        <h1 class="hero-title">Deuxième grain</h1>
+        <p class="hero-subtitle">À compléter</p>
+        <div class="video-card">
+            <div class="video-header"><strong>Vidéo</strong> — coller ici le lecteur (iframe eMedia, YouTube…)</div>
+            <div class="video-wrapper">
+                <p>Emplacement vidéo. Remplacez ce bloc par l’iframe du média.</p>
+            </div>
+        </div>
+        <div id="eval-after-e"></div>
+        <div id="eval-memory"></div>
+    </div>
+    <div class="action-footer">
+        <a class="btn-validate" href="../index.html" onclick="markCompleted(100)">Retour au sommaire</a>
+    </div>
+    <script src="../eval-bank.js"></script>
+    <script src="../eval.js"></script>
+    <script src="../progress.js"></script>
+    <script>
+        ProgressApp.boot({
+            grainId: "grain-2",
+            suspendKey: "module1_suspend",
+            pages: ["grain-1", "grain-2"]
+        });
+    </script>
+</body>
+</html>

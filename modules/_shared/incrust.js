@@ -4,7 +4,8 @@
  * Désactivée par défaut, un bouton par vidéo.
  */
 (function (global) {
-    var DATA_URL = new URL("incrustations.json", document.currentScript.src).href;
+    var DATA_URL = new URL("incrustations.json?v=11", document.currentScript.src).href;
+    var SCRIPT_SRC = document.currentScript.src;
     var cards = [];
     var bound = false;
     var MIN_HOLD = 4.5;
@@ -120,18 +121,27 @@
         var panel = layer.querySelector(".incrust-panel");
         if (!item) {
             layer.classList.add("is-empty");
+            layer.classList.remove("has-figure");
             panel.innerHTML = '<div class="incrust-waiting">Proposition d’incrustation</div>';
             if (now) now.textContent = "Proposition d’incrustation";
             highlightJump(card, null);
             return;
         }
         layer.classList.remove("is-empty");
-        var kind = item.type === "schema" ? "Petit schéma" : "Mot-clé";
-        var body = item.type === "schema" && item.schema
-            ? schemaHtml(item.schema)
-            : '<div class="incrust-label">' + escapeHtml(item.ecran || item.schema || "—") + "</div>";
+        var hasFigure = !!item.image;
+        layer.classList.toggle("has-figure", hasFigure);
+        var kind = hasFigure ? "Schéma du fascicule" : (item.type === "schema" ? "Petit schéma" : "Mot-clé");
+        var body;
+        if (hasFigure) {
+            var imgUrl = new URL(item.image, SCRIPT_SRC).href;
+            body = '<img class="incrust-figure" alt="' + escapeHtml(item.ecran || item.schema || "Schéma") + '" src="' + imgUrl + '">';
+        } else if (item.type === "schema" && item.schema) {
+            body = schemaHtml(item.schema);
+        } else {
+            body = '<div class="incrust-label">' + escapeHtml(item.ecran || item.schema || "—") + "</div>";
+        }
         var extra = item.developpe ? '<div class="incrust-developpe">' + escapeHtml(item.developpe) + "</div>" : "";
-        var why = item.pourquoi ? '<div class="incrust-pourquoi">' + escapeHtml(item.pourquoi) + "</div>" : "";
+        var why = (!hasFigure && item.pourquoi) ? '<div class="incrust-pourquoi">' + escapeHtml(item.pourquoi) + "</div>" : "";
         panel.innerHTML = '<div class="incrust-kicker">' + escapeHtml(kind) + " · " +
             escapeHtml(item.debut) + "–" + escapeHtml(item.fin) + "</div>" + body + extra + why;
         if (now) {

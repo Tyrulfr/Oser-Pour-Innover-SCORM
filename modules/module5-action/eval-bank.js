@@ -482,11 +482,11 @@ window.EVAL_BANK = (function () {
                 fonction: "Formative",
                 question: "Jean-Jacques met en garde : il ne faut pas créer trop tôt, parce que…",
                 options: [
-                    { text: "Beaucoup de financements sont anti-création : une fois créé, on n’y est plus éligible.", correct: true },
+                    { text: "Beaucoup de financements sont anté-création : une fois créé, on n’y est plus éligible.", correct: true },
                     { text: "Il est interdit de créer une entreprise tant qu’on est chercheur.", correct: false },
                     { text: "Les aides n’existent qu’après le premier chiffre d’affaires.", correct: false }
                 ],
-                feedbackOk: "Étapes anti-création puis post-création. Créer trop tôt ferme des portes d’aides.",
+                feedbackOk: "Étapes anté-création puis post-création. Créer trop tôt ferme des portes d’aides.",
                 feedbackKo: "La chorale parle d’éligibilité des aides, pas d’une interdiction d’entreprendre."
             },
             media: {
@@ -495,13 +495,13 @@ window.EVAL_BANK = (function () {
                 title: "Frise entendue dans la chorale",
                 lead: "Les mots viennent de T8, pas d’un expert encore manquant.",
                 steps: [
-                    { title: "Anti-création", text: "Valorisation univ. / CNRS, POC'in Lab, prématuration." },
+                    { title: "Anté-création", text: "Valorisation univ. / CNRS, POC'in Lab, prématuration." },
                     { title: "Marches", text: "i-Lab, recrutement, preuves plus solides." },
                     { title: "Création", text: "On bascule : certaines aides se ferment." },
                     { title: "Après", text: "Investisseurs ou clients." }
                 ]
             },
-            mr: [mr("mr-grain5.html", "1.5 — La chaîne de valeur", "Capsule du Module Ressources, incluse ici en consultation (sans quiz). E14 n’est pas là : elle montre les flux de financement et de valeur, du labo vers l’usage.")],
+            mr: [mr("mr-grain5.html", "1.5 — La chaîne de valeur", "Capsule du Module Ressources, incluse ici en consultation (sans quiz). Elle montre les flux de financement et de valeur, du labo vers l’usage.")],
             quiz: [
                 {
                     objectif: "Choisir le moment de création",
@@ -511,7 +511,7 @@ window.EVAL_BANK = (function () {
                     fonction: "Formative",
                     question: "Créer trop tôt, concrètement, c’est…",
                     options: [
-                        { text: "Perdre l’éligibilité à des financements anti-création.", correct: true },
+                        { text: "Perdre l’éligibilité à des financements anté-création.", correct: true },
                         { text: "Gagner automatiquement plus d’aides publiques.", correct: false },
                         { text: "Obligatoire pour déposer un brevet.", correct: false }
                     ],
@@ -535,7 +535,7 @@ window.EVAL_BANK = (function () {
                 }
             ],
             memory: [
-                { front: "Pourquoi ne pas créer trop tôt ?", back: "Des aides anti-création deviennent inaccessibles." },
+                { front: "Pourquoi ne pas créer trop tôt ?", back: "Des aides anté-création deviennent inaccessibles." },
                 { front: "POC'in Lab, dans la chorale, sert à quoi ?", back: "Une année pour une preuve de concept, encore lié au labo." },
                 { front: "Innover, ce n’est que inventer ?", back: "Non. Il faut aussi faire circuler valeur et financements." }
             ]
@@ -581,7 +581,7 @@ window.EVAL_BANK = (function () {
                 feedbackOk: "IA / jumeau numérique parlaient aux scientifiques ; les décideurs entendent ROI et bénéfice.",
                 feedbackKo: "Adapter, ce n’est pas se taire : c’est changer de posture et de vocabulaire."
             },
-            mr: [mr("mr-grain4.html", "1.4 — Le nuage de vocabulaire", "Capsule du Module Ressources, incluse ici en consultation (sans quiz). E18 n’est pas encore là : invention ≠ innovation, adapter le lexique à qui vous écoute.")],
+            mr: [mr("mr-grain4.html", "1.4 — Le nuage de vocabulaire", "Capsule du Module Ressources, incluse ici en consultation (sans quiz). Invention ≠ innovation : adapter le lexique à qui vous écoute.")],
             quiz: [
                 {
                     objectif: "Choisir les mots qui donnent envie de recontacter",

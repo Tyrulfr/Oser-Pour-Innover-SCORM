@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nouveau programme</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root { --accent: #2A325E; --teal: #2EAF7D; --orange: #F48C2E; --bg: #F8F9FA; }
+        body { margin: 0; font-family: 'Open Sans', sans-serif; background: var(--bg); color: var(--accent);
+            background-image: radial-gradient(rgba(42,50,94,0.08) 1px, transparent 1px); background-size: 28px 28px; }
+        .navbar { display: flex; justify-content: space-between; align-items: center; padding: 1rem 6%; background: #fff; border-bottom: 1px solid #e6e6e6; }
+        .navbar a { color: var(--accent); font-weight: 700; text-decoration: none; }
+        .hero { text-align: center; padding: 4rem 1.5rem 2rem; }
+        h1 { font-family: Montserrat, sans-serif; font-size: 2.6rem; margin: 0 0 0.8rem; }
+        .subtitle { max-width: 720px; margin: 0 auto 2.5rem; opacity: 0.8; }
+        .cards { display: flex; flex-wrap: wrap; gap: 1.2rem; justify-content: center; padding: 0 1rem 4rem; }
+        .card { width: 280px; background: #fff; border-radius: 16px; padding: 1.6rem; text-decoration: none; color: inherit;
+            box-shadow: 0 10px 24px rgba(0,0,0,0.06); }
+        .card:hover { transform: translateY(-4px); }
+        .icon { font-size: 1.6rem; color: var(--teal); display: block; margin-bottom: 0.8rem; }
+        .btn { display: inline-block; margin-top: 1rem; padding: 8px 16px; border-radius: 999px; border: 2px solid var(--teal); color: var(--teal); font-weight: 800; font-size: 0.85rem; }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <strong>Nouveau programme</strong>
+        <a href="concepteur/index.html">Portail concepteur</a>
+    </nav>
+    <div class="hero">
+        <h1>Nouveau programme</h1>
+        <p class="subtitle">Parcours apprenant — structure à compléter</p>
+    </div>
+    <div class="cards">
+
+            <a class="card" href="modules/module-1/index.html">
+                <span class="icon"><i class="fa-solid fa-layer-group"></i></span>
+                <h3>Module 1</h3>
+                <p>Présentation du premier module.</p>
+                <span class="btn">2 grains</span>
+            </a>
+
+            <a class="card" href="modules/module-2/index.html">
+                <span class="icon"><i class="fa-solid fa-layer-group"></i></span>
+                <h3>Module 2</h3>
+                <p>Présentation du second module.</p>
+                <span class="btn">1 grain</span>
+            </a>
+    </div>
+</body>
+</html>

@@ -9,10 +9,10 @@
           "debut": "00:00:13",
           "fin": "00:00:15",
           "type": "concept",
-          "ecran": "Pas de côté",
+          "ecran": "Sérendipité",
           "schema": "",
           "developpe": "",
-          "pourquoi": "Origine : sérendipité scientifique, objectif T1."
+          "pourquoi": "Origine par hasard / rencontre inattendue, objectif T1 (F2 : le cycle se nourrit aussi du hasard)."
         },
         {
           "debut": "00:00:48",
@@ -39,7 +39,8 @@
           "ecran": "Tiré par le marché",
           "schema": "Tech-push | Market-pull",
           "developpe": "",
-          "pourquoi": "Vocabulaire du schéma de valorisation (F2 p. 6-7), calé sur le market-pull."
+          "pourquoi": "Vocabulaire du schéma de valorisation (F2 p. 6-7), calé sur le market-pull.",
+          "image": "schemas/f2-push-pull.png"
         },
         {
           "debut": "00:03:56",
@@ -57,7 +58,8 @@
           "ecran": "Idée → Impact",
           "schema": "Recherche → Propulsion → Adoption",
           "developpe": "",
-          "pourquoi": "Parcours progressif de Loïc : extrait du cycle F2, pas le schéma à 12 nœuds."
+          "pourquoi": "Parcours progressif de Loïc : extrait du cycle F2, pas le schéma à 12 nœuds.",
+          "image": "schemas/f2-cycle-3.png"
         },
         {
           "debut": "00:05:26",
@@ -96,10 +98,10 @@
           "debut": "00:01:04",
           "fin": "00:01:08",
           "type": "concept",
-          "ecran": "Pour qui ?",
+          "ecran": "Bénéficiaire",
           "schema": "",
           "developpe": "",
-          "pourquoi": "Bénéficiaire identifiable (producteurs)."
+          "pourquoi": "Identifier l’utilisateur·rice ou le bénéficiaire (producteurs)."
         },
         {
           "debut": "00:02:00",
@@ -108,7 +110,8 @@
           "ecran": "Sortir du labo",
           "schema": "Idée → Prototype → Expérimentation",
           "developpe": "",
-          "pourquoi": "Preuve d’usage hors labo : extrait de la phase amont du cycle F2."
+          "pourquoi": "Preuve d’usage hors labo : extrait de la phase amont du cycle F2.",
+          "image": "schemas/f2-cycle-amont.png"
         },
         {
           "debut": "00:03:06",
@@ -195,7 +198,8 @@
           "ecran": "Vers l’adoption",
           "schema": "Transfert → Adoption",
           "developpe": "",
-          "pourquoi": "Clients / business plan : phase « mise en service au collectif » du cycle F2."
+          "pourquoi": "Clients / business plan : phase « mise en service au collectif » du cycle F2.",
+          "image": "schemas/f2-cycle-adoption.png"
         }
       ]
     },
@@ -207,10 +211,10 @@
           "debut": "00:00:20",
           "fin": "00:00:26",
           "type": "schema",
-          "ecran": "Idée et preuve",
+          "ecran": "Preuve technique ∥ preuve d’usage",
           "schema": "Brevet ∥ expérience",
           "developpe": "",
-          "pourquoi": "Deux niveaux de preuve en parallèle."
+          "pourquoi": "Deux niveaux de preuve en parallèle : titre de PI et terrain."
         },
         {
           "debut": "00:01:05",
@@ -219,7 +223,8 @@
           "ecran": "Prématuration",
           "schema": "Protection → Maturation → Transfert",
           "developpe": "",
-          "pourquoi": "Situer la prématuration sur la chaîne de valorisation du fascicule 2."
+          "pourquoi": "Situer la prématuration sur la chaîne de valorisation du fascicule 2.",
+          "image": "schemas/f2-chaine-valo.png"
         },
         {
           "debut": "00:01:19",
@@ -234,7 +239,7 @@
           "debut": "00:01:48",
           "fin": "00:01:56",
           "type": "acronyme",
-          "ecran": "PoCkin Lab",
+          "ecran": "POC'in Lab",
           "schema": "",
           "developpe": "Preuve de concept in lab — prématuration Université Paris-Saclay",
           "pourquoi": "Dispositif nommé ; première fois dans le parcours."
@@ -261,10 +266,10 @@
           "debut": "00:05:23",
           "fin": "00:05:31",
           "type": "concept",
-          "ecran": "Se jeter à l’eau",
+          "ecran": "Décider malgré l’incertitude",
           "schema": "",
           "developpe": "",
-          "pourquoi": "Décision malgré l’incertitude."
+          "pourquoi": "On n’a pas toutes les réponses : s’engager quand même dans la valorisation."
         }
       ]
     },
@@ -306,7 +311,8 @@
           "ecran": "Brevet ou secret",
           "schema": "Brevet | Secret",
           "developpe": "",
-          "pourquoi": "Choix de stratégie : extrait du tableau des types de protection F1 p. 9-10."
+          "pourquoi": "Choix de stratégie : extrait du tableau des types de protection F1 p. 9-10.",
+          "image": "schemas/f1-pi-branches.png"
         },
         {
           "debut": "00:02:24",
@@ -321,10 +327,10 @@
           "debut": "00:02:44",
           "fin": "00:02:48",
           "type": "concept",
-          "ecran": "Pas le vivant",
+          "ecran": "Hors brevetabilité du vivant",
           "schema": "",
           "developpe": "",
-          "pourquoi": "Limite de brevetabilité (application, pas l’organisme)."
+          "pourquoi": "Limite de brevetabilité : l’application, pas l’organisme vivant."
         },
         {
           "debut": "00:05:09",
@@ -348,7 +354,8 @@
           "ecran": "Deux voies",
           "schema": "Licence | Création",
           "developpe": "",
-          "pourquoi": "Objectif T6 : extrait de la chaîne de valorisation F2."
+          "pourquoi": "Objectif T6 : extrait de la chaîne de valorisation F2.",
+          "image": "schemas/f2-chaine-valo.png"
         },
         {
           "debut": "00:01:19",
@@ -381,10 +388,10 @@
           "debut": "00:03:20",
           "fin": "00:03:27",
           "type": "schema",
-          "ecran": "Mixte",
+          "ecran": "Protection mixte",
           "schema": "Brevet + secret",
           "developpe": "",
-          "pourquoi": "La voie de PI suit la voie de transfert."
+          "pourquoi": "La voie de PI (brevet et secret) suit la voie de transfert."
         }
       ]
     },
@@ -396,10 +403,10 @@
           "debut": "00:00:14",
           "fin": "00:00:19",
           "type": "concept",
-          "ecran": "S’entourer",
+          "ecran": "S’appuyer sur l’écosystème",
           "schema": "",
           "developpe": "",
-          "pourquoi": "On n’avance pas seul, objectif T7."
+          "pourquoi": "On n’innove pas seul : SATT, incubateurs, dispositifs (F1 §5)."
         },
         {
           "debut": "00:00:32",
@@ -408,7 +415,8 @@
           "ecran": "Écosystème",
           "schema": "Université → SATT → Incubateurs",
           "developpe": "",
-          "pourquoi": "INRAE, incubateurs, SATT : bandeau du schéma de valorisation F2."
+          "pourquoi": "INRAE, incubateurs, SATT : bandeau du schéma de valorisation F2.",
+          "image": "schemas/f2-chaine-valo.png"
         },
         {
           "debut": "00:02:12",
@@ -442,9 +450,10 @@
           "fin": "00:05:08",
           "type": "schema",
           "ecran": "Continuum",
-          "schema": "PoCkin Lab → SATT",
+          "schema": "POC'in Lab → SATT",
           "developpe": "",
-          "pourquoi": "Prématuration puis maturation : même colonne que F2, calée sur les dispositifs nommés."
+          "pourquoi": "Prématuration puis maturation : même colonne que F2, calée sur les dispositifs nommés.",
+          "image": "schemas/f2-chaine-valo.png"
         }
       ]
     },
@@ -459,7 +468,8 @@
           "ecran": "Non-dilutif | Dilutif",
           "schema": "Non-dilutif | Dilutif",
           "developpe": "",
-          "pourquoi": "Avant / après création : extrait du tableau des financements F2 p. 15 (pas les 6 critères)."
+          "pourquoi": "Avant / après création : extrait du tableau des financements F2 p. 15 (pas les 6 critères).",
+          "image": "schemas/f2-finance.png"
         },
         {
           "debut": "00:00:25",
@@ -474,7 +484,7 @@
           "debut": "00:01:01",
           "fin": "00:01:11",
           "type": "acronyme",
-          "ecran": "PoCkin Lab",
+          "ecran": "POC'in Lab",
           "schema": "",
           "developpe": "Financement de prématuration (laboratoire)",
           "pourquoi": "Aide non dilutive, stade précoce."
@@ -534,10 +544,10 @@
           "debut": "00:00:29",
           "fin": "00:00:32",
           "type": "concept",
-          "ecran": "Aller chercher des experts",
+          "ecran": "Compléter l’équipe",
           "schema": "",
           "developpe": "",
-          "pourquoi": "Complémentarité d’équipe."
+          "pourquoi": "Aller chercher les compétences absentes du noyau fondateur."
         },
         {
           "debut": "00:01:01",
@@ -708,7 +718,8 @@
           "ecran": "Université · Incubateur",
           "schema": "Université · Incubateur",
           "developpe": "",
-          "pourquoi": "IncubAlliance à l’université : extrait de l’écosystème F1, pas le schéma à 9 groupes."
+          "pourquoi": "IncubAlliance à l’université : extrait de l’écosystème F1, pas le schéma à 9 groupes.",
+          "image": "schemas/f1-ecosysteme.png"
         },
         {
           "debut": "00:01:04",
@@ -725,8 +736,8 @@
           "type": "concept",
           "ecran": "Luminage",
           "schema": "",
-          "developpe": "",
-          "pourquoi": "Programme technique local."
+          "developpe": "Programme Institut d’Optique / X-Campus",
+          "pourquoi": "Dispositif d’accompagnement nommé dans la chorale."
         },
         {
           "debut": "00:02:18",
@@ -747,37 +758,37 @@
           "debut": "00:00:13",
           "fin": "00:00:15",
           "type": "concept",
-          "ecran": "Il faut y aller",
+          "ecran": "Valoriser le résultat",
           "schema": "",
           "developpe": "",
-          "pourquoi": "Appel à l’action, objectif T13."
+          "pourquoi": "Sortir du labo : transformer le résultat en innovation."
         },
         {
           "debut": "00:00:19",
           "fin": "00:00:25",
           "type": "concept",
-          "ecran": "Un problème d’abord",
+          "ecran": "Partir du besoin",
           "schema": "",
           "developpe": "",
-          "pourquoi": "Pas besoin d’une idée révolutionnaire."
+          "pourquoi": "Market-pull : un problème à résoudre, pas une idée révolutionnaire."
         },
         {
           "debut": "00:00:40",
           "fin": "00:00:44",
           "type": "concept",
-          "ecran": "On n’est pas seul",
+          "ecran": "Écosystème",
           "schema": "",
           "developpe": "",
-          "pourquoi": "Écosystème déjà vu, conclusion."
+          "pourquoi": "SATT, incubateur, valorisation : on n’innove pas seul."
         },
         {
           "debut": "00:01:10",
           "fin": "00:01:15",
           "type": "concept",
-          "ecran": "Parler aux entrepreneurs",
+          "ecran": "Terrain et entrepreneurs",
           "schema": "",
           "developpe": "",
-          "pourquoi": "Geste concret."
+          "pourquoi": "Confronter le résultat aux usages et aux partenaires."
         },
         {
           "debut": "00:03:03",
@@ -819,7 +830,8 @@
           "ecran": "Tech-push | Market-pull",
           "schema": "Tech-push | Market-pull",
           "developpe": "",
-          "pourquoi": "Première famille d’origines : entrées du schéma de valorisation F2."
+          "pourquoi": "Première famille d’origines : entrées du schéma de valorisation F2.",
+          "image": "schemas/f2-push-pull.png"
         },
         {
           "debut": "00:01:52",
@@ -852,10 +864,80 @@
           "debut": "00:03:35",
           "fin": "00:03:37",
           "type": "concept",
-          "ecran": "Ce qui déclenche",
+          "ecran": "Passage à l’action",
           "schema": "",
           "developpe": "",
-          "pourquoi": "Passage à l’action."
+          "pourquoi": "Ce qui déclenche le passage du résultat vers la valorisation."
+        }
+      ]
+    },
+    "E3": {
+      "code": "E3",
+      "nb": 7,
+      "items": [
+        {
+          "debut": "00:00:10",
+          "fin": "00:00:16",
+          "type": "concept",
+          "ecran": "Poser le bon problème",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Objectif E3 : identifier le problème avant de chercher la solution."
+        },
+        {
+          "debut": "00:01:06",
+          "fin": "00:01:09",
+          "type": "schema",
+          "ecran": "Identifier ≠ valider",
+          "schema": "Identifier ≠ valider",
+          "developpe": "",
+          "pourquoi": "Un problème formulé n’est pas encore un problème confronté au terrain."
+        },
+        {
+          "debut": "00:01:15",
+          "fin": "00:01:23",
+          "type": "concept",
+          "ecran": "Confrontation au terrain",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Échanges avec les acteurs, pivot : posture de l’innovateur."
+        },
+        {
+          "debut": "00:03:08",
+          "fin": "00:03:15",
+          "type": "concept",
+          "ecran": "Proposition de valeur",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Yann : formuler ce que la techno apporte au problème industriel (maintenance prédictive)."
+        },
+        {
+          "debut": "00:04:27",
+          "fin": "00:04:47",
+          "type": "schema",
+          "ecran": "Tech-push | Market-pull",
+          "schema": "Tech-push | Market-pull",
+          "developpe": "",
+          "image": "schemas/f2-push-pull.png",
+          "pourquoi": "Impasse du techno-push (trouver le marché après la techno) vs partir du besoin de marché — schéma de valorisation F2."
+        },
+        {
+          "debut": "00:04:47",
+          "fin": "00:04:57",
+          "type": "concept",
+          "ecran": "Adéquation problème-solution",
+          "schema": "",
+          "developpe": "Problem-solution fit, avant le product-market fit",
+          "pourquoi": "Avant de faire coller le produit au marché, coller la solution au problème."
+        },
+        {
+          "debut": "00:04:57",
+          "fin": "00:05:05",
+          "type": "concept",
+          "ecran": "Valorisateur",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "On n’est pas obligé de devenir entrepreneur : oser innover, se poser les bonnes questions, se faire accompagner."
         }
       ]
     },
@@ -906,7 +988,8 @@
           "ecran": "Prématuration / maturation",
           "schema": "Protection → Maturation → Transfert",
           "developpe": "",
-          "pourquoi": "Situer le projet sur la chaîne de valorisation F2."
+          "pourquoi": "Situer le projet sur la chaîne de valorisation F2.",
+          "image": "schemas/f2-chaine-valo.png"
         },
         {
           "debut": "00:02:59",
@@ -927,10 +1010,10 @@
           "debut": "00:00:21",
           "fin": "00:00:27",
           "type": "concept",
-          "ecran": "Réflexe de publier",
+          "ecran": "Divulgation",
           "schema": "",
           "developpe": "",
-          "pourquoi": "Le piège avant toute protection."
+          "pourquoi": "Publier ou communiquer trop tôt peut fermer la protection (nouveauté)."
         },
         {
           "debut": "00:00:42",
@@ -939,7 +1022,7 @@
           "ecran": "Communication publique",
           "schema": "",
           "developpe": "",
-          "pourquoi": "Divulgation = risque pour la nouveauté."
+          "pourquoi": "Divulgation : une communication publique peut fermer le brevet (nouveauté)."
         },
         {
           "debut": "00:00:51",
@@ -954,37 +1037,38 @@
           "debut": "00:02:25",
           "fin": "00:02:30",
           "type": "schema",
-          "ecran": "Puis la maturation",
+          "ecran": "Prématuration → Maturation",
           "schema": "Protection → Maturation → Transfert",
           "developpe": "",
-          "pourquoi": "La DI ouvre la chaîne de valorisation du fascicule 2."
+          "pourquoi": "Chaîne de valorisation du fascicule 2 : la DI ouvre la protection, puis la maturation.",
+          "image": "schemas/f2-chaine-valo.png"
         },
         {
           "debut": "00:03:24",
           "fin": "00:03:28",
           "type": "concept",
-          "ecran": "Lever la main",
+          "ecran": "Déclarer l’invention",
           "schema": "",
           "developpe": "",
-          "pourquoi": "La DI comme premier échange, pas un brevet."
+          "pourquoi": "La DI signale un résultat aux équipes de valorisation ; ce n’est pas « lever la main »."
         },
         {
           "debut": "00:04:12",
           "fin": "00:04:15",
           "type": "concept",
-          "ecran": "Point de départ",
+          "ecran": "La DI n’est pas un brevet",
           "schema": "",
           "developpe": "",
-          "pourquoi": "La DI n’arrête pas la publication, elle l’anticipe."
+          "pourquoi": "C’est le point de départ d’un échange avec la valorisation."
         },
         {
           "debut": "00:04:51",
           "fin": "00:04:56",
           "type": "concept",
-          "ecran": "En parler tôt",
+          "ecran": "Avant de divulguer",
           "schema": "",
           "developpe": "",
-          "pourquoi": "Geste attendu de l’apprenant."
+          "pourquoi": "Identifier un résultat prometteur et en parler aux équipes de valorisation."
         }
       ]
     },
@@ -1005,37 +1089,37 @@
           "debut": "00:03:09",
           "fin": "00:03:13",
           "type": "concept",
-          "ecran": "Dialogue deux mondes",
+          "ecran": "Académique ⇄ Socio-éco",
           "schema": "",
           "developpe": "",
-          "pourquoi": "Rôle d’interface académique / socio-éco."
+          "pourquoi": "Le chargé de valorisation fait l’interface entre labo et partenaires."
         },
         {
           "debut": "00:03:30",
           "fin": "00:03:32",
           "type": "concept",
-          "ecran": "Formaliser",
+          "ecran": "Accords de partenariat",
           "schema": "",
           "developpe": "",
-          "pourquoi": "Accords, pas seulement la mise en relation."
+          "pourquoi": "Formaliser la collaboration : cadre contractuel, pas seulement la mise en relation."
         },
         {
           "debut": "00:03:52",
           "fin": "00:03:58",
           "type": "concept",
-          "ecran": "Sans toutes les réponses",
+          "ecran": "Résultat prometteur",
           "schema": "",
           "developpe": "",
-          "pourquoi": "Premier contact tôt."
+          "pourquoi": "Contacter le chargé de valorisation sans attendre d’avoir toutes les réponses."
         },
         {
           "debut": "00:04:16",
           "fin": "00:04:27",
           "type": "schema",
-          "ecran": "Ce qu’il apporte",
-          "schema": "Conseils · Contacts · Cadre",
+          "ecran": "Accompagnement",
+          "schema": "Conseils · Contacts · Financements · Cadre",
           "developpe": "",
-          "pourquoi": "Avec quoi arriver / ce qu’on en retire."
+          "pourquoi": "Ce que le chargé de valorisation apporte pour transformer le résultat en projet."
         }
       ]
     },
@@ -1059,7 +1143,8 @@
           "ecran": "Brevet ou secret",
           "schema": "Brevet | Secret",
           "developpe": "",
-          "pourquoi": "Objectif E8 : extrait du tableau des types de protection F1."
+          "pourquoi": "Objectif E8 : extrait du tableau des types de protection F1.",
+          "image": "schemas/f1-pi-branches.png"
         },
         {
           "debut": "00:01:39",
@@ -1173,7 +1258,8 @@
           "ecran": "Pilier, pas option",
           "schema": "Protection → Maturation → Transfert",
           "developpe": "",
-          "pourquoi": "Synthèse E9 : même colonne que le schéma de valorisation F2."
+          "pourquoi": "Synthèse E9 : même colonne que le schéma de valorisation F2.",
+          "image": "schemas/f2-chaine-valo.png"
         },
         {
           "debut": "00:05:26",
@@ -1182,7 +1268,8 @@
           "ecran": "Outils de PI",
           "schema": "Brevet · Marque · Secret",
           "developpe": "",
-          "pourquoi": "Brevets, marques, secrets, dessins : extrait du tableau F1, pas les durées/territoires."
+          "pourquoi": "Brevets, marques, secrets, dessins : extrait du tableau F1, pas les durées/territoires.",
+          "image": "schemas/f1-pi-branches.png"
         }
       ]
     },
@@ -1197,7 +1284,8 @@
           "ecran": "Licence ou création",
           "schema": "Licence | Création",
           "developpe": "",
-          "pourquoi": "Question structurante : extrait de la chaîne de valorisation F2."
+          "pourquoi": "Question structurante : extrait de la chaîne de valorisation F2.",
+          "image": "schemas/f2-chaine-valo.png"
         },
         {
           "debut": "00:00:37",
@@ -1206,7 +1294,8 @@
           "ecran": "Quatre voies",
           "schema": "Licence · Création · Co-dev · Partenariat",
           "developpe": "",
-          "pourquoi": "Élargir au-delà du binôme du fascicule (récit E10)."
+          "pourquoi": "Élargir au-delà du binôme du fascicule (récit E10).",
+          "image": "schemas/f2-chaine-valo.png"
         },
         {
           "debut": "00:01:36",
@@ -1315,6 +1404,146 @@
         }
       ]
     },
+    "E12": {
+      "code": "E12",
+      "nb": 7,
+      "items": [
+        {
+          "debut": "00:01:07",
+          "fin": "00:01:14",
+          "type": "schema",
+          "ecran": "Invention ≠ Innovation",
+          "schema": "Invention ≠ Innovation",
+          "developpe": "",
+          "pourquoi": "Toutes les inventions n’aboutissent pas : il faut un enjeu commercial / un besoin de marché (F1 §4.2)."
+        },
+        {
+          "debut": "00:01:42",
+          "fin": "00:01:50",
+          "type": "concept",
+          "ecran": "Preuve de concept",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Premiers résultats prometteurs : valider une hypothèse via la prématuration."
+        },
+        {
+          "debut": "00:01:50",
+          "fin": "00:02:01",
+          "type": "acronyme",
+          "ecran": "POC'in Lab",
+          "schema": "",
+          "developpe": "Preuve de concept in lab — 100 000 € / 1 an",
+          "pourquoi": "Dit « Poking Labs » à l’oral ; programme de prématuration Université Paris-Saclay."
+        },
+        {
+          "debut": "00:02:16",
+          "fin": "00:02:26",
+          "type": "concept",
+          "ecran": "Étude de marché",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Positionnement technico-économique : valider le ou les marchés cibles."
+        },
+        {
+          "debut": "00:03:00",
+          "fin": "00:03:12",
+          "type": "schema",
+          "ecran": "Chaîne de valeur",
+          "schema": "Protection → Maturation → Transfert",
+          "developpe": "",
+          "image": "schemas/f2-chaine-valo.png",
+          "pourquoi": "Segments de marché et chaîne de valeur : extraire la proposition de valeur (F2)."
+        },
+        {
+          "debut": "00:03:27",
+          "fin": "00:03:37",
+          "type": "concept",
+          "ecran": "Proposition de valeur",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Ce pour quoi un client est prêt à payer : le problème que la techno retire."
+        },
+        {
+          "debut": "00:08:19",
+          "fin": "00:08:29",
+          "type": "concept",
+          "ecran": "Transfert de technologie",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "À l’issue de la maturation : un tiers privé poursuit l’exploitation vers le marché."
+        }
+      ]
+    },
+    "E13": {
+      "code": "E13",
+      "nb": 7,
+      "items": [
+        {
+          "debut": "00:00:31",
+          "fin": "00:00:39",
+          "type": "concept",
+          "ecran": "Créer une start-up ?",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Question qui ouvre l’incubateur : pas automatique dès qu’il y a un résultat prometteur."
+        },
+        {
+          "debut": "00:00:45",
+          "fin": "00:01:41",
+          "type": "schema",
+          "ecran": "Maturation | Incubation",
+          "schema": "Maturation techno | Incubation business",
+          "developpe": "",
+          "pourquoi": "Deux temps à découpler : robustesse techno + marché, puis côté entrepreneurial."
+        },
+        {
+          "debut": "00:01:45",
+          "fin": "00:02:07",
+          "type": "concept",
+          "ecran": "Deep Tech en parallèle",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "La techno n’est pas encore un produit : hypothèses terrain, clients et financeurs en même temps."
+        },
+        {
+          "debut": "00:02:39",
+          "fin": "00:02:50",
+          "type": "schema",
+          "ecran": "Trois programmes",
+          "schema": "Sensibilisation · Pré-incubation · Incubation",
+          "developpe": "",
+          "pourquoi": "IncubAlliance selon la maturité du projet."
+        },
+        {
+          "debut": "00:03:42",
+          "fin": "00:03:49",
+          "type": "concept",
+          "ecran": "Pas de prise de parts",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Incubateur de la recherche publique : accompagne la création, ne prend pas de capital."
+        },
+        {
+          "debut": "00:04:26",
+          "fin": "00:04:36",
+          "type": "concept",
+          "ecran": "Techno ≠ start-up",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Une excellente technologie ne constitue pas à elle seule une entreprise : compétences à réunir."
+        },
+        {
+          "debut": "00:05:56",
+          "fin": "00:06:00",
+          "type": "schema",
+          "ecran": "Non-dilutif | Dilutif",
+          "schema": "Non-dilutif | Dilutif",
+          "developpe": "",
+          "image": "schemas/f2-finance.png",
+          "pourquoi": "Stratégie financière de l’incubation : extrait du tableau F2."
+        }
+      ]
+    },
     "E13bis": {
       "code": "E13bis",
       "nb": 6,
@@ -1335,7 +1564,8 @@
           "ecran": "Plateformes",
           "schema": "Fablab · Fabrique · POC",
           "developpe": "",
-          "pourquoi": "Autres acteur·rices de l’écosystème F1 : extrait, pas le schéma à 9 groupes."
+          "pourquoi": "Autres acteur·rices de l’écosystème F1 : extrait, pas le schéma à 9 groupes.",
+          "image": "schemas/f1-ecosysteme.png"
         },
         {
           "debut": "00:01:33",
@@ -1368,130 +1598,219 @@
           "debut": "00:03:18",
           "fin": "00:03:21",
           "type": "concept",
-          "ecran": "La bonne ressource",
+          "ecran": "Caler le timing",
           "schema": "",
           "developpe": "",
-          "pourquoi": "Au bon moment."
+          "pourquoi": "Solliciter les plateformes au bon moment du projet."
         }
       ]
     },
-    "E16": {
-      "code": "E16",
-      "nb": 6,
+    "E17": {
+      "code": "E17",
+      "nb": 7,
       "items": [
         {
           "debut": "00:00:53",
           "fin": "00:01:04",
           "type": "concept",
-          "ecran": "Équipe, pas CV",
+          "ecran": "Compétences collectives",
           "schema": "",
           "developpe": "",
-          "pourquoi": "Objectif E16 : compétences collectives."
+          "pourquoi": "On ne porte pas seul le projet : l’équipe rassemble les compétences et qualités nécessaires."
         },
         {
           "debut": "00:01:08",
-          "fin": "00:01:11",
-          "type": "concept",
+          "fin": "00:01:18",
+          "type": "schema",
           "ecran": "Savoirs manquants",
-          "schema": "",
+          "schema": "Marché · PI · Commercialisation",
           "developpe": "",
-          "pourquoi": "Ancrage T9."
+          "pourquoi": "Étude de marché, brevetabilité, financeurs : ce que le laboratoire ne sait pas faire seul (Loïc / Jean-Jacques)."
         },
         {
           "debut": "00:01:47",
           "fin": "00:01:58",
           "type": "concept",
-          "ecran": "L’équipe survit",
+          "ecran": "L’équipe survit au pivot",
           "schema": "",
           "developpe": "",
-          "pourquoi": "Les projets pivotent."
+          "pourquoi": "Les investisseurs regardent l’équipe : les projets pivotent, la techno de départ ne suffit pas."
         },
         {
           "debut": "00:02:09",
-          "fin": "00:02:14",
+          "fin": "00:02:20",
           "type": "schema",
           "ecran": "Diriger ou non",
-          "schema": "CEO  |  Scientifique",
+          "schema": "CEO | Scientifique",
           "developpe": "",
-          "pourquoi": "Place du chercheur."
+          "pourquoi": "Place du chercheur : direction opérationnelle ou rester dans le domaine scientifique."
+        },
+        {
+          "debut": "00:02:56",
+          "fin": "00:03:04",
+          "type": "schema",
+          "ecran": "Prématuration → Maturation",
+          "schema": "Protection → Maturation → Transfert",
+          "developpe": "",
+          "image": "schemas/f2-chaine-valo.png",
+          "pourquoi": "Loïc : prématuration puis maturation SATT — chaîne de valorisation du fascicule 2."
+        },
+        {
+          "debut": "00:03:31",
+          "fin": "00:03:44",
+          "type": "concept",
+          "ecran": "Alignement des finalités",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Avant de recruter un dirigeant : s’assurer d’un alignement sur les finalités et les valeurs du projet."
         },
         {
           "debut": "00:03:50",
-          "fin": "00:03:54",
+          "fin": "00:04:04",
           "type": "concept",
           "ecran": "Casting du dirigeant",
           "schema": "",
           "developpe": "",
-          "pourquoi": "Alignement, pas un profil générique."
-        },
+          "pourquoi": "Recrutement du CEO avec la SATT : cultures du secteur, pas un CV générique."
+        }
+      ]
+    },
+    "E18": {
+      "code": "E18",
+      "nb": 7,
+      "items": [
         {
-          "debut": "00:04:33",
-          "fin": "00:04:36",
+          "debut": "00:00:29",
+          "fin": "00:00:37",
           "type": "concept",
-          "ecran": "Pas d’ego",
+          "ecran": "Chacun sa mission",
           "schema": "",
           "developpe": "",
-          "pourquoi": "Collaboration dans l’équipe."
+          "pourquoi": "Préserver la valorisation : chaque partenaire fait sa mission, toute sa mission, rien que sa mission."
+        },
+        {
+          "debut": "00:00:42",
+          "fin": "00:00:48",
+          "type": "concept",
+          "ecran": "Le contrat fait loi",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Le contrat définit droits et obligations (renvoi à Soizic / E11)."
+        },
+        {
+          "debut": "00:01:22",
+          "fin": "00:01:34",
+          "type": "schema",
+          "ecran": "Trois enjeux",
+          "schema": "Gouvernance · Pouvoir · Financier",
+          "developpe": "",
+          "pourquoi": "Dès le succès : arbitrages difficiles si les relations sont restées dans le flou."
+        },
+        {
+          "debut": "00:01:38",
+          "fin": "00:01:53",
+          "type": "acronyme",
+          "ecran": "NPE",
+          "schema": "",
+          "developpe": "Non-Practicing Entity — structure qui n’exploite pas elle-même",
+          "pourquoi": "On s’adosse à des partenaires ou on cède : des décisions d’exploitation restent à prendre."
+        },
+        {
+          "debut": "00:02:13",
+          "fin": "00:02:21",
+          "type": "concept",
+          "ecran": "L’employeur détient la PI",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Dans la majorité des cas, les droits de PI restent à l’établissement, pas aux personnes."
+        },
+        {
+          "debut": "00:02:40",
+          "fin": "00:02:49",
+          "type": "schema",
+          "ecran": "Parts ≠ droits de PI",
+          "schema": "Parts sociales ≠ PI",
+          "developpe": "",
+          "pourquoi": "La répartition au capital n’est pas la propriété intellectuelle."
+        },
+        {
+          "debut": "00:02:55",
+          "fin": "00:03:11",
+          "type": "concept",
+          "ecran": "Anticiper les apports",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Définir et quantifier les apports de chacun très en amont ; le non-dit crée la tension."
         }
       ]
     },
     "E19": {
       "code": "E19",
-      "nb": 6,
+      "nb": 7,
       "items": [
         {
-          "debut": "00:00:22",
-          "fin": "00:00:29",
-          "type": "concept",
-          "ecran": "Ça s’apprend",
-          "schema": "",
-          "developpe": "",
-          "pourquoi": "Objectif E19 : pas de profil type."
-        },
-        {
-          "debut": "00:00:42",
-          "fin": "00:00:47",
-          "type": "concept",
-          "ecran": "Langue de l’entrepreneuriat",
-          "schema": "",
-          "developpe": "",
-          "pourquoi": "Métaphore T10, ici enseignée."
-        },
-        {
-          "debut": "00:01:42",
-          "fin": "00:01:51",
+          "debut": "00:00:23",
+          "fin": "00:00:33",
           "type": "schema",
-          "ecran": "Essai → Pivot → Essai",
-          "schema": "Essai → Pivot → Essai",
+          "ecran": "Résultat → entreprise",
+          "schema": "Résultat scientifique → entreprise",
           "developpe": "",
-          "pourquoi": "Tâtonnements : le cycle F2 « est rarement linéaire »."
+          "pourquoi": "Créer une start-up Deep Tech : transformer un résultat en entreprise capable de trouver son marché."
         },
         {
-          "debut": "00:02:21",
-          "fin": "00:02:29",
+          "debut": "00:01:29",
+          "fin": "00:01:34",
           "type": "concept",
-          "ecran": "En discutant",
+          "ecran": "Financer la réduction des risques",
           "schema": "",
           "developpe": "",
-          "pourquoi": "Apprentissage par la pratique."
+          "pourquoi": "Le financement n’est pas « trouver de l’argent » : c’est dérisquer étape par étape."
         },
         {
-          "debut": "00:02:53",
+          "debut": "00:02:19",
+          "fin": "00:02:38",
+          "type": "concept",
+          "ecran": "Chiffre d’affaires",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Première source : un client qui paie un POC, une étude ou un produit — et confirme le marché."
+        },
+        {
+          "debut": "00:02:43",
           "fin": "00:02:56",
-          "type": "concept",
-          "ecran": "Essai, retour, correction",
-          "schema": "",
-          "developpe": "",
-          "pourquoi": "Posture entrepreneuriale."
+          "type": "schema",
+          "ecran": "Non-dilutif",
+          "schema": "Non-dilutif | Dilutif",
+          "developpe": "Pas de cession de parts",
+          "image": "schemas/f2-finance.png",
+          "pourquoi": "Subventions, avances, prêts d’honneur : les fondateurs gardent leurs parts (F2 p. 15)."
         },
         {
-          "debut": "00:04:51",
-          "fin": "00:04:58",
+          "debut": "00:03:56",
+          "fin": "00:04:08",
           "type": "concept",
-          "ecran": "Une langue de plus",
+          "ecran": "Financement dilutif",
+          "schema": "",
+          "developpe": "Business angels · amorçage · capital-risque",
+          "pourquoi": "Capitaux contre une partie de l’entreprise : les fondateurs sont dilués."
+        },
+        {
+          "debut": "00:04:45",
+          "fin": "00:04:50",
+          "type": "concept",
+          "ecran": "Combiner les sources",
           "schema": "",
           "developpe": "",
-          "pourquoi": "On reste chercheur."
+          "pourquoi": "En Deep Tech, dilutif et non-dilutif se combinent selon le niveau de risque."
+        },
+        {
+          "debut": "00:05:26",
+          "fin": "00:05:44",
+          "type": "concept",
+          "ecran": "Pacte d’associés",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Gouvernance, départ d’un fondateur, sortie : à revoir à l’arrivée d’investisseurs."
         }
       ]
     },
@@ -1575,7 +1894,8 @@
           "ecran": "Échelle TRL",
           "schema": "TRL 1 → 9",
           "developpe": "Technology Readiness Level",
-          "pourquoi": "Première occurrence. Extraire 1→9 ; le tableau ISO 9 lignes reste dans le fascicule / E4."
+          "pourquoi": "Échelle TRL ISO 16290 extraite du fascicule 2 (p. 12) : 9 niveaux de maturité technologique.",
+          "image": "schemas/f2-trl.png"
         },
         {
           "debut": "00:01:54",
@@ -1722,7 +2042,8 @@
           "ecran": "Preuves et titres",
           "schema": "Brevet · Logiciel · Soleau",
           "developpe": "",
-          "pourquoi": "Enveloppe Soleau, brevets, logiciels : extrait du tableau F1 p. 9-10."
+          "pourquoi": "Enveloppe Soleau, brevets, logiciels : extrait du tableau F1 p. 9-10.",
+          "image": "schemas/f1-pi-branches.png"
         },
         {
           "debut": "00:02:19",
@@ -1752,6 +2073,155 @@
           "pourquoi": "Clause de résiliation, équilibre."
         }
       ]
+    },
+    "E24": {
+      "code": "E24",
+      "nb": 7,
+      "items": [
+        {
+          "debut": "00:00:33",
+          "fin": "00:00:49",
+          "type": "concept",
+          "ecran": "Accord de confidentialité",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Réflexe avant toute discussion avec un tiers : limiter le risque de vol de savoir-faire."
+        },
+        {
+          "debut": "00:01:08",
+          "fin": "00:01:33",
+          "type": "concept",
+          "ecran": "Connaissances propres",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "État des lieux avant collaboration : ce qui appartient déjà à chaque partie ne doit pas être absorbé par le projet."
+        },
+        {
+          "debut": "00:01:51",
+          "fin": "00:02:01",
+          "type": "schema",
+          "ecran": "Formaliser avant de collaborer",
+          "schema": "Brevet · Logiciel · Soleau",
+          "developpe": "",
+          "image": "schemas/f1-pi-branches.png",
+          "pourquoi": "Inventions brevetées, logiciels déposés, savoir-faire en enveloppe Soleau : extrait des types de PI du fascicule 1."
+        },
+        {
+          "debut": "00:02:19",
+          "fin": "00:02:30",
+          "type": "concept",
+          "ecran": "Contrat de collaboration",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Cadre commun : propriété, usage et exploitation de la PI entre la structure de valorisation et le partenaire."
+        },
+        {
+          "debut": "00:03:00",
+          "fin": "00:03:11",
+          "type": "concept",
+          "ecran": "Copropriété des résultats",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Chacun apporte moyens et connaissances propres : les résultats du projet commun se copossèdent."
+        },
+        {
+          "debut": "00:04:04",
+          "fin": "00:04:21",
+          "type": "concept",
+          "ecran": "Avant de divulguer",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Publications et communications à valider ; brevets à déposer avant divulgation."
+        },
+        {
+          "debut": "00:04:44",
+          "fin": "00:04:58",
+          "type": "concept",
+          "ecran": "Clause de résiliation",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Porte de sortie : procédure si une partie ne respecte pas ses obligations."
+        }
+      ]
     }
-  }
+  },
+  "schemas_fascicule": [
+    {
+      "id": "F1-PI-BRANCHES",
+      "image": "schemas/f1-pi-branches.png",
+      "fascicule": 1,
+      "pages": "8",
+      "titre": "Deux branches de la PI"
+    },
+    {
+      "id": "F1-ECOSYSTEME",
+      "image": "schemas/f1-ecosysteme.png",
+      "fascicule": 1,
+      "pages": "15",
+      "titre": "Écosystème de l’innovation"
+    },
+    {
+      "id": "F2-CYCLE-3",
+      "image": "schemas/f2-cycle-3.png",
+      "fascicule": 2,
+      "pages": "3",
+      "titre": "Cycle — 3 phases"
+    },
+    {
+      "id": "F2-CYCLE-AMONT",
+      "image": "schemas/f2-cycle-amont.png",
+      "fascicule": 2,
+      "pages": "3",
+      "titre": "Phase amont"
+    },
+    {
+      "id": "F2-CYCLE-PROPULSION",
+      "image": "schemas/f2-cycle-propulsion.png",
+      "fascicule": 2,
+      "pages": "4",
+      "titre": "Phase propulsion"
+    },
+    {
+      "id": "F2-CYCLE-ADOPTION",
+      "image": "schemas/f2-cycle-adoption.png",
+      "fascicule": 2,
+      "pages": "4",
+      "titre": "Transfert → adoption"
+    },
+    {
+      "id": "F2-CYCLE-COMPLET",
+      "image": "schemas/f2-cycle-complet.png",
+      "fascicule": 2,
+      "pages": "5",
+      "titre": "Cycle de l’innovation"
+    },
+    {
+      "id": "F2-PUSH-PULL",
+      "image": "schemas/f2-push-pull.png",
+      "fascicule": 2,
+      "pages": "6",
+      "titre": "Tech-push / market-pull"
+    },
+    {
+      "id": "F2-CHAINE-VALO",
+      "image": "schemas/f2-chaine-valo.png",
+      "fascicule": 2,
+      "pages": "7",
+      "titre": "Chaîne de valorisation"
+    },
+    {
+      "id": "F2-FINANCE",
+      "image": "schemas/f2-finance.png",
+      "fascicule": 2,
+      "pages": "15",
+      "titre": "Non-dilutif / dilutif"
+    },
+    {
+      "id": "F2-TRL",
+      "image": "schemas/f2-trl.png",
+      "fascicule": 2,
+      "pages": "12",
+      "titre": "Échelle TRL (ISO 16290)"
+    }
+  ]
 }

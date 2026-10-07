@@ -1,0 +1,23 @@
+{
+  "titre": "Nouveau programme",
+  "sous_titre": "Parcours apprenant — structure à compléter",
+  "modules": [
+    {
+      "id": "module-1",
+      "titre": "Module 1",
+      "resume": "Présentation du premier module.",
+      "grains": [
+        { "id": "grain-1", "titre": "Premier grain", "sous_titre": "À compléter" },
+        { "id": "grain-2", "titre": "Deuxième grain", "sous_titre": "À compléter" }
+      ]
+    },
+    {
+      "id": "module-2",
+      "titre": "Module 2",
+      "resume": "Présentation du second module.",
+      "grains": [
+        { "id": "grain-1", "titre": "Premier grain", "sous_titre": "À compléter" }
+      ]
+    }
+  ]
+}

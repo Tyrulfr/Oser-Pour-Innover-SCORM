@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portail concepteur</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        :root { --accent: #2A325E; --teal: #2EAF7D; --orange: #F48C2E; --bg: #F4F6F8; }
+        * { box-sizing: border-box; }
+        body { margin: 0; font-family: 'Open Sans', sans-serif; background: var(--bg); color: var(--accent); }
+        header { background: #fff; padding: 1rem 6%; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #e5e5e5; }
+        header a { color: var(--accent); font-weight: 700; text-decoration: none; }
+        main { max-width: 1080px; margin: 0 auto; padding: 2rem 1.2rem 4rem; }
+        h1 { font-family: Montserrat, sans-serif; margin: 0 0 0.4rem; }
+        .lead { opacity: 0.75; margin-bottom: 1.8rem; }
+        .grid { display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 1.4rem; }
+        @media (max-width: 880px) { .grid { grid-template-columns: 1fr; } }
+        .panel { background: #fff; border-radius: 16px; padding: 1.2rem 1.3rem; box-shadow: 0 10px 24px rgba(0,0,0,0.05); }
+        label { display: block; font-weight: 700; font-size: 0.82rem; margin: 0.8rem 0 0.3rem; }
+        input, textarea { width: 100%; padding: 0.65rem 0.75rem; border: 1px solid #d7dbe2; border-radius: 10px; font: inherit; }
+        .module { border: 1px solid #e6e8ee; border-radius: 14px; padding: 0.9rem; margin-top: 1rem; }
+        .row { display: flex; gap: 0.6rem; align-items: end; }
+        .row > * { flex: 1; }
+        .count { max-width: 110px; }
+        button { border: 0; border-radius: 999px; padding: 0.55rem 1rem; font-weight: 800; cursor: pointer; }
+        .btn { background: var(--accent); color: #fff; }
+        .btn-ghost { background: #eef1f5; color: var(--accent); }
+        .btn-teal { background: var(--teal); color: #fff; }
+        .actions { display: flex; flex-wrap: wrap; gap: 0.6rem; margin-top: 1.2rem; }
+        .tree { font-size: 0.92rem; line-height: 1.55; }
+        .tree strong { display: block; margin-top: 0.7rem; }
+        .hint { font-size: 0.85rem; opacity: 0.75; margin-top: 0.8rem; }
+        code { background: #eef1f5; padding: 0.1rem 0.35rem; border-radius: 6px; }
+        .grain-list { margin-top: 0.6rem; }
+    </style>
+</head>
+<body>
+    <header>
+        <strong>Portail concepteur</strong>
+        <a href="../index.html">Voir le site apprenant</a>
+    </header>
+    <main>
+        <h1>Annoncer la structure</h1>
+        <p class="lead">Indiquez le nombre de modules et de grains. Le script crée ensuite les dossiers, pages et manifests SCORM — sans contenu pédagogique.</p>
+        <div class="grid">
+            <section class="panel">
+                <label for="titre">Titre du programme</label>
+                <input id="titre" value="Nouveau programme">
+                <label for="sous_titre">Sous-titre</label>
+                <input id="sous_titre" value="Parcours apprenant — structure à compléter">
+                <div id="modules"></div>
+                <div class="actions">
+                    <button type="button" class="btn-ghost" id="add-module">Ajouter un module</button>
+                    <button type="button" class="btn" id="save">Télécharger programme.json</button>
+                    <button type="button" class="btn-teal" id="copy-cmd">Copier la commande de génération</button>
+                </div>
+                <p class="hint">Enregistrez le fichier dans <code>concepteur/programme.json</code> (remplacez l’actuel), puis lancez <code>python3 scripts/generer.py</code> à la racine du gabarit.</p>
+            </section>
+            <aside class="panel">
+                <h2 style="font-family:Montserrat,sans-serif;font-size:1.1rem;margin:0 0 0.6rem;">Aperçu</h2>
+                <div class="tree" id="tree"></div>
+            </aside>
+        </div>
+    </main>
+    <script>
+        var state = { titre: "Nouveau programme", sous_titre: "Parcours apprenant — structure à compléter", modules: [] };
+
+        function emptyGrain(n) { return { id: "grain-" + n, titre: "Grain " + n, sous_titre: "À compléter" }; }
+        function emptyModule(n) {
+            return { id: "module-" + n, titre: "Module " + n, resume: "", grains: [emptyGrain(1)] };
+        }
+
+        function collect() {
+            state.titre = document.getElementById("titre").value.trim() || "Nouveau programme";
+            state.sous_titre = document.getElementById("sous_titre").value.trim();
+            state.modules = state.modules.map(function (mod, i) {
+                var root = document.querySelector('[data-mod="' + i + '"]');
+                if (!root) return mod;
+                var titre = root.querySelector(".mod-titre").value.trim() || ("Module " + (i + 1));
+                var resume = root.querySelector(".mod-resume").value.trim();
+                var n = Math.max(1, parseInt(root.querySelector(".mod-n").value, 10) || 1);
+                var grains = [];
+                for (var j = 0; j < n; j++) {
+                    var gEl = root.querySelector('[data-grain="' + j + '"]');
+                    grains.push({
+                        id: "grain-" + (j + 1),
+                        titre: gEl ? (gEl.value.trim() || ("Grain " + (j + 1))) : ("Grain " + (j + 1)),
+                        sous_titre: (mod.grains[j] && mod.grains[j].sous_titre) || "À compléter"
+                    });
+                }
+                return { id: "module-" + (i + 1), titre: titre, resume: resume, grains: grains };
+            });
+        }
+
+        function render() {
+            var host = document.getElementById("modules");
+            host.innerHTML = state.modules.map(function (mod, i) {
+                var grains = mod.grains.map(function (g, j) {
+                    return '<label>Grain ' + (j + 1) + '</label><input data-grain="' + j + '" value="' + escapeAttr(g.titre) + '">';
+                }).join("");
+                return '<div class="module" data-mod="' + i + '">' +
+                    '<div class="row"><div><label>Module</label><input class="mod-titre" value="' + escapeAttr(mod.titre) + '"></div>' +
+                    '<div class="count"><label>Grains</label><input class="mod-n" type="number" min="1" max="40" value="' + mod.grains.length + '"></div></div>' +
+                    '<label>Résumé</label><input class="mod-resume" value="' + escapeAttr(mod.resume || "") + '">' +
+                    '<div class="grain-list">' + grains + '</div>' +
+                    '<div class="actions"><button type="button" class="btn-ghost" data-del="' + i + '">Retirer ce module</button></div></div>';
+            }).join("");
+            document.getElementById("titre").value = state.titre;
+            document.getElementById("sous_titre").value = state.sous_titre;
+            paintTree();
+        }
+
+        function paintTree() {
+            var totalG = state.modules.reduce(function (n, m) { return n + m.grains.length; }, 0);
+            var html = "<div>" + state.modules.length + " module(s) · " + totalG + " grain(s)</div>";
+            state.modules.forEach(function (mod) {
+                html += "<strong>" + escapeHtml(mod.titre) + "</strong>";
+                mod.grains.forEach(function (g, j) {
+                    html += "<div>— " + (j + 1) + ". " + escapeHtml(g.titre) + "</div>";
+                });
+            });
+            document.getElementById("tree").innerHTML = html;
+        }
+
+        function escapeHtml(s) {
+            return String(s || "").replace(/[&<>"]/g, function (ch) {
+                return ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" })[ch];
+            });
+        }
+        function escapeAttr(s) { return escapeHtml(s); }
+
+        function bind() {
+            document.getElementById("modules").addEventListener("input", function () {
+                collect();
+                var focused = document.activeElement;
+                var keep = focused && focused.classList.contains("mod-n");
+                if (keep) {
+                    render();
+                    var idx = focused.closest("[data-mod]");
+                    if (idx) idx.querySelector(".mod-n").focus();
+                } else paintTree();
+            });
+            document.getElementById("modules").addEventListener("click", function (ev) {
+                var btn = ev.target.closest("[data-del]");
+                if (!btn || state.modules.length < 1) return;
+                collect();
+                state.modules.splice(parseInt(btn.getAttribute("data-del"), 10), 1);
+                if (!state.modules.length) state.modules.push(emptyModule(1));
+                render();
+            });
+            document.getElementById("add-module").addEventListener("click", function () {
+                collect();
+                state.modules.push(emptyModule(state.modules.length + 1));
+                render();
+            });
+            document.getElementById("titre").addEventListener("input", function () { collect(); paintTree(); });
+            document.getElementById("sous_titre").addEventListener("input", function () { collect(); });
+            document.getElementById("save").addEventListener("click", function () {
+                collect();
+                var blob = new Blob([JSON.stringify(state, null, 2)], { type: "application/json" });
+                var a = document.createElement("a");
+                a.href = URL.createObjectURL(blob);
+                a.download = "programme.json";
+                a.click();
+            });
+            document.getElementById("copy-cmd").addEventListener("click", function () {
+                navigator.clipboard.writeText("python3 scripts/generer.py").then(function () {
+                    document.getElementById("copy-cmd").textContent = "Commande copiée";
+                    setTimeout(function () { document.getElementById("copy-cmd").textContent = "Copier la commande de génération"; }, 1600);
+                });
+            });
+        }
+
+        fetch("programme.json").then(function (r) { return r.ok ? r.json() : null; }).then(function (data) {
+            if (data && data.modules) state = data;
+            else state.modules = [emptyModule(1), emptyModule(2)];
+            if (!state.modules.length) state.modules = [emptyModule(1)];
+            render();
+            bind();
+        }).catch(function () {
+            state.modules = [emptyModule(1), emptyModule(2)];
+            render();
+            bind();
+        });
+    </script>
+</body>
+</html>
