@@ -3,7 +3,7 @@
     justify-content: flex-start;
 }
 .incrust-toggle {
-    margin-left: auto;
+    margin-left: 0;
     flex-shrink: 0;
     border: 1px solid rgba(42, 50, 94, 0.22);
     background: var(--bg-card, #fff);

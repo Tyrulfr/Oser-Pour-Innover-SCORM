@@ -1605,6 +1605,75 @@
         }
       ]
     },
+    "E16": {
+      "code": "E16",
+      "nb": 7,
+      "items": [
+        {
+          "debut": "00:00:32",
+          "fin": "00:00:44",
+          "type": "concept",
+          "ecran": "Changement de vocabulaire",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Un changement de contexte (recherche → entrepreneuriat) change le lexique et le référentiel."
+        },
+        {
+          "debut": "00:00:58",
+          "fin": "00:01:06",
+          "type": "schema",
+          "ecran": "Théorie → usage",
+          "schema": "Théorie → usage",
+          "developpe": "",
+          "pourquoi": "Comprendre le décalage de codes ne suffit pas : il faut le faire atterrir dans la pratique."
+        },
+        {
+          "debut": "00:01:18",
+          "fin": "00:01:32",
+          "type": "schema",
+          "ecran": "Deux postures",
+          "schema": "Chercheur | Entrepreneur",
+          "developpe": "",
+          "pourquoi": "Complémentaires : naviguer entre les deux façons de travailler, sans abandonner la recherche."
+        },
+        {
+          "debut": "00:01:44",
+          "fin": "00:01:56",
+          "type": "concept",
+          "ecran": "Nouveau lexique",
+          "schema": "",
+          "developpe": "business model · proposition de valeur · dilutif · break-even · ARR · pitch · B2B",
+          "pourquoi": "Premier obstacle : acquérir des termes et des mécanismes qui n’appartiennent pas au laboratoire."
+        },
+        {
+          "debut": "00:02:24",
+          "fin": "00:02:55",
+          "type": "schema",
+          "ecran": "Trois sens de valorisation",
+          "schema": "Publication | PI | Valeur monétaire",
+          "developpe": "",
+          "pourquoi": "Même mot, trois métiers : chercheur, direction de la valorisation, incubateur Deep Tech."
+        },
+        {
+          "debut": "00:03:33",
+          "fin": "00:03:54",
+          "type": "concept",
+          "ecran": "Point de vue de l’écoute",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Adapter le vocabulaire à qui écoute, pas à qui parle — dire autrement pour qu’il comprenne."
+        },
+        {
+          "debut": "00:04:04",
+          "fin": "00:04:19",
+          "type": "schema",
+          "ecran": "Un discours par interlocuteur",
+          "schema": "Financeurs · Partenaires · Clients",
+          "developpe": "",
+          "pourquoi": "Présentations distinctes : public / privé, industriels, institutions, décideurs, clients."
+        }
+      ]
+    },
     "E17": {
       "code": "E17",
       "nb": 7,

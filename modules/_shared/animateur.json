@@ -1,0 +1,194 @@
+{
+  "videos": {
+    "T1": {
+      "code": "T1",
+      "intro": "Vous allez entendre plusieurs chercheur·ses raconter comment une innovation a commencé, chez eux. Ce n’est pas un mode d’emploi : ce sont des chemins différents.",
+      "outro": "Une innovation peut naître de plusieurs origines. Bernard va maintenant poser les mots : tech-push, market-pull, usage, rencontre, sérendipité."
+    },
+    "E1": {
+      "code": "E1",
+      "intro": "Bernard range les origines d’une innovation. Distinguez une poussée technologique d’un besoin de marché, d’un usage, d’une rencontre ou d’un hasard fécond.",
+      "outro": "L’origine n’est pas unique : un même projet peut combiner plusieurs moteurs. C’est ce que vous pourrez reconnaître dans vos propres travaux."
+    },
+    "T2": {
+      "code": "T2",
+      "intro": "Les témoignages passent de la recherche à autre chose : un problème, un usage, une mise à l’épreuve hors du laboratoire.",
+      "outro": "Retenez l’écart entre un résultat scientifique et une innovation. Grégoire va préciser comment poser le bon problème, et ce que valident vraiment un PoC ou un terrain."
+    },
+    "E2": {
+      "code": "E2",
+      "intro": "Cette capsule, encore à venir, doit aider à passer d’une technologie à un problème à résoudre — sans coller une solution sur un besoin mal posé.",
+      "outro": "Le fil à emporter : identifier n’est pas valider. Le terrain tranche."
+    },
+    "E3": {
+      "code": "E3",
+      "intro": "Grégoire distingue identifier un problème et le valider. Écoutez tech-push et market-pull, et le rôle de la confrontation au terrain.",
+      "outro": "Sans adéquation problème-solution, la techno reste une invention. La proposition de valeur se construit avec celles et ceux qui ont le problème."
+    },
+    "T3": {
+      "code": "T3",
+      "intro": "Les chercheur·ses parlent de besoin réel, de preuve, de sortie du laboratoire. Écoutez ce qui les a obligés à quitter le banc.",
+      "outro": "Un besoin n’est pas une hypothèse de labo. La suite pose les mots POC, prototype, MVP, TRL, puis la logique de dérisquage par étapes."
+    },
+    "E4": {
+      "code": "E4",
+      "intro": "Capsule à venir : les niveaux de preuve — POC, prototype, MVP — et l’échelle TRL, pour ne plus les confondre.",
+      "outro": "Chaque niveau de maturité autorise des discussions différentes avec un partenaire ou un financeur."
+    },
+    "E5": {
+      "code": "E5",
+      "intro": "Virginia déroule le dérisquage : prématuration puis maturation. Ce n’est pas « trouver de l’argent », c’est lever des risques dans l’ordre.",
+      "outro": "À retenir : la prématuration teste une hypothèse ; la maturation prépare un transfert. Les comités ne jugent pas un article, ils jugent un potentiel d’innovation."
+    },
+    "T4": {
+      "code": "T4",
+      "intro": "Une idée ne suffit pas. La chorale parle de freins — divulgation, isolement, temps — et de leviers, souvent humains.",
+      "outro": "Avant d’en parler autour de soi, il y a un réflexe : déclarer. Puis savoir à qui s’adresser, et avec quoi arriver."
+    },
+    "E6": {
+      "code": "E6",
+      "intro": "Le réflexe déclaration d’invention, avant toute divulgation. Une publication, un colloque ou un dépôt en ligne peut fermer la protection.",
+      "outro": "Si l’idée a de la valeur, elle se déclare d’abord. Ensuite seulement on choisit comment en parler."
+    },
+    "E7": {
+      "code": "E7",
+      "intro": "À qui parler, et avec quoi arriver. L’écosystème n’est utile que si la demande est cadrée : problème, maturité, ce que vous attendez de l’interlocuteur.",
+      "outro": "Un rendez-vous SATT, incubateur ou partenaire se prépare. Ce n’est pas un séminaire de laboratoire."
+    },
+    "T5": {
+      "code": "T5",
+      "intro": "Protection et valorisation : les témoignages racontent le moment où il a fallu choisir quoi protéger, et pourquoi.",
+      "outro": "La PI n’est pas qu’un brevet. L’expert va distinguer les modes de protection, puis la PI comme actif stratégique."
+    },
+    "E8": {
+      "code": "E8",
+      "intro": "Choisir un mode de protection : brevet, secret, logiciel, enveloppe Soleau… selon ce que l’on veut faire de la techno, pas selon un réflexe unique.",
+      "outro": "Le bon outil dépend de la stratégie de divulgation et du modèle d’affaires, pas seulement de l’exploit scientifique."
+    },
+    "E9": {
+      "code": "E9",
+      "intro": "La propriété intellectuelle comme actif : ce n’est pas un trophée, c’est ce qui se licencie, se partage ou se défend.",
+      "outro": "Sans stratégie de PI, la valorisation n’a pas de levier. Avec une stratégie, elle ouvre des partenariats."
+    },
+    "T6": {
+      "code": "T6",
+      "intro": "Transfert et licensing : comment un résultat quitte le laboratoire vers un tiers qui l’exploite.",
+      "outro": "Deux questions enchaînées : quelle voie de valorisation, puis quels mécanismes juridiques rendent le transfert possible."
+    },
+    "E10": {
+      "code": "E10",
+      "intro": "Quelle voie : licence à une entreprise existante, création de start-up, logiciel libre, prestation… Ce n’est pas toujours « fonder une société ».",
+      "outro": "La voie suit le marché, la PI et l’équipe — pas un modèle unique Paris-Saclay."
+    },
+    "E11": {
+      "code": "E11",
+      "intro": "Soizic sur les mécanismes du transfert : le contrat fait loi, les droits et obligations se écrivent, ils ne se déduisent pas de la bonne entente.",
+      "outro": "Un transfert sans contrat clair laisse la PI, les redevances et les responsabilités dans le flou."
+    },
+    "T7": {
+      "code": "T7",
+      "intro": "Vous n’êtes pas seul·e. La chorale montre des chercheur·ses entouré·es : SATT, incubateur, plateformes, collègues.",
+      "outro": "Trois regards ensuite : prématuration et maturation, ce que fait un incubateur, puis d’autres structures — Design Spot, fablab, OTT."
+    },
+    "E12": {
+      "code": "E12",
+      "intro": "Capsule SATT à venir : de la prématuration à la maturation, invention n’est pas innovation, preuve de concept et proposition de valeur.",
+      "outro": "Le transfert n’arrive qu’après des étapes de dérisquage. Ce n’est pas un saut unique du labo au marché."
+    },
+    "E13": {
+      "code": "E13",
+      "intro": "Arielle, IncubAlliance : un incubateur de la recherche publique. Distinguez maturation technologique et incubation business — surtout en Deep Tech, où les deux vont en parallèle.",
+      "outro": "L’incubateur n’est pas un actionnaire : il n’y a pas de prise de parts. Une techno, même excellente, ne constitue pas à elle seule une start-up."
+    },
+    "E13bis": {
+      "code": "E13bis",
+      "intro": "Yoann, Design Spot : d’autres portes que SATT ou incubateur. Usage, design, fablab, preuve concrète — souvent trop tard si on les appelle à la fin.",
+      "outro": "Ces plateformes se calent dans le calendrier du projet. Elles ne remplacent pas la PI ni le financement, elles travaillent le besoin et l’usage."
+    },
+    "T8": {
+      "code": "T8",
+      "intro": "Financements, concours, moment de créer. Jean-Jacques et d’autres parlent d’aides anté-création : trop tôt, on ferme des portes.",
+      "outro": "La frise entendue dans la chorale prépare deux capsules : chaîne des financements, puis logique des investisseurs — encore à tourner pour partie."
+    },
+    "E14": {
+      "code": "E14",
+      "intro": "Capsule prévue avec Fatoumata : la chaîne des financements, du laboratoire à l’usage. En attendant, la chorale et le Module Ressources portent le fil.",
+      "outro": "Dilutif, non-dilutif, concours, aides anté-création : l’ordre des sources compte autant que leur montant."
+    },
+    "E15": {
+      "code": "E15",
+      "intro": "Capsule à venir : ce que regardent les investisseurs — équipe, marché, PI, trajectoire de dérisquage — pas seulement la techno.",
+      "outro": "Un investisseur n’achète pas un article. Il prend un risque qu’il veut voir diminuer à chaque jalon."
+    },
+    "T9": {
+      "code": "T9",
+      "intro": "Partenariats et équipe. Les témoignages disent qu’on ne sait pas tout faire : marché, PI, vente, gouvernance.",
+      "outro": "Deux experts : d’abord le changement de posture et de vocabulaire ; ensuite la relation entre fondateurs — pacte, rôles, recrutement."
+    },
+    "E16": {
+      "code": "E16",
+      "intro": "Arielle sur l’apprentissage d’un nouveau contexte. Même mot — valorisation — trois métiers. Écoutez le lexique, puis le point de vue de celui qui écoute.",
+      "outro": "La posture entrepreneuriale complète la posture de chercheur. Elle s’acquiert : mises en situation, discours adaptés aux financeurs, partenaires, clients."
+    },
+    "E17": {
+      "code": "E17",
+      "intro": "Pascal : on ne porte pas le projet seul. Compétences collectives, place du chercheur — diriger ou non — et alignement avant de recruter un dirigeant.",
+      "outro": "Les investisseurs regardent l’équipe. Les projets pivotent ; la techno de départ ne suffit pas."
+    },
+    "T10": {
+      "code": "T10",
+      "intro": "La chorale parle de langage : comment raconter la valeur à quelqu’un qui n’est pas du laboratoire.",
+      "outro": "Les deux experts de ce grain élargissent : d’abord organiser juridiquement l’équipe projet, puis financer et dérisquer un projet Deep Tech."
+    },
+    "E18": {
+      "code": "E18",
+      "intro": "Antoine, juriste : chacun sa mission, le contrat fait loi. Gouvernance, pouvoir, argent — et le piège de rester dans le flou entre collègues.",
+      "outro": "L’employeur détient le plus souvent la PI. Parts sociales et droits de PI ne sont pas la même chose. Anticiper les apports évite la tension plus tard."
+    },
+    "E19": {
+      "code": "E19",
+      "intro": "Arielle sur le financement Deep Tech : ce n’est pas « trouver de l’argent », c’est financer la réduction des risques. Chiffre d’affaires, non-dilutif, dilutif.",
+      "outro": "Les sources se combinent. Le pacte d’associés se revoit à l’arrivée d’investisseurs : gouvernance, départ, sortie."
+    },
+    "T11": {
+      "code": "T11",
+      "intro": "Évolution du métier de chercheur : comment concilier laboratoire et engagement dans un projet d’innovation, sans tout quitter.",
+      "outro": "Deux experts : concilier recherche et engagement, puis innover comme apprentissage — TRL, pivot, MVP."
+    },
+    "E20": {
+      "code": "E20",
+      "intro": "Pascal : ce n’est pas une reconversion. Enrichir le métier, tenir les deux calendriers, savoir ce que l’on garde du laboratoire.",
+      "outro": "L’engagement se dose. Le statut, le temps et le rôle scientifique se discutent tôt, pas après la création."
+    },
+    "E21": {
+      "code": "E21",
+      "intro": "Bernard : innover s’apprend. Échelle TRL, pivot, MVP — des mots pour situer où l’on est, et ce qu’il reste à prouver.",
+      "outro": "Changer de trajectoire n’est pas un échec : c’est aligner la preuve sur le problème et le marché."
+    },
+    "T12": {
+      "code": "T12",
+      "intro": "Dispositifs et collaborations : comment travailler avec une entreprise, un établissement, un partenaire, sans se faire déborder.",
+      "outro": "Trois experts : équilibre de la collaboration, sécurisation juridique, puis ce que les dispositifs changent concrètement dans le laboratoire."
+    },
+    "E22": {
+      "code": "E22",
+      "intro": "Collaboration équilibrée : chacun apporte, chacun reçoit. Attention aux projets où le laboratoire fournit et l’autre décide.",
+      "outro": "Un partenariat se lit à la gouvernance et à la PI, pas seulement à l’enthousiasme du démarrage."
+    },
+    "E23": {
+      "code": "E23",
+      "intro": "Rémi : NDA, PI, contrat. Avant d’échanger des résultats, on cadre ce qui est secret, ce qui appartient à qui, et ce qui pourra être publié.",
+      "outro": "Sans ces trois verrous, la collaboration industrielle recopie le laboratoire sans le protéger."
+    },
+    "E24": {
+      "code": "E24",
+      "intro": "Nelly : les dispositifs de collaboration vus du terrain — ce qu’ils autorisent, ce qu’ils contraignent, et comment s’en servir sans s’y perdre.",
+      "outro": "Les dispositifs ne remplacent pas le projet. Ils donnent un cadre ; encore faut-il y entrer avec un problème, une PI et une équipe."
+    },
+    "T13": {
+      "code": "T13",
+      "intro": "Dernière chorale : passer à l’action. Écoutez ce que les chercheur·ses emportent, concrètement, après ce parcours.",
+      "outro": "Pas d’expert ici. La suite, c’est votre déclaration, votre premier rendez-vous, ou le problème que vous allez enfin poser hors du laboratoire."
+    }
+  }
+}

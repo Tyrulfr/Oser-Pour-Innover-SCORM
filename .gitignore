@@ -12,6 +12,7 @@ Thumbs.db
 # Build / packaging
 dist/
 *.zip
+!downloads/intro-transcript-outro.zip
 node_modules/
 
 # Environnements Python

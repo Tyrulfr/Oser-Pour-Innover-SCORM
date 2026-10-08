@@ -1,0 +1,8 @@
+Intro / transcript / outro — un Word par vidéo
+MOOC L’Esprit d’innover
+
+Chaque fichier : Intro (texte animateur) · Transcript · Outro (texte animateur).
+Ordre des fichiers = ordre pédagogique du parcours.
+
+Transcripts encore absents : E2, E4, E14, E15.
+E13bis reprend le transcript Yoann (Design Spot). E14 est prévue pour Fatoumata.

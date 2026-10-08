@@ -9,6 +9,6 @@ Ces fichiers **ne vont pas dans les paquets SCORM** (`build.sh` ne zippe que `mo
 - `temoins/` — T1.docx … T13.docx (13/13)
 - `experts/` — E{n}_{Prénom}.docx
 
-Présents : E1, E3, E5–E14, E17–E24 (sauf E15–E16).
+Présents : E1, E3, E5–E14, E16–E24 (sauf E15).
 
-Manquants : E2, E4, E15, E16.
+Manquants : E2, E4, E15.

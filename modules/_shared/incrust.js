@@ -4,7 +4,7 @@
  * Désactivée par défaut, un bouton par vidéo.
  */
 (function (global) {
-    var DATA_URL = new URL("incrustations.json?v=11", document.currentScript.src).href;
+    var DATA_URL = new URL("incrustations.json?v=13", document.currentScript.src).href;
     var SCRIPT_SRC = document.currentScript.src;
     var cards = [];
     var bound = false;
@@ -208,7 +208,13 @@
             }
             render(card, card._incrustPinned || currentItem(video.items, card._incrustTime || 0), card._incrustTime || 0);
         });
-        header.appendChild(btn);
+        var actions = header.querySelector(".video-header-actions");
+        if (!actions) {
+            actions = document.createElement("div");
+            actions.className = "video-header-actions";
+            header.appendChild(actions);
+        }
+        actions.appendChild(btn);
         var stage = document.createElement("div");
         stage.className = "incrust-stage";
         wrapper.parentNode.insertBefore(stage, wrapper);
