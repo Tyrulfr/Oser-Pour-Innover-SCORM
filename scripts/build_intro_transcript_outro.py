@@ -58,11 +58,14 @@ TITLES = {
     "T13": "Conclusion : passer à l’action",
 }
 
-SPEAKERS = (
-    "Stephanie", "Stéphanie", "Arielle", "Antoine", "Bernard", "Virginia",
-    "Virgnia", "Soizic", "Yoann", "Pascal", "Rémi", "Remi", "Eneli", "Nelly",
-    "Grégoire", "Gregoire", "Stanislas", "Fatoumata",
-)
+NAME_PREFIXES = tuple(sorted((
+    "Stephanie_Sano", "Jean-Jacques", "Jean Jacques",
+    "Stephanie", "Stéphanie", "Grégoire", "Gregoire",
+    "Virginia", "Virgnia", "Stanislas", "Fatoumata",
+    "Arielle", "Antoine", "Bernard", "Soizic", "Yoann",
+    "Pascal", "Sylvia", "Muriel", "Eneli", "Nelly",
+    "Remi", "Rémi", "Loïc", "Loic", "Yann",
+), key=len, reverse=True))
 
 
 def transcript_path(code: str) -> Path | None:
@@ -92,16 +95,26 @@ def extract_docx_text(path: Path) -> str:
     return re.sub(r"(?=\d{2}:\d{2}:\d{2}\s)", "\n", raw).strip()
 
 
-def format_line(line: str) -> str:
+def split_speaker(rest: str) -> tuple[str | None, str]:
+    for name in NAME_PREFIXES:
+        if rest.startswith(name):
+            after = rest[len(name):].lstrip(" :—-_")
+            label = name.replace("_", " ")
+            return label, after
+    return None, rest
+
+
+def format_line(line: str, keep_speaker: bool) -> str:
     m = re.match(r"^(\d{2}:\d{2}:\d{2})\s*(.*)$", line)
     if not m:
         return line
     time, rest = m.group(1), m.group(2)
-    for name in SPEAKERS:
-        if rest.startswith(name):
-            after = rest[len(name):].lstrip(" :—-")
-            return f"{time}  {name} — {after}"
-    return f"{time}  {rest}"
+    name, text = split_speaker(rest)
+    if keep_speaker:
+        if name:
+            return f"{time} {name} {text}"
+        return f"{time} {rest}"
+    return f"{time} {text}"
 
 
 def w_p(text: str, style: str | None = None, italic: bool = False, color: str | None = None) -> str:
@@ -136,7 +149,8 @@ def document_xml(code: str, title: str, intro: str, lines: list[str], outro: str
     if missing:
         body.append(w_p(missing, italic=True))
     else:
-        body.extend(w_p(format_line(line)) for line in lines if line.strip())
+        keep_speaker = code.startswith("T")
+        body.extend(w_p(format_line(line, keep_speaker)) for line in lines if line.strip())
     body += [
         w_p("Outro", "Heading2", color="F48C2E"),
         w_p(outro, color="F48C2E"),
