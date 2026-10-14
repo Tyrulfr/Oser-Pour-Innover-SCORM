@@ -1,0 +1,290 @@
+{
+  "date": "2026-10-14",
+  "videos": {
+    "E5": {
+      "code": "E5",
+      "nb": 1,
+      "items": [
+        {
+          "id": "VID-E5-01",
+          "type": "cadrage",
+          "debut": "00:00:00",
+          "fin": "00:00:11",
+          "passage": "Prise de vue d’ensemble de Virginia",
+          "action": "La prise de vue est un peu étrange. Il faudrait caler Virginia comme Bernard, de face.",
+          "note": "Remarque Monica sur toute la capsule, pas un plan isolé."
+        }
+      ]
+    },
+    "E6": {
+      "code": "E6",
+      "nb": 3,
+      "items": [
+        {
+          "id": "VID-E6-01",
+          "type": "lecture",
+          "debut": "00:02:41",
+          "fin": "00:02:48",
+          "passage": "« Pourquoi hésite-t-on ? » / « des interrogations que beaucoup de chercheurs partagent »",
+          "action": "Stéphanie a trébuché sur cette partie interrogation.",
+          "note": "Monica : « Est-ce qu’il y a une autre version possible ? » — repère oral « 2h47 ». Pas une demande de retournage."
+        },
+        {
+          "id": "VID-E6-02",
+          "type": "lecture",
+          "debut": "00:03:28",
+          "fin": "00:03:35",
+          "passage": "« C’est précisément son rôle » / « En quelque sorte, c’est l’occasion de lever la main »",
+          "action": "Stéphanie a trébuché à cet endroit.",
+          "note": "Monica : « Est-ce qu’il y a une autre version où elle ne trébuche pas ? » — repère oral « 3h30 ». Pas une demande de retournage."
+        },
+        {
+          "id": "VID-E6-03",
+          "type": "lecture",
+          "debut": "00:05:42",
+          "fin": "00:05:48",
+          "passage": "« au moment où on se demande si ce résultat pouvait aller plus loin »",
+          "action": "Stéphanie a trébuché sur cette phrase.",
+          "note": "Monica : « Est-ce qu’il y aurait une autre prise où elle ne trébuche pas ? » — repère oral « 5h47 ». Pas une demande de retournage."
+        }
+      ]
+    },
+    "E7": {
+      "code": "E7",
+      "nb": 3,
+      "items": [
+        {
+          "id": "VID-E7-01",
+          "type": "lecture",
+          "debut": "00:01:11",
+          "fin": "00:01:27",
+          "passage": "« il est utile de pouvoir expliquer son résultat, ce qu’il apporte de nouveau… »",
+          "action": "Stéphanie a trébuché dans cette partie-là.",
+          "note": "Monica : « Est-ce qu’il y a une autre prise pour la reprendre ? » — pas une demande de retournage."
+        },
+        {
+          "id": "VID-E7-02",
+          "type": "lecture",
+          "debut": "00:02:56",
+          "fin": "00:03:03",
+          "passage": "« Loïc lorsqu’il explique qu’il a dû apprendre à passer du laboratoire au terrain »",
+          "action": "Stéphanie a trébuché lorsqu’elle dit « lorsqu’il explique ».",
+          "note": "Monica : « Est-ce qu’il y a une autre prise à prendre ? » — pas une demande de retournage."
+        },
+        {
+          "id": "VID-E7-03",
+          "type": "coupe",
+          "debut": "00:03:13",
+          "fin": "00:03:21",
+          "passage": "« En effet, il va aider le chercheur à construire de bonnes relations… »",
+          "action": "La coupe est un peu étrange. Revoir cette coupure.",
+          "note": "Monica : « La coupe à la minute 3.15 est un peu étrange. »"
+        }
+      ]
+    },
+    "E8": {
+      "code": "E8",
+      "nb": 8,
+      "items": [
+        {
+          "id": "VID-E8-01",
+          "type": "flou",
+          "debut": "00:00:35",
+          "fin": "00:00:43",
+          "passage": "« Loïc a abordé la notion de brevet… pour la protection des inventions »",
+          "action": "Il y a du flou dans la prise.",
+          "note": "Monica : « à la seconde 40. Vérifiez s’il y a une autre prise. » — pas une demande de retournage."
+        },
+        {
+          "id": "VID-E8-02",
+          "type": "flou",
+          "debut": "00:00:43",
+          "fin": "00:00:52",
+          "passage": "Suite du passage Loïc / brevet",
+          "action": "Il y a encore du flou dans les secondes qui suivent.",
+          "note": "Monica : « Il faudrait trouver une nouvelle capture de vidéo. »"
+        },
+        {
+          "id": "VID-E8-03",
+          "type": "camera",
+          "debut": "00:04:40",
+          "fin": "00:04:59",
+          "passage": "« Les investisseurs sont rassurés par le brevet » / lever des fonds",
+          "action": "Trop d’allers-retours entre caméra de face et caméra de côté.",
+          "note": "Monica : « Diminuer le nombre d’échanges entre une caméra et l’autre pour maintenir plus de stabilité. »"
+        },
+        {
+          "id": "VID-E8-04",
+          "type": "montage",
+          "debut": "00:05:42",
+          "fin": "00:05:59",
+          "passage": "« L’INPI examine et délivre les titres… N’hésitez donc pas à nous solliciter »",
+          "action": "Enlever la partie INPI et les services proposés dans la vidéo.",
+          "note": "Monica : à éditer entre le repère oral « 5.42 » et « Pour vous, innovateurs »."
+        },
+        {
+          "id": "VID-E8-05",
+          "type": "montage",
+          "debut": "00:05:59",
+          "fin": "00:06:25",
+          "passage": "« Pour vous, innovateurs et entrepreneurs… le processus est simple »",
+          "action": "Reprendre la partie à partir de « Pour vous, innovateurs et entrepreneurs ».",
+          "note": "Monica : repère oral « 6.01 »."
+        },
+        {
+          "id": "VID-E8-06",
+          "type": "conclusion",
+          "debut": "00:06:25",
+          "fin": "00:06:28",
+          "passage": "« L’INPI peut vous éclairer sur chacun de ces sujets »",
+          "action": "Voir si on peut finaliser sur une partie où il ne parle pas de l’INPI.",
+          "note": "Monica : « Allez jusqu’à la minute 6.26.627. »"
+        },
+        {
+          "id": "VID-E8-07",
+          "type": "flou",
+          "debut": "00:06:28",
+          "fin": "00:06:32",
+          "passage": "« Je vous remercie »",
+          "action": "Quand il dit « je vous remercie », il y a encore du flou.",
+          "note": "Monica sur la fin de vidéo."
+        },
+        {
+          "id": "VID-E8-08",
+          "type": "flou",
+          "debut": "00:00:00",
+          "fin": "00:00:13",
+          "passage": "Ensemble de la capsule",
+          "action": "Problèmes récurrents de netteté, de visage ou d’arrière-plan flou, d’images figées, d’allers-retours.",
+          "note": "Monica : à vérifier sur toute la vidéo, pas seulement les passages identifiés."
+        }
+      ]
+    },
+    "E9": {
+      "code": "E9",
+      "nb": 6,
+      "items": [
+        {
+          "id": "VID-E9-01",
+          "type": "son",
+          "debut": "00:00:00",
+          "fin": "00:00:05",
+          "passage": "Logo / jingle d’ouverture « Oser pour innover »",
+          "action": "Il y a un problème de son qui manque pour le logo d’entrée.",
+          "note": "Monica : « Rétablir le son du jingle. »"
+        },
+        {
+          "id": "VID-E9-02",
+          "type": "montage",
+          "debut": "00:00:12",
+          "fin": "00:00:19",
+          "passage": "« Notre mission est de vous accompagner pour valoriser vos actifs immatériels… »",
+          "action": "Enlever la partie de la mission de l’INPI. Garder seulement « Institut national de la propriété industrielle ».",
+          "note": "Monica : présentation trop développée en ouverture."
+        },
+        {
+          "id": "VID-E9-03",
+          "type": "camera",
+          "debut": "00:02:33",
+          "fin": "00:02:45",
+          "passage": "« tenez compte aussi des autres moyens d’appropriation… monopole temporaire »",
+          "action": "Cette prise de vue latérale n’est pas la meilleure. Privilégier une prise de face.",
+          "note": "Monica : « Minute 2h38 environ, toute cette partie de théorie. »"
+        },
+        {
+          "id": "VID-E9-04",
+          "type": "camera",
+          "debut": "00:02:45",
+          "fin": "00:03:17",
+          "passage": "Droit d’auteur, titres, marques, dessins et modèles",
+          "action": "Trop de changements de caméra entre le latéral et le frontal.",
+          "note": "Monica : rester sur des prises frontales, comme les vidéos de Stéphanie. Pas besoin de changer pour chaque phrase."
+        },
+        {
+          "id": "VID-E9-05",
+          "type": "montage",
+          "debut": "00:05:40",
+          "fin": "00:05:49",
+          "passage": "« L’INPI est là pour vous accompagner… N’hésitez pas à nous solliciter »",
+          "action": "Enlever la partie de publicité de l’INPI, les dernières secondes.",
+          "note": "Monica : fin trop promotionnelle."
+        },
+        {
+          "id": "VID-E9-06",
+          "type": "conclusion",
+          "debut": "00:05:34",
+          "fin": "00:05:42",
+          "passage": "« Valorisez votre propriété intellectuelle pour lever des fonds ou concéder des licences »",
+          "action": "Terminer sur « concéder des licences », puis « Je vous remercie », sans l’appel de l’INPI.",
+          "note": "Monica : « Ou concéder des licences, c’est là que doit finir la vidéo. » Repère oral « 5.40 »."
+        }
+      ]
+    },
+    "E10": {
+      "code": "E10",
+      "nb": 3,
+      "items": [
+        {
+          "id": "VID-E10-01",
+          "type": "cadrage",
+          "debut": "00:00:00",
+          "fin": "00:00:17",
+          "passage": "Prises de vue de Virginia",
+          "action": "Éviter les prises latérales. Privilégier les prises frontales pour Virginia et Bernard.",
+          "note": "Monica : à prendre en compte pour toutes leurs vidéos, pas seulement ce plan."
+        },
+        {
+          "id": "VID-E10-02",
+          "type": "camera",
+          "debut": "00:02:56",
+          "fin": "00:03:17",
+          "passage": "« Deux choix coexistent… licence exclusive ou transfert de propriété »",
+          "action": "La caméra semble bouger. Vérifier s’il existe une prise plus stable.",
+          "note": "Monica : repère oral « 3.02 » — pas une demande de retournage."
+        },
+        {
+          "id": "VID-E10-03",
+          "type": "conclusion",
+          "debut": "00:06:01",
+          "fin": "00:06:08",
+          "passage": "« Ce n’est pas un choix qu’on fait seul, ni un choix qu’on fait par défaut »",
+          "action": "La fin est un peu coupée. Améliorer le raccord entre la dernière phrase et les crédits partenaires.",
+          "note": "Monica : la transition vers les crédits paraît trop brusque."
+        }
+      ]
+    },
+    "E11": {
+      "code": "E11",
+      "nb": 3,
+      "items": [
+        {
+          "id": "VID-E11-01",
+          "type": "habillage",
+          "debut": "00:00:05",
+          "fin": "00:00:16",
+          "passage": "Générique / crédits de Soizic Lefeuvre",
+          "action": "Mettre dans les crédits Université Paris-Saclay.",
+          "note": "Monica : « Mettre dans les crédits, Université Paris-Saclay. »"
+        },
+        {
+          "id": "VID-E11-02",
+          "type": "cadrage",
+          "debut": "00:00:05",
+          "fin": "00:00:16",
+          "passage": "Ouverture du discours",
+          "action": "Commencer dès le début avec la prise frontale, pas de côté.",
+          "note": "Monica : même consigne que pour Virginia et Bernard."
+        },
+        {
+          "id": "VID-E11-03",
+          "type": "habillage",
+          "debut": "00:05:05",
+          "fin": "00:05:20",
+          "passage": "Conclusion : cellule de valorisation, puis « le contrat fait la loi des parties »",
+          "action": "Faire apparaître successivement les deux messages de conclusion (voir incrustations 12 et 13).",
+          "note": "Monica : les deux phrases, juste avant les crédits."
+        }
+      ]
+    }
+  }
+}

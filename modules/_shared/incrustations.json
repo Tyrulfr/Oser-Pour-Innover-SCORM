@@ -873,534 +873,1398 @@
     },
     "E3": {
       "code": "E3",
-      "nb": 7,
+      "nb": 13,
       "items": [
         {
-          "debut": "00:00:10",
-          "fin": "00:00:16",
-          "type": "concept",
-          "ecran": "Poser le bon problème",
+          "id": "IN-E3-01",
+          "debut": "00:00:21",
+          "fin": "00:00:26",
+          "type": "motion",
+          "vue": "horloge",
+          "ecran": "55 minutes pour définir le problème. 5 minutes pour le résoudre.",
           "schema": "",
           "developpe": "",
-          "pourquoi": "Objectif E3 : identifier le problème avant de chercher la solution."
+          "pourquoi": "Calé sur la citation, pas sur le timecode de séance."
         },
         {
-          "debut": "00:01:06",
-          "fin": "00:01:09",
-          "type": "schema",
-          "ecran": "Identifier ≠ valider",
-          "schema": "Identifier ≠ valider",
+          "id": "IN-E3-02",
+          "debut": "00:00:26",
+          "fin": "00:00:34",
+          "type": "motion",
+          "vue": "cible",
+          "ecran": "Le bon problème avant la bonne solution",
+          "schema": "Le bon problème → La bonne solution",
           "developpe": "",
-          "pourquoi": "Un problème formulé n’est pas encore un problème confronté au terrain."
+          "pourquoi": "Accent visuel sur « bon problème »."
         },
         {
+          "id": "IN-E3-03",
+          "debut": "00:00:51",
+          "fin": "00:01:03",
+          "type": "motion",
+          "vue": "etapes",
+          "ecran": "Identifier → Formuler → Valider",
+          "schema": "Identifier → Formuler → Valider",
+          "icones": ["fa-magnifying-glass", "fa-pen", "fa-circle-check"],
+          "developpe": "",
+          "pourquoi": "Au rythme de l’énumération."
+        },
+        {
+          "id": "IN-E3-04",
           "debut": "00:01:15",
           "fin": "00:01:23",
-          "type": "concept",
-          "ecran": "Confrontation au terrain",
-          "schema": "",
+          "type": "motion",
+          "vue": "pivot",
+          "ecran": "Se confronter au réel → Ajuster → Pivoter",
+          "schema": "Se confronter au réel → Ajuster → Pivoter",
           "developpe": "",
-          "pourquoi": "Échanges avec les acteurs, pivot : posture de l’innovateur."
+          "pourquoi": "Le mot Pivoter apparaît à la fin."
         },
         {
-          "debut": "00:03:08",
-          "fin": "00:03:15",
-          "type": "concept",
-          "ecran": "Proposition de valeur",
+          "id": "IN-E3-05",
+          "debut": "00:01:40",
+          "fin": "00:01:48",
+          "type": "motion",
+          "vue": "dialogue",
+          "ecran": "Échanger avec les acteurs du terrain",
           "schema": "",
           "developpe": "",
-          "pourquoi": "Yann : formuler ce que la techno apporte au problème industriel (maintenance prédictive)."
+          "pourquoi": "Silhouettes et bulles, puis l’expression."
         },
         {
+          "id": "IN-E3-06",
+          "debut": "00:03:29",
+          "fin": "00:03:35",
+          "type": "motion",
+          "vue": "etapes",
+          "ecran": "Recherche → Bonne problématique → Valorisation",
+          "schema": "Recherche → Bonne problématique → Valorisation",
+          "icones": ["fa-flask", "fa-circle-question", "fa-seedling"],
+          "developpe": "",
+          "pourquoi": "Sur « poser la bonne question / formuler la bonne problématique »."
+        },
+        {
+          "id": "IN-E3-07",
+          "debut": "00:03:54",
+          "fin": "00:03:58",
+          "type": "motion",
+          "vue": "morph",
+          "ecran": "Faire évoluer la culture des laboratoires",
+          "schema": "Culture de recherche → Culture de valorisation",
+          "developpe": "",
+          "pourquoi": "À valider : possible reprise plutôt qu’une commande graphique."
+        },
+        {
+          "id": "IN-E3-08",
+          "debut": "00:03:58",
+          "fin": "00:04:06",
+          "type": "motion",
+          "vue": "frise",
+          "ecran": "Premiers travaux → Développement → Mise sur le marché",
+          "schema": "Premiers travaux → Développement → Mise sur le marché",
+          "icones": ["fa-lightbulb", "fa-gear", "fa-store"],
+          "developpe": "",
+          "pourquoi": "Frise à trois jalons, ligne qui progresse."
+        },
+        {
+          "id": "IN-E3-09",
+          "debut": "00:04:06",
+          "fin": "00:04:14",
+          "type": "motion",
+          "vue": "pivot",
+          "ecran": "Questionner → Comprendre → Pivoter",
+          "schema": "Questionner → Comprendre → Pivoter",
+          "developpe": "",
+          "pourquoi": "Parcours qui bifurque après l’analyse."
+        },
+        {
+          "id": "IN-E3-10",
+          "debut": "00:04:14",
+          "fin": "00:04:21",
+          "type": "motion",
+          "vue": "traverse",
+          "ecran": "Du laboratoire au terrain",
+          "schema": "Laboratoire → Terrain",
+          "developpe": "",
+          "pourquoi": "Silhouette du labo vers les acteurs du terrain."
+        },
+        {
+          "id": "IN-E3-11",
           "debut": "00:04:27",
           "fin": "00:04:47",
-          "type": "schema",
-          "ecran": "Tech-push | Market-pull",
-          "schema": "Tech-push | Market-pull",
+          "type": "motion",
+          "vue": "colonnes",
+          "ecran": "Techno Push vs Market Pull",
+          "schema": "",
           "developpe": "",
-          "image": "schemas/f2-push-pull.png",
-          "pourquoi": "Impasse du techno-push (trouver le marché après la techno) vs partir du besoin de marché — schéma de valorisation F2."
+          "pourquoi": "Deux colonnes, pas le schéma F2. ASR « Market pool » lu Market Pull."
         },
         {
+          "id": "IN-E3-12",
           "debut": "00:04:47",
           "fin": "00:04:57",
-          "type": "concept",
-          "ecran": "Adéquation problème-solution",
-          "schema": "",
-          "developpe": "Problem-solution fit, avant le product-market fit",
-          "pourquoi": "Avant de faire coller le produit au marché, coller la solution au problème."
+          "type": "motion",
+          "vue": "puzzle",
+          "ecran": "Problem–Solution Fit",
+          "schema": "Problème → Solution",
+          "developpe": "",
+          "pourquoi": "Deux pièces s’emboîtent, puis le titre."
         },
         {
-          "debut": "00:04:57",
-          "fin": "00:05:05",
-          "type": "concept",
-          "ecran": "Valorisateur",
+          "id": "IN-E3-13",
+          "debut": "00:05:05",
+          "fin": "00:05:12",
+          "type": "motion",
+          "vue": "conclusion",
+          "ecran": "Faites-vous accompagner",
           "schema": "",
           "developpe": "",
-          "pourquoi": "On n’est pas obligé de devenir entrepreneur : oser innover, se poser les bonnes questions, se faire accompagner."
+          "pourquoi": "À valider : possible reprise du discours."
         }
       ]
     },
     "E5": {
       "code": "E5",
-      "nb": 6,
+      "nb": 10,
       "items": [
         {
+          "id": "IN-E5-01",
           "debut": "00:00:28",
-          "fin": "00:00:31",
-          "type": "concept",
-          "ecran": "Dérisquer pas à pas",
+          "fin": "00:00:34",
+          "type": "motion",
+          "vue": "texte",
+          "ecran": "Dérisquer votre projet par étapes",
+          "icone": "fa-stairs",
           "schema": "",
           "developpe": "",
-          "pourquoi": "Objectif E5."
+          "pourquoi": "Insert texte explicite de Monica, calé sur « Dérisquer un projet, pas à pas »."
         },
         {
-          "debut": "00:00:34",
-          "fin": "00:00:41",
-          "type": "concept",
-          "ecran": "Jalon commercial",
+          "id": "IN-E5-02",
+          "debut": "00:00:41",
+          "fin": "00:00:49",
+          "type": "motion",
+          "vue": "texte",
+          "ecran": "La solution technique doit rejoindre les besoins du marché",
+          "icone": "fa-link",
           "schema": "",
           "developpe": "",
-          "pourquoi": "Critère de décision, pas seulement techno."
+          "pourquoi": "Insert texte explicite, calé sur « la solution technique la plus élégante ne vaut rien si personne n’en a besoin »."
         },
         {
+          "id": "IN-E5-03",
+          "debut": "00:01:03",
+          "fin": "00:01:09",
+          "type": "motion",
+          "vue": "texte",
+          "ecran": "Identifiez les meilleures informations possibles le plus en amont",
+          "icone": "fa-magnifying-glass",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Commentaire Monica, calé sur l’information à temps avant de miser sur la mauvaise cible."
+        },
+        {
+          "id": "IN-E5-04",
+          "debut": "00:01:16",
+          "fin": "00:01:26",
+          "type": "motion",
+          "vue": "deux-parties",
+          "ecran": "Les rencontres peuvent remettre en cause la cible initiale ou créer de nouvelles opportunités",
+          "parties": ["Remettre en cause la cible initiale", "Créer de nouvelles opportunités"],
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Insert texte en deux parties, calé sur les rencontres qui remettent en cause la cible."
+        },
+        {
+          "id": "IN-E5-05",
           "debut": "00:01:26",
-          "fin": "00:01:30",
-          "type": "concept",
-          "ecran": "Pivot, pas échec",
+          "fin": "00:01:33",
+          "type": "motion",
+          "vue": "deux-messages",
+          "ecran": "Le pivot n’est pas un échec · Pivoter rapidement",
+          "messages": ["Le pivot n’est pas un échec", "Il faut savoir pivoter rapidement"],
+          "icone": "fa-code-branch",
           "schema": "",
           "developpe": "",
-          "pourquoi": "Lecture pédagogique du terrain T3."
+          "pourquoi": "Deux messages-clés de Monica, calés sur « un pivot, pas un échec »."
         },
         {
-          "debut": "00:02:17",
-          "fin": "00:02:23",
-          "type": "schema",
-          "ecran": "Techno ⇄ Marché",
-          "schema": "Techno ⇄ Marché",
+          "id": "IN-E5-06",
+          "debut": "00:01:52",
+          "fin": "00:02:02",
+          "type": "motion",
+          "vue": "texte",
+          "ecran": "Aller sur le terrain pour comprendre les besoins est un moyen de dérisquer",
+          "icone": "fa-location-dot",
+          "schema": "",
           "developpe": "",
-          "pourquoi": "Jalons technique et commercial : extrait de l’approche hybride TRL/DRL. Le sigle DRL n’est pas dit, on ne l’affiche pas."
+          "pourquoi": "Calé sur « le terrain vous apprenne quelque chose que le laboratoire ne pouvait pas vous dire »."
         },
         {
+          "id": "IN-E5-07",
+          "debut": "00:02:17",
+          "fin": "00:02:25",
+          "type": "motion",
+          "vue": "boucle",
+          "ecran": "Solutions commerciales ⇄ Solutions techniques",
+          "schema": "Solutions commerciales ⇄ Solutions techniques",
+          "caption": "Interactions permanentes",
+          "developpe": "",
+          "pourquoi": "Schéma demandé : flèches dans les deux sens, éventuellement circulaire."
+        },
+        {
+          "id": "IN-E5-08",
           "debut": "00:02:30",
           "fin": "00:02:42",
-          "type": "schema",
-          "ecran": "Prématuration / maturation",
-          "schema": "Protection → Maturation → Transfert",
+          "type": "motion",
+          "vue": "frise",
+          "ecran": "Invention → Prématuration → Maturation",
+          "schema": "Invention / expérimentation → Prématuration → Maturation",
+          "icones": ["fa-flask", "fa-seedling", "fa-industry"],
           "developpe": "",
-          "pourquoi": "Situer le projet sur la chaîne de valorisation F2.",
-          "image": "schemas/f2-chaine-valo.png"
+          "pourquoi": "Trois étapes de valorisation demandées par Monica, calées sur « prématuration / maturation »."
         },
         {
-          "debut": "00:02:59",
+          "id": "IN-E5-09",
+          "debut": "00:02:42",
           "fin": "00:03:05",
-          "type": "acronyme",
-          "ecran": "SATT",
+          "type": "motion",
+          "vue": "tableaux",
+          "ecran": "Risques et personnes pour dérisquer le jalon",
+          "blocs": [
+            {
+              "titre": "Risques",
+              "icone": "fa-triangle-exclamation",
+              "lignes": ["Le risque le plus coûteux dans 6 mois", "Le jalon à viser en premier"]
+            },
+            {
+              "titre": "Qui contacter",
+              "icone": "fa-address-book",
+              "lignes": ["Chargé de valorisation", "SATT", "Futurs utilisateurs", "Industriel"]
+            }
+          ],
           "schema": "",
-          "developpe": "Société d’accélération du transfert de technologies",
-          "pourquoi": "Sujet du grain : qui aller voir pour le jalon."
+          "developpe": "",
+          "pourquoi": "Deux tableaux demandés, calés sur le risque le plus cher puis la liste des interlocuteurs."
+        },
+        {
+          "id": "IN-E5-10",
+          "debut": "00:03:13",
+          "fin": "00:03:20",
+          "type": "motion",
+          "vue": "questions",
+          "ecran": "Deux questions systématiques",
+          "questions": ["Quel est le jalon décisif ?", "Quel signal concret conduirait à en changer ?"],
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Schéma des deux questions, calé sur la phrase de Virginia."
         }
       ]
     },
     "E6": {
       "code": "E6",
-      "nb": 7,
+      "nb": 14,
       "items": [
         {
-          "debut": "00:00:21",
-          "fin": "00:00:27",
-          "type": "concept",
-          "ecran": "Divulgation",
+          "id": "IN-E6-01",
+          "debut": "00:00:38",
+          "fin": "00:00:42",
+          "type": "motion",
+          "vue": "texte",
+          "ecran": "Et s’il y avait un potentiel de valorisation dans ces résultats de recherche ?",
+          "icone": "fa-circle-question",
           "schema": "",
           "developpe": "",
-          "pourquoi": "Publier ou communiquer trop tôt peut fermer la protection (nouveauté)."
+          "pourquoi": "Question-clé à l’écran, calée sur la question de Stéphanie."
         },
         {
+          "id": "IN-E6-02",
           "debut": "00:00:42",
           "fin": "00:00:51",
-          "type": "concept",
-          "ecran": "Communication publique",
+          "type": "motion",
+          "vue": "texte",
+          "ecran": "Avoir le bon réflexe de protection de l’innovation",
+          "icone": "fa-shield-halved",
           "schema": "",
           "developpe": "",
-          "pourquoi": "Divulgation : une communication publique peut fermer le brevet (nouveauté)."
+          "pourquoi": "Calé sur « une communication publique peut fermer certaines portes »."
         },
         {
+          "id": "IN-E6-03",
           "debut": "00:00:51",
           "fin": "00:00:56",
-          "type": "acronyme",
-          "ecran": "DI",
+          "type": "motion",
+          "vue": "texte",
+          "ecran": "La déclaration d’invention",
+          "icone": "fa-file-signature",
           "schema": "",
-          "developpe": "Déclaration d’invention",
-          "pourquoi": "Sujet de la vidéo ; première définition claire."
+          "developpe": "",
+          "pourquoi": "Mot-clé / titre demandé par Monica."
         },
         {
-          "debut": "00:02:25",
+          "id": "IN-E6-04",
+          "debut": "00:01:11",
+          "fin": "00:01:16",
+          "type": "motion",
+          "vue": "boucle",
+          "ecran": "Brevet ⇄ Développement scientifique",
+          "schema": "Brevet ⇄ Développement scientifique",
+          "caption": "En parallèle",
+          "developpe": "",
+          "pourquoi": "Phrase-clé de Monica, calée sur Jean-Jacques."
+        },
+        {
+          "id": "IN-E6-05",
+          "debut": "00:01:29",
+          "fin": "00:01:38",
+          "type": "motion",
+          "vue": "texte",
+          "ecran": "Une démarche de valorisation ne met pas la recherche en pause",
+          "icone": "fa-play",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Formulation Monica ; Stéphanie dit « démarche de protection »."
+        },
+        {
+          "id": "IN-E6-06",
+          "debut": "00:01:52",
+          "fin": "00:02:00",
+          "type": "motion",
+          "vue": "texte",
+          "ecran": "Il n’est pas nécessaire d’avoir une idée révolutionnaire pour s’engager",
+          "icone": "fa-lightbulb",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Calé sur le témoignage de Muriel."
+        },
+        {
+          "id": "IN-E6-07",
+          "debut": "00:02:17",
           "fin": "00:02:30",
-          "type": "schema",
-          "ecran": "Prématuration → Maturation",
-          "schema": "Protection → Maturation → Transfert",
+          "type": "motion",
+          "vue": "frise",
+          "ecran": "Invention → Prématuration → Maturation",
+          "schema": "Invention / résultat → Prématuration → Maturation",
+          "icones": ["fa-flask", "fa-seedling", "fa-industry"],
           "developpe": "",
-          "pourquoi": "Chaîne de valorisation du fascicule 2 : la DI ouvre la protection, puis la maturation.",
-          "image": "schemas/f2-chaine-valo.png"
+          "pourquoi": "Schéma 1 : reprendre E5 et le fascicule, calé sur prématuration puis maturation."
         },
         {
-          "debut": "00:03:24",
-          "fin": "00:03:28",
-          "type": "concept",
-          "ecran": "Déclarer l’invention",
+          "id": "IN-E6-08",
+          "debut": "00:03:00",
+          "fin": "00:03:08",
+          "type": "motion",
+          "vue": "texte",
+          "ecran": "Il n’est pas nécessaire d’avoir toutes les réponses pour commencer",
+          "icone": "fa-person-walking",
           "schema": "",
           "developpe": "",
-          "pourquoi": "La DI signale un résultat aux équipes de valorisation ; ce n’est pas « lever la main »."
+          "pourquoi": "Calé sur la phrase de Stéphanie après les hésitations."
         },
         {
-          "debut": "00:04:12",
-          "fin": "00:04:15",
-          "type": "concept",
-          "ecran": "La DI n’est pas un brevet",
+          "id": "IN-E6-09",
+          "debut": "00:03:15",
+          "fin": "00:03:43",
+          "type": "motion",
+          "vue": "deux-messages",
+          "ecran": "Identifier un résultat prometteur suffisamment tôt · Les équipes de valorisation prennent le relais",
+          "messages": ["Identifier un résultat prometteur suffisamment tôt", "Les équipes de valorisation prennent le relais"],
+          "icone": "fa-handshake",
           "schema": "",
           "developpe": "",
-          "pourquoi": "C’est le point de départ d’un échange avec la valorisation."
+          "pourquoi": "Deux messages groupés par Monica, calés sur « suffisamment tôt » puis « prennent le relais »."
         },
         {
-          "debut": "00:04:51",
-          "fin": "00:04:56",
-          "type": "concept",
-          "ecran": "Avant de divulguer",
+          "id": "IN-E6-10",
+          "debut": "00:03:58",
+          "fin": "00:04:09",
+          "type": "motion",
+          "vue": "frise",
+          "titre": "Avant toute communication publique",
+          "vertical": true,
+          "ecran": "Évaluer → Analyser → Réfléchir",
+          "schema": "Évaluer le potentiel du résultat → Analyser l’existant → Réfléchir aux meilleures options",
+          "icones": ["fa-chart-line", "fa-magnifying-glass", "fa-lightbulb"],
+          "developpe": "",
+          "pourquoi": "Schéma 2 : intègre les extraits « évaluer » et « analyser », pas des incrustations séparées."
+        },
+        {
+          "id": "IN-E6-11",
+          "debut": "00:04:37",
+          "fin": "00:04:45",
+          "type": "motion",
+          "vue": "grille",
+          "ecran": "Médical · Industriel · Environnemental · Sociétal",
+          "cellules": [
+            { "texte": "Médical", "icone": "fa-heart-pulse" },
+            { "texte": "Industriel", "icone": "fa-industry" },
+            { "texte": "Environnemental", "icone": "fa-leaf" },
+            { "texte": "Sociétal", "icone": "fa-users" }
+          ],
           "schema": "",
           "developpe": "",
-          "pourquoi": "Identifier un résultat prometteur et en parler aux équipes de valorisation."
+          "pourquoi": "Schéma 3 : les quatre axes cités par Stéphanie."
+        },
+        {
+          "id": "IN-E6-12",
+          "debut": "00:05:10",
+          "fin": "00:05:16",
+          "type": "motion",
+          "vue": "texte",
+          "ecran": "Les informations transmises aux équipes de valorisation sont confidentielles",
+          "icone": "fa-lock",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Message-clé de Monica, calé sur « traitées de manière confidentielle »."
+        },
+        {
+          "id": "IN-E6-13",
+          "debut": "00:05:25",
+          "fin": "00:05:34",
+          "type": "motion",
+          "vue": "texte",
+          "ecran": "Parlez avec votre cellule de valorisation avant de divulguer",
+          "icone": "fa-comments",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Message de prévention, avant le schéma des trois précautions."
+        },
+        {
+          "id": "IN-E6-14",
+          "debut": "00:06:07",
+          "fin": "00:06:13",
+          "type": "motion",
+          "vue": "etapes",
+          "ecran": "Avant de publier · Avant de divulguer · Avant d’en parler",
+          "schema": "Avant de publier → Avant de divulguer → Avant d’en parler",
+          "icones": ["fa-newspaper", "fa-bullhorn", "fa-comments"],
+          "developpe": "",
+          "pourquoi": "Schéma 4 : les trois précautions demandées par Monica."
         }
       ]
     },
     "E7": {
       "code": "E7",
-      "nb": 5,
+      "nb": 11,
       "items": [
         {
-          "debut": "00:00:14",
-          "fin": "00:00:21",
-          "type": "concept",
-          "ecran": "Chargé de valorisation",
+          "id": "IN-E7-01",
+          "debut": "00:00:28",
+          "fin": "00:00:35",
+          "type": "motion",
+          "vue": "successifs",
+          "ecran": "Une nouvelle méthode · Un procédé original · Une technologie qui répond à un problème concret",
+          "cellules": [
+            { "texte": "Nouvelle méthode", "icone": "fa-lightbulb" },
+            { "texte": "Procédé original", "icone": "fa-flask" },
+            { "texte": "Technologie répondant à un problème", "icone": "fa-gear" }
+          ],
           "schema": "",
           "developpe": "",
-          "pourquoi": "Objectif E7 : à qui parler."
+          "pourquoi": "Trois concepts cités par Stéphanie, demandés en texte à l’écran par Monica. Mise en forme en cartouches, pas un second schéma."
         },
         {
-          "debut": "00:03:09",
-          "fin": "00:03:13",
-          "type": "concept",
-          "ecran": "Académique ⇄ Socio-éco",
+          "id": "IN-E7-02",
+          "debut": "00:01:01",
+          "fin": "00:01:05",
+          "type": "motion",
+          "vue": "texte",
+          "ecran": "Avec quoi faut-il venir voir son chargé de valorisation ?",
+          "icone": "fa-circle-question",
           "schema": "",
           "developpe": "",
-          "pourquoi": "Le chargé de valorisation fait l’interface entre labo et partenaires."
+          "pourquoi": "Question-clé à l’écran, reprise du titre oral de Stéphanie."
         },
         {
-          "debut": "00:03:30",
-          "fin": "00:03:32",
-          "type": "concept",
-          "ecran": "Accords de partenariat",
+          "id": "IN-E7-03",
+          "debut": "00:01:27",
+          "fin": "00:01:35",
+          "type": "motion",
+          "vue": "texte",
+          "ecran": "Le chargé de valorisation évalue le potentiel",
+          "icone": "fa-chart-line",
           "schema": "",
           "developpe": "",
-          "pourquoi": "Formaliser la collaboration : cadre contractuel, pas seulement la mise en relation."
+          "pourquoi": "Message-clé de Monica, calé sur « évaluer le potentiel du projet »."
         },
         {
+          "id": "IN-E7-04",
+          "debut": "00:01:36",
+          "fin": "00:01:41",
+          "type": "motion",
+          "vue": "texte",
+          "ecran": "Identifier ensemble les questions clés",
+          "icone": "fa-comments",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Texte-clé de Monica, calé sur la phrase de Stéphanie."
+        },
+        {
+          "id": "IN-E7-05",
+          "debut": "00:02:04",
+          "fin": "00:02:16",
+          "type": "motion",
+          "vue": "successifs",
+          "ecran": "Structurer son projet · Identifier les financements adaptés · Mobiliser les bons partenaires",
+          "cellules": [
+            { "texte": "Structurer son projet", "icone": "fa-diagram-project" },
+            { "texte": "Identifier les financements adaptés", "icone": "fa-coins" },
+            { "texte": "Mobiliser les bons partenaires", "icone": "fa-handshake" }
+          ],
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Monica demande les mots exacts de Stéphanie, pas « mobiliser chaque étape »."
+        },
+        {
+          "id": "IN-E7-06",
+          "debut": "00:02:20",
+          "fin": "00:02:30",
+          "type": "motion",
+          "vue": "texte",
+          "ecran": "Trouvez les moyens de valoriser votre projet avec votre chargé de valorisation",
+          "icone": "fa-comments-dollar",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Message-clé de Monica, calé sur le financement de la suite du projet."
+        },
+        {
+          "id": "IN-E7-07",
+          "debut": "00:03:21",
+          "fin": "00:03:27",
+          "type": "motion",
+          "vue": "texte",
+          "ecran": "Faciliter le dialogue entre le monde académique et le monde socio-économique",
+          "icone": "fa-comments",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Phrase-clé de Monica, calée sur la phrase de Stéphanie."
+        },
+        {
+          "id": "IN-E7-08",
+          "debut": "00:03:35",
+          "fin": "00:03:43",
+          "type": "motion",
+          "vue": "texte",
+          "ecran": "Mise en place d’accords sécurisés",
+          "icone": "fa-file-signature",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Texte-clé de Monica, calé sur « mettre en place des accords… cadre sécurisé »."
+        },
+        {
+          "id": "IN-E7-09",
           "debut": "00:03:52",
           "fin": "00:03:58",
-          "type": "concept",
-          "ecran": "Résultat prometteur",
+          "type": "motion",
+          "vue": "texte",
+          "ecran": "N’attendez pas d’avoir toutes les réponses pour en parler avec votre chargé de valorisation",
+          "icone": "fa-person-walking",
           "schema": "",
           "developpe": "",
-          "pourquoi": "Contacter le chargé de valorisation sans attendre d’avoir toutes les réponses."
+          "pourquoi": "Message-clé de Monica, calé sur « n’attendez pas d’avoir toutes les réponses avant d’en parler »."
         },
         {
+          "id": "IN-E7-10",
           "debut": "00:04:16",
-          "fin": "00:04:27",
-          "type": "schema",
-          "ecran": "Accompagnement",
-          "schema": "Conseils · Contacts · Financements · Cadre",
+          "fin": "00:04:22",
+          "type": "motion",
+          "vue": "texte",
+          "ecran": "Aider les chercheurs à transformer une opportunité en projet concret",
+          "icone": "fa-seedling",
+          "schema": "",
           "developpe": "",
-          "pourquoi": "Ce que le chargé de valorisation apporte pour transformer le résultat en projet."
+          "pourquoi": "Phrase-clé de Monica, juste avant l’énumération des quatre leviers."
+        },
+        {
+          "id": "IN-E7-11",
+          "debut": "00:04:22",
+          "fin": "00:04:35",
+          "type": "motion",
+          "vue": "hub",
+          "titre": "L’accompagnement du chargé de valorisation",
+          "centre": "Chargé de valorisation",
+          "ecran": "Conseils · Contacts · Financements · Cadrage contractuel",
+          "satellites": [
+            { "texte": "Conseils", "icone": "fa-comments" },
+            { "texte": "Contacts", "icone": "fa-address-book" },
+            { "texte": "Financements", "icone": "fa-coins" },
+            { "texte": "Cadrage contractuel", "icone": "fa-file-contract" }
+          ],
+          "schema": "Conseils · Contacts · Financements · Cadrage contractuel",
+          "developpe": "",
+          "pourquoi": "Schéma demandé par Monica sur les quatre leviers. Visuel récapitulatif de fin de séquence."
         }
       ]
     },
     "E8": {
       "code": "E8",
-      "nb": 7,
+      "nb": 13,
       "items": [
         {
-          "debut": "00:00:07",
-          "fin": "00:00:13",
-          "type": "acronyme",
-          "ecran": "INPI",
+          "id": "IN-E8-01",
+          "debut": "00:00:22",
+          "fin": "00:00:32",
+          "type": "motion",
+          "vue": "texte",
+          "ecran": "Élaborer une stratégie de propriété intellectuelle",
+          "icone": "fa-chess",
           "schema": "",
-          "developpe": "Institut national de la propriété industrielle",
-          "pourquoi": "Première occurrence ; l’institution du grain."
-        },
-        {
-          "debut": "00:01:12",
-          "fin": "00:01:18",
-          "type": "schema",
-          "ecran": "Brevet ou secret",
-          "schema": "Brevet | Secret",
           "developpe": "",
-          "pourquoi": "Objectif E8 : extrait du tableau des types de protection F1.",
-          "image": "schemas/f1-pi-branches.png"
+          "pourquoi": "Message-clé de Monica, calé sur « élaborer une stratégie PI sur mesure »."
         },
         {
+          "id": "IN-E8-02",
+          "debut": "00:00:52",
+          "fin": "00:01:07",
+          "type": "motion",
+          "vue": "grille",
+          "titre": "Protection des innovations techniques",
+          "ecran": "Les différentes modalités de protection de la propriété intellectuelle",
+          "cellules": [
+            { "texte": "Brevet", "icone": "fa-file-lines" },
+            { "texte": "Secret", "icone": "fa-lock" }
+          ],
+          "caption": "Protections parfois complémentaires",
+          "schema": "Brevet · Secret",
+          "developpe": "",
+          "pourquoi": "Schéma 1 demandé par Monica : reprendre brevet et secret du fascicule. Cartouches en attendant le visuel exact."
+        },
+        {
+          "id": "IN-E8-03",
+          "debut": "00:01:12",
+          "fin": "00:01:23",
+          "type": "motion",
+          "vue": "tableaux",
+          "titre": "Brevet ou secret ?",
+          "ecran": "Brevet ou secret ?",
+          "blocs": [
+            {
+              "titre": "Brevet",
+              "icone": "fa-file-lines",
+              "lignes": ["Protection par titre de propriété industrielle", "Choix selon la technologie et la stratégie"]
+            },
+            {
+              "titre": "Secret",
+              "icone": "fa-lock",
+              "lignes": ["Protection par maintien du secret", "Choix selon la technologie et la stratégie"]
+            }
+          ],
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Schéma 2 : tableau comparatif demandé, calé sur « choisir entre brevet et secret ». Maquette ; le tableau exact est à reprendre du fascicule."
+        },
+        {
+          "id": "IN-E8-04",
           "debut": "00:01:39",
           "fin": "00:01:45",
-          "type": "concept",
-          "ecran": "Publier tue la nouveauté",
+          "type": "motion",
+          "vue": "texte",
+          "ecran": "La publication détruit la nouveauté de votre innovation",
+          "icone": "fa-triangle-exclamation",
           "schema": "",
           "developpe": "",
-          "pourquoi": "Lien avec T5 / E6."
+          "pourquoi": "Message d’alerte de Monica, calé sur la phrase de Stanislas."
         },
         {
-          "debut": "00:01:51",
-          "fin": "00:01:54",
-          "type": "concept",
-          "ecran": "Savoir-faire",
+          "id": "IN-E8-05",
+          "debut": "00:01:54",
+          "fin": "00:02:00",
+          "type": "motion",
+          "vue": "texte",
+          "ecran": "Le savoir-faire doit être documenté et daté",
+          "icone": "fa-book",
           "schema": "",
           "developpe": "",
-          "pourquoi": "Nommer le secret documenté."
+          "pourquoi": "Texte-clé de Monica, calé sur la phrase de Stanislas."
         },
         {
+          "id": "IN-E8-06",
+          "debut": "00:02:00",
+          "fin": "00:02:08",
+          "type": "motion",
+          "vue": "texte",
+          "ecran": "Enveloppe Soleau / e-Soleau",
+          "icone": "fa-envelope",
+          "caption": "Preuve d’existence d’une création ou d’un savoir-faire à une date donnée",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Mot-clé demandé par Monica. Légende éditoriale à valider (INPI) ; Stanislas dit « e-solo »."
+        },
+        {
+          "id": "IN-E8-07",
+          "debut": "00:02:08",
+          "fin": "00:02:16",
+          "type": "motion",
+          "vue": "texte",
+          "ecran": "Pour les logiciels, réaliser des dépôts auprès de l’APP",
+          "icone": "fa-code",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Texte informatif de Monica, calé sur la fin de l’énumération de Stanislas."
+        },
+        {
+          "id": "IN-E8-08",
+          "debut": "00:02:20",
+          "fin": "00:02:28",
+          "type": "motion",
+          "vue": "texte",
+          "ecran": "Déclarer votre invention à votre employeur",
+          "icone": "fa-building",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Message-clé de Monica, calé sur l’obligation du salarié."
+        },
+        {
+          "id": "IN-E8-09",
           "debut": "00:02:42",
           "fin": "00:02:51",
-          "type": "acronyme",
-          "ecran": "NDA",
-          "schema": "",
-          "developpe": "Accord de confidentialité",
-          "pourquoi": "Mesure contractuelle du secret."
-        },
-        {
-          "debut": "00:04:01",
-          "fin": "00:04:08",
-          "type": "concept",
-          "ecran": "Rétro-ingénierie ?",
+          "type": "motion",
+          "vue": "texte",
+          "ecran": "Accords de confidentialité (NDA)",
+          "icone": "fa-file-signature",
+          "caption": "Non Disclosure Agreement",
           "schema": "",
           "developpe": "",
-          "pourquoi": "Critère de choix brevet vs secret."
+          "pourquoi": "Mot-clé + définition demandés par Monica."
         },
         {
-          "debut": "00:04:55",
-          "fin": "00:04:59",
-          "type": "concept",
-          "ecran": "Lever des fonds",
+          "id": "IN-E8-10",
+          "debut": "00:02:57",
+          "fin": "00:03:05",
+          "type": "motion",
+          "vue": "texte",
+          "ecran": "Prendre en amont des mesures de protection raisonnables",
+          "icone": "fa-shield-halved",
           "schema": "",
           "developpe": "",
-          "pourquoi": "Le brevet rassure l’investisseur — pont vers E9."
+          "pourquoi": "Message-clé de Monica, calé sur le secret des affaires."
+        },
+        {
+          "id": "IN-E8-11",
+          "debut": "00:03:11",
+          "fin": "00:03:19",
+          "type": "motion",
+          "vue": "texte",
+          "ecran": "Qu’est-ce qui est brevetable ?",
+          "icone": "fa-circle-question",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Question-clé de Monica, calée sur « Qu’est-ce qui est brevetable dans mon savoir-faire ? »."
+        },
+        {
+          "id": "IN-E8-12",
+          "debut": "00:03:53",
+          "fin": "00:04:01",
+          "type": "motion",
+          "vue": "texte",
+          "ecran": "Choisir entre brevet et secret",
+          "icone": "fa-code-branch",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Texte-clé de Monica, calé sur « Il faut donc choisir »."
+        },
+        {
+          "id": "IN-E8-13",
+          "debut": "00:04:40",
+          "fin": "00:04:51",
+          "type": "motion",
+          "vue": "texte",
+          "ecran": "Les investisseurs sont rassurés par le brevet",
+          "icone": "fa-handshake",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Message-clé de Monica, pont vers E9."
         }
       ]
     },
     "E9": {
       "code": "E9",
-      "nb": 8,
+      "nb": 17,
       "items": [
         {
-          "debut": "00:00:19",
-          "fin": "00:00:29",
-          "type": "concept",
-          "ecran": "Levier stratégique",
-          "schema": "",
-          "developpe": "",
-          "pourquoi": "Objectif E9 : la PI n’est pas un tampon."
-        },
-        {
+          "id": "IN-E9-01",
           "debut": "00:00:29",
           "fin": "00:00:35",
-          "type": "concept",
-          "ecran": "Actifs immatériels",
+          "type": "motion",
+          "vue": "texte",
+          "ecran": "Les actifs immatériels sont votre richesse",
+          "icone": "fa-gem",
           "schema": "",
           "developpe": "",
-          "pourquoi": "Ce que l’on protège vraiment."
+          "pourquoi": "Message-clé de Monica, calé sur « souvent votre seule richesse au départ »."
         },
         {
-          "debut": "00:00:52",
-          "fin": "00:00:55",
-          "type": "concept",
-          "ecran": "Explorer l’existant",
+          "id": "IN-E9-02",
+          "debut": "00:00:55",
+          "fin": "00:01:06",
+          "type": "motion",
+          "vue": "texte",
+          "ecran": "Veille technologique des brevets",
+          "icone": "fa-binoculars",
           "schema": "",
           "developpe": "",
-          "pourquoi": "Avant la R&D."
+          "pourquoi": "Formulation simplifiée demandée par Monica."
         },
         {
-          "debut": "00:02:26",
-          "fin": "00:02:29",
-          "type": "concept",
-          "ecran": "Déclaration d’invention",
+          "id": "IN-E9-03",
+          "debut": "00:01:15",
+          "fin": "00:01:19",
+          "type": "motion",
+          "vue": "texte",
+          "ecran": "Documentez et datez chaque étape de vos travaux",
+          "icone": "fa-book",
           "schema": "",
           "developpe": "",
-          "pourquoi": "Dans un organisme public, l’invention appartient à l’employeur."
+          "pourquoi": "Message-clé de Monica, calé sur la phrase de Stanislas."
         },
         {
+          "id": "IN-E9-04",
+          "debut": "00:01:23",
+          "fin": "00:01:37",
+          "type": "motion",
+          "vue": "texte",
+          "ecran": "Liberté d’exploitation (FTO)",
+          "icone": "fa-road",
+          "caption": "Freedom to Operate",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Mot-clé + définition demandés par Monica."
+        },
+        {
+          "id": "IN-E9-05",
+          "debut": "00:01:37",
+          "fin": "00:01:44",
+          "type": "motion",
+          "vue": "texte",
+          "ecran": "Identifier si votre recherche dépend d’un brevet tiers",
+          "icone": "fa-magnifying-glass",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Texte-clé de Monica, calé sur l’étude FTO."
+        },
+        {
+          "id": "IN-E9-06",
+          "debut": "00:01:53",
+          "fin": "00:02:02",
+          "type": "motion",
+          "vue": "texte",
+          "ecran": "Recherche d’antériorité",
+          "icone": "fa-file-magnifying-glass",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Mot-clé de Monica, juste avant le schéma des trois démarches."
+        },
+        {
+          "id": "IN-E9-07",
+          "debut": "00:02:05",
+          "fin": "00:02:16",
+          "type": "motion",
+          "vue": "frise",
+          "vertical": true,
+          "titre": "Trois démarches pour valoriser une invention",
+          "ecran": "Recherche d’antériorité → Étude de marché → Demande de brevet",
+          "schema": "Recherche d’antériorité → Étude de marché → Demande de brevet",
+          "icones": ["fa-magnifying-glass", "fa-chart-line", "fa-file-lines"],
+          "caption": "Peuvent être menées en parallèle",
+          "developpe": "",
+          "pourquoi": "Schéma 1 : premièrement / deuxièmement / troisièmement cités par Stanislas, pas une chronologie stricte."
+        },
+        {
+          "id": "IN-E9-08",
+          "debut": "00:02:18",
+          "fin": "00:02:26",
+          "type": "motion",
+          "vue": "texte",
+          "ecran": "L’invention appartient à votre employeur dans le contexte académique",
+          "icone": "fa-building",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Formulation Monica à valider juridiquement."
+        },
+        {
+          "id": "IN-E9-09",
+          "debut": "00:02:33",
+          "fin": "00:02:45",
+          "type": "motion",
+          "vue": "texte",
+          "ecran": "Protéger votre technologie pour bénéficier d’un monopole temporaire",
+          "icone": "fa-shield-halved",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Phrase-clé de Monica, calée sur le monopole temporaire."
+        },
+        {
+          "id": "IN-E9-10",
+          "debut": "00:02:54",
+          "fin": "00:03:03",
+          "type": "motion",
+          "vue": "texte",
+          "ecran": "Protection du droit d’auteur et des logiciels",
+          "icone": "fa-copyright",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Texte-clé de Monica, calé sur le code source."
+        },
+        {
+          "id": "IN-E9-11",
+          "debut": "00:03:03",
+          "fin": "00:03:26",
+          "type": "motion",
+          "vue": "grille",
+          "titre": "Comment protéger votre innovation ?",
+          "ecran": "Brevet · Secret des affaires · Droit d’auteur · Dessins et modèles · Marques",
+          "cellules": [
+            { "texte": "Brevet", "icone": "fa-file-lines", "detail": "Invention technique" },
+            { "texte": "Secret des affaires", "icone": "fa-lock", "detail": "Savoir-faire confidentiel" },
+            { "texte": "Droit d’auteur", "icone": "fa-copyright", "detail": "Logiciels, code source" },
+            { "texte": "Dessins et modèles", "icone": "fa-palette", "detail": "Créations esthétiques" },
+            { "texte": "Marques", "icone": "fa-trademark", "detail": "Signes distinctifs" }
+          ],
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Schéma 2 : commentaires 06:38 / 07:18 / 07:40 regroupés. Mêmes pictos brevet/secret que E8."
+        },
+        {
+          "id": "IN-E9-12",
+          "debut": "00:03:29",
+          "fin": "00:03:42",
+          "type": "motion",
+          "vue": "texte",
+          "ecran": "Prendre des licences d’exploitation de brevets existants",
+          "icone": "fa-file-contract",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Texte-clé de Monica, calé sur les licences d’organismes publics / spin-off."
+        },
+        {
+          "id": "IN-E9-13",
           "debut": "00:03:57",
           "fin": "00:04:04",
-          "type": "concept",
-          "ecran": "Barrière à l’entrée",
+          "type": "motion",
+          "vue": "texte",
+          "ecran": "10 fois plus de chances d’obtenir un financement",
+          "icone": "fa-chart-line",
           "schema": "",
           "developpe": "",
-          "pourquoi": "Effet investisseur des brevets / marques."
+          "pourquoi": "Chiffre-clé de Monica, calé sur l’étude OEB / EUIPO."
         },
         {
-          "debut": "00:04:21",
-          "fin": "00:04:25",
-          "type": "concept",
-          "ecran": "Audit PI",
+          "id": "IN-E9-14",
+          "debut": "00:04:04",
+          "fin": "00:04:17",
+          "type": "motion",
+          "vue": "texte",
+          "ecran": "Levier de négociation lors des levées de fonds et financements",
+          "icone": "fa-handshake",
           "schema": "",
           "developpe": "",
-          "pourquoi": "Ce que regardera une levée de fonds."
+          "pourquoi": "Message-clé de Monica, calé sur la phrase de Stanislas."
         },
         {
+          "id": "IN-E9-15",
+          "debut": "00:04:27",
+          "fin": "00:04:37",
+          "type": "motion",
+          "vue": "texte",
+          "ecran": "Concéder des licences de votre propriété intellectuelle",
+          "icone": "fa-share-nodes",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Texte-clé de Monica, calé sur les marchés non exploités directement."
+        },
+        {
+          "id": "IN-E9-16",
+          "debut": "00:04:37",
+          "fin": "00:04:49",
+          "type": "motion",
+          "vue": "grille",
+          "titre": "Licence d’exploitation",
+          "ecran": "Avec droit de sous-licencier · Sans droit de sous-licencier",
+          "cellules": [
+            { "texte": "Avec droit de sous-licencier", "icone": "fa-circle-check" },
+            { "texte": "Sans droit de sous-licencier", "icone": "fa-circle" }
+          ],
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Schéma 3 : Monica dit « sous-traitance », Stanislas dit « sous-licencier ». On garde sous-licence."
+        },
+        {
+          "id": "IN-E9-17",
           "debut": "00:05:02",
           "fin": "00:05:15",
-          "type": "schema",
-          "ecran": "Pilier, pas option",
-          "schema": "Protection → Maturation → Transfert",
+          "type": "motion",
+          "vue": "successifs",
+          "ecran": "Protéger vos innovations · Sécuriser vos actifs immatériels · Attirer des investisseurs",
+          "cellules": [
+            { "texte": "Protéger vos innovations", "icone": "fa-shield-halved" },
+            { "texte": "Sécuriser vos actifs immatériels", "icone": "fa-lock" },
+            { "texte": "Attirer des investisseurs", "icone": "fa-handshake" }
+          ],
+          "schema": "",
           "developpe": "",
-          "pourquoi": "Synthèse E9 : même colonne que le schéma de valorisation F2.",
-          "image": "schemas/f2-chaine-valo.png"
-        },
-        {
-          "debut": "00:05:26",
-          "fin": "00:05:34",
-          "type": "schema",
-          "ecran": "Outils de PI",
-          "schema": "Brevet · Marque · Secret",
-          "developpe": "",
-          "pourquoi": "Brevets, marques, secrets, dessins : extrait du tableau F1, pas les durées/territoires.",
-          "image": "schemas/f1-pi-branches.png"
+          "pourquoi": "Schéma 4 : les trois enjeux, récapitulatif de fin demandé par Monica."
         }
       ]
     },
     "E10": {
       "code": "E10",
-      "nb": 6,
+      "nb": 12,
       "items": [
         {
+          "id": "IN-E10-01",
           "debut": "00:00:17",
-          "fin": "00:00:20",
-          "type": "schema",
-          "ecran": "Licence ou création",
-          "schema": "Licence | Création",
+          "fin": "00:00:26",
+          "type": "motion",
+          "vue": "texte",
+          "ecran": "Licence (licensing) ou création d’entreprise (start-up) ?",
+          "icone": "fa-circle-question",
+          "schema": "",
           "developpe": "",
-          "pourquoi": "Question structurante : extrait de la chaîne de valorisation F2.",
-          "image": "schemas/f2-chaine-valo.png"
+          "pourquoi": "Question-clé de Monica, calée sur « Licensing ou créer son entreprise ? »."
         },
         {
+          "id": "IN-E10-02",
           "debut": "00:00:37",
-          "fin": "00:00:41",
-          "type": "schema",
-          "ecran": "Quatre voies",
-          "schema": "Licence · Création · Co-dev · Partenariat",
+          "fin": "00:01:32",
+          "type": "motion",
+          "vue": "grille",
+          "titre": "Les 4 voies de valorisation de la recherche",
+          "ecran": "Licence · Création d’entreprise · Co-développement · Partenariat",
+          "cellules": [
+            { "texte": "Licence", "icone": "fa-file-contract", "detail": "Exploitation par un industriel" },
+            { "texte": "Création d’entreprise", "icone": "fa-rocket", "detail": "Développement d’une start-up" },
+            { "texte": "Co-développement", "icone": "fa-handshake", "detail": "Développement avec un industriel" },
+            { "texte": "Partenariat", "icone": "fa-users", "detail": "Collaboration entre acteurs" }
+          ],
+          "schema": "",
           "developpe": "",
-          "pourquoi": "Élargir au-delà du binôme du fascicule (récit E10).",
-          "image": "schemas/f2-chaine-valo.png"
+          "pourquoi": "Schéma 1 : les quatre voies demandées au fur et à mesure. Cartouches successifs (stagger CSS)."
         },
         {
+          "id": "IN-E10-03",
           "debut": "00:01:36",
-          "fin": "00:01:39",
-          "type": "schema",
-          "ecran": "Trois critères",
-          "schema": "Projet · Écosystème · Posture",
+          "fin": "00:02:14",
+          "type": "motion",
+          "vue": "frise",
+          "vertical": true,
+          "titre": "Comment choisir sa voie de valorisation ?",
+          "ecran": "Typologie du projet · Écosystème et marché existants · Votre posture",
+          "schema": "Typologie du projet → Écosystème et marché existants → Votre posture",
+          "icones": ["fa-lightbulb", "fa-industry", "fa-user"],
           "developpe": "",
-          "pourquoi": "Grille de choix."
+          "pourquoi": "Schéma 2 : trois critères demandés. Le 3e s’intitule « Votre posture ». La maturité vient plus tard, à part."
         },
         {
-          "debut": "00:02:40",
-          "fin": "00:02:42",
-          "type": "concept",
-          "ecran": "Question de posture",
+          "id": "IN-E10-04",
+          "debut": "00:02:22",
+          "fin": "00:02:35",
+          "type": "motion",
+          "vue": "grille",
+          "ecran": "Transférer des connaissances · Entreprendre",
+          "cellules": [
+            { "texte": "Transférer des connaissances", "icone": "fa-graduation-cap", "detail": "Mission académique" },
+            { "texte": "Entreprendre", "icone": "fa-rocket", "detail": "Engagement entrepreneurial" }
+          ],
           "schema": "",
           "developpe": "",
-          "pourquoi": "Légitimité académique vs engagement."
+          "pourquoi": "Deux notions à distinguer, demandées par Monica. Mise en forme graphique complémentaire."
         },
         {
-          "debut": "00:02:46",
-          "fin": "00:02:48",
-          "type": "schema",
-          "ecran": "Licence ≠ Cession",
-          "schema": "Licence ≠ Cession",
+          "id": "IN-E10-05",
+          "debut": "00:03:17",
+          "fin": "00:03:31",
+          "type": "motion",
+          "vue": "texte",
+          "ecran": "Participation au capital social de l’entreprise",
+          "icone": "fa-building",
+          "schema": "",
           "developpe": "",
-          "pourquoi": "Licence ou transfert de propriété : distinction F1 p. 8."
+          "pourquoi": "Texte-clé de Monica, calé sur le montage de Jean-Jacques."
         },
         {
+          "id": "IN-E10-06",
+          "debut": "00:03:36",
+          "fin": "00:03:43",
+          "type": "motion",
+          "vue": "texte",
+          "ecran": "Solidité du montage juridique",
+          "icone": "fa-scale-balanced",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Message-clé de Monica, calé sur ce qui rassure les investisseurs."
+        },
+        {
+          "id": "IN-E10-07",
+          "debut": "00:03:55",
+          "fin": "00:04:13",
+          "type": "motion",
+          "vue": "grille",
+          "titre": "Une stratégie de protection mixte",
+          "centre": "Innovation / Technologie",
+          "ecran": "Brevet · Secret",
+          "cellules": [
+            { "texte": "Brevet", "icone": "fa-file-lines", "detail": "Partie brevetée" },
+            { "texte": "Secret", "icone": "fa-lock", "detail": "Savoir-faire maintenu secret" }
+          ],
+          "caption": "Deux modes de protection complémentaires",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Schéma 3 : mêmes pictos que E8. Monica : schéma simple, pas tout le discours."
+        },
+        {
+          "id": "IN-E10-08",
           "debut": "00:04:16",
-          "fin": "00:04:20",
-          "type": "concept",
-          "ecran": "Maturité de la techno",
+          "fin": "00:04:26",
+          "type": "motion",
+          "vue": "frise",
+          "titre": "La maturité de votre technologie",
+          "ecran": "Preuve de concept → Maturation avancée",
+          "schema": "Preuve de concept → Maturation avancée",
+          "icones": ["fa-flask", "fa-industry"],
+          "caption": "Une maturité accrue peut renforcer la position de négociation",
+          "developpe": "",
+          "pourquoi": "4e critère, à part des trois premiers. Incrustation graphique complémentaire."
+        },
+        {
+          "id": "IN-E10-09",
+          "debut": "00:04:38",
+          "fin": "00:04:45",
+          "type": "motion",
+          "vue": "texte",
+          "ecran": "Existe-t-il déjà des industriels capables et désireux d’exploiter votre technologie ?",
+          "icone": "fa-circle-question",
           "schema": "",
           "developpe": "",
-          "pourquoi": "Plus on a de preuve, plus on négocie."
+          "pourquoi": "Question-clé de Monica, calée sur la phrase de Virginia."
+        },
+        {
+          "id": "IN-E10-10",
+          "debut": "00:05:07",
+          "fin": "00:05:14",
+          "type": "motion",
+          "vue": "texte",
+          "ecran": "Qui dans votre établissement doit être associé à cette réflexion ?",
+          "icone": "fa-circle-question",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Question-clé de Monica."
+        },
+        {
+          "id": "IN-E10-11",
+          "debut": "00:05:14",
+          "fin": "00:05:30",
+          "type": "motion",
+          "vue": "texte",
+          "ecran": "Recherche de financements pour développer votre projet",
+          "icone": "fa-coins",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Message-clé de Monica, calé sur prématuration / maturation."
+        },
+        {
+          "id": "IN-E10-12",
+          "debut": "00:05:44",
+          "fin": "00:05:55",
+          "type": "motion",
+          "vue": "texte",
+          "ecran": "Le choix de la valorisation est une décision structurante",
+          "icone": "fa-flag-checkered",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Message de conclusion de Monica."
         }
       ]
     },
     "E11": {
       "code": "E11",
-      "nb": 7,
+      "nb": 13,
       "items": [
         {
+          "id": "IN-E11-01",
+          "debut": "00:00:29",
+          "fin": "00:00:48",
+          "type": "motion",
+          "vue": "texte",
+          "ecran": "Mettre en place un contrat de confidentialité",
+          "icone": "fa-file-signature",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Message-clé de Monica, calé sur le NDA avant discussion."
+        },
+        {
+          "id": "IN-E11-02",
+          "debut": "00:00:48",
+          "fin": "00:01:00",
+          "type": "motion",
+          "vue": "texte",
+          "ecran": "Préserver une avance concurrentielle",
+          "icone": "fa-stopwatch",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Texte-clé de Monica, calé sur le délai de 18 mois avant publication du brevet."
+        },
+        {
+          "id": "IN-E11-03",
           "debut": "00:01:07",
           "fin": "00:01:30",
-          "type": "concept",
-          "ecran": "Licence = louage",
+          "type": "motion",
+          "vue": "texte",
+          "ecran": "Le mécanisme contractuel de la licence",
+          "icone": "fa-file-contract",
           "schema": "",
           "developpe": "",
-          "pourquoi": "Objectif E11 : mécanisme, pas le choix de voie."
+          "pourquoi": "Titre introductif, calé sur le début du développement de Soizic."
         },
         {
+          "id": "IN-E11-04",
           "debut": "00:01:36",
-          "fin": "00:01:42",
-          "type": "schema",
-          "ecran": "Exclusive ou non",
-          "schema": "1 licencié  |  plusieurs",
-          "developpe": "",
-          "pourquoi": "Clause déterminante."
-        },
-        {
-          "debut": "00:02:10",
-          "fin": "00:02:25",
-          "type": "schema",
-          "ecran": "Licence ≠ Cession",
-          "schema": "Licence ≠ Cession",
-          "developpe": "",
-          "pourquoi": "La cession transfère la propriété : distinction F1 p. 8."
-        },
-        {
-          "debut": "00:02:43",
-          "fin": "00:02:49",
-          "type": "concept",
-          "ecran": "Co-développement",
+          "fin": "00:01:46",
+          "type": "motion",
+          "vue": "grille",
+          "ecran": "Licence exclusive · Licence non exclusive",
+          "cellules": [
+            { "texte": "Licence exclusive", "icone": "fa-user", "detail": "Un seul licencié" },
+            { "texte": "Licence non exclusive", "icone": "fa-users", "detail": "Plusieurs licenciés possibles" }
+          ],
           "schema": "",
           "developpe": "",
-          "pourquoi": "Risques et résultats partagés."
+          "pourquoi": "Listing demandé par Monica. La sous-licence est dans le discours, pas un 3e cartouche."
         },
         {
+          "id": "IN-E11-05",
+          "debut": "00:02:01",
+          "fin": "00:02:10",
+          "type": "motion",
+          "vue": "texte",
+          "ecran": "Différentes clauses importantes sont discutées",
+          "icone": "fa-list",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Texte-clé de Monica, calé sur perfectionnements, assistance, contrefaçon."
+        },
+        {
+          "id": "IN-E11-06",
+          "debut": "00:02:10",
+          "fin": "00:02:29",
+          "type": "motion",
+          "vue": "grille",
+          "titre": "Deux mécanismes contractuels",
+          "ecran": "Licence = louage · Cession = vente",
+          "cellules": [
+            { "texte": "Licence", "icone": "fa-file-contract", "detail": "Louage — droit d’exploitation sans transfert de propriété" },
+            { "texte": "Cession", "icone": "fa-handshake", "detail": "Vente — transfert de propriété" }
+          ],
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Schéma 1 : mots de Soizic. Regroupe louage, transfert de propriété et contrat de vente."
+        },
+        {
+          "id": "IN-E11-07",
+          "debut": "00:02:43",
+          "fin": "00:03:08",
+          "type": "motion",
+          "vue": "texte",
+          "ecran": "Co-développer les résultats de la recherche",
+          "icone": "fa-handshake",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Message-clé de Monica, calé sur le codéveloppement."
+        },
+        {
+          "id": "IN-E11-08",
           "debut": "00:03:15",
           "fin": "00:03:23",
-          "type": "concept",
-          "ecran": "Copropriété",
+          "type": "motion",
+          "vue": "successifs",
+          "ecran": "Apports matériels · Apports humains · Apports financiers",
+          "cellules": [
+            { "texte": "Apports matériels", "icone": "fa-cubes" },
+            { "texte": "Apports humains", "icone": "fa-users" },
+            { "texte": "Apports financiers", "icone": "fa-coins" }
+          ],
           "schema": "",
           "developpe": "",
-          "pourquoi": "Conséquence du contrat de collaboration."
+          "pourquoi": "Trois mots-clés successifs, repris ensuite dans le schéma collaboration."
         },
         {
+          "id": "IN-E11-09",
+          "debut": "00:03:37",
+          "fin": "00:03:47",
+          "type": "motion",
+          "vue": "grille",
+          "titre": "Contrat de collaboration / partenariat",
+          "colonnes": 3,
+          "centre": "Obligation de moyens",
+          "ecran": "Obligation de moyens · Copropriété des résultats",
+          "cellules": [
+            { "texte": "Apports matériels", "icone": "fa-cubes" },
+            { "texte": "Apports humains", "icone": "fa-users" },
+            { "texte": "Apports financiers", "icone": "fa-coins" }
+          ],
+          "caption": "Copropriété des résultats",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Schéma 2 demandé : obligation de moyens, avec les apports et la copropriété."
+        },
+        {
+          "id": "IN-E11-10",
+          "debut": "00:03:47",
+          "fin": "00:04:02",
+          "type": "motion",
+          "vue": "liste",
+          "titre": "Contrat de collaboration de recherche",
+          "ecran": "Partage · Protection · Exploitation · Confidentialité · Publication",
+          "lignes": [
+            "Partage des résultats",
+            "Protection des résultats",
+            "Exploitation des résultats",
+            "Confidentialité",
+            "Publication des résultats"
+          ],
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Liste des clauses demandée par Monica, calée sur l’énumération de Soizic."
+        },
+        {
+          "id": "IN-E11-11",
           "debut": "00:04:02",
-          "fin": "00:04:07",
-          "type": "schema",
-          "ecran": "Prestation | Collaboration",
-          "schema": "Prestation | Collaboration",
-          "developpe": "",
-          "pourquoi": "Contraste du grain : extrait des modalités partenariales F2 p. 7."
-        },
-        {
-          "debut": "00:05:14",
-          "fin": "00:05:17",
-          "type": "concept",
-          "ecran": "Le contrat fait loi",
+          "fin": "00:04:50",
+          "type": "motion",
+          "vue": "grille",
+          "titre": "Contrat de prestation",
+          "centre": "Obligation de résultat",
+          "ecran": "Obligation de résultat",
+          "cellules": [
+            { "texte": "Résultat attendu et défini", "icone": "fa-bullseye", "detail": "Cahier des charges" }
+          ],
+          "caption": "Atteindre les résultats convenus dans le cahier des charges",
           "schema": "",
           "developpe": "",
-          "pourquoi": "Conseil de clôture."
+          "pourquoi": "Schéma 3 : même logique que la collaboration, obligation de résultat à la place de l’obligation de moyens."
+        },
+        {
+          "id": "IN-E11-12",
+          "debut": "00:05:05",
+          "fin": "00:05:14",
+          "type": "motion",
+          "vue": "texte",
+          "ecran": "Rapprochez-vous de votre cellule de valorisation de votre établissement",
+          "icone": "fa-comments",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Message de conclusion de Monica, juste avant la phrase-clé."
+        },
+        {
+          "id": "IN-E11-13",
+          "debut": "00:05:14",
+          "fin": "00:05:20",
+          "type": "motion",
+          "vue": "texte",
+          "ecran": "Le contrat fait la loi des parties",
+          "icone": "fa-scale-balanced",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Phrase-clé de conclusion, mots de Soizic."
         }
       ]
     },

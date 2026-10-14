@@ -4,7 +4,7 @@
  * Désactivée par défaut, un bouton par vidéo.
  */
 (function (global) {
-    var DATA_URL = new URL("incrustations.json?v=13", document.currentScript.src).href;
+    var DATA_URL = new URL("incrustations.json?v=25", document.currentScript.src).href;
     var SCRIPT_SRC = document.currentScript.src;
     var cards = [];
     var bound = false;
@@ -65,6 +65,87 @@
         return item.ecran || item.schema || "Incrustation";
     }
 
+    function idNum(item) {
+        var m = String(item.id || "").match(/(\d+)$/);
+        return m ? m[1] : "";
+    }
+
+    /* Ensemble 1 = cycle (schéma 5). Ensemble 2 = incrustations, seulement si le concept n’existe pas. */
+    var PICTO = {
+        "fa-lightbulb": "cycle/idee.png",
+        "fa-play": "cycle/idee.png",
+        "fa-pen": "cycle/creativite.png",
+        "fa-circle-check": "cycle/solutions.png",
+        "fa-flag-checkered": "cycle/solutions.png",
+        "fa-puzzle-piece": "cycle/solutions.png",
+        "fa-file-magnifying-glass": "cycle/selection.png",
+        "fa-link": "cycle/prototypage.png",
+        "fa-stairs": "cycle/prototypage.png",
+        "fa-flask": "cycle/experimentation.png",
+        "fa-magnifying-glass": "cycle/decouverte.png",
+        "fa-binoculars": "cycle/decouverte.png",
+        "fa-location-dot": "cycle/decouverte.png",
+        "fa-file-lines": "cycle/valorisation.png",
+        "fa-file-signature": "cycle/valorisation.png",
+        "fa-file-contract": "cycle/valorisation.png",
+        "fa-book": "cycle/valorisation.png",
+        "fa-diagram-project": "cycle/valorisation.png",
+        "fa-person-walking": "cycle/transfert.png",
+        "fa-share-nodes": "cycle/transfert.png",
+        "fa-rocket": "cycle/transfert.png",
+        "fa-graduation-cap": "cycle/transfert.png",
+        "fa-road": "cycle/transfert.png",
+        "fa-palette": "cycle/design.png",
+        "fa-gear": "cycle/design.png",
+        "fa-industry": "cycle/production.png",
+        "fa-store": "cycle/production.png",
+        "fa-bullhorn": "cycle/diffusion.png",
+        "fa-newspaper": "cycle/diffusion.png",
+        "fa-users": "cycle/adoption-impact.png",
+        "fa-seedling": "cycle/adoption-impact.png",
+        "fa-leaf": "cycle/adoption-impact.png",
+        "fa-heart-pulse": "cycle/adoption-impact.png",
+        "fa-circle-question": "incrustations/question.png",
+        "fa-lock": "incrustations/secret.png",
+        "fa-shield-halved": "incrustations/protection.png",
+        "fa-coins": "incrustations/financement.png",
+        "fa-comments-dollar": "incrustations/financement.png",
+        "fa-comments": "incrustations/dialogue.png",
+        "fa-comment": "incrustations/dialogue.png",
+        "fa-building": "incrustations/etablissement.png",
+        "fa-envelope": "incrustations/enveloppe.png",
+        "fa-code": "incrustations/logiciel.png",
+        "fa-trademark": "incrustations/marque.png",
+        "fa-copyright": "incrustations/droit-auteur.png",
+        "fa-gem": "incrustations/actif.png",
+        "fa-chart-line": "incrustations/strategie.png",
+        "fa-chess": "incrustations/strategie.png",
+        "fa-triangle-exclamation": "incrustations/alerte.png",
+        "fa-handshake": "incrustations/partenaire.png",
+        "fa-scale-balanced": "incrustations/equilibre.png",
+        "fa-clock": "incrustations/temps.png",
+        "fa-stopwatch": "incrustations/temps.png",
+        "fa-list": "cycle/valorisation.png",
+        "fa-cubes": "cycle/production.png",
+        "fa-bullseye": "incrustations/cible.png",
+        "fa-code-branch": "incrustations/pivot.png",
+        "fa-arrows-rotate": "incrustations/pivot.png",
+        "fa-shuffle": "incrustations/pivot.png",
+        "fa-address-book": "incrustations/contact.png",
+        "fa-user": "incrustations/contact.png",
+        "fa-circle": "incrustations/sans.png"
+    };
+
+    function picto(name) {
+        var file = PICTO[name] || "incrustations/question.png";
+        var url = new URL("icones/" + file, SCRIPT_SRC).href;
+        return '<img class="incrust-picto" alt="" src="' + url + '">';
+    }
+
+    function splitParts(text) {
+        return String(text || "").split(/\s*(?:→|->|\|)\s*/).filter(Boolean);
+    }
+
     function seekTo(iframe, seconds) {
         if (!iframe || !iframe.contentWindow) return;
         var win = iframe.contentWindow;
@@ -97,7 +178,7 @@
     function schemaHtml(text) {
         var raw = String(text || "").trim();
         if (!raw) return "";
-        var parts = raw.split(/\s*(?:→|->|\|)\s*/).filter(Boolean);
+        var parts = splitParts(raw);
         if (parts.length < 2) {
             return '<div class="incrust-label">' + escapeHtml(raw) + "</div>";
         }
@@ -106,6 +187,207 @@
             return (idx ? '<span class="incrust-arrow">' + escapeHtml(sep) + "</span>" : "") +
                 '<span class="incrust-node">' + escapeHtml(p) + "</span>";
         }).join("") + "</div>";
+    }
+
+    function etapesHtml(text, icons, opts) {
+        var parts = splitParts(text);
+        var emp = (opts && opts.emphasis) || "";
+        var fork = opts && opts.fork;
+        return '<div class="incrust-etapes' + (fork ? " is-fork" : "") + ((opts && opts.vertical) ? " is-vertical" : "") + '">' + parts.map(function (p, i) {
+            var ico = icons && icons[i] ? '<span class="incrust-step-ico">' + picto(icons[i]) + "</span>" : "";
+            var on = emp && p === emp;
+            return (i ? '<span class="incrust-arrow' + (fork && i === parts.length - 1 ? " is-fork" : "") + '">→</span>' : "") +
+                '<span class="incrust-step' + (on ? " is-emphasis" : "") + '">' + ico +
+                '<span>' + escapeHtml(p) + "</span></span>";
+        }).join("") + "</div>";
+    }
+
+    function motionHtml(item) {
+        var vue = item.vue;
+        var label = '<div class="incrust-label">' + escapeHtml(item.ecran || "") + "</div>";
+        if (vue === "horloge") {
+            return '<div class="incrust-motion is-horloge">' +
+                '<div class="incrust-ico">' + picto("fa-clock") + "</div>" +
+                '<div class="incrust-compteurs">' +
+                '<div class="incrust-compte is-a"><strong>55</strong><span>minutes</span></div>' +
+                '<div class="incrust-compte is-b"><strong>5</strong><span>min</span></div>' +
+                "</div>" +
+                '<div class="incrust-caption">pour définir le problème · pour le résoudre</div></div>';
+        }
+        if (vue === "cible") {
+            return '<div class="incrust-motion is-cible">' +
+                '<div class="incrust-ico">' + picto("fa-bullseye") + "</div>" +
+                '<div class="incrust-etapes">' +
+                '<span class="incrust-step is-emphasis"><span>Le bon problème</span></span>' +
+                '<span class="incrust-arrow">→</span>' +
+                '<span class="incrust-step"><span>La bonne solution</span></span></div></div>';
+        }
+        if (vue === "etapes") return '<div class="incrust-motion">' + etapesHtml(item.schema || item.ecran, item.icones) + "</div>";
+        if (vue === "pivot") {
+            return '<div class="incrust-motion is-pivot">' +
+                '<div class="incrust-path" aria-hidden="true"><span></span></div>' +
+                etapesHtml(item.schema || item.ecran, item.icones, { fork: true, emphasis: "Pivoter" }) +
+                "</div>";
+        }
+        if (vue === "dialogue") {
+            return '<div class="incrust-motion is-dialogue">' +
+                '<div class="incrust-ico">' + picto("fa-comments") + "</div>" +
+                label + "</div>";
+        }
+        if (vue === "morph") {
+            return '<div class="incrust-motion is-morph">' +
+                '<div class="incrust-ico">' + picto("fa-arrows-rotate") + "</div>" +
+                '<div class="incrust-morph">' +
+                '<span class="is-from">Culture de recherche</span>' +
+                '<span class="incrust-arrow">→</span>' +
+                '<span class="is-to">Culture de valorisation</span></div>' +
+                label + "</div>";
+        }
+        if (vue === "frise") {
+            return '<div class="incrust-motion is-frise' + (item.vertical ? " is-vertical" : "") + '">' +
+                (item.titre ? '<div class="incrust-col-title">' + escapeHtml(item.titre) + "</div>" : "") +
+                (item.vertical ? "" : '<div class="incrust-frise-line" aria-hidden="true"></div>') +
+                etapesHtml(item.schema || item.ecran, item.icones, { vertical: !!item.vertical }) +
+                (item.caption ? '<div class="incrust-caption">' + escapeHtml(item.caption) + "</div>" : "") +
+                "</div>";
+        }
+        if (vue === "traverse") {
+            return '<div class="incrust-motion is-traverse">' +
+                '<div class="incrust-walk" aria-hidden="true">' +
+                picto("fa-flask") + '<span class="incrust-arrow">→</span>' + picto("fa-person-walking") +
+                '<span class="incrust-arrow">→</span>' + picto("fa-users") + "</div>" +
+                label + "</div>";
+        }
+        if (vue === "colonnes") {
+            return '<div class="incrust-motion is-colonnes">' +
+                '<div class="incrust-col"><div class="incrust-col-title">Techno Push</div>' +
+                etapesHtml("Technologie → Produit → Marché") + "</div>" +
+                '<div class="incrust-col-vs">vs</div>' +
+                '<div class="incrust-col"><div class="incrust-col-title">Market Pull</div>' +
+                etapesHtml("Besoin → Solution → Technologie") + "</div></div>";
+        }
+        if (vue === "puzzle") {
+            return '<div class="incrust-motion is-puzzle">' +
+                '<div class="incrust-pieces">' +
+                '<span class="incrust-piece is-left">' + picto("fa-puzzle-piece") + " Problème</span>" +
+                '<span class="incrust-piece is-right">' + picto("fa-puzzle-piece") + " Solution</span></div>" +
+                '<div class="incrust-label is-final">Problem–Solution Fit</div></div>';
+        }
+        if (vue === "conclusion") {
+            return '<div class="incrust-motion is-conclusion">' +
+                '<div class="incrust-ico">' + picto("fa-handshake") + "</div>" + label + "</div>";
+        }
+        if (vue === "texte") {
+            return '<div class="incrust-motion is-texte">' +
+                (item.icone ? '<div class="incrust-ico">' + picto(item.icone) + "</div>" : "") +
+                label +
+                (item.caption ? '<div class="incrust-caption">' + escapeHtml(item.caption) + "</div>" : "") +
+                "</div>";
+        }
+        if (vue === "deux-parties") {
+            var parties = item.parties || splitParts(item.schema || item.ecran);
+            return '<div class="incrust-motion is-deux-parties">' +
+                (item.titre ? '<div class="incrust-col-title">' + escapeHtml(item.titre) + "</div>" : "") +
+                '<div class="incrust-duo">' +
+                parties.map(function (p, i) {
+                    return '<span class="incrust-part">' +
+                        '<span class="incrust-part-n">' + (i + 1) + "</span>" +
+                        escapeHtml(p) + "</span>";
+                }).join('<span class="incrust-arrow">ou</span>') +
+                "</div>" +
+                (item.caption ? '<div class="incrust-caption">' + escapeHtml(item.caption) + "</div>" : "") +
+                "</div>";
+        }
+        if (vue === "deux-messages") {
+            var msgs = item.messages || [item.ecran];
+            return '<div class="incrust-motion is-deux-messages">' +
+                (item.icone ? '<div class="incrust-ico">' + picto(item.icone) + "</div>" : "") +
+                msgs.map(function (m) {
+                    return '<div class="incrust-msg">' + escapeHtml(m) + "</div>";
+                }).join("") + "</div>";
+        }
+        if (vue === "boucle") {
+            var loop = splitParts((item.schema || item.ecran).replace(/\s*⇄\s*/g, " → "));
+            return '<div class="incrust-motion is-boucle">' +
+                '<div class="incrust-loop">' +
+                '<span class="incrust-step">' + escapeHtml(loop[0] || "Solutions commerciales") + "</span>" +
+                '<span class="incrust-loop-arrows" aria-hidden="true">⇄</span>' +
+                '<span class="incrust-step">' + escapeHtml(loop[1] || "Solutions techniques") + "</span></div>" +
+                '<div class="incrust-caption">' + escapeHtml(item.caption || "Interactions permanentes") + "</div></div>";
+        }
+        if (vue === "tableaux") {
+            var blocs = item.blocs || [];
+            return '<div class="incrust-motion is-tableaux">' +
+                (item.titre ? '<div class="incrust-col-title">' + escapeHtml(item.titre) + "</div>" : "") +
+                '<div class="incrust-tables">' + blocs.map(function (bloc) {
+                    return '<div class="incrust-table">' +
+                        '<div class="incrust-col-title">' +
+                        (bloc.icone ? picto(bloc.icone) + " " : "") +
+                        escapeHtml(bloc.titre || "") + "</div><ul>" +
+                        (bloc.lignes || []).map(function (ligne) {
+                            return "<li>" + escapeHtml(ligne) + "</li>";
+                        }).join("") + "</ul></div>";
+                }).join("") + "</div></div>";
+        }
+        if (vue === "questions") {
+            var qs = item.questions || [];
+            var qIco = ["fa-flag-checkered", "fa-shuffle"];
+            return '<div class="incrust-motion is-questions">' + qs.map(function (q, i) {
+                return '<div class="incrust-q">' + picto(qIco[i] || "fa-circle-question") +
+                    "<span>" + escapeHtml(q) + "</span></div>";
+            }).join("") + "</div>";
+        }
+        if (vue === "grille") {
+            var cells = item.cellules || [];
+            return '<div class="incrust-motion is-grille' + (item.titre ? " has-title" : "") + '"' +
+                (item.colonnes ? ' style="grid-template-columns:repeat(' + item.colonnes + ',minmax(0,1fr))"' : "") + '>' +
+                (item.titre ? '<div class="incrust-col-title">' + escapeHtml(item.titre) + "</div>" : "") +
+                (item.centre ? '<div class="incrust-hub-core">' + escapeHtml(item.centre) + "</div>" : "") +
+                cells.map(function (c) {
+                    return '<span class="incrust-cell">' +
+                        (c.icone ? '<span class="incrust-step-ico">' + picto(c.icone) + "</span>" : "") +
+                        "<span>" + escapeHtml(c.texte || "") + "</span>" +
+                        (c.detail ? '<span class="incrust-cell-detail">' + escapeHtml(c.detail) + "</span>" : "") +
+                        "</span>";
+                }).join("") +
+                (item.caption ? '<div class="incrust-caption">' + escapeHtml(item.caption) + "</div>" : "") +
+                "</div>";
+        }
+        if (vue === "successifs") {
+            var seq = item.cellules || [];
+            return '<div class="incrust-motion is-successifs">' + seq.map(function (c) {
+                return '<span class="incrust-cell">' +
+                    (c.icone ? '<span class="incrust-step-ico">' + picto(c.icone) + "</span>" : "") +
+                    "<span>" + escapeHtml(c.texte || "") + "</span></span>";
+            }).join("") + "</div>";
+        }
+        if (vue === "liste") {
+            var lignes = item.lignes || [];
+            return '<div class="incrust-motion is-liste">' +
+                (item.titre ? '<div class="incrust-col-title">' + escapeHtml(item.titre) + "</div>" : "") +
+                "<ul>" + lignes.map(function (ligne) {
+                    return "<li>" + picto("fa-circle-check") + "<span>" + escapeHtml(ligne) + "</span></li>";
+                }).join("") + "</ul></div>";
+        }
+        if (vue === "hub") {
+            var sats = item.satellites || [];
+            function sat(i, cls, fallback) {
+                var s = sats[i] || {};
+                return '<span class="incrust-hub-sat ' + cls + '">' +
+                    (s.icone ? '<span class="incrust-step-ico">' + picto(s.icone) + "</span>" : "") +
+                    "<span>" + escapeHtml(s.texte || fallback) + "</span></span>";
+            }
+            return '<div class="incrust-motion is-hub">' +
+                (item.titre ? '<div class="incrust-col-title">' + escapeHtml(item.titre) + "</div>" : "") +
+                '<div class="incrust-hub">' +
+                sat(0, "is-a", "Conseils") +
+                sat(1, "is-b", "Contacts") +
+                '<span class="incrust-hub-core">' + escapeHtml(item.centre || "Chargé de valorisation") + "</span>" +
+                sat(2, "is-c", "Financements") +
+                sat(3, "is-d", "Cadrage contractuel") +
+                "</div></div>";
+        }
+        return label;
     }
 
     function escapeHtml(str) {
@@ -120,19 +402,20 @@
         if (!layer) return;
         var panel = layer.querySelector(".incrust-panel");
         if (!item) {
-            layer.classList.add("is-empty");
-            layer.classList.remove("has-figure");
+            layer.className = "incrust-layer is-empty";
             panel.innerHTML = '<div class="incrust-waiting">Proposition d’incrustation</div>';
             if (now) now.textContent = "Proposition d’incrustation";
             highlightJump(card, null);
             return;
         }
-        layer.classList.remove("is-empty");
-        var hasFigure = !!item.image;
-        layer.classList.toggle("has-figure", hasFigure);
-        var kind = hasFigure ? "Schéma du fascicule" : (item.type === "schema" ? "Petit schéma" : "Mot-clé");
+        var motion = item.type === "motion" || !!item.vue;
+        var hasFigure = !!item.image && !motion;
+        layer.className = "incrust-layer" + (hasFigure ? " has-figure" : "") + (motion ? " is-motion" : "");
+        var kind = hasFigure ? "Schéma du fascicule" : (motion ? (item.id || "Incrustation") : (item.type === "schema" ? "Petit schéma" : "Mot-clé"));
         var body;
-        if (hasFigure) {
+        if (motion) {
+            body = motionHtml(item);
+        } else if (hasFigure) {
             var imgUrl = new URL(item.image, SCRIPT_SRC).href;
             body = '<img class="incrust-figure" alt="' + escapeHtml(item.ecran || item.schema || "Schéma") + '" src="' + imgUrl + '">';
         } else if (item.type === "schema" && item.schema) {
@@ -140,15 +423,14 @@
         } else {
             body = '<div class="incrust-label">' + escapeHtml(item.ecran || item.schema || "—") + "</div>";
         }
-        var extra = item.developpe ? '<div class="incrust-developpe">' + escapeHtml(item.developpe) + "</div>" : "";
-        var why = (!hasFigure && item.pourquoi) ? '<div class="incrust-pourquoi">' + escapeHtml(item.pourquoi) + "</div>" : "";
-        panel.innerHTML = '<div class="incrust-kicker">' + escapeHtml(kind) + " · " +
-            escapeHtml(item.debut) + "–" + escapeHtml(item.fin) + "</div>" + body + extra + why;
+        var extra = (!motion && item.developpe) ? '<div class="incrust-developpe">' + escapeHtml(item.developpe) + "</div>" : "";
+        var why = (!motion && !hasFigure && item.pourquoi) ? '<div class="incrust-pourquoi">' + escapeHtml(item.pourquoi) + "</div>" : "";
+        panel.innerHTML = (motion ? "" : '<div class="incrust-kicker">' + escapeHtml(kind) + " · " +
+            escapeHtml(item.debut) + "–" + escapeHtml(item.fin) + "</div>") + body + extra + why;
         if (now) {
-            now.innerHTML = "<strong>" + escapeHtml(kind) + "</strong> · " +
+            now.innerHTML = "<strong>" + escapeHtml(item.id || kind) + "</strong> · " +
                 escapeHtml(item.debut) + "–" + escapeHtml(item.fin) + " · " +
-                escapeHtml(item.ecran || item.schema || "") +
-                (item.pourquoi ? " — " + escapeHtml(item.pourquoi) : "");
+                escapeHtml(item.ecran || item.schema || "");
         }
         highlightJump(card, item);
     }
@@ -180,8 +462,8 @@
             var b = document.createElement("button");
             b.type = "button";
             b.className = "incrust-jump";
-            b.title = (item.debut || "") + " — " + labelOf(item);
-            b.innerHTML = "<span>" + (i + 1) + "</span> " + escapeHtml(labelOf(item));
+            b.title = (item.id ? item.id + " · " : "") + (item.debut || "") + " — " + labelOf(item);
+            b.innerHTML = "<span>" + (idNum(item) || (i + 1)) + "</span> " + escapeHtml(labelOf(item));
             b.addEventListener("click", function () { goToItem(card, item); });
             nav.appendChild(b);
         });

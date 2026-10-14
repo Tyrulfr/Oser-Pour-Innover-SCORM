@@ -143,18 +143,16 @@ def document_xml(code: str, title: str, intro: str, lines: list[str], outro: str
         w_p(f"{code} — {title}", "Heading1"),
         w_p(kind, italic=True),
         w_p("Intro", "Heading2", color="2EAF7D"),
-        w_p(intro, color="2EAF7D"),
-        w_p("Transcript", "Heading2"),
     ]
+    body.extend(w_p(line, color="2EAF7D") for line in intro.split("\n") if line.strip())
+    body.append(w_p("Transcript", "Heading2"))
     if missing:
         body.append(w_p(missing, italic=True))
     else:
         keep_speaker = code.startswith("T")
         body.extend(w_p(format_line(line, keep_speaker)) for line in lines if line.strip())
-    body += [
-        w_p("Outro", "Heading2", color="F48C2E"),
-        w_p(outro, color="F48C2E"),
-    ]
+    body.append(w_p("Outro", "Heading2", color="F48C2E"))
+    body.extend(w_p(line, color="F48C2E") for line in outro.split("\n") if line.strip())
     return f"""<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <w:document xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main">
   <w:body>

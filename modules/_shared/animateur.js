@@ -5,7 +5,7 @@
  * Pour retirer : supprimer animateur.js, animateur.css, animateur.json et les balises dans les grains.
  */
 (function () {
-    var DATA_URL = new URL("animateur.json?v=1", document.currentScript.src).href;
+    var DATA_URL = new URL("animateur.json?v=2", document.currentScript.src).href;
 
     function videoCode(card) {
         var title = "";
@@ -33,6 +33,8 @@
         }
         var incrust = header.querySelector(":scope > .incrust-toggle");
         if (incrust) actions.appendChild(incrust);
+        var videaste = header.querySelector(":scope > .videaste-toggle");
+        if (videaste) actions.appendChild(videaste);
         return actions;
     }
 
@@ -40,8 +42,8 @@
         var el = document.createElement("div");
         el.className = "anim-block is-" + kind + (isTemoin ? " is-temoin" : "");
         el.innerHTML = '<div class="anim-kicker">' +
-            (kind === "intro" ? "Avant la vidéo · texte animateur" : "Après la vidéo · texte animateur") +
-            "</div><p>" + escapeHtml(text) + "</p>";
+            (kind === "intro" ? "Avant la vidéo · intervenant" : "Après la vidéo · intervenant") +
+            "</div><p>" + escapeHtml(text).replace(/\n+/g, "<br><br>") + "</p>";
         return el;
     }
 
