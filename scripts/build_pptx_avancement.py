@@ -183,9 +183,9 @@ def slide_decisions(prs):
                "Le calendrier ne tient que si ces quatre points sont arbitrés dans les prochains jours.")
 
     items = [
-        ("bordeaux", "E12 / E14",
-         "Capsules Fatoumata, non importées en V0 et absentes du 24/09.",
-         "Bloque le module 3", "T7 et T8 incomplets"),
+        ("bordeaux", "E14 / E15",
+         "E12 est Stéphanie Augéroussel (SATT), pas Fatoumata. Restent E14 Fatoumata et E15.",
+         "Bloque le T8", "E12 à brancher (lecteur)"),
         ("orange", "Capsule loi PACTE",
          "Sujet apparu en captation, sans emplacement prévu.",
          "M2 ou M5 à arbitrer", "25e capsule · lecteur à créer"),
@@ -217,7 +217,7 @@ def slide_decisions(prs):
                "Plateau du 24/09 à IncubAlliance : 7 capsules (E2, E3, E4, E13, E15, E17, E18).",
                10, False, BLUE)])
 
-    slide_foot(s, "Si le plateau du 24/09 se déroule complet, il ne restera que E12 et E14 à planifier.")
+    slide_foot(s, "E12 = Stéphanie Augéroussel (SATT). Il reste E14 Fatoumata et E15 à planifier.")
 
 
 # --------------------------------------------------------------------- slide 3
@@ -232,7 +232,7 @@ def slide_trajectoire(prs):
         ("orange", "2", "Lot 2 — M1, M4",
          "Débloqué par le plateau du 24/09 : E2, E3, E4, E17, E18", "Octobre"),
         ("bordeaux", "3", "Lot 3 — M3",
-         "Suspendu à E12 / E14 · E13bis tournée, E13 et E15 le 24/09", "Sans date"),
+         "E12 = Stéphanie SATT (pas V14/E14). Restent E14 Fatoumata et E15.", "Sans date"),
     ]
     top, h, gap = 1.44, 0.66, 0.08
     for i, (accent, num, title, body, tag) in enumerate(lots):
@@ -248,7 +248,7 @@ def slide_trajectoire(prs):
         ("teal", "Décembre 2026", "Ouverture partielle",
          "MR, M2, M5, M6 — suppose d'accepter une ouverture module par module"),
         ("blue", "Fin janvier 2027", "Parcours complet",
-         "Sous réserve de E12 / E14 en octobre et du volume intro / outro"),
+         "Sous réserve de E14 Fatoumata, E15, et du volume intro / outro"),
     ]
     jw, jtop, jh = 4.08, 3.72, 0.90
     for i, (accent, when, what, cond) in enumerate(jalons):

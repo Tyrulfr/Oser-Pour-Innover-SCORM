@@ -73,7 +73,7 @@ def transcript_path(code: str) -> Path | None:
         p = TEMOINS / f"{code}.docx"
         return p if p.exists() else None
     if code == "E13bis":
-        p = EXPERTS / "E14_Yoann.docx"
+        p = EXPERTS / "E13bis_Yoann.docx"
         return p if p.exists() else None
     if code == "E14":
         return None
@@ -253,7 +253,8 @@ def main() -> None:
         "Chaque fichier : Intro (texte animateur) · Transcript · Outro (texte animateur).\n"
         "Ordre des fichiers = ordre pédagogique du parcours.\n\n"
         "Transcripts encore absents : " + (", ".join(missing_codes) if missing_codes else "aucun") + ".\n"
-        "E13bis reprend le transcript Yoann (Design Spot). E14 est prévue pour Fatoumata.\n",
+        "E12 = Stéphanie Augéroussel (SATT). La capsule parfois étiquetée V14 / E14 sur le plateau est E12.\n"
+        "E13bis = Yoann (Design Spot). E14 Fatoumata (chaîne des financements) n’est pas encore filmée.\n",
         encoding="utf-8",
     )
 
