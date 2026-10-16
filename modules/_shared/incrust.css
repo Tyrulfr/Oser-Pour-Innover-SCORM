@@ -19,10 +19,17 @@
     gap: 8px;
 }
 .incrust-toggle:hover { color: var(--orange, #F48C2E); border-color: var(--orange, #F48C2E); }
-.video-card.is-incrust-on .incrust-toggle {
+.video-card.is-incrust-on .incrust-toggle.is-monica {
     background: var(--teal, #2EAF7D);
     border-color: var(--teal, #2EAF7D);
     color: #fff;
+}
+.incrust-toggle.is-ia { border-style: dashed; }
+.video-card.is-incrust-on .incrust-toggle.is-ia {
+    background: var(--orange, #F48C2E);
+    border-color: var(--orange, #F48C2E);
+    border-style: solid;
+    color: #1b1f33;
 }
 .incrust-stage { position: relative; }
 .incrust-layer {

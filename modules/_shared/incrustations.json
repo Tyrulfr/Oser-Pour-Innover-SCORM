@@ -70,7 +70,8 @@
           "developpe": "",
           "pourquoi": "Transformer un résultat en solution : distinction F1 §4.2."
         }
-      ]
+      ],
+      "source": "ia"
     },
     "T2": {
       "code": "T2",
@@ -131,7 +132,8 @@
           "developpe": "",
           "pourquoi": "Bénéficiaire final, pas seulement le brevet."
         }
-      ]
+      ],
+      "source": "ia"
     },
     "T3": {
       "code": "T3",
@@ -201,7 +203,8 @@
           "pourquoi": "Clients / business plan : phase « mise en service au collectif » du cycle F2.",
           "image": "schemas/f2-cycle-adoption.png"
         }
-      ]
+      ],
+      "source": "ia"
     },
     "T4": {
       "code": "T4",
@@ -271,7 +274,8 @@
           "developpe": "",
           "pourquoi": "On n’a pas toutes les réponses : s’engager quand même dans la valorisation."
         }
-      ]
+      ],
+      "source": "ia"
     },
     "T5": {
       "code": "T5",
@@ -341,7 +345,8 @@
           "developpe": "",
           "pourquoi": "Conseil opératoire du grain."
         }
-      ]
+      ],
+      "source": "ia"
     },
     "T6": {
       "code": "T6",
@@ -393,7 +398,8 @@
           "developpe": "",
           "pourquoi": "La voie de PI (brevet et secret) suit la voie de transfert."
         }
-      ]
+      ],
+      "source": "ia"
     },
     "T7": {
       "code": "T7",
@@ -455,7 +461,8 @@
           "pourquoi": "Prématuration puis maturation : même colonne que F2, calée sur les dispositifs nommés.",
           "image": "schemas/f2-chaine-valo.png"
         }
-      ]
+      ],
+      "source": "ia"
     },
     "T8": {
       "code": "T8",
@@ -525,7 +532,8 @@
           "developpe": "Bpifrance",
           "pourquoi": "Financeur public, sujet du grain."
         }
-      ]
+      ],
+      "source": "ia"
     },
     "T9": {
       "code": "T9",
@@ -594,7 +602,8 @@
           "developpe": "",
           "pourquoi": "L’équipe survit à la techno."
         }
-      ]
+      ],
+      "source": "ia"
     },
     "T10": {
       "code": "T10",
@@ -654,7 +663,8 @@
           "developpe": "",
           "pourquoi": "Valeur pour l’interlocuteur."
         }
-      ]
+      ],
+      "source": "ia"
     },
     "T11": {
       "code": "T11",
@@ -696,7 +706,8 @@
           "developpe": "Minimum Viable Product — premier produit viable",
           "pourquoi": "Première occurrence du sigle."
         }
-      ]
+      ],
+      "source": "ia"
     },
     "T12": {
       "code": "T12",
@@ -748,7 +759,8 @@
           "developpe": "",
           "pourquoi": "Accompagnement entre pairs."
         }
-      ]
+      ],
+      "source": "ia"
     },
     "T13": {
       "code": "T13",
@@ -799,7 +811,8 @@
           "developpe": "",
           "pourquoi": "Mot de clôture."
         }
-      ]
+      ],
+      "source": "ia"
     },
     "E1": {
       "code": "E1",
@@ -869,7 +882,8 @@
           "developpe": "",
           "pourquoi": "Ce qui déclenche le passage du résultat vers la valorisation."
         }
-      ]
+      ],
+      "source": "ia"
     },
     "E3": {
       "code": "E3",
@@ -905,7 +919,11 @@
           "vue": "etapes",
           "ecran": "Identifier → Formuler → Valider",
           "schema": "Identifier → Formuler → Valider",
-          "icones": ["fa-magnifying-glass", "fa-pen", "fa-circle-check"],
+          "icones": [
+            "fa-magnifying-glass",
+            "fa-pen",
+            "fa-circle-check"
+          ],
           "developpe": "",
           "pourquoi": "Au rythme de l’énumération."
         },
@@ -939,7 +957,11 @@
           "vue": "etapes",
           "ecran": "Recherche → Bonne problématique → Valorisation",
           "schema": "Recherche → Bonne problématique → Valorisation",
-          "icones": ["fa-flask", "fa-circle-question", "fa-seedling"],
+          "icones": [
+            "fa-flask",
+            "fa-circle-question",
+            "fa-seedling"
+          ],
           "developpe": "",
           "pourquoi": "Sur « poser la bonne question / formuler la bonne problématique »."
         },
@@ -962,7 +984,11 @@
           "vue": "frise",
           "ecran": "Premiers travaux → Développement → Mise sur le marché",
           "schema": "Premiers travaux → Développement → Mise sur le marché",
-          "icones": ["fa-lightbulb", "fa-gear", "fa-store"],
+          "icones": [
+            "fa-lightbulb",
+            "fa-gear",
+            "fa-store"
+          ],
           "developpe": "",
           "pourquoi": "Frise à trois jalons, ligne qui progresse."
         },
@@ -1021,7 +1047,8 @@
           "developpe": "",
           "pourquoi": "À valider : possible reprise du discours."
         }
-      ]
+      ],
+      "source": "monica"
     },
     "E5": {
       "code": "E5",
@@ -1070,7 +1097,10 @@
           "type": "motion",
           "vue": "deux-parties",
           "ecran": "Les rencontres peuvent remettre en cause la cible initiale ou créer de nouvelles opportunités",
-          "parties": ["Remettre en cause la cible initiale", "Créer de nouvelles opportunités"],
+          "parties": [
+            "Remettre en cause la cible initiale",
+            "Créer de nouvelles opportunités"
+          ],
           "schema": "",
           "developpe": "",
           "pourquoi": "Insert texte en deux parties, calé sur les rencontres qui remettent en cause la cible."
@@ -1082,7 +1112,10 @@
           "type": "motion",
           "vue": "deux-messages",
           "ecran": "Le pivot n’est pas un échec · Pivoter rapidement",
-          "messages": ["Le pivot n’est pas un échec", "Il faut savoir pivoter rapidement"],
+          "messages": [
+            "Le pivot n’est pas un échec",
+            "Il faut savoir pivoter rapidement"
+          ],
           "icone": "fa-code-branch",
           "schema": "",
           "developpe": "",
@@ -1120,7 +1153,11 @@
           "vue": "frise",
           "ecran": "Invention → Prématuration → Maturation",
           "schema": "Invention / expérimentation → Prématuration → Maturation",
-          "icones": ["fa-flask", "fa-seedling", "fa-industry"],
+          "icones": [
+            "fa-flask",
+            "fa-seedling",
+            "fa-industry"
+          ],
           "developpe": "",
           "pourquoi": "Trois étapes de valorisation demandées par Monica, calées sur « prématuration / maturation »."
         },
@@ -1135,12 +1172,20 @@
             {
               "titre": "Risques",
               "icone": "fa-triangle-exclamation",
-              "lignes": ["Le risque le plus coûteux dans 6 mois", "Le jalon à viser en premier"]
+              "lignes": [
+                "Le risque le plus coûteux dans 6 mois",
+                "Le jalon à viser en premier"
+              ]
             },
             {
               "titre": "Qui contacter",
               "icone": "fa-address-book",
-              "lignes": ["Chargé de valorisation", "SATT", "Futurs utilisateurs", "Industriel"]
+              "lignes": [
+                "Chargé de valorisation",
+                "SATT",
+                "Futurs utilisateurs",
+                "Industriel"
+              ]
             }
           ],
           "schema": "",
@@ -1154,12 +1199,16 @@
           "type": "motion",
           "vue": "questions",
           "ecran": "Deux questions systématiques",
-          "questions": ["Quel est le jalon décisif ?", "Quel signal concret conduirait à en changer ?"],
+          "questions": [
+            "Quel est le jalon décisif ?",
+            "Quel signal concret conduirait à en changer ?"
+          ],
           "schema": "",
           "developpe": "",
           "pourquoi": "Schéma des deux questions, calé sur la phrase de Virginia."
         }
-      ]
+      ],
+      "source": "monica"
     },
     "E6": {
       "code": "E6",
@@ -1245,7 +1294,11 @@
           "vue": "frise",
           "ecran": "Invention → Prématuration → Maturation",
           "schema": "Invention / résultat → Prématuration → Maturation",
-          "icones": ["fa-flask", "fa-seedling", "fa-industry"],
+          "icones": [
+            "fa-flask",
+            "fa-seedling",
+            "fa-industry"
+          ],
           "developpe": "",
           "pourquoi": "Schéma 1 : reprendre E5 et le fascicule, calé sur prématuration puis maturation."
         },
@@ -1268,7 +1321,10 @@
           "type": "motion",
           "vue": "deux-messages",
           "ecran": "Identifier un résultat prometteur suffisamment tôt · Les équipes de valorisation prennent le relais",
-          "messages": ["Identifier un résultat prometteur suffisamment tôt", "Les équipes de valorisation prennent le relais"],
+          "messages": [
+            "Identifier un résultat prometteur suffisamment tôt",
+            "Les équipes de valorisation prennent le relais"
+          ],
           "icone": "fa-handshake",
           "schema": "",
           "developpe": "",
@@ -1284,7 +1340,11 @@
           "vertical": true,
           "ecran": "Évaluer → Analyser → Réfléchir",
           "schema": "Évaluer le potentiel du résultat → Analyser l’existant → Réfléchir aux meilleures options",
-          "icones": ["fa-chart-line", "fa-magnifying-glass", "fa-lightbulb"],
+          "icones": [
+            "fa-chart-line",
+            "fa-magnifying-glass",
+            "fa-lightbulb"
+          ],
           "developpe": "",
           "pourquoi": "Schéma 2 : intègre les extraits « évaluer » et « analyser », pas des incrustations séparées."
         },
@@ -1296,10 +1356,22 @@
           "vue": "grille",
           "ecran": "Médical · Industriel · Environnemental · Sociétal",
           "cellules": [
-            { "texte": "Médical", "icone": "fa-heart-pulse" },
-            { "texte": "Industriel", "icone": "fa-industry" },
-            { "texte": "Environnemental", "icone": "fa-leaf" },
-            { "texte": "Sociétal", "icone": "fa-users" }
+            {
+              "texte": "Médical",
+              "icone": "fa-heart-pulse"
+            },
+            {
+              "texte": "Industriel",
+              "icone": "fa-industry"
+            },
+            {
+              "texte": "Environnemental",
+              "icone": "fa-leaf"
+            },
+            {
+              "texte": "Sociétal",
+              "icone": "fa-users"
+            }
           ],
           "schema": "",
           "developpe": "",
@@ -1337,11 +1409,16 @@
           "vue": "etapes",
           "ecran": "Avant de publier · Avant de divulguer · Avant d’en parler",
           "schema": "Avant de publier → Avant de divulguer → Avant d’en parler",
-          "icones": ["fa-newspaper", "fa-bullhorn", "fa-comments"],
+          "icones": [
+            "fa-newspaper",
+            "fa-bullhorn",
+            "fa-comments"
+          ],
           "developpe": "",
           "pourquoi": "Schéma 4 : les trois précautions demandées par Monica."
         }
-      ]
+      ],
+      "source": "monica"
     },
     "E7": {
       "code": "E7",
@@ -1355,9 +1432,18 @@
           "vue": "successifs",
           "ecran": "Une nouvelle méthode · Un procédé original · Une technologie qui répond à un problème concret",
           "cellules": [
-            { "texte": "Nouvelle méthode", "icone": "fa-lightbulb" },
-            { "texte": "Procédé original", "icone": "fa-flask" },
-            { "texte": "Technologie répondant à un problème", "icone": "fa-gear" }
+            {
+              "texte": "Nouvelle méthode",
+              "icone": "fa-lightbulb"
+            },
+            {
+              "texte": "Procédé original",
+              "icone": "fa-flask"
+            },
+            {
+              "texte": "Technologie répondant à un problème",
+              "icone": "fa-gear"
+            }
           ],
           "schema": "",
           "developpe": "",
@@ -1407,9 +1493,18 @@
           "vue": "successifs",
           "ecran": "Structurer son projet · Identifier les financements adaptés · Mobiliser les bons partenaires",
           "cellules": [
-            { "texte": "Structurer son projet", "icone": "fa-diagram-project" },
-            { "texte": "Identifier les financements adaptés", "icone": "fa-coins" },
-            { "texte": "Mobiliser les bons partenaires", "icone": "fa-handshake" }
+            {
+              "texte": "Structurer son projet",
+              "icone": "fa-diagram-project"
+            },
+            {
+              "texte": "Identifier les financements adaptés",
+              "icone": "fa-coins"
+            },
+            {
+              "texte": "Mobiliser les bons partenaires",
+              "icone": "fa-handshake"
+            }
           ],
           "schema": "",
           "developpe": "",
@@ -1485,16 +1580,29 @@
           "centre": "Chargé de valorisation",
           "ecran": "Conseils · Contacts · Financements · Cadrage contractuel",
           "satellites": [
-            { "texte": "Conseils", "icone": "fa-comments" },
-            { "texte": "Contacts", "icone": "fa-address-book" },
-            { "texte": "Financements", "icone": "fa-coins" },
-            { "texte": "Cadrage contractuel", "icone": "fa-file-contract" }
+            {
+              "texte": "Conseils",
+              "icone": "fa-comments"
+            },
+            {
+              "texte": "Contacts",
+              "icone": "fa-address-book"
+            },
+            {
+              "texte": "Financements",
+              "icone": "fa-coins"
+            },
+            {
+              "texte": "Cadrage contractuel",
+              "icone": "fa-file-contract"
+            }
           ],
           "schema": "Conseils · Contacts · Financements · Cadrage contractuel",
           "developpe": "",
           "pourquoi": "Schéma demandé par Monica sur les quatre leviers. Visuel récapitulatif de fin de séquence."
         }
-      ]
+      ],
+      "source": "monica"
     },
     "E8": {
       "code": "E8",
@@ -1521,8 +1629,14 @@
           "titre": "Protection des innovations techniques",
           "ecran": "Les différentes modalités de protection de la propriété intellectuelle",
           "cellules": [
-            { "texte": "Brevet", "icone": "fa-file-lines" },
-            { "texte": "Secret", "icone": "fa-lock" }
+            {
+              "texte": "Brevet",
+              "icone": "fa-file-lines"
+            },
+            {
+              "texte": "Secret",
+              "icone": "fa-lock"
+            }
           ],
           "caption": "Protections parfois complémentaires",
           "schema": "Brevet · Secret",
@@ -1541,12 +1655,18 @@
             {
               "titre": "Brevet",
               "icone": "fa-file-lines",
-              "lignes": ["Protection par titre de propriété industrielle", "Choix selon la technologie et la stratégie"]
+              "lignes": [
+                "Protection par titre de propriété industrielle",
+                "Choix selon la technologie et la stratégie"
+              ]
             },
             {
               "titre": "Secret",
               "icone": "fa-lock",
-              "lignes": ["Protection par maintien du secret", "Choix selon la technologie et la stratégie"]
+              "lignes": [
+                "Protection par maintien du secret",
+                "Choix selon la technologie et la stratégie"
+              ]
             }
           ],
           "schema": "",
@@ -1675,7 +1795,8 @@
           "developpe": "",
           "pourquoi": "Message-clé de Monica, pont vers E9."
         }
-      ]
+      ],
+      "source": "monica"
     },
     "E9": {
       "code": "E9",
@@ -1764,7 +1885,11 @@
           "titre": "Trois démarches pour valoriser une invention",
           "ecran": "Recherche d’antériorité → Étude de marché → Demande de brevet",
           "schema": "Recherche d’antériorité → Étude de marché → Demande de brevet",
-          "icones": ["fa-magnifying-glass", "fa-chart-line", "fa-file-lines"],
+          "icones": [
+            "fa-magnifying-glass",
+            "fa-chart-line",
+            "fa-file-lines"
+          ],
           "caption": "Peuvent être menées en parallèle",
           "developpe": "",
           "pourquoi": "Schéma 1 : premièrement / deuxièmement / troisièmement cités par Stanislas, pas une chronologie stricte."
@@ -1814,11 +1939,31 @@
           "titre": "Comment protéger votre innovation ?",
           "ecran": "Brevet · Secret des affaires · Droit d’auteur · Dessins et modèles · Marques",
           "cellules": [
-            { "texte": "Brevet", "icone": "fa-file-lines", "detail": "Invention technique" },
-            { "texte": "Secret des affaires", "icone": "fa-lock", "detail": "Savoir-faire confidentiel" },
-            { "texte": "Droit d’auteur", "icone": "fa-copyright", "detail": "Logiciels, code source" },
-            { "texte": "Dessins et modèles", "icone": "fa-palette", "detail": "Créations esthétiques" },
-            { "texte": "Marques", "icone": "fa-trademark", "detail": "Signes distinctifs" }
+            {
+              "texte": "Brevet",
+              "icone": "fa-file-lines",
+              "detail": "Invention technique"
+            },
+            {
+              "texte": "Secret des affaires",
+              "icone": "fa-lock",
+              "detail": "Savoir-faire confidentiel"
+            },
+            {
+              "texte": "Droit d’auteur",
+              "icone": "fa-copyright",
+              "detail": "Logiciels, code source"
+            },
+            {
+              "texte": "Dessins et modèles",
+              "icone": "fa-palette",
+              "detail": "Créations esthétiques"
+            },
+            {
+              "texte": "Marques",
+              "icone": "fa-trademark",
+              "detail": "Signes distinctifs"
+            }
           ],
           "schema": "",
           "developpe": "",
@@ -1881,8 +2026,14 @@
           "titre": "Licence d’exploitation",
           "ecran": "Avec droit de sous-licencier · Sans droit de sous-licencier",
           "cellules": [
-            { "texte": "Avec droit de sous-licencier", "icone": "fa-circle-check" },
-            { "texte": "Sans droit de sous-licencier", "icone": "fa-circle" }
+            {
+              "texte": "Avec droit de sous-licencier",
+              "icone": "fa-circle-check"
+            },
+            {
+              "texte": "Sans droit de sous-licencier",
+              "icone": "fa-circle"
+            }
           ],
           "schema": "",
           "developpe": "",
@@ -1896,15 +2047,25 @@
           "vue": "successifs",
           "ecran": "Protéger vos innovations · Sécuriser vos actifs immatériels · Attirer des investisseurs",
           "cellules": [
-            { "texte": "Protéger vos innovations", "icone": "fa-shield-halved" },
-            { "texte": "Sécuriser vos actifs immatériels", "icone": "fa-lock" },
-            { "texte": "Attirer des investisseurs", "icone": "fa-handshake" }
+            {
+              "texte": "Protéger vos innovations",
+              "icone": "fa-shield-halved"
+            },
+            {
+              "texte": "Sécuriser vos actifs immatériels",
+              "icone": "fa-lock"
+            },
+            {
+              "texte": "Attirer des investisseurs",
+              "icone": "fa-handshake"
+            }
           ],
           "schema": "",
           "developpe": "",
           "pourquoi": "Schéma 4 : les trois enjeux, récapitulatif de fin demandé par Monica."
         }
-      ]
+      ],
+      "source": "monica"
     },
     "E10": {
       "code": "E10",
@@ -1931,10 +2092,26 @@
           "titre": "Les 4 voies de valorisation de la recherche",
           "ecran": "Licence · Création d’entreprise · Co-développement · Partenariat",
           "cellules": [
-            { "texte": "Licence", "icone": "fa-file-contract", "detail": "Exploitation par un industriel" },
-            { "texte": "Création d’entreprise", "icone": "fa-rocket", "detail": "Développement d’une start-up" },
-            { "texte": "Co-développement", "icone": "fa-handshake", "detail": "Développement avec un industriel" },
-            { "texte": "Partenariat", "icone": "fa-users", "detail": "Collaboration entre acteurs" }
+            {
+              "texte": "Licence",
+              "icone": "fa-file-contract",
+              "detail": "Exploitation par un industriel"
+            },
+            {
+              "texte": "Création d’entreprise",
+              "icone": "fa-rocket",
+              "detail": "Développement d’une start-up"
+            },
+            {
+              "texte": "Co-développement",
+              "icone": "fa-handshake",
+              "detail": "Développement avec un industriel"
+            },
+            {
+              "texte": "Partenariat",
+              "icone": "fa-users",
+              "detail": "Collaboration entre acteurs"
+            }
           ],
           "schema": "",
           "developpe": "",
@@ -1950,7 +2127,11 @@
           "titre": "Comment choisir sa voie de valorisation ?",
           "ecran": "Typologie du projet · Écosystème et marché existants · Votre posture",
           "schema": "Typologie du projet → Écosystème et marché existants → Votre posture",
-          "icones": ["fa-lightbulb", "fa-industry", "fa-user"],
+          "icones": [
+            "fa-lightbulb",
+            "fa-industry",
+            "fa-user"
+          ],
           "developpe": "",
           "pourquoi": "Schéma 2 : trois critères demandés. Le 3e s’intitule « Votre posture ». La maturité vient plus tard, à part."
         },
@@ -1962,8 +2143,16 @@
           "vue": "grille",
           "ecran": "Transférer des connaissances · Entreprendre",
           "cellules": [
-            { "texte": "Transférer des connaissances", "icone": "fa-graduation-cap", "detail": "Mission académique" },
-            { "texte": "Entreprendre", "icone": "fa-rocket", "detail": "Engagement entrepreneurial" }
+            {
+              "texte": "Transférer des connaissances",
+              "icone": "fa-graduation-cap",
+              "detail": "Mission académique"
+            },
+            {
+              "texte": "Entreprendre",
+              "icone": "fa-rocket",
+              "detail": "Engagement entrepreneurial"
+            }
           ],
           "schema": "",
           "developpe": "",
@@ -2003,8 +2192,16 @@
           "centre": "Innovation / Technologie",
           "ecran": "Brevet · Secret",
           "cellules": [
-            { "texte": "Brevet", "icone": "fa-file-lines", "detail": "Partie brevetée" },
-            { "texte": "Secret", "icone": "fa-lock", "detail": "Savoir-faire maintenu secret" }
+            {
+              "texte": "Brevet",
+              "icone": "fa-file-lines",
+              "detail": "Partie brevetée"
+            },
+            {
+              "texte": "Secret",
+              "icone": "fa-lock",
+              "detail": "Savoir-faire maintenu secret"
+            }
           ],
           "caption": "Deux modes de protection complémentaires",
           "schema": "",
@@ -2020,7 +2217,10 @@
           "titre": "La maturité de votre technologie",
           "ecran": "Preuve de concept → Maturation avancée",
           "schema": "Preuve de concept → Maturation avancée",
-          "icones": ["fa-flask", "fa-industry"],
+          "icones": [
+            "fa-flask",
+            "fa-industry"
+          ],
           "caption": "Une maturité accrue peut renforcer la position de négociation",
           "developpe": "",
           "pourquoi": "4e critère, à part des trois premiers. Incrustation graphique complémentaire."
@@ -2073,7 +2273,8 @@
           "developpe": "",
           "pourquoi": "Message de conclusion de Monica."
         }
-      ]
+      ],
+      "source": "monica"
     },
     "E11": {
       "code": "E11",
@@ -2123,8 +2324,16 @@
           "vue": "grille",
           "ecran": "Licence exclusive · Licence non exclusive",
           "cellules": [
-            { "texte": "Licence exclusive", "icone": "fa-user", "detail": "Un seul licencié" },
-            { "texte": "Licence non exclusive", "icone": "fa-users", "detail": "Plusieurs licenciés possibles" }
+            {
+              "texte": "Licence exclusive",
+              "icone": "fa-user",
+              "detail": "Un seul licencié"
+            },
+            {
+              "texte": "Licence non exclusive",
+              "icone": "fa-users",
+              "detail": "Plusieurs licenciés possibles"
+            }
           ],
           "schema": "",
           "developpe": "",
@@ -2151,8 +2360,16 @@
           "titre": "Deux mécanismes contractuels",
           "ecran": "Licence = louage · Cession = vente",
           "cellules": [
-            { "texte": "Licence", "icone": "fa-file-contract", "detail": "Louage — droit d’exploitation sans transfert de propriété" },
-            { "texte": "Cession", "icone": "fa-handshake", "detail": "Vente — transfert de propriété" }
+            {
+              "texte": "Licence",
+              "icone": "fa-file-contract",
+              "detail": "Louage — droit d’exploitation sans transfert de propriété"
+            },
+            {
+              "texte": "Cession",
+              "icone": "fa-handshake",
+              "detail": "Vente — transfert de propriété"
+            }
           ],
           "schema": "",
           "developpe": "",
@@ -2178,9 +2395,18 @@
           "vue": "successifs",
           "ecran": "Apports matériels · Apports humains · Apports financiers",
           "cellules": [
-            { "texte": "Apports matériels", "icone": "fa-cubes" },
-            { "texte": "Apports humains", "icone": "fa-users" },
-            { "texte": "Apports financiers", "icone": "fa-coins" }
+            {
+              "texte": "Apports matériels",
+              "icone": "fa-cubes"
+            },
+            {
+              "texte": "Apports humains",
+              "icone": "fa-users"
+            },
+            {
+              "texte": "Apports financiers",
+              "icone": "fa-coins"
+            }
           ],
           "schema": "",
           "developpe": "",
@@ -2197,9 +2423,18 @@
           "centre": "Obligation de moyens",
           "ecran": "Obligation de moyens · Copropriété des résultats",
           "cellules": [
-            { "texte": "Apports matériels", "icone": "fa-cubes" },
-            { "texte": "Apports humains", "icone": "fa-users" },
-            { "texte": "Apports financiers", "icone": "fa-coins" }
+            {
+              "texte": "Apports matériels",
+              "icone": "fa-cubes"
+            },
+            {
+              "texte": "Apports humains",
+              "icone": "fa-users"
+            },
+            {
+              "texte": "Apports financiers",
+              "icone": "fa-coins"
+            }
           ],
           "caption": "Copropriété des résultats",
           "schema": "",
@@ -2235,7 +2470,11 @@
           "centre": "Obligation de résultat",
           "ecran": "Obligation de résultat",
           "cellules": [
-            { "texte": "Résultat attendu et défini", "icone": "fa-bullseye", "detail": "Cahier des charges" }
+            {
+              "texte": "Résultat attendu et défini",
+              "icone": "fa-bullseye",
+              "detail": "Cahier des charges"
+            }
           ],
           "caption": "Atteindre les résultats convenus dans le cahier des charges",
           "schema": "",
@@ -2266,7 +2505,8 @@
           "developpe": "",
           "pourquoi": "Phrase-clé de conclusion, mots de Soizic."
         }
-      ]
+      ],
+      "source": "monica"
     },
     "E12": {
       "code": "E12",
@@ -2336,7 +2576,8 @@
           "developpe": "",
           "pourquoi": "À l’issue de la maturation : un tiers privé poursuit l’exploitation vers le marché."
         }
-      ]
+      ],
+      "source": "ia"
     },
     "E13": {
       "code": "E13",
@@ -2406,7 +2647,8 @@
           "image": "schemas/f2-finance.png",
           "pourquoi": "Stratégie financière de l’incubation : extrait du tableau F2."
         }
-      ]
+      ],
+      "source": "ia"
     },
     "E13bis": {
       "code": "E13bis",
@@ -2467,7 +2709,8 @@
           "developpe": "",
           "pourquoi": "Solliciter les plateformes au bon moment du projet."
         }
-      ]
+      ],
+      "source": "ia"
     },
     "E16": {
       "code": "E16",
@@ -2536,7 +2779,8 @@
           "developpe": "",
           "pourquoi": "Présentations distinctes : public / privé, industriels, institutions, décideurs, clients."
         }
-      ]
+      ],
+      "source": "ia"
     },
     "E17": {
       "code": "E17",
@@ -2606,7 +2850,8 @@
           "developpe": "",
           "pourquoi": "Recrutement du CEO avec la SATT : cultures du secteur, pas un CV générique."
         }
-      ]
+      ],
+      "source": "ia"
     },
     "E18": {
       "code": "E18",
@@ -2675,7 +2920,8 @@
           "developpe": "",
           "pourquoi": "Définir et quantifier les apports de chacun très en amont ; le non-dit crée la tension."
         }
-      ]
+      ],
+      "source": "ia"
     },
     "E19": {
       "code": "E19",
@@ -2745,7 +2991,8 @@
           "developpe": "",
           "pourquoi": "Gouvernance, départ d’un fondateur, sortie : à revoir à l’arrivée d’investisseurs."
         }
-      ]
+      ],
+      "source": "ia"
     },
     "E20": {
       "code": "E20",
@@ -2805,7 +3052,8 @@
           "developpe": "",
           "pourquoi": "Message de clôture."
         }
-      ]
+      ],
+      "source": "ia"
     },
     "E21": {
       "code": "E21",
@@ -2866,7 +3114,8 @@
           "developpe": "",
           "pourquoi": "Posture de l’innovateur."
         }
-      ]
+      ],
+      "source": "ia"
     },
     "E22": {
       "code": "E22",
@@ -2926,7 +3175,8 @@
           "developpe": "",
           "pourquoi": "Réflexe avant de parler."
         }
-      ]
+      ],
+      "source": "ia"
     },
     "E23": {
       "code": "E23",
@@ -3005,7 +3255,8 @@
           "developpe": "",
           "pourquoi": "Clause de résiliation, équilibre."
         }
-      ]
+      ],
+      "source": "ia"
     },
     "E24": {
       "code": "E24",
@@ -3075,7 +3326,8 @@
           "developpe": "",
           "pourquoi": "Porte de sortie : procédure si une partie ne respecte pas ses obligations."
         }
-      ]
+      ],
+      "source": "ia"
     }
   },
   "schemas_fascicule": [

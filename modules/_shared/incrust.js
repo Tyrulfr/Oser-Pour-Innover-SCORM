@@ -4,7 +4,7 @@
  * Désactivée par défaut, un bouton par vidéo.
  */
 (function (global) {
-    var DATA_URL = new URL("incrustations.json?v=25", document.currentScript.src).href;
+    var DATA_URL = new URL("incrustations.json?v=26", document.currentScript.src).href;
     var SCRIPT_SRC = document.currentScript.src;
     var cards = [];
     var bound = false;
@@ -63,6 +63,14 @@
 
     function labelOf(item) {
         return item.ecran || item.schema || "Incrustation";
+    }
+
+    function isMonica(video) {
+        return video && video.source === "monica";
+    }
+
+    function layerName(video) {
+        return isMonica(video) ? "Incrustations" : "Incrustation IA";
     }
 
     function idNum(item) {
@@ -402,9 +410,10 @@
         if (!layer) return;
         var panel = layer.querySelector(".incrust-panel");
         if (!item) {
+            var emptyName = layerName(card._incrustVideo);
             layer.className = "incrust-layer is-empty";
-            panel.innerHTML = '<div class="incrust-waiting">Proposition d’incrustation</div>';
-            if (now) now.textContent = "Proposition d’incrustation";
+            panel.innerHTML = '<div class="incrust-waiting">' + escapeHtml(emptyName) + "</div>";
+            if (now) now.textContent = emptyName;
             highlightJump(card, null);
             return;
         }
@@ -457,7 +466,7 @@
         var nav = document.createElement("div");
         nav.className = "incrust-jumps";
         nav.setAttribute("role", "tablist");
-        nav.setAttribute("aria-label", "Aller à une proposition d’incrustation");
+        nav.setAttribute("aria-label", "Aller à une proposition — " + layerName(video));
         video.items.forEach(function (item, i) {
             var b = document.createElement("button");
             b.type = "button";
@@ -477,9 +486,10 @@
         if (!wrapper) return;
         var btn = document.createElement("button");
         btn.type = "button";
-        btn.className = "incrust-toggle";
+        btn.className = "incrust-toggle" + (isMonica(video) ? " is-monica" : " is-ia");
         btn.setAttribute("aria-pressed", "false");
-        btn.innerHTML = '<i class="fa-solid fa-layer-group"></i> Incrustations <span>(' + video.nb + ")</span>";
+        btn.setAttribute("aria-label", layerName(video));
+        btn.innerHTML = '<i class="fa-solid fa-layer-group"></i> ' + escapeHtml(layerName(video)) + " <span>(" + video.nb + ")</span>";
         btn.addEventListener("click", function () {
             var on = card.classList.toggle("is-incrust-on");
             btn.setAttribute("aria-pressed", on ? "true" : "false");
@@ -510,8 +520,10 @@
         stage.insertAdjacentElement("afterend", now);
         now.insertAdjacentElement("afterend", buildJumps(card, video));
         card._incrustItems = video.items;
+        card._incrustVideo = video;
         card._incrustTime = 0;
         card._incrustPinned = null;
+        card.classList.toggle("is-incrust-ia", !isMonica(video));
         render(card, null, 0);
         cards.push(card);
     }
