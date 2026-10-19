@@ -469,7 +469,7 @@ window.EVAL_BANK = (function () {
             memory: [
                 { front: "Peut-on avancer seul ?", back: "Rarement. Plus le projet est ambitieux, plus il faut des acteurs." },
                 { front: "Sur quoi parient les investisseurs, selon Jean-Jacques ?", back: "Sur une équipe humaine complémentaire, pas sur la seule techno." },
-                { front: "À quoi servent Design Spot / fablabs (E13bis) ?", back: "Passer de l’idée à une preuve concrète et travailler l’usage tôt." }
+                { front: "À quoi servent Design Spot / fablabs (E14) ?", back: "Passer de l’idée à une preuve concrète et travailler l’usage tôt." }
             ]
         },
 

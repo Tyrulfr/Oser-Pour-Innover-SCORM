@@ -183,8 +183,8 @@ def slide_decisions(prs):
                "Le calendrier ne tient que si ces quatre points sont arbitrés dans les prochains jours.")
 
     items = [
-        ("bordeaux", "E14 / E15",
-         "E12 est Stéphanie Augéroussel (SATT), pas Fatoumata. Restent E14 Fatoumata et E15.",
+        ("bordeaux", "E15 / E16",
+         "E12 est Stéphanie Augéroussel (SATT), pas Fatoumata. Restent E15 Fatoumata et E16.",
          "Bloque le T8", "E12 à brancher (lecteur)"),
         ("orange", "Capsule loi PACTE",
          "Sujet apparu en captation, sans emplacement prévu.",
@@ -214,10 +214,10 @@ def slide_decisions(prs):
     card(s, 0.84, 4.42, 8.41, 0.58, "orange", fill=TINT["orange"], radius=0.14)
     text_box(s, 1.02, 4.52, 8.05, 0.40,
              [("À confirmer : E3 (Burgé) est annoncé « courant octobre » tout en figurant au plateau du 24/09. "
-               "Plateau du 24/09 à IncubAlliance : 7 capsules (E2, E3, E4, E13, E15, E17, E18).",
+               "Plateau du 24/09 à IncubAlliance : 7 capsules (E2, E3, E4, E13, E16, E18, E19).",
                10, False, BLUE)])
 
-    slide_foot(s, "E12 = Stéphanie Augéroussel (SATT). Il reste E14 Fatoumata et E15 à planifier.")
+    slide_foot(s, "E14 = Yoann (V14). Il reste E15 Fatoumata et E16 à planifier.")
 
 
 # --------------------------------------------------------------------- slide 3
@@ -230,9 +230,9 @@ def slide_trajectoire(prs):
         ("teal", "1", "Lot 1 — MR, M2, M5, M6",
          "Rushes complets · sous réserve du rattachement de la capsule PACTE", "Prêt"),
         ("orange", "2", "Lot 2 — M1, M4",
-         "Débloqué par le plateau du 24/09 : E2, E3, E4, E17, E18", "Octobre"),
+         "Débloqué par le plateau du 24/09 : E2, E3, E4, E18, E19", "Octobre"),
         ("bordeaux", "3", "Lot 3 — M3",
-         "E12 = Stéphanie SATT (pas V14/E14). Restent E14 Fatoumata et E15.", "Sans date"),
+         "E14 = Yoann (cadre V14). Restent E15 Fatoumata et E16.", "Sans date"),
     ]
     top, h, gap = 1.44, 0.66, 0.08
     for i, (accent, num, title, body, tag) in enumerate(lots):
@@ -248,7 +248,7 @@ def slide_trajectoire(prs):
         ("teal", "Décembre 2026", "Ouverture partielle",
          "MR, M2, M5, M6 — suppose d'accepter une ouverture module par module"),
         ("blue", "Fin janvier 2027", "Parcours complet",
-         "Sous réserve de E14 Fatoumata, E15, et du volume intro / outro"),
+         "Sous réserve de E15 Fatoumata, E16, et du volume intro / outro"),
     ]
     jw, jtop, jh = 4.08, 3.72, 0.90
     for i, (accent, when, what, cond) in enumerate(jalons):

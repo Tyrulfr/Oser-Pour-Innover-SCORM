@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         /* --- Styles de base --- */
-        :root { --bordeaux: #580F45; --orange: #F48C2E; --teal: #2EAF7D; --blue: #2A325E; --bg-page: #F0F2F5; --bg-card: #FFFFFF; --text-main: #2A325E; --text-light: #555; }
+        :root { --bordeaux: #63003C; --orange: #F0821A; --teal: #00AE68; --blue: #1D3258; --bg-page: #F0F2F5; --bg-card: #FFFFFF; --text-main: #1D3258; --text-light: #555; }
         body.dark-mode { --bg-page: #1A1D2E; --bg-card: #232742; --text-main: #EAEAEA; --text-light: #BBB; }
         * { box-sizing: border-box; transition: all 0.3s ease; }
         body { margin: 0; padding: 0; font-family: 'Open Sans', sans-serif; background-color: var(--bg-page); color: var(--text-main); line-height: 1.6; padding-bottom: 100px; }
@@ -25,7 +25,7 @@
         .content-container { max-width: 1000px; margin: 2rem auto; padding: 0 1.5rem; }
         .hero-title { font-size: 2.5rem; font-weight: 900; margin-bottom: 0.5rem; line-height: 1.2; }
         .hero-subtitle { font-size: 1.1rem; color: var(--text-light); margin-bottom: 2rem; border-left: 4px solid var(--orange); padding-left: 15px; }
-        .def-box { background: linear-gradient(135deg, var(--blue), var(--bordeaux)); color: white; padding: 2rem; border-radius: 15px; margin: 2rem 0; box-shadow: 0 10px 20px rgba(42, 50, 94, 0.2); position: relative; }
+        .def-box { background: linear-gradient(135deg, var(--blue), var(--bordeaux)); color: white; padding: 2rem; border-radius: 15px; margin: 2rem 0; box-shadow: 0 10px 20px rgba(29, 50, 88, 0.2); position: relative; }
         .def-quote { font-size: 1.2rem; font-weight: 500; text-align: center; margin-bottom: 1rem; display: block; font-style: italic; }
 
         /* --- STYLES DU SCHÉMA --- */
@@ -81,7 +81,7 @@
         
         .private-label {
             color: var(--blue) !important;
-            border: 1px solid rgba(42, 50, 94, 0.2) !important;
+            border: 1px solid rgba(29, 50, 88, 0.2) !important;
         }
         .private-label i { color: var(--blue) !important; }
 
@@ -162,8 +162,8 @@
 
         /* Footer & Modal */
         .action-footer { position: fixed; bottom: 0; left: 0; right: 0; background: var(--bg-card); padding: 1rem 5%; border-top: 1px solid #ddd; display: flex; justify-content: flex-end; align-items: center; z-index: 1000; box-shadow: 0 -5px 20px rgba(0,0,0,0.1); }
-        .btn-validate { background: var(--teal); color: white; border: none; padding: 12px 30px; border-radius: 50px; font-weight: 800; font-size: 1rem; cursor: pointer; display: flex; align-items: center; gap: 10px; box-shadow: 0 5px 15px rgba(46, 175, 125, 0.3); }
-        .btn-validate:hover { transform: translateY(-3px); box-shadow: 0 8px 20px rgba(46, 175, 125, 0.4); }
+        .btn-validate { background: var(--teal); color: white; border: none; padding: 12px 30px; border-radius: 50px; font-weight: 800; font-size: 1rem; cursor: pointer; display: flex; align-items: center; gap: 10px; box-shadow: 0 5px 15px rgba(0, 174, 104, 0.3); }
+        .btn-validate:hover { transform: translateY(-3px); box-shadow: 0 8px 20px rgba(0, 174, 104, 0.4); }
         
         .modal-overlay { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.7); display: none; justify-content: center; align-items: center; z-index: 2000; opacity: 0; transition: opacity 0.3s ease; }
         .modal-overlay.active { display: flex; opacity: 1; }
@@ -179,7 +179,7 @@
             margin: 1.25rem auto 0;
             padding: 1rem 1.4rem;
             border-radius: 14px;
-            background: linear-gradient(135deg, #2A325E, #580F45);
+            background: linear-gradient(135deg, #1D3258, #63003C);
             color: #fff;
         }
         .mr-source-banner .mr-source-kicker {
@@ -231,7 +231,7 @@
                         <polygon points="0 0, 10 3.5, 0 7" fill="#888" />
                     </marker>
                     <marker id="arrowhead-loop" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
-                        <polygon points="0 0, 10 3.5, 0 7" fill="#F48C2E" />
+                        <polygon points="0 0, 10 3.5, 0 7" fill="#F0821A" />
                     </marker>
                 </defs>
 
@@ -240,29 +240,29 @@
                 <line x1="100" y1="300" x2="120" y2="265" stroke="#aaa" stroke-width="2" marker-end="url(#arrowhead)" />
 
                 <!-- 2. FINANCE -> CONNAISSANCE -->
-                <line x1="260" y1="260" x2="370" y2="260" stroke="#2EAF7D" stroke-width="3" marker-end="url(#arrowhead)" />
+                <line x1="260" y1="260" x2="370" y2="260" stroke="#00AE68" stroke-width="3" marker-end="url(#arrowhead)" />
 
                 <!-- 3. CONNAISSANCE -> SOCIETY (Down) -->
                 <line x1="440" y1="310" x2="440" y2="550" stroke="#aaa" stroke-width="2" stroke-dasharray="5,5" marker-end="url(#arrowhead)" />
 
                 <!-- 4. CONNAISSANCE -> LANCEMENT -->
-                <line x1="510" y1="260" x2="620" y2="260" stroke="#2A325E" stroke-width="4" marker-end="url(#arrowhead)" />
+                <line x1="510" y1="260" x2="620" y2="260" stroke="#1D3258" stroke-width="4" marker-end="url(#arrowhead)" />
 
                 <!-- 5. LANCEMENT -> VENTE DIRECTE (Up) -->
-                <line x1="690" y1="230" x2="690" y2="100" stroke="#580F45" stroke-width="2" marker-end="url(#arrowhead)" />
+                <line x1="690" y1="230" x2="690" y2="100" stroke="#63003C" stroke-width="2" marker-end="url(#arrowhead)" />
 
                 <!-- 6. LANCEMENT -> SPINOFF / STARTUP -->
-                <path d="M 760 260 Q 790 260 820 180" stroke="#580F45" stroke-width="2" fill="none" marker-end="url(#arrowhead)" />
-                <path d="M 760 260 Q 790 260 820 340" stroke="#580F45" stroke-width="2" fill="none" marker-end="url(#arrowhead)" />
+                <path d="M 760 260 Q 790 260 820 180" stroke="#63003C" stroke-width="2" fill="none" marker-end="url(#arrowhead)" />
+                <path d="M 760 260 Q 790 260 820 340" stroke="#63003C" stroke-width="2" fill="none" marker-end="url(#arrowhead)" />
 
                 <!-- 7. LOOP: VENTE -> FINANCE -->
-                <path d="M 620 70 L 190 70 L 190 230" stroke="#F48C2E" stroke-width="2" stroke-dasharray="5,5" fill="none" marker-end="url(#arrowhead-loop)" />
+                <path d="M 620 70 L 190 70 L 190 230" stroke="#F0821A" stroke-width="2" stroke-dasharray="5,5" fill="none" marker-end="url(#arrowhead-loop)" />
 
                 <!-- 8. STARTUP -> MARCHÉ -->
                 <line x1="880" y1="360" x2="890" y2="450" stroke="#aaa" stroke-width="2" marker-end="url(#arrowhead)" />
 
                 <!-- 9. LOOP: STARTUP -> FINANCE -->
-                <path d="M 900 370 L 900 650 L 190 650 L 190 300" stroke="#F48C2E" stroke-width="2" stroke-dasharray="5,5" fill="none" marker-end="url(#arrowhead-loop)" />
+                <path d="M 900 370 L 900 650 L 190 650 L 190 300" stroke="#F0821A" stroke-width="2" stroke-dasharray="5,5" fill="none" marker-end="url(#arrowhead-loop)" />
 
                 <!-- 10. MARCHÉ -> SOCIÉTÉ -->
                 <path d="M 820 490 Q 660 550 490 580" stroke="#aaa" stroke-width="2" fill="none" marker-end="url(#arrowhead)" />
@@ -282,7 +282,7 @@
                 <!-- BLUE: Invention/Techno -->
                 <div class="node-text-top private-text">Invention / Technologie</div>
                 <i class="fa-solid fa-book-open node-icon" style="position:relative;">
-                    <i class="fa-solid fa-lightbulb" style="position:absolute; top:50%; left:50%; transform:translate(-50%, -50%); color:#F48C2E; font-size:0.8rem; background:rgba(255,255,255,0.7); border-radius:50%; padding:2px;"></i>
+                    <i class="fa-solid fa-lightbulb" style="position:absolute; top:50%; left:50%; transform:translate(-50%, -50%); color:#F0821A; font-size:0.8rem; background:rgba(255,255,255,0.7); border-radius:50%; padding:2px;"></i>
                 </i>
                 Connaissances
             </div>

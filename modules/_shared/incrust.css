@@ -5,9 +5,9 @@
 .incrust-toggle {
     margin-left: 0;
     flex-shrink: 0;
-    border: 1px solid rgba(42, 50, 94, 0.22);
+    border: 1px solid rgba(29, 50, 88, 0.22);
     background: var(--bg-card, #fff);
-    color: var(--text-main, #2A325E);
+    color: var(--text-main, #1D3258);
     border-radius: 999px;
     padding: 8px 14px;
     font-size: 0.78rem;
@@ -18,16 +18,16 @@
     align-items: center;
     gap: 8px;
 }
-.incrust-toggle:hover { color: var(--orange, #F48C2E); border-color: var(--orange, #F48C2E); }
+.incrust-toggle:hover { color: var(--orange, #F0821A); border-color: var(--orange, #F0821A); }
 .video-card.is-incrust-on .incrust-toggle.is-monica {
-    background: var(--teal, #2EAF7D);
-    border-color: var(--teal, #2EAF7D);
+    background: var(--teal, #00AE68);
+    border-color: var(--teal, #00AE68);
     color: #fff;
 }
 .incrust-toggle.is-ia { border-style: dashed; }
 .video-card.is-incrust-on .incrust-toggle.is-ia {
-    background: var(--orange, #F48C2E);
-    border-color: var(--orange, #F48C2E);
+    background: var(--orange, #F0821A);
+    border-color: var(--orange, #F0821A);
     border-style: solid;
     color: #1b1f33;
 }
@@ -67,9 +67,9 @@
 }
 .video-card.is-incrust-on .incrust-jumps { display: flex; }
 .incrust-jump {
-    border: 1px solid rgba(42, 50, 94, 0.18);
+    border: 1px solid rgba(29, 50, 88, 0.18);
     background: transparent;
-    color: var(--text-main, #2A325E);
+    color: var(--text-main, #1D3258);
     border-radius: 999px;
     padding: 5px 10px;
     font-size: 0.72rem;
@@ -85,10 +85,10 @@
     min-width: 1.1em;
     opacity: 0.65;
 }
-.incrust-jump:hover { border-color: var(--orange, #F48C2E); color: var(--orange, #F48C2E); }
+.incrust-jump:hover { border-color: var(--orange, #F0821A); color: var(--orange, #F0821A); }
 .incrust-jump.is-current {
-    background: var(--teal, #2EAF7D);
-    border-color: var(--teal, #2EAF7D);
+    background: var(--teal, #00AE68);
+    border-color: var(--teal, #00AE68);
     color: #fff;
 }
 body.dark-mode .incrust-jumps { border-top-color: rgba(255,255,255,0.08); }
@@ -267,8 +267,8 @@ body.dark-mode .incrust-jump { border-color: rgba(255,255,255,0.18); }
     height: 1.85rem;
 }
 .incrust-step.is-emphasis {
-    background: rgba(244, 140, 46, 0.92);
-    border-color: var(--orange, #F48C2E);
+    background: rgba(240, 130, 26, 0.92);
+    border-color: var(--orange, #F0821A);
     color: #1b1f33;
 }
 .incrust-arrow.is-fork {
@@ -293,7 +293,7 @@ body.dark-mode .incrust-jump { border-color: rgba(255,255,255,0.18); }
     display: flex;
     gap: 1.1rem;
     font-size: 1.25rem;
-    color: var(--orange, #F48C2E);
+    color: var(--orange, #F0821A);
 }
 .incrust-person {
     position: relative;
@@ -319,7 +319,7 @@ body.dark-mode .incrust-jump { border-color: rgba(255,255,255,0.18); }
 }
 .incrust-morph .is-from { opacity: 0.7; }
 .incrust-morph .is-to {
-    color: var(--orange, #F48C2E);
+    color: var(--orange, #F0821A);
     animation: incrust-fade 0.5s ease-out 0.35s both;
 }
 .is-frise { position: relative; padding-top: 8px; }
@@ -435,7 +435,7 @@ body.dark-mode .incrust-jump { border-color: rgba(255,255,255,0.18); }
     width: 1.35rem;
     height: 1.35rem;
     border-radius: 50%;
-    background: var(--orange, #F48C2E);
+    background: var(--orange, #F0821A);
     color: #1b1f33;
     font-size: 0.75rem;
     font-weight: 900;
@@ -460,7 +460,7 @@ body.dark-mode .incrust-jump { border-color: rgba(255,255,255,0.18); }
 .incrust-loop-arrows {
     font-size: 1.6rem;
     font-weight: 900;
-    color: var(--orange, #F48C2E);
+    color: var(--orange, #F0821A);
     animation: incrust-fade 0.4s ease-out 0.2s both;
 }
 .is-boucle .incrust-step { animation: incrust-fade 0.4s ease-out both; }
@@ -607,7 +607,7 @@ body.dark-mode .incrust-jump { border-color: rgba(255,255,255,0.18); }
     max-width: 16rem;
     padding: 10px 16px;
     border-radius: 16px;
-    background: rgba(42, 50, 94, 0.92);
+    background: rgba(29, 50, 88, 0.92);
     border: 1px solid rgba(255,255,255,0.35);
     font-family: Montserrat, sans-serif;
     font-weight: 900;

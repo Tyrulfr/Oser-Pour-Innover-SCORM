@@ -38,10 +38,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
-        :root { --bordeaux: #580F45; --orange: #F48C2E; --teal: #2EAF7D; --blue: #2A325E; --bg-page: #F8F9FA; --bg-card: #FFFFFF; --text-main: #2A325E; --text-light: #555; }
+        :root { --bordeaux: #63003C; --orange: #F0821A; --teal: #00AE68; --blue: #1D3258; --bg-page: #F8F9FA; --bg-card: #FFFFFF; --text-main: #1D3258; --text-light: #555; }
         body.dark-mode { --bg-page: #1A1D2E; --bg-card: #232742; --text-main: #EAEAEA; --text-light: #BBB; }
         * { box-sizing: border-box; transition: all 0.3s ease; }
-        body { margin: 0; padding: 0; font-family: 'Open Sans', sans-serif; background-color: var(--bg-page); color: var(--text-main); line-height: 1.6; padding-bottom: 100px; background-image: radial-gradient(rgba(42, 50, 94, 0.1) 1px, transparent 1px); background-size: 30px 30px; }
+        body { margin: 0; padding: 0; font-family: 'Open Sans', sans-serif; background-color: var(--bg-page); color: var(--text-main); line-height: 1.6; padding-bottom: 100px; background-image: radial-gradient(rgba(29, 50, 88, 0.1) 1px, transparent 1px); background-size: 30px 30px; }
         body.dark-mode { background-image: radial-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 1px); }
         h1, h2, h3, h4 { font-family: 'Montserrat', sans-serif; color: var(--bordeaux); }
         body.dark-mode h1, body.dark-mode h2, body.dark-mode h3 { color: var(--orange); }
@@ -52,8 +52,8 @@
         .hero-title { font-size: 2.5rem; font-weight: 900; margin-bottom: 0.5rem; line-height: 1.2; }
         .hero-subtitle { font-size: 1.1rem; color: var(--text-light); margin-bottom: 2rem; border-left: 4px solid var(--teal); padding-left: 15px; }
         .video-card { background: var(--bg-card); border-radius: 20px; overflow: hidden; box-shadow: 0 15px 40px rgba(0,0,0,0.1); margin: 3rem 0; border: 1px solid rgba(0,0,0,0.05); }
-        .video-header { padding: 1.5rem; display: flex; align-items: center; gap: 15px; border-bottom: 1px solid rgba(0,0,0,0.05); background: linear-gradient(to right, rgba(46, 175, 125, 0.1), transparent); }
-        .play-icon { width: 50px; height: 50px; background: var(--teal); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-size: 1.2rem; box-shadow: 0 5px 15px rgba(46, 175, 125, 0.3); }
+        .video-header { padding: 1.5rem; display: flex; align-items: center; gap: 15px; border-bottom: 1px solid rgba(0,0,0,0.05); background: linear-gradient(to right, rgba(0, 174, 104, 0.1), transparent); }
+        .play-icon { width: 50px; height: 50px; background: var(--teal); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-size: 1.2rem; box-shadow: 0 5px 15px rgba(0, 174, 104, 0.3); }
         .video-title-group h3 { margin: 0; font-size: 1.3rem; }
         .video-meta { font-size: 0.9rem; color: var(--text-light); }
         .video-wrapper { position: relative; padding-bottom: 56.25%; height: 0; background: #000; }
@@ -75,7 +75,7 @@
         .modal-title { font-size: 1.5rem; font-weight: 900; margin-bottom: 1rem; color: var(--teal); }
         .modal-btn { background: var(--teal); color: white; border: none; padding: 10px 25px; border-radius: 5px; cursor: pointer; font-weight: bold; margin-top: 1rem; }
         .action-footer { position: fixed; bottom: 0; left: 0; right: 0; background: var(--bg-card); padding: 1rem 5%; border-top: 1px solid #ddd; display: flex; justify-content: flex-end; align-items: center; z-index: 1000; box-shadow: 0 -5px 20px rgba(0,0,0,0.1); }
-        .btn-validate { background: var(--blue); color: white; padding: 12px 30px; border-radius: 50px; font-weight: 800; font-size: 1rem; cursor: pointer; display: inline-flex; align-items: center; gap: 10px; box-shadow: 0 5px 15px rgba(42, 50, 94, 0.3); text-decoration: none; }
+        .btn-validate { background: var(--blue); color: white; padding: 12px 30px; border-radius: 50px; font-weight: 800; font-size: 1rem; cursor: pointer; display: inline-flex; align-items: center; gap: 10px; box-shadow: 0 5px 15px rgba(29, 50, 88, 0.3); text-decoration: none; }
         .btn-validate:hover { transform: translateY(-3px); }
     </style>
 </head>

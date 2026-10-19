@@ -38,23 +38,23 @@ TITLES = {
     "T7": "Vous n’êtes pas seul(e)",
     "E12": "Prématuration → maturation",
     "E13": "Ce que fait un incubateur",
-    "E13bis": "Design Spot, fablab, OTT",
+    "E14": "Design Spot, fablab, OTT",
     "T8": "Financements, concours, temps",
-    "E14": "Chaîne des financements (Fatoumata)",
-    "E15": "Logique des investisseurs",
+    "E15": "Chaîne des financements (Fatoumata)",
+    "E16": "Logique des investisseurs",
     "T9": "Partenariats et équipe",
-    "E16": "Posture entrepreneuriale et vocabulaire",
-    "E17": "Relation entre fondateurs",
+    "E17": "Posture entrepreneuriale et vocabulaire",
+    "E18": "Relation entre fondateurs",
     "T10": "Enrichir son langage",
-    "E18": "Organiser juridiquement l’équipe projet",
-    "E19": "Financer et dérisquer un projet Deep Tech",
+    "E19": "Organiser juridiquement l’équipe projet",
+    "E20": "Financer et dérisquer un projet Deep Tech",
     "T11": "Évolution dans le métier du chercheur",
-    "E20": "Concilier recherche et engagement",
-    "E21": "Innover comme apprentissage (TRL, pivot, MVP)",
+    "E21": "Concilier recherche et engagement",
+    "E22": "Innover comme apprentissage (TRL, pivot, MVP)",
     "T12": "Dispositifs et collaborations",
-    "E22": "Collaboration équilibrée",
-    "E23": "Sécuriser juridiquement (NDA, PI, contrat)",
-    "E24": "Dispositifs de collaboration",
+    "E23": "Collaboration équilibrée",
+    "E24": "Sécuriser juridiquement (NDA, PI, contrat)",
+    "E25": "Dispositifs de collaboration",
     "T13": "Conclusion : passer à l’action",
 }
 
@@ -72,11 +72,6 @@ def transcript_path(code: str) -> Path | None:
     if code.startswith("T") and code[1:].isdigit():
         p = TEMOINS / f"{code}.docx"
         return p if p.exists() else None
-    if code == "E13bis":
-        p = EXPERTS / "E13bis_Yoann.docx"
-        return p if p.exists() else None
-    if code == "E14":
-        return None
     matches = sorted(EXPERTS.glob(f"{code}_*.docx"))
     return matches[0] if matches else None
 
@@ -142,17 +137,17 @@ def document_xml(code: str, title: str, intro: str, lines: list[str], outro: str
     body = [
         w_p(f"{code} — {title}", "Heading1"),
         w_p(kind, italic=True),
-        w_p("Intro", "Heading2", color="2EAF7D"),
+        w_p("Intro", "Heading2", color="00AE69"),
     ]
-    body.extend(w_p(line, color="2EAF7D") for line in intro.split("\n") if line.strip())
+    body.extend(w_p(line, color="00AE69") for line in intro.split("\n") if line.strip())
     body.append(w_p("Transcript", "Heading2"))
     if missing:
         body.append(w_p(missing, italic=True))
     else:
         keep_speaker = code.startswith("T")
         body.extend(w_p(format_line(line, keep_speaker)) for line in lines if line.strip())
-    body.append(w_p("Outro", "Heading2", color="F48C2E"))
-    body.extend(w_p(line, color="F48C2E") for line in outro.split("\n") if line.strip())
+    body.append(w_p("Outro", "Heading2", color="F0821A"))
+    body.extend(w_p(line, color="F0821A") for line in outro.split("\n") if line.strip())
     return f"""<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <w:document xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main">
   <w:body>
@@ -193,12 +188,12 @@ STYLES = """<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
   <w:style w:type="paragraph" w:styleId="Heading1">
     <w:name w:val="heading 1"/><w:basedOn w:val="Normal"/><w:next w:val="Normal"/><w:uiPriority w:val="9"/><w:qFormat/>
     <w:pPr><w:spacing w:before="240" w:after="120"/></w:pPr>
-    <w:rPr><w:b/><w:sz w:val="36"/><w:szCs w:val="36"/><w:color w:val="580F45"/></w:rPr>
+    <w:rPr><w:b/><w:sz w:val="36"/><w:szCs w:val="36"/><w:color w:val="63003C"/></w:rPr>
   </w:style>
   <w:style w:type="paragraph" w:styleId="Heading2">
     <w:name w:val="heading 2"/><w:basedOn w:val="Normal"/><w:next w:val="Normal"/><w:uiPriority w:val="9"/><w:qFormat/>
     <w:pPr><w:spacing w:before="280" w:after="80"/></w:pPr>
-    <w:rPr><w:b/><w:sz w:val="26"/><w:szCs w:val="26"/><w:color w:val="F48C2E"/></w:rPr>
+    <w:rPr><w:b/><w:sz w:val="26"/><w:szCs w:val="26"/><w:color w:val="F0821A"/></w:rPr>
   </w:style>
 </w:styles>
 """
@@ -253,8 +248,8 @@ def main() -> None:
         "Chaque fichier : Intro (texte animateur) · Transcript · Outro (texte animateur).\n"
         "Ordre des fichiers = ordre pédagogique du parcours.\n\n"
         "Transcripts encore absents : " + (", ".join(missing_codes) if missing_codes else "aucun") + ".\n"
-        "E12 = Stéphanie Augéroussel (SATT). La capsule parfois étiquetée V14 / E14 sur le plateau est E12.\n"
-        "E13bis = Yoann (Design Spot). E14 Fatoumata (chaîne des financements) n’est pas encore filmée.\n",
+        "Les codes suivent le numéro de cadre à partir de V14.\n"
+        "E14 = Yoann (Design Spot). E15 Fatoumata et E16 (investisseurs) ne sont pas encore filmées.\n",
         encoding="utf-8",
     )
 

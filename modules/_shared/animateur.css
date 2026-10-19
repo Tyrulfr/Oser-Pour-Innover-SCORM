@@ -16,9 +16,9 @@
 .anim-toggle {
     margin-left: auto;
     flex-shrink: 0;
-    border: 1px solid rgba(42, 50, 94, 0.22);
+    border: 1px solid rgba(29, 50, 88, 0.22);
     background: var(--bg-card, #fff);
-    color: var(--text-main, #2A325E);
+    color: var(--text-main, #1D3258);
     border-radius: 999px;
     padding: 8px 14px;
     font-size: 0.78rem;
@@ -29,26 +29,26 @@
     align-items: center;
     gap: 8px;
 }
-.anim-toggle:hover { color: var(--orange, #F48C2E); border-color: var(--orange, #F48C2E); }
+.anim-toggle:hover { color: var(--orange, #F0821A); border-color: var(--orange, #F0821A); }
 .video-card.is-anim-on .anim-toggle {
-    background: var(--orange, #F48C2E);
-    border-color: var(--orange, #F48C2E);
+    background: var(--orange, #F0821A);
+    border-color: var(--orange, #F0821A);
     color: #fff;
 }
 .anim-block {
     display: none;
     padding: 1rem 1.4rem 1.15rem;
-    background: rgba(244, 140, 46, 0.08);
-    border-top: 1px solid rgba(244, 140, 46, 0.18);
+    background: rgba(240, 130, 26, 0.08);
+    border-top: 1px solid rgba(240, 130, 26, 0.18);
 }
 .video-card.is-anim-on .anim-block { display: block; }
 .anim-block.is-intro {
     border-top: 0;
-    border-bottom: 1px solid rgba(244, 140, 46, 0.18);
+    border-bottom: 1px solid rgba(240, 130, 26, 0.18);
 }
 .anim-block.is-temoin {
-    background: rgba(46, 175, 125, 0.08);
-    border-color: rgba(46, 175, 125, 0.18);
+    background: rgba(0, 174, 104, 0.08);
+    border-color: rgba(0, 174, 104, 0.18);
 }
 .anim-kicker {
     font-family: Montserrat, sans-serif;
@@ -56,27 +56,27 @@
     font-weight: 800;
     letter-spacing: 0.08em;
     text-transform: uppercase;
-    color: var(--orange, #F48C2E);
+    color: var(--orange, #F0821A);
     margin-bottom: 0.35rem;
 }
 .anim-block.is-temoin .anim-kicker {
-    color: var(--teal, #2EAF7D);
+    color: var(--teal, #00AE68);
 }
 .anim-block p {
     margin: 0;
     font-size: 0.95rem;
     line-height: 1.45;
-    color: var(--text-main, #2A325E);
+    color: var(--text-main, #1D3258);
 }
 body.dark-mode .anim-toggle {
     border-color: rgba(255, 255, 255, 0.22);
 }
 body.dark-mode .anim-block {
-    background: rgba(244, 140, 46, 0.14);
-    border-color: rgba(244, 140, 46, 0.28);
+    background: rgba(240, 130, 26, 0.14);
+    border-color: rgba(240, 130, 26, 0.28);
 }
 body.dark-mode .anim-block.is-temoin {
-    background: rgba(46, 175, 125, 0.14);
-    border-color: rgba(46, 175, 125, 0.28);
+    background: rgba(0, 174, 104, 0.14);
+    border-color: rgba(0, 174, 104, 0.28);
 }
 body.dark-mode .anim-block p { color: var(--text-main, #EAEAEA); }

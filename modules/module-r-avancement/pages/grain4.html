@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         /* --- Styles de base --- */
-        :root { --bordeaux: #580F45; --orange: #F48C2E; --teal: #2EAF7D; --blue: #2A325E; --bg-page: #F0F2F5; --bg-card: #FFFFFF; --text-main: #2A325E; --text-light: #555; }
+        :root { --bordeaux: #63003C; --orange: #F0821A; --teal: #00AE68; --blue: #1D3258; --bg-page: #F0F2F5; --bg-card: #FFFFFF; --text-main: #1D3258; --text-light: #555; }
         body.dark-mode { --bg-page: #1A1D2E; --bg-card: #232742; --text-main: #EAEAEA; --text-light: #BBB; }
         * { box-sizing: border-box; transition: all 0.3s ease; }
         body { margin: 0; padding: 0; font-family: 'Open Sans', sans-serif; background-color: var(--bg-page); color: var(--text-main); line-height: 1.6; padding-bottom: 100px; }
@@ -28,7 +28,7 @@
         .hero-subtitle { font-size: 1.1rem; color: var(--text-light); margin-bottom: 2rem; border-left: 4px solid var(--orange); padding-left: 15px; }
         
         /* Definition Box */
-        .def-box { background: linear-gradient(135deg, var(--blue), var(--bordeaux)); color: white; padding: 2rem; border-radius: 15px; margin: 2rem 0; box-shadow: 0 10px 20px rgba(42, 50, 94, 0.2); position: relative; }
+        .def-box { background: linear-gradient(135deg, var(--blue), var(--bordeaux)); color: white; padding: 2rem; border-radius: 15px; margin: 2rem 0; box-shadow: 0 10px 20px rgba(29, 50, 88, 0.2); position: relative; }
         .def-quote { font-size: 1.2rem; font-weight: 500; text-align: center; margin-bottom: 1rem; display: block; font-style: italic; }
         
         /* VS Cards */
@@ -48,7 +48,7 @@
         .buzzword-cloud { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; margin-top: 1rem; }
         .buzz-item { font-size: 0.9rem; padding: 5px 12px; background: white; border-radius: 20px; color: #888; border: 1px solid #ddd; cursor: pointer; transition: all 0.2s; }
         .buzz-item:hover { color: var(--orange); border-color: var(--orange); transform: scale(1.05); box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
-        .buzz-item.visited { background-color: rgba(46, 175, 125, 0.1); color: var(--teal); border-color: var(--teal); font-weight: 600; }
+        .buzz-item.visited { background-color: rgba(0, 174, 104, 0.1); color: var(--teal); border-color: var(--teal); font-weight: 600; }
         .buzz-item.visited:hover { background-color: var(--teal); color: white; }
 
         /* Insight Box */
@@ -57,8 +57,8 @@
 
         /* Footer & Modal */
         .action-footer { position: fixed; bottom: 0; left: 0; right: 0; background: var(--bg-card); padding: 1rem 5%; border-top: 1px solid #ddd; display: flex; justify-content: flex-end; align-items: center; z-index: 1000; box-shadow: 0 -5px 20px rgba(0,0,0,0.1); }
-        .btn-validate { background: var(--teal); color: white; border: none; padding: 12px 30px; border-radius: 50px; font-weight: 800; font-size: 1rem; cursor: pointer; display: flex; align-items: center; gap: 10px; box-shadow: 0 5px 15px rgba(46, 175, 125, 0.3); }
-        .btn-validate:hover { transform: translateY(-3px); box-shadow: 0 8px 20px rgba(46, 175, 125, 0.4); }
+        .btn-validate { background: var(--teal); color: white; border: none; padding: 12px 30px; border-radius: 50px; font-weight: 800; font-size: 1rem; cursor: pointer; display: flex; align-items: center; gap: 10px; box-shadow: 0 5px 15px rgba(0, 174, 104, 0.3); }
+        .btn-validate:hover { transform: translateY(-3px); box-shadow: 0 8px 20px rgba(0, 174, 104, 0.4); }
         
         .modal-overlay { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.7); display: none; justify-content: center; align-items: center; z-index: 2000; opacity: 0; transition: opacity 0.3s ease; }
         .modal-overlay.active { display: flex; opacity: 1; }
@@ -69,7 +69,7 @@
         
         body.dark-mode .buzzword-box { background: rgba(255,255,255,0.05); border-color: #444; }
         body.dark-mode .buzz-item { background: #2c3149; border-color: #444; color: #aaa; }
-        body.dark-mode .buzz-item.visited { background: rgba(46, 175, 125, 0.2); color: #81c784; border-color: #81c784; }
+        body.dark-mode .buzz-item.visited { background: rgba(0, 174, 104, 0.2); color: #81c784; border-color: #81c784; }
     </style>
 </head>
 <body data-module="module1" data-grain="grain4">

@@ -216,9 +216,9 @@ ACCUEIL = """<!DOCTYPE html>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
-        :root {{ --accent: #2A325E; --teal: #2EAF7D; --orange: #F48C2E; --bg: #F8F9FA; }}
+        :root {{ --accent: #1D3258; --teal: #00AE68; --orange: #F0821A; --bg: #F8F9FA; }}
         body {{ margin: 0; font-family: 'Open Sans', sans-serif; background: var(--bg); color: var(--accent);
-            background-image: radial-gradient(rgba(42,50,94,0.08) 1px, transparent 1px); background-size: 28px 28px; }}
+            background-image: radial-gradient(rgba(29,50,88,0.08) 1px, transparent 1px); background-size: 28px 28px; }}
         .navbar {{ display: flex; justify-content: space-between; align-items: center; padding: 1rem 6%; background: #fff; border-bottom: 1px solid #e6e6e6; }}
         .navbar a {{ color: var(--accent); font-weight: 700; text-decoration: none; }}
         .hero {{ text-align: center; padding: 4rem 1.5rem 2rem; }}
@@ -259,7 +259,7 @@ MODULE_INDEX = """<!DOCTYPE html>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
-        :root {{ --accent: #2A325E; --teal: #2EAF7D; --orange: #F48C2E; --bg: #F8F9FA; --card: #fff; }}
+        :root {{ --accent: #1D3258; --teal: #00AE68; --orange: #F0821A; --bg: #F8F9FA; --card: #fff; }}
         body {{ margin: 0; font-family: 'Open Sans', sans-serif; background: var(--bg); color: var(--accent); padding-bottom: 80px; }}
         .top-bar {{ background: var(--card); padding: 0.9rem 5%; display: flex; justify-content: space-between; align-items: center; border-bottom: 3px solid var(--accent); }}
         .btn-back {{ text-decoration: none; color: inherit; font-weight: 700; }}
@@ -270,7 +270,7 @@ MODULE_INDEX = """<!DOCTYPE html>
         .grain-card {{ background: var(--card); border-radius: 14px; overflow: hidden; box-shadow: 0 8px 20px rgba(0,0,0,0.06); display: flex; flex-direction: column; position: relative; border-top: 5px solid var(--teal); }}
         .card-number {{ position: absolute; top: 12px; right: 14px; font-size: 1.6rem; font-weight: 900; opacity: 0.08; }}
         .card-body {{ padding: 1.6rem 1.3rem; flex: 1; }}
-        .card-icon {{ width: 52px; height: 52px; border-radius: 50%; display: flex; align-items: center; justify-content: center; background: rgba(46,175,125,0.12); color: var(--teal); margin-bottom: 0.8rem; }}
+        .card-icon {{ width: 52px; height: 52px; border-radius: 50%; display: flex; align-items: center; justify-content: center; background: rgba(0,174,104,0.12); color: var(--teal); margin-bottom: 0.8rem; }}
         .code-pill {{ font-size: 0.75rem; font-weight: 800; color: var(--teal); margin-bottom: 0.35rem; }}
         .card-title {{ font-family: Montserrat, sans-serif; font-weight: 800; margin-bottom: 0.4rem; }}
         .card-desc {{ font-size: 0.92rem; opacity: 0.75; }}
@@ -312,7 +312,7 @@ GRAIN = """<!DOCTYPE html>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="../eval.css">
     <style>
-        :root {{ --accent: #2A325E; --teal: #2EAF7D; --bg: #F8F9FA; --card: #fff; --muted: #555; }}
+        :root {{ --accent: #1D3258; --teal: #00AE68; --bg: #F8F9FA; --card: #fff; --muted: #555; }}
         body {{ margin: 0; font-family: 'Open Sans', sans-serif; background: var(--bg); color: var(--accent); padding-bottom: 140px; }}
         .top-bar {{ background: var(--card); padding: 0.9rem 5%; display: flex; justify-content: space-between; align-items: center; border-bottom: 3px solid var(--accent); }}
         .btn-back {{ text-decoration: none; color: inherit; font-weight: 700; }}

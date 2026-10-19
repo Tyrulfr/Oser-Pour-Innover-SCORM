@@ -10,10 +10,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         /* --- Styles de base --- */
-        :root { --bordeaux: #580F45; --orange: #F48C2E; --teal: #2EAF7D; --blue: #2A325E; --bg-page: #F8F9FA; --bg-card: #FFFFFF; --text-main: #2A325E; --text-light: #555; }
+        :root { --bordeaux: #63003C; --orange: #F0821A; --teal: #00AE68; --blue: #1D3258; --bg-page: #F8F9FA; --bg-card: #FFFFFF; --text-main: #1D3258; --text-light: #555; }
         body.dark-mode { --bg-page: #1A1D2E; --bg-card: #232742; --text-main: #EAEAEA; --text-light: #BBB; }
         * { box-sizing: border-box; transition: all 0.3s ease; }
-        body { margin: 0; padding: 0; font-family: 'Open Sans', sans-serif; background-color: var(--bg-page); color: var(--text-main); line-height: 1.6; padding-bottom: 100px; background-image: radial-gradient(rgba(42, 50, 94, 0.1) 1px, transparent 1px); background-size: 30px 30px; }
+        body { margin: 0; padding: 0; font-family: 'Open Sans', sans-serif; background-color: var(--bg-page); color: var(--text-main); line-height: 1.6; padding-bottom: 100px; background-image: radial-gradient(rgba(29, 50, 88, 0.1) 1px, transparent 1px); background-size: 30px 30px; }
         body.dark-mode { background-image: radial-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 1px); }
         h1, h2, h3, h4 { font-family: 'Montserrat', sans-serif; color: var(--bordeaux); }
         body.dark-mode h1, body.dark-mode h2, body.dark-mode h3 { color: var(--orange); }
@@ -41,7 +41,7 @@
         .content-container { max-width: 1400px; margin: 2rem auto; padding: 0 1.5rem; }
         
         /* Hero Section */
-        .hero-section { text-align: center; margin-bottom: 3rem; padding: 2rem 1rem; background: linear-gradient(135deg, var(--orange), var(--blue)); border-radius: 20px; color: white; box-shadow: 0 10px 30px rgba(244, 140, 46, 0.3); }
+        .hero-section { text-align: center; margin-bottom: 3rem; padding: 2rem 1rem; background: linear-gradient(135deg, var(--orange), var(--blue)); border-radius: 20px; color: white; box-shadow: 0 10px 30px rgba(240, 130, 26, 0.3); }
         .hero-title { font-size: 2rem; margin-bottom: 0.5rem; color: white; }
         .hero-desc { font-size: 1rem; opacity: 0.9; max-width: 700px; margin: 0 auto; }
 
@@ -64,7 +64,7 @@
         .interview-icon {
             width: 60px;
             height: 60px;
-            background: rgba(244, 140, 46, 0.1);
+            background: rgba(240, 130, 26, 0.1);
             border-radius: 50%;
             display: flex;
             align-items: center;
@@ -73,7 +73,7 @@
             font-size: 1.5rem;
         }
         .interview-content {
-            background: rgba(244, 140, 46, 0.05);
+            background: rgba(240, 130, 26, 0.05);
             padding: 1.5rem;
             border-radius: 10px;
             border-left: 4px solid var(--orange);
@@ -82,7 +82,7 @@
 
         /* Draggable text spans */
         .draggable-text {
-            background: rgba(244, 140, 46, 0.2);
+            background: rgba(240, 130, 26, 0.2);
             border-bottom: 2px dashed var(--orange);
             padding: 2px 4px;
             cursor: move;
@@ -93,18 +93,18 @@
         }
 
         .draggable-text:hover {
-            background: rgba(244, 140, 46, 0.3);
+            background: rgba(240, 130, 26, 0.3);
             transform: translateY(-2px);
-            box-shadow: 0 2px 5px rgba(244, 140, 46, 0.3);
+            box-shadow: 0 2px 5px rgba(240, 130, 26, 0.3);
         }
 
         .draggable-text.dragging {
             opacity: 0.5;
-            background: rgba(244, 140, 46, 0.1);
+            background: rgba(240, 130, 26, 0.1);
         }
 
         .interview-instruction {
-            background: rgba(46, 175, 125, 0.1);
+            background: rgba(0, 174, 104, 0.1);
             border-left: 4px solid var(--teal);
             padding: 1rem;
             margin-bottom: 1rem;
@@ -242,13 +242,13 @@
             border: 2px dashed var(--teal);
             border-radius: 10px;
             padding: 1.5rem;
-            background: rgba(46, 175, 125, 0.05);
+            background: rgba(0, 174, 104, 0.05);
             margin-bottom: 1rem;
             transition: all 0.3s;
         }
 
         .drop-zone.drag-over {
-            background: rgba(46, 175, 125, 0.15);
+            background: rgba(0, 174, 104, 0.15);
             border-color: var(--teal);
             border-style: solid;
         }
@@ -286,7 +286,7 @@
         }
 
         .dropped-item:hover {
-            background: rgba(46, 175, 125, 0.1);
+            background: rgba(0, 174, 104, 0.1);
         }
 
         .remove-btn {
@@ -316,7 +316,7 @@
             border-radius: 15px;
             padding: 2rem;
             margin-top: 1rem;
-            box-shadow: 0 10px 30px rgba(46, 175, 125, 0.3);
+            box-shadow: 0 10px 30px rgba(0, 174, 104, 0.3);
         }
 
         .persona-field {
@@ -364,7 +364,7 @@
         }
 
         .journey-event {
-            background: rgba(46, 175, 125, 0.1);
+            background: rgba(0, 174, 104, 0.1);
             border: 1px solid var(--teal);
             border-radius: 6px;
             padding: 0.5rem 1rem;
@@ -391,7 +391,7 @@
         .btn-reset:hover {
             background: var(--bordeaux);
             transform: translateY(-2px);
-            box-shadow: 0 5px 15px rgba(88, 15, 69, 0.3);
+            box-shadow: 0 5px 15px rgba(99, 0, 60, 0.3);
         }
 
         .btn-validate {
@@ -410,7 +410,7 @@
         .btn-validate:hover {
             background: var(--blue);
             transform: translateY(-2px);
-            box-shadow: 0 5px 15px rgba(46, 175, 125, 0.3);
+            box-shadow: 0 5px 15px rgba(0, 174, 104, 0.3);
         }
 
         .success-message {
