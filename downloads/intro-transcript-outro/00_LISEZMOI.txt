@@ -4,6 +4,6 @@ MOOC L’Esprit d’innover
 Chaque fichier : Intro (texte animateur) · Transcript · Outro (texte animateur).
 Ordre des fichiers = ordre pédagogique du parcours.
 
-Transcripts encore absents : E2, E4, E15, E16.
-Les codes suivent le numéro de cadre à partir de V14.
-E14 = Yoann (Design Spot). E15 Fatoumata et E16 (investisseurs) ne sont pas encore filmées.
+Transcripts encore absents : E2, E4, E15.
+Jusqu’à E13, les codes du tournage sont inchangés. E13bis = E14, puis chaque code suivant avance d’un cran.
+E15 Fatoumata n’est pas filmée. Dernière capsule : E24 Eneli.

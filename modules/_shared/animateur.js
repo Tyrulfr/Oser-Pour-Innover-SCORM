@@ -5,7 +5,7 @@
  * Pour retirer : supprimer animateur.js, animateur.css, animateur.json et les balises dans les grains.
  */
 (function () {
-    var DATA_URL = new URL("animateur.json?v=2", document.currentScript.src).href;
+    var DATA_URL = new URL("animateur.json?v=7", document.currentScript.src).href;
 
     function videoCode(card) {
         var title = "";

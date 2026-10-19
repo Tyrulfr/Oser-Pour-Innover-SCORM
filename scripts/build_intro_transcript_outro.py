@@ -41,20 +41,19 @@ TITLES = {
     "E14": "Design Spot, fablab, OTT",
     "T8": "Financements, concours, temps",
     "E15": "Chaîne des financements (Fatoumata)",
-    "E16": "Logique des investisseurs",
+    "E16": "Comprendre la logique des investisseurs",
     "T9": "Partenariats et équipe",
-    "E17": "Posture entrepreneuriale et vocabulaire",
-    "E18": "Relation entre fondateurs",
+    "E17": "Cartographier les compétences nécessaires",
+    "E18": "Organiser la relation entre fondateurs",
     "T10": "Enrichir son langage",
-    "E19": "Organiser juridiquement l’équipe projet",
-    "E20": "Financer et dérisquer un projet Deep Tech",
+    "E19": "De la preuve scientifique à la valeur pour l’interlocuteur",
     "T11": "Évolution dans le métier du chercheur",
-    "E21": "Concilier recherche et engagement",
-    "E22": "Innover comme apprentissage (TRL, pivot, MVP)",
+    "E20": "La posture entrepreneuriale s’apprend",
+    "E21": "Concilier recherche et engagement dans l’innovation",
     "T12": "Dispositifs et collaborations",
-    "E23": "Collaboration équilibrée",
-    "E24": "Sécuriser juridiquement (NDA, PI, contrat)",
-    "E25": "Dispositifs de collaboration",
+    "E22": "Innover comme processus d’apprentissage",
+    "E23": "Concevoir une collaboration équilibrée",
+    "E24": "Sécuriser juridiquement la collaboration",
     "T13": "Conclusion : passer à l’action",
 }
 
@@ -248,8 +247,8 @@ def main() -> None:
         "Chaque fichier : Intro (texte animateur) · Transcript · Outro (texte animateur).\n"
         "Ordre des fichiers = ordre pédagogique du parcours.\n\n"
         "Transcripts encore absents : " + (", ".join(missing_codes) if missing_codes else "aucun") + ".\n"
-        "Les codes suivent le numéro de cadre à partir de V14.\n"
-        "E14 = Yoann (Design Spot). E15 Fatoumata et E16 (investisseurs) ne sont pas encore filmées.\n",
+        "Jusqu’à E13, les codes du tournage sont inchangés. E13bis = E14, puis chaque code suivant avance d’un cran.\n"
+        "E15 Fatoumata n’est pas filmée. Dernière capsule : E24 Eneli.\n",
         encoding="utf-8",
     )
 

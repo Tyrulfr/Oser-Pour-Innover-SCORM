@@ -117,73 +117,68 @@
     },
     "E16": {
       "code": "E16",
-      "intro": "Vous avez la chaîne des sources. L’investisseur, lui, choisit où poser son risque.\nIl ne paie pas une publication. Il parie sur une équipe, un marché, une PI, une trajectoire de dérisquage.\nÉcoutez ce qu’il veut voir diminuer à chaque jalon — c’est le même vocabulaire que Virginia, vu de l’autre côté de la table.",
+      "intro": "Vous avez la chaîne des sources. Arielle passe de l’autre côté de la table : l’investisseur choisit où poser son risque.\nDilution, retour attendu, rythme, gouvernance. Il ne paie pas une publication. Il parie sur une équipe, un marché, une PI.\nÉcoutez ce qu’il veut voir diminuer à chaque jalon — le même vocabulaire que Virginia, vu depuis le financement.",
       "outro": "Un investisseur maximise la valeur de son engagement en minimisant son risque. C’est clair.\nLe module 4 change encore de pièce : l’équipe, la posture, le contrat entre fondateurs. Parce que, vous l’entendrez, on ne lève pas des fonds tout seul, et on ne parle pas la même langue au laboratoire et devant un partenaire."
     },
     "T9": {
       "code": "T9",
       "intro": "Les financeurs regardent l’équipe. Les témoignages le disent déjà : on ne sait pas tout faire — marché, PI, vente, gouvernance.\nÉcoutez comment ils se sont entourés, et ce que ça a changé à leur place de chercheur.",
-      "outro": "Deux experts, deux étages.\nArielle d’abord : changer de contexte, c’est changer de vocabulaire. Le mot « valorisation » n’a pas le même sens au labo, à la direction de la valorisation, et dans un incubateur.\nPuis Pascal : compétences collectives, place du chercheur — diriger ou non — avant de recruter un dirigeant."
+      "outro": "Deux experts, deux étages.\nPascal d’abord : cartographier les compétences — complémentarité, recrutement, qui dirige.\nPuis Antoine : la relation entre fondateurs — gouvernance, parts, pacte."
     },
     "E17": {
       "code": "E17",
-      "intro": "La chorale vient de parler d’équipe. Arielle commence plus en amont : la posture.\nVous connaissez déjà « valorisation », « preuve », « marché ». Elle va montrer que ces mots glissent selon qui les prononce.\nÉcoutez le point de vue de celui qui écoute — c’est déjà le pont vers le grain langage.",
-      "outro": "La posture entrepreneuriale complète la posture de chercheur. Elle s’apprend.\nPascal, ensuite, pose le collectif : on ne porte pas seul. Les projets pivotent ; les investisseurs regardent l’équipe, pas seulement la techno de départ — le fil d’E16, repris ici."
+      "intro": "La chorale vient de parler d’équipe. Pascal la cartographie : complémentarité, recrutement, rôle du CEO, du CSO, du CTO.\nOn ne porte pas seul. Les critères sont aussi humains.",
+      "outro": "L’équipe se construit. Elle ne s’improvise pas.\nAntoine, ensuite, pose le contrat entre fondateurs : pouvoir, parts, pacte, avant que le conflit n’arrive."
     },
     "E18": {
       "code": "E18",
-      "intro": "Arielle a parlé de compétences à élargir. Pascal va les cartographier dans l’équipe : qui dirige, qui reste scientifique, comment on aligne les finalités avant de recruter.\nC’est la suite concrète de « vous n’êtes pas seul », et le préalable au contrat entre fondateurs.",
-      "outro": "Les projets pivotent. L’équipe survit au pivot, pas toujours la techno.\nLe grain suivant, « enrichir son langage », continue ce déplacement : parler valeur à quelqu’un qui n’est pas du laboratoire — et, avec Antoine puis Arielle, cadrer juridiquement l’équipe et le financement Deep Tech."
+      "intro": "Pascal a dit qui fait quoi. Antoine, juriste, prévient : entre collègues, on reste trop souvent dans le flou.\nGouvernance, responsabilités, répartition du pouvoir, parts et pacte. Le contrat fait loi — vous l’avez vu avec Soizic.\nÉcoutez surtout : parts sociales et droits de PI ne sont pas la même chose.",
+      "outro": "Anticiper les apports évite la tension plus tard. Un bon contrat, c’est celui qui reste dans un tiroir.\nArielle, au grain suivant, change d’interlocuteur : la même preuve ne vaut pas le même récit pour un utilisateur, un décideur ou un investisseur."
     },
     "T10": {
       "code": "T10",
-      "intro": "Vous venez de travailler la posture et l’équipe. Les témoignages racontent le langage : comment raconter la valeur à un partenaire, un industriel, un financeur.\nÉcoutez le moment où le vocabulaire du laboratoire ne passe plus.",
-      "outro": "La chorale a ouvert le langage. Les deux experts de ce grain l’ancrent.\nAntoine : organiser juridiquement l’équipe — le contrat fait loi, comme Soizic au transfert, mais entre collègues.\nArielle : financer et dérisquer un projet Deep Tech — chiffre d’affaires, non-dilutif, dilutif, pacte d’associés. Le module 3, vu depuis la start-up."
+      "intro": "Vous venez de travailler l’équipe et le pacte. Les témoignages racontent le langage : comment raconter la valeur à un partenaire, un industriel, un financeur.\nÉcoutez le moment où le vocabulaire du laboratoire ne passe plus.",
+      "outro": "La chorale a ouvert le langage.\nArielle l’ancre : passer de la preuve scientifique à la valeur pour celui qui écoute."
     },
     "E19": {
       "code": "E19",
-      "intro": "Vous avez entendu qu’il faut une équipe. Antoine, juriste, prévient : entre collègues, on reste trop souvent dans le flou.\nChacun sa mission. Le contrat fait loi — vous l’avez vu avec Soizic. Ici, c’est la gouvernance, le pouvoir, l’argent, et la PI qui, le plus souvent, reste à l’employeur.\nÉcoutez surtout : parts sociales et droits de PI ne sont pas la même chose.",
-      "outro": "Anticiper les apports évite la tension plus tard. Un bon contrat, c’est celui qui reste dans un tiroir.\nArielle, ensuite, reprend le financement : ce n’est pas trouver de l’argent, c’est financer la réduction des risques. Fatoumata a ouvert la chaîne ; ici on est dans la Deep Tech, dilutif et non-dilutif combinés."
+      "intro": "Antoine a cadré le collectif. Arielle change de destinataire.\nLe même résultat ne se raconte pas de la même façon à un utilisateur, un décideur, un partenaire ou un investisseur.\nÉcoutez ce qu’il faut rendre parlant : la valeur, pas seulement la preuve.",
+      "outro": "La preuve reste au laboratoire. La valeur se dit à quelqu’un.\nLe module 5 rentre dans le métier : la posture s’apprend, et la recherche se concilie avec l’engagement."
     },
     "E20": {
       "code": "E20",
-      "intro": "Antoine a cadré l’équipe. Arielle ouvre le compte : résultat scientifique vers entreprise, barrières à l’entrée, puis les sources.\nVous connaissez déjà non-dilutif et dilutif. Écoutez l’ordre : d’abord un client qui paie — chiffre d’affaires, preuve de marché — puis subventions, prêts, puis capitaux contre des parts.\nEt le pacte d’associés, à revoir dès que des investisseurs arrivent.",
-      "outro": "Les sources se combinent. Le pacte se revisite.\nLe module 5 rentre dans le métier : comment tenir laboratoire et engagement, comment innover s’apprend — TRL, pivot, MVP — sans tout quitter."
+      "intro": "La chorale parle d’un métier qui bouge. Pascal écarte le talent inné : la posture entrepreneuriale s’apprend.\nFeedback, entraînement, mentorat. Comme une langue, plus ou moins vite selon les personnes.",
+      "outro": "Ce n’est pas un don. C’est un apprentissage.\nBernard, ensuite, situe ce que cela change au métier de chercheur : double casquette, sans quitter la recherche."
     },
     "T11": {
       "code": "T11",
-      "intro": "Vous avez l’équipe, le contrat, le financement. Reste une question que les témoignages portent depuis T1 : que devient le métier de chercheur ?\nÉcoutez comment ils concilient le laboratoire et l’engagement dans un projet d’innovation — sans en faire, forcément, une reconversion.",
-      "outro": "Deux experts pour situer ce que vous venez d’entendre.\nPascal : ce n’est pas une reconversion, c’est enrichir le métier — calendriers, statut, rôle scientifique, à discuter tôt.\nBernard : innover s’apprend. TRL, pivot, MVP — des mots que vous avez déjà croisés, pour dire où l’on est et ce qu’il reste à prouver."
+      "intro": "Vous avez l’équipe, le contrat, le langage. Reste une question que les témoignages portent depuis T1 : que devient le métier de chercheur ?\nÉcoutez comment ils concilient le laboratoire et l’engagement dans un projet d’innovation — sans en faire, forcément, une reconversion.",
+      "outro": "Deux experts pour situer ce que vous venez d’entendre.\nPascal : la posture entrepreneuriale s’apprend.\nBernard : concilier recherche et engagement — gouvernance, impartialité, évolution du métier."
     },
     "E21": {
       "code": "E21",
-      "intro": "La chorale vient de parler d’un métier qui bouge. Pascal le cadre : on n’abandonne pas la recherche, on l’articule.\nStatut, temps, place scientifique : tout cela se discute avant la création, pas après — le même « trop tôt / trop tard » que Jean-Jacques sur les aides.",
-      "outro": "L’engagement se dose. Vous savez maintenant que le rôle se choisit, comme Pascal l’avait dit pour le dirigeant.\nBernard, ensuite, donne les outils d’apprentissage : échelle TRL, pivot, MVP. Changer de trajectoire n’est pas un échec : c’est aligner la preuve sur le problème."
+      "intro": "Pascal vient de dire que la posture s’apprend. Bernard la situe dans le métier : on n’abandonne pas la recherche, on l’articule.\nDouble casquette, gouvernance, impartialité. Statut et temps se discutent avant la création, pas après.",
+      "outro": "L’engagement se dose. Le rôle se choisit.\nPascal, au grain suivant, reprend le processus : innover, c’est apprendre — incertitude, essais, pivot."
     },
     "E22": {
       "code": "E22",
-      "intro": "Vous avez la place du chercheur. Bernard reprend des mots du parcours — TRL, pivot, MVP — pour dire : innover s’apprend.\nCe n’est pas un aveu de faiblesse. C’est situer la preuve, comme Grégoire situait le problème, et Virginia les risques.",
-      "outro": "Changer de trajectoire, c’est rester fidèle au problème et au marché, pas à la première techno.\nDernier grand grain d’experts : collaborer — avec une entreprise, un établissement — sans se faire déborder. NDA, PI, contrat, équilibre : tout ce que vous avez déjà posé, mis à l’épreuve d’un partenaire."
+      "intro": "Bernard a situé le métier. Pascal reprend le geste : innover est un processus d’apprentissage, pas une réussite linéaire.\nIncertitude, essais, erreurs, pivot. TRL et MVP disent où l’on en est, et ce qu’il reste à prouver.",
+      "outro": "Changer de trajectoire, c’est rester fidèle au problème, pas à la première techno.\nRémi, ensuite, pose la collaboration : objectifs partagés, chacun apporte, chacun reçoit."
     },
     "T12": {
       "code": "T12",
       "intro": "Dernière chorale avant la clôture : les collaborations. Comment travailler avec une entreprise ou un partenaire sans livrer le laboratoire à découvert.\nÉcoutez ce qu’ils ont cadré — et ce qu’ils ont appris trop tard.",
-      "outro": "Trois experts, dans l’ordre de ce que vous savez déjà.\nD’abord l’équilibre : chacun apporte, chacun reçoit — pas un labo qui fournit et un autre qui décide.\nPuis Rémi : NDA, PI, contrat, avant d’échanger des résultats. Soizic et Stéphanie, côté partenariat.\nPuis Nelly : les dispositifs, ce qu’ils autorisent et ce qu’ils contraignent."
+      "outro": "Trois experts, dans l’ordre du tournage.\nPascal : innover comme apprentissage.\nRémi : une collaboration équilibrée.\nEneli : la sécuriser — confidentialité, contrats, PI, sortie du partenariat."
     },
     "E23": {
       "code": "E23",
-      "intro": "Les récits viennent de le dire : une collaboration se joue à la gouvernance, pas seulement à l’enthousiasme.\nÉcoutez l’équilibre. Reliez-le au contrat d’Antoine et à la voie de Virginia : un partenariat se lit comme un transfert, avec des apports de chaque côté.",
-      "outro": "Sans équilibre, le laboratoire recopie et l’autre décide.\nRémi, ensuite, pose les trois verrous avant d’ouvrir les cahiers : secret, propriété, contrat. Le réflexe déclaration, étendu au partenaire."
+      "intro": "Les récits viennent de le dire : une collaboration se joue à la gouvernance, pas seulement à l’enthousiasme.\nRémi la conçoit : objectifs partagés, complémentarité, engagement, création et partage de valeur.",
+      "outro": "Sans équilibre, le laboratoire recopie et l’autre décide.\nEneli, ensuite, sécurise : confidentialité, connaissances antérieures, résultats nouveaux, publication et sortie."
     },
     "E24": {
       "code": "E24",
-      "intro": "Vous savez déclarer, protéger, contracter. Rémi le ramène à la collaboration industrielle : NDA, PI, publication.\nAvant d’échanger un résultat, on cadre ce qui est secret, ce qui appartient à qui, ce qui pourra paraître.\nC’est Stéphanie plus Soizic, à la table du partenaire.",
-      "outro": "Sans ces trois verrous, la collaboration recopie le laboratoire sans le protéger.\nNelly clôt le grain : les dispositifs — ce qu’ils donnent, ce qu’ils exigent. Ils ne remplacent pas le projet : problème, PI, équipe. Tout le parcours, en somme."
-    },
-    "E25": {
-      "code": "E25",
-      "intro": "Rémi a cadré le secret et le contrat. Nelly montre les dispositifs tels qu’on les habite : ce qu’ils autorisent, ce qu’ils contraignent, comment s’en servir sans s’y perdre.\nEntrez-y avec ce que vous avez construit : un problème, une PI, une équipe.",
-      "outro": "Les dispositifs donnent un cadre. Ils ne portent pas le projet à votre place.\nIl reste la chorale de clôture : passer à l’action. Ce que les chercheuses et chercheurs emportent, concrètement — et ce que vous pouvez faire dès demain."
+      "intro": "Rémi a posé l’équilibre. Eneli sécurise la collaboration avant d’échanger.\nConfidentialité, contrats, connaissances antérieures, résultats nouveaux, PI, publication, et la porte de sortie.\nEntrez-y avec ce que vous avez construit : un problème, une PI, une équipe.",
+      "outro": "Les verrous donnent un cadre. Ils ne portent pas le projet à votre place.\nIl reste la chorale de clôture : passer à l’action. Ce que les chercheuses et chercheurs emportent, concrètement — et ce que vous pouvez faire dès demain."
     },
     "T13": {
       "code": "T13",
