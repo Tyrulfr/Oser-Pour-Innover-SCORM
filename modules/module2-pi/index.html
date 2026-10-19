@@ -58,25 +58,35 @@ body.dark-mode h1, body.dark-mode h2, body.dark-mode h3 { color: var(--orange); 
     <div class="content-container">
         <div class="hero-section">
             <h1 class="hero-title">Module 2 — Protéger et valoriser les résultats</h1>
-            <p class="hero-desc">Brevet, secret, savoir-faire, transfert et licensing.</p>
+            <p class="hero-desc">Déclarer avant de parler, puis protéger et transférer.</p>
             <div class="progress-bar-container"><div class="progress-bar" id="hero-progress-bar" style="width:0%"></div></div>
-            <p style="font-size:0.8rem; margin-top:10px; opacity:0.8;"><span id="progress-text">0</span> / 2 grains</p>
+            <p style="font-size:0.8rem; margin-top:10px; opacity:0.8;"><span id="progress-text">0</span> / 3 grains</p>
         </div>
         <div class="grains-grid">
             <div class="grain-card border-orange">
-                <div class="card-number">T5</div>
+                <div class="card-number">T4</div>
                 <div class="card-body">
                     <div class="card-icon icon-orange"><i class="fa-solid fa-video"></i></div>
+                    <div class="code-pill">T4 · Témoin chorale</div>
+                    <div class="card-title">Une idée ne suffit pas + freins et leviers</div>
+                    <div class="card-desc">Protéger avant de communiquer<br><em>Experts : E6 · E7</em></div>
+                </div>
+                <div class="card-footer"><a href="pages/grain_t4_idee_freins_leviers.html" class="btn-start">Accéder <i class="fa-solid fa-play"></i></a></div>
+            </div>
+            <div class="grain-card border-blue">
+                <div class="card-number">T5</div>
+                <div class="card-body">
+                    <div class="card-icon icon-blue"><i class="fa-solid fa-video"></i></div>
                     <div class="code-pill">T5 · Témoin chorale</div>
                     <div class="card-title">Protection et valorisation</div>
                     <div class="card-desc">Brevet, secret ou savoir-faire<br><em>Experts : E8 · E9</em></div>
                 </div>
                 <div class="card-footer"><a href="pages/grain_t5_protection_valorisation.html" class="btn-start">Accéder <i class="fa-solid fa-play"></i></a></div>
             </div>
-            <div class="grain-card border-blue">
+            <div class="grain-card border-bordeaux">
                 <div class="card-number">T6</div>
                 <div class="card-body">
-                    <div class="card-icon icon-blue"><i class="fa-solid fa-video"></i></div>
+                    <div class="card-icon icon-bordeaux"><i class="fa-solid fa-video"></i></div>
                     <div class="code-pill">T6 · Témoin chorale</div>
                     <div class="card-title">Transfert et licensing</div>
                     <div class="card-desc">Start-up, licence ou partenariat<br><em>Experts : E10 · E11</em></div>
@@ -88,7 +98,7 @@ body.dark-mode h1, body.dark-mode h2, body.dark-mode h3 { color: var(--orange); 
     <script>
         ProgressApp.boot({
             suspendKey: "module2_pi_suspend",
-            pages: ["grain_t5_protection_valorisation", "grain_t6_transfert_licensing"]
+            pages: ["grain_t4_idee_freins_leviers", "grain_t5_protection_valorisation", "grain_t6_transfert_licensing"]
         });
     </script>
 </body>

@@ -60,7 +60,7 @@ body.dark-mode h1, body.dark-mode h2, body.dark-mode h3 { color: var(--orange); 
             <h1 class="hero-title">Module 1 — Identifier le potentiel d’innovation</h1>
             <p class="hero-desc">Origines, besoin, preuve. Chaque grain ouvre par une vidéo témoin chorale, puis des vidéos expert.</p>
             <div class="progress-bar-container"><div class="progress-bar" id="hero-progress-bar" style="width:0%"></div></div>
-            <p style="font-size:0.8rem; margin-top:10px; opacity:0.8;"><span id="progress-text">0</span> / 4 grains</p>
+            <p style="font-size:0.8rem; margin-top:10px; opacity:0.8;"><span id="progress-text">0</span> / 3 grains</p>
         </div>
         <div class="grains-grid">
             <div class="grain-card border-orange">
@@ -93,22 +93,12 @@ body.dark-mode h1, body.dark-mode h2, body.dark-mode h3 { color: var(--orange); 
                 </div>
                 <div class="card-footer"><a href="pages/grain_t3_besoin_poc.html" class="btn-start">Accéder <i class="fa-solid fa-play"></i></a></div>
             </div>
-            <div class="grain-card border-bordeaux">
-                <div class="card-number">T4</div>
-                <div class="card-body">
-                    <div class="card-icon icon-bordeaux"><i class="fa-solid fa-video"></i></div>
-                    <div class="code-pill">T4 · Témoin chorale</div>
-                    <div class="card-title">Une idée ne suffit pas + freins et leviers</div>
-                    <div class="card-desc">Protéger avant de communiquer<br><em>Experts : E6 · E7</em></div>
-                </div>
-                <div class="card-footer"><a href="pages/grain_t4_idee_freins_leviers.html" class="btn-start">Accéder <i class="fa-solid fa-play"></i></a></div>
-            </div>
         </div>
     </div>
     <script>
         ProgressApp.boot({
             suspendKey: "module1_suspend",
-            pages: ["grain_t1_pourquoi_oser", "grain_t2_recherche_innovation", "grain_t3_besoin_poc", "grain_t4_idee_freins_leviers"]
+            pages: ["grain_t1_pourquoi_oser", "grain_t2_recherche_innovation", "grain_t3_besoin_poc"]
         });
     </script>
 </body>
