@@ -1,0 +1,1759 @@
+{
+  "format": "1920×1080 PNG RGBA, fond transparent, sans cadre",
+  "source": "monica",
+  "charte": {
+    "fonts": "Open Sans ExtraBold / Bold / SemiBold",
+    "couleurs": {
+      "marine": "#1D3258",
+      "orange": "#F0821A",
+      "vert": "#00AE68",
+      "prune": "#63003C"
+    },
+    "pictos": "ensemble 1 cycle, ensemble 2 seulement si le concept n’existe pas",
+    "schemas": "16:9"
+  },
+  "videos": [
+    {
+      "code": "E3",
+      "source": "monica",
+      "nb": 13,
+      "items": [
+        {
+          "id": "IN-E3-01",
+          "fichier": "incrustation/E3/IN-E3-01.png",
+          "debut": "00:00:21",
+          "fin": "00:00:26",
+          "vue": "horloge",
+          "ecran": "55 minutes pour définir le problème. 5 minutes pour le résoudre.",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E3-02",
+          "fichier": "incrustation/E3/IN-E3-02.png",
+          "debut": "00:00:26",
+          "fin": "00:00:34",
+          "vue": "cible",
+          "ecran": "Le bon problème avant la bonne solution",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E3-03",
+          "fichier": "incrustation/E3/IN-E3-03.png",
+          "debut": "00:00:51",
+          "fin": "00:01:03",
+          "vue": "etapes",
+          "ecran": "Identifier → Formuler → Valider",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E3-04",
+          "fichier": "incrustation/E3/IN-E3-04.png",
+          "debut": "00:01:15",
+          "fin": "00:01:23",
+          "vue": "pivot",
+          "ecran": "Se confronter au réel → Ajuster → Pivoter",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E3-05",
+          "fichier": "incrustation/E3/IN-E3-05.png",
+          "debut": "00:01:40",
+          "fin": "00:01:48",
+          "vue": "dialogue",
+          "ecran": "Échanger avec les acteurs du terrain",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E3-06",
+          "fichier": "incrustation/E3/IN-E3-06.png",
+          "debut": "00:03:29",
+          "fin": "00:03:35",
+          "vue": "etapes",
+          "ecran": "Recherche → Bonne problématique → Valorisation",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E3-07",
+          "fichier": "incrustation/E3/IN-E3-07.png",
+          "debut": "00:03:54",
+          "fin": "00:03:58",
+          "vue": "morph",
+          "ecran": "Faire évoluer la culture des laboratoires",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E3-08",
+          "fichier": "incrustation/E3/IN-E3-08.png",
+          "debut": "00:03:58",
+          "fin": "00:04:06",
+          "vue": "frise",
+          "ecran": "Premiers travaux → Développement → Mise sur le marché",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E3-09",
+          "fichier": "incrustation/E3/IN-E3-09.png",
+          "debut": "00:04:06",
+          "fin": "00:04:14",
+          "vue": "pivot",
+          "ecran": "Questionner → Comprendre → Pivoter",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E3-10",
+          "fichier": "incrustation/E3/IN-E3-10.png",
+          "debut": "00:04:14",
+          "fin": "00:04:21",
+          "vue": "traverse",
+          "ecran": "Du laboratoire au terrain",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E3-11",
+          "fichier": "incrustation/E3/IN-E3-11.png",
+          "debut": "00:04:27",
+          "fin": "00:04:47",
+          "vue": "colonnes",
+          "ecran": "Techno Push vs Market Pull",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E3-12",
+          "fichier": "incrustation/E3/IN-E3-12.png",
+          "debut": "00:04:47",
+          "fin": "00:04:57",
+          "vue": "puzzle",
+          "ecran": "Problem–Solution Fit",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E3-13",
+          "fichier": "incrustation/E3/IN-E3-13.png",
+          "debut": "00:05:05",
+          "fin": "00:05:12",
+          "vue": "conclusion",
+          "ecran": "Faites-vous accompagner",
+          "schema16x9": false
+        }
+      ]
+    },
+    {
+      "code": "E5",
+      "source": "monica",
+      "nb": 10,
+      "items": [
+        {
+          "id": "IN-E5-01",
+          "fichier": "incrustation/E5/IN-E5-01.png",
+          "debut": "00:00:28",
+          "fin": "00:00:34",
+          "vue": "texte",
+          "ecran": "Dérisquer votre projet par étapes",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E5-02",
+          "fichier": "incrustation/E5/IN-E5-02.png",
+          "debut": "00:00:41",
+          "fin": "00:00:49",
+          "vue": "texte",
+          "ecran": "La solution technique doit rejoindre les besoins du marché",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E5-03",
+          "fichier": "incrustation/E5/IN-E5-03.png",
+          "debut": "00:01:03",
+          "fin": "00:01:09",
+          "vue": "texte",
+          "ecran": "Identifiez les meilleures informations possibles le plus en amont",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E5-04",
+          "fichier": "incrustation/E5/IN-E5-04.png",
+          "debut": "00:01:16",
+          "fin": "00:01:26",
+          "vue": "deux-parties",
+          "ecran": "Les rencontres peuvent remettre en cause la cible initiale ou créer de nouvelles opportunités",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E5-05",
+          "fichier": "incrustation/E5/IN-E5-05.png",
+          "debut": "00:01:26",
+          "fin": "00:01:33",
+          "vue": "deux-messages",
+          "ecran": "Le pivot n’est pas un échec · Pivoter rapidement",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E5-06",
+          "fichier": "incrustation/E5/IN-E5-06.png",
+          "debut": "00:01:52",
+          "fin": "00:02:02",
+          "vue": "texte",
+          "ecran": "Aller sur le terrain pour comprendre les besoins est un moyen de dérisquer",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E5-07",
+          "fichier": "incrustation/E5/IN-E5-07.png",
+          "debut": "00:02:17",
+          "fin": "00:02:25",
+          "vue": "boucle",
+          "ecran": "Solutions commerciales ⇄ Solutions techniques",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E5-08",
+          "fichier": "incrustation/E5/IN-E5-08.png",
+          "debut": "00:02:30",
+          "fin": "00:02:42",
+          "vue": "frise",
+          "ecran": "Invention → Prématuration → Maturation",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E5-09",
+          "fichier": "incrustation/E5/IN-E5-09.png",
+          "debut": "00:02:42",
+          "fin": "00:03:05",
+          "vue": "tableaux",
+          "ecran": "Risques et personnes pour dérisquer le jalon",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E5-10",
+          "fichier": "incrustation/E5/IN-E5-10.png",
+          "debut": "00:03:13",
+          "fin": "00:03:20",
+          "vue": "questions",
+          "ecran": "Deux questions systématiques",
+          "schema16x9": false
+        }
+      ]
+    },
+    {
+      "code": "E6",
+      "source": "monica",
+      "nb": 14,
+      "items": [
+        {
+          "id": "IN-E6-01",
+          "fichier": "incrustation/E6/IN-E6-01.png",
+          "debut": "00:00:38",
+          "fin": "00:00:42",
+          "vue": "texte",
+          "ecran": "Et s’il y avait un potentiel de valorisation dans ces résultats de recherche ?",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E6-02",
+          "fichier": "incrustation/E6/IN-E6-02.png",
+          "debut": "00:00:42",
+          "fin": "00:00:51",
+          "vue": "texte",
+          "ecran": "Avoir le bon réflexe de protection de l’innovation",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E6-03",
+          "fichier": "incrustation/E6/IN-E6-03.png",
+          "debut": "00:00:51",
+          "fin": "00:00:56",
+          "vue": "texte",
+          "ecran": "La déclaration d’invention",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E6-04",
+          "fichier": "incrustation/E6/IN-E6-04.png",
+          "debut": "00:01:11",
+          "fin": "00:01:16",
+          "vue": "boucle",
+          "ecran": "Brevet ⇄ Développement scientifique",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E6-05",
+          "fichier": "incrustation/E6/IN-E6-05.png",
+          "debut": "00:01:29",
+          "fin": "00:01:38",
+          "vue": "texte",
+          "ecran": "Une démarche de valorisation ne met pas la recherche en pause",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E6-06",
+          "fichier": "incrustation/E6/IN-E6-06.png",
+          "debut": "00:01:52",
+          "fin": "00:02:00",
+          "vue": "texte",
+          "ecran": "Il n’est pas nécessaire d’avoir une idée révolutionnaire pour s’engager",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E6-07",
+          "fichier": "incrustation/E6/IN-E6-07.png",
+          "debut": "00:02:17",
+          "fin": "00:02:30",
+          "vue": "frise",
+          "ecran": "Invention → Prématuration → Maturation",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E6-08",
+          "fichier": "incrustation/E6/IN-E6-08.png",
+          "debut": "00:03:00",
+          "fin": "00:03:08",
+          "vue": "texte",
+          "ecran": "Il n’est pas nécessaire d’avoir toutes les réponses pour commencer",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E6-09",
+          "fichier": "incrustation/E6/IN-E6-09.png",
+          "debut": "00:03:15",
+          "fin": "00:03:43",
+          "vue": "deux-messages",
+          "ecran": "Identifier un résultat prometteur suffisamment tôt · Les équipes de valorisation prennent le relais",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E6-10",
+          "fichier": "incrustation/E6/IN-E6-10.png",
+          "debut": "00:03:58",
+          "fin": "00:04:09",
+          "vue": "frise",
+          "ecran": "Évaluer → Analyser → Réfléchir",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E6-11",
+          "fichier": "incrustation/E6/IN-E6-11.png",
+          "debut": "00:04:37",
+          "fin": "00:04:45",
+          "vue": "grille",
+          "ecran": "Médical · Industriel · Environnemental · Sociétal",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E6-12",
+          "fichier": "incrustation/E6/IN-E6-12.png",
+          "debut": "00:05:10",
+          "fin": "00:05:16",
+          "vue": "texte",
+          "ecran": "Les informations transmises aux équipes de valorisation sont confidentielles",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E6-13",
+          "fichier": "incrustation/E6/IN-E6-13.png",
+          "debut": "00:05:25",
+          "fin": "00:05:34",
+          "vue": "texte",
+          "ecran": "Parlez avec votre cellule de valorisation avant de divulguer",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E6-14",
+          "fichier": "incrustation/E6/IN-E6-14.png",
+          "debut": "00:06:07",
+          "fin": "00:06:13",
+          "vue": "etapes",
+          "ecran": "Avant de publier · Avant de divulguer · Avant d’en parler",
+          "schema16x9": false
+        }
+      ]
+    },
+    {
+      "code": "E7",
+      "source": "monica",
+      "nb": 11,
+      "items": [
+        {
+          "id": "IN-E7-01",
+          "fichier": "incrustation/E7/IN-E7-01.png",
+          "debut": "00:00:28",
+          "fin": "00:00:35",
+          "vue": "successifs",
+          "ecran": "Une nouvelle méthode · Un procédé original · Une technologie qui répond à un problème concret",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E7-02",
+          "fichier": "incrustation/E7/IN-E7-02.png",
+          "debut": "00:01:01",
+          "fin": "00:01:05",
+          "vue": "texte",
+          "ecran": "Avec quoi faut-il venir voir son chargé de valorisation ?",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E7-03",
+          "fichier": "incrustation/E7/IN-E7-03.png",
+          "debut": "00:01:27",
+          "fin": "00:01:35",
+          "vue": "texte",
+          "ecran": "Le chargé de valorisation évalue le potentiel",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E7-04",
+          "fichier": "incrustation/E7/IN-E7-04.png",
+          "debut": "00:01:36",
+          "fin": "00:01:41",
+          "vue": "texte",
+          "ecran": "Identifier ensemble les questions clés",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E7-05",
+          "fichier": "incrustation/E7/IN-E7-05.png",
+          "debut": "00:02:04",
+          "fin": "00:02:16",
+          "vue": "successifs",
+          "ecran": "Structurer son projet · Identifier les financements adaptés · Mobiliser les bons partenaires",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E7-06",
+          "fichier": "incrustation/E7/IN-E7-06.png",
+          "debut": "00:02:20",
+          "fin": "00:02:30",
+          "vue": "texte",
+          "ecran": "Trouvez les moyens de valoriser votre projet avec votre chargé de valorisation",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E7-07",
+          "fichier": "incrustation/E7/IN-E7-07.png",
+          "debut": "00:03:21",
+          "fin": "00:03:27",
+          "vue": "texte",
+          "ecran": "Faciliter le dialogue entre le monde académique et le monde socio-économique",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E7-08",
+          "fichier": "incrustation/E7/IN-E7-08.png",
+          "debut": "00:03:35",
+          "fin": "00:03:43",
+          "vue": "texte",
+          "ecran": "Mise en place d’accords sécurisés",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E7-09",
+          "fichier": "incrustation/E7/IN-E7-09.png",
+          "debut": "00:03:52",
+          "fin": "00:03:58",
+          "vue": "texte",
+          "ecran": "N’attendez pas d’avoir toutes les réponses pour en parler avec votre chargé de valorisation",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E7-10",
+          "fichier": "incrustation/E7/IN-E7-10.png",
+          "debut": "00:04:16",
+          "fin": "00:04:22",
+          "vue": "texte",
+          "ecran": "Aider les chercheurs à transformer une opportunité en projet concret",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E7-11",
+          "fichier": "incrustation/E7/IN-E7-11.png",
+          "debut": "00:04:22",
+          "fin": "00:04:35",
+          "vue": "hub",
+          "ecran": "Conseils · Contacts · Financements · Cadrage contractuel",
+          "schema16x9": false
+        }
+      ]
+    },
+    {
+      "code": "E8",
+      "source": "monica",
+      "nb": 13,
+      "items": [
+        {
+          "id": "IN-E8-01",
+          "fichier": "incrustation/E8/IN-E8-01.png",
+          "debut": "00:00:22",
+          "fin": "00:00:32",
+          "vue": "texte",
+          "ecran": "Élaborer une stratégie de propriété intellectuelle",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E8-02",
+          "fichier": "incrustation/E8/IN-E8-02.png",
+          "debut": "00:00:52",
+          "fin": "00:01:07",
+          "vue": "grille",
+          "ecran": "Les différentes modalités de protection de la propriété intellectuelle",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E8-03",
+          "fichier": "incrustation/E8/IN-E8-03.png",
+          "debut": "00:01:12",
+          "fin": "00:01:23",
+          "vue": "tableaux",
+          "ecran": "Brevet ou secret ?",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E8-04",
+          "fichier": "incrustation/E8/IN-E8-04.png",
+          "debut": "00:01:39",
+          "fin": "00:01:45",
+          "vue": "texte",
+          "ecran": "La publication détruit la nouveauté de votre innovation",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E8-05",
+          "fichier": "incrustation/E8/IN-E8-05.png",
+          "debut": "00:01:54",
+          "fin": "00:02:00",
+          "vue": "texte",
+          "ecran": "Le savoir-faire doit être documenté et daté",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E8-06",
+          "fichier": "incrustation/E8/IN-E8-06.png",
+          "debut": "00:02:00",
+          "fin": "00:02:08",
+          "vue": "texte",
+          "ecran": "Enveloppe Soleau / e-Soleau",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E8-07",
+          "fichier": "incrustation/E8/IN-E8-07.png",
+          "debut": "00:02:08",
+          "fin": "00:02:16",
+          "vue": "texte",
+          "ecran": "Pour les logiciels, réaliser des dépôts auprès de l’APP",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E8-08",
+          "fichier": "incrustation/E8/IN-E8-08.png",
+          "debut": "00:02:20",
+          "fin": "00:02:28",
+          "vue": "texte",
+          "ecran": "Déclarer votre invention à votre employeur",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E8-09",
+          "fichier": "incrustation/E8/IN-E8-09.png",
+          "debut": "00:02:42",
+          "fin": "00:02:51",
+          "vue": "texte",
+          "ecran": "Accords de confidentialité (NDA)",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E8-10",
+          "fichier": "incrustation/E8/IN-E8-10.png",
+          "debut": "00:02:57",
+          "fin": "00:03:05",
+          "vue": "texte",
+          "ecran": "Prendre en amont des mesures de protection raisonnables",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E8-11",
+          "fichier": "incrustation/E8/IN-E8-11.png",
+          "debut": "00:03:11",
+          "fin": "00:03:19",
+          "vue": "texte",
+          "ecran": "Qu’est-ce qui est brevetable ?",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E8-12",
+          "fichier": "incrustation/E8/IN-E8-12.png",
+          "debut": "00:03:53",
+          "fin": "00:04:01",
+          "vue": "texte",
+          "ecran": "Choisir entre brevet et secret",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E8-13",
+          "fichier": "incrustation/E8/IN-E8-13.png",
+          "debut": "00:04:40",
+          "fin": "00:04:51",
+          "vue": "texte",
+          "ecran": "Les investisseurs sont rassurés par le brevet",
+          "schema16x9": false
+        }
+      ]
+    },
+    {
+      "code": "E9",
+      "source": "monica",
+      "nb": 17,
+      "items": [
+        {
+          "id": "IN-E9-01",
+          "fichier": "incrustation/E9/IN-E9-01.png",
+          "debut": "00:00:29",
+          "fin": "00:00:35",
+          "vue": "texte",
+          "ecran": "Les actifs immatériels sont votre richesse",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E9-02",
+          "fichier": "incrustation/E9/IN-E9-02.png",
+          "debut": "00:00:55",
+          "fin": "00:01:06",
+          "vue": "texte",
+          "ecran": "Veille technologique des brevets",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E9-03",
+          "fichier": "incrustation/E9/IN-E9-03.png",
+          "debut": "00:01:15",
+          "fin": "00:01:19",
+          "vue": "texte",
+          "ecran": "Documentez et datez chaque étape de vos travaux",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E9-04",
+          "fichier": "incrustation/E9/IN-E9-04.png",
+          "debut": "00:01:23",
+          "fin": "00:01:37",
+          "vue": "texte",
+          "ecran": "Liberté d’exploitation (FTO)",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E9-05",
+          "fichier": "incrustation/E9/IN-E9-05.png",
+          "debut": "00:01:37",
+          "fin": "00:01:44",
+          "vue": "texte",
+          "ecran": "Identifier si votre recherche dépend d’un brevet tiers",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E9-06",
+          "fichier": "incrustation/E9/IN-E9-06.png",
+          "debut": "00:01:53",
+          "fin": "00:02:02",
+          "vue": "texte",
+          "ecran": "Recherche d’antériorité",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E9-07",
+          "fichier": "incrustation/E9/IN-E9-07.png",
+          "debut": "00:02:05",
+          "fin": "00:02:16",
+          "vue": "frise",
+          "ecran": "Recherche d’antériorité → Étude de marché → Demande de brevet",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E9-08",
+          "fichier": "incrustation/E9/IN-E9-08.png",
+          "debut": "00:02:18",
+          "fin": "00:02:26",
+          "vue": "texte",
+          "ecran": "L’invention appartient à votre employeur dans le contexte académique",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E9-09",
+          "fichier": "incrustation/E9/IN-E9-09.png",
+          "debut": "00:02:33",
+          "fin": "00:02:45",
+          "vue": "texte",
+          "ecran": "Protéger votre technologie pour bénéficier d’un monopole temporaire",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E9-10",
+          "fichier": "incrustation/E9/IN-E9-10.png",
+          "debut": "00:02:54",
+          "fin": "00:03:03",
+          "vue": "texte",
+          "ecran": "Protection du droit d’auteur et des logiciels",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E9-11",
+          "fichier": "incrustation/E9/IN-E9-11.png",
+          "debut": "00:03:03",
+          "fin": "00:03:26",
+          "vue": "grille",
+          "ecran": "Brevet · Secret des affaires · Droit d’auteur · Dessins et modèles · Marques",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E9-12",
+          "fichier": "incrustation/E9/IN-E9-12.png",
+          "debut": "00:03:29",
+          "fin": "00:03:42",
+          "vue": "texte",
+          "ecran": "Prendre des licences d’exploitation de brevets existants",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E9-13",
+          "fichier": "incrustation/E9/IN-E9-13.png",
+          "debut": "00:03:57",
+          "fin": "00:04:04",
+          "vue": "texte",
+          "ecran": "10 fois plus de chances d’obtenir un financement",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E9-14",
+          "fichier": "incrustation/E9/IN-E9-14.png",
+          "debut": "00:04:04",
+          "fin": "00:04:17",
+          "vue": "texte",
+          "ecran": "Levier de négociation lors des levées de fonds et financements",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E9-15",
+          "fichier": "incrustation/E9/IN-E9-15.png",
+          "debut": "00:04:27",
+          "fin": "00:04:37",
+          "vue": "texte",
+          "ecran": "Concéder des licences de votre propriété intellectuelle",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E9-16",
+          "fichier": "incrustation/E9/IN-E9-16.png",
+          "debut": "00:04:37",
+          "fin": "00:04:49",
+          "vue": "grille",
+          "ecran": "Avec droit de sous-licencier · Sans droit de sous-licencier",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E9-17",
+          "fichier": "incrustation/E9/IN-E9-17.png",
+          "debut": "00:05:02",
+          "fin": "00:05:15",
+          "vue": "successifs",
+          "ecran": "Protéger vos innovations · Sécuriser vos actifs immatériels · Attirer des investisseurs",
+          "schema16x9": false
+        }
+      ]
+    },
+    {
+      "code": "E10",
+      "source": "monica",
+      "nb": 12,
+      "items": [
+        {
+          "id": "IN-E10-01",
+          "fichier": "incrustation/E10/IN-E10-01.png",
+          "debut": "00:00:17",
+          "fin": "00:00:26",
+          "vue": "texte",
+          "ecran": "Licence (licensing) ou création d’entreprise (start-up) ?",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E10-02",
+          "fichier": "incrustation/E10/IN-E10-02.png",
+          "debut": "00:00:37",
+          "fin": "00:01:32",
+          "vue": "grille",
+          "ecran": "Licence · Création d’entreprise · Co-développement · Partenariat",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E10-03",
+          "fichier": "incrustation/E10/IN-E10-03.png",
+          "debut": "00:01:36",
+          "fin": "00:02:14",
+          "vue": "frise",
+          "ecran": "Typologie du projet · Écosystème et marché existants · Votre posture",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E10-04",
+          "fichier": "incrustation/E10/IN-E10-04.png",
+          "debut": "00:02:22",
+          "fin": "00:02:35",
+          "vue": "grille",
+          "ecran": "Transférer des connaissances · Entreprendre",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E10-05",
+          "fichier": "incrustation/E10/IN-E10-05.png",
+          "debut": "00:03:17",
+          "fin": "00:03:31",
+          "vue": "texte",
+          "ecran": "Participation au capital social de l’entreprise",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E10-06",
+          "fichier": "incrustation/E10/IN-E10-06.png",
+          "debut": "00:03:36",
+          "fin": "00:03:43",
+          "vue": "texte",
+          "ecran": "Solidité du montage juridique",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E10-07",
+          "fichier": "incrustation/E10/IN-E10-07.png",
+          "debut": "00:03:55",
+          "fin": "00:04:13",
+          "vue": "grille",
+          "ecran": "Brevet · Secret",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E10-08",
+          "fichier": "incrustation/E10/IN-E10-08.png",
+          "debut": "00:04:16",
+          "fin": "00:04:26",
+          "vue": "frise",
+          "ecran": "Preuve de concept → Maturation avancée",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E10-09",
+          "fichier": "incrustation/E10/IN-E10-09.png",
+          "debut": "00:04:38",
+          "fin": "00:04:45",
+          "vue": "texte",
+          "ecran": "Existe-t-il déjà des industriels capables et désireux d’exploiter votre technologie ?",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E10-10",
+          "fichier": "incrustation/E10/IN-E10-10.png",
+          "debut": "00:05:07",
+          "fin": "00:05:14",
+          "vue": "texte",
+          "ecran": "Qui dans votre établissement doit être associé à cette réflexion ?",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E10-11",
+          "fichier": "incrustation/E10/IN-E10-11.png",
+          "debut": "00:05:14",
+          "fin": "00:05:30",
+          "vue": "texte",
+          "ecran": "Recherche de financements pour développer votre projet",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E10-12",
+          "fichier": "incrustation/E10/IN-E10-12.png",
+          "debut": "00:05:44",
+          "fin": "00:05:55",
+          "vue": "texte",
+          "ecran": "Le choix de la valorisation est une décision structurante",
+          "schema16x9": false
+        }
+      ]
+    },
+    {
+      "code": "E11",
+      "source": "monica",
+      "nb": 13,
+      "items": [
+        {
+          "id": "IN-E11-01",
+          "fichier": "incrustation/E11/IN-E11-01.png",
+          "debut": "00:00:29",
+          "fin": "00:00:48",
+          "vue": "texte",
+          "ecran": "Mettre en place un contrat de confidentialité",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E11-02",
+          "fichier": "incrustation/E11/IN-E11-02.png",
+          "debut": "00:00:48",
+          "fin": "00:01:00",
+          "vue": "texte",
+          "ecran": "Préserver une avance concurrentielle",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E11-03",
+          "fichier": "incrustation/E11/IN-E11-03.png",
+          "debut": "00:01:07",
+          "fin": "00:01:30",
+          "vue": "texte",
+          "ecran": "Le mécanisme contractuel de la licence",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E11-04",
+          "fichier": "incrustation/E11/IN-E11-04.png",
+          "debut": "00:01:36",
+          "fin": "00:01:46",
+          "vue": "grille",
+          "ecran": "Licence exclusive · Licence non exclusive",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E11-05",
+          "fichier": "incrustation/E11/IN-E11-05.png",
+          "debut": "00:02:01",
+          "fin": "00:02:10",
+          "vue": "texte",
+          "ecran": "Différentes clauses importantes sont discutées",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E11-06",
+          "fichier": "incrustation/E11/IN-E11-06.png",
+          "debut": "00:02:10",
+          "fin": "00:02:29",
+          "vue": "grille",
+          "ecran": "Licence = louage · Cession = vente",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E11-07",
+          "fichier": "incrustation/E11/IN-E11-07.png",
+          "debut": "00:02:43",
+          "fin": "00:03:08",
+          "vue": "texte",
+          "ecran": "Co-développer les résultats de la recherche",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E11-08",
+          "fichier": "incrustation/E11/IN-E11-08.png",
+          "debut": "00:03:15",
+          "fin": "00:03:23",
+          "vue": "successifs",
+          "ecran": "Apports matériels · Apports humains · Apports financiers",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E11-09",
+          "fichier": "incrustation/E11/IN-E11-09.png",
+          "debut": "00:03:37",
+          "fin": "00:03:47",
+          "vue": "grille",
+          "ecran": "Obligation de moyens · Copropriété des résultats",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E11-10",
+          "fichier": "incrustation/E11/IN-E11-10.png",
+          "debut": "00:03:47",
+          "fin": "00:04:02",
+          "vue": "liste",
+          "ecran": "Partage · Protection · Exploitation · Confidentialité · Publication",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E11-11",
+          "fichier": "incrustation/E11/IN-E11-11.png",
+          "debut": "00:04:02",
+          "fin": "00:04:50",
+          "vue": "grille",
+          "ecran": "Obligation de résultat",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E11-12",
+          "fichier": "incrustation/E11/IN-E11-12.png",
+          "debut": "00:05:05",
+          "fin": "00:05:14",
+          "vue": "texte",
+          "ecran": "Rapprochez-vous de votre cellule de valorisation de votre établissement",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E11-13",
+          "fichier": "incrustation/E11/IN-E11-13.png",
+          "debut": "00:05:14",
+          "fin": "00:05:20",
+          "vue": "texte",
+          "ecran": "Le contrat fait la loi des parties",
+          "schema16x9": false
+        }
+      ]
+    },
+    {
+      "code": "E13",
+      "source": "monica",
+      "nb": 19,
+      "items": [
+        {
+          "id": "IN-E13-01",
+          "fichier": "incrustation/E13/IN-E13-01.png",
+          "debut": "00:00:18",
+          "fin": "00:00:31",
+          "vue": "grille",
+          "ecran": "Résultat prometteur · Prototype · Brevet · Besoin réel",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E13-02",
+          "fichier": "incrustation/E13/IN-E13-02.png",
+          "debut": "00:00:39",
+          "fin": "00:00:45",
+          "vue": "texte",
+          "ecran": "Que fait un incubateur ?",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E13-03",
+          "fichier": "incrustation/E13/IN-E13-03.png",
+          "debut": "00:00:45",
+          "fin": "00:01:41",
+          "vue": "frise",
+          "ecran": "Maturation technologique → Incubation business",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E13-04",
+          "fichier": "incrustation/E13/IN-E13-04.png",
+          "debut": "00:01:45",
+          "fin": "00:01:52",
+          "vue": "texte",
+          "ecran": "Projet Deep Tech",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E13-05",
+          "fichier": "incrustation/E13/IN-E13-05.png",
+          "debut": "00:01:52",
+          "fin": "00:02:07",
+          "vue": "grille",
+          "ecran": "Confronter ses hypothèses au terrain · Intéresser les financeurs",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E13-06",
+          "fichier": "incrustation/E13/IN-E13-06.png",
+          "debut": "00:02:39",
+          "fin": "00:02:46",
+          "vue": "texte",
+          "ecran": "60 projets · 3 programmes",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E13-07",
+          "fichier": "incrustation/E13/IN-E13-07.png",
+          "debut": "00:02:46",
+          "fin": "00:02:50",
+          "vue": "frise",
+          "ecran": "Sensibilisation → Pré-incubation → Incubation",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E13-08",
+          "fichier": "incrustation/E13/IN-E13-08.png",
+          "debut": "00:03:14",
+          "fin": "00:03:27",
+          "vue": "grille",
+          "ecran": "Coût · Hébergement · Prise de parts",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E13-09",
+          "fichier": "incrustation/E13/IN-E13-09.png",
+          "debut": "00:03:42",
+          "fin": "00:03:58",
+          "vue": "deux-messages",
+          "ecran": "Soutien à la création · Prise de risque",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E13-10",
+          "fichier": "incrustation/E13/IN-E13-10.png",
+          "debut": "00:04:19",
+          "fin": "00:04:26",
+          "vue": "texte",
+          "ecran": "Points décisifs : les associés et le recrutement",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E13-11",
+          "fichier": "incrustation/E13/IN-E13-11.png",
+          "debut": "00:04:26",
+          "fin": "00:04:36",
+          "vue": "texte",
+          "ecran": "Une excellente technologie ≠ une start-up",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E13-12",
+          "fichier": "incrustation/E13/IN-E13-12.png",
+          "debut": "00:04:59",
+          "fin": "00:05:13",
+          "vue": "texte",
+          "ecran": "Nouvelle maturité",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E13-13",
+          "fichier": "incrustation/E13/IN-E13-13.png",
+          "debut": "00:05:15",
+          "fin": "00:05:22",
+          "vue": "texte",
+          "ecran": "Confrontation au terrain",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E13-14",
+          "fichier": "incrustation/E13/IN-E13-14.png",
+          "debut": "00:05:31",
+          "fin": "00:05:40",
+          "vue": "texte",
+          "ecran": "L’incubateur aide à préparer les rencontres",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E13-15",
+          "fichier": "incrustation/E13/IN-E13-15.png",
+          "debut": "00:05:40",
+          "fin": "00:05:48",
+          "vue": "texte",
+          "ecran": "Tester les hypothèses du futur projet",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E13-16",
+          "fichier": "incrustation/E13/IN-E13-16.png",
+          "debut": "00:05:48",
+          "fin": "00:06:00",
+          "vue": "grille",
+          "ecran": "Financement dilutif · Financement non dilutif",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E13-17",
+          "fichier": "incrustation/E13/IN-E13-17.png",
+          "debut": "00:06:00",
+          "fin": "00:06:12",
+          "vue": "texte",
+          "ecran": "Un réseau pour rencontrer des entrepreneurs",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E13-18",
+          "fichier": "incrustation/E13/IN-E13-18.png",
+          "debut": "00:06:21",
+          "fin": "00:06:45",
+          "vue": "schema",
+          "ecran": "Écosystème",
+          "schema16x9": true
+        },
+        {
+          "id": "IN-E13-19",
+          "fichier": "incrustation/E13/IN-E13-19.png",
+          "debut": "00:07:08",
+          "fin": "00:07:28",
+          "vue": "grille",
+          "ecran": "Consolidation · Feuille de route · Besoin financier · Comptabilité · Rôles · Financements · Échanges · Mise en relation",
+          "schema16x9": false
+        }
+      ]
+    },
+    {
+      "code": "E14",
+      "source": "monica",
+      "nb": 12,
+      "items": [
+        {
+          "id": "IN-E14-01",
+          "fichier": "incrustation/E14/IN-E14-01.png",
+          "debut": "00:00:23",
+          "fin": "00:00:30",
+          "vue": "grille",
+          "ecran": "Idée · Recherche · Innovation",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E14-02",
+          "fichier": "incrustation/E14/IN-E14-02.png",
+          "debut": "00:00:30",
+          "fin": "00:00:41",
+          "vue": "grille",
+          "ecran": "Compétences · Équipements · Accompagnements",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E14-03",
+          "fichier": "incrustation/E14/IN-E14-03.png",
+          "debut": "00:00:41",
+          "fin": "00:00:58",
+          "vue": "texte",
+          "ecran": "Fab Lab · Prototypage",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E14-04",
+          "fichier": "incrustation/E14/IN-E14-04.png",
+          "debut": "00:01:05",
+          "fin": "00:01:21",
+          "vue": "texte",
+          "ecran": "Structures spécialisées · Food’InnLab",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E14-05",
+          "fichier": "incrustation/E14/IN-E14-05.png",
+          "debut": "00:01:33",
+          "fin": "00:01:39",
+          "vue": "texte",
+          "ecran": "Répondre à un besoin et à un usage",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E14-06",
+          "fichier": "incrustation/E14/IN-E14-06.png",
+          "debut": "00:01:58",
+          "fin": "00:02:05",
+          "vue": "texte",
+          "ecran": "Usage et appropriation",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E14-07",
+          "fichier": "incrustation/E14/IN-E14-07.png",
+          "debut": "00:02:05",
+          "fin": "00:02:12",
+          "vue": "grille",
+          "ecran": "Identité visuelle · Choix des matériaux",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E14-08",
+          "fichier": "incrustation/E14/IN-E14-08.png",
+          "debut": "00:02:19",
+          "fin": "00:02:28",
+          "vue": "texte",
+          "ecran": "Learning Center · partenaires et entreprises",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E14-09",
+          "fichier": "incrustation/E14/IN-E14-09.png",
+          "debut": "00:02:28",
+          "fin": "00:02:41",
+          "vue": "grille",
+          "ecran": "Bibliothèques · Matériothèque",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E14-10",
+          "fichier": "incrustation/E14/IN-E14-10.png",
+          "debut": "00:02:51",
+          "fin": "00:02:57",
+          "vue": "texte",
+          "ecran": "Enjeux environnementaux",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E14-11",
+          "fichier": "incrustation/E14/IN-E14-11.png",
+          "debut": "00:03:34",
+          "fin": "00:03:45",
+          "vue": "texte",
+          "ecran": "Trouver la bonne ressource au bon moment",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E14-12",
+          "fichier": "incrustation/E14/IN-E14-12.png",
+          "debut": "00:03:50",
+          "fin": "00:04:01",
+          "vue": "texte",
+          "ecran": "Répondre aux besoins · utile à la société",
+          "schema16x9": false
+        }
+      ]
+    },
+    {
+      "code": "E16",
+      "source": "monica",
+      "nb": 9,
+      "items": [
+        {
+          "id": "IN-E16-01",
+          "fichier": "incrustation/E16/IN-E16-01.png",
+          "debut": "00:00:32",
+          "fin": "00:00:38",
+          "vue": "texte",
+          "ecran": "Un changement de contexte amène à un changement de vocabulaire",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E16-02",
+          "fichier": "incrustation/E16/IN-E16-02.png",
+          "debut": "00:01:09",
+          "fin": "00:01:18",
+          "vue": "texte",
+          "ecran": "Consolider et soutenir les premières années de la start-up",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E16-03",
+          "fichier": "incrustation/E16/IN-E16-03.png",
+          "debut": "00:01:18",
+          "fin": "00:01:32",
+          "vue": "boucle",
+          "ecran": "Posture de chercheur ⇄ Posture entrepreneuriale",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E16-04",
+          "fichier": "incrustation/E16/IN-E16-04.png",
+          "debut": "00:01:44",
+          "fin": "00:01:56",
+          "vue": "liste",
+          "ecran": "business model · proposition de valeur · financement dilutif · break-even · ARR · pitch · B2B",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E16-05",
+          "fichier": "incrustation/E16/IN-E16-05.png",
+          "debut": "00:02:26",
+          "fin": "00:02:55",
+          "vue": "frise",
+          "ecran": "Publication → PI → Valeur monétaire",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E16-06",
+          "fichier": "incrustation/E16/IN-E16-06.png",
+          "debut": "00:03:25",
+          "fin": "00:03:33",
+          "vue": "texte",
+          "ecran": "Nouvelle posture entrepreneuriale",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E16-07",
+          "fichier": "incrustation/E16/IN-E16-07.png",
+          "debut": "00:03:33",
+          "fin": "00:03:54",
+          "vue": "texte",
+          "ecran": "Écoute de votre interlocuteur",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E16-08",
+          "fichier": "incrustation/E16/IN-E16-08.png",
+          "debut": "00:04:04",
+          "fin": "00:04:19",
+          "vue": "grille",
+          "ecran": "Financeurs · Partenaires · Industriels · Institutions · Décideurs · Clients",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E16-09",
+          "fichier": "incrustation/E16/IN-E16-09.png",
+          "debut": "00:04:27",
+          "fin": "00:04:35",
+          "vue": "texte",
+          "ecran": "Gagner du temps et de l’énergie",
+          "schema16x9": false
+        }
+      ]
+    },
+    {
+      "code": "E17",
+      "source": "monica",
+      "nb": 8,
+      "items": [
+        {
+          "id": "IN-E17-01",
+          "fichier": "incrustation/E17/IN-E17-01.png",
+          "debut": "00:00:53",
+          "fin": "00:01:04",
+          "vue": "texte",
+          "ecran": "Rassembler collectivement les compétences et qualités nécessaires",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E17-02",
+          "fichier": "incrustation/E17/IN-E17-02.png",
+          "debut": "00:01:18",
+          "fin": "00:01:31",
+          "vue": "texte",
+          "ecran": "Augmenter en compétences",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E17-03",
+          "fichier": "incrustation/E17/IN-E17-03.png",
+          "debut": "00:01:41",
+          "fin": "00:01:47",
+          "vue": "texte",
+          "ecran": "Les investisseurs regardent attentivement l’équipe du projet",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E17-04",
+          "fichier": "incrustation/E17/IN-E17-04.png",
+          "debut": "00:01:47",
+          "fin": "00:01:58",
+          "vue": "texte",
+          "ecran": "L’équipe survit aux différents pivots",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E17-05",
+          "fichier": "incrustation/E17/IN-E17-05.png",
+          "debut": "00:01:58",
+          "fin": "00:02:17",
+          "vue": "grille",
+          "ecran": "CEO · Comité scientifique",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E17-06",
+          "fichier": "incrustation/E17/IN-E17-06.png",
+          "debut": "00:02:56",
+          "fin": "00:03:12",
+          "vue": "frise",
+          "ecran": "Recherche → Prématuration → Maturation",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E17-07",
+          "fichier": "incrustation/E17/IN-E17-07.png",
+          "debut": "00:03:31",
+          "fin": "00:03:44",
+          "vue": "texte",
+          "ecran": "Alignement : finalités et valeurs du projet",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E17-08",
+          "fichier": "incrustation/E17/IN-E17-08.png",
+          "debut": "00:04:36",
+          "fin": "00:04:41",
+          "vue": "texte",
+          "ecran": "Chacun a un rôle important à jouer dans le processus de collaboration",
+          "schema16x9": false
+        }
+      ]
+    },
+    {
+      "code": "E18",
+      "source": "monica",
+      "nb": 10,
+      "items": [
+        {
+          "id": "IN-E18-01",
+          "fichier": "incrustation/E18/IN-E18-01.png",
+          "debut": "00:00:29",
+          "fin": "00:00:37",
+          "vue": "texte",
+          "ecran": "Préserver la valorisation de votre recherche",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E18-02",
+          "fichier": "incrustation/E18/IN-E18-02.png",
+          "debut": "00:00:42",
+          "fin": "00:00:48",
+          "vue": "texte",
+          "ecran": "Le contrat fait la loi des parties",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E18-03",
+          "fichier": "incrustation/E18/IN-E18-03.png",
+          "debut": "00:01:07",
+          "fin": "00:01:16",
+          "vue": "texte",
+          "ecran": "Organisation juridique du collectif",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E18-04",
+          "fichier": "incrustation/E18/IN-E18-04.png",
+          "debut": "00:01:22",
+          "fin": "00:01:34",
+          "vue": "grille",
+          "ecran": "Gouvernance · Pouvoir · Conditions financières",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E18-05",
+          "fichier": "incrustation/E18/IN-E18-05.png",
+          "debut": "00:01:38",
+          "fin": "00:01:53",
+          "vue": "texte",
+          "ecran": "NPE (Non-Practicing Entity)",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E18-06",
+          "fichier": "incrustation/E18/IN-E18-06.png",
+          "debut": "00:02:10",
+          "fin": "00:02:21",
+          "vue": "texte",
+          "ecran": "Organiser juridiquement l’équipe projet",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E18-07",
+          "fichier": "incrustation/E18/IN-E18-07.png",
+          "debut": "00:02:21",
+          "fin": "00:02:32",
+          "vue": "grille",
+          "ecran": "Scientifique · Technique · Managérial · Juridique · Financier",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E18-08",
+          "fichier": "incrustation/E18/IN-E18-08.png",
+          "debut": "00:02:40",
+          "fin": "00:02:49",
+          "vue": "grille",
+          "ecran": "Droits de PI ≠ Parts sociales",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E18-09",
+          "fichier": "incrustation/E18/IN-E18-09.png",
+          "debut": "00:02:58",
+          "fin": "00:03:11",
+          "vue": "texte",
+          "ecran": "Définir et quantifier les apports de chacun",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E18-10",
+          "fichier": "incrustation/E18/IN-E18-10.png",
+          "debut": "00:03:32",
+          "fin": "00:03:46",
+          "vue": "texte",
+          "ecran": "Un bon contrat décrit la situation et définit les devoirs et les droits de chacun",
+          "schema16x9": false
+        }
+      ]
+    },
+    {
+      "code": "E19",
+      "source": "monica",
+      "nb": 14,
+      "items": [
+        {
+          "id": "IN-E19-01",
+          "fichier": "incrustation/E19/IN-E19-01.png",
+          "debut": "00:00:39",
+          "fin": "00:00:54",
+          "vue": "texte",
+          "ecran": "Dérisquer la technologie issue du laboratoire",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E19-02",
+          "fichier": "incrustation/E19/IN-E19-02.png",
+          "debut": "00:01:29",
+          "fin": "00:01:34",
+          "vue": "texte",
+          "ecran": "Financer progressivement la réduction des risques",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E19-03",
+          "fichier": "incrustation/E19/IN-E19-03.png",
+          "debut": "00:02:01",
+          "fin": "00:02:09",
+          "vue": "deux-messages",
+          "ecran": "Minimiser son risque · Maximiser la valeur de son engagement",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E19-04",
+          "fichier": "incrustation/E19/IN-E19-04.png",
+          "debut": "00:02:14",
+          "fin": "00:02:19",
+          "vue": "texte",
+          "ecran": "Quelles sont les sources de financement ?",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E19-05",
+          "fichier": "incrustation/E19/IN-E19-05.png",
+          "debut": "00:02:43",
+          "fin": "00:02:56",
+          "vue": "texte",
+          "ecran": "Financement non dilutif",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E19-06",
+          "fichier": "incrustation/E19/IN-E19-06.png",
+          "debut": "00:02:58",
+          "fin": "00:03:14",
+          "vue": "texte",
+          "ecran": "Subvention de l’État",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E19-07",
+          "fichier": "incrustation/E19/IN-E19-07.png",
+          "debut": "00:03:24",
+          "fin": "00:03:38",
+          "vue": "texte",
+          "ecran": "Avance remboursable",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E19-08",
+          "fichier": "incrustation/E19/IN-E19-08.png",
+          "debut": "00:03:42",
+          "fin": "00:03:54",
+          "vue": "grille",
+          "ecran": "Prêts d’honneur · Mentorat · Incubateurs d’écoles",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E19-09",
+          "fichier": "incrustation/E19/IN-E19-09.png",
+          "debut": "00:03:56",
+          "fin": "00:04:08",
+          "vue": "texte",
+          "ecran": "Financement dilutif",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E19-10",
+          "fichier": "incrustation/E19/IN-E19-10.png",
+          "debut": "00:04:17",
+          "fin": "00:04:27",
+          "vue": "texte",
+          "ecran": "Prise de parts au capital de la start-up",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E19-11",
+          "fichier": "incrustation/E19/IN-E19-11.png",
+          "debut": "00:04:30",
+          "fin": "00:04:36",
+          "vue": "texte",
+          "ecran": "Que permet d’accomplir l’apport de financement ?",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E19-12",
+          "fichier": "incrustation/E19/IN-E19-12.png",
+          "debut": "00:05:20",
+          "fin": "00:05:26",
+          "vue": "texte",
+          "ecran": "Financer l’industrialisation et la croissance",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E19-13",
+          "fichier": "incrustation/E19/IN-E19-13.png",
+          "debut": "00:05:26",
+          "fin": "00:05:44",
+          "vue": "texte",
+          "ecran": "Gouvernance avec l’arrivée des investisseurs",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E19-14",
+          "fichier": "incrustation/E19/IN-E19-14.png",
+          "debut": "00:06:50",
+          "fin": "00:07:00",
+          "vue": "texte",
+          "ecran": "Levée de fonds pour atteindre des jalons",
+          "schema16x9": false
+        }
+      ]
+    }
+  ],
+  "schemas": [
+    {
+      "id": "F1-PI-BRANCHES",
+      "fichier": "incrustation/schemas/F1-PI-BRANCHES.png",
+      "titre": "Deux branches de la PI",
+      "format": "16:9"
+    },
+    {
+      "id": "F1-ECOSYSTEME",
+      "fichier": "incrustation/schemas/F1-ECOSYSTEME.png",
+      "titre": "Écosystème de l’innovation",
+      "format": "16:9"
+    },
+    {
+      "id": "F2-CYCLE-3",
+      "fichier": "incrustation/schemas/F2-CYCLE-3.png",
+      "titre": "Cycle — 3 phases",
+      "format": "16:9"
+    },
+    {
+      "id": "F2-CYCLE-AMONT",
+      "fichier": "incrustation/schemas/F2-CYCLE-AMONT.png",
+      "titre": "Phase amont",
+      "format": "16:9"
+    },
+    {
+      "id": "F2-CYCLE-PROPULSION",
+      "fichier": "incrustation/schemas/F2-CYCLE-PROPULSION.png",
+      "titre": "Phase propulsion",
+      "format": "16:9"
+    },
+    {
+      "id": "F2-CYCLE-ADOPTION",
+      "fichier": "incrustation/schemas/F2-CYCLE-ADOPTION.png",
+      "titre": "Transfert → adoption",
+      "format": "16:9"
+    },
+    {
+      "id": "F2-CYCLE-COMPLET",
+      "fichier": "incrustation/schemas/F2-CYCLE-COMPLET.png",
+      "titre": "Cycle de l’innovation",
+      "format": "16:9"
+    },
+    {
+      "id": "F2-PUSH-PULL",
+      "fichier": "incrustation/schemas/F2-PUSH-PULL.png",
+      "titre": "Tech-push / market-pull",
+      "format": "16:9"
+    },
+    {
+      "id": "F2-CHAINE-VALO",
+      "fichier": "incrustation/schemas/F2-CHAINE-VALO.png",
+      "titre": "Chaîne de valorisation",
+      "format": "16:9"
+    },
+    {
+      "id": "F2-FINANCE",
+      "fichier": "incrustation/schemas/F2-FINANCE.png",
+      "titre": "Non-dilutif / dilutif",
+      "format": "16:9"
+    },
+    {
+      "id": "F2-TRL",
+      "fichier": "incrustation/schemas/F2-TRL.png",
+      "titre": "Échelle TRL (ISO 16290)",
+      "format": "16:9"
+    }
+  ],
+  "total": 186
+}

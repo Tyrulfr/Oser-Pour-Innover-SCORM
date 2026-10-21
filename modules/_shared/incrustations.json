@@ -1,819 +1,6 @@
 {
-  "date": "2026-09-21",
+  "date": "2026-10-20",
   "videos": {
-    "T1": {
-      "code": "T1",
-      "nb": 7,
-      "items": [
-        {
-          "debut": "00:00:13",
-          "fin": "00:00:15",
-          "type": "concept",
-          "ecran": "Sérendipité",
-          "schema": "",
-          "developpe": "",
-          "pourquoi": "Origine par hasard / rencontre inattendue, objectif T1 (F2 : le cycle se nourrit aussi du hasard)."
-        },
-        {
-          "debut": "00:00:48",
-          "fin": "00:00:56",
-          "type": "concept",
-          "ecran": "Impact sociétal",
-          "schema": "",
-          "developpe": "",
-          "pourquoi": "Ce qui distingue chercher et innover."
-        },
-        {
-          "debut": "00:02:10",
-          "fin": "00:02:17",
-          "type": "concept",
-          "ecran": "Besoin identifié",
-          "schema": "",
-          "developpe": "",
-          "pourquoi": "Origine market-pull / manque d’usage."
-        },
-        {
-          "debut": "00:03:43",
-          "fin": "00:03:45",
-          "type": "schema",
-          "ecran": "Tiré par le marché",
-          "schema": "Tech-push | Market-pull",
-          "developpe": "",
-          "pourquoi": "Vocabulaire du schéma de valorisation (F2 p. 6-7), calé sur le market-pull.",
-          "image": "schemas/f2-push-pull.png"
-        },
-        {
-          "debut": "00:03:56",
-          "fin": "00:04:08",
-          "type": "concept",
-          "ecran": "Une rencontre",
-          "schema": "",
-          "developpe": "",
-          "pourquoi": "Origine par rencontre, pas par labo seul."
-        },
-        {
-          "debut": "00:04:20",
-          "fin": "00:04:25",
-          "type": "schema",
-          "ecran": "Idée → Impact",
-          "schema": "Recherche → Propulsion → Adoption",
-          "developpe": "",
-          "pourquoi": "Parcours progressif de Loïc : extrait du cycle F2, pas le schéma à 12 nœuds.",
-          "image": "schemas/f2-cycle-3.png"
-        },
-        {
-          "debut": "00:05:26",
-          "fin": "00:05:46",
-          "type": "schema",
-          "ecran": "Invention ≠ Innovation",
-          "schema": "Invention ≠ Innovation",
-          "developpe": "",
-          "pourquoi": "Transformer un résultat en solution : distinction F1 §4.2."
-        }
-      ],
-      "source": "ia"
-    },
-    "T2": {
-      "code": "T2",
-      "nb": 6,
-      "items": [
-        {
-          "debut": "00:00:13",
-          "fin": "00:00:18",
-          "type": "concept",
-          "ecran": "Usage et utilité",
-          "schema": "",
-          "developpe": "",
-          "pourquoi": "Question centrale T2 : besoin réel."
-        },
-        {
-          "debut": "00:00:20",
-          "fin": "00:00:27",
-          "type": "concept",
-          "ecran": "Problème concret",
-          "schema": "",
-          "developpe": "",
-          "pourquoi": "Le besoin se dit par un problème patient."
-        },
-        {
-          "debut": "00:01:04",
-          "fin": "00:01:08",
-          "type": "concept",
-          "ecran": "Bénéficiaire",
-          "schema": "",
-          "developpe": "",
-          "pourquoi": "Identifier l’utilisateur·rice ou le bénéficiaire (producteurs)."
-        },
-        {
-          "debut": "00:02:00",
-          "fin": "00:02:11",
-          "type": "schema",
-          "ecran": "Sortir du labo",
-          "schema": "Idée → Prototype → Expérimentation",
-          "developpe": "",
-          "pourquoi": "Preuve d’usage hors labo : extrait de la phase amont du cycle F2.",
-          "image": "schemas/f2-cycle-amont.png"
-        },
-        {
-          "debut": "00:03:06",
-          "fin": "00:03:08",
-          "type": "schema",
-          "ecran": "Trois défis",
-          "schema": "Techno · Réglementaire · Terrain",
-          "developpe": "",
-          "pourquoi": "Spécifique au récit (pas un schéma du fascicule)."
-        },
-        {
-          "debut": "00:05:34",
-          "fin": "00:05:52",
-          "type": "concept",
-          "ecran": "Jusqu’au patient",
-          "schema": "",
-          "developpe": "",
-          "pourquoi": "Bénéficiaire final, pas seulement le brevet."
-        }
-      ],
-      "source": "ia"
-    },
-    "T3": {
-      "code": "T3",
-      "nb": 7,
-      "items": [
-        {
-          "debut": "00:00:22",
-          "fin": "00:00:29",
-          "type": "acronyme",
-          "ecran": "SATT",
-          "schema": "",
-          "developpe": "Société d’accélération du transfert de technologies",
-          "pourquoi": "Première rencontre pédagogique du sigle (dit « ASAT » à l’oral)."
-        },
-        {
-          "debut": "00:00:52",
-          "fin": "00:01:03",
-          "type": "concept",
-          "ecran": "Étude de marché",
-          "schema": "",
-          "developpe": "",
-          "pourquoi": "Preuve d’usage, pas seulement preuve scientifique."
-        },
-        {
-          "debut": "00:01:19",
-          "fin": "00:01:39",
-          "type": "concept",
-          "ecran": "Pivot",
-          "schema": "",
-          "developpe": "",
-          "pourquoi": "Le terrain fait changer de cible."
-        },
-        {
-          "debut": "00:02:40",
-          "fin": "00:02:50",
-          "type": "acronyme",
-          "ecran": "SATT",
-          "schema": "",
-          "developpe": "Société d’accélération du transfert de technologies",
-          "pourquoi": "L’orale développe le sigle : l’écran ancre le nom officiel."
-        },
-        {
-          "debut": "00:04:47",
-          "fin": "00:04:51",
-          "type": "concept",
-          "ecran": "Sortir du labo",
-          "schema": "",
-          "developpe": "",
-          "pourquoi": "Message central T3."
-        },
-        {
-          "debut": "00:05:57",
-          "fin": "00:06:08",
-          "type": "concept",
-          "ecran": "Vrai problème de marché",
-          "schema": "",
-          "developpe": "",
-          "pourquoi": "Preuve scientifique ≠ preuve d’usage."
-        },
-        {
-          "debut": "00:06:19",
-          "fin": "00:06:31",
-          "type": "schema",
-          "ecran": "Vers l’adoption",
-          "schema": "Transfert → Adoption",
-          "developpe": "",
-          "pourquoi": "Clients / business plan : phase « mise en service au collectif » du cycle F2.",
-          "image": "schemas/f2-cycle-adoption.png"
-        }
-      ],
-      "source": "ia"
-    },
-    "T4": {
-      "code": "T4",
-      "nb": 7,
-      "items": [
-        {
-          "debut": "00:00:20",
-          "fin": "00:00:26",
-          "type": "schema",
-          "ecran": "Preuve technique ∥ preuve d’usage",
-          "schema": "Brevet ∥ expérience",
-          "developpe": "",
-          "pourquoi": "Deux niveaux de preuve en parallèle : titre de PI et terrain."
-        },
-        {
-          "debut": "00:01:05",
-          "fin": "00:01:13",
-          "type": "schema",
-          "ecran": "Prématuration",
-          "schema": "Protection → Maturation → Transfert",
-          "developpe": "",
-          "pourquoi": "Situer la prématuration sur la chaîne de valorisation du fascicule 2.",
-          "image": "schemas/f2-chaine-valo.png"
-        },
-        {
-          "debut": "00:01:19",
-          "fin": "00:01:35",
-          "type": "concept",
-          "ecran": "Preuve de concept",
-          "schema": "",
-          "developpe": "",
-          "pourquoi": "Viabilité technique, pas encore marché."
-        },
-        {
-          "debut": "00:01:48",
-          "fin": "00:01:56",
-          "type": "acronyme",
-          "ecran": "POC'in Lab",
-          "schema": "",
-          "developpe": "Preuve de concept in lab — prématuration Université Paris-Saclay",
-          "pourquoi": "Dispositif nommé ; première fois dans le parcours."
-        },
-        {
-          "debut": "00:03:19",
-          "fin": "00:03:27",
-          "type": "concept",
-          "ecran": "Pivot technologique",
-          "schema": "",
-          "developpe": "",
-          "pourquoi": "Le terrain impose de changer de formulation."
-        },
-        {
-          "debut": "00:04:14",
-          "fin": "00:04:20",
-          "type": "schema",
-          "ecran": "Trois freins",
-          "schema": "Temps · Légitimité · Échec",
-          "developpe": "",
-          "pourquoi": "Leviers personnels du grain."
-        },
-        {
-          "debut": "00:05:23",
-          "fin": "00:05:31",
-          "type": "concept",
-          "ecran": "Décider malgré l’incertitude",
-          "schema": "",
-          "developpe": "",
-          "pourquoi": "On n’a pas toutes les réponses : s’engager quand même dans la valorisation."
-        }
-      ],
-      "source": "ia"
-    },
-    "T5": {
-      "code": "T5",
-      "nb": 7,
-      "items": [
-        {
-          "debut": "00:00:20",
-          "fin": "00:00:41",
-          "type": "concept",
-          "ecran": "Protéger tôt",
-          "schema": "",
-          "developpe": "",
-          "pourquoi": "Réflexe avant divulgation."
-        },
-        {
-          "debut": "00:00:49",
-          "fin": "00:01:09",
-          "type": "acronyme",
-          "ecran": "PI",
-          "schema": "",
-          "developpe": "Propriété intellectuelle",
-          "pourquoi": "Sujet du grain ; sigle à poser."
-        },
-        {
-          "debut": "00:01:28",
-          "fin": "00:01:51",
-          "type": "concept",
-          "ecran": "Déclaration d’invention",
-          "schema": "",
-          "developpe": "",
-          "pourquoi": "Premier geste vers la valorisation."
-        },
-        {
-          "debut": "00:01:51",
-          "fin": "00:01:56",
-          "type": "schema",
-          "ecran": "Brevet ou secret",
-          "schema": "Brevet | Secret",
-          "developpe": "",
-          "pourquoi": "Choix de stratégie : extrait du tableau des types de protection F1 p. 9-10.",
-          "image": "schemas/f1-pi-branches.png"
-        },
-        {
-          "debut": "00:02:24",
-          "fin": "00:02:30",
-          "type": "concept",
-          "ecran": "Secret industriel",
-          "schema": "",
-          "developpe": "",
-          "pourquoi": "Alternative au brevet."
-        },
-        {
-          "debut": "00:02:44",
-          "fin": "00:02:48",
-          "type": "concept",
-          "ecran": "Hors brevetabilité du vivant",
-          "schema": "",
-          "developpe": "",
-          "pourquoi": "Limite de brevetabilité : l’application, pas l’organisme vivant."
-        },
-        {
-          "debut": "00:05:09",
-          "fin": "00:05:16",
-          "type": "concept",
-          "ecran": "Le plus tôt possible",
-          "schema": "",
-          "developpe": "",
-          "pourquoi": "Conseil opératoire du grain."
-        }
-      ],
-      "source": "ia"
-    },
-    "T6": {
-      "code": "T6",
-      "nb": 5,
-      "items": [
-        {
-          "debut": "00:00:19",
-          "fin": "00:00:20",
-          "type": "schema",
-          "ecran": "Deux voies",
-          "schema": "Licence | Création",
-          "developpe": "",
-          "pourquoi": "Objectif T6 : extrait de la chaîne de valorisation F2.",
-          "image": "schemas/f2-chaine-valo.png"
-        },
-        {
-          "debut": "00:01:19",
-          "fin": "00:01:39",
-          "type": "concept",
-          "ecran": "Licence exclusive",
-          "schema": "",
-          "developpe": "",
-          "pourquoi": "Mécanisme de transfert."
-        },
-        {
-          "debut": "00:01:39",
-          "fin": "00:01:49",
-          "type": "schema",
-          "ecran": "Licence ≠ Cession",
-          "schema": "Licence ≠ Cession",
-          "developpe": "",
-          "pourquoi": "Transfert de propriété du brevet : distinction F1 p. 8."
-        },
-        {
-          "debut": "00:02:14",
-          "fin": "00:02:20",
-          "type": "concept",
-          "ecran": "Licence d’exploitation",
-          "schema": "",
-          "developpe": "",
-          "pourquoi": "L’organisme reste propriétaire, l’entreprise exploite."
-        },
-        {
-          "debut": "00:03:20",
-          "fin": "00:03:27",
-          "type": "schema",
-          "ecran": "Protection mixte",
-          "schema": "Brevet + secret",
-          "developpe": "",
-          "pourquoi": "La voie de PI (brevet et secret) suit la voie de transfert."
-        }
-      ],
-      "source": "ia"
-    },
-    "T7": {
-      "code": "T7",
-      "nb": 6,
-      "items": [
-        {
-          "debut": "00:00:14",
-          "fin": "00:00:19",
-          "type": "concept",
-          "ecran": "S’appuyer sur l’écosystème",
-          "schema": "",
-          "developpe": "",
-          "pourquoi": "On n’innove pas seul : SATT, incubateurs, dispositifs (F1 §5)."
-        },
-        {
-          "debut": "00:00:32",
-          "fin": "00:00:49",
-          "type": "schema",
-          "ecran": "Écosystème",
-          "schema": "Université → SATT → Incubateurs",
-          "developpe": "",
-          "pourquoi": "INRAE, incubateurs, SATT : bandeau du schéma de valorisation F2.",
-          "image": "schemas/f2-chaine-valo.png"
-        },
-        {
-          "debut": "00:02:12",
-          "fin": "00:02:24",
-          "type": "acronyme",
-          "ecran": "SATT",
-          "schema": "",
-          "developpe": "Société d’accélération du transfert de technologies",
-          "pourquoi": "Ici la SATT est l’acteur d’accompagnement (sujet T7)."
-        },
-        {
-          "debut": "00:02:46",
-          "fin": "00:02:56",
-          "type": "acronyme",
-          "ecran": "i-Lab",
-          "schema": "",
-          "developpe": "Concours d’innovation Bpifrance",
-          "pourquoi": "Première occurrence du concours."
-        },
-        {
-          "debut": "00:03:50",
-          "fin": "00:04:00",
-          "type": "concept",
-          "ecran": "Pitch",
-          "schema": "",
-          "developpe": "",
-          "pourquoi": "Mise en visibilité via l’écosystème."
-        },
-        {
-          "debut": "00:04:56",
-          "fin": "00:05:08",
-          "type": "schema",
-          "ecran": "Continuum",
-          "schema": "POC'in Lab → SATT",
-          "developpe": "",
-          "pourquoi": "Prématuration puis maturation : même colonne que F2, calée sur les dispositifs nommés.",
-          "image": "schemas/f2-chaine-valo.png"
-        }
-      ],
-      "source": "ia"
-    },
-    "T8": {
-      "code": "T8",
-      "nb": 7,
-      "items": [
-        {
-          "debut": "00:00:21",
-          "fin": "00:00:25",
-          "type": "schema",
-          "ecran": "Non-dilutif | Dilutif",
-          "schema": "Non-dilutif | Dilutif",
-          "developpe": "",
-          "pourquoi": "Avant / après création : extrait du tableau des financements F2 p. 15 (pas les 6 critères).",
-          "image": "schemas/f2-finance.png"
-        },
-        {
-          "debut": "00:00:25",
-          "fin": "00:00:34",
-          "type": "concept",
-          "ecran": "Créer trop tôt",
-          "schema": "",
-          "developpe": "",
-          "pourquoi": "Message central T8 : ne pas créer trop tôt."
-        },
-        {
-          "debut": "00:01:01",
-          "fin": "00:01:11",
-          "type": "acronyme",
-          "ecran": "POC'in Lab",
-          "schema": "",
-          "developpe": "Financement de prématuration (laboratoire)",
-          "pourquoi": "Aide non dilutive, stade précoce."
-        },
-        {
-          "debut": "00:01:46",
-          "fin": "00:02:00",
-          "type": "acronyme",
-          "ecran": "i-Lab",
-          "schema": "",
-          "developpe": "Concours d’innovation Bpifrance",
-          "pourquoi": "Marche de financement + recrutement."
-        },
-        {
-          "debut": "00:02:37",
-          "fin": "00:03:00",
-          "type": "acronyme",
-          "ecran": "Loi PACTE",
-          "schema": "",
-          "developpe": "Plan d’action pour la croissance et la transformation des entreprises",
-          "pourquoi": "Premier croisement du dispositif concours scientifique."
-        },
-        {
-          "debut": "00:03:14",
-          "fin": "00:03:24",
-          "type": "schema",
-          "ecran": "Temps partagé",
-          "schema": "60 % labo · 40 % start-up",
-          "developpe": "",
-          "pourquoi": "Levier concret pour entreprendre sans tout quitter."
-        },
-        {
-          "debut": "00:04:51",
-          "fin": "00:04:57",
-          "type": "acronyme",
-          "ecran": "BPI",
-          "schema": "",
-          "developpe": "Bpifrance",
-          "pourquoi": "Financeur public, sujet du grain."
-        }
-      ],
-      "source": "ia"
-    },
-    "T9": {
-      "code": "T9",
-      "nb": 7,
-      "items": [
-        {
-          "debut": "00:00:16",
-          "fin": "00:00:19",
-          "type": "concept",
-          "ecran": "Savoirs manquants",
-          "schema": "",
-          "developpe": "",
-          "pourquoi": "Compétences manquantes, objectif T9."
-        },
-        {
-          "debut": "00:00:29",
-          "fin": "00:00:32",
-          "type": "concept",
-          "ecran": "Compléter l’équipe",
-          "schema": "",
-          "developpe": "",
-          "pourquoi": "Aller chercher les compétences absentes du noyau fondateur."
-        },
-        {
-          "debut": "00:01:01",
-          "fin": "00:01:04",
-          "type": "schema",
-          "ecran": "Noyau fondateur",
-          "schema": "Médical · Direction · Science",
-          "developpe": "",
-          "pourquoi": "Équipe, pas un héros seul."
-        },
-        {
-          "debut": "00:01:25",
-          "fin": "00:01:42",
-          "type": "concept",
-          "ecran": "Comité stratégique",
-          "schema": "",
-          "developpe": "",
-          "pourquoi": "Entourage au-delà des cofondateurs."
-        },
-        {
-          "debut": "00:01:42",
-          "fin": "00:01:48",
-          "type": "concept",
-          "ecran": "Comité scientifique",
-          "schema": "",
-          "developpe": "",
-          "pourquoi": "Place du chercheur dans l’entreprise."
-        },
-        {
-          "debut": "00:03:29",
-          "fin": "00:03:42",
-          "type": "acronyme",
-          "ecran": "CEO",
-          "schema": "",
-          "developpe": "Directeur ou directrice général(e)",
-          "pourquoi": "Rôle à pourvoir ; sigle du grain."
-        },
-        {
-          "debut": "00:05:45",
-          "fin": "00:05:50",
-          "type": "concept",
-          "ecran": "Les projets pivotent",
-          "schema": "",
-          "developpe": "",
-          "pourquoi": "L’équipe survit à la techno."
-        }
-      ],
-      "source": "ia"
-    },
-    "T10": {
-      "code": "T10",
-      "nb": 6,
-      "items": [
-        {
-          "debut": "00:00:13",
-          "fin": "00:00:18",
-          "type": "concept",
-          "ecran": "Adapter le vocabulaire",
-          "schema": "",
-          "developpe": "",
-          "pourquoi": "Objectif T10 : autre langue que celle des pairs."
-        },
-        {
-          "debut": "00:00:39",
-          "fin": "00:00:53",
-          "type": "concept",
-          "ecran": "Moins de jargon",
-          "schema": "",
-          "developpe": "",
-          "pourquoi": "Partir de la valeur, pas de la techno."
-        },
-        {
-          "debut": "00:01:41",
-          "fin": "00:01:50",
-          "type": "concept",
-          "ecran": "Changer de posture",
-          "schema": "",
-          "developpe": "",
-          "pourquoi": "Le langage suit l’interlocuteur."
-        },
-        {
-          "debut": "00:03:49",
-          "fin": "00:03:51",
-          "type": "acronyme",
-          "ecran": "Market access",
-          "schema": "",
-          "developpe": "Accès au marché",
-          "pourquoi": "Terme métier à poser la première fois."
-        },
-        {
-          "debut": "00:04:00",
-          "fin": "00:04:20",
-          "type": "concept",
-          "ecran": "Langue de l’entrepreneuriat",
-          "schema": "",
-          "developpe": "",
-          "pourquoi": "Apprentissage, pas don."
-        },
-        {
-          "debut": "00:05:17",
-          "fin": "00:05:19",
-          "type": "concept",
-          "ecran": "Rendre désirable",
-          "schema": "",
-          "developpe": "",
-          "pourquoi": "Valeur pour l’interlocuteur."
-        }
-      ],
-      "source": "ia"
-    },
-    "T11": {
-      "code": "T11",
-      "nb": 4,
-      "items": [
-        {
-          "debut": "00:00:57",
-          "fin": "00:01:00",
-          "type": "concept",
-          "ecran": "Intégrateur social",
-          "schema": "",
-          "developpe": "",
-          "pourquoi": "L’innovation rend la recherche lisible."
-        },
-        {
-          "debut": "00:01:00",
-          "fin": "00:01:05",
-          "type": "schema",
-          "ecran": "Deux casquettes",
-          "schema": "Comité scientifique + labo",
-          "developpe": "",
-          "pourquoi": "Concilier, objectif T11."
-        },
-        {
-          "debut": "00:01:45",
-          "fin": "00:01:55",
-          "type": "concept",
-          "ecran": "Application concrète",
-          "schema": "",
-          "developpe": "",
-          "pourquoi": "Retour pour le chercheur."
-        },
-        {
-          "debut": "00:02:14",
-          "fin": "00:02:20",
-          "type": "acronyme",
-          "ecran": "MVP",
-          "schema": "",
-          "developpe": "Minimum Viable Product — premier produit viable",
-          "pourquoi": "Première occurrence du sigle."
-        }
-      ],
-      "source": "ia"
-    },
-    "T12": {
-      "code": "T12",
-      "nb": 5,
-      "items": [
-        {
-          "debut": "00:00:22",
-          "fin": "00:00:32",
-          "type": "acronyme",
-          "ecran": "RISE",
-          "schema": "",
-          "developpe": "Programme CNRS de coaching entrepreneurs",
-          "pourquoi": "Première occurrence ; autre structure que la SATT."
-        },
-        {
-          "debut": "00:00:32",
-          "fin": "00:00:43",
-          "type": "schema",
-          "ecran": "Université · Incubateur",
-          "schema": "Université · Incubateur",
-          "developpe": "",
-          "pourquoi": "IncubAlliance à l’université : extrait de l’écosystème F1, pas le schéma à 9 groupes.",
-          "image": "schemas/f1-ecosysteme.png"
-        },
-        {
-          "debut": "00:01:04",
-          "fin": "00:01:14",
-          "type": "concept",
-          "ecran": "Concours de pitch",
-          "schema": "",
-          "developpe": "",
-          "pourquoi": "Mise en visibilité."
-        },
-        {
-          "debut": "00:01:28",
-          "fin": "00:01:39",
-          "type": "concept",
-          "ecran": "Luminage",
-          "schema": "",
-          "developpe": "Programme Institut d’Optique / X-Campus",
-          "pourquoi": "Dispositif d’accompagnement nommé dans la chorale."
-        },
-        {
-          "debut": "00:02:18",
-          "fin": "00:02:21",
-          "type": "concept",
-          "ecran": "Cohorte",
-          "schema": "",
-          "developpe": "",
-          "pourquoi": "Accompagnement entre pairs."
-        }
-      ],
-      "source": "ia"
-    },
-    "T13": {
-      "code": "T13",
-      "nb": 5,
-      "items": [
-        {
-          "debut": "00:00:13",
-          "fin": "00:00:15",
-          "type": "concept",
-          "ecran": "Valoriser le résultat",
-          "schema": "",
-          "developpe": "",
-          "pourquoi": "Sortir du labo : transformer le résultat en innovation."
-        },
-        {
-          "debut": "00:00:19",
-          "fin": "00:00:25",
-          "type": "concept",
-          "ecran": "Partir du besoin",
-          "schema": "",
-          "developpe": "",
-          "pourquoi": "Market-pull : un problème à résoudre, pas une idée révolutionnaire."
-        },
-        {
-          "debut": "00:00:40",
-          "fin": "00:00:44",
-          "type": "concept",
-          "ecran": "Écosystème",
-          "schema": "",
-          "developpe": "",
-          "pourquoi": "SATT, incubateur, valorisation : on n’innove pas seul."
-        },
-        {
-          "debut": "00:01:10",
-          "fin": "00:01:15",
-          "type": "concept",
-          "ecran": "Terrain et entrepreneurs",
-          "schema": "",
-          "developpe": "",
-          "pourquoi": "Confronter le résultat aux usages et aux partenaires."
-        },
-        {
-          "debut": "00:03:03",
-          "fin": "00:03:06",
-          "type": "concept",
-          "ecran": "Oser innover",
-          "schema": "",
-          "developpe": "",
-          "pourquoi": "Mot de clôture."
-        }
-      ],
-      "source": "ia"
-    },
     "E1": {
       "code": "E1",
       "nb": 7,
@@ -2581,418 +1768,1190 @@
     },
     "E13": {
       "code": "E13",
-      "nb": 7,
+      "nb": 19,
+      "source": "monica",
       "items": [
         {
-          "debut": "00:00:31",
-          "fin": "00:00:39",
-          "type": "concept",
-          "ecran": "Créer une start-up ?",
+          "id": "IN-E13-01",
+          "debut": "00:00:18",
+          "fin": "00:00:31",
+          "type": "motion",
+          "vue": "grille",
+          "ecran": "Résultat prometteur · Prototype · Brevet · Besoin réel",
+          "cellules": [
+            {
+              "texte": "Résultat prometteur",
+              "icone": "fa-lightbulb"
+            },
+            {
+              "texte": "Prototype",
+              "icone": "fa-flask"
+            },
+            {
+              "texte": "Brevet",
+              "icone": "fa-file-lines"
+            },
+            {
+              "texte": "Besoin réel",
+              "icone": "fa-users"
+            }
+          ],
           "schema": "",
           "developpe": "",
-          "pourquoi": "Question qui ouvre l’incubateur : pas automatique dès qu’il y a un résultat prometteur."
+          "pourquoi": "Liste demandée par Monica, calée sur « prototype, un brevet… un besoin réel ».",
+          "colonnes": 4
         },
         {
+          "id": "IN-E13-02",
+          "debut": "00:00:39",
+          "fin": "00:00:45",
+          "type": "motion",
+          "vue": "texte",
+          "ecran": "Que fait un incubateur ?",
+          "icone": "fa-circle-question",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Question-clé de Monica, calée sur « Mais que fait réellement un incubateur ? »."
+        },
+        {
+          "id": "IN-E13-03",
           "debut": "00:00:45",
           "fin": "00:01:41",
-          "type": "schema",
-          "ecran": "Maturation | Incubation",
-          "schema": "Maturation techno | Incubation business",
+          "type": "motion",
+          "vue": "frise",
+          "titre": "Deux aspects à découpler",
+          "ecran": "Maturation technologique → Incubation business",
+          "schema": "Maturation technologique → Incubation business",
+          "icones": [
+            "fa-flask",
+            "fa-rocket"
+          ],
+          "caption": "Le centre de gravité se déplace vers le business",
           "developpe": "",
-          "pourquoi": "Deux temps à découpler : robustesse techno + marché, puis côté entrepreneurial."
+          "pourquoi": "Schéma demandé par Monica : flèche entre maturité technologique et incubation."
         },
         {
+          "id": "IN-E13-04",
           "debut": "00:01:45",
+          "fin": "00:01:52",
+          "type": "motion",
+          "vue": "texte",
+          "ecran": "Projet Deep Tech",
+          "icone": "fa-gear",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Mot-clé de Monica, calé sur « Dans un projet Deep Tech »."
+        },
+        {
+          "id": "IN-E13-05",
+          "debut": "00:01:52",
           "fin": "00:02:07",
-          "type": "concept",
-          "ecran": "Deep Tech en parallèle",
+          "type": "motion",
+          "vue": "grille",
+          "ecran": "Confronter ses hypothèses au terrain · Intéresser les financeurs",
+          "cellules": [
+            {
+              "texte": "Confronter ses hypothèses au terrain",
+              "icone": "fa-person-walking"
+            },
+            {
+              "texte": "Intéresser les financeurs",
+              "icone": "fa-coins"
+            }
+          ],
           "schema": "",
           "developpe": "",
-          "pourquoi": "La techno n’est pas encore un produit : hypothèses terrain, clients et financeurs en même temps."
+          "pourquoi": "Deux messages de Monica, calés sur le parallèle Deep Tech."
         },
         {
+          "id": "IN-E13-06",
           "debut": "00:02:39",
-          "fin": "00:02:50",
-          "type": "schema",
-          "ecran": "Trois programmes",
-          "schema": "Sensibilisation · Pré-incubation · Incubation",
-          "developpe": "",
-          "pourquoi": "IncubAlliance selon la maturité du projet."
-        },
-        {
-          "debut": "00:03:42",
-          "fin": "00:03:49",
-          "type": "concept",
-          "ecran": "Pas de prise de parts",
+          "fin": "00:02:46",
+          "type": "motion",
+          "vue": "texte",
+          "ecran": "60 projets · 3 programmes",
+          "icone": "fa-diagram-project",
           "schema": "",
           "developpe": "",
-          "pourquoi": "Incubateur de la recherche publique : accompagne la création, ne prend pas de capital."
+          "pourquoi": "Chiffre-clé de Monica, calé sur « environ 60 projets sur 3 programmes »."
         },
         {
+          "id": "IN-E13-07",
+          "debut": "00:02:46",
+          "fin": "00:02:50",
+          "type": "motion",
+          "vue": "frise",
+          "titre": "Trois programmes",
+          "ecran": "Sensibilisation → Pré-incubation → Incubation",
+          "schema": "Sensibilisation → Pré-incubation → Incubation",
+          "icones": [
+            "fa-comments",
+            "fa-seedling",
+            "fa-rocket"
+          ],
+          "developpe": "",
+          "pourquoi": "Schéma des trois programmes demandé par Monica."
+        },
+        {
+          "id": "IN-E13-08",
+          "debut": "00:03:14",
+          "fin": "00:03:27",
+          "type": "motion",
+          "vue": "grille",
+          "titre": "À étudier chez chaque incubateur",
+          "ecran": "Coût · Hébergement · Prise de parts",
+          "colonnes": 3,
+          "cellules": [
+            {
+              "texte": "Coût",
+              "icone": "fa-coins",
+              "detail": "Public ou privé"
+            },
+            {
+              "texte": "Hébergement",
+              "icone": "fa-building"
+            },
+            {
+              "texte": "Prise de parts",
+              "icone": "fa-chart-line"
+            }
+          ],
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Liste de Monica : coût, hébergement, prise de part."
+        },
+        {
+          "id": "IN-E13-09",
+          "debut": "00:03:42",
+          "fin": "00:03:58",
+          "type": "motion",
+          "vue": "deux-messages",
+          "ecran": "Soutien à la création · Prise de risque",
+          "icone": "fa-handshake",
+          "messages": [
+            "Accompagner la création",
+            "Prendre des risques aux côtés de la start-up"
+          ],
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Monica : « Soutien au moment de la création et prise de risque »."
+        },
+        {
+          "id": "IN-E13-10",
+          "debut": "00:04:19",
+          "fin": "00:04:26",
+          "type": "motion",
+          "vue": "texte",
+          "ecran": "Points décisifs : les associés et le recrutement",
+          "icone": "fa-users",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Mots de Monica, calés sur « un point décisif, les associés et le recrutement »."
+        },
+        {
+          "id": "IN-E13-11",
           "debut": "00:04:26",
           "fin": "00:04:36",
-          "type": "concept",
-          "ecran": "Techno ≠ start-up",
+          "type": "motion",
+          "vue": "texte",
+          "ecran": "Une excellente technologie ≠ une start-up",
+          "icone": "fa-triangle-exclamation",
           "schema": "",
           "developpe": "",
-          "pourquoi": "Une excellente technologie ne constitue pas à elle seule une entreprise : compétences à réunir."
+          "pourquoi": "Message-clé de Monica, calé sur la phrase d’Arielle."
         },
         {
-          "debut": "00:05:56",
-          "fin": "00:06:00",
-          "type": "schema",
-          "ecran": "Non-dilutif | Dilutif",
-          "schema": "Non-dilutif | Dilutif",
+          "id": "IN-E13-12",
+          "debut": "00:04:59",
+          "fin": "00:05:13",
+          "type": "motion",
+          "vue": "texte",
+          "ecran": "Nouvelle maturité",
+          "icone": "fa-arrows-rotate",
+          "schema": "",
           "developpe": "",
-          "image": "schemas/f2-finance.png",
-          "pourquoi": "Stratégie financière de l’incubation : extrait du tableau F2."
+          "pourquoi": "Mot-clé de Monica, calé sur « un contexte nouveau, d’une maturité nouvelle »."
+        },
+        {
+          "id": "IN-E13-13",
+          "debut": "00:05:15",
+          "fin": "00:05:22",
+          "type": "motion",
+          "vue": "texte",
+          "ecran": "Confrontation au terrain",
+          "icone": "fa-person-walking",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Mot-clé de Monica, calé sur « confrontation au terrain »."
+        },
+        {
+          "id": "IN-E13-14",
+          "debut": "00:05:31",
+          "fin": "00:05:40",
+          "type": "motion",
+          "vue": "texte",
+          "ecran": "L’incubateur aide à préparer les rencontres",
+          "icone": "fa-comments",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Formulation Monica : enlever « toutes », ne garder que « les rencontres »."
+        },
+        {
+          "id": "IN-E13-15",
+          "debut": "00:05:40",
+          "fin": "00:05:48",
+          "type": "motion",
+          "vue": "texte",
+          "ecran": "Tester les hypothèses du futur projet",
+          "icone": "fa-circle-question",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Texte-clé de Monica, calé sur « tester les hypothèses… du futur projet »."
+        },
+        {
+          "id": "IN-E13-16",
+          "debut": "00:05:48",
+          "fin": "00:06:00",
+          "type": "motion",
+          "vue": "grille",
+          "titre": "Stratégie financière",
+          "ecran": "Financement dilutif · Financement non dilutif",
+          "cellules": [
+            {
+              "texte": "Financement dilutif",
+              "icone": "fa-share-nodes",
+              "detail": "On cède des parts"
+            },
+            {
+              "texte": "Financement non dilutif",
+              "icone": "fa-shield-halved",
+              "detail": "On garde ses parts"
+            }
+          ],
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Schéma demandé par Monica : dilutif / non dilutif."
+        },
+        {
+          "id": "IN-E13-17",
+          "debut": "00:06:00",
+          "fin": "00:06:12",
+          "type": "motion",
+          "vue": "texte",
+          "ecran": "Un réseau pour rencontrer des entrepreneurs",
+          "icone": "fa-handshake",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Message de Monica, calé sur « l’incubateur apporte un réseau »."
+        },
+        {
+          "id": "IN-E13-18",
+          "debut": "00:06:21",
+          "fin": "00:06:45",
+          "type": "schema",
+          "ecran": "Écosystème",
+          "schema": "",
+          "image": "schemas/f1-ecosysteme.png",
+          "developpe": "",
+          "pourquoi": "Schéma fascicule demandé par Monica, calé sur l’énumération des acteurs."
+        },
+        {
+          "id": "IN-E13-19",
+          "debut": "00:07:08",
+          "fin": "00:07:28",
+          "type": "motion",
+          "vue": "grille",
+          "titre": "L’incubation, plus précisément",
+          "colonnes": 4,
+          "ecran": "Consolidation · Feuille de route · Besoin financier · Comptabilité · Rôles · Financements · Échanges · Mise en relation",
+          "cellules": [
+            {
+              "texte": "Consolidation du projet",
+              "icone": "fa-diagram-project"
+            },
+            {
+              "texte": "Feuille de route",
+              "icone": "fa-road"
+            },
+            {
+              "texte": "Besoin financier",
+              "icone": "fa-coins"
+            },
+            {
+              "texte": "Comptabilité",
+              "icone": "fa-file-lines"
+            },
+            {
+              "texte": "Répartition des rôles",
+              "icone": "fa-users"
+            },
+            {
+              "texte": "Accès aux financements",
+              "icone": "fa-seedling"
+            },
+            {
+              "texte": "Préparation des échanges",
+              "icone": "fa-comments"
+            },
+            {
+              "texte": "Mise en relation",
+              "icone": "fa-handshake"
+            }
+          ],
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Liste finale de Monica, labels circulaires (pictos charte) comme les fascicules."
         }
-      ],
-      "source": "ia"
+      ]
     },
     "E14": {
       "code": "E14",
-      "nb": 6,
+      "nb": 12,
+      "source": "monica",
       "items": [
         {
-          "debut": "00:00:05",
-          "fin": "00:00:10",
-          "type": "concept",
-          "ecran": "Design Spot",
+          "id": "IN-E14-01",
+          "debut": "00:00:23",
+          "fin": "00:00:30",
+          "type": "motion",
+          "vue": "grille",
+          "colonnes": 3,
+          "ecran": "Idée · Recherche · Innovation",
+          "cellules": [
+            {
+              "texte": "Idée",
+              "icone": "fa-lightbulb"
+            },
+            {
+              "texte": "Recherche",
+              "icone": "fa-flask"
+            },
+            {
+              "texte": "Innovation",
+              "icone": "fa-seedling"
+            }
+          ],
           "schema": "",
           "developpe": "",
-          "pourquoi": "Autre structure que SATT / incubateur, objectif E14."
+          "pourquoi": "Monica : schéma à cercles style fascicule, calé sur « idée, résultat de recherche, innovation »."
         },
         {
-          "debut": "00:00:41",
-          "fin": "00:00:52",
-          "type": "schema",
-          "ecran": "Plateformes",
-          "schema": "Fablab · Fabrique · POC",
+          "id": "IN-E14-02",
+          "debut": "00:00:30",
+          "fin": "00:00:41",
+          "type": "motion",
+          "vue": "grille",
+          "colonnes": 3,
+          "ecran": "Compétences · Équipements · Accompagnements",
+          "cellules": [
+            {
+              "texte": "Compétences",
+              "icone": "fa-graduation-cap"
+            },
+            {
+              "texte": "Équipements",
+              "icone": "fa-industry"
+            },
+            {
+              "texte": "Accompagnements",
+              "icone": "fa-handshake"
+            }
+          ],
+          "schema": "",
           "developpe": "",
-          "pourquoi": "Autres acteur·rices de l’écosystème F1 : extrait, pas le schéma à 9 groupes.",
-          "image": "schemas/f1-ecosysteme.png"
+          "pourquoi": "Liste de Monica, calée sur « compétences, équipements et accompagnements »."
         },
         {
+          "id": "IN-E14-03",
+          "debut": "00:00:41",
+          "fin": "00:00:58",
+          "type": "motion",
+          "vue": "texte",
+          "ecran": "Fab Lab · Prototypage",
+          "icone": "fa-stairs",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Monica : « Fab Lab pour le prototypage », calé sur les plateformes techniques."
+        },
+        {
+          "id": "IN-E14-04",
+          "debut": "00:01:05",
+          "fin": "00:01:21",
+          "type": "motion",
+          "vue": "texte",
+          "ecran": "Structures spécialisées · Food’InnLab",
+          "icone": "fa-flask",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Monica : structures spécialisées comme le Food’InnLab."
+        },
+        {
+          "id": "IN-E14-05",
           "debut": "00:01:33",
           "fin": "00:01:39",
-          "type": "concept",
-          "ecran": "Besoin et usage",
+          "type": "motion",
+          "vue": "texte",
+          "ecran": "Répondre à un besoin et à un usage",
+          "icone": "fa-bullseye",
           "schema": "",
           "developpe": "",
-          "pourquoi": "Le design n’est pas le styling."
+          "pourquoi": "Question-clé de Monica, calée sur « un besoin et à un usage »."
         },
         {
+          "id": "IN-E14-06",
           "debut": "00:01:58",
           "fin": "00:02:05",
-          "type": "concept",
-          "ecran": "Expérience utilisateur",
+          "type": "motion",
+          "vue": "texte",
+          "ecran": "Usage et appropriation",
+          "icone": "fa-users",
           "schema": "",
           "developpe": "",
-          "pourquoi": "Valeur du design en amont."
+          "pourquoi": "Mots-clés de Monica, calés sur usages / appropriation."
         },
         {
-          "debut": "00:03:15",
-          "fin": "00:03:18",
-          "type": "concept",
-          "ecran": "Complémentarité",
+          "id": "IN-E14-07",
+          "debut": "00:02:05",
+          "fin": "00:02:12",
+          "type": "motion",
+          "vue": "grille",
+          "ecran": "Identité visuelle · Choix des matériaux",
+          "cellules": [
+            {
+              "texte": "Identité visuelle",
+              "icone": "fa-palette"
+            },
+            {
+              "texte": "Choix des matériaux",
+              "icone": "fa-cubes"
+            }
+          ],
           "schema": "",
           "developpe": "",
-          "pourquoi": "Pas un parcours unique."
+          "pourquoi": "Deux messages de Monica, calés sur identité visuelle et matériaux."
         },
         {
-          "debut": "00:03:18",
-          "fin": "00:03:21",
-          "type": "concept",
-          "ecran": "Caler le timing",
+          "id": "IN-E14-08",
+          "debut": "00:02:19",
+          "fin": "00:02:28",
+          "type": "motion",
+          "vue": "texte",
+          "ecran": "Learning Center · partenaires et entreprises",
+          "icone": "fa-building",
           "schema": "",
           "developpe": "",
-          "pourquoi": "Solliciter les plateformes au bon moment du projet."
+          "pourquoi": "Monica : Learning Center de l’Université Paris-Saclay, ouvert aux partenaires et entreprises."
+        },
+        {
+          "id": "IN-E14-09",
+          "debut": "00:02:28",
+          "fin": "00:02:41",
+          "type": "motion",
+          "vue": "grille",
+          "ecran": "Bibliothèques · Matériothèque",
+          "cellules": [
+            {
+              "texte": "Bibliothèques",
+              "icone": "fa-book"
+            },
+            {
+              "texte": "Matériothèque",
+              "icone": "fa-cubes"
+            }
+          ],
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Monica : « bibliothèque au pluriel et matériothèque »."
+        },
+        {
+          "id": "IN-E14-10",
+          "debut": "00:02:51",
+          "fin": "00:02:57",
+          "type": "motion",
+          "vue": "texte",
+          "ecran": "Enjeux environnementaux",
+          "icone": "fa-leaf",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Mot-clé de Monica, calé sur l’intégration des enjeux environnementaux."
+        },
+        {
+          "id": "IN-E14-11",
+          "debut": "00:03:34",
+          "fin": "00:03:45",
+          "type": "motion",
+          "vue": "texte",
+          "ecran": "Trouver la bonne ressource au bon moment",
+          "icone": "fa-clock",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Phrase-clé de Monica, calée sur la conclusion de Yoann."
+        },
+        {
+          "id": "IN-E14-12",
+          "debut": "00:03:50",
+          "fin": "00:04:01",
+          "type": "motion",
+          "vue": "texte",
+          "ecran": "Répondre aux besoins · utile à la société",
+          "icone": "fa-heart-pulse",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Message de Monica, calé sur « vrais besoins » et « utile à la société »."
         }
-      ],
-      "source": "ia"
+      ]
     },
     "E16": {
       "code": "E16",
-      "nb": 7,
+      "nb": 9,
+      "source": "monica",
       "items": [
         {
+          "id": "IN-E16-01",
           "debut": "00:00:32",
-          "fin": "00:00:44",
-          "type": "concept",
-          "ecran": "Changement de vocabulaire",
+          "fin": "00:00:38",
+          "type": "motion",
+          "vue": "texte",
+          "ecran": "Un changement de contexte amène à un changement de vocabulaire",
+          "icone": "fa-arrows-rotate",
           "schema": "",
           "developpe": "",
-          "pourquoi": "Un changement de contexte (recherche → entrepreneuriat) change le lexique et le référentiel."
+          "pourquoi": "Phrase-clé de Monica, calée sur la phrase d’Arielle."
         },
         {
-          "debut": "00:00:58",
-          "fin": "00:01:06",
-          "type": "schema",
-          "ecran": "Théorie → usage",
-          "schema": "Théorie → usage",
+          "id": "IN-E16-02",
+          "debut": "00:01:09",
+          "fin": "00:01:18",
+          "type": "motion",
+          "vue": "texte",
+          "ecran": "Consolider et soutenir les premières années de la start-up",
+          "icone": "fa-seedling",
+          "schema": "",
           "developpe": "",
-          "pourquoi": "Comprendre le décalage de codes ne suffit pas : il faut le faire atterrir dans la pratique."
+          "pourquoi": "Mission-clé de Monica, calée sur la phrase d’Arielle."
         },
         {
+          "id": "IN-E16-03",
           "debut": "00:01:18",
           "fin": "00:01:32",
-          "type": "schema",
-          "ecran": "Deux postures",
-          "schema": "Chercheur | Entrepreneur",
+          "type": "motion",
+          "vue": "boucle",
+          "ecran": "Posture de chercheur ⇄ Posture entrepreneuriale",
+          "schema": "Posture de chercheur ⇄ Posture entrepreneuriale",
+          "icones": [
+            "fa-flask",
+            "fa-rocket"
+          ],
+          "caption": "Naviguer dans les deux sens",
           "developpe": "",
-          "pourquoi": "Complémentaires : naviguer entre les deux façons de travailler, sans abandonner la recherche."
+          "pourquoi": "Schéma Monica : cercles et flèches dans les deux sens entre les deux postures."
         },
         {
+          "id": "IN-E16-04",
           "debut": "00:01:44",
           "fin": "00:01:56",
-          "type": "concept",
-          "ecran": "Nouveau lexique",
+          "type": "motion",
+          "vue": "liste",
+          "titre": "Nouveau lexique",
+          "ecran": "business model · proposition de valeur · financement dilutif · break-even · ARR · pitch · B2B",
           "schema": "",
-          "developpe": "business model · proposition de valeur · dilutif · break-even · ARR · pitch · B2B",
-          "pourquoi": "Premier obstacle : acquérir des termes et des mécanismes qui n’appartiennent pas au laboratoire."
-        },
-        {
-          "debut": "00:02:24",
-          "fin": "00:02:55",
-          "type": "schema",
-          "ecran": "Trois sens de valorisation",
-          "schema": "Publication | PI | Valeur monétaire",
           "developpe": "",
-          "pourquoi": "Même mot, trois métiers : chercheur, direction de la valorisation, incubateur Deep Tech."
+          "pourquoi": "Liste demandée par Monica, comme une incrustation à l’écran, avec les mots cités.",
+          "lignes": [
+            "business model",
+            "proposition de valeur",
+            "financement dilutif",
+            "break-even",
+            "ARR",
+            "pitch",
+            "B2B"
+          ]
         },
         {
+          "id": "IN-E16-05",
+          "debut": "00:02:26",
+          "fin": "00:02:55",
+          "type": "motion",
+          "vue": "frise",
+          "titre": "Trois sens de « valorisation »",
+          "ecran": "Publication → PI → Valeur monétaire",
+          "schema": "Publication → PI → Valeur monétaire",
+          "icones": [
+            "fa-file-lines",
+            "fa-shield-halved",
+            "fa-coins"
+          ],
+          "caption": "Chercheur · établissement · incubateur",
+          "developpe": "",
+          "pourquoi": "Petit schéma de Monica : publication, PI, valeur monétaire, avec des flèches."
+        },
+        {
+          "id": "IN-E16-06",
+          "debut": "00:03:25",
+          "fin": "00:03:33",
+          "type": "motion",
+          "vue": "texte",
+          "ecran": "Nouvelle posture entrepreneuriale",
+          "icone": "fa-rocket",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Mot-clé de Monica, calé sur « posture entrepreneuriale au bon rythme »."
+        },
+        {
+          "id": "IN-E16-07",
           "debut": "00:03:33",
           "fin": "00:03:54",
-          "type": "concept",
-          "ecran": "Point de vue de l’écoute",
+          "type": "motion",
+          "vue": "texte",
+          "ecran": "Écoute de votre interlocuteur",
+          "icone": "fa-comments",
           "schema": "",
           "developpe": "",
-          "pourquoi": "Adapter le vocabulaire à qui écoute, pas à qui parle — dire autrement pour qu’il comprenne."
+          "pourquoi": "Monica : « Écoute de votre interlocuteur », calé sur le point de vue de celui qui écoute."
         },
         {
+          "id": "IN-E16-08",
           "debut": "00:04:04",
           "fin": "00:04:19",
-          "type": "schema",
-          "ecran": "Un discours par interlocuteur",
-          "schema": "Financeurs · Partenaires · Clients",
+          "type": "motion",
+          "vue": "grille",
+          "titre": "Adapter le discours",
+          "colonnes": 3,
+          "ecran": "Financeurs · Partenaires · Industriels · Institutions · Décideurs · Clients",
+          "cellules": [
+            {
+              "texte": "Financeurs",
+              "icone": "fa-coins"
+            },
+            {
+              "texte": "Partenaires",
+              "icone": "fa-handshake"
+            },
+            {
+              "texte": "Industriels",
+              "icone": "fa-industry"
+            },
+            {
+              "texte": "Institutions",
+              "icone": "fa-building"
+            },
+            {
+              "texte": "Décideurs",
+              "icone": "fa-user"
+            },
+            {
+              "texte": "Clients",
+              "icone": "fa-users"
+            }
+          ],
+          "schema": "",
           "developpe": "",
-          "pourquoi": "Présentations distinctes : public / privé, industriels, institutions, décideurs, clients."
+          "pourquoi": "Schéma demandé par Monica avec la liste citée par Arielle."
+        },
+        {
+          "id": "IN-E16-09",
+          "debut": "00:04:27",
+          "fin": "00:04:35",
+          "type": "motion",
+          "vue": "texte",
+          "ecran": "Gagner du temps et de l’énergie",
+          "icone": "fa-clock",
+          "caption": "avec les structures d’accompagnement",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Message de Monica, calé sur l’appui aux structures d’accompagnement."
         }
-      ],
-      "source": "ia"
+      ]
     },
     "E17": {
       "code": "E17",
-      "nb": 7,
+      "nb": 8,
+      "source": "monica",
       "items": [
         {
+          "id": "IN-E17-01",
           "debut": "00:00:53",
           "fin": "00:01:04",
-          "type": "concept",
-          "ecran": "Compétences collectives",
+          "type": "motion",
+          "vue": "texte",
+          "ecran": "Rassembler collectivement les compétences et qualités nécessaires",
+          "icone": "fa-users",
           "schema": "",
           "developpe": "",
-          "pourquoi": "On ne porte pas seul le projet : l’équipe rassemble les compétences et qualités nécessaires."
+          "pourquoi": "Phrase-clé de Monica, calée sur « collectivement rassemble les compétences et qualités nécessaires »."
         },
         {
-          "debut": "00:01:08",
-          "fin": "00:01:18",
-          "type": "schema",
-          "ecran": "Savoirs manquants",
-          "schema": "Marché · PI · Commercialisation",
+          "id": "IN-E17-02",
+          "debut": "00:01:18",
+          "fin": "00:01:31",
+          "type": "motion",
+          "vue": "texte",
+          "ecran": "Augmenter en compétences",
+          "icone": "fa-stairs",
+          "schema": "",
           "developpe": "",
-          "pourquoi": "Étude de marché, brevetabilité, financeurs : ce que le laboratoire ne sait pas faire seul (Loïc / Jean-Jacques)."
+          "pourquoi": "Monica : texte à valider, intéressant au moment où Jean-Jacques énumère les domaines."
         },
         {
+          "id": "IN-E17-03",
+          "debut": "00:01:41",
+          "fin": "00:01:47",
+          "type": "motion",
+          "vue": "texte",
+          "ecran": "Les investisseurs regardent attentivement l’équipe du projet",
+          "icone": "fa-users",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Monica : changer le texte IA, calé sur « les investisseurs ne regardent quasiment que cela »."
+        },
+        {
+          "id": "IN-E17-04",
           "debut": "00:01:47",
           "fin": "00:01:58",
-          "type": "concept",
-          "ecran": "L’équipe survit au pivot",
+          "type": "motion",
+          "vue": "texte",
+          "ecran": "L’équipe survit aux différents pivots",
+          "icone": "fa-arrows-rotate",
           "schema": "",
           "developpe": "",
-          "pourquoi": "Les investisseurs regardent l’équipe : les projets pivotent, la techno de départ ne suffit pas."
+          "pourquoi": "Monica : pivots au pluriel, calé sur « la grande majorité des projets pivotent »."
         },
         {
-          "debut": "00:02:09",
-          "fin": "00:02:20",
-          "type": "schema",
-          "ecran": "Diriger ou non",
-          "schema": "CEO | Scientifique",
+          "id": "IN-E17-05",
+          "debut": "00:01:58",
+          "fin": "00:02:17",
+          "type": "motion",
+          "vue": "grille",
+          "titre": "Choisir la posture",
+          "ecran": "CEO · Comité scientifique",
+          "cellules": [
+            {
+              "texte": "CEO",
+              "icone": "fa-user",
+              "detail": "Diriger l’entreprise"
+            },
+            {
+              "texte": "Comité scientifique",
+              "icone": "fa-flask",
+              "detail": "Rester dans le scientifique"
+            }
+          ],
+          "schema": "",
           "developpe": "",
-          "pourquoi": "Place du chercheur : direction opérationnelle ou rester dans le domaine scientifique."
+          "pourquoi": "Monica : CEO ou comité scientifique, plus tôt — dès la place dans l’entreprise."
         },
         {
+          "id": "IN-E17-06",
           "debut": "00:02:56",
-          "fin": "00:03:04",
-          "type": "schema",
-          "ecran": "Prématuration → Maturation",
-          "schema": "Protection → Maturation → Transfert",
+          "fin": "00:03:12",
+          "type": "motion",
+          "vue": "frise",
+          "ecran": "Recherche → Prématuration → Maturation",
+          "schema": "Recherche → Prématuration → Maturation",
+          "icones": [
+            "fa-flask",
+            "fa-stairs",
+            "fa-rocket"
+          ],
           "developpe": "",
-          "image": "schemas/f2-chaine-valo.png",
-          "pourquoi": "Loïc : prématuration puis maturation SATT — chaîne de valorisation du fascicule 2."
+          "pourquoi": "Schéma demandé par Monica, calé sur Loïc / Sylvia et la SATT."
         },
         {
+          "id": "IN-E17-07",
           "debut": "00:03:31",
           "fin": "00:03:44",
-          "type": "concept",
-          "ecran": "Alignement des finalités",
+          "type": "motion",
+          "vue": "texte",
+          "ecran": "Alignement : finalités et valeurs du projet",
+          "icone": "fa-scale-balanced",
           "schema": "",
           "developpe": "",
-          "pourquoi": "Avant de recruter un dirigeant : s’assurer d’un alignement sur les finalités et les valeurs du projet."
+          "pourquoi": "Version synthétique demandée par Monica, calée sur l’alignement avec les candidats."
         },
         {
-          "debut": "00:03:50",
-          "fin": "00:04:04",
-          "type": "concept",
-          "ecran": "Casting du dirigeant",
+          "id": "IN-E17-08",
+          "debut": "00:04:36",
+          "fin": "00:04:41",
+          "type": "motion",
+          "vue": "texte",
+          "ecran": "Chacun a un rôle important à jouer dans le processus de collaboration",
+          "icone": "fa-handshake",
           "schema": "",
           "developpe": "",
-          "pourquoi": "Recrutement du CEO avec la SATT : cultures du secteur, pas un CV générique."
+          "pourquoi": "Phrase-clé de Monica, calée sur la citation de Sylvia."
         }
-      ],
-      "source": "ia"
+      ]
     },
     "E18": {
       "code": "E18",
-      "nb": 7,
+      "nb": 10,
+      "source": "monica",
       "items": [
         {
+          "id": "IN-E18-01",
           "debut": "00:00:29",
           "fin": "00:00:37",
-          "type": "concept",
-          "ecran": "Chacun sa mission",
+          "type": "motion",
+          "vue": "texte",
+          "ecran": "Préserver la valorisation de votre recherche",
+          "icone": "fa-file-lines",
           "schema": "",
           "developpe": "",
-          "pourquoi": "Préserver la valorisation : chaque partenaire fait sa mission, toute sa mission, rien que sa mission."
+          "pourquoi": "Phrase-clé de Monica, calée sur « préserver la valorisation de votre innovation »."
         },
         {
+          "id": "IN-E18-02",
           "debut": "00:00:42",
           "fin": "00:00:48",
-          "type": "concept",
-          "ecran": "Le contrat fait loi",
+          "type": "motion",
+          "vue": "texte",
+          "ecran": "Le contrat fait la loi des parties",
+          "icone": "fa-file-signature",
           "schema": "",
           "developpe": "",
-          "pourquoi": "Le contrat définit droits et obligations (renvoi à Soizic / E11)."
+          "pourquoi": "Phrase-clé de Monica, calée sur « il devient la loi des partis »."
         },
         {
+          "id": "IN-E18-03",
+          "debut": "00:01:07",
+          "fin": "00:01:16",
+          "type": "motion",
+          "vue": "texte",
+          "ecran": "Organisation juridique du collectif",
+          "icone": "fa-scale-balanced",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Mot-clé de Monica, calé sur « organiser juridiquement les relations au sein du collectif »."
+        },
+        {
+          "id": "IN-E18-04",
           "debut": "00:01:22",
           "fin": "00:01:34",
-          "type": "schema",
-          "ecran": "Trois enjeux",
-          "schema": "Gouvernance · Pouvoir · Financier",
+          "type": "motion",
+          "vue": "grille",
+          "titre": "Dès le succès",
+          "colonnes": 3,
+          "ecran": "Gouvernance · Pouvoir · Conditions financières",
+          "cellules": [
+            {
+              "texte": "Gouvernance",
+              "icone": "fa-users"
+            },
+            {
+              "texte": "Pouvoir",
+              "icone": "fa-chart-line"
+            },
+            {
+              "texte": "Conditions financières",
+              "icone": "fa-coins"
+            }
+          ],
+          "schema": "",
           "developpe": "",
-          "pourquoi": "Dès le succès : arbitrages difficiles si les relations sont restées dans le flou."
+          "pourquoi": "Monica : détailler gouvernance, pouvoir et conditions financières."
         },
         {
+          "id": "IN-E18-05",
           "debut": "00:01:38",
           "fin": "00:01:53",
-          "type": "acronyme",
-          "ecran": "NPE",
-          "schema": "",
-          "developpe": "Non-Practicing Entity — structure qui n’exploite pas elle-même",
-          "pourquoi": "On s’adosse à des partenaires ou on cède : des décisions d’exploitation restent à prendre."
-        },
-        {
-          "debut": "00:02:13",
-          "fin": "00:02:21",
-          "type": "concept",
-          "ecran": "L’employeur détient la PI",
+          "type": "motion",
+          "vue": "texte",
+          "ecran": "NPE (Non-Practicing Entity)",
+          "icone": "fa-building",
           "schema": "",
           "developpe": "",
-          "pourquoi": "Dans la majorité des cas, les droits de PI restent à l’établissement, pas aux personnes."
+          "pourquoi": "Acronyme demandé par Monica, entre parenthèses."
         },
         {
+          "id": "IN-E18-06",
+          "debut": "00:02:10",
+          "fin": "00:02:21",
+          "type": "motion",
+          "vue": "texte",
+          "ecran": "Organiser juridiquement l’équipe projet",
+          "icone": "fa-users",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Mot-clé de Monica, calé sur l’employeur et les droits de PI."
+        },
+        {
+          "id": "IN-E18-07",
+          "debut": "00:02:21",
+          "fin": "00:02:32",
+          "type": "motion",
+          "vue": "grille",
+          "titre": "Chaque contribution",
+          "colonnes": 3,
+          "ecran": "Scientifique · Technique · Managérial · Juridique · Financier",
+          "cellules": [
+            {
+              "texte": "Scientifique",
+              "icone": "fa-flask"
+            },
+            {
+              "texte": "Technique",
+              "icone": "fa-gear"
+            },
+            {
+              "texte": "Managérial",
+              "icone": "fa-users"
+            },
+            {
+              "texte": "Juridique",
+              "icone": "fa-scale-balanced"
+            },
+            {
+              "texte": "Financier",
+              "icone": "fa-coins"
+            }
+          ],
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Petit schéma demandé par Monica avec la liste complète citée par Antoine."
+        },
+        {
+          "id": "IN-E18-08",
           "debut": "00:02:40",
           "fin": "00:02:49",
-          "type": "schema",
-          "ecran": "Parts ≠ droits de PI",
-          "schema": "Parts sociales ≠ PI",
-          "developpe": "",
-          "pourquoi": "La répartition au capital n’est pas la propriété intellectuelle."
-        },
-        {
-          "debut": "00:02:55",
-          "fin": "00:03:11",
-          "type": "concept",
-          "ecran": "Anticiper les apports",
+          "type": "motion",
+          "vue": "grille",
+          "ecran": "Droits de PI ≠ Parts sociales",
+          "cellules": [
+            {
+              "texte": "Droits de PI",
+              "icone": "fa-shield-halved"
+            },
+            {
+              "texte": "Parts sociales",
+              "icone": "fa-chart-line"
+            }
+          ],
+          "caption": "Deux distributions distinctes",
           "schema": "",
           "developpe": "",
-          "pourquoi": "Définir et quantifier les apports de chacun très en amont ; le non-dit crée la tension."
+          "pourquoi": "Monica : différentes distributions entre droits de PI et parts sociales."
+        },
+        {
+          "id": "IN-E18-09",
+          "debut": "00:02:58",
+          "fin": "00:03:11",
+          "type": "motion",
+          "vue": "texte",
+          "ecran": "Définir et quantifier les apports de chacun",
+          "icone": "fa-scale-balanced",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Phrase-clé de Monica, calée sur l’anticipation des apports."
+        },
+        {
+          "id": "IN-E18-10",
+          "debut": "00:03:32",
+          "fin": "00:03:46",
+          "type": "motion",
+          "vue": "texte",
+          "ecran": "Un bon contrat décrit la situation et définit les devoirs et les droits de chacun",
+          "icone": "fa-file-signature",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Monica : enlever « reste dans le tiroir », garder description + devoirs et droits."
         }
-      ],
-      "source": "ia"
+      ]
     },
     "E19": {
       "code": "E19",
-      "nb": 7,
+      "nb": 14,
+      "source": "monica",
       "items": [
         {
-          "debut": "00:00:23",
-          "fin": "00:00:33",
-          "type": "schema",
-          "ecran": "Résultat → entreprise",
-          "schema": "Résultat scientifique → entreprise",
+          "id": "IN-E19-01",
+          "debut": "00:00:39",
+          "fin": "00:00:54",
+          "type": "motion",
+          "vue": "texte",
+          "ecran": "Dérisquer la technologie issue du laboratoire",
+          "icone": "fa-flask",
+          "caption": "Des clients qui acceptent de payer",
+          "schema": "",
           "developpe": "",
-          "pourquoi": "Créer une start-up Deep Tech : transformer un résultat en entreprise capable de trouver son marché."
+          "pourquoi": "Monica : payer et donc dérisquer la technologie issue du laboratoire."
         },
         {
+          "id": "IN-E19-02",
           "debut": "00:01:29",
           "fin": "00:01:34",
-          "type": "concept",
-          "ecran": "Financer la réduction des risques",
+          "type": "motion",
+          "vue": "texte",
+          "ecran": "Financer progressivement la réduction des risques",
+          "icone": "fa-stairs",
           "schema": "",
           "developpe": "",
-          "pourquoi": "Le financement n’est pas « trouver de l’argent » : c’est dérisquer étape par étape."
+          "pourquoi": "Phrase-clé de Monica, calée sur la définition du financement."
         },
         {
-          "debut": "00:02:19",
-          "fin": "00:02:38",
-          "type": "concept",
-          "ecran": "Chiffre d’affaires",
+          "id": "IN-E19-03",
+          "debut": "00:02:01",
+          "fin": "00:02:09",
+          "type": "motion",
+          "vue": "deux-messages",
+          "ecran": "Minimiser son risque · Maximiser la valeur de son engagement",
+          "icone": "fa-scale-balanced",
+          "messages": [
+            "Minimiser son risque",
+            "Maximiser la valeur de son engagement"
+          ],
           "schema": "",
           "developpe": "",
-          "pourquoi": "Première source : un client qui paie un POC, une étude ou un produit — et confirme le marché."
+          "pourquoi": "Deux messages de Monica, calés sur ce que veut chaque acteur."
         },
         {
+          "id": "IN-E19-04",
+          "debut": "00:02:14",
+          "fin": "00:02:19",
+          "type": "motion",
+          "vue": "texte",
+          "ecran": "Quelles sont les sources de financement ?",
+          "icone": "fa-circle-question",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Question-clé de Monica, calée sur l’ouverture des sources."
+        },
+        {
+          "id": "IN-E19-05",
           "debut": "00:02:43",
           "fin": "00:02:56",
-          "type": "schema",
-          "ecran": "Non-dilutif",
-          "schema": "Non-dilutif | Dilutif",
-          "developpe": "Pas de cession de parts",
-          "image": "schemas/f2-finance.png",
-          "pourquoi": "Subventions, avances, prêts d’honneur : les fondateurs gardent leurs parts (F2 p. 15)."
+          "type": "motion",
+          "vue": "texte",
+          "ecran": "Financement non dilutif",
+          "icone": "fa-shield-halved",
+          "caption": "Les fondateurs détiennent toujours autant de parts",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Schéma circulaire demandé par Monica. Caption calée sur la phrase d’Arielle (pas de cession de parts)."
         },
         {
+          "id": "IN-E19-06",
+          "debut": "00:02:58",
+          "fin": "00:03:14",
+          "type": "motion",
+          "vue": "texte",
+          "ecran": "Subvention de l’État",
+          "icone": "fa-coins",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Mot-clé de Monica, calé sur BPI France / subventions."
+        },
+        {
+          "id": "IN-E19-07",
+          "debut": "00:03:24",
+          "fin": "00:03:38",
+          "type": "motion",
+          "vue": "texte",
+          "ecran": "Avance remboursable",
+          "icone": "fa-handshake",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Mot-clé de Monica, calé sur le prêt IncubAlliance sans intérêt."
+        },
+        {
+          "id": "IN-E19-08",
+          "debut": "00:03:42",
+          "fin": "00:03:54",
+          "type": "motion",
+          "vue": "grille",
+          "ecran": "Prêts d’honneur · Mentorat · Incubateurs d’écoles",
+          "colonnes": 3,
+          "cellules": [
+            {
+              "texte": "Prêts d’honneur",
+              "icone": "fa-coins"
+            },
+            {
+              "texte": "Mentorat",
+              "icone": "fa-comments"
+            },
+            {
+              "texte": "Incubateurs d’écoles",
+              "icone": "fa-graduation-cap"
+            }
+          ],
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Monica : mentorat et incubateurs d’école, calé sur la liste d’Arielle."
+        },
+        {
+          "id": "IN-E19-09",
           "debut": "00:03:56",
           "fin": "00:04:08",
-          "type": "concept",
+          "type": "motion",
+          "vue": "texte",
           "ecran": "Financement dilutif",
-          "schema": "",
-          "developpe": "Business angels · amorçage · capital-risque",
-          "pourquoi": "Capitaux contre une partie de l’entreprise : les fondateurs sont dilués."
-        },
-        {
-          "debut": "00:04:45",
-          "fin": "00:04:50",
-          "type": "concept",
-          "ecran": "Combiner les sources",
+          "icone": "fa-share-nodes",
+          "caption": "Les fondateurs détiennent moins de parts, ils sont dilués",
           "schema": "",
           "developpe": "",
-          "pourquoi": "En Deep Tech, dilutif et non-dilutif se combinent selon le niveau de risque."
+          "pourquoi": "Même cercle fascicule que le non-dilutif, demandé par Monica."
         },
         {
+          "id": "IN-E19-10",
+          "debut": "00:04:17",
+          "fin": "00:04:27",
+          "type": "motion",
+          "vue": "texte",
+          "ecran": "Prise de parts au capital de la start-up",
+          "icone": "fa-chart-line",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Monica : « à l’opposé, prise de part au capital »."
+        },
+        {
+          "id": "IN-E19-11",
+          "debut": "00:04:30",
+          "fin": "00:04:36",
+          "type": "motion",
+          "vue": "texte",
+          "ecran": "Que permet d’accomplir l’apport de financement ?",
+          "icone": "fa-circle-question",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Question-clé de Monica, calée sur la phrase d’Arielle."
+        },
+        {
+          "id": "IN-E19-12",
+          "debut": "00:05:20",
+          "fin": "00:05:26",
+          "type": "motion",
+          "vue": "texte",
+          "ecran": "Financer l’industrialisation et la croissance",
+          "icone": "fa-industry",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Mot-clé de Monica, calé sur le tour de financement plus important."
+        },
+        {
+          "id": "IN-E19-13",
           "debut": "00:05:26",
           "fin": "00:05:44",
-          "type": "concept",
-          "ecran": "Pacte d’associés",
+          "type": "motion",
+          "vue": "texte",
+          "ecran": "Gouvernance avec l’arrivée des investisseurs",
+          "icone": "fa-users",
           "schema": "",
           "developpe": "",
-          "pourquoi": "Gouvernance, départ d’un fondateur, sortie : à revoir à l’arrivée d’investisseurs."
+          "pourquoi": "Formulation Monica, calée sur l’arrivée d’investisseurs / pacte d’associés."
+        },
+        {
+          "id": "IN-E19-14",
+          "debut": "00:06:50",
+          "fin": "00:07:00",
+          "type": "motion",
+          "vue": "texte",
+          "ecran": "Levée de fonds pour atteindre des jalons",
+          "icone": "fa-flag-checkered",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Phrase-clé de Monica, calée sur la conclusion : une levée finance l’étape suivante."
         }
-      ],
-      "source": "ia"
+      ]
     },
     "E21": {
       "code": "E21",
@@ -3094,7 +3053,7 @@
           "ecran": "MVP",
           "schema": "",
           "developpe": "Minimum Viable Product",
-          "pourquoi": "Ici le sigle est enseigné (après T11)."
+          "pourquoi": "Ici le sigle est enseigné (dans le grain T11)."
         },
         {
           "debut": "00:03:18",

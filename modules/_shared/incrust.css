@@ -548,6 +548,11 @@ body.dark-mode .incrust-jump { border-color: rgba(255,255,255,0.18); }
 .incrust-cell:nth-child(2) { animation-delay: 0.12s; }
 .incrust-cell:nth-child(3) { animation-delay: 0.24s; }
 .incrust-cell:nth-child(4) { animation-delay: 0.36s; }
+.incrust-cell:nth-child(5) { animation-delay: 0.48s; }
+.incrust-cell:nth-child(6) { animation-delay: 0.60s; }
+.incrust-cell:nth-child(7) { animation-delay: 0.72s; }
+.incrust-cell:nth-child(8) { animation-delay: 0.84s; }
+.incrust-cell:nth-child(9) { animation-delay: 0.96s; }
 .incrust-cell .incrust-step-ico .incrust-picto { width: 2rem; height: 2rem; }
 .is-liste {
     width: min(100%, 28rem);

@@ -14,7 +14,7 @@ from PIL import Image, ImageChops, ImageDraw
 
 KIT = Path("/Users/ups_ifpoc/Desktop/KIT COM et LOGOS")
 ROOT = Path(__file__).resolve().parents[1]
-DEST = ROOT / "authoring" / "kit-com"
+DEST = ROOT / "authoring" / "Kit-com-V2"
 
 SCALE_SCHEMA = 3.0
 SCALE_ICON = 8.0

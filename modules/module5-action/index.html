@@ -58,30 +58,30 @@ body.dark-mode h1, body.dark-mode h2, body.dark-mode h3 { color: var(--orange); 
     <div class="content-container">
         <div class="hero-section">
             <h1 class="hero-title">Module 5 — Collaborer et évoluer dans le métier</h1>
-            <p class="hero-desc">Évolution du métier de chercheur·euse et dispositifs de collaboration.</p>
+            <p class="hero-desc">D’abord les dispositifs de collaboration, puis l’évolution du métier de chercheur·euse.</p>
             <div class="progress-bar-container"><div class="progress-bar" id="hero-progress-bar" style="width:0%"></div></div>
             <p style="font-size:0.8rem; margin-top:10px; opacity:0.8;"><span id="progress-text">0</span> / 2 grains</p>
         </div>
         <div class="grains-grid">
-            <div class="grain-card border-orange">
+            <div class="grain-card border-blue">
                 <div class="card-number">T11</div>
                 <div class="card-body">
-                    <div class="card-icon icon-orange"><i class="fa-solid fa-video"></i></div>
-                    <div class="code-pill">T11 · Témoin chorale</div>
-                    <div class="card-title">Évolution dans le métier du chercheur</div>
-                    <div class="card-desc">Concilier recherche et engagement<br><em>Experts : E20 · E21</em></div>
-                </div>
-                <div class="card-footer"><a href="pages/grain_t11_evolution_metier.html" class="btn-start">Accéder <i class="fa-solid fa-play"></i></a></div>
-            </div>
-            <div class="grain-card border-blue">
-                <div class="card-number">T12</div>
-                <div class="card-body">
                     <div class="card-icon icon-blue"><i class="fa-solid fa-video"></i></div>
-                    <div class="code-pill">T12 · Témoin chorale</div>
+                    <div class="code-pill">T11 · Témoin chorale</div>
                     <div class="card-title">Dispositifs d’accompagnement et collaborations</div>
                     <div class="card-desc">Collaborer de façon équilibrée et sécurisée<br><em>Experts : E22 · E23 · E24</em></div>
                 </div>
                 <div class="card-footer"><a href="pages/grain_t12_dispositifs_collaborations.html" class="btn-start">Accéder <i class="fa-solid fa-play"></i></a></div>
+            </div>
+            <div class="grain-card border-orange">
+                <div class="card-number">T12</div>
+                <div class="card-body">
+                    <div class="card-icon icon-orange"><i class="fa-solid fa-video"></i></div>
+                    <div class="code-pill">T12 · Témoin chorale</div>
+                    <div class="card-title">Évolution dans le métier du chercheur</div>
+                    <div class="card-desc">Concilier recherche et engagement<br><em>Experts : E20 · E21</em></div>
+                </div>
+                <div class="card-footer"><a href="pages/grain_t11_evolution_metier.html" class="btn-start">Accéder <i class="fa-solid fa-play"></i></a></div>
             </div>
 
         </div>
@@ -89,7 +89,7 @@ body.dark-mode h1, body.dark-mode h2, body.dark-mode h3 { color: var(--orange); 
     <script>
         ProgressApp.boot({
             suspendKey: "module5_action_suspend",
-            pages: ["grain_t11_evolution_metier", "grain_t12_dispositifs_collaborations"]
+            pages: ["grain_t12_dispositifs_collaborations", "grain_t11_evolution_metier"]
         });
     </script>
 </body>

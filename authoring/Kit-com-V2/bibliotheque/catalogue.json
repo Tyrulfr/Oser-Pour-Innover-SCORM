@@ -1,0 +1,543 @@
+[
+  {
+    "ensemble": "cycle",
+    "titre": "IDÉE",
+    "visuel": "Ampoule allumée",
+    "couleur": "orange",
+    "fichier": "cycle/IDÉE.png",
+    "source": "fascicule schéma 5",
+    "px": "356×356",
+    "usage": "incrustations + fascicule cycle"
+  },
+  {
+    "ensemble": "cycle",
+    "titre": "CRÉATIVITÉ",
+    "visuel": "Tête ouverte, crayon et arc-en-ciel",
+    "couleur": "orange",
+    "fichier": "cycle/CRÉATIVITÉ.png",
+    "source": "fascicule schéma 5",
+    "px": "356×356",
+    "usage": "incrustations + fascicule cycle"
+  },
+  {
+    "ensemble": "cycle",
+    "titre": "SOLUTIONS",
+    "visuel": "Ampoule avec coche",
+    "couleur": "orange",
+    "fichier": "cycle/SOLUTIONS.png",
+    "source": "fascicule schéma 5",
+    "px": "356×356",
+    "usage": "incrustations + fascicule cycle"
+  },
+  {
+    "ensemble": "cycle",
+    "titre": "SÉLECTION",
+    "visuel": "Documents et curseur",
+    "couleur": "orange",
+    "fichier": "cycle/SÉLECTION.png",
+    "source": "fascicule schéma 5",
+    "px": "356×356",
+    "usage": "incrustations + fascicule cycle"
+  },
+  {
+    "ensemble": "cycle",
+    "titre": "PROTOTYPAGE",
+    "visuel": "Maillon / lien",
+    "couleur": "orange",
+    "fichier": "cycle/PROTOTYPAGE.png",
+    "source": "fascicule schéma 5",
+    "px": "356×356",
+    "usage": "incrustations + fascicule cycle"
+  },
+  {
+    "ensemble": "cycle",
+    "titre": "EXPÉRIMENTATION",
+    "visuel": "Fiole",
+    "couleur": "orange",
+    "fichier": "cycle/EXPÉRIMENTATION.png",
+    "source": "fascicule schéma 5",
+    "px": "356×356",
+    "usage": "incrustations + fascicule cycle"
+  },
+  {
+    "ensemble": "cycle",
+    "titre": "DÉCOUVERTE",
+    "visuel": "Clé",
+    "couleur": "marine",
+    "fichier": "cycle/DÉCOUVERTE.png",
+    "source": "fascicule schéma 5",
+    "px": "356×356",
+    "usage": "incrustations + fascicule cycle"
+  },
+  {
+    "ensemble": "cycle",
+    "titre": "VALORISATION",
+    "visuel": "Document et crayon",
+    "couleur": "marine",
+    "fichier": "cycle/VALORISATION.png",
+    "source": "fascicule schéma 5",
+    "px": "356×356",
+    "usage": "incrustations + fascicule cycle"
+  },
+  {
+    "ensemble": "cycle",
+    "titre": "TRANSFERT",
+    "visuel": "Avion en papier",
+    "couleur": "marine",
+    "fichier": "cycle/TRANSFERT.png",
+    "source": "fascicule schéma 5",
+    "px": "356×356",
+    "usage": "incrustations + fascicule cycle"
+  },
+  {
+    "ensemble": "cycle",
+    "titre": "DESIGN",
+    "visuel": "Crayon et clé à molette",
+    "couleur": "vert",
+    "fichier": "cycle/DESIGN.png",
+    "source": "fascicule schéma 5",
+    "px": "356×356",
+    "usage": "incrustations + fascicule cycle"
+  },
+  {
+    "ensemble": "cycle",
+    "titre": "PRODUCTION",
+    "visuel": "Imprimante",
+    "couleur": "vert",
+    "fichier": "cycle/PRODUCTION.png",
+    "source": "fascicule schéma 5",
+    "px": "356×356",
+    "usage": "incrustations + fascicule cycle"
+  },
+  {
+    "ensemble": "cycle",
+    "titre": "DIFFUSION",
+    "visuel": "Mégaphone",
+    "couleur": "vert",
+    "fichier": "cycle/DIFFUSION.png",
+    "source": "fascicule schéma 5",
+    "px": "356×356",
+    "usage": "incrustations + fascicule cycle"
+  },
+  {
+    "ensemble": "cycle",
+    "titre": "ADOPTION et IMPACT",
+    "visuel": "Mains et ampoule",
+    "couleur": "vert",
+    "fichier": "cycle/ADOPTION et IMPACT.png",
+    "source": "fascicule schéma 5",
+    "px": "356×356",
+    "usage": "incrustations + fascicule cycle"
+  },
+  {
+    "ensemble": "incrustations",
+    "titre": "QUESTION",
+    "visuel": "Point d’interrogation",
+    "couleur": "orange",
+    "fichier": "incrustations/QUESTION.png",
+    "source": "ensemble 2 — incrustations (nouveau)",
+    "px": "356×356",
+    "usage": "Problème, question de recherche"
+  },
+  {
+    "ensemble": "incrustations",
+    "titre": "CIBLE",
+    "visuel": "Cible",
+    "couleur": "orange",
+    "fichier": "incrustations/CIBLE.png",
+    "source": "ensemble 2 — incrustations (nouveau)",
+    "px": "356×356",
+    "usage": "Le bon problème"
+  },
+  {
+    "ensemble": "incrustations",
+    "titre": "ALERTE",
+    "visuel": "Triangle",
+    "couleur": "orange",
+    "fichier": "incrustations/ALERTE.png",
+    "source": "ensemble 2 — incrustations (nouveau)",
+    "px": "356×356",
+    "usage": "Vigilance"
+  },
+  {
+    "ensemble": "incrustations",
+    "titre": "TEMPS",
+    "visuel": "Horloge",
+    "couleur": "orange",
+    "fichier": "incrustations/TEMPS.png",
+    "source": "ensemble 2 — incrustations (nouveau)",
+    "px": "356×356",
+    "usage": "Durée, TRL"
+  },
+  {
+    "ensemble": "incrustations",
+    "titre": "DIALOGUE",
+    "visuel": "Bulles",
+    "couleur": "orange",
+    "fichier": "incrustations/DIALOGUE.png",
+    "source": "ensemble 2 — incrustations (nouveau)",
+    "px": "356×356",
+    "usage": "Échange, langage commun"
+  },
+  {
+    "ensemble": "incrustations",
+    "titre": "PIVOT",
+    "visuel": "Flèches circulaires",
+    "couleur": "orange",
+    "fichier": "incrustations/PIVOT.png",
+    "source": "ensemble 2 — incrustations (nouveau)",
+    "px": "356×356",
+    "usage": "Pivot, itération"
+  },
+  {
+    "ensemble": "incrustations",
+    "titre": "SECRET",
+    "visuel": "Cadenas",
+    "couleur": "marine",
+    "fichier": "incrustations/SECRET.png",
+    "source": "ensemble 2 — incrustations (nouveau)",
+    "px": "356×356",
+    "usage": "Secret, confidentialité"
+  },
+  {
+    "ensemble": "incrustations",
+    "titre": "PROTECTION",
+    "visuel": "Bouclier",
+    "couleur": "marine",
+    "fichier": "incrustations/PROTECTION.png",
+    "source": "ensemble 2 — incrustations (nouveau)",
+    "px": "356×356",
+    "usage": "Protection, PI"
+  },
+  {
+    "ensemble": "incrustations",
+    "titre": "FINANCEMENT",
+    "visuel": "Pièces",
+    "couleur": "marine",
+    "fichier": "incrustations/FINANCEMENT.png",
+    "source": "ensemble 2 — incrustations (nouveau)",
+    "px": "356×356",
+    "usage": "Financement, levée"
+  },
+  {
+    "ensemble": "incrustations",
+    "titre": "ÉTABLISSEMENT",
+    "visuel": "Immeuble",
+    "couleur": "marine",
+    "fichier": "incrustations/ÉTABLISSEMENT.png",
+    "source": "ensemble 2 — incrustations (nouveau)",
+    "px": "356×356",
+    "usage": "Institution"
+  },
+  {
+    "ensemble": "incrustations",
+    "titre": "ENVELOPPE",
+    "visuel": "Enveloppe",
+    "couleur": "marine",
+    "fichier": "incrustations/ENVELOPPE.png",
+    "source": "ensemble 2 — incrustations (nouveau)",
+    "px": "356×356",
+    "usage": "Enveloppe Soleau"
+  },
+  {
+    "ensemble": "incrustations",
+    "titre": "LOGICIEL",
+    "visuel": "Chevrons code",
+    "couleur": "marine",
+    "fichier": "incrustations/LOGICIEL.png",
+    "source": "ensemble 2 — incrustations (nouveau)",
+    "px": "356×356",
+    "usage": "Logiciel, code"
+  },
+  {
+    "ensemble": "incrustations",
+    "titre": "DROIT D’AUTEUR",
+    "visuel": "Copyright",
+    "couleur": "marine",
+    "fichier": "incrustations/DROIT D’AUTEUR.png",
+    "source": "ensemble 2 — incrustations (nouveau)",
+    "px": "356×356",
+    "usage": "Droit d’auteur"
+  },
+  {
+    "ensemble": "incrustations",
+    "titre": "ACTIF",
+    "visuel": "Diamant",
+    "couleur": "marine",
+    "fichier": "incrustations/ACTIF.png",
+    "source": "ensemble 2 — incrustations (nouveau)",
+    "px": "356×356",
+    "usage": "Actif immatériel"
+  },
+  {
+    "ensemble": "incrustations",
+    "titre": "STRATÉGIE",
+    "visuel": "Courbe",
+    "couleur": "marine",
+    "fichier": "incrustations/STRATÉGIE.png",
+    "source": "ensemble 2 — incrustations (nouveau)",
+    "px": "356×356",
+    "usage": "Stratégie, veille"
+  },
+  {
+    "ensemble": "incrustations",
+    "titre": "ÉQUILIBRE",
+    "visuel": "Balance",
+    "couleur": "marine",
+    "fichier": "incrustations/ÉQUILIBRE.png",
+    "source": "ensemble 2 — incrustations (nouveau)",
+    "px": "356×356",
+    "usage": "Contrat, exclusivité"
+  },
+  {
+    "ensemble": "incrustations",
+    "titre": "CONTACT",
+    "visuel": "Carnet",
+    "couleur": "marine",
+    "fichier": "incrustations/CONTACT.png",
+    "source": "ensemble 2 — incrustations (nouveau)",
+    "px": "356×356",
+    "usage": "Contacts, annuaire"
+  },
+  {
+    "ensemble": "incrustations",
+    "titre": "SANS",
+    "visuel": "Cercle vide",
+    "couleur": "marine",
+    "fichier": "incrustations/SANS.png",
+    "source": "ensemble 2 — incrustations (nouveau)",
+    "px": "356×356",
+    "usage": "Absence d’option"
+  },
+  {
+    "ensemble": "incrustations",
+    "titre": "PARTENAIRE",
+    "visuel": "Poignée de main",
+    "couleur": "vert",
+    "fichier": "incrustations/PARTENAIRE.png",
+    "source": "ensemble 2 — incrustations (nouveau)",
+    "px": "356×356",
+    "usage": "Partenariat"
+  },
+  {
+    "ensemble": "incrustations",
+    "titre": "MARQUE",
+    "visuel": "Marque déposée",
+    "couleur": "vert",
+    "fichier": "incrustations/MARQUE.png",
+    "source": "ensemble 2 — incrustations (nouveau)",
+    "px": "356×356",
+    "usage": "Signes distinctifs"
+  },
+  {
+    "ensemble": "fascicules",
+    "titre": "CARTOGRAPHIE",
+    "visuel": "Nuage de points / catalogue de ressources",
+    "fichier": "fascicules/CARTOGRAPHIE.png",
+    "source": "schéma 8 sensibilisation",
+    "px": "220×250",
+    "usage": "objet isolé du fascicule"
+  },
+  {
+    "ensemble": "fascicules",
+    "titre": "LABEL",
+    "visuel": "Cercle Label / certification",
+    "fichier": "fascicules/LABEL.png",
+    "source": "schéma 8 sensibilisation",
+    "px": "256×256",
+    "usage": "objet isolé du fascicule"
+  },
+  {
+    "ensemble": "fascicules",
+    "titre": "AMBASSADEURS",
+    "visuel": "Groupe d’ambassadeur·rices",
+    "fichier": "fascicules/AMBASSADEURS.png",
+    "source": "schéma 8 sensibilisation",
+    "px": "204×250",
+    "usage": "objet isolé du fascicule"
+  },
+  {
+    "ensemble": "fascicules",
+    "titre": "ÉTAPE 1 — RENCONTRES",
+    "visuel": "Pastille orange 1",
+    "fichier": "fascicules/ETAPE-1-RENCONTRES.png",
+    "source": "schéma 8 sensibilisation",
+    "px": "256×256",
+    "usage": "objet isolé du fascicule"
+  },
+  {
+    "ensemble": "fascicules",
+    "titre": "ÉTAPE 2 — THÉORIE",
+    "visuel": "Pastille marine 2",
+    "fichier": "fascicules/ETAPE-2-THEORIE.png",
+    "source": "schéma 8 sensibilisation",
+    "px": "256×256",
+    "usage": "objet isolé du fascicule"
+  },
+  {
+    "ensemble": "fascicules",
+    "titre": "ÉTAPE 3 — PRATIQUES",
+    "visuel": "Pastille verte 3",
+    "fichier": "fascicules/ETAPE-3-PRATIQUES.png",
+    "source": "schéma 8 sensibilisation",
+    "px": "256×256",
+    "usage": "objet isolé du fascicule"
+  },
+  {
+    "ensemble": "fascicules",
+    "titre": "DÉTECTION",
+    "visuel": "Pastille 1 prune — détection",
+    "fichier": "fascicules/DETECTION.png",
+    "source": "schéma 9 parcours entrepreneuriat",
+    "px": "234×274",
+    "usage": "objet isolé du fascicule"
+  },
+  {
+    "ensemble": "fascicules",
+    "titre": "PREUVE DE CONCEPT",
+    "visuel": "Pastille 2 vert — POC",
+    "fichier": "fascicules/PREUVE-DE-CONCEPT.png",
+    "source": "schéma 9 parcours entrepreneuriat",
+    "px": "244×274",
+    "usage": "objet isolé du fascicule"
+  },
+  {
+    "ensemble": "fascicules",
+    "titre": "MATURATION",
+    "visuel": "Pastille 3 orange — maturation",
+    "fichier": "fascicules/MATURATION.png",
+    "source": "schéma 9 parcours entrepreneuriat",
+    "px": "244×274",
+    "usage": "objet isolé du fascicule"
+  },
+  {
+    "ensemble": "fascicules",
+    "titre": "TRANSFERT (parcours)",
+    "visuel": "Pastille 4 marine — transfert",
+    "fichier": "fascicules/TRANSFERT-PARCOURS.png",
+    "source": "schéma 9 parcours entrepreneuriat",
+    "px": "244×274",
+    "usage": "objet isolé du fascicule"
+  },
+  {
+    "ensemble": "fascicules",
+    "titre": "FRISE SENSIBILISATION",
+    "visuel": "Parcours cartographie → label → ambassadeurs",
+    "fichier": "fascicules/FRISE-SENSIBILISATION.png",
+    "source": "schéma 8",
+    "px": "1365×332",
+    "usage": "frise programme PUI"
+  },
+  {
+    "ensemble": "schemas",
+    "titre": "Branches de la PI",
+    "fichier": "schemas/f1-pi-branches.png",
+    "source": "fascicules extraits pour incrustations",
+    "px": "1457×376",
+    "usage": "incrustation type schéma"
+  },
+  {
+    "ensemble": "schemas",
+    "titre": "Écosystème innovation",
+    "fichier": "schemas/f1-ecosysteme.png",
+    "source": "fascicules extraits pour incrustations",
+    "px": "1072×897",
+    "usage": "incrustation type schéma"
+  },
+  {
+    "ensemble": "schemas",
+    "titre": "Cycle 3 phases",
+    "fichier": "schemas/f2-cycle-3.png",
+    "source": "fascicules extraits pour incrustations",
+    "px": "1305×196",
+    "usage": "incrustation type schéma"
+  },
+  {
+    "ensemble": "schemas",
+    "titre": "Phase recherche",
+    "fichier": "schemas/f2-cycle-amont.png",
+    "source": "fascicules extraits pour incrustations",
+    "px": "1315×278",
+    "usage": "incrustation type schéma"
+  },
+  {
+    "ensemble": "schemas",
+    "titre": "Phase propulsion",
+    "fichier": "schemas/f2-cycle-propulsion.png",
+    "source": "fascicules extraits pour incrustations",
+    "px": "1054×183",
+    "usage": "incrustation type schéma"
+  },
+  {
+    "ensemble": "schemas",
+    "titre": "Phase utilité collective",
+    "fichier": "schemas/f2-cycle-adoption.png",
+    "source": "fascicules extraits pour incrustations",
+    "px": "1302×183",
+    "usage": "incrustation type schéma"
+  },
+  {
+    "ensemble": "schemas",
+    "titre": "Cycle complet",
+    "fichier": "schemas/f2-cycle-complet.png",
+    "source": "fascicules extraits pour incrustations",
+    "px": "1382×1082",
+    "usage": "incrustation type schéma"
+  },
+  {
+    "ensemble": "schemas",
+    "titre": "Tech-push / market-pull",
+    "fichier": "schemas/f2-push-pull.png",
+    "source": "fascicules extraits pour incrustations",
+    "px": "461×1019",
+    "usage": "incrustation type schéma"
+  },
+  {
+    "ensemble": "schemas",
+    "titre": "Chaîne de valorisation",
+    "fichier": "schemas/f2-chaine-valo.png",
+    "source": "fascicules extraits pour incrustations",
+    "px": "1529×1011",
+    "usage": "incrustation type schéma"
+  },
+  {
+    "ensemble": "schemas",
+    "titre": "Financement dilutif / non-dilutif",
+    "fichier": "schemas/f2-finance.png",
+    "source": "fascicules extraits pour incrustations",
+    "px": "1381×741",
+    "usage": "incrustation type schéma"
+  },
+  {
+    "ensemble": "schemas",
+    "titre": "Échelle TRL",
+    "fichier": "schemas/f2-trl.png",
+    "source": "fascicules extraits pour incrustations",
+    "px": "1457×1639",
+    "usage": "incrustation type schéma"
+  },
+  {
+    "ensemble": "schemas",
+    "titre": "f2-valorisation-shs",
+    "fichier": "schemas/f2-valorisation-shs.png",
+    "source": "kit fascicules",
+    "px": "2228×1515",
+    "usage": "référence conception"
+  },
+  {
+    "ensemble": "schemas",
+    "titre": "f2-parcours-sensibilisation-esr",
+    "fichier": "schemas/f2-parcours-sensibilisation-esr.png",
+    "source": "kit fascicules",
+    "px": "2228×2225",
+    "usage": "référence conception"
+  },
+  {
+    "ensemble": "schemas",
+    "titre": "f2-parcours-entrepreneuriat",
+    "fichier": "schemas/f2-parcours-entrepreneuriat.png",
+    "source": "kit fascicules",
+    "px": "1956×2696",
+    "usage": "référence conception"
+  }
+]

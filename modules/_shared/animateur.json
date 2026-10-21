@@ -108,7 +108,7 @@
     "T8": {
       "code": "T8",
       "intro": "Vous avez l’écosystème. Reste le temps de l’argent, et le moment de créer.\nLes témoignages parlent d’aides avant la création, de concours, d’investisseurs. Écoutez surtout l’avertissement : certaines enveloppes sont anté-création. Une fois la société née, on n’y est plus éligible.",
-      "outro": "La chorale vient de tracer une frise. Deux experts la déplient.\nD’abord la chaîne des financements, du laboratoire à l’usage — dilutif, non-dilutif, l’ordre autant que le montant.\nPuis ce que regardent les investisseurs : pas un article, une trajectoire de risques, une équipe, une PI."
+      "outro": "La chorale vient de tracer une frise. Deux experts la déplient.\nD’abord la chaîne des financements (Fatoumata, à venir). Puis Arielle : financer la réduction des risques — dilutif, non-dilutif, l’ordre autant que le montant."
     },
     "E15": {
       "code": "E15",
@@ -117,8 +117,8 @@
     },
     "E16": {
       "code": "E16",
-      "intro": "Vous avez la chaîne des sources. Arielle passe de l’autre côté de la table : l’investisseur choisit où poser son risque.\nDilution, retour attendu, rythme, gouvernance. Il ne paie pas une publication. Il parie sur une équipe, un marché, une PI.\nÉcoutez ce qu’il veut voir diminuer à chaque jalon — le même vocabulaire que Virginia, vu depuis le financement.",
-      "outro": "Un investisseur maximise la valeur de son engagement en minimisant son risque. C’est clair.\nLe module 4 change encore de pièce : l’équipe, la posture, le contrat entre fondateurs. Parce que, vous l’entendrez, on ne lève pas des fonds tout seul, et on ne parle pas la même langue au laboratoire et devant un partenaire."
+      "intro": "Antoine a cadré le collectif. Arielle change de destinataire.\nLe même résultat ne se raconte pas de la même façon à un utilisateur, un décideur, un partenaire ou un investisseur.\nÉcoutez ce qu’il faut rendre parlant : la valeur, pas seulement la preuve.",
+      "outro": "La preuve reste au laboratoire. La valeur se dit à quelqu’un.\nLe module 5 ouvre sur les collaborations : comment accompagner et sécuriser un partenariat. Le métier, ensuite."
     },
     "T9": {
       "code": "T9",
@@ -142,8 +142,8 @@
     },
     "E19": {
       "code": "E19",
-      "intro": "Antoine a cadré le collectif. Arielle change de destinataire.\nLe même résultat ne se raconte pas de la même façon à un utilisateur, un décideur, un partenaire ou un investisseur.\nÉcoutez ce qu’il faut rendre parlant : la valeur, pas seulement la preuve.",
-      "outro": "La preuve reste au laboratoire. La valeur se dit à quelqu’un.\nLe module 5 rentre dans le métier : la posture s’apprend, et la recherche se concilie avec l’engagement."
+      "intro": "Vous avez la chaîne des sources. Arielle passe de l’autre côté de la table : l’investisseur choisit où poser son risque.\nDilution, retour attendu, rythme, gouvernance. Il ne paie pas une publication. Il parie sur une équipe, un marché, une PI.\nÉcoutez ce qu’il veut voir diminuer à chaque jalon — le même vocabulaire que Virginia, vu depuis le financement.",
+      "outro": "Un investisseur maximise la valeur de son engagement en minimisant son risque. C’est clair.\nLe module 4 change encore de pièce : l’équipe, la posture, le contrat entre fondateurs. Parce que, vous l’entendrez, on ne lève pas des fonds tout seul, et on ne parle pas la même langue au laboratoire et devant un partenaire."
     },
     "E20": {
       "code": "E20",
@@ -152,23 +152,23 @@
     },
     "T11": {
       "code": "T11",
-      "intro": "Vous avez l’équipe, le contrat, le langage. Reste une question que les témoignages portent depuis T1 : que devient le métier de chercheur ?\nÉcoutez comment ils concilient le laboratoire et l’engagement dans un projet d’innovation — sans en faire, forcément, une reconversion.",
-      "outro": "Deux experts pour situer ce que vous venez d’entendre.\nPascal : la posture entrepreneuriale s’apprend.\nBernard : concilier recherche et engagement — gouvernance, impartialité, évolution du métier."
+      "intro": "Vous avez l’équipe, le contrat, le langage. Le module 5 ouvre sur les collaborations. Comment travailler avec une entreprise ou un partenaire sans livrer le laboratoire à découvert.\nÉcoutez ce qu’ils ont cadré — et ce qu’ils ont appris trop tard.",
+      "outro": "Trois experts, dans l’ordre du tournage.\nPascal : innover comme apprentissage.\nRémi : une collaboration équilibrée.\nEneli : la sécuriser — confidentialité, contrats, PI, sortie du partenariat."
     },
     "E21": {
       "code": "E21",
       "intro": "Pascal vient de dire que la posture s’apprend. Bernard la situe dans le métier : on n’abandonne pas la recherche, on l’articule.\nDouble casquette, gouvernance, impartialité. Statut et temps se discutent avant la création, pas après.",
-      "outro": "L’engagement se dose. Le rôle se choisit.\nPascal, au grain suivant, reprend le processus : innover, c’est apprendre — incertitude, essais, pivot."
+      "outro": "L’engagement se dose. Le rôle se choisit.\nIl reste la chorale de clôture : passer à l’action. Ce que les chercheuses et chercheurs emportent, concrètement — et ce que vous pouvez faire dès demain."
     },
     "E22": {
       "code": "E22",
-      "intro": "Bernard a situé le métier. Pascal reprend le geste : innover est un processus d’apprentissage, pas une réussite linéaire.\nIncertitude, essais, erreurs, pivot. TRL et MVP disent où l’on en est, et ce qu’il reste à prouver.",
+      "intro": "La chorale vient de parler d’accompagnement et de collaborations. Pascal pose le geste : innover est un processus d’apprentissage, pas une réussite linéaire.\nIncertitude, essais, erreurs, pivot. TRL et MVP disent où l’on en est, et ce qu’il reste à prouver.",
       "outro": "Changer de trajectoire, c’est rester fidèle au problème, pas à la première techno.\nRémi, ensuite, pose la collaboration : objectifs partagés, chacun apporte, chacun reçoit."
     },
     "T12": {
       "code": "T12",
-      "intro": "Dernière chorale avant la clôture : les collaborations. Comment travailler avec une entreprise ou un partenaire sans livrer le laboratoire à découvert.\nÉcoutez ce qu’ils ont cadré — et ce qu’ils ont appris trop tard.",
-      "outro": "Trois experts, dans l’ordre du tournage.\nPascal : innover comme apprentissage.\nRémi : une collaboration équilibrée.\nEneli : la sécuriser — confidentialité, contrats, PI, sortie du partenariat."
+      "intro": "Vous avez cadré les collaborations. Reste une question que les témoignages portent depuis T1 : que devient le métier de chercheur ?\nÉcoutez comment ils concilient le laboratoire et l’engagement dans un projet d’innovation — sans en faire, forcément, une reconversion.",
+      "outro": "Deux experts pour situer ce que vous venez d’entendre.\nPascal : la posture entrepreneuriale s’apprend.\nBernard : concilier recherche et engagement — gouvernance, impartialité, évolution du métier."
     },
     "E23": {
       "code": "E23",
@@ -178,12 +178,12 @@
     "E24": {
       "code": "E24",
       "intro": "Rémi a posé l’équilibre. Eneli sécurise la collaboration avant d’échanger.\nConfidentialité, contrats, connaissances antérieures, résultats nouveaux, PI, publication, et la porte de sortie.\nEntrez-y avec ce que vous avez construit : un problème, une PI, une équipe.",
-      "outro": "Les verrous donnent un cadre. Ils ne portent pas le projet à votre place.\nIl reste la chorale de clôture : passer à l’action. Ce que les chercheuses et chercheurs emportent, concrètement — et ce que vous pouvez faire dès demain."
+      "outro": "Les verrous donnent un cadre. Ils ne portent pas le projet à votre place.\nLe grain suivant rentre dans le métier : que devient le chercheur qui s’engage — sans, forcément, quitter le laboratoire."
     },
     "T13": {
       "code": "T13",
-      "intro": "Vous avez le fil entier : origines, problème, preuve, déclaration, PI, transfert, écosystème, financement, équipe, langage, métier, collaboration.\nCette dernière chorale n’ajoute pas un expert. Elle ramène au geste. Écoutez ce qu’ils emportent.",
-      "outro": "Pas d’expert après ceci. La suite, c’est le vôtre : une déclaration, un premier rendez-vous, un problème enfin posé hors du laboratoire.\nVous savez maintenant que vous n’êtes pas seul, et que l’ordre des gestes compte. À vous."
+      "intro": "Vous avez le fil entier : origines, problème, preuve, déclaration, PI, transfert, écosystème, financement, équipe, langage, collaboration, métier.\nCette dernière chorale n’ajoute pas un expert. Elle ramène au geste. Écoutez ce qu’ils emportent.",
+      "outro": "Pas d’expert après ceci. Après les messages à emporter, l’outro clôture le parcours.\nLa suite, c’est le vôtre : une déclaration, un premier rendez-vous, un problème enfin posé hors du laboratoire. À vous."
     }
   }
 }

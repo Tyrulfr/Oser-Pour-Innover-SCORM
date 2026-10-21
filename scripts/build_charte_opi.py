@@ -15,7 +15,7 @@ from reportlab.pdfgen import canvas
 from reportlab.platypus import Paragraph
 
 ROOT = Path(__file__).resolve().parents[1]
-KIT = ROOT / "authoring" / "kit-com"
+KIT = ROOT / "authoring" / "Kit-com-V2"
 FONTS = KIT / "charte" / "fonts"
 VAR = KIT / "logos" / "variantes"
 OUT = KIT / "charte" / "Charte-graphique-Oser-pour-innover.pdf"
@@ -106,7 +106,7 @@ def img(c, path, x, y, w, h, preserve=True):
         c.drawImage(ir, x, y, w, h, mask="auto")
 
 
-def footer(c, n, total=12, url="Programme Oser pour innover"):
+def footer(c, n, total=14, url="Programme Oser pour innover"):
     c.setFillColor(PRUNE)
     c.setFont("OSB", 8)
     c.drawString(M, 18, url)
@@ -174,7 +174,7 @@ def page1(c):
         "SCORM, kakemono, diaporamas)."
         "<br/><br/>Vous y trouverez :"
         "<br/>• logo, couleurs, typo et règles d’utilisation,"
-        "<br/>• icônes du cycle et schémas,"
+        "<br/>• icônes du cycle, pictos d’incrustation, schémas MOOC,"
         "<br/>• exemples d’usage (vidéo, formation, partenaires)."
         "<br/><br/>Une charte graphique est un outil de travail. "
         "Pour un cas particulier, contactez la Direction de la "
@@ -270,7 +270,7 @@ def page2(c):
     c.setFillColor(PRUNE)
     c.setFont("OSBD", 10)
     c.drawString(M, H - 250, "Quel fichier utiliser ?")
-    wrap(c, "Écran : fichiers PNG en RVB (authoring/kit-com/logos/). Impression : PNG haute définition ou AI/PDF des sources. Ne pas extraire le logo d’une photo ou d’une capture.", "OS", 8, M, H - 266, 250, 11, GRIS)
+    wrap(c, "Écran : fichiers PNG en RVB (authoring/Kit-com-V2/logos/). Impression : PNG haute définition ou AI/PDF des sources. Ne pas extraire le logo d’une photo ou d’une capture.", "OS", 8, M, H - 266, 250, 11, GRIS)
     wrap(c, "Baseline : « Décrypter les fondamentaux et libérer son potentiel » peut accompagner le logo sur les supports programme (kakemono, génériques vidéo). Pas obligatoire sur chaque grain SCORM.", "OS", 8, 300, H - 266, 258, 11, GRIS)
 
     c.setFillColor(PRUNE)
@@ -394,7 +394,8 @@ def page3(c):
         "• Orange : amont du cycle, alertes pédagogiques, intro/outro « avant la vidéo ».<br/>"
         "• Bleu : propulsion, contrats, PI, schémas de transfert.<br/>"
         "• Vert : impact, adoption, validation, incrustations « concept acquis ».<br/>"
-        "• Ne pas créer de dégradés hors prune vers bleu discrets. Pas de néon, pas d’or, pas de noir pur en aplat de marque."
+        "• Interface SCORM / site : les mêmes HEX, via --bordeaux, --orange, --blue, --teal.<br/>"
+        "• Ne pas créer de dégradés hors prune vers bleu discrets. Pas de néon, pas d’or. Exception vidéo : bandeau intervenant = texte blanc sur fond noir."
     )
     para(c, usage, M, H - 656, 520, 120, pstyle("u", "OS", 8, GRIS, 11.2))
     footer(c, 3)
@@ -544,7 +545,7 @@ def page5(c):
 
 def page6(c):
     header_title(c, "Éléments de la charte", "Icônes du cycle de l’innovation")
-    wrap(c, "Ensemble 1 — pictogrammes du schéma 5. À utiliser en priorité dès que le concept existe (IDÉE, EXPÉRIMENTATION, TRANSFERT…). Ne pas les retracer ni les remplacer par des pictos génériques. L’ensemble 2 (page 13) complète uniquement les concepts absents du cycle.", "OS", 8, M, H - 88, 520, 11, GRIS)
+    wrap(c, "Ensemble 1 — pictogrammes du schéma 5. À utiliser en priorité dès que le concept existe (IDÉE, EXPÉRIMENTATION, TRANSFERT…). Ne pas les retracer ni les remplacer par des pictos génériques. L’ensemble 2 (page 13) complète uniquement les concepts absents du cycle. Objets isolés des schémas 8 et 9 : page 14.", "OS", 8, M, H - 88, 520, 11, GRIS)
 
     icons = [
         ("IDÉE.png", "IDÉE", ORANGE),
@@ -583,42 +584,52 @@ def page6(c):
         "• Fond transparent autour du disque. Pas d’ombre portée.<br/>"
         "• Taille minimale 24 px à l’écran, 8 mm à l’impression.<br/>"
         "• Toujours légender avec le nom du schéma 5 (IDÉE, CRÉATIVITÉ…).<br/>"
-        "• Couleurs de phase : orange recherche · marine propulsion · vert utilité collective.<br/>"
-        "• Fichiers : authoring/kit-com/icones/ — catalogue.json pour l’intégration."
+        "• Priorité au style fascicule (disques illustrés). Ne pas les remplacer par les pictos filaires du PPTX vidéo.<br/>"
+        "• Fichiers : authoring/Kit-com-V2/icones/ — bibliothèque authoring/Kit-com-V2/bibliotheque/cycle/."
     )
     para(c, rules, M, 250, 520, 160, pstyle("ir", "OS", 8, GRIS, 11.2))
     footer(c, 6)
 
 
 def page7(c):
-    header_title(c, "Éléments de la charte", "Schémas")
-    wrap(c, "Les schémas fascicules sont des originaux Illustrator. À l’écran, utiliser les PNG transparents. Ne pas les recréer dans un autre style.", "OS", 8, M, H - 88, 520, 11, GRIS)
+    header_title(c, "Éléments de la charte", "Schémas incrustés dans le MOOC")
+    wrap(c, "Style fascicule uniquement — PNG réellement posés sous les vidéos (modules/_shared/schemas/). Pas les schémas filaires du PPTX. Les planches AI complètes restent dans authoring/Kit-com-V2/schemas/.", "OS", 8, M, H - 88, 520, 11, GRIS)
 
     schemas = [
-        ("f2-cycle-3-phases.png", "3 phases du cycle"),
-        ("f2-cycle-complet.png", "Cycle complet (schéma 5)"),
-        ("f2-chaine-valorisation.png", "Chaîne de valorisation"),
-        ("f1-ecosysteme-innovation.png", "Écosystème FR / EU / INT"),
+        ("f2-cycle-3.png", "3 phases"),
+        ("f2-cycle-amont.png", "Recherche"),
+        ("f2-cycle-propulsion.png", "Propulsion"),
+        ("f2-cycle-adoption.png", "Utilité collective"),
+        ("f2-cycle-complet.png", "Cycle complet"),
+        ("f2-chaine-valo.png", "Chaîne de valorisation"),
+        ("f1-ecosysteme.png", "Écosystème"),
+        ("f1-pi-branches.png", "Branches de la PI"),
+        ("f2-push-pull.png", "Tech-push / market-pull"),
+        ("f2-finance.png", "Financement"),
+        ("f2-trl.png", "Échelle TRL"),
     ]
-    sdir = KIT / "schemas"
-    positions = [(M, H - 340), (W / 2 + 4, H - 340), (M, H - 560), (W / 2 + 4, H - 560)]
-    bw, bh = 250, 168
-    for (fn, label), (x, y) in zip(schemas, positions):
+    sdir = ROOT / "modules" / "_shared" / "schemas"
+    bw, bh = 122, 100
+    gapx, gapy = 9, 24
+    for i, (fn, label) in enumerate(schemas):
+        col, row = i % 4, i // 4
+        x = M + col * (bw + gapx)
+        y = H - 112 - bh - row * (bh + gapy)
         c.setFillColor(GRIS_BG)
         c.roundRect(x, y, bw, bh, 3, fill=1, stroke=0)
-        img(c, sdir / fn, x + 8, y + 18, bw - 16, bh - 28)
+        img(c, sdir / fn, x + 6, y + 16, bw - 12, bh - 22)
         c.setFillColor(PRUNE)
-        c.setFont("OSB", 7.5)
-        c.drawString(x + 8, y + 6, label)
+        c.setFont("OSB", 6.4)
+        c.drawString(x + 6, y + 5, label)
 
     c.setFillColor(PRUNE)
     c.setFont("OSBD", 10)
     c.drawString(M, 210, "Style de schémas")
     st = (
+        "• Style fascicule uniquement : PNG extraits des planches AI, pas les schémas filaires du PPTX vidéo.<br/>"
         "• Fonds blancs ou transparents, jamais de 3D ni d’ombres réalistes.<br/>"
-        "• Flèches simples, coins légèrement arrondis, texte Open Sans.<br/>"
         "• Une couleur de phase par étape. Titres en prune.<br/>"
-        "• Fichiers sources : authoring/kit-com/sources/fasc*.ai"
+        "• Overlay MOOC : modules/_shared/schemas/ — bibliothèque : authoring/Kit-com-V2/bibliotheque/schemas/"
     )
     para(c, st, M, 192, 520, 120, pstyle("s", "OS", 8, GRIS, 11.2))
     footer(c, 7)
@@ -626,37 +637,80 @@ def page7(c):
 
 def page8(c):
     header_title(c, "Exemples d’usage", "Vidéos et motion")
-    wrap(c, "La charte vidéo MOOC (PPTX) est la référence motion. Ne pas inventer d’autres styles de jingles ni d’autres bandeaux.", "OS", 8, M, H - 88, 520, 11, GRIS)
+    wrap(
+        c,
+        "Référence = ce qui est déjà monté dans les capsules. Pictos et schémas : style fascicule, pas les pictos filaires du PPTX.",
+        "OS",
+        8,
+        M,
+        H - 86,
+        520,
+        11,
+        GRIS,
+    )
+    media = KIT / "charte" / "media"
 
-    items = [
-        ("Logo standard animé et sonorisé", "Générique des capsules « expert » cadrage institutionnel."),
-        ("Logo expert / témoignage animé", "Générique des voix de la chorale et des regards terrain."),
-        ("Jingles A / B", "Identifiants sonores. Ne pas les recouper ni les remplacer."),
-        ("Bandeau intervenant", "Nom + fonction, Open Sans, prune sur blanc ou défonce."),
-        ("Transition", "Unique transition autorisée entre séquences."),
-        ("Textes animés", "Quatre gabarits. Titres courts, écriture inclusive."),
-        ("Illustrations animées", "Reprendre l’ensemble 1 du cycle ; ensemble 2 seulement si le concept n’y figure pas."),
-        ("Frise de fin", "Partenaires + France 2030 selon le BAT kakemono."),
-    ]
-    y = H - 118
-    for i, (t, d) in enumerate(items):
-        col = [PRUNE, ORANGE, BLEU, VERT][i % 4]
-        c.setFillColor(col)
-        c.circle(M + 8, y - 4, 5, fill=1, stroke=0)
-        c.setFillColor(PRUNE)
-        c.setFont("OSBD", 9)
-        c.drawString(M + 22, y - 2, t)
-        c.setFillColor(GRIS)
-        c.setFont("OS", 8)
-        c.drawString(M + 22, y - 15, d)
-        y -= 42
+    c.setFillColor(PRUNE)
+    c.setFont("OSBD", 10)
+    c.drawString(M, H - 112, "Ouverture (capsules actuelles)")
+    c.setFillColor(GRIS_BG)
+    c.roundRect(M, H - 248, 523, 128, 4, fill=1, stroke=0)
+    img(c, media / "ouverture-video.png", M + 8, H - 240, 507, 112)
+    wrap(
+        c,
+        "Fond blanc. Logo 2D (visuel neuronal + wordmark prune) à gauche. Titre de la capsule en vert, 2–3 lignes. Nom de l’intervenant en vert plus petit. La pastille lecture est l’interface eMedia, pas un élément de charte. Ne pas revenir au générique 3D du PPTX.",
+        "OS",
+        7.4,
+        M,
+        H - 258,
+        523,
+        10,
+        GRIS,
+    )
+
+    c.setFillColor(PRUNE)
+    c.setFont("OSBD", 10)
+    c.drawString(M, H - 312, "Transition")
+    c.setFillColor(GRIS_BG)
+    c.roundRect(M, H - 454, 250, 128, 4, fill=1, stroke=0)
+    img(c, media / "transition-video.png", M + 6, H - 448, 238, 116)
+
+    c.setFillColor(PRUNE)
+    c.setFont("OSBD", 10)
+    c.drawString(M + 268, H - 312, "Bandeau intervenant")
+    c.setFillColor(black)
+    c.roundRect(M + 268, H - 454, 255, 128, 4, fill=1, stroke=0)
+    img(c, media / "bandeau-intervenant.png", M + 274, H - 448, 243, 116)
+
+    wrap(c, "Bandes diagonales orange / marine / prune / vert. Sans texte, sans bouton play.", "OS", 7.2, M, H - 466, 250, 9.6, GRIS)
+    wrap(c, "Texte blanc sur fond noir. Nom en capitales, fonction en dessous. Pas de bandeau prune sur blanc.", "OS", 7.2, M + 268, H - 466, 255, 9.6, GRIS)
+
+    c.setFillColor(PRUNE)
+    c.setFont("OSBD", 10)
+    c.drawString(M, 338, "Dans l’image")
+    rules = (
+        "• Pictos : disques du schéma 5 (ensemble 1), ensemble 2 seulement si le concept n’existe pas au cycle.<br/>"
+        "• Schémas : PNG fascicules (page 7), jamais les versions filaires du PPTX.<br/>"
+        "• Jingles A / B et textes animés du dossier motion restent valides."
+    )
+    para(c, rules, M, 322, 520, 90, pstyle("vr", "OS", 8, GRIS, 11.2))
 
     c.setFillColor(GRIS_BG)
-    c.roundRect(M, 48, 523, 110, 4, fill=1, stroke=0)
+    c.roundRect(M, 48, 523, 78, 4, fill=1, stroke=0)
     c.setFillColor(PRUNE)
     c.setFont("OSBD", 9)
-    c.drawString(M + 14, 140, "Fichiers motion")
-    wrap(c, "authoring/kit-com/charte/motion/  —  logo-standard-anime-sonorise.mp4  ·  logo-expert-temoignage-anime-sonorise.mp4  ·  jingle-a.wav / jingle-b.wav  ·  bandeau-intervenant.mp4  ·  transition.mp4  ·  texte-anime-1 à 4.mp4  ·  exemples-illustrations-animees.mp4", "OS", 7.5, M + 14, 124, 495, 10, GRIS)
+    c.drawString(M + 14, 110, "Fichiers")
+    wrap(
+        c,
+        "Stills : charte/media/ouverture-video.png · transition-video.png · bandeau-intervenant.png.  Motion : charte/motion/bandeau-intervenant.mp4 · transition.mp4 · jingle-a/b.wav · texte-anime-1 à 4.mp4.",
+        "OS",
+        7.3,
+        M + 14,
+        96,
+        495,
+        9.8,
+        GRIS,
+    )
     footer(c, 8)
 
 
@@ -696,21 +750,11 @@ def page9(c):
 
     c.setFillColor(PRUNE)
     c.setFont("OSBD", 10)
-    c.drawString(200, 160, "Éléments graphiques (cartes, puces)")
-    cards = KIT / "charte" / "media" / "_cards-blanc.png"
-    if not cards.exists():
-        src = Image.open(KIT / "charte" / "media" / "image13.png").convert("RGBA")
-        px = []
-        for r, g, b, a in src.getdata():
-            if r + g + b < 40:
-                px.append((0, 0, 0, 0))
-            else:
-                px.append((r, g, b, a))
-        src.putdata(px)
-        bg = Image.new("RGBA", src.size, (255, 255, 255, 255))
-        bg.alpha_composite(src)
-        bg.save(cards)
-    img(c, cards, 200, 48, 330, 100)
+    c.drawString(200, 160, "Pictos à réutiliser (style fascicule)")
+    icdir = KIT / "icones"
+    for i, fn in enumerate(["IDÉE.png", "EXPÉRIMENTATION.png", "TRANSFERT.png", "ADOPTION et IMPACT.png"]):
+        img(c, icdir / fn, 200 + i * 80, 52, 72, 72)
+    wrap(c, "Disques du schéma 5. Pas les cartes / puces du PPTX vidéo.", "OS", 7, 200, 48, 330, 9, GRIS)
     footer(c, 9)
 
 
@@ -790,10 +834,14 @@ def page11(c):
     c.setFont("OSBD", 10)
     c.drawString(M, H - 330, "Grains SCORM")
     sc = (
-        "Les modules HTML reprennent prune, orange, bleu, vert, Open Sans / Montserrat. "
+        "Les modules HTML utilisent la palette officielle : "
+        "prune #63003C (--bordeaux), orange #F0821A (--orange), "
+        "bleu #1D3258 (--blue), vert #00AE68 (--teal). "
+        "Open Sans pour le corps, Montserrat pour les titres. "
         "Incrustations et intro/outro de l’animateur suivent les mêmes couleurs "
         "(vert concept, orange intro/outro). Ne pas introduire de 5e couleur d’interface."
-        "<br/><br/>Les schémas incrustés sous la vidéo sont les PNG fascicules, pas des captures."
+        "<br/><br/>Pictos et schémas : style fascicule (pages 6, 7 et 13). "
+        "Les pictos filaires et cartes du PPTX vidéo ne s’utilisent pas dans les grains."
     )
     para(c, sc, M, H - 348, 520, 140, pstyle("sc", "OS", 8, GRIS, 11.3))
 
@@ -888,7 +936,7 @@ def page12(c):
         "Poser le logo sur un fond illisible",
         "Utiliser un cartouche blanc + prune",
         "Descendre sous 18 mm / 100 px",
-        "Remplacer les icônes du cycle par l’ensemble 2 ou des pictos génériques",
+        "Remplacer les icônes fascicules par des pictos filaires ou des cartes PPTX",
     ]
     y = 260
     for t in ints:
@@ -954,16 +1002,64 @@ def page13(c):
         "• Orange #F0821A — recherche et expérimentation (question, alerte, dialogue, temps, cible, pivot).<br/>"
         "• Marine #1D3258 — propulsion (secret, protection, financement, logiciel, contrat / actif).<br/>"
         "• Vert #00AE68 — utilité collective (partenaire, marque).<br/>"
-        "• Fichiers : authoring/kit-com/icones/incrustations/ — runtime modules/_shared/icones/."
+        "• Fichiers : authoring/Kit-com-V2/icones/incrustations/ — runtime modules/_shared/icones/incrustations/ — bibliothèque authoring/Kit-com-V2/bibliotheque/incrustations/."
     )
     para(c, rules, M, 150, 520, 120, pstyle("i2", "OS", 8, GRIS, 11.2))
     footer(c, 13)
 
 
+def page14(c):
+    header_title(c, "Éléments de la charte", "Objets isolés des fascicules")
+    wrap(c, "Pictogrammes extraits des schémas 8 (sensibilisation ESR) et 9 (parcours entrepreneuriat). PNG sans fond, à réutiliser tels quels. Ne pas les redessiner.", "OS", 8, M, H - 88, 520, 11, GRIS)
+
+    fdir = KIT / "bibliotheque" / "fascicules"
+    small = [
+        ("CARTOGRAPHIE.png", "CARTOGRAPHIE"),
+        ("ETAPE-1-RENCONTRES.png", "ÉTAPE 1"),
+        ("ETAPE-2-THEORIE.png", "ÉTAPE 2"),
+        ("ETAPE-3-PRATIQUES.png", "ÉTAPE 3"),
+        ("LABEL.png", "LABEL"),
+        ("AMBASSADEURS.png", "AMBASSADEURS"),
+        ("DETECTION.png", "DÉTECTION"),
+        ("PREUVE-DE-CONCEPT.png", "PREUVE DE CONCEPT"),
+        ("MATURATION.png", "MATURATION"),
+        ("TRANSFERT-PARCOURS.png", "TRANSFERT"),
+    ]
+    box = 78
+    gap = 22
+    start_y = H - 210
+    for i, (fn, label) in enumerate(small):
+        col, row = i % 5, i // 5
+        x = M + col * (box + gap)
+        y = start_y - row * (box + 32)
+        img(c, fdir / fn, x, y, box, box)
+        c.setFillColor(PRUNE)
+        c.setFont("OSBD", 6)
+        c.drawCentredString(x + box / 2, y - 11, label)
+
+    c.setFillColor(GRIS_BG)
+    c.roundRect(M, 188, 523, 118, 4, fill=1, stroke=0)
+    img(c, fdir / "FRISE-SENSIBILISATION.png", M + 10, 208, 503, 86)
+    c.setFillColor(PRUNE)
+    c.setFont("OSB", 7.5)
+    c.drawString(M + 10, 196, "FRISE SENSIBILISATION — schéma 8")
+
+    c.setFillColor(PRUNE)
+    c.setFont("OSBD", 10)
+    c.drawString(M, 168, "Règles")
+    rules = (
+        "• Schéma 8 : cartographie, pastilles 1-2-3, label, ambassadeurs, frise programme.<br/>"
+        "• Schéma 9 : détection, preuve de concept, maturation, transfert (parcours).<br/>"
+        "• Fichiers : authoring/Kit-com-V2/bibliotheque/fascicules/ — catalogue.json."
+    )
+    para(c, rules, M, 150, 520, 110, pstyle("f14", "OS", 8, GRIS, 11.2))
+    footer(c, 14)
+
+
 def main():
     OUT.parent.mkdir(parents=True, exist_ok=True)
     c = canvas.Canvas(str(OUT), pagesize=A4)
-    for fn in (page1, page2, page3, page4, page5, page6, page7, page8, page9, page10, page11, page12, page13):
+    for fn in (page1, page2, page3, page4, page5, page6, page7, page8, page9, page10, page11, page12, page13, page14):
         fn(c)
         c.showPage()
     c.save()

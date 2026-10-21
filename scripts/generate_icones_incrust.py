@@ -13,7 +13,7 @@ import fitz
 from PIL import Image, ImageDraw
 
 ROOT = Path(__file__).resolve().parents[1]
-KIT = ROOT / "authoring" / "kit-com" / "icones"
+KIT = ROOT / "authoring" / "Kit-com-V2" / "icones"
 SHARED = ROOT / "modules" / "_shared" / "icones"
 OUT_NEW = KIT / "incrustations"
 

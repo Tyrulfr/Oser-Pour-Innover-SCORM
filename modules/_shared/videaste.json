@@ -285,6 +285,150 @@
           "note": "Monica : les deux phrases, juste avant les crédits."
         }
       ]
+    },
+    "E13": {
+      "code": "E13",
+      "nb": 2,
+      "items": [
+        {
+          "id": "VID-E13-01",
+          "type": "habillage",
+          "debut": "00:00:05",
+          "fin": "00:00:12",
+          "passage": "Vignette / générique d’Arielle Santé",
+          "action": "Dans cette vignette, Ariel a les yeux fermés. Regarder pour toutes les vidéos les vignettes qui sont utilisées.",
+          "note": "Monica : contrôle des vignettes, pas une demande de retournage."
+        },
+        {
+          "id": "VID-E13-02",
+          "type": "montage",
+          "debut": "00:02:09",
+          "fin": "00:03:00",
+          "passage": "Présentation IncubAlliance (loi 1999, 60 projets, 450 sociétés, 92 %)",
+          "action": "La partie qui concerne la présentation IncubAlliance, plutôt à la fin de la vidéo — on pourrait l’enlever pour raccourcir. C’est un revoir.",
+          "note": "Monica : proposition de montage, pas une demande de retournage."
+        }
+      ]
+    },
+    "E14": {
+      "code": "E14",
+      "nb": 1,
+      "items": [
+        {
+          "id": "VID-E14-01",
+          "type": "montage",
+          "debut": "00:00:05",
+          "fin": "00:00:10",
+          "passage": "Placement de la capsule Yoann / Design Spot dans le grain T7",
+          "action": "La vidéo de Johan devrait se situer tout au début, avant la vidéo expert de Stéphanie. Plus pertinente ici : il cite des dispositifs qui existent même sans le besoin d’accompagnement à la prématuration, comme ceux de la SATT. Ordre : T7, ensuite 13bis / Yoann Monteneau, ensuite E12, ensuite E13.",
+          "note": "Monica : proposition d’ordre dans le grain, pas une demande de retournage."
+        }
+      ]
+    },
+    "E16": {
+      "code": "E16",
+      "nb": 1,
+      "items": [
+        {
+          "id": "VID-E16-01",
+          "type": "lecture",
+          "debut": "00:04:46",
+          "fin": "00:04:55",
+          "passage": "« c’est extrêmement enrichissant »",
+          "action": "Elle a un peu trébuché à la fin. Revoir les secondes de la fin.",
+          "note": "Monica : « Je ne sais pas si c’est elle a trébuché ou bien c’est un problème d’édition. » Pas une demande de retournage."
+        }
+      ]
+    },
+    "E17": {
+      "code": "E17",
+      "nb": 3,
+      "items": [
+        {
+          "id": "VID-E17-01",
+          "type": "habillage",
+          "debut": "00:00:05",
+          "fin": "00:00:10",
+          "passage": "Générique / jingle d’ouverture",
+          "action": "Le son Oser pour innover n’est pas là.",
+          "note": "Monica : jingle manquant, pas une demande de retournage."
+        },
+        {
+          "id": "VID-E17-02",
+          "type": "habillage",
+          "debut": "00:00:05",
+          "fin": "00:00:10",
+          "passage": "Bandeau bas : Pascal Corbel",
+          "action": "Le label en bas écrit seulement Paris-Saclay. Il faut mettre Université Paris-Saclay.",
+          "note": "Monica : correction d’habillage."
+        },
+        {
+          "id": "VID-E17-03",
+          "type": "son",
+          "debut": "00:03:19",
+          "fin": "00:03:28",
+          "passage": "« Si vous préférez rester dans le domaine scientifique… »",
+          "action": "Problème de son dans le micro de Pascal : il a frotté, on entend le frottement. Chercher un autre enregistrement sans cette gêne (repère Monica 3:22–3:23).",
+          "note": "Monica : autre prise si elle existe, pas une demande de retournage."
+        }
+      ]
+    },
+    "E18": {
+      "code": "E18",
+      "nb": 3,
+      "items": [
+        {
+          "id": "VID-E18-01",
+          "type": "habillage",
+          "debut": "00:00:05",
+          "fin": "00:00:10",
+          "passage": "Bandeau / générique : Antoine Latreille",
+          "action": "Corriger le nom : Latreille, T-R-E-I-L-E.",
+          "note": "Monica : orthographe du nom, pas une demande de retournage."
+        },
+        {
+          "id": "VID-E18-02",
+          "type": "habillage",
+          "debut": "00:00:05",
+          "fin": "00:00:10",
+          "passage": "Bandeau bas",
+          "action": "Il manque Université Paris-Saclay.",
+          "note": "Monica : correction d’habillage."
+        },
+        {
+          "id": "VID-E18-03",
+          "type": "habillage",
+          "debut": "00:00:10",
+          "fin": "00:00:20",
+          "passage": "Titre à l’écran",
+          "action": "Mettre dans son titre professeur et chercheur.",
+          "note": "Monica : professeur de droit et chercheur (Institut droit et régulation des technologies)."
+        }
+      ]
+    },
+    "E19": {
+      "code": "E19",
+      "nb": 2,
+      "items": [
+        {
+          "id": "VID-E19-01",
+          "type": "habillage",
+          "debut": "00:00:05",
+          "fin": "00:00:10",
+          "passage": "Générique / jingle d’ouverture",
+          "action": "Le son Oser pour innover n’est pas là.",
+          "note": "Monica : jingle manquant, pas une demande de retournage."
+        },
+        {
+          "id": "VID-E19-02",
+          "type": "habillage",
+          "debut": "00:00:05",
+          "fin": "00:00:21",
+          "passage": "Bandeau titre / poste d’Arielle Santé",
+          "action": "Pour toutes les vidéos, faire attention que le titre et le poste de la personne ne soient pas trop bas : il y aura des traductions lorsqu’ils seront sous-titrés en anglais.",
+          "note": "Monica : consigne d’habillage valable pour toutes les capsules."
+        }
+      ]
     }
   }
 }

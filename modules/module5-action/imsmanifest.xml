@@ -29,8 +29,8 @@
       <file href="eval-bank.js"/>
       <file href="eval.js"/>
       <file href="eval.css"/>
-      <file href="pages/grain_t11_evolution_metier.html"/>
       <file href="pages/grain_t12_dispositifs_collaborations.html"/>
+      <file href="pages/grain_t11_evolution_metier.html"/>
     </resource>
   </resources>
 </manifest>

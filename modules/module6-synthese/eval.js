@@ -235,12 +235,12 @@
         host.appendChild(el("section", { className: "eval-block", "data-kind": "memory" }, [
             el("div", { className: "eval-head" }, [
                 el("div", {}, [
-                    el("p", { className: "eval-kicker", text: "Fin de grain" }),
+                    el("p", { className: "eval-kicker", text: "Synthèse de la formation" }),
                     el("h2", { text: "Memory cards" })
                 ])
             ]),
             el("div", { className: "eval-body" }, [
-                el("p", { className: "memory-hint", text: "Cliquez une carte pour la retourner. Ce sont les messages à emporter, pas une évaluation." }),
+                el("p", { className: "memory-hint", text: "Une carte par module. Cliquez pour retourner : ce sont les points principaux à emporter, pas une évaluation." }),
                 grid
             ])
         ]));

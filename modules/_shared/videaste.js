@@ -4,7 +4,7 @@
  * Désactivée par défaut, un bouton par vidéo concernée.
  */
 (function () {
-    var DATA_URL = new URL("videaste.json?v=7", document.currentScript.src).href;
+    var DATA_URL = new URL("videaste.json?v=13", document.currentScript.src).href;
     var cards = [];
     var bound = false;
 

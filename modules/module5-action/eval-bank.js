@@ -41,19 +41,19 @@ window.EVAL_BANK = (function () {
                     feedbackKo: "Le brevet ou les publications peuvent exister sans qu’il y ait encore innovation."
                 },
                 {
-                    objectif: "Reconnaître le socle commun des cinq récits",
+                    objectif: "Nommer les deux origines d’une innovation",
                     bloom: "Comprendre",
-                    mecanisme: "Élaboration",
+                    mecanisme: "Discrimination + feedback",
                     dispositif: "QCM",
                     fonction: "Formative",
-                    question: "Selon Bernard, le point commun des cinq témoignages est…",
+                    question: "Tech-push et market-pull désignent…",
                     options: [
-                        { text: "Un potentiel scientifique ou technologique développé longtemps, puis rapproché d’un besoin.", correct: true },
-                        { text: "La décision de quitter définitivement la recherche.", correct: false },
-                        { text: "Un financement obtenu avant même le premier résultat.", correct: false }
+                        { text: "Deux origines possibles : partir d’une technologie, ou partir d’un besoin de marché.", correct: true },
+                        { text: "Deux façons de déposer un brevet.", correct: false },
+                        { text: "Deux types de financements dilutifs.", correct: false }
                     ],
-                    feedbackOk: "Le socle, ce sont des années de recherche ensuite mises en regard d’un besoin.",
-                    feedbackKo: "Personne ne dit qu’il faut quitter la recherche, ni que l’argent précède le résultat."
+                    feedbackOk: "Bernard pose les deux entrées. Un même projet peut combiner les deux.",
+                    feedbackKo: "Ce n’est ni un outil de PI, ni un type d’investissement : ce sont les origines de l’innovation."
                 },
                 {
                     objectif: "Savoir quoi faire d’une intuition de domaine",
@@ -72,8 +72,8 @@ window.EVAL_BANK = (function () {
                 }
             ],
             memory: [
-                { front: "Une innovation naît-elle d’un seul Eurêka ?", back: "Non. Plusieurs chemins : pas de côté, besoin, rencontre, années de recherche." },
-                { front: "Techno remarquable = innovation ?", back: "Non. Elle le devient en rencontrant un besoin, mieux que les solutions existantes." },
+                { front: "Invention = innovation ?", back: "Non. Elle le devient en rencontrant un besoin, mieux que les solutions existantes." },
+                { front: "Tech-push / market-pull ?", back: "Deux origines : partir d’une techno, ou partir d’un besoin." },
                 { front: "Que faire d’une intuition de domaine ?", back: "La confronter au terrain : qui, quelles difficultés, quelles situations." }
             ]
         },
@@ -98,7 +98,7 @@ window.EVAL_BANK = (function () {
                 when: "after-t",
                 type: "steps",
                 title: "De la techno au problème",
-                lead: "E2 n’est pas encore disponible. Ce schéma porte le raccord : ce n’est pas la techno qui est le problème.",
+                lead: "E2 (passer d’une techno à un problème) est à venir. E3 pose déjà l’ordre : le bon problème avant la bonne solution.",
                 steps: [
                     { title: "1. Techno", text: "Ce que le laboratoire sait faire." },
                     { title: "2. Qui / où", text: "Utilisateur, client, situation d’usage." },
@@ -109,19 +109,34 @@ window.EVAL_BANK = (function () {
             mr: [mr("mr-grain10.html", "2.4 — Cadrage du problème", "Capsule du Module Ressources, incluse ici en consultation (sans quiz). Pour passer d’une techno à un problème, on cadre d’abord (Double diamant).")],
             quiz: [
                 {
-                    objectif: "Valider un besoin sur le terrain",
-                    bloom: "Appliquer",
-                    mecanisme: "Application + feedback",
+                    objectif: "Prioriser le problème avant la solution",
+                    bloom: "Comprendre",
+                    mecanisme: "Discrimination + feedback",
                     dispositif: "QCM",
                     fonction: "Formative",
-                    question: "Pour vérifier qu’un besoin existe, la chorale insiste surtout sur…",
+                    question: "Pour poser le bon problème, l’expert insiste d’abord sur…",
                     options: [
-                        { text: "Rencontrer les acteurs et futurs clients, pas seulement lire des rapports.", correct: true },
-                        { text: "Multiplier les dépôts de brevets avant toute discussion.", correct: false },
-                        { text: "Attendre la fin de la thèse pour sortir du laboratoire.", correct: false }
+                        { text: "Le bon problème avant la bonne solution.", correct: true },
+                        { text: "Le prototype avant d’avoir formulé le besoin.", correct: false },
+                        { text: "Le dépôt de brevet avant toute rencontre terrain.", correct: false }
                     ],
-                    feedbackOk: "Sylvia se pose l’usage dès le début ; Yann va chercher les industriels.",
-                    feedbackKo: "Le besoin ne se valide pas uniquement sur papier."
+                    feedbackOk: "L’incrustation le dit : le bon problème avant la bonne solution. Problem–Solution Fit.",
+                    feedbackKo: "Ce n’est pas « faire d’abord l’objet » : c’est formuler et valider le problème."
+                },
+                {
+                    objectif: "Retenir la séquence de cadrage",
+                    bloom: "Appliquer",
+                    mecanisme: "Récupération + feedback",
+                    dispositif: "QCM",
+                    fonction: "Formative",
+                    question: "L’ordre enseigné pour le problème est…",
+                    options: [
+                        { text: "Identifier → Formuler → Valider.", correct: true },
+                        { text: "Protéger → Publier → Financer.", correct: false },
+                        { text: "Prototype → Logo → Levée de fonds.", correct: false }
+                    ],
+                    feedbackOk: "Identifier, formuler, valider : ensuite seulement on résout.",
+                    feedbackKo: "Ce n’est pas la frise PI ni la start-up : c’est la séquence du problème."
                 },
                 {
                     objectif: "Cadrer le problème avant de le résoudre",
@@ -140,9 +155,9 @@ window.EVAL_BANK = (function () {
                 }
             ],
             memory: [
-                { front: "Une étude bibliographique suffit-elle ?", back: "Non. Il faut aller voir de vrais industriels / utilisateurs." },
-                { front: "Par quoi commencer : un problème ou une solution ?", back: "Cadrer le problème d’abord (Double diamant), puis le résoudre." },
-                { front: "La techno est-elle déjà le problème ?", back: "Non. Le problème se formule côté usage, situation et preuve." }
+                { front: "Quoi d’abord : problème ou solution ?", back: "Le bon problème avant la bonne solution." },
+                { front: "Quel ordre pour le problème ?", back: "Identifier → Formuler → Valider." },
+                { front: "Une étude bibliographique suffit-elle ?", back: "Non. Il faut échanger avec les acteurs du terrain." }
             ]
         },
 
@@ -166,7 +181,7 @@ window.EVAL_BANK = (function () {
                 when: "after-t",
                 type: "steps",
                 title: "Niveaux de preuve",
-                lead: "E4 n’est pas encore disponible. L’escalier pose le vocabulaire ; le détail TRL est dans le module Ressources.",
+                lead: "E4 (POC, prototype, MVP, TRL) est à venir. E5 enseigne déjà à dérisquer par étapes. Le détail TRL est dans le module Ressources.",
                 steps: [
                     { title: "Résultat", text: "Ce que le labo a montré." },
                     { title: "POC", text: "Preuve que ça peut marcher." },
@@ -192,19 +207,19 @@ window.EVAL_BANK = (function () {
                     feedbackKo: "Le pivot dont elle parle change la cible, ce n’est pas un échec ni un habillage."
                 },
                 {
-                    objectif: "Savoir où se trouve le vrai problème de marché",
+                    objectif: "Relier terrain et dérisquage",
                     bloom: "Comprendre",
                     mecanisme: "Élaboration",
                     dispositif: "QCM",
                     fonction: "Formative",
-                    question: "Selon Virginia, le « vrai problème de marché »…",
+                    question: "Aller sur le terrain pour comprendre les besoins, selon l’expert, c’est surtout…",
                     options: [
-                        { text: "Ne se trouve jamais au banc d’essai.", correct: true },
-                        { text: "Se lit uniquement dans les publications du laboratoire.", correct: false },
-                        { text: "Est toujours identique d’une filière à l’autre.", correct: false }
+                        { text: "Un moyen de dérisquer le projet.", correct: true },
+                        { text: "Une perte de temps tant que la techno n’est pas parfaite.", correct: false },
+                        { text: "Réservé à la phase après création d’entreprise.", correct: false }
                     ],
-                    feedbackOk: "La solution la plus élégante ne vaut rien si personne, sur le terrain, n’en a besoin sous cette forme.",
-                    feedbackKo: "Loïc et Virginia insistent : les exigences changent selon les acteurs, pas au banc d’essai."
+                    feedbackOk: "Dérisquer par étapes : la solution technique doit rejoindre les besoins du marché.",
+                    feedbackKo: "Le terrain n’attend pas la techno parfaite ni la société créée."
                 },
                 {
                     objectif: "Situer un niveau de maturité (TRL)",
@@ -223,9 +238,9 @@ window.EVAL_BANK = (function () {
                 }
             ],
             memory: [
-                { front: "Un pivot, c’est un échec ?", back: "Non. C’est une décision : on ajuste la cible et parfois la techno." },
-                { front: "Où trouve-t-on le vrai problème de marché ?", back: "Jamais au seul banc d’essai : sur le terrain, auprès des acteurs." },
-                { front: "À quoi sert le TRL ici ?", back: "À nommer son niveau de preuve et la prochaine incertitude à lever." }
+                { front: "Un pivot, c’est un échec ?", back: "Non. C’est une décision : pivoter rapidement n’est pas échouer." },
+                { front: "À quoi sert le terrain ?", back: "À dérisquer : la solution doit rejoindre un besoin de marché." },
+                { front: "Quelle frise de dérisquage ?", back: "Invention → Prématuration → Maturation." }
             ]
         },
 
@@ -412,40 +427,40 @@ window.EVAL_BANK = (function () {
                     feedbackKo: "La licence n’est pas un transfert automatique de propriété."
                 },
                 {
-                    objectif: "Choisir une voie selon le projet",
+                    objectif: "Nommer les voies de valorisation",
                     bloom: "Appliquer",
                     mecanisme: "Application + feedback",
                     dispositif: "QCM",
                     fonction: "Formative",
-                    question: "Une innovation qui s’insère dans un procédé industriel déjà existant se prête plutôt…",
+                    question: "Parmi les voies de valorisation enseignées, on trouve…",
                     options: [
-                        { text: "À la licence.", correct: true },
-                        { text: "Toujours à la création d’entreprise, sans alternative.", correct: false },
-                        { text: "À l’absence de tout contrat.", correct: false }
+                        { text: "Licence, création d’entreprise, co-développement et partenariat.", correct: true },
+                        { text: "Uniquement la création d’entreprise.", correct: false },
+                        { text: "Uniquement le dépôt de brevet, sans contrat.", correct: false }
                     ],
-                    feedbackOk: "Virginia : insertion dans un existant → licence ; rupture sans marché constitué → plus souvent création.",
-                    feedbackKo: "Le troisième critère reste ce que vous avez envie de porter — mais la typologie oriente."
+                    feedbackOk: "Quatre voies : licence, start-up, co-développement, partenariat. Le choix est structurant.",
+                    feedbackKo: "Le brevet protège ; il ne dit pas encore par quelle voie on valorise."
                 },
                 {
-                    objectif: "Comprendre ce qu’est une licence",
+                    objectif: "Distinguer licence et cession",
                     bloom: "Analyser",
                     mecanisme: "Élaboration",
                     dispositif: "QCM",
                     fonction: "Formative",
-                    question: "Pour Soizic, une licence…",
+                    question: "Licence et cession, ce n’est pas la même chose :",
                     options: [
-                        { text: "Concède l’exploitation (contrat de louage) sans transférer la propriété du titre.", correct: true },
-                        { text: "Est toujours mondiale, tous domaines, sans clause.", correct: false },
-                        { text: "Remplace le contrat de confidentialité.", correct: false }
+                        { text: "Licence = louage du droit d’exploiter ; cession = vente du titre.", correct: true },
+                        { text: "Licence = vente du brevet ; cession = simple prêt.", correct: false },
+                        { text: "Les deux transfèrent toujours toute la propriété, partout.", correct: false }
                     ],
-                    feedbackOk: "Exclusive ou non, sur un territoire et un domaine. La propriété du titre reste au concédant.",
-                    feedbackKo: "Avant de discuter, Soizic rappelle d’abord le contrat de confidentialité — ce n’est pas la licence."
+                    feedbackOk: "La licence concède l’exploitation sans transférer la propriété. Exclusive ou non.",
+                    feedbackKo: "Avant d’en parler : contrat de confidentialité. Puis on choisit le mécanisme."
                 }
             ],
             memory: [
-                { front: "Licence ou start-up : quand se le demander ?", back: "Dès le début : ça conditionne recherche et maturation." },
-                { front: "Qui reste propriétaire en licence ?", back: "L’établissement. L’industriel exploite contre redevance." },
-                { front: "Une licence transfère-t-elle le brevet ?", back: "Non. C’est un louage du droit d’exploiter, souvent borné." }
+                { front: "Quelles voies de valorisation ?", back: "Licence, création d’entreprise, co-développement, partenariat." },
+                { front: "Licence ou cession ?", back: "Licence = louage. Cession = vente du titre." },
+                { front: "Premier contrat avant de parler ?", back: "Un accord de confidentialité (NDA)." }
             ]
         },
 
@@ -465,11 +480,57 @@ window.EVAL_BANK = (function () {
                 feedbackOk: "Muriel liste l’écosystème ; Jean-Jacques : les investisseurs parient sur une équipe humaine.",
                 feedbackKo: "La chorale dit l’inverse : besoin d’aide, et les investisseurs regardent l’équipe, pas seulement la techno."
             },
-            quiz: [],
+            quiz: [
+                {
+                    objectif: "Découpler maturation et incubation",
+                    bloom: "Analyser",
+                    mecanisme: "Discrimination + feedback",
+                    dispositif: "QCM",
+                    fonction: "Formative",
+                    question: "Maturation technologique et incubation business, d’après l’incubateur…",
+                    options: [
+                        { text: "Ce sont deux aspects à découpler : une excellente techno ne fait pas une start-up.", correct: true },
+                        { text: "C’est la même étape, menée uniquement au laboratoire.", correct: false },
+                        { text: "L’incubation remplace toujours la maturation SATT.", correct: false }
+                    ],
+                    feedbackOk: "La SATT mature une technologie. L’incubateur prépare le côté entrepreneurial.",
+                    feedbackKo: "Techno robuste ≠ entreprise. Les deux peuvent avancer, mais ce n’est pas le même métier."
+                },
+                {
+                    objectif: "Situer le rôle de l’incubateur",
+                    bloom: "Comprendre",
+                    mecanisme: "Élaboration",
+                    dispositif: "QCM",
+                    fonction: "Formative",
+                    question: "L’incubateur aide surtout à…",
+                    options: [
+                        { text: "Préparer les rencontres, tester les hypothèses et intéresser les financeurs.", correct: true },
+                        { text: "Déposer le brevet à la place du chercheur.", correct: false },
+                        { text: "Remplacer toute étude de marché par un concours.", correct: false }
+                    ],
+                    feedbackOk: "Confrontation au terrain, feuille de route, réseau : pas un substitut à la PI.",
+                    feedbackKo: "L’incubateur n’est pas l’office des brevets."
+                },
+                {
+                    objectif: "Relier fablab et usage",
+                    bloom: "Appliquer",
+                    mecanisme: "Application + feedback",
+                    dispositif: "QCM",
+                    fonction: "Formative",
+                    question: "Design Spot / fablabs servent surtout à…",
+                    options: [
+                        { text: "Passer de l’idée à une preuve concrète et travailler tôt le besoin et l’usage.", correct: true },
+                        { text: "Rédiger le pacte d’associés.", correct: false },
+                        { text: "Lever des fonds dilutifs auprès d’industriels.", correct: false }
+                    ],
+                    feedbackOk: "Compétences, équipements, accompagnements : prototyper pour un usage, pas pour le style.",
+                    feedbackKo: "Ce n’est ni le contrat entre fondateurs, ni la levée de fonds."
+                }
+            ],
             memory: [
-                { front: "Peut-on avancer seul ?", back: "Rarement. Plus le projet est ambitieux, plus il faut des acteurs." },
-                { front: "Sur quoi parient les investisseurs, selon Jean-Jacques ?", back: "Sur une équipe humaine complémentaire, pas sur la seule techno." },
-                { front: "À quoi servent Design Spot / fablabs (E14) ?", back: "Passer de l’idée à une preuve concrète et travailler l’usage tôt." }
+                { front: "Maturation = incubation ?", back: "Non. Techno d’un côté, entreprise de l’autre." },
+                { front: "Une excellente techno = une start-up ?", back: "Non. Il manque le besoin réel, les associés, le terrain." },
+                { front: "À quoi sert un fablab ?", back: "Prototyper tôt pour un besoin et un usage." }
             ]
         },
 
@@ -493,7 +554,7 @@ window.EVAL_BANK = (function () {
                 when: "after-t",
                 type: "steps",
                 title: "Frise entendue dans la chorale",
-                lead: "Les mots viennent de T8, pas d’un expert encore manquant.",
+                lead: "E15 (chaîne des financements) est à venir. E19 enseigne déjà dilutif / non-dilutif et le dérisquage par l’argent.",
                 steps: [
                     { title: "Anté-création", text: "Valorisation univ. / CNRS, POC'in Lab, prématuration." },
                     { title: "Marches", text: "i-Lab, recrutement, preuves plus solides." },
@@ -519,25 +580,40 @@ window.EVAL_BANK = (function () {
                     feedbackKo: "Le brevet n’exige pas une société ; trop tôt peut coûter des aides."
                 },
                 {
-                    objectif: "Relier financement et création de valeur",
-                    bloom: "Comprendre",
-                    mecanisme: "Élaboration (capsule MR)",
+                    objectif: "Distinguer dilutif et non-dilutif",
+                    bloom: "Analyser",
+                    mecanisme: "Discrimination + feedback",
                     dispositif: "QCM",
                     fonction: "Formative",
-                    question: "D’après la chaîne de valeur du module Ressources, innover ce n’est pas seulement inventer : c’est…",
+                    question: "Un financement non dilutif, c’est…",
                     options: [
-                        { text: "Faire circuler valeur et financements, du laboratoire jusqu’à l’usage.", correct: true },
-                        { text: "S’arrêter au dépôt de brevet.", correct: false },
-                        { text: "Attendre que le marché vienne tout seul au laboratoire.", correct: false }
+                        { text: "Les fondateurs détiennent toujours autant de parts.", correct: true },
+                        { text: "Les investisseurs prennent des parts au capital.", correct: false },
+                        { text: "La seule façon de financer l’industrialisation.", correct: false }
                     ],
-                    feedbackOk: "La capsule 1.5 superpose flux de valeur et flux de financement.",
-                    feedbackKo: "Si c’est flou, rouvrez « La chaîne de valeur » puis revenez."
+                    feedbackOk: "Subvention, avance remboursable, prêts d’honneur : pas de prise de parts. Le dilutif, si : les fondateurs sont dilués.",
+                    feedbackKo: "Non-dilutif ≠ levée de fonds au capital."
+                },
+                {
+                    objectif: "Relier argent et dérisquage",
+                    bloom: "Comprendre",
+                    mecanisme: "Élaboration",
+                    dispositif: "QCM",
+                    fonction: "Formative",
+                    question: "Financer progressivement, selon l’expert, sert à…",
+                    options: [
+                        { text: "Réduire les risques : minimiser son risque, maximiser la valeur de son engagement.", correct: true },
+                        { text: "Remplacer toute confrontation au terrain.", correct: false },
+                        { text: "Publier plus vite, avant toute protection.", correct: false }
+                    ],
+                    feedbackOk: "On finance des jalons de dérisquage, pas une publication.",
+                    feedbackKo: "L’argent ne dispense ni du terrain ni de la PI."
                 }
             ],
             memory: [
                 { front: "Pourquoi ne pas créer trop tôt ?", back: "Des aides anté-création deviennent inaccessibles." },
-                { front: "POC'in Lab, dans la chorale, sert à quoi ?", back: "Une année pour une preuve de concept, encore lié au labo." },
-                { front: "Innover, ce n’est que inventer ?", back: "Non. Il faut aussi faire circuler valeur et financements." }
+                { front: "Non-dilutif, ça veut dire ?", back: "Les fondateurs gardent autant de parts (subvention, prêt…)." },
+                { front: "Dilutif, ça veut dire ?", back: "Prise de parts : les fondateurs sont dilués." }
             ]
         },
 
@@ -557,11 +633,57 @@ window.EVAL_BANK = (function () {
                 feedbackOk: "Ils sont allés à la SATT. Un profil business sans vision du secteur agricole n’a pas suffi.",
                 feedbackKo: "La chorale valorise l’expertise, mais ancrée dans le métier."
             },
-            quiz: [],
+            quiz: [
+                {
+                    objectif: "Voir ce que regardent les investisseurs",
+                    bloom: "Comprendre",
+                    mecanisme: "Récupération + feedback",
+                    dispositif: "QCM",
+                    fonction: "Formative",
+                    question: "Les investisseurs regardent attentivement…",
+                    options: [
+                        { text: "L’équipe du projet — elle survit aux différents pivots.", correct: true },
+                        { text: "Uniquement le nombre de publications.", correct: false },
+                        { text: "Uniquement le nom de l’établissement.", correct: false }
+                    ],
+                    feedbackOk: "Compétences collectives, alignement des finalités : chacun a un rôle.",
+                    feedbackKo: "Ce n’est pas le CV académique seul."
+                },
+                {
+                    objectif: "Choisir une posture dans l’équipe",
+                    bloom: "Appliquer",
+                    mecanisme: "Application + feedback",
+                    dispositif: "QCM",
+                    fonction: "Formative",
+                    question: "S’engager dans le projet, ce n’est pas forcément être CEO : on peut aussi…",
+                    options: [
+                        { text: "Siéger au comité scientifique, selon la posture choisie.", correct: true },
+                        { text: "Rester hors de tout rôle tant qu’on est chercheur.", correct: false },
+                        { text: "Cumul obligatoire de tous les rôles (CEO, juridique, finance).", correct: false }
+                    ],
+                    feedbackOk: "CEO ou comité scientifique : choisir la posture. Les compétences s’augmentent.",
+                    feedbackKo: "Il y a plusieurs places dans le collectif."
+                },
+                {
+                    objectif: "Séparer PI et parts sociales",
+                    bloom: "Analyser",
+                    mecanisme: "Discrimination + feedback",
+                    dispositif: "QCM",
+                    fonction: "Formative",
+                    question: "Droits de PI et parts sociales…",
+                    options: [
+                        { text: "Ce sont deux distributions distinctes, à définir et quantifier dans le contrat.", correct: true },
+                        { text: "C’est la même chose : qui invente possède automatiquement la majorité.", correct: false },
+                        { text: "Le contrat est inutile si l’équipe s’entend bien au début.", correct: false }
+                    ],
+                    feedbackOk: "Le contrat fait la loi des parties : gouvernance, pouvoir, conditions financières.",
+                    feedbackKo: "Inventer ≠ détenir les parts. Il faut écrire les apports."
+                }
+            ],
             memory: [
-                { front: "Faut-il tout savoir faire ?", back: "Non. Aller chercher des experts (marché, PI, finance, vente)." },
-                { front: "Un profil business suffit-il ?", back: "Pas s’il ne comprend pas les enjeux du secteur." },
-                { front: "Qui compose l’entourage utile ?", back: "Noyau fondateur, conseils, comité scientifique, réseau." }
+                { front: "Que regardent les investisseurs ?", back: "L’équipe. Elle survit aux pivots." },
+                { front: "Doit-on être CEO ?", back: "Non. Comité scientifique, autre rôle : chacun a une place." },
+                { front: "PI = parts sociales ?", back: "Non. Deux distributions distinctes, à écrire." }
             ]
         },
 
@@ -584,40 +706,55 @@ window.EVAL_BANK = (function () {
             mr: [mr("mr-grain4.html", "1.4 — Le nuage de vocabulaire", "Capsule du Module Ressources, incluse ici en consultation (sans quiz). Invention ≠ innovation : adapter le lexique à qui vous écoute.")],
             quiz: [
                 {
-                    objectif: "Choisir les mots qui donnent envie de recontacter",
+                    objectif: "Relier changement de contexte et vocabulaire",
+                    bloom: "Comprendre",
+                    mecanisme: "Discrimination + feedback",
+                    dispositif: "QCM",
+                    fonction: "Formative",
+                    question: "Un changement de contexte, selon l’experte, amène surtout…",
+                    options: [
+                        { text: "Un changement de vocabulaire — et parfois de posture.", correct: true },
+                        { text: "L’obligation de cesser toute publication.", correct: false },
+                        { text: "La disparition de toute PI.", correct: false }
+                    ],
+                    feedbackOk: "On navigue chercheur ⇄ entrepreneurial. Le lexique change (business model, pitch, B2B…).",
+                    feedbackKo: "Adapter les mots n’efface ni la science ni la PI."
+                },
+                {
+                    objectif: "Distinguer les trois sens de « valorisation »",
+                    bloom: "Analyser",
+                    mecanisme: "Élaboration",
+                    dispositif: "QCM",
+                    fonction: "Formative",
+                    question: "« Valorisation » peut vouloir dire, dans l’ordre enseigné…",
+                    options: [
+                        { text: "Publication → propriété intellectuelle → valeur monétaire.", correct: true },
+                        { text: "Uniquement une levée de fonds.", correct: false },
+                        { text: "Uniquement une note dans une revue.", correct: false }
+                    ],
+                    feedbackOk: "Trois sens, trois destinataires. D’où l’écoute de l’interlocuteur.",
+                    feedbackKo: "Le mot n’a pas qu’un usage académique, ni qu’un usage financier."
+                },
+                {
+                    objectif: "Adapter le discours à qui écoute",
                     bloom: "Appliquer",
                     mecanisme: "Application + feedback",
                     dispositif: "QCM",
                     fonction: "Formative",
-                    question: "Pour un décideur industriel, Yann remplace « intelligence artificielle / jumeau numérique » par…",
+                    question: "Le même résultat se raconte différemment selon que l’on parle à…",
                     options: [
-                        { text: "Retour sur investissement et bénéfice concret.", correct: true },
-                        { text: "Une liste plus longue d’algorithmes.", correct: false },
-                        { text: "Un silence complet sur ce que fait la solution.", correct: false }
+                        { text: "Financeurs, partenaires, industriels, institutions, décideurs ou clients.", correct: true },
+                        { text: "Uniquement à d’autres chercheurs, toujours avec le même lexique.", correct: false },
+                        { text: "Personne : le discours unique suffit.", correct: false }
                     ],
-                    feedbackOk: "La personne se focalise sur ce que ça lui apporte, pas sur la solution technique.",
-                    feedbackKo: "Il ne s’agit pas d’effacer le projet, mais de parler valeur."
-                },
-                {
-                    objectif: "Comprendre comment s’apprend ce langage",
-                    bloom: "Comprendre",
-                    mecanisme: "Élaboration (T + MR)",
-                    dispositif: "QCM",
-                    fonction: "Formative",
-                    question: "Adapter son vocabulaire, d’après Muriel et le module Ressources…",
-                    options: [
-                        { text: "Ça s’apprend en discutant et en se formant ; et invention n’est pas encore innovation.", correct: true },
-                        { text: "Ça se décide seul, une fois pour toutes, devant une feuille.", correct: false },
-                        { text: "C’est inutile : le bon mot scientifique suffit toujours.", correct: false }
-                    ],
-                    feedbackOk: "Muriel : ça s’inculque en discutant. La capsule 1.4 rappelle qu’invention ≠ innovation.",
-                    feedbackKo: "Ni solitaire, ni optionnel : le lexique se travaille avec les autres."
+                    feedbackOk: "Écouter l’interlocuteur fait gagner du temps et de l’énergie.",
+                    feedbackKo: "Un seul jargon scientifique ne passe pas tous les contextes."
                 }
             ],
             memory: [
-                { front: "Que changer dans son discours ?", back: "Bénéfices et gains pour l’autre, pas seulement la techno." },
-                { front: "Comment s’apprend ce langage ?", back: "En discutant, en se formant (incubateur, SATT, HEC…)." },
-                { front: "Invention = innovation ?", back: "Non. L’innovation implique valeur et usage, pas seulement du nouveau." }
+                { front: "Changement de contexte ?", back: "Changement de vocabulaire — et de posture." },
+                { front: "Trois sens de « valorisation » ?", back: "Publication → PI → valeur monétaire." },
+                { front: "À qui adapter le discours ?", back: "Financeurs, partenaires, industriels, institutions, décideurs, clients." }
             ]
         },
 
@@ -633,7 +770,7 @@ window.EVAL_BANK = (function () {
                 mecanisme: "Récupération + feedback",
                 dispositif: "QCM",
                 fonction: "Formative",
-                question: "Quel conseil traverse la chorale de T11 ?",
+                question: "Quel conseil traverse la chorale de T12 ?",
                 options: [
                     { text: "Y aller : l’expérience rend visible l’utilité de la recherche, pour soi et pour les autres.", correct: true },
                     { text: "Il faut quitter le laboratoire pour que le projet compte.", correct: false },
@@ -690,9 +827,9 @@ window.EVAL_BANK = (function () {
                 }
             ],
             memory: [
-                { front: "Faut-il naître entrepreneur ?", back: "Non. Les compétences s’apprennent, par tâtonnements." },
-                { front: "Doit-on quitter la recherche ?", back: "Non. On peut concilier : comité scientifique, double casquette." },
-                { front: "Que rend visible l’innovation ?", back: "L’utilité de la recherche — Muriel parle d’intégrateur social." }
+                { front: "Faut-il naître entrepreneur ?", back: "Non. La posture s’apprend (feedback, mentorat)." },
+                { front: "Doit-on quitter la recherche ?", back: "Non. Enrichir le métier : double casquette, comité scientifique." },
+                { front: "Quoi concilier ?", back: "Liberté académique et protection de la PI ; deux temporalités." }
             ]
         },
 
@@ -779,57 +916,74 @@ window.EVAL_BANK = (function () {
         },
 
         grain_t13_conclusion: {
+            media: {
+                when: "after-e",
+                type: "list",
+                title: "Synthèse du parcours",
+                lead: "Le quiz et les cartes ci-dessous reprennent les points principaux des six modules — pas seulement la chorale.",
+                items: [
+                    "M1 — Invention ≠ innovation : un besoin réel, le bon problème d’abord.",
+                    "M2 — Protéger avant de communiquer ; choisir une voie de valorisation.",
+                    "M3 — On n’avance pas seul ; ne pas créer trop tôt.",
+                    "M4 — L’équipe et le langage comptent autant que la techno.",
+                    "M5 — Collaborer de façon équilibrée ; enrichir le métier, pas le quitter.",
+                    "M6 — Oser un premier pas."
+                ]
+            },
             quiz: [
                 {
-                    objectif: "Partir d’un problème, pas d’une idée",
-                    bloom: "Comprendre",
-                    mecanisme: "Récupération + feedback",
+                    objectif: "Relier résultat, besoin et problème (M1)",
+                    bloom: "Analyser",
+                    mecanisme: "Élaboration + feedback",
                     dispositif: "QCM",
                     fonction: "Formative",
-                    question: "Pour entreprendre, Yann dit qu’on n’a pas besoin d’une idée : on a besoin…",
+                    question: "Tout au long du parcours, un résultat de recherche devient une innovation surtout quand…",
                     options: [
-                        { text: "D’un problème, d’une problématique terrain.", correct: true },
-                        { text: "D’une idée révolutionnaire dès le premier jour.", correct: false },
-                        { text: "D’avoir déjà levé des fonds.", correct: false }
+                        { text: "Il rencontre un besoin réel, mieux que l’existant — après avoir formulé le bon problème.", correct: true },
+                        { text: "Il a été publié dans une revue de rang A.", correct: false },
+                        { text: "Il a été breveté, même sans usage ni terrain.", correct: false }
                     ],
-                    feedbackOk: "L’idée vient ensuite, une fois qu’on s’intéresse à la problématique.",
-                    feedbackKo: "Yann : vous pouvez vous intéresser à l’entrepreneuriat sans idée révolutionnaire."
+                    feedbackOk: "Invention ≠ innovation. Tech-push ou market-pull : le bon problème avant la bonne solution, confronté au terrain.",
+                    feedbackKo: "Ni la publication ni le brevet ne suffisent : il faut un besoin, mieux servi que les solutions existantes."
                 },
                 {
-                    objectif: "Oser avant d’être sûr",
-                    bloom: "Comprendre",
-                    mecanisme: "Élaboration",
+                    objectif: "Protéger, choisir une voie, ne pas créer trop tôt (M2–M3)",
+                    bloom: "Analyser",
+                    mecanisme: "Discrimination + feedback",
                     dispositif: "QCM",
                     fonction: "Formative",
-                    question: "Jean-Jacques : si vous attendez d’être sûr que ça va marcher…",
+                    question: "Pour valoriser un résultat, la formation retient surtout…",
                     options: [
-                        { text: "Vous ne sauterez jamais.", correct: true },
-                        { text: "Vous maximisez vos chances de succès.", correct: false },
-                        { text: "Les structures d’accompagnement refuseront de vous voir.", correct: false }
+                        { text: "Protéger avant de communiquer, choisir une voie (licence, création, partenariat) et ne pas créer trop tôt.", correct: true },
+                        { text: "Publier d’abord pour créer une antériorité, puis éventuellement protéger.", correct: false },
+                        { text: "Créer une société dès la première intuition, pour ouvrir toutes les aides.", correct: false }
                     ],
-                    feedbackOk: "« Il ne faut pas hésiter, il faut y aller. » La certitude n’arrive pas avant le saut.",
-                    feedbackKo: "Le message de clôture est d’oser un premier pas, pas d’attendre la preuve totale."
+                    feedbackOk: "Déclaration d’invention, puis une voie. Créer trop tôt ferme des aides anté-création. On n’avance pas seul.",
+                    feedbackKo: "Publier trop tôt tue la nouveauté. Créer trop tôt ferme des financements. Le brevet ne dit pas encore la voie."
                 },
                 {
-                    objectif: "Choisir un premier pas réversible",
+                    objectif: "Équipe, langage, collaboration, métier, action (M4–M6)",
                     bloom: "Appliquer",
                     mecanisme: "Transfert + feedback",
                     dispositif: "QCM",
                     fonction: "Formative",
-                    question: "Quel premier pas est aligné avec ce que dit la chorale ?",
+                    question: "Pour passer à l’action, le fil des derniers modules insiste sur…",
                     options: [
-                        { text: "Aller discuter avec des entrepreneurs et l’écosystème.", correct: true },
-                        { text: "Rédiger seul un business plan parfait avant toute conversation.", correct: false },
-                        { text: "Attendre d’avoir quitté son poste de chercheur.", correct: false }
+                        { text: "S’appuyer sur une équipe et l’écosystème, adapter son langage, collaborer de façon équilibrée — et oser un premier pas, sans quitter forcément la recherche.", correct: true },
+                        { text: "Tout faire seul, avec le même jargon scientifique, jusqu’à être absolument sûr.", correct: false },
+                        { text: "Quitter le laboratoire et tout raconter sans accord de confidentialité.", correct: false }
                     ],
-                    feedbackOk: "Loïc : aller discuter. Jean-Jacques : vous ne serez pas tout seul ; ceux qui sont passés avant aident.",
-                    feedbackKo: "Le premier pas est social et réversible, pas un plan isolé ni une démission."
+                    feedbackOk: "PI ≠ parts. Chacun apporte, chacun gagne — et c’est écrit. On n’est pas « né entrepreneur ». Le premier pas est réversible.",
+                    feedbackKo: "Attendre d’être sûr, rester seul ou tout divulguer : ce n’est pas le fil du parcours."
                 }
             ],
             memory: [
-                { front: "Par quoi commencer ?", back: "Un problème terrain. L’idée vient ensuite." },
-                { front: "Attendre d’être sûr ?", back: "Si vous attendez, vous ne sauterez jamais." },
-                { front: "Quel premier pas ?", back: "Discuter avec des entrepreneurs. Vous ne serez pas seul." }
+                { front: "M1 · Invention = innovation ?", back: "Non. Un besoin réel, mieux servi que l’existant. Bon problème d’abord." },
+                { front: "M2 · Avant de communiquer ?", back: "Protéger (déclaration d’invention). Puis une voie : licence, création, partenariat." },
+                { front: "M3 · Avancer seul ?", back: "Non. Maturation ≠ incubation. Ne pas créer trop tôt : des aides se ferment." },
+                { front: "M4 · Quoi au-delà de la techno ?", back: "Une équipe (PI ≠ parts). Un langage adapté à qui écoute." },
+                { front: "M5 · Collaborer / métier ?", back: "Chacun apporte, chacun gagne — et c’est écrit. Enrichir le métier, pas le quitter." },
+                { front: "M6 · Premier pas ?", back: "Oser avant d’être sûr. Discuter, se faire accompagner. Vous n’êtes pas seul." }
             ]
         }
     };

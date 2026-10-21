@@ -4,7 +4,7 @@
  * Désactivée par défaut, un bouton par vidéo.
  */
 (function (global) {
-    var DATA_URL = new URL("incrustations.json?v=30", document.currentScript.src).href;
+    var DATA_URL = new URL("incrustations.json?v=38", document.currentScript.src).href;
     var SCRIPT_SRC = document.currentScript.src;
     var cards = [];
     var bound = false;
@@ -316,12 +316,18 @@
         }
         if (vue === "boucle") {
             var loop = splitParts((item.schema || item.ecran).replace(/\s*⇄\s*/g, " → "));
+            var icos = item.icones || [];
+            function loopStep(i, fallback) {
+                var ico = icos[i] ? '<span class="incrust-step-ico">' + picto(icos[i]) + "</span>" : "";
+                return '<span class="incrust-step">' + ico + "<span>" + escapeHtml(loop[i] || fallback) + "</span></span>";
+            }
             return '<div class="incrust-motion is-boucle">' +
                 '<div class="incrust-loop">' +
-                '<span class="incrust-step">' + escapeHtml(loop[0] || "Solutions commerciales") + "</span>" +
+                loopStep(0, "Solutions commerciales") +
                 '<span class="incrust-loop-arrows" aria-hidden="true">⇄</span>' +
-                '<span class="incrust-step">' + escapeHtml(loop[1] || "Solutions techniques") + "</span></div>" +
-                '<div class="incrust-caption">' + escapeHtml(item.caption || "Interactions permanentes") + "</div></div>";
+                loopStep(1, "Solutions techniques") + "</div>" +
+                (item.caption ? '<div class="incrust-caption">' + escapeHtml(item.caption) + "</div>" : "") +
+                "</div>";
         }
         if (vue === "tableaux") {
             var blocs = item.blocs || [];
