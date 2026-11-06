@@ -1,5 +1,5 @@
 {
-  "date": "2026-10-14",
+  "date": "2026-11-06",
   "videos": {
     "E5": {
       "code": "E5",
@@ -427,6 +427,162 @@
           "passage": "Bandeau titre / poste d’Arielle Santé",
           "action": "Pour toutes les vidéos, faire attention que le titre et le poste de la personne ne soient pas trop bas : il y aura des traductions lorsqu’ils seront sous-titrés en anglais.",
           "note": "Monica : consigne d’habillage valable pour toutes les capsules."
+        }
+      ]
+    },
+    "E20": {
+      "code": "E20",
+      "nb": 1,
+      "items": [
+        {
+          "id": "VID-E20-01",
+          "type": "habillage",
+          "debut": "00:00:05",
+          "fin": "00:00:10",
+          "passage": "Bandeau bas : Pascal Corbel",
+          "action": "Écrire Université Paris-Saclay en toutes lettres, pas seulement Paris-Saclay.",
+          "note": "Monica : « Ce n’est pas écrit Université Paris-Saclay. Il faut bien que ce soit écrit université. » Même consigne que sur E17."
+        }
+      ]
+    },
+    "E21": {
+      "code": "E21",
+      "nb": 1,
+      "items": [
+        {
+          "id": "VID-E21-01",
+          "type": "lecture",
+          "debut": "00:03:40",
+          "fin": "00:03:50",
+          "passage": "« C’est ajouter une nouvelle dimension à son métier… le désir… de faire le premier pas »",
+          "action": "Bernard a trébuché un peu à la fin. Chercher une autre prise où il ne trébuche pas.",
+          "note": "Monica : autre prise si elle existe, pas une demande de retournage."
+        }
+      ]
+    },
+    "E22": {
+      "code": "E22",
+      "nb": 3,
+      "items": [
+        {
+          "id": "VID-E22-01",
+          "type": "habillage",
+          "debut": "00:00:05",
+          "fin": "00:00:10",
+          "passage": "Bandeau bas : Pascal Corbel",
+          "action": "Vérifier le bandeau : Université Paris-Saclay en toutes lettres.",
+          "note": "Monica : même consigne d’habillage que sur E17 et E20."
+        },
+        {
+          "id": "VID-E22-02",
+          "type": "cadrage",
+          "debut": "00:00:10",
+          "fin": "00:00:20",
+          "passage": "Après la présentation, ouverture « Innover, c’est s’aventurer dans l’inconnu »",
+          "action": "Après la présentation, commencer avec la prise de vue de face.",
+          "note": "Monica : consigne valable pour toutes les vidéos."
+        },
+        {
+          "id": "VID-E22-03",
+          "type": "camera",
+          "debut": "00:00:10",
+          "fin": "00:00:45",
+          "passage": "Prise de Pascal trop latérale",
+          "action": "La prise de Pascal est un peu décalée et trop latérale. Minimiser le nombre de plans latéraux dans toutes ses vidéos.",
+          "note": "Monica : cadrage, pas une demande de retournage."
+        }
+      ]
+    },
+    "E23": {
+      "code": "E23",
+      "nb": 6,
+      "items": [
+        {
+          "id": "VID-E23-01",
+          "type": "lecture",
+          "debut": "00:00:05",
+          "fin": "00:00:23",
+          "passage": "Présentation : « point d’entrée identifial et commun »",
+          "action": "La présentation de profil ne le favorise pas : il semble dire « identifiable ». Chercher une autre présentation de Rémi Waché.",
+          "note": "Monica : autre prise de présentation si elle existe, pas une demande de retournage."
+        },
+        {
+          "id": "VID-E23-02",
+          "type": "lecture",
+          "debut": "00:02:17",
+          "fin": "00:02:21",
+          "passage": "« Détecter les signaux d’intérêt ou les signes d’ennui »",
+          "action": "Il a trébuché un peu sur « détecter ». Chercher une autre version.",
+          "note": "Monica : autre prise si elle existe, pas une demande de retournage."
+        },
+        {
+          "id": "VID-E23-03",
+          "type": "lecture",
+          "debut": "00:03:57",
+          "fin": "00:04:00",
+          "passage": "« C’est donc la phase essentielle de construction de la collaboration »",
+          "action": "Il a trébuché. Chercher une autre version.",
+          "note": "Monica : autre prise si elle existe, pas une demande de retournage."
+        },
+        {
+          "id": "VID-E23-04",
+          "type": "lecture",
+          "debut": "00:04:39",
+          "fin": "00:04:56",
+          "passage": "« des conditions acceptables et convenables de toutes les parties » / « bonne collaboration »",
+          "action": "Il a trébuché. Chercher une autre version.",
+          "note": "Monica : autre prise si elle existe, pas une demande de retournage."
+        },
+        {
+          "id": "VID-E23-05",
+          "type": "coupe",
+          "debut": "00:05:33",
+          "fin": "00:05:51",
+          "passage": "Passage sur la complémentarité",
+          "action": "La coupe montre les bras de Rémi modifiés. Mieux aligner l’édition.",
+          "note": "Monica : problème de coupe, pas une demande de retournage."
+        },
+        {
+          "id": "VID-E23-06",
+          "type": "camera",
+          "debut": "00:06:34",
+          "fin": "00:06:40",
+          "passage": "« Un savoir, un prototype, un chiffre d’affaires possible »",
+          "action": "Cette prise latérale ne lui bénéficie pas. Préférer des prises frontales, de face.",
+          "note": "Monica : cadrage, pas une demande de retournage."
+        }
+      ]
+    },
+    "E24": {
+      "code": "E24",
+      "nb": 3,
+      "items": [
+        {
+          "id": "VID-E24-01",
+          "type": "habillage",
+          "debut": "00:00:04",
+          "fin": "00:00:12",
+          "passage": "Bandeau nom : Nelly Vinaud",
+          "action": "Corriger le nom de famille : Vinaud, V-I-N-A-U-D. Laisser plus de temps sans le crédit du nom.",
+          "note": "Monica : orthographe du nom et durée du bandeau, pas une demande de retournage."
+        },
+        {
+          "id": "VID-E24-02",
+          "type": "habillage",
+          "debut": "00:00:04",
+          "fin": "00:00:12",
+          "passage": "Bandeau titre / poste",
+          "action": "Mettre CNRS, Gif-sur-Yvette, DR4.",
+          "note": "Monica : consigne d’habillage sur le poste."
+        },
+        {
+          "id": "VID-E24-03",
+          "type": "lecture",
+          "debut": "00:03:24",
+          "fin": "00:03:34",
+          "passage": "« modalités financières de l’exploitation dans un contrat ultérieur »",
+          "action": "Elle a trébuché et dit « COLTRA ». Chercher une séquence où elle dit « contrat ».",
+          "note": "Monica : autre prise si elle existe, pas une demande de retournage."
         }
       ]
     }
