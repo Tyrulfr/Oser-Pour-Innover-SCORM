@@ -1685,6 +1685,662 @@
           "schema16x9": false
         }
       ]
+    },
+    {
+      "code": "E20",
+      "source": "monica",
+      "nb": 10,
+      "items": [
+        {
+          "id": "IN-E20-01",
+          "fichier": "incrustation/E20/IN-E20-01.png",
+          "debut": "00:00:22",
+          "fin": "00:00:29",
+          "vue": "texte",
+          "ecran": "Les compétences entrepreneuriales s’apprennent",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E20-02",
+          "fichier": "incrustation/E20/IN-E20-02.png",
+          "debut": "00:00:42",
+          "fin": "00:00:53",
+          "vue": "texte",
+          "ecran": "Apprendre la langue de l’entrepreneuriat",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E20-03",
+          "fichier": "incrustation/E20/IN-E20-03.png",
+          "debut": "00:01:42",
+          "fin": "00:01:50",
+          "vue": "texte",
+          "ecran": "Un processus d’apprentissage",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E20-04",
+          "fichier": "incrustation/E20/IN-E20-04.png",
+          "debut": "00:01:51",
+          "fin": "00:02:07",
+          "vue": "grille",
+          "ecran": "Technologie · Marché · Prototypage",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E20-05",
+          "fichier": "incrustation/E20/IN-E20-05.png",
+          "debut": "00:02:21",
+          "fin": "00:02:32",
+          "vue": "texte",
+          "ecran": "Adapter son vocabulaire",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E20-06",
+          "fichier": "incrustation/E20/IN-E20-06.png",
+          "debut": "00:02:50",
+          "fin": "00:02:56",
+          "vue": "texte",
+          "ecran": "Apprentissage par la pratique",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E20-07",
+          "fichier": "incrustation/E20/IN-E20-07.png",
+          "debut": "00:03:22",
+          "fin": "00:03:34",
+          "vue": "texte",
+          "ecran": "Formation qualifiante ou diplômante",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E20-08",
+          "fichier": "incrustation/E20/IN-E20-08.png",
+          "debut": "00:03:35",
+          "fin": "00:04:06",
+          "vue": "grille",
+          "ecran": "Courte · incubateur · Sectorielle · SATT · Longue · MBA",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E20-09",
+          "fichier": "incrustation/E20/IN-E20-09.png",
+          "debut": "00:04:26",
+          "fin": "00:04:38",
+          "vue": "texte",
+          "ecran": "Transformation et prise de confiance",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E20-10",
+          "fichier": "incrustation/E20/IN-E20-10.png",
+          "debut": "00:04:49",
+          "fin": "00:05:02",
+          "vue": "texte",
+          "ecran": "On ne cesse pas d’être chercheur·euse",
+          "schema16x9": false
+        }
+      ]
+    },
+    {
+      "code": "E21",
+      "source": "monica",
+      "nb": 12,
+      "items": [
+        {
+          "id": "IN-E21-01",
+          "fichier": "incrustation/E21/IN-E21-01.png",
+          "debut": "00:00:29",
+          "fin": "00:00:38",
+          "vue": "texte",
+          "ecran": "Accomplissement personnel",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E21-02",
+          "fichier": "incrustation/E21/IN-E21-02.png",
+          "debut": "00:01:03",
+          "fin": "00:01:15",
+          "vue": "texte",
+          "ecran": "Visibilité de l’utilité de la recherche",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E21-03",
+          "fichier": "incrustation/E21/IN-E21-03.png",
+          "debut": "00:01:19",
+          "fin": "00:01:32",
+          "vue": "grille",
+          "ecran": "Science · Entreprise · Quotidien",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E21-04",
+          "fichier": "incrustation/E21/IN-E21-04.png",
+          "debut": "00:01:38",
+          "fin": "00:01:51",
+          "vue": "boucle",
+          "ecran": "Recherche ⇄ Expertise scientifique",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E21-05",
+          "fichier": "incrustation/E21/IN-E21-05.png",
+          "debut": "00:01:52",
+          "fin": "00:02:06",
+          "vue": "texte",
+          "ecran": "Articuler avec rigueur deux métiers",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E21-06",
+          "fichier": "incrustation/E21/IN-E21-06.png",
+          "debut": "00:02:14",
+          "fin": "00:02:20",
+          "vue": "texte",
+          "ecran": "Nouvelles compétences",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E21-07",
+          "fichier": "incrustation/E21/IN-E21-07.png",
+          "debut": "00:02:20",
+          "fin": "00:02:29",
+          "vue": "texte",
+          "ecran": "Transmettre l’intérêt de se lancer",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E21-08",
+          "fichier": "incrustation/E21/IN-E21-08.png",
+          "debut": "00:02:30",
+          "fin": "00:02:39",
+          "vue": "boucle",
+          "ecran": "Chercheur ⇄ Entreprise",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E21-09",
+          "fichier": "incrustation/E21/IN-E21-09.png",
+          "debut": "00:02:45",
+          "fin": "00:02:57",
+          "vue": "successifs",
+          "ecran": "Conseiller scientifique · Acteur stratégique · Médiateur science–société · Ambassadeur de l’entrepreneuriat",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E21-10",
+          "fichier": "incrustation/E21/IN-E21-10.png",
+          "debut": "00:03:21",
+          "fin": "00:03:30",
+          "vue": "texte",
+          "ecran": "Le chercheur conserve son indépendance",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E21-11",
+          "fichier": "incrustation/E21/IN-E21-11.png",
+          "debut": "00:03:40",
+          "fin": "00:03:49",
+          "vue": "texte",
+          "ecran": "Connaissance–action",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E21-12",
+          "fichier": "incrustation/E21/IN-E21-12.png",
+          "debut": "00:03:50",
+          "fin": "00:03:58",
+          "vue": "texte",
+          "ecran": "Désir d’entreprendre",
+          "schema16x9": false
+        }
+      ]
+    },
+    {
+      "code": "E22",
+      "source": "monica",
+      "nb": 9,
+      "items": [
+        {
+          "id": "IN-E22-01",
+          "fichier": "incrustation/E22/IN-E22-01.png",
+          "debut": "00:00:20",
+          "fin": "00:00:29",
+          "vue": "texte",
+          "ecran": "Accepter une dose de risque",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E22-02",
+          "fichier": "incrustation/E22/IN-E22-02.png",
+          "debut": "00:00:30",
+          "fin": "00:00:45",
+          "vue": "grille",
+          "ecran": "Processus d’apprentissage · Réduire les risques",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E22-03",
+          "fichier": "incrustation/E22/IN-E22-03.png",
+          "debut": "00:01:16",
+          "fin": "00:01:37",
+          "vue": "grille",
+          "ecran": "Applications · Clients · Compétences · Partenaires · Offre / revenu · Valorisation",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E22-04",
+          "fichier": "incrustation/E22/IN-E22-04.png",
+          "debut": "00:01:48",
+          "fin": "00:01:57",
+          "vue": "pivot",
+          "ecran": "Impasse → Virage → Pivoter",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E22-05",
+          "fichier": "incrustation/E22/IN-E22-05.png",
+          "debut": "00:02:17",
+          "fin": "00:02:30",
+          "vue": "texte",
+          "ecran": "Capacité à prendre un virage",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E22-06",
+          "fichier": "incrustation/E22/IN-E22-06.png",
+          "debut": "00:02:52",
+          "fin": "00:03:00",
+          "vue": "texte",
+          "ecran": "MVP",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E22-07",
+          "fichier": "incrustation/E22/IN-E22-07.png",
+          "debut": "00:03:00",
+          "fin": "00:03:10",
+          "vue": "grille",
+          "ecran": "Retours clients · Données d’utilisation · Vente",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E22-08",
+          "fichier": "incrustation/E22/IN-E22-08.png",
+          "debut": "00:03:18",
+          "fin": "00:03:35",
+          "vue": "frise",
+          "ecran": "Recueillir → Alimenter → Perfectionner",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E22-09",
+          "fichier": "incrustation/E22/IN-E22-09.png",
+          "debut": "00:04:17",
+          "fin": "00:04:24",
+          "vue": "texte",
+          "ecran": "Comprendre les dimensions du projet",
+          "schema16x9": false
+        }
+      ]
+    },
+    {
+      "code": "E23",
+      "source": "monica",
+      "nb": 23,
+      "items": [
+        {
+          "id": "IN-E23-01",
+          "fichier": "incrustation/E23/IN-E23-01.png",
+          "debut": "00:00:29",
+          "fin": "00:00:38",
+          "vue": "texte",
+          "ecran": "Collaborations équilibrées et bénéfiques",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E23-02",
+          "fichier": "incrustation/E23/IN-E23-02.png",
+          "debut": "00:00:39",
+          "fin": "00:00:50",
+          "vue": "grille",
+          "ecran": "Mise en relation · Entente mutuelle",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E23-03",
+          "fichier": "incrustation/E23/IN-E23-03.png",
+          "debut": "00:00:50",
+          "fin": "00:01:04",
+          "vue": "grille",
+          "ecran": "Chacun apporte · Chacun attend · Chacun y gagne",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E23-04",
+          "fichier": "incrustation/E23/IN-E23-04.png",
+          "debut": "00:01:05",
+          "fin": "00:01:13",
+          "vue": "texte",
+          "ecran": "Phase de prospection",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E23-05",
+          "fichier": "incrustation/E23/IN-E23-05.png",
+          "debut": "00:01:13",
+          "fin": "00:01:25",
+          "vue": "grille",
+          "ecran": "Cibler · Réseau personnel",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E23-06",
+          "fichier": "incrustation/E23/IN-E23-06.png",
+          "debut": "00:01:25",
+          "fin": "00:01:40",
+          "vue": "texte",
+          "ecran": "Écouter les besoins de son interlocuteur",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E23-07",
+          "fichier": "incrustation/E23/IN-E23-07.png",
+          "debut": "00:02:02",
+          "fin": "00:02:21",
+          "vue": "texte",
+          "ecran": "Qualités interpersonnelles",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E23-08",
+          "fichier": "incrustation/E23/IN-E23-08.png",
+          "debut": "00:02:21",
+          "fin": "00:02:35",
+          "vue": "texte",
+          "ecran": "Comment réagir quand on est contacté par une entreprise ?",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E23-09",
+          "fichier": "incrustation/E23/IN-E23-09.png",
+          "debut": "00:03:02",
+          "fin": "00:03:15",
+          "vue": "texte",
+          "ecran": "Accord de confidentialité",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E23-10",
+          "fichier": "incrustation/E23/IN-E23-10.png",
+          "debut": "00:03:15",
+          "fin": "00:03:24",
+          "vue": "texte",
+          "ecran": "Attention aux divulgations orales",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E23-11",
+          "fichier": "incrustation/E23/IN-E23-11.png",
+          "debut": "00:03:37",
+          "fin": "00:03:57",
+          "vue": "grille",
+          "ecran": "Objectifs · Moyens · Temporalité",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E23-12",
+          "fichier": "incrustation/E23/IN-E23-12.png",
+          "debut": "00:04:05",
+          "fin": "00:04:20",
+          "vue": "grille",
+          "ecran": "Ingénierie contractuelle · Politique d’établissement",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E23-13",
+          "fichier": "incrustation/E23/IN-E23-13.png",
+          "debut": "00:04:39",
+          "fin": "00:04:47",
+          "vue": "texte",
+          "ecran": "Des accords convenables pour toutes les parties",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E23-14",
+          "fichier": "incrustation/E23/IN-E23-14.png",
+          "debut": "00:05:01",
+          "fin": "00:05:19",
+          "vue": "texte",
+          "ecran": "1. Se protéger en amont",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E23-15",
+          "fichier": "incrustation/E23/IN-E23-15.png",
+          "debut": "00:05:20",
+          "fin": "00:05:32",
+          "vue": "texte",
+          "ecran": "2. Objectifs partagés",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E23-16",
+          "fichier": "incrustation/E23/IN-E23-16.png",
+          "debut": "00:05:33",
+          "fin": "00:05:50",
+          "vue": "texte",
+          "ecran": "3. Complémentarité",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E23-17",
+          "fichier": "incrustation/E23/IN-E23-17.png",
+          "debut": "00:05:51",
+          "fin": "00:06:08",
+          "vue": "texte",
+          "ecran": "4. Ressources et engagement",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E23-18",
+          "fichier": "incrustation/E23/IN-E23-18.png",
+          "debut": "00:06:09",
+          "fin": "00:06:24",
+          "vue": "texte",
+          "ecran": "5. Gouvernance",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E23-19",
+          "fichier": "incrustation/E23/IN-E23-19.png",
+          "debut": "00:06:25",
+          "fin": "00:06:40",
+          "vue": "grille",
+          "ecran": "Connaissances antérieures · Résultats communs",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E23-20",
+          "fichier": "incrustation/E23/IN-E23-20.png",
+          "debut": "00:06:49",
+          "fin": "00:07:00",
+          "vue": "grille",
+          "ecran": "Publier · Responsabilité juridique",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E23-21",
+          "fichier": "incrustation/E23/IN-E23-21.png",
+          "debut": "00:07:08",
+          "fin": "00:07:16",
+          "vue": "texte",
+          "ecran": "Collaboration publique-privée",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E23-22",
+          "fichier": "incrustation/E23/IN-E23-22.png",
+          "debut": "00:07:16",
+          "fin": "00:07:27",
+          "vue": "frise",
+          "ecran": "Connaissance → Usage → Marché",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E23-23",
+          "fichier": "incrustation/E23/IN-E23-23.png",
+          "debut": "00:07:28",
+          "fin": "00:07:40",
+          "vue": "schema",
+          "ecran": "De l’idée à l’adoption",
+          "schema16x9": true
+        }
+      ]
+    },
+    {
+      "code": "E24",
+      "source": "monica",
+      "nb": 15,
+      "items": [
+        {
+          "id": "IN-E24-01",
+          "fichier": "incrustation/E24/IN-E24-01.png",
+          "debut": "00:00:30",
+          "fin": "00:00:41",
+          "vue": "texte",
+          "ecran": "Sécuriser les nouvelles collaborations",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E24-02",
+          "fichier": "incrustation/E24/IN-E24-02.png",
+          "debut": "00:00:41",
+          "fin": "00:00:49",
+          "vue": "texte",
+          "ecran": "Accord de confidentialité",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E24-03",
+          "fichier": "incrustation/E24/IN-E24-03.png",
+          "debut": "00:00:49",
+          "fin": "00:01:08",
+          "vue": "texte",
+          "ecran": "Sécuriser vos échanges",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E24-04",
+          "fichier": "incrustation/E24/IN-E24-04.png",
+          "debut": "00:01:08",
+          "fin": "00:01:33",
+          "vue": "texte",
+          "ecran": "État des lieux des connaissances propres",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E24-05",
+          "fichier": "incrustation/E24/IN-E24-05.png",
+          "debut": "00:01:33",
+          "fin": "00:01:46",
+          "vue": "texte",
+          "ecran": "Éviter l’assimilation aux résultats du projet",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E24-06",
+          "fichier": "incrustation/E24/IN-E24-06.png",
+          "debut": "00:01:46",
+          "fin": "00:02:01",
+          "vue": "grille",
+          "ecran": "Savoir-faire · Brevet · Logiciel",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E24-07",
+          "fichier": "incrustation/E24/IN-E24-07.png",
+          "debut": "00:02:01",
+          "fin": "00:02:19",
+          "vue": "texte",
+          "ecran": "Contrat de collaboration",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E24-08",
+          "fichier": "incrustation/E24/IN-E24-08.png",
+          "debut": "00:02:30",
+          "fin": "00:02:51",
+          "vue": "texte",
+          "ecran": "C’est quoi, la propriété intellectuelle ?",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E24-09",
+          "fichier": "incrustation/E24/IN-E24-09.png",
+          "debut": "00:03:11",
+          "fin": "00:03:24",
+          "vue": "texte",
+          "ecran": "Cohérente avec les missions publiques",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E24-10",
+          "fichier": "incrustation/E24/IN-E24-10.png",
+          "debut": "00:03:24",
+          "fin": "00:03:34",
+          "vue": "texte",
+          "ecran": "Domaine d’exploitation",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E24-11",
+          "fichier": "incrustation/E24/IN-E24-11.png",
+          "debut": "00:03:34",
+          "fin": "00:03:49",
+          "vue": "texte",
+          "ecran": "Modalités financières de l’exploitation",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E24-12",
+          "fichier": "incrustation/E24/IN-E24-12.png",
+          "debut": "00:03:55",
+          "fin": "00:04:04",
+          "vue": "texte",
+          "ecran": "Équilibre entre intérêts publics et privés",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E24-13",
+          "fichier": "incrustation/E24/IN-E24-13.png",
+          "debut": "00:04:04",
+          "fin": "00:04:21",
+          "vue": "texte",
+          "ecran": "Validation commune des projets de publication",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E24-14",
+          "fichier": "incrustation/E24/IN-E24-14.png",
+          "debut": "00:04:21",
+          "fin": "00:04:33",
+          "vue": "texte",
+          "ecran": "Savoir-faire gardé confidentiel",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E24-15",
+          "fichier": "incrustation/E24/IN-E24-15.png",
+          "debut": "00:04:58",
+          "fin": "00:05:26",
+          "vue": "texte",
+          "ecran": "Sécuriser toutes vos collaborations",
+          "schema16x9": false
+        }
+      ]
     }
   ],
   "schemas": [
@@ -1755,5 +2411,5 @@
       "format": "16:9"
     }
   ],
-  "total": 186
+  "total": 255
 }

@@ -1,5 +1,5 @@
 {
-  "date": "2026-10-20",
+  "date": "2026-10-26",
   "videos": {
     "E1": {
       "code": "E1",
@@ -2953,269 +2953,1121 @@
         }
       ]
     },
-    "E21": {
-      "code": "E21",
-      "nb": 6,
+    "E20": {
+      "code": "E20",
+      "nb": 10,
+      "source": "monica",
       "items": [
         {
-          "debut": "00:00:20",
+          "id": "IN-E20-01",
+          "debut": "00:00:22",
           "fin": "00:00:29",
-          "type": "concept",
-          "ecran": "Enrichir le métier",
+          "type": "motion",
+          "vue": "texte",
+          "ecran": "Les compétences entrepreneuriales s’apprennent",
+          "icone": "fa-graduation-cap",
           "schema": "",
           "developpe": "",
-          "pourquoi": "Objectif E21 : pas une reconversion."
+          "pourquoi": "Monica, calée sur « pas de profil type » : les compétences s’apprennent."
         },
         {
-          "debut": "00:01:15",
-          "fin": "00:01:19",
-          "type": "concept",
-          "ecran": "Intégrateur social",
+          "id": "IN-E20-02",
+          "debut": "00:00:42",
+          "fin": "00:00:53",
+          "type": "motion",
+          "vue": "texte",
+          "ecran": "Apprendre la langue de l’entrepreneuriat",
+          "icone": "fa-comments",
           "schema": "",
           "developpe": "",
-          "pourquoi": "Utilité visible de la recherche."
+          "pourquoi": "Monica, calée sur le cahier des charges de Jean-Jacques : une langue ça s’apprend."
         },
         {
-          "debut": "00:01:45",
-          "fin": "00:01:52",
-          "type": "schema",
-          "ecran": "Double posture",
-          "schema": "Labo + entreprise",
-          "developpe": "",
-          "pourquoi": "Articuler les casquettes."
-        },
-        {
-          "debut": "00:01:52",
-          "fin": "00:02:01",
-          "type": "concept",
-          "ecran": "Impartialité",
+          "id": "IN-E20-03",
+          "debut": "00:01:42",
+          "fin": "00:01:50",
+          "type": "motion",
+          "vue": "texte",
+          "ecran": "Un processus d’apprentissage",
+          "icone": "fa-stairs",
           "schema": "",
           "developpe": "",
-          "pourquoi": "Condition de la double casquette."
+          "pourquoi": "Monica : en réalité, créer une entreprise est un processus d’apprentissage."
         },
         {
-          "debut": "00:03:05",
-          "fin": "00:03:09",
-          "type": "schema",
-          "ecran": "Deux temporalités",
-          "schema": "Recherche ≠ marché",
+          "id": "IN-E20-04",
+          "debut": "00:01:51",
+          "fin": "00:02:07",
+          "type": "motion",
+          "vue": "grille",
+          "colonnes": 3,
+          "ecran": "Technologie · Marché · Prototypage",
+          "cellules": [
+            {
+              "texte": "Technologie",
+              "icone": "fa-flask"
+            },
+            {
+              "texte": "Marché",
+              "icone": "fa-store"
+            },
+            {
+              "texte": "Prototypage",
+              "icone": "fa-link"
+            }
+          ],
+          "schema": "",
           "developpe": "",
-          "pourquoi": "Ce qu’il faut concilier."
+          "pourquoi": "Monica : technologie, marché, prototypage — les trois apprentissages cités par Pascal."
         },
         {
+          "id": "IN-E20-05",
+          "debut": "00:02:21",
+          "fin": "00:02:32",
+          "type": "motion",
+          "vue": "texte",
+          "ecran": "Adapter son vocabulaire",
+          "icone": "fa-comments",
+          "caption": "en discutant avec différents interlocuteurs",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Monica : raccourcir « adapter son vocabulaire en discutant »."
+        },
+        {
+          "id": "IN-E20-06",
+          "debut": "00:02:50",
+          "fin": "00:02:56",
+          "type": "motion",
+          "vue": "texte",
+          "ecran": "Apprentissage par la pratique",
+          "icone": "fa-gear",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Monica, calée sur essai / retour / correction."
+        },
+        {
+          "id": "IN-E20-07",
+          "debut": "00:03:22",
+          "fin": "00:03:34",
+          "type": "motion",
+          "vue": "texte",
+          "ecran": "Formation qualifiante ou diplômante",
+          "icone": "fa-graduation-cap",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Monica : formation entrepreneuriale qualifiante ou diplômante."
+        },
+        {
+          "id": "IN-E20-08",
           "debut": "00:03:35",
-          "fin": "00:03:40",
-          "type": "concept",
-          "ecran": "Pas renoncer",
+          "fin": "00:04:06",
+          "type": "motion",
+          "vue": "grille",
+          "titre": "Trois formes de formation",
+          "colonnes": 3,
+          "ecran": "Courte · incubateur · Sectorielle · SATT · Longue · MBA",
+          "cellules": [
+            {
+              "texte": "Courte",
+              "icone": "fa-building",
+              "detail": "Incubateur"
+            },
+            {
+              "texte": "Sectorielle",
+              "icone": "fa-flask",
+              "detail": "SATT"
+            },
+            {
+              "texte": "Longue",
+              "icone": "fa-graduation-cap",
+              "detail": "MBA"
+            }
+          ],
           "schema": "",
           "developpe": "",
-          "pourquoi": "Message de clôture."
+          "pourquoi": "Les trois formes citées par Pascal pendant le hold Monica sur la formation."
+        },
+        {
+          "id": "IN-E20-09",
+          "debut": "00:04:26",
+          "fin": "00:04:38",
+          "type": "motion",
+          "vue": "texte",
+          "ecran": "Transformation et prise de confiance",
+          "icone": "fa-seedling",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Monica, calée sur les doctorants transformés et plus confiants."
+        },
+        {
+          "id": "IN-E20-10",
+          "debut": "00:04:49",
+          "fin": "00:05:02",
+          "type": "motion",
+          "vue": "texte",
+          "ecran": "On ne cesse pas d’être chercheur·euse",
+          "icone": "fa-user",
+          "caption": "en devenant entrepreneur ou entrepreneuse",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Monica : on n’arrête pas d’être chercheur ou chercheuse en devenant entrepreneur."
         }
-      ],
-      "source": "ia"
+      ]
+    },
+    "E21": {
+      "code": "E21",
+      "nb": 12,
+      "source": "monica",
+      "items": [
+        {
+          "id": "IN-E21-01",
+          "debut": "00:00:29",
+          "fin": "00:00:38",
+          "type": "motion",
+          "vue": "texte",
+          "ecran": "Accomplissement personnel",
+          "icone": "fa-seedling",
+          "caption": "dans l’expérience entrepreneuriale",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Monica : accomplissement personnel dans l’expérience entrepreneuriale."
+        },
+        {
+          "id": "IN-E21-02",
+          "debut": "00:01:03",
+          "fin": "00:01:15",
+          "type": "motion",
+          "vue": "texte",
+          "ecran": "Visibilité de l’utilité de la recherche",
+          "icone": "fa-binoculars",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Monica corrige « visibiliser » : visibilité de l’utilité de la recherche."
+        },
+        {
+          "id": "IN-E21-03",
+          "debut": "00:01:19",
+          "fin": "00:01:32",
+          "type": "motion",
+          "vue": "grille",
+          "colonnes": 3,
+          "ecran": "Science · Entreprise · Quotidien",
+          "cellules": [
+            {
+              "texte": "Science",
+              "icone": "fa-flask"
+            },
+            {
+              "texte": "Entreprise",
+              "icone": "fa-industry"
+            },
+            {
+              "texte": "Quotidien",
+              "icone": "fa-users"
+            }
+          ],
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Monica : le transfert relie la science, l’entreprise et le quotidien — schéma des trois sujets."
+        },
+        {
+          "id": "IN-E21-04",
+          "debut": "00:01:38",
+          "fin": "00:01:51",
+          "type": "motion",
+          "vue": "boucle",
+          "ecran": "Recherche ⇄ Expertise scientifique",
+          "schema": "Recherche ⇄ Expertise scientifique",
+          "icones": [
+            "fa-flask",
+            "fa-graduation-cap"
+          ],
+          "caption": "Deux activités à articuler",
+          "developpe": "",
+          "pourquoi": "Monica : schéma des deux activités, recherche et expertise scientifique, avec des flèches."
+        },
+        {
+          "id": "IN-E21-05",
+          "debut": "00:01:52",
+          "fin": "00:02:06",
+          "type": "motion",
+          "vue": "texte",
+          "ecran": "Articuler avec rigueur deux métiers",
+          "icone": "fa-scale-balanced",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Monica, calée sur « pas choisir entre deux métiers »."
+        },
+        {
+          "id": "IN-E21-06",
+          "debut": "00:02:14",
+          "fin": "00:02:20",
+          "type": "motion",
+          "vue": "texte",
+          "ecran": "Nouvelles compétences",
+          "icone": "fa-graduation-cap",
+          "caption": "et meilleure compréhension du monde entrepreneurial",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Monica, calée sur le conseil de surveillance de Jean-Jacques."
+        },
+        {
+          "id": "IN-E21-07",
+          "debut": "00:02:20",
+          "fin": "00:02:29",
+          "type": "motion",
+          "vue": "texte",
+          "ecran": "Transmettre l’intérêt de se lancer",
+          "icone": "fa-bullhorn",
+          "caption": "à d’autres chercheurs",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Monica : transmettre aux collègues l’intérêt d’une démarche entrepreneuriale."
+        },
+        {
+          "id": "IN-E21-08",
+          "debut": "00:02:30",
+          "fin": "00:02:39",
+          "type": "motion",
+          "vue": "boucle",
+          "ecran": "Chercheur ⇄ Entreprise",
+          "schema": "Chercheur ⇄ Entreprise",
+          "icones": [
+            "fa-flask",
+            "fa-industry"
+          ],
+          "caption": "L’apprentissage fonctionne dans les deux sens",
+          "developpe": "",
+          "pourquoi": "Monica : schéma chercheur–entreprise, flèches dans les deux sens."
+        },
+        {
+          "id": "IN-E21-09",
+          "debut": "00:02:45",
+          "fin": "00:02:57",
+          "type": "motion",
+          "vue": "successifs",
+          "ecran": "Conseiller scientifique · Acteur stratégique · Médiateur science–société · Ambassadeur de l’entrepreneuriat",
+          "cellules": [
+            {
+              "texte": "Conseiller scientifique",
+              "icone": "fa-flask"
+            },
+            {
+              "texte": "Acteur stratégique",
+              "icone": "fa-chess"
+            },
+            {
+              "texte": "Médiateur science–société",
+              "icone": "fa-comments"
+            },
+            {
+              "texte": "Ambassadeur de l’entrepreneuriat",
+              "icone": "fa-bullhorn"
+            }
+          ],
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Monica : liste progressive des rôles cités par Bernard."
+        },
+        {
+          "id": "IN-E21-10",
+          "debut": "00:03:21",
+          "fin": "00:03:30",
+          "type": "motion",
+          "vue": "texte",
+          "ecran": "Le chercheur conserve son indépendance",
+          "icone": "fa-shield-halved",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Monica, calée sur l’indépendance et la confiance attachée à la fonction."
+        },
+        {
+          "id": "IN-E21-11",
+          "debut": "00:03:40",
+          "fin": "00:03:49",
+          "type": "motion",
+          "vue": "texte",
+          "ecran": "Connaissance–action",
+          "icone": "fa-link",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Monica : relier davantage la connaissance à l’action."
+        },
+        {
+          "id": "IN-E21-12",
+          "debut": "00:03:50",
+          "fin": "00:03:58",
+          "type": "motion",
+          "vue": "texte",
+          "ecran": "Désir d’entreprendre",
+          "icone": "fa-rocket",
+          "caption": "tout en restant dans son métier",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Monica : désir d’entreprendre tout en restant chercheur ou chercheuse."
+        }
+      ]
     },
     "E22": {
       "code": "E22",
-      "nb": 6,
+      "nb": 9,
+      "source": "monica",
       "items": [
         {
+          "id": "IN-E22-01",
+          "debut": "00:00:20",
+          "fin": "00:00:29",
+          "type": "motion",
+          "vue": "texte",
+          "ecran": "Accepter une dose de risque",
+          "icone": "fa-scale-balanced",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Monica, calée sur la dose de risque acceptée par les partenaires."
+        },
+        {
+          "id": "IN-E22-02",
           "debut": "00:00:30",
           "fin": "00:00:45",
-          "type": "concept",
-          "ecran": "Réduire l’inconnu",
+          "type": "motion",
+          "vue": "grille",
+          "ecran": "Processus d’apprentissage · Réduire les risques",
+          "cellules": [
+            {
+              "texte": "Processus d’apprentissage",
+              "icone": "fa-stairs"
+            },
+            {
+              "texte": "Réduire les risques",
+              "icone": "fa-shield-halved"
+            }
+          ],
           "schema": "",
           "developpe": "",
-          "pourquoi": "Objectif E22 : innover = apprendre."
+          "pourquoi": "Monica : réduire les risques et avoir un processus d’apprentissage."
         },
         {
-          "debut": "00:01:00",
-          "fin": "00:01:13",
-          "type": "schema",
-          "ecran": "Échelle TRL",
-          "schema": "TRL 1 → 9",
-          "developpe": "Technology Readiness Level",
-          "pourquoi": "Échelle TRL ISO 16290 extraite du fascicule 2 (p. 12) : 9 niveaux de maturité technologique.",
-          "image": "schemas/f2-trl.png"
+          "id": "IN-E22-03",
+          "debut": "00:01:16",
+          "fin": "00:01:37",
+          "type": "motion",
+          "vue": "grille",
+          "colonnes": 3,
+          "ecran": "Applications · Clients · Compétences · Partenaires · Offre / revenu · Valorisation",
+          "cellules": [
+            {
+              "texte": "Applications prioritaires",
+              "icone": "fa-bullseye"
+            },
+            {
+              "texte": "Clients visés",
+              "icone": "fa-users"
+            },
+            {
+              "texte": "Compétences",
+              "icone": "fa-graduation-cap"
+            },
+            {
+              "texte": "Fournisseurs et partenaires",
+              "icone": "fa-handshake"
+            },
+            {
+              "texte": "Offre / revenu",
+              "icone": "fa-coins"
+            },
+            {
+              "texte": "Valorisation",
+              "icone": "fa-file-lines"
+            }
+          ],
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Monica : mots-clés de la liste de Pascal (applications, clients, compétences, partenaires, offre, revenu, valorisation)."
         },
         {
-          "debut": "00:01:54",
+          "id": "IN-E22-04",
+          "debut": "00:01:48",
           "fin": "00:01:57",
-          "type": "concept",
-          "ecran": "Pivot",
-          "schema": "",
+          "type": "motion",
+          "vue": "pivot",
+          "ecran": "Impasse → Virage → Pivoter",
+          "schema": "Impasse → Virage → Pivoter",
+          "icones": [
+            "fa-triangle-exclamation",
+            "fa-shuffle",
+            "fa-code-branch"
+          ],
           "developpe": "",
-          "pourquoi": "Impasse → virage, pas échec."
+          "pourquoi": "Monica : pivot, calé sur l’impasse et le monde des start-up."
         },
         {
+          "id": "IN-E22-05",
+          "debut": "00:02:17",
+          "fin": "00:02:30",
+          "type": "motion",
+          "vue": "texte",
+          "ecran": "Capacité à prendre un virage",
+          "icone": "fa-shuffle",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Monica, calée sur Jean-Jacques : ce qui compte, c’est le virage."
+        },
+        {
+          "id": "IN-E22-06",
           "debut": "00:02:52",
-          "fin": "00:03:04",
-          "type": "acronyme",
+          "fin": "00:03:00",
+          "type": "motion",
+          "vue": "texte",
           "ecran": "MVP",
-          "schema": "",
-          "developpe": "Minimum Viable Product",
-          "pourquoi": "Ici le sigle est enseigné (dans le grain T11)."
-        },
-        {
-          "debut": "00:03:18",
-          "fin": "00:03:23",
-          "type": "concept",
-          "ecran": "Logique d’apprentissage",
+          "icone": "fa-flask",
+          "caption": "Minimum Viable Product",
           "schema": "",
           "developpe": "",
-          "pourquoi": "Indépendante du secteur."
+          "pourquoi": "Monica : MVP, entre parenthèses Minimum Viable Product."
         },
         {
+          "id": "IN-E22-07",
+          "debut": "00:03:00",
+          "fin": "00:03:10",
+          "type": "motion",
+          "vue": "grille",
+          "colonnes": 3,
+          "ecran": "Retours clients · Données d’utilisation · Vente",
+          "cellules": [
+            {
+              "texte": "Retours clients",
+              "icone": "fa-comments"
+            },
+            {
+              "texte": "Données d’utilisation",
+              "icone": "fa-chart-line"
+            },
+            {
+              "texte": "Vente",
+              "icone": "fa-coins"
+            }
+          ],
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Monica : retours, données clients, données d’utilisation, vente."
+        },
+        {
+          "id": "IN-E22-08",
+          "debut": "00:03:18",
+          "fin": "00:03:35",
+          "type": "motion",
+          "vue": "frise",
+          "titre": "Logique d’apprentissage",
+          "ecran": "Recueillir → Alimenter → Perfectionner",
+          "schema": "Recueillir → Alimenter → Perfectionner",
+          "icones": [
+            "fa-magnifying-glass",
+            "fa-gear",
+            "fa-stairs"
+          ],
+          "developpe": "",
+          "pourquoi": "Monica : schéma logique d’apprentissage, recueillir, alimenter, perfectionner."
+        },
+        {
+          "id": "IN-E22-09",
           "debut": "00:04:17",
           "fin": "00:04:24",
-          "type": "concept",
-          "ecran": "Pas un casse-cou",
+          "type": "motion",
+          "vue": "texte",
+          "ecran": "Comprendre les dimensions du projet",
+          "icone": "fa-binoculars",
+          "caption": "posture de l’innovateur",
           "schema": "",
           "developpe": "",
-          "pourquoi": "Posture de l’innovateur."
+          "pourquoi": "Monica : innovateur = humain cherchant à comprendre les dimensions de son projet."
         }
-      ],
-      "source": "ia"
+      ]
     },
     "E23": {
       "code": "E23",
-      "nb": 6,
+      "nb": 23,
+      "source": "monica",
       "items": [
         {
+          "id": "IN-E23-01",
           "debut": "00:00:29",
-          "fin": "00:00:39",
-          "type": "concept",
-          "ecran": "Collaboration équilibrée",
+          "fin": "00:00:38",
+          "type": "motion",
+          "vue": "texte",
+          "ecran": "Collaborations équilibrées et bénéfiques",
+          "icone": "fa-scale-balanced",
           "schema": "",
           "developpe": "",
-          "pourquoi": "Objectif E23."
+          "pourquoi": "Monica : concevoir des collaborations équilibrées et bénéfiques."
         },
         {
-          "debut": "00:00:43",
+          "id": "IN-E23-02",
+          "debut": "00:00:39",
           "fin": "00:00:50",
-          "type": "schema",
-          "ecran": "Apports / attentes",
-          "schema": "Chacun apporte · chacun gagne",
+          "type": "motion",
+          "vue": "grille",
+          "ecran": "Mise en relation · Entente mutuelle",
+          "cellules": [
+            {
+              "texte": "Mise en relation",
+              "icone": "fa-handshake"
+            },
+            {
+              "texte": "Entente mutuelle",
+              "icone": "fa-scale-balanced"
+            }
+          ],
+          "schema": "",
           "developpe": "",
-          "pourquoi": "Équilibre, pas prestation."
+          "pourquoi": "Monica : mise en relation et conditions d’entente mutuelles."
         },
         {
-          "debut": "00:00:56",
-          "fin": "00:01:05",
-          "type": "schema",
-          "ecran": "Prestation | Collaboration",
-          "schema": "Prestation | Collaboration",
+          "id": "IN-E23-03",
+          "debut": "00:00:50",
+          "fin": "00:01:04",
+          "type": "motion",
+          "vue": "grille",
+          "colonnes": 3,
+          "ecran": "Chacun apporte · Chacun attend · Chacun y gagne",
+          "cellules": [
+            {
+              "texte": "Chacun apporte",
+              "icone": "fa-handshake"
+            },
+            {
+              "texte": "Chacun attend",
+              "icone": "fa-bullseye"
+            },
+            {
+              "texte": "Chacun y gagne",
+              "icone": "fa-seedling"
+            }
+          ],
+          "schema": "",
           "developpe": "",
-          "pourquoi": "Le récit oppose les deux cadres : extrait F2 p. 7."
+          "pourquoi": "Définition de l’équilibre, juste après le hold Monica sur l’entente mutuelle."
         },
         {
+          "id": "IN-E23-04",
+          "debut": "00:01:05",
+          "fin": "00:01:13",
+          "type": "motion",
+          "vue": "texte",
+          "ecran": "Phase de prospection",
+          "icone": "fa-binoculars",
+          "caption": "recherche de partenaires potentiels",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Monica : phase de prospection, aller à la recherche de partenaires."
+        },
+        {
+          "id": "IN-E23-05",
+          "debut": "00:01:13",
+          "fin": "00:01:25",
+          "type": "motion",
+          "vue": "grille",
+          "ecran": "Cibler · Réseau personnel",
+          "cellules": [
+            {
+              "texte": "Cibler des personnes",
+              "icone": "fa-bullseye"
+            },
+            {
+              "texte": "Réseau personnel",
+              "icone": "fa-users"
+            }
+          ],
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Monica : cibler des personnes ou utiliser son réseau personnel."
+        },
+        {
+          "id": "IN-E23-06",
+          "debut": "00:01:25",
+          "fin": "00:01:40",
+          "type": "motion",
+          "vue": "texte",
+          "ecran": "Écouter les besoins de son interlocuteur",
+          "icone": "fa-comments",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Monica, calée sur l’expression de besoin."
+        },
+        {
+          "id": "IN-E23-07",
+          "debut": "00:02:02",
+          "fin": "00:02:21",
+          "type": "motion",
+          "vue": "texte",
+          "ecran": "Qualités interpersonnelles",
+          "icone": "fa-comments",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Monica : qualités interpersonnelles."
+        },
+        {
+          "id": "IN-E23-08",
+          "debut": "00:02:21",
+          "fin": "00:02:35",
+          "type": "motion",
+          "vue": "texte",
+          "ecran": "Comment réagir quand on est contacté par une entreprise ?",
+          "icone": "fa-circle-question",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Question-clé de Monica, calée sur la position du chercheur contacté."
+        },
+        {
+          "id": "IN-E23-09",
           "debut": "00:03:02",
-          "fin": "00:03:07",
-          "type": "acronyme",
-          "ecran": "NDA",
+          "fin": "00:03:15",
+          "type": "motion",
+          "vue": "texte",
+          "ecran": "Accord de confidentialité",
+          "icone": "fa-lock",
+          "caption": "avant tout échange d’informations sensibles",
           "schema": "",
-          "developpe": "Accord de confidentialité",
-          "pourquoi": "Avant toute info sensible."
-        },
-        {
-          "debut": "00:03:41",
-          "fin": "00:03:44",
-          "type": "schema",
-          "ecran": "Trois contraintes",
-          "schema": "Objectifs · Moyens · Temps",
           "developpe": "",
-          "pourquoi": "Dimensionner la collab."
+          "pourquoi": "Monica : pas d’échange sensible sans accord écrit et signé."
         },
         {
+          "id": "IN-E23-10",
+          "debut": "00:03:15",
+          "fin": "00:03:24",
+          "type": "motion",
+          "vue": "texte",
+          "ecran": "Attention aux divulgations orales",
+          "icone": "fa-triangle-exclamation",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Monica, calée sur la communication orale comme antériorité."
+        },
+        {
+          "id": "IN-E23-11",
+          "debut": "00:03:37",
+          "fin": "00:03:57",
+          "type": "motion",
+          "vue": "grille",
+          "titre": "Trois contraintes",
+          "colonnes": 3,
+          "ecran": "Objectifs · Moyens · Temporalité",
+          "cellules": [
+            {
+              "texte": "Objectifs",
+              "icone": "fa-bullseye",
+              "detail": "Qu’est-ce que vous cherchez à atteindre ?"
+            },
+            {
+              "texte": "Moyens",
+              "icone": "fa-cubes",
+              "detail": "Avec quels moyens ?"
+            },
+            {
+              "texte": "Temporalité",
+              "icone": "fa-clock",
+              "detail": "En combien de temps ?"
+            }
+          ],
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Monica : schéma des trois contraintes, puis les trois questions de Rémi."
+        },
+        {
+          "id": "IN-E23-12",
+          "debut": "00:04:05",
+          "fin": "00:04:20",
+          "type": "motion",
+          "vue": "grille",
+          "titre": "Contractualiser",
+          "ecran": "Ingénierie contractuelle · Politique d’établissement",
+          "cellules": [
+            {
+              "texte": "Ingénierie contractuelle",
+              "icone": "fa-file-contract"
+            },
+            {
+              "texte": "Politique d’établissement",
+              "icone": "fa-building"
+            }
+          ],
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Monica : titre « contractualiser », puis les deux apports du service de valorisation."
+        },
+        {
+          "id": "IN-E23-13",
+          "debut": "00:04:39",
+          "fin": "00:04:47",
+          "type": "motion",
+          "vue": "texte",
+          "ecran": "Des accords convenables pour toutes les parties",
+          "icone": "fa-handshake",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Monica, calée sur les conditions acceptables plutôt que les meilleures."
+        },
+        {
+          "id": "IN-E23-14",
           "debut": "00:05:01",
-          "fin": "00:05:05",
-          "type": "concept",
-          "ecran": "Se protéger en amont",
+          "fin": "00:05:19",
+          "type": "motion",
+          "vue": "texte",
+          "ecran": "1. Se protéger en amont",
+          "icone": "fa-shield-halved",
+          "caption": "mettre en place un accord de confidentialité",
           "schema": "",
           "developpe": "",
-          "pourquoi": "Réflexe avant de parler."
+          "pourquoi": "Premier repère, avec le chiffre demandé par Monica."
+        },
+        {
+          "id": "IN-E23-15",
+          "debut": "00:05:20",
+          "fin": "00:05:32",
+          "type": "motion",
+          "vue": "texte",
+          "ecran": "2. Objectifs partagés",
+          "icone": "fa-bullseye",
+          "caption": "si les objectifs restent flous…",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Deuxième repère numéroté, demandé par Monica."
+        },
+        {
+          "id": "IN-E23-16",
+          "debut": "00:05:33",
+          "fin": "00:05:50",
+          "type": "motion",
+          "vue": "texte",
+          "ecran": "3. Complémentarité",
+          "icone": "fa-puzzle-piece",
+          "caption": "qui apporte quoi ?",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Troisième repère numéroté, demandé par Monica."
+        },
+        {
+          "id": "IN-E23-17",
+          "debut": "00:05:51",
+          "fin": "00:06:08",
+          "type": "motion",
+          "vue": "texte",
+          "ecran": "4. Ressources et engagement",
+          "icone": "fa-users",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Quatrième repère numéroté, demandé par Monica."
+        },
+        {
+          "id": "IN-E23-18",
+          "debut": "00:06:09",
+          "fin": "00:06:24",
+          "type": "motion",
+          "vue": "texte",
+          "ecran": "5. Gouvernance",
+          "icone": "fa-diagram-project",
+          "caption": "qui décide quoi quand ça coince ?",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Cinquième repère numéroté, demandé par Monica."
+        },
+        {
+          "id": "IN-E23-19",
+          "debut": "00:06:25",
+          "fin": "00:06:40",
+          "type": "motion",
+          "vue": "grille",
+          "titre": "6. Bénéfices",
+          "ecran": "Connaissances antérieures · Résultats communs",
+          "cellules": [
+            {
+              "texte": "Connaissances antérieures",
+              "icone": "fa-book"
+            },
+            {
+              "texte": "Résultats communs",
+              "icone": "fa-flask"
+            }
+          ],
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Sixième repère : ce que Rémi distingue, avec le chiffre demandé."
+        },
+        {
+          "id": "IN-E23-20",
+          "debut": "00:06:49",
+          "fin": "00:07:00",
+          "type": "motion",
+          "vue": "grille",
+          "titre": "Lignes rouges",
+          "ecran": "Publier · Responsabilité juridique",
+          "cellules": [
+            {
+              "texte": "Publier",
+              "icone": "fa-newspaper"
+            },
+            {
+              "texte": "Responsabilité juridique",
+              "icone": "fa-scale-balanced"
+            }
+          ],
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Monica : lignes rouges, publier, responsabilité de l’établissement."
+        },
+        {
+          "id": "IN-E23-21",
+          "debut": "00:07:08",
+          "fin": "00:07:16",
+          "type": "motion",
+          "vue": "texte",
+          "ecran": "Collaboration publique-privée",
+          "icone": "fa-handshake",
+          "caption": "source d’innovation",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Monica : surtout, la collaboration publique-privée."
+        },
+        {
+          "id": "IN-E23-22",
+          "debut": "00:07:16",
+          "fin": "00:07:27",
+          "type": "motion",
+          "vue": "frise",
+          "ecran": "Connaissance → Usage → Marché",
+          "schema": "Connaissance → Usage → Marché",
+          "icones": [
+            "fa-lightbulb",
+            "fa-gear",
+            "fa-store"
+          ],
+          "developpe": "",
+          "pourquoi": "Monica : nouvelles connaissances, usage, applicabilité, trouver un marché — schéma."
+        },
+        {
+          "id": "IN-E23-23",
+          "debut": "00:07:28",
+          "fin": "00:07:40",
+          "type": "schema",
+          "ecran": "De l’idée à l’adoption",
+          "schema": "",
+          "image": "schemas/f2-cycle-complet.png",
+          "developpe": "",
+          "pourquoi": "Monica : schéma du fascicule, de l’idée à l’adoption / impact."
         }
-      ],
-      "source": "ia"
+      ]
     },
     "E24": {
       "code": "E24",
-      "nb": 8,
+      "nb": 15,
+      "source": "monica",
       "items": [
         {
+          "id": "IN-E24-01",
           "debut": "00:00:30",
-          "fin": "00:00:33",
-          "type": "concept",
-          "ecran": "Sécuriser",
-          "schema": "",
-          "developpe": "",
-          "pourquoi": "Objectif E24."
-        },
-        {
-          "debut": "00:00:33",
           "fin": "00:00:41",
-          "type": "concept",
-          "ecran": "Confidentialité d’abord",
+          "type": "motion",
+          "vue": "texte",
+          "ecran": "Sécuriser les nouvelles collaborations",
+          "icone": "fa-shield-halved",
+          "caption": "avant toute discussion, penser à la confidentialité",
           "schema": "",
           "developpe": "",
-          "pourquoi": "Réflexe avant tout tiers."
+          "pourquoi": "Monica : sécuriser les nouvelles collaborations, avant toute discussion."
         },
         {
+          "id": "IN-E24-02",
           "debut": "00:00:41",
           "fin": "00:00:49",
-          "type": "concept",
+          "type": "motion",
+          "vue": "texte",
           "ecran": "Accord de confidentialité",
+          "icone": "fa-lock",
           "schema": "",
           "developpe": "",
-          "pourquoi": "Outil, pas le discours."
+          "pourquoi": "Monica : pour cela, il faudra un accord de confidentialité."
         },
         {
+          "id": "IN-E24-03",
+          "debut": "00:00:49",
+          "fin": "00:01:08",
+          "type": "motion",
+          "vue": "texte",
+          "ecran": "Sécuriser vos échanges",
+          "icone": "fa-shield-halved",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Monica, calée sur le risque de vol de savoir-faire."
+        },
+        {
+          "id": "IN-E24-04",
           "debut": "00:01:08",
-          "fin": "00:01:16",
-          "type": "concept",
-          "ecran": "Connaissances propres",
+          "fin": "00:01:33",
+          "type": "motion",
+          "vue": "texte",
+          "ecran": "État des lieux des connaissances propres",
+          "icone": "fa-list",
+          "caption": "de chaque partie",
           "schema": "",
           "developpe": "",
-          "pourquoi": "État des lieux avant collab."
+          "pourquoi": "Monica : établir un état des lieux des connaissances propres."
         },
         {
-          "debut": "00:01:51",
+          "id": "IN-E24-05",
+          "debut": "00:01:33",
+          "fin": "00:01:46",
+          "type": "motion",
+          "vue": "texte",
+          "ecran": "Éviter l’assimilation aux résultats du projet",
+          "icone": "fa-triangle-exclamation",
+          "caption": "les connaissances antérieures restent distinctes",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Monica : éviter que les connaissances antérieures soient assimilées aux résultats."
+        },
+        {
+          "id": "IN-E24-06",
+          "debut": "00:01:46",
           "fin": "00:02:01",
-          "type": "schema",
-          "ecran": "Preuves et titres",
-          "schema": "Brevet · Logiciel · Soleau",
+          "type": "motion",
+          "vue": "grille",
+          "titre": "Formaliser les connaissances propres",
+          "colonnes": 3,
+          "ecran": "Savoir-faire · Brevet · Logiciel",
+          "cellules": [
+            {
+              "texte": "Savoir-faire",
+              "icone": "fa-envelope",
+              "detail": "Enveloppe Soleau"
+            },
+            {
+              "texte": "Inventions",
+              "icone": "fa-file-lines",
+              "detail": "Brevet"
+            },
+            {
+              "texte": "Logiciels",
+              "icone": "fa-code",
+              "detail": "APP"
+            }
+          ],
+          "schema": "",
           "developpe": "",
-          "pourquoi": "Enveloppe Soleau, brevets, logiciels : extrait du tableau F1 p. 9-10.",
-          "image": "schemas/f1-pi-branches.png"
+          "pourquoi": "Monica : formaliser les connaissances propres ; logiciels auprès de l’APP."
         },
         {
-          "debut": "00:02:19",
-          "fin": "00:02:30",
-          "type": "concept",
+          "id": "IN-E24-07",
+          "debut": "00:02:01",
+          "fin": "00:02:19",
+          "type": "motion",
+          "vue": "texte",
           "ecran": "Contrat de collaboration",
+          "icone": "fa-file-contract",
+          "caption": "entre la structure de valorisation et le partenaire",
           "schema": "",
           "developpe": "",
-          "pourquoi": "Cadre PI, usage, publication."
+          "pourquoi": "Monica : établir un contrat de collaboration entre la structure et le partenaire."
         },
         {
+          "id": "IN-E24-08",
           "debut": "00:02:30",
-          "fin": "00:02:33",
-          "type": "acronyme",
-          "ecran": "PI",
-          "schema": "",
-          "developpe": "Propriété intellectuelle",
-          "pourquoi": "Ici le terme est défini pour le grain juridique."
-        },
-        {
-          "debut": "00:04:44",
-          "fin": "00:04:49",
-          "type": "concept",
-          "ecran": "Porte de sortie",
+          "fin": "00:02:51",
+          "type": "motion",
+          "vue": "texte",
+          "ecran": "C’est quoi, la propriété intellectuelle ?",
+          "icone": "fa-circle-question",
+          "caption": "inventions · logiciels · savoir-faire",
           "schema": "",
           "developpe": "",
-          "pourquoi": "Clause de résiliation, équilibre."
+          "pourquoi": "Question de Monica, calée sur la définition d’Eneli."
+        },
+        {
+          "id": "IN-E24-09",
+          "debut": "00:03:11",
+          "fin": "00:03:24",
+          "type": "motion",
+          "vue": "texte",
+          "ecran": "Cohérente avec les missions publiques",
+          "icone": "fa-building",
+          "caption": "enseignement et recherche",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Monica : pour que la collaboration reste cohérente — missions des établissements publics."
+        },
+        {
+          "id": "IN-E24-10",
+          "debut": "00:03:24",
+          "fin": "00:03:34",
+          "type": "motion",
+          "vue": "texte",
+          "ecran": "Domaine d’exploitation",
+          "icone": "fa-bullseye",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Monica : description du domaine d’exploitation, si besoin."
+        },
+        {
+          "id": "IN-E24-11",
+          "debut": "00:03:34",
+          "fin": "00:03:49",
+          "type": "motion",
+          "vue": "texte",
+          "ecran": "Modalités financières de l’exploitation",
+          "icone": "fa-coins",
+          "caption": "dans un contrat ultérieur",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Monica, après la note de retake sur « contrat »."
+        },
+        {
+          "id": "IN-E24-12",
+          "debut": "00:03:55",
+          "fin": "00:04:04",
+          "type": "motion",
+          "vue": "texte",
+          "ecran": "Équilibre entre intérêts publics et privés",
+          "icone": "fa-scale-balanced",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Monica : recherche d’un équilibre entre les intérêts publics et privés."
+        },
+        {
+          "id": "IN-E24-13",
+          "debut": "00:04:04",
+          "fin": "00:04:21",
+          "type": "motion",
+          "vue": "texte",
+          "ecran": "Validation commune des projets de publication",
+          "icone": "fa-newspaper",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Monica, calée sur la validation préalable des publications."
+        },
+        {
+          "id": "IN-E24-14",
+          "debut": "00:04:21",
+          "fin": "00:04:33",
+          "type": "motion",
+          "vue": "texte",
+          "ecran": "Savoir-faire gardé confidentiel",
+          "icone": "fa-lock",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Monica : définir le savoir-faire pour qu’il reste confidentiel."
+        },
+        {
+          "id": "IN-E24-15",
+          "debut": "00:04:58",
+          "fin": "00:05:26",
+          "type": "motion",
+          "vue": "texte",
+          "ecran": "Sécuriser toutes vos collaborations",
+          "icone": "fa-building",
+          "caption": "Le bon réflexe · contacter sa structure de valorisation",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Monica : mettre en haut « le bon réflexe », puis sécuriser toutes vos collaborations."
         }
-      ],
-      "source": "ia"
+      ]
     },
     "E25": {
       "code": "E25",

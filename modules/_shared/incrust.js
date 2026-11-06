@@ -4,7 +4,7 @@
  * Désactivée par défaut, un bouton par vidéo.
  */
 (function (global) {
-    var DATA_URL = new URL("incrustations.json?v=38", document.currentScript.src).href;
+    var DATA_URL = new URL("incrustations.json?v=44", document.currentScript.src).href;
     var SCRIPT_SRC = document.currentScript.src;
     var cards = [];
     var bound = false;
@@ -415,6 +415,8 @@
         var now = card.querySelector(".incrust-now");
         if (!layer) return;
         var panel = layer.querySelector(".incrust-panel");
+        if (item === card._incrustShown) return;
+        card._incrustShown = item || null;
         if (!item) {
             var emptyName = layerName(card._incrustVideo);
             layer.className = "incrust-layer is-empty";
@@ -425,7 +427,11 @@
         }
         var motion = item.type === "motion" || !!item.vue;
         var hasFigure = !!item.image && !motion;
-        layer.className = "incrust-layer" + (hasFigure ? " has-figure" : "") + (motion ? " is-motion" : "");
+        layer.className = "incrust-layer is-fresh" + (hasFigure ? " has-figure" : "") + (motion ? " is-motion" : "");
+        clearTimeout(card._incrustFreshTimer);
+        card._incrustFreshTimer = setTimeout(function () {
+            layer.classList.remove("is-fresh");
+        }, 1400);
         var kind = hasFigure ? "Schéma du fascicule" : (motion ? (item.id || "Incrustation") : (item.type === "schema" ? "Petit schéma" : "Mot-clé"));
         var body;
         if (motion) {
@@ -459,13 +465,15 @@
             return;
         }
         card._incrustPinned = item;
+        card._incrustSeeking = true;
+        card._incrustSeekTarget = toSec(item.debut) + 0.15;
         if (!card.classList.contains("is-incrust-on")) {
             card.classList.add("is-incrust-on");
             var toggle = card.querySelector(".incrust-toggle");
             if (toggle) toggle.setAttribute("aria-pressed", "true");
         }
-        render(card, item, toSec(item.debut));
-        seekTo(card.querySelector("iframe"), toSec(item.debut) + 0.15);
+        render(card, item, card._incrustSeekTarget);
+        seekTo(card.querySelector("iframe"), card._incrustSeekTarget);
     }
 
     function buildJumps(card, video) {
@@ -501,6 +509,7 @@
             btn.setAttribute("aria-pressed", on ? "true" : "false");
             if (!on) {
                 card._incrustPinned = null;
+                card._incrustShown = null;
                 highlightJump(card, null);
                 return;
             }
@@ -529,13 +538,27 @@
         card._incrustVideo = video;
         card._incrustTime = 0;
         card._incrustPinned = null;
+        card._incrustShown = null;
         card.classList.toggle("is-incrust-ia", !isMonica(video));
         render(card, null, 0);
         cards.push(card);
     }
 
     function applyTime(card, seconds) {
-        if (seconds == null || !isFinite(seconds)) return;
+        if (seconds == null || !isFinite(seconds) || seconds < 0) return;
+        var prev = card._incrustTime || 0;
+        if (card._incrustSeeking) {
+            if (Math.abs(seconds - (card._incrustSeekTarget || seconds)) < 1.4) {
+                card._incrustSeeking = false;
+            }
+        } else if (seconds + 0.4 < prev && prev - seconds < 2.8) {
+            return;
+        } else if (seconds < 0.35 && prev > 2) {
+            card._incrustZeroHits = (card._incrustZeroHits || 0) + 1;
+            if (card._incrustZeroHits < 3) return;
+        } else {
+            card._incrustZeroHits = 0;
+        }
         card._incrustTime = seconds;
         var items = card._incrustItems || [];
         var live = currentItem(items, seconds);
@@ -585,7 +608,21 @@
         }
         if (Array.isArray(data)) return toNumber(data[1]);
         if (!data || typeof data !== "object") return null;
-        return deepFind(data, ["currentTime", "current_time", "time", "position", "current"], 0);
+        var direct = toNumber(data.currentTime);
+        if (direct != null) return direct;
+        direct = toNumber(data.current_time);
+        if (direct != null) return direct;
+        if (data.info && typeof data.info === "object") {
+            direct = toNumber(data.info.currentTime);
+            if (direct != null) return direct;
+            direct = toNumber(data.info.current_time);
+            if (direct != null) return direct;
+        }
+        if (data.time != null && typeof data.time !== "object") {
+            direct = toNumber(data.time);
+            if (direct != null) return direct;
+        }
+        return deepFind(data, ["currentTime", "current_time"], 0);
     }
 
     function bindPlayer() {

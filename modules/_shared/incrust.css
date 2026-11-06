@@ -179,6 +179,10 @@ body.dark-mode .incrust-jump { border-color: rgba(255,255,255,0.18); }
 .incrust-layer.is-motion .incrust-panel * {
     transition: none;
 }
+.incrust-layer:not(.is-fresh) .incrust-motion,
+.incrust-layer:not(.is-fresh) .incrust-motion * {
+    animation: none !important;
+}
 .incrust-layer.is-motion {
     padding: 0 3% 10%;
 }
