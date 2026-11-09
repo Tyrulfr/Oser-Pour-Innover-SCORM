@@ -98,7 +98,7 @@ window.EVAL_BANK = (function () {
                 when: "after-t",
                 type: "steps",
                 title: "De la techno au problème",
-                lead: "E2 (passer d’une techno à un problème) est à venir. E3 pose déjà l’ordre : le bon problème avant la bonne solution.",
+                lead: "Joël inverse le geste : partir du problème à résoudre, pas d’une techno à caser. E3 enchaîne : le bon problème avant la bonne solution.",
                 steps: [
                     { title: "1. Techno", text: "Ce que le laboratoire sait faire." },
                     { title: "2. Qui / où", text: "Utilisateur, client, situation d’usage." },
@@ -181,7 +181,7 @@ window.EVAL_BANK = (function () {
                 when: "after-t",
                 type: "steps",
                 title: "Niveaux de preuve",
-                lead: "E4 (POC, prototype, MVP, TRL) est à venir. E5 enseigne déjà à dérisquer par étapes. Le détail TRL est dans le module Ressources.",
+                lead: "Fatoumata ordonne les niveaux de preuve : POC, prototype, MVP, TRL. E5 enchaîne : dérisquer par étapes. Le détail TRL est aussi dans le module Ressources.",
                 steps: [
                     { title: "Résultat", text: "Ce que le labo a montré." },
                     { title: "POC", text: "Preuve que ça peut marcher." },
@@ -189,7 +189,7 @@ window.EVAL_BANK = (function () {
                     { title: "MVP", text: "Produit minimal utilisable par un client." }
                 ]
             },
-            mr: [mr("mr-grain19.html", "2.9 — Les échelles de maturité", "Capsule du Module Ressources, incluse ici en consultation (sans quiz). E4 n’est pas encore là : situez votre niveau de preuve (TRL), puis revenez.")],
+            mr: [mr("mr-grain19.html", "2.9 — Les échelles de maturité", "Capsule du Module Ressources, incluse ici en consultation (sans quiz). Situez votre niveau de preuve (TRL), puis revenez au grain.")],
             quiz: [
                 {
                     objectif: "Interpréter un pivot",
@@ -554,7 +554,7 @@ window.EVAL_BANK = (function () {
                 when: "after-t",
                 type: "steps",
                 title: "Frise entendue dans la chorale",
-                lead: "E15 (chaîne des financements) est à venir. E19 enseigne déjà dilutif / non-dilutif et le dérisquage par l’argent.",
+                lead: "Fatoumata déplie la chaîne des financements. E19 enchaîne : dilutif / non-dilutif et le dérisquage par l’argent.",
                 steps: [
                     { title: "Anté-création", text: "Valorisation univ. / CNRS, POC'in Lab, prématuration." },
                     { title: "Marches", text: "i-Lab, recrutement, preuves plus solides." },

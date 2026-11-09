@@ -1,76 +1,330 @@
 {
-  "date": "2026-10-26",
+  "date": "2026-11-09",
   "videos": {
     "E1": {
       "code": "E1",
-      "nb": 7,
+      "nb": 18,
+      "source": "monica",
       "items": [
         {
+          "id": "IN-E1-01",
+          "debut": "00:00:15",
+          "fin": "00:00:21",
+          "type": "motion",
+          "vue": "texte",
+          "ecran": "Pourquoi et comment oser l’innovation ?",
+          "icone": "fa-circle-question",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Monica, calée sur la question posée aux cinq chercheurs. Mots de Bernard."
+        },
+        {
+          "id": "IN-E1-02",
+          "debut": "00:00:21",
+          "fin": "00:00:26",
+          "type": "motion",
+          "vue": "texte",
+          "ecran": "Potentiel scientifique ou technologique",
+          "icone": "fa-flask",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Monica : potentiel scientifique ou technologique."
+        },
+        {
+          "id": "IN-E1-03",
+          "debut": "00:00:26",
+          "fin": "00:00:31",
+          "type": "motion",
+          "vue": "texte",
+          "ecran": "Rapprocher d’un besoin sur un marché",
+          "icone": "fa-store",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Monica : rapprocher d’un besoin sur un marché."
+        },
+        {
+          "id": "IN-E1-04",
+          "debut": "00:00:44",
+          "fin": "00:00:57",
+          "type": "motion",
+          "vue": "grille",
+          "colonnes": 5,
+          "ecran": "Thèses · Publications · Expérimentations · Savoir-faire · Brevets",
+          "cellules": [
+            {
+              "texte": "Thèses",
+              "icone": "fa-graduation-cap"
+            },
+            {
+              "texte": "Publications",
+              "icone": "fa-newspaper"
+            },
+            {
+              "texte": "Expérimentations",
+              "icone": "fa-flask"
+            },
+            {
+              "texte": "Savoir-faire",
+              "icone": "fa-gear"
+            },
+            {
+              "texte": "Brevets",
+              "icone": "fa-file-lines"
+            }
+          ],
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Monica : liste qu’il vient de faire, expérimentation, publication, etc."
+        },
+        {
+          "id": "IN-E1-05",
           "debut": "00:00:57",
           "fin": "00:01:02",
-          "type": "schema",
-          "ecran": "Invention ≠ Innovation",
-          "schema": "Invention ≠ Innovation",
+          "type": "motion",
+          "vue": "texte",
+          "ecran": "Une techno n’est pas encore une innovation",
+          "icone": "fa-lightbulb",
+          "schema": "",
           "developpe": "",
-          "pourquoi": "Objectif E1 : une techno n’est pas encore une innovation (F1 §4.2)."
+          "pourquoi": "Monica, calée sur « aussi remarquable soit-elle n’est pas encore une innovation »."
         },
         {
+          "id": "IN-E1-06",
           "debut": "00:01:02",
-          "fin": "00:01:08",
-          "type": "concept",
+          "fin": "00:01:11",
+          "type": "motion",
+          "vue": "texte",
           "ecran": "Rencontre d’un besoin",
+          "icone": "fa-users",
+          "caption": "mieux que les solutions existantes",
           "schema": "",
           "developpe": "",
-          "pourquoi": "Condition pour qu’il y ait innovation."
+          "pourquoi": "Monica : elle le devient quand elle rencontre un besoin, mieux que les solutions existantes."
         },
         {
+          "id": "IN-E1-07",
           "debut": "00:01:11",
-          "fin": "00:01:17",
-          "type": "schema",
-          "ecran": "Tech-push | Market-pull",
-          "schema": "Tech-push | Market-pull",
+          "fin": "00:01:34",
+          "type": "motion",
+          "vue": "frise",
+          "titre": "Techno-push",
+          "ecran": "Travaux → Domaine pressenti",
+          "schema": "Travaux → Domaine pressenti",
+          "icones": [
+            "fa-flask",
+            "fa-location-dot"
+          ],
+          "caption": "le problème précis reste à approfondir",
           "developpe": "",
-          "pourquoi": "Première famille d’origines : entrées du schéma de valorisation F2.",
-          "image": "schemas/f2-push-pull.png"
+          "pourquoi": "Monica : schéma, titre Techno-push. Première situation de Bernard."
         },
         {
-          "debut": "00:01:52",
-          "fin": "00:01:56",
-          "type": "concept",
-          "ecran": "Rencontre inattendue",
+          "id": "IN-E1-08",
+          "debut": "00:01:34",
+          "fin": "00:01:41",
+          "type": "motion",
+          "vue": "texte",
+          "ecran": "Les solutions existantes ne sont-elles pas satisfaisantes ?",
+          "icone": "fa-circle-question",
           "schema": "",
           "developpe": "",
-          "pourquoi": "Seconde famille (Sylvia, Jean-Jacques)."
+          "pourquoi": "Monica, mots de Bernard."
         },
         {
-          "debut": "00:02:33",
-          "fin": "00:02:40",
-          "type": "schema",
-          "ecran": "Trois ingrédients",
-          "schema": "Science · Utilité · Méthode",
+          "id": "IN-E1-09",
+          "debut": "00:01:41",
+          "fin": "00:01:45",
+          "type": "motion",
+          "vue": "texte",
+          "ecran": "Être confronté au terrain",
+          "icone": "fa-person-walking",
+          "schema": "",
           "developpe": "",
-          "pourquoi": "Ce qu’il faut retenir, pas le récit."
+          "pourquoi": "Monica : être confronté au terrain."
         },
         {
+          "id": "IN-E1-10",
+          "debut": "00:01:45",
+          "fin": "00:02:14",
+          "type": "motion",
+          "vue": "frise",
+          "titre": "Market-pull",
+          "ecran": "Besoin → Solution scientifique",
+          "schema": "Besoin → Solution scientifique",
+          "icones": [
+            "fa-users",
+            "fa-flask"
+          ],
+          "caption": "le marché n’est pas connu au départ",
+          "developpe": "",
+          "pourquoi": "Monica : titre Market-pull, besoin existe, flèche vers une solution scientifique. Mots de Bernard."
+        },
+        {
+          "id": "IN-E1-11",
+          "debut": "00:02:14",
+          "fin": "00:02:33",
+          "type": "motion",
+          "vue": "grille",
+          "colonnes": 3,
+          "ecran": "Plusieurs origines",
+          "cellules": [
+            {
+              "texte": "Expertise scientifique",
+              "icone": "fa-flask"
+            },
+            {
+              "texte": "Marché envisagé",
+              "icone": "fa-store"
+            },
+            {
+              "texte": "Problème d’un acteur",
+              "icone": "fa-comments"
+            },
+            {
+              "texte": "Observation",
+              "icone": "fa-binoculars"
+            },
+            {
+              "texte": "Rencontre",
+              "icone": "fa-handshake"
+            },
+            {
+              "texte": "Découverte inattendue",
+              "icone": "fa-lightbulb"
+            }
+          ],
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Monica : liste / schéma des origines qu’il vient de citer."
+        },
+        {
+          "id": "IN-E1-12",
+          "debut": "00:02:33",
+          "fin": "00:03:12",
+          "type": "motion",
+          "vue": "grille",
+          "colonnes": 3,
+          "ecran": "Trois ingrédients",
+          "cellules": [
+            {
+              "texte": "Potentiel scientifique",
+              "icone": "fa-flask"
+            },
+            {
+              "texte": "Potentiel d’utilité",
+              "icone": "fa-users"
+            },
+            {
+              "texte": "Démarche organisée",
+              "icone": "fa-diagram-project"
+            }
+          ],
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Monica : trois bullet points, dans cet ordre. « Demande » écarté : ce n’est pas le premier ingrédient de Bernard."
+        },
+        {
+          "id": "IN-E1-13",
           "debut": "00:03:12",
           "fin": "00:03:16",
-          "type": "concept",
-          "ecran": "Structures de valorisation",
+          "type": "motion",
+          "vue": "texte",
+          "ecran": "Soutien des structures de valorisation",
+          "icone": "fa-building",
           "schema": "",
           "developpe": "",
-          "pourquoi": "Où faire le premier pas."
+          "pourquoi": "Monica : soutien des structures de valorisation."
         },
         {
-          "debut": "00:03:35",
-          "fin": "00:03:37",
-          "type": "concept",
-          "ecran": "Passage à l’action",
+          "id": "IN-E1-14",
+          "debut": "00:03:16",
+          "fin": "00:03:35",
+          "type": "motion",
+          "vue": "liste",
+          "titre": "Ce que font les structures",
+          "ecran": "Explorer · Protéger · Mobiliser · Prématurer · Maturer",
+          "lignes": [
+            "Explorer les applications",
+            "Protéger les résultats",
+            "Mobiliser les expertises",
+            "Organiser la prématuration",
+            "Organiser la maturation"
+          ],
           "schema": "",
           "developpe": "",
-          "pourquoi": "Ce qui déclenche le passage du résultat vers la valorisation."
+          "pourquoi": "Monica : schéma explorer, protéger, mobiliser, organiser prématuration puis maturation."
+        },
+        {
+          "id": "IN-E1-15",
+          "debut": "00:03:35",
+          "fin": "00:03:51",
+          "type": "motion",
+          "vue": "texte",
+          "ecran": "Passage à l’action",
+          "icone": "fa-play",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Monica : mettre le texte « passage à l’action » là où Bernard le dit."
+        },
+        {
+          "id": "IN-E1-16",
+          "debut": "00:03:51",
+          "fin": "00:04:10",
+          "type": "motion",
+          "vue": "liste",
+          "titre": "Motivations personnelles",
+          "ecran": "Utile · Impact · Apprendre · Réalisations · Fonds publics",
+          "lignes": [
+            "Se sentir utile",
+            "Impact sociétal",
+            "Apprendre",
+            "Transformer les résultats",
+            "Ne pas laisser l’argent public sur l’étagère"
+          ],
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Monica : liste de Bernard, terminer sur l’utilité de l’innovation financée par les fonds publics."
+        },
+        {
+          "id": "IN-E1-17",
+          "debut": "00:04:10",
+          "fin": "00:04:41",
+          "type": "motion",
+          "vue": "grille",
+          "colonnes": 3,
+          "ecran": "Recherche · Innovation · Impact",
+          "cellules": [
+            {
+              "texte": "Recherche",
+              "icone": "fa-flask"
+            },
+            {
+              "texte": "Innovation",
+              "icone": "fa-rocket"
+            },
+            {
+              "texte": "Impact",
+              "icone": "fa-users"
+            }
+          ],
+          "caption": "Cercle vertueux",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Monica : interaction innovation / recherche, cercle vertueux. Trois axes : mots de Bernard (impact, pas formation)."
+        },
+        {
+          "id": "IN-E1-18",
+          "debut": "00:04:41",
+          "fin": "00:05:00",
+          "type": "motion",
+          "vue": "texte",
+          "ecran": "Pistes et motivations personnelles",
+          "icone": "fa-circle-question",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Monica : rechercher les pistes et les motivations personnelles. Calé sur « Et vous ? »."
         }
-      ],
-      "source": "ia"
+      ]
     },
     "E3": {
       "code": "E3",
@@ -1697,74 +1951,415 @@
     },
     "E12": {
       "code": "E12",
-      "nb": 7,
+      "nb": 28,
+      "source": "monica",
       "items": [
         {
+          "id": "IN-E12-01",
+          "debut": "00:00:08",
+          "fin": "00:00:16",
+          "type": "motion",
+          "vue": "texte",
+          "ecran": "Plus de 50 projets par an",
+          "icone": "fa-seedling",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Monica : plus de 50 projets par an, calé sur « plus d’une cinquantaine de projets par an »."
+        },
+        {
+          "id": "IN-E12-02",
+          "debut": "00:00:25",
+          "fin": "00:00:33",
+          "type": "motion",
+          "vue": "grille",
+          "colonnes": 4,
+          "ecran": "Vivant · Santé · Ingénieur · Numérique",
+          "cellules": [
+            {
+              "texte": "Vivant",
+              "icone": "fa-leaf"
+            },
+            {
+              "texte": "Santé",
+              "icone": "fa-heart-pulse"
+            },
+            {
+              "texte": "Ingénieur",
+              "icone": "fa-gear"
+            },
+            {
+              "texte": "Numérique",
+              "icone": "fa-code"
+            }
+          ],
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Monica : mettre les domaines. Calé sur le dit de Stéphanie (vivant, santé, ingénieur, numérique), pas SHS."
+        },
+        {
+          "id": "IN-E12-03",
+          "debut": "00:00:40",
+          "fin": "00:00:52",
+          "type": "motion",
+          "vue": "grille",
+          "colonnes": 3,
+          "ecran": "Marché · Techno · PI",
+          "cellules": [
+            {
+              "texte": "Expertise marché",
+              "icone": "fa-store"
+            },
+            {
+              "texte": "Vision technologique",
+              "icone": "fa-flask"
+            },
+            {
+              "texte": "Stratégie de PI",
+              "icone": "fa-file-lines"
+            }
+          ],
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Monica : les trois domaines d’accompagnement qu’elle vient de citer."
+        },
+        {
+          "id": "IN-E12-04",
           "debut": "00:01:07",
           "fin": "00:01:14",
-          "type": "schema",
-          "ecran": "Invention ≠ Innovation",
-          "schema": "Invention ≠ Innovation",
+          "type": "motion",
+          "vue": "texte",
+          "ecran": "Une invention doit rencontrer un enjeu commercial",
+          "icone": "fa-store",
+          "schema": "",
           "developpe": "",
-          "pourquoi": "Toutes les inventions n’aboutissent pas : il faut un enjeu commercial / un besoin de marché (F1 §4.2)."
+          "pourquoi": "Monica, calée sur « toutes les inventions n’aboutissent pas »."
         },
         {
+          "id": "IN-E12-05",
+          "debut": "00:01:14",
+          "fin": "00:01:21",
+          "type": "motion",
+          "vue": "grille",
+          "colonnes": 2,
+          "ecran": "Création de valeur · Besoin marché",
+          "cellules": [
+            {
+              "texte": "Création de valeur",
+              "icone": "fa-gem"
+            },
+            {
+              "texte": "Besoin marché",
+              "icone": "fa-users"
+            }
+          ],
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Monica : création de valeur, besoin marché."
+        },
+        {
+          "id": "IN-E12-06",
+          "debut": "00:01:21",
+          "fin": "00:01:42",
+          "type": "motion",
+          "vue": "frise",
+          "ecran": "Invention → Innovation",
+          "schema": "Invention → Innovation",
+          "icones": [
+            "fa-lightbulb",
+            "fa-rocket"
+          ],
+          "caption": "comme les schémas du fascicule",
+          "developpe": "",
+          "pourquoi": "Monica : schéma invention / innovation, cercles du fascicule."
+        },
+        {
+          "id": "IN-E12-07",
           "debut": "00:01:42",
           "fin": "00:01:50",
-          "type": "concept",
+          "type": "motion",
+          "vue": "texte",
           "ecran": "Preuve de concept",
+          "icone": "fa-flask",
           "schema": "",
           "developpe": "",
-          "pourquoi": "Premiers résultats prometteurs : valider une hypothèse via la prématuration."
+          "pourquoi": "Monica : preuve de concept, calée sur la prématuration."
         },
         {
+          "id": "IN-E12-08",
           "debut": "00:01:50",
-          "fin": "00:02:01",
-          "type": "acronyme",
-          "ecran": "POC'in Lab",
+          "fin": "00:01:59",
+          "type": "motion",
+          "vue": "texte",
+          "ecran": "100 000 € · 1 an",
+          "icone": "fa-coins",
           "schema": "",
-          "developpe": "Preuve de concept in lab — 100 000 € / 1 an",
-          "pourquoi": "Dit « Poking Labs » à l’oral ; programme de prématuration Université Paris-Saclay."
+          "developpe": "",
+          "pourquoi": "Monica : financement 100 000 euros pendant un an."
         },
         {
+          "id": "IN-E12-09",
           "debut": "00:02:16",
           "fin": "00:02:26",
-          "type": "concept",
-          "ecran": "Étude de marché",
+          "type": "motion",
+          "vue": "texte",
+          "ecran": "Positionnement technico-économique",
+          "icone": "fa-chart-line",
           "schema": "",
           "developpe": "",
-          "pourquoi": "Positionnement technico-économique : valider le ou les marchés cibles."
+          "pourquoi": "Monica : études de positionnement technico-économique."
         },
         {
+          "id": "IN-E12-10",
+          "debut": "00:02:37",
+          "fin": "00:02:47",
+          "type": "motion",
+          "vue": "texte",
+          "ecran": "Étude de marché",
+          "icone": "fa-magnifying-glass",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Monica : études de marché, pour chaque hypothèse."
+        },
+        {
+          "id": "IN-E12-11",
           "debut": "00:03:00",
           "fin": "00:03:12",
-          "type": "schema",
-          "ecran": "Chaîne de valeur",
-          "schema": "Protection → Maturation → Transfert",
-          "developpe": "",
-          "image": "schemas/f2-chaine-valo.png",
-          "pourquoi": "Segments de marché et chaîne de valeur : extraire la proposition de valeur (F2)."
-        },
-        {
-          "debut": "00:03:27",
-          "fin": "00:03:37",
-          "type": "concept",
-          "ecran": "Proposition de valeur",
+          "type": "motion",
+          "vue": "texte",
+          "ecran": "Proposition de valeur du projet",
+          "icone": "fa-gem",
           "schema": "",
           "developpe": "",
-          "pourquoi": "Ce pour quoi un client est prêt à payer : le problème que la techno retire."
+          "pourquoi": "Monica : proposition de valeur du projet, calée sur la chaîne de valeur."
         },
         {
-          "debut": "00:08:19",
-          "fin": "00:08:29",
-          "type": "concept",
+          "id": "IN-E12-12",
+          "debut": "00:03:37",
+          "fin": "00:03:45",
+          "type": "motion",
+          "vue": "texte",
+          "ecran": "Disposition à payer",
+          "icone": "fa-coins",
+          "caption": "DAP",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Monica : DAP, disposition à payer."
+        },
+        {
+          "id": "IN-E12-13",
+          "debut": "00:04:01",
+          "fin": "00:04:09",
+          "type": "motion",
+          "vue": "texte",
+          "ecran": "Degré de maturité du projet",
+          "icone": "fa-stairs",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Monica : degré de maturité de votre projet."
+        },
+        {
+          "id": "IN-E12-14",
+          "debut": "00:04:31",
+          "fin": "00:04:48",
+          "type": "motion",
+          "vue": "texte",
+          "ecran": "Première étape : documentaire",
+          "icone": "fa-book",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Monica : première étape, documentaire."
+        },
+        {
+          "id": "IN-E12-15",
+          "debut": "00:04:48",
+          "fin": "00:04:57",
+          "type": "motion",
+          "vue": "texte",
+          "ecran": "Bases de données brevets",
+          "icone": "fa-file-lines",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Monica dit « Revêt » : bases de données brevets."
+        },
+        {
+          "id": "IN-E12-16",
+          "debut": "00:04:57",
+          "fin": "00:05:20",
+          "type": "motion",
+          "vue": "texte",
+          "ecran": "Deuxième phase : experts industriels",
+          "icone": "fa-comments",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Monica : deuxième phase, interaction avec des experts industriels."
+        },
+        {
+          "id": "IN-E12-17",
+          "debut": "00:05:20",
+          "fin": "00:05:28",
+          "type": "motion",
+          "vue": "texte",
+          "ecran": "Réceptivité de la technologie",
+          "icone": "fa-comments",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Monica : réceptivité de votre technologie."
+        },
+        {
+          "id": "IN-E12-18",
+          "debut": "00:05:28",
+          "fin": "00:05:50",
+          "type": "motion",
+          "vue": "texte",
+          "ecran": "Montée en échelle",
+          "icone": "fa-stairs",
+          "caption": "TRL",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Monica : montée en échelle TRL."
+        },
+        {
+          "id": "IN-E12-19",
+          "debut": "00:05:53",
+          "fin": "00:06:07",
+          "type": "motion",
+          "vue": "texte",
+          "ecran": "Preuve de concept",
+          "icone": "fa-flask",
+          "caption": "POC — Proof of concept",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Monica : preuve de concept, P-O-C, proof of concept."
+        },
+        {
+          "id": "IN-E12-20",
+          "debut": "00:06:07",
+          "fin": "00:06:15",
+          "type": "motion",
+          "vue": "texte",
+          "ecran": "Stratégie de propriété intellectuelle",
+          "icone": "fa-shield-halved",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Monica : stratégie de PI en parallèle."
+        },
+        {
+          "id": "IN-E12-21",
+          "debut": "00:06:30",
+          "fin": "00:06:41",
+          "type": "motion",
+          "vue": "texte",
+          "ecran": "Sélection avec un pitch",
+          "icone": "fa-bullhorn",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Monica : processus de sélection avec un pitch."
+        },
+        {
+          "id": "IN-E12-22",
+          "debut": "00:06:41",
+          "fin": "00:06:54",
+          "type": "motion",
+          "vue": "grille",
+          "colonnes": 4,
+          "ecran": "Innovant · Valeur · PI · Équipe",
+          "cellules": [
+            {
+              "texte": "Caractère innovant",
+              "icone": "fa-lightbulb"
+            },
+            {
+              "texte": "Valeur marché",
+              "icone": "fa-gem"
+            },
+            {
+              "texte": "PI robuste",
+              "icone": "fa-shield-halved"
+            },
+            {
+              "texte": "Motivation de l’équipe",
+              "icone": "fa-users"
+            }
+          ],
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Monica : les quatre notions, y compris la motivation de l’équipe, en schéma."
+        },
+        {
+          "id": "IN-E12-23",
+          "debut": "00:06:54",
+          "fin": "00:06:59",
+          "type": "motion",
+          "vue": "texte",
+          "ecran": "55 % des projets retenus",
+          "icone": "fa-chart-line",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Monica : 55 % des projets retenus."
+        },
+        {
+          "id": "IN-E12-24",
+          "debut": "00:07:02",
+          "fin": "00:07:11",
+          "type": "motion",
+          "vue": "texte",
+          "ecran": "Dossier d’investissement",
+          "icone": "fa-file-signature",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Monica : permettre de constituer un dossier."
+        },
+        {
+          "id": "IN-E12-25",
+          "debut": "00:07:11",
+          "fin": "00:07:20",
+          "type": "motion",
+          "vue": "texte",
+          "ecran": "Comité d’investissement",
+          "icone": "fa-users",
+          "caption": "80 % retenus",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Monica : comité d’investissement, 80 % des projets retenus."
+        },
+        {
+          "id": "IN-E12-26",
+          "debut": "00:07:36",
+          "fin": "00:07:54",
+          "type": "motion",
+          "vue": "texte",
           "ecran": "Transfert de technologie",
+          "icone": "fa-share-nodes",
           "schema": "",
           "developpe": "",
-          "pourquoi": "À l’issue de la maturation : un tiers privé poursuit l’exploitation vers le marché."
+          "pourquoi": "Monica : transfert de technologie, icône du fascicule."
+        },
+        {
+          "id": "IN-E12-27",
+          "debut": "00:07:54",
+          "fin": "00:08:09",
+          "type": "motion",
+          "vue": "texte",
+          "ecran": "500 000 € en maturation",
+          "icone": "fa-coins",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Monica : 500 000 euros pour les projets en maturation."
+        },
+        {
+          "id": "IN-E12-28",
+          "debut": "00:08:41",
+          "fin": "00:08:55",
+          "type": "motion",
+          "vue": "texte",
+          "ecran": "Bénéficier à la société",
+          "icone": "fa-users",
+          "caption": "répondre aux enjeux de notre époque",
+          "schema": "",
+          "developpe": "",
+          "pourquoi": "Monica, calée sur la phrase de conclusion."
         }
-      ],
-      "source": "ia"
+      ]
     },
     "E13": {
       "code": "E13",

@@ -520,7 +520,7 @@ def main() -> None:
             "# Incrustations — stills Monica",
             "",
             "PNG **1920×1080**, fond transparent, **sans cadre**. Dossier de conception : **hors paquets SCORM**.",
-            "Uniquement les incrustations **Monica** (E3, E5–E11, E13, E14, E16–E24).",
+            "Uniquement les incrustations **Monica** (E1, E3, E5–E12, E13, E14, E16–E24).",
             "",
             "- Open Sans ExtraBold / Bold / SemiBold (`charte/fonts/`)",
             "- Texte marine `#1D3258`, flèches orange `#F0821A`",

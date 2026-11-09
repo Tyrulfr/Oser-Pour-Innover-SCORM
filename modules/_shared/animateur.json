@@ -13,11 +13,11 @@
     "T2": {
       "code": "T2",
       "intro": "Au grain précédent, Bernard a nommé les origines d’une innovation.\nIci, les mêmes voix racontent autre chose : le moment où la recherche ne suffit plus, où il faut un problème, un usage, une mise à l’épreuve hors du banc.\nÉcoutez cet écart — entre un résultat scientifique et ce qui pourra créer de la valeur.",
-      "outro": "Vous venez de l’entendre : invention n’est pas innovation.\nAvant de chercher la solution, il faut poser le bon problème — et le valider, pas seulement l’identifier.\nC’est le fil que Grégoire va tenir, avec le terrain, le tech-push et le market-pull."
+      "outro": "Vous venez de l’entendre : invention n’est pas innovation.\nJoël, juste après, inverse le geste : partir du problème à résoudre, pas d’une techno à caser.\nGrégoire reprend ensuite pour poser et valider le bon problème."
     },
     "E2": {
       "code": "E2",
-      "intro": "Les témoignages viennent de le dire à leur manière : on ne part pas d’une techno pour lui coller un besoin.\nL’expert va faire le geste inverse : partir du problème à résoudre.\nC’est le premier outil du parcours : ne pas confondre une solution disponible et un besoin réel.",
+      "intro": "Les témoignages viennent de le dire à leur manière : on ne part pas d’une techno pour lui coller un besoin.\nJoël fait le geste inverse : partir du problème à résoudre.\nC’est le premier outil du parcours : ne pas confondre une solution disponible et un besoin réel.",
       "outro": "Identifier un problème n’est pas encore le valider. Le terrain tranche.\nGrégoire, ensuite, précise cette distinction — et ce que devient une proposition de valeur quand on l’éprouve hors du laboratoire."
     },
     "E3": {
@@ -32,7 +32,7 @@
     },
     "E4": {
       "code": "E4",
-      "intro": "Les chercheuses et chercheurs viennent de parler de preuve, chacun avec ses mots.\nL’expert va les ordonner : POC, prototype, MVP, et l’échelle TRL.\nCe n’est pas du jargon pour le jargon : chaque niveau autorise une conversation différente avec un partenaire ou un financeur.",
+      "intro": "Les chercheuses et chercheurs viennent de parler de preuve, chacun avec ses mots.\nFatoumata va les ordonner : POC, prototype, MVP, et l’échelle TRL.\nCe n’est pas du jargon pour le jargon : chaque niveau autorise une conversation différente avec un partenaire ou un financeur.",
       "outro": "Vous savez maintenant que la maturité se dit, et qu’elle se situe.\nVirginia, ensuite, déroule le dérisquage : ce n’est pas « trouver de l’argent », c’est lever des risques dans l’ordre — prématuration, puis maturation."
     },
     "E5": {
@@ -108,7 +108,7 @@
     "T8": {
       "code": "T8",
       "intro": "Vous avez l’écosystème. Reste le temps de l’argent, et le moment de créer.\nLes témoignages parlent d’aides avant la création, de concours, d’investisseurs. Écoutez surtout l’avertissement : certaines enveloppes sont anté-création. Une fois la société née, on n’y est plus éligible.",
-      "outro": "La chorale vient de tracer une frise. Deux experts la déplient.\nD’abord la chaîne des financements (Fatoumata, à venir). Puis Arielle : financer la réduction des risques — dilutif, non-dilutif, l’ordre autant que le montant."
+      "outro": "La chorale vient de tracer une frise. Deux experts la déplient.\nD’abord Fatoumata : la chaîne des financements. Puis Arielle : financer la réduction des risques — dilutif, non-dilutif, l’ordre autant que le montant."
     },
     "E15": {
       "code": "E15",
@@ -118,7 +118,12 @@
     "E16": {
       "code": "E16",
       "intro": "Antoine a cadré le collectif. Arielle change de destinataire.\nLe même résultat ne se raconte pas de la même façon à un utilisateur, un décideur, un partenaire ou un investisseur.\nÉcoutez ce qu’il faut rendre parlant : la valeur, pas seulement la preuve.",
-      "outro": "La preuve reste au laboratoire. La valeur se dit à quelqu’un.\nLe module 5 ouvre sur les collaborations : comment accompagner et sécuriser un partenariat. Le métier, ensuite."
+      "outro": "La preuve reste au laboratoire. La valeur se dit à quelqu’un.\nSoizic, ensuite, change encore de langage : la loi PACTE — participer à une société qui valorise ses travaux, sans quitter l’établissement."
+    },
+    "E15bis": {
+      "code": "E15bis",
+      "intro": "Arielle a traduit la preuve en valeur. Soizic ouvre un autre langage, juridique : la loi PACTE.\nUn agent public peut participer à une société qui valorise ses travaux sans quitter l’établissement. Concours scientifique : temps de service, parts, fonctions.\nCe n’est pas un concours de financement (i-Lab). Ce n’est pas le pacte d’associés vu avec Antoine.",
+      "outro": "Participer n’oblige pas à quitter le laboratoire. Le cadre existe : Allègre, PACTE, concours scientifique.\nLe module 5 ouvre sur les collaborations : comment accompagner et sécuriser un partenariat. Le métier, ensuite."
     },
     "T9": {
       "code": "T9",
@@ -138,7 +143,7 @@
     "T10": {
       "code": "T10",
       "intro": "Vous venez de travailler l’équipe et le pacte. Les témoignages racontent le langage : comment raconter la valeur à un partenaire, un industriel, un financeur.\nÉcoutez le moment où le vocabulaire du laboratoire ne passe plus.",
-      "outro": "La chorale a ouvert le langage.\nArielle l’ancre : passer de la preuve scientifique à la valeur pour celui qui écoute."
+      "outro": "La chorale a ouvert le langage.\nArielle l’ancre : passer de la preuve scientifique à la valeur pour celui qui écoute.\nPuis Soizic, en option : la loi PACTE et le concours scientifique — distinct du pacte d’associés."
     },
     "E19": {
       "code": "E19",
@@ -183,7 +188,7 @@
     "T13": {
       "code": "T13",
       "intro": "Vous avez le fil entier : origines, problème, preuve, déclaration, PI, transfert, écosystème, financement, équipe, langage, collaboration, métier.\nCette dernière chorale n’ajoute pas un expert. Elle ramène au geste. Écoutez ce qu’ils emportent.",
-      "outro": "Pas d’expert après ceci. Après les messages à emporter, l’outro clôture le parcours.\nLa suite, c’est le vôtre : une déclaration, un premier rendez-vous, un problème enfin posé hors du laboratoire. À vous."
+      "outro": "Pas d’expert après ceci. Après les messages à emporter, la finale Monica clôture le parcours.\nLa suite, c’est le vôtre : une déclaration, un premier rendez-vous, un problème enfin posé hors du laboratoire. À vous."
     }
   }
 }

@@ -1,6 +1,39 @@
 {
-  "date": "2026-11-06",
+  "date": "2026-11-09",
   "videos": {
+    "E1": {
+      "code": "E1",
+      "nb": 3,
+      "items": [
+        {
+          "id": "VID-E1-01",
+          "type": "habillage",
+          "debut": "00:00:05",
+          "fin": "00:00:15",
+          "passage": "Ouverture : Bernard ne se présente pas",
+          "action": "Homogénéiser : Bernard Yannou devrait se présenter comme les autres intervenants.",
+          "note": "Monica : « Bernard Yannou dans cette vidéo ne se présente pas. »"
+        },
+        {
+          "id": "VID-E1-02",
+          "type": "camera",
+          "debut": "00:00:05",
+          "fin": "00:00:21",
+          "passage": "Prise latérale de Bernard",
+          "action": "La vue latérale n’est pas la meilleure prise. Reprendre Bernard (et Virginia) uniquement de face.",
+          "note": "Monica : cadrage, pas une demande de retournage."
+        },
+        {
+          "id": "VID-E1-03",
+          "type": "habillage",
+          "debut": "00:00:05",
+          "fin": "00:00:15",
+          "passage": "Bandeau nom : Bernard Yannou",
+          "action": "Vérifier l’orthographe du nom (Yannou, pas Yanou).",
+          "note": "Monica prononce « Yanou » ; consigne d’homogénéiser les crédits."
+        }
+      ]
+    },
     "E5": {
       "code": "E5",
       "nb": 1,
@@ -583,6 +616,39 @@
           "passage": "« modalités financières de l’exploitation dans un contrat ultérieur »",
           "action": "Elle a trébuché et dit « COLTRA ». Chercher une séquence où elle dit « contrat ».",
           "note": "Monica : autre prise si elle existe, pas une demande de retournage."
+        }
+      ]
+    },
+    "E12": {
+      "code": "E12",
+      "nb": 3,
+      "items": [
+        {
+          "id": "VID-E12-01",
+          "type": "habillage",
+          "debut": "00:00:05",
+          "fin": "00:00:10",
+          "passage": "Générique / jingle d’ouverture",
+          "action": "L’intro n’a pas le son du logo Oser pour innover.",
+          "note": "Monica : jingle manquant, pas une demande de retournage."
+        },
+        {
+          "id": "VID-E12-02",
+          "type": "habillage",
+          "debut": "00:00:05",
+          "fin": "00:00:16",
+          "passage": "Bandeau : SATT Paris-Saclay",
+          "action": "SAT : il manque le double T à la fin (SATT). Vérifier aussi le nom : Monica entend Ogier Roussel.",
+          "note": "Monica : orthographe du sigle et des crédits."
+        },
+        {
+          "id": "VID-E12-03",
+          "type": "habillage",
+          "debut": "00:00:05",
+          "fin": "00:00:20",
+          "passage": "Titres, noms et postes",
+          "action": "Vérifier pour toutes les vidéos les titres, noms et postes : plusieurs fautes d’orthographe.",
+          "note": "Monica : consigne d’habillage valable pour toutes les capsules."
         }
       ]
     }

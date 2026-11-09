@@ -14,6 +14,175 @@
   },
   "videos": [
     {
+      "code": "E1",
+      "source": "monica",
+      "nb": 18,
+      "items": [
+        {
+          "id": "IN-E1-01",
+          "fichier": "incrustation/E1/IN-E1-01.png",
+          "debut": "00:00:15",
+          "fin": "00:00:21",
+          "vue": "texte",
+          "ecran": "Pourquoi et comment oser l’innovation ?",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E1-02",
+          "fichier": "incrustation/E1/IN-E1-02.png",
+          "debut": "00:00:21",
+          "fin": "00:00:26",
+          "vue": "texte",
+          "ecran": "Potentiel scientifique ou technologique",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E1-03",
+          "fichier": "incrustation/E1/IN-E1-03.png",
+          "debut": "00:00:26",
+          "fin": "00:00:31",
+          "vue": "texte",
+          "ecran": "Rapprocher d’un besoin sur un marché",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E1-04",
+          "fichier": "incrustation/E1/IN-E1-04.png",
+          "debut": "00:00:44",
+          "fin": "00:00:57",
+          "vue": "grille",
+          "ecran": "Thèses · Publications · Expérimentations · Savoir-faire · Brevets",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E1-05",
+          "fichier": "incrustation/E1/IN-E1-05.png",
+          "debut": "00:00:57",
+          "fin": "00:01:02",
+          "vue": "texte",
+          "ecran": "Une techno n’est pas encore une innovation",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E1-06",
+          "fichier": "incrustation/E1/IN-E1-06.png",
+          "debut": "00:01:02",
+          "fin": "00:01:11",
+          "vue": "texte",
+          "ecran": "Rencontre d’un besoin",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E1-07",
+          "fichier": "incrustation/E1/IN-E1-07.png",
+          "debut": "00:01:11",
+          "fin": "00:01:34",
+          "vue": "frise",
+          "ecran": "Travaux → Domaine pressenti",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E1-08",
+          "fichier": "incrustation/E1/IN-E1-08.png",
+          "debut": "00:01:34",
+          "fin": "00:01:41",
+          "vue": "texte",
+          "ecran": "Les solutions existantes ne sont-elles pas satisfaisantes ?",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E1-09",
+          "fichier": "incrustation/E1/IN-E1-09.png",
+          "debut": "00:01:41",
+          "fin": "00:01:45",
+          "vue": "texte",
+          "ecran": "Être confronté au terrain",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E1-10",
+          "fichier": "incrustation/E1/IN-E1-10.png",
+          "debut": "00:01:45",
+          "fin": "00:02:14",
+          "vue": "frise",
+          "ecran": "Besoin → Solution scientifique",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E1-11",
+          "fichier": "incrustation/E1/IN-E1-11.png",
+          "debut": "00:02:14",
+          "fin": "00:02:33",
+          "vue": "grille",
+          "ecran": "Plusieurs origines",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E1-12",
+          "fichier": "incrustation/E1/IN-E1-12.png",
+          "debut": "00:02:33",
+          "fin": "00:03:12",
+          "vue": "grille",
+          "ecran": "Trois ingrédients",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E1-13",
+          "fichier": "incrustation/E1/IN-E1-13.png",
+          "debut": "00:03:12",
+          "fin": "00:03:16",
+          "vue": "texte",
+          "ecran": "Soutien des structures de valorisation",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E1-14",
+          "fichier": "incrustation/E1/IN-E1-14.png",
+          "debut": "00:03:16",
+          "fin": "00:03:35",
+          "vue": "liste",
+          "ecran": "Explorer · Protéger · Mobiliser · Prématurer · Maturer",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E1-15",
+          "fichier": "incrustation/E1/IN-E1-15.png",
+          "debut": "00:03:35",
+          "fin": "00:03:51",
+          "vue": "texte",
+          "ecran": "Passage à l’action",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E1-16",
+          "fichier": "incrustation/E1/IN-E1-16.png",
+          "debut": "00:03:51",
+          "fin": "00:04:10",
+          "vue": "liste",
+          "ecran": "Utile · Impact · Apprendre · Réalisations · Fonds publics",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E1-17",
+          "fichier": "incrustation/E1/IN-E1-17.png",
+          "debut": "00:04:10",
+          "fin": "00:04:41",
+          "vue": "grille",
+          "ecran": "Recherche · Innovation · Impact",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E1-18",
+          "fichier": "incrustation/E1/IN-E1-18.png",
+          "debut": "00:04:41",
+          "fin": "00:05:00",
+          "vue": "texte",
+          "ecran": "Pistes et motivations personnelles",
+          "schema16x9": false
+        }
+      ]
+    },
+    {
       "code": "E3",
       "source": "monica",
       "nb": 13,
@@ -992,6 +1161,265 @@
           "fin": "00:05:20",
           "vue": "texte",
           "ecran": "Le contrat fait la loi des parties",
+          "schema16x9": false
+        }
+      ]
+    },
+    {
+      "code": "E12",
+      "source": "monica",
+      "nb": 28,
+      "items": [
+        {
+          "id": "IN-E12-01",
+          "fichier": "incrustation/E12/IN-E12-01.png",
+          "debut": "00:00:08",
+          "fin": "00:00:16",
+          "vue": "texte",
+          "ecran": "Plus de 50 projets par an",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E12-02",
+          "fichier": "incrustation/E12/IN-E12-02.png",
+          "debut": "00:00:25",
+          "fin": "00:00:33",
+          "vue": "grille",
+          "ecran": "Vivant · Santé · Ingénieur · Numérique",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E12-03",
+          "fichier": "incrustation/E12/IN-E12-03.png",
+          "debut": "00:00:40",
+          "fin": "00:00:52",
+          "vue": "grille",
+          "ecran": "Marché · Techno · PI",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E12-04",
+          "fichier": "incrustation/E12/IN-E12-04.png",
+          "debut": "00:01:07",
+          "fin": "00:01:14",
+          "vue": "texte",
+          "ecran": "Une invention doit rencontrer un enjeu commercial",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E12-05",
+          "fichier": "incrustation/E12/IN-E12-05.png",
+          "debut": "00:01:14",
+          "fin": "00:01:21",
+          "vue": "grille",
+          "ecran": "Création de valeur · Besoin marché",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E12-06",
+          "fichier": "incrustation/E12/IN-E12-06.png",
+          "debut": "00:01:21",
+          "fin": "00:01:42",
+          "vue": "frise",
+          "ecran": "Invention → Innovation",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E12-07",
+          "fichier": "incrustation/E12/IN-E12-07.png",
+          "debut": "00:01:42",
+          "fin": "00:01:50",
+          "vue": "texte",
+          "ecran": "Preuve de concept",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E12-08",
+          "fichier": "incrustation/E12/IN-E12-08.png",
+          "debut": "00:01:50",
+          "fin": "00:01:59",
+          "vue": "texte",
+          "ecran": "100 000 € · 1 an",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E12-09",
+          "fichier": "incrustation/E12/IN-E12-09.png",
+          "debut": "00:02:16",
+          "fin": "00:02:26",
+          "vue": "texte",
+          "ecran": "Positionnement technico-économique",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E12-10",
+          "fichier": "incrustation/E12/IN-E12-10.png",
+          "debut": "00:02:37",
+          "fin": "00:02:47",
+          "vue": "texte",
+          "ecran": "Étude de marché",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E12-11",
+          "fichier": "incrustation/E12/IN-E12-11.png",
+          "debut": "00:03:00",
+          "fin": "00:03:12",
+          "vue": "texte",
+          "ecran": "Proposition de valeur du projet",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E12-12",
+          "fichier": "incrustation/E12/IN-E12-12.png",
+          "debut": "00:03:37",
+          "fin": "00:03:45",
+          "vue": "texte",
+          "ecran": "Disposition à payer",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E12-13",
+          "fichier": "incrustation/E12/IN-E12-13.png",
+          "debut": "00:04:01",
+          "fin": "00:04:09",
+          "vue": "texte",
+          "ecran": "Degré de maturité du projet",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E12-14",
+          "fichier": "incrustation/E12/IN-E12-14.png",
+          "debut": "00:04:31",
+          "fin": "00:04:48",
+          "vue": "texte",
+          "ecran": "Première étape : documentaire",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E12-15",
+          "fichier": "incrustation/E12/IN-E12-15.png",
+          "debut": "00:04:48",
+          "fin": "00:04:57",
+          "vue": "texte",
+          "ecran": "Bases de données brevets",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E12-16",
+          "fichier": "incrustation/E12/IN-E12-16.png",
+          "debut": "00:04:57",
+          "fin": "00:05:20",
+          "vue": "texte",
+          "ecran": "Deuxième phase : experts industriels",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E12-17",
+          "fichier": "incrustation/E12/IN-E12-17.png",
+          "debut": "00:05:20",
+          "fin": "00:05:28",
+          "vue": "texte",
+          "ecran": "Réceptivité de la technologie",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E12-18",
+          "fichier": "incrustation/E12/IN-E12-18.png",
+          "debut": "00:05:28",
+          "fin": "00:05:50",
+          "vue": "texte",
+          "ecran": "Montée en échelle",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E12-19",
+          "fichier": "incrustation/E12/IN-E12-19.png",
+          "debut": "00:05:53",
+          "fin": "00:06:07",
+          "vue": "texte",
+          "ecran": "Preuve de concept",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E12-20",
+          "fichier": "incrustation/E12/IN-E12-20.png",
+          "debut": "00:06:07",
+          "fin": "00:06:15",
+          "vue": "texte",
+          "ecran": "Stratégie de propriété intellectuelle",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E12-21",
+          "fichier": "incrustation/E12/IN-E12-21.png",
+          "debut": "00:06:30",
+          "fin": "00:06:41",
+          "vue": "texte",
+          "ecran": "Sélection avec un pitch",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E12-22",
+          "fichier": "incrustation/E12/IN-E12-22.png",
+          "debut": "00:06:41",
+          "fin": "00:06:54",
+          "vue": "grille",
+          "ecran": "Innovant · Valeur · PI · Équipe",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E12-23",
+          "fichier": "incrustation/E12/IN-E12-23.png",
+          "debut": "00:06:54",
+          "fin": "00:06:59",
+          "vue": "texte",
+          "ecran": "55 % des projets retenus",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E12-24",
+          "fichier": "incrustation/E12/IN-E12-24.png",
+          "debut": "00:07:02",
+          "fin": "00:07:11",
+          "vue": "texte",
+          "ecran": "Dossier d’investissement",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E12-25",
+          "fichier": "incrustation/E12/IN-E12-25.png",
+          "debut": "00:07:11",
+          "fin": "00:07:20",
+          "vue": "texte",
+          "ecran": "Comité d’investissement",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E12-26",
+          "fichier": "incrustation/E12/IN-E12-26.png",
+          "debut": "00:07:36",
+          "fin": "00:07:54",
+          "vue": "texte",
+          "ecran": "Transfert de technologie",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E12-27",
+          "fichier": "incrustation/E12/IN-E12-27.png",
+          "debut": "00:07:54",
+          "fin": "00:08:09",
+          "vue": "texte",
+          "ecran": "500 000 € en maturation",
+          "schema16x9": false
+        },
+        {
+          "id": "IN-E12-28",
+          "fichier": "incrustation/E12/IN-E12-28.png",
+          "debut": "00:08:41",
+          "fin": "00:08:55",
+          "vue": "texte",
+          "ecran": "Bénéficier à la société",
           "schema16x9": false
         }
       ]
@@ -2411,5 +2839,5 @@
       "format": "16:9"
     }
   ],
-  "total": 255
+  "total": 301
 }

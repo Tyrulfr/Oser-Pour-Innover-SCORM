@@ -41,6 +41,7 @@ TITLES = {
     "E14": "Design Spot, fablab, OTT",
     "T8": "Financements, concours, temps",
     "E15": "Chaîne des financements (Fatoumata)",
+    "E15bis": "Loi PACTE et concours scientifique",
     "E16": "Comprendre la logique des investisseurs",
     "T9": "Partenariats et équipe",
     "E17": "Cartographier les compétences nécessaires",
@@ -248,7 +249,7 @@ def main() -> None:
         "Ordre des fichiers = ordre pédagogique du parcours.\n\n"
         "Transcripts encore absents : " + (", ".join(missing_codes) if missing_codes else "aucun") + ".\n"
         "Jusqu’à E13, les codes du tournage sont inchangés. E13bis = E14, puis chaque code suivant avance d’un cran.\n"
-        "E15 Fatoumata n’est pas filmée. Dernière capsule : E24 Eneli.\n",
+        "E2, E4, E15 et E15bis sont en ligne ; transcripts encore à verser. Finale Monica en clôture.\n",
         encoding="utf-8",
     )
 
