@@ -494,6 +494,8 @@
     "E5": {
       "code": "E5",
       "nb": 10,
+      "toggle": false,
+      "va": true,
       "items": [
         {
           "id": "IN-E5-01",

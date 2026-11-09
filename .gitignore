@@ -24,3 +24,7 @@ __pycache__/
 .cache/
 tmp/
 temp/
+
+# Prévisualisations d’effets (fichiers lourds, hors git)
+modules/_shared/previews/*.mp4
+authoring/previews/*.mp4

@@ -1,0 +1,127 @@
+{
+  "date": "2026-11-09",
+  "note": "Test visuel des effets. Hors ZIP SCORM. Les Ken Burns vont vers l’insert à droite, sans rogner le texte.",
+  "videos": {
+    "E5": {
+      "code": "E5",
+      "nb": 10,
+      "preview": "previews/e5-va-720.mp4",
+      "keyframes": [
+        { "t": 0, "z": 1, "x": 50, "y": 50 },
+        { "t": 14, "z": 1, "x": 50, "y": 50 },
+        { "t": 16.2, "z": 1.08, "x": 44, "y": 34 },
+        { "t": 41, "z": 1.08, "x": 44, "y": 34 },
+        { "t": 42.7, "z": 1.18, "x": 78, "y": 56 },
+        { "t": 49, "z": 1.18, "x": 78, "y": 56 },
+        { "t": 50.5, "z": 1.06, "x": 44, "y": 34 },
+        { "t": 63, "z": 1.06, "x": 44, "y": 34 },
+        { "t": 64.6, "z": 1.18, "x": 78, "y": 56 },
+        { "t": 69, "z": 1.18, "x": 78, "y": 56 },
+        { "t": 70.4, "z": 1.06, "x": 44, "y": 34 },
+        { "t": 86, "z": 1.06, "x": 44, "y": 34 },
+        { "t": 87.5, "z": 1.18, "x": 78, "y": 56 },
+        { "t": 93, "z": 1.18, "x": 78, "y": 56 },
+        { "t": 94.4, "z": 1.14, "x": 42, "y": 32 },
+        { "t": 112, "z": 1.14, "x": 42, "y": 32 },
+        { "t": 113.4, "z": 1.18, "x": 78, "y": 56 },
+        { "t": 122, "z": 1.18, "x": 78, "y": 56 },
+        { "t": 123.6, "z": 1, "x": 50, "y": 50 },
+        { "t": 193, "z": 1, "x": 50, "y": 50 },
+        { "t": 194.6, "z": 1.16, "x": 80, "y": 42 },
+        { "t": 208, "z": 1.16, "x": 80, "y": 42 }
+      ],
+      "items": [
+        {
+          "id": "FX-E5-01",
+          "type": "hold",
+          "debut": "00:00:00",
+          "fin": "00:00:14",
+          "passage": "Bandeau « Virginia Branco »",
+          "action": "Plan large, aucun zoom : le bandeau a besoin de la largeur.",
+          "note": "Test : hold ×1,00."
+        },
+        {
+          "id": "FX-E5-02",
+          "type": "recadrage",
+          "debut": "00:00:14",
+          "fin": "00:00:28",
+          "passage": "Après le bandeau, avant le premier insert",
+          "action": "Recadrage vers le visage ×1,08 (yeux au tiers supérieur), sans ramper ensuite.",
+          "note": "Homogénéiser avec Bernard, de face."
+        },
+        {
+          "id": "FX-E5-03",
+          "type": "hold",
+          "debut": "00:00:28",
+          "fin": "00:00:41",
+          "passage": "TC Monica « Dérisquer… » — insert absent de la VA",
+          "action": "Pas de Ken Burns : l’insert n’est pas incrusté à cet instant sur la VA.",
+          "note": "Le premier insert visible est à 00:41."
+        },
+        {
+          "id": "FX-E5-04",
+          "type": "ken-burns",
+          "debut": "00:00:41",
+          "fin": "00:00:49",
+          "passage": "Insert « La solution technique doit rejoindre les besoins du marché »",
+          "action": "Ken Burns vers l’insert à droite, ×1,18, origine 78 % / 56 %. Le texte reste entier.",
+          "note": "Ease 1,7 s à l’entrée, 1,5 s à la sortie."
+        },
+        {
+          "id": "FX-E5-05",
+          "type": "ken-burns",
+          "debut": "00:01:03",
+          "fin": "00:01:09",
+          "passage": "Insert « Identifiez les meilleures informations… en amont »",
+          "action": "Ken Burns vers l’insert à droite, ×1,20.",
+          "note": "Pas d’effet sur le trou 1:16–1:26 (insert Monica manquant)."
+        },
+        {
+          "id": "FX-E5-06",
+          "type": "ken-burns",
+          "debut": "00:01:26",
+          "fin": "00:01:33",
+          "passage": "Insert pivot",
+          "action": "Ken Burns vers l’insert, ×1,18.",
+          "note": "Enchaîne ensuite sur le punch-in visage."
+        },
+        {
+          "id": "FX-E5-07",
+          "type": "punch-in",
+          "debut": "00:01:33",
+          "fin": "00:01:52",
+          "passage": "Opportunité / Muriel — pas d’insert à l’écran",
+          "action": "Punch-in visage ×1,14, origine 42 % / 32 %, ease 1,4 s puis hold.",
+          "note": "Seul serrage sur le visage. Pas de Ken Burns pendant qu’elle parle sans titre."
+        },
+        {
+          "id": "FX-E5-08",
+          "type": "ken-burns",
+          "debut": "00:01:52",
+          "fin": "00:02:02",
+          "passage": "Insert terrain / dérisquer",
+          "action": "Ken Burns vers l’insert à droite, ×1,20, puis retour au plan large avant les schémas.",
+          "note": "Le retour à ×1,00 à 2:03 laisse la place aux schémas plein cadre."
+        },
+        {
+          "id": "FX-E5-09",
+          "type": "hold",
+          "debut": "00:02:17",
+          "fin": "00:03:13",
+          "passage": "Schémas plein cadre (commercial ⇄ technique, frise, tableaux)",
+          "action": "Aucun zoom, aucun Ken Burns. Le flou de prod suffit ; un ramping bougerait le texte.",
+          "note": "Bonne pratique : ne pas animer un schéma à lire."
+        },
+        {
+          "id": "FX-E5-10",
+          "type": "ken-burns",
+          "debut": "00:03:13",
+          "fin": "00:03:28",
+          "passage": "Questions 01 / 02 à droite",
+          "action": "Ken Burns léger vers les questions, ×1,16, origine 74 % / 42 %.",
+          "note": "Plus doux que les inserts précédents : deux cartouches à garder lisibles."
+        }
+      ]
+    }
+  }
+}

@@ -4,7 +4,7 @@
  * Désactivée par défaut, un bouton par vidéo.
  */
 (function (global) {
-    var DATA_URL = new URL("incrustations.json?v=46", document.currentScript.src).href;
+    var DATA_URL = new URL("incrustations.json?v=47", document.currentScript.src).href;
     var SCRIPT_SRC = document.currentScript.src;
     var cards = [];
     var bound = false;
@@ -657,6 +657,7 @@
             var code = videoCode(card);
             var video = code && videos[code];
             if (!video || !video.items || !video.items.length) return;
+            if (video.toggle === false) return;
             card.setAttribute("data-incrust-code", code);
             decorate(card, video);
         });

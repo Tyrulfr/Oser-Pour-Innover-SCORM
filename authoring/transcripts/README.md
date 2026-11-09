@@ -7,10 +7,13 @@ Ces fichiers **ne vont pas dans les paquets SCORM** (`build.sh` ne zippe que `mo
 ## Dépôt
 
 - `temoins/` — T1.docx … T13.docx (13/13)
-- `experts/` — E{n}_{Prénom}.docx
+- `experts/` — transcripts propres E{n}_{Prénom}.docx
+- `commentaire_Monica_V1/` — Word de tournage Monica, nomenclature `Video_E{n}_{Nom}.docx`. Pas les transcripts.
 
-Présents : E1, E3, E5–E13, E14 (Yoann), E16 (Arielle), E17 (Pascal), E18 (Antoine), E19 (Arielle), E20 (Pascal), E21 (Bernard), E22 (Pascal), E23 (Rémi), E24 (Eneli).
+Présents (transcripts) : E1, E3, E5–E13, E14 (Yoann), E16 (Arielle), E17 (Pascal), E18 (Antoine), E19 (Arielle), E20 (Pascal), E21 (Bernard), E22 (Pascal), E23 (Rémi), E24 (Eneli).
 
-Vidéos en ligne, transcripts encore absents : E2 (Joël), E4 (Fatoumata), E15 (Fatoumata), E15bis (Soizic, loi PACTE). Finale Monica en clôture du grain T13. Word Monica E12 versé.
+Word Monica versés : E1, E5–E14, E16–E24 (`Video_E…_{Nom}.docx`). E3 : `Video_E3_brief_Monica.docx` (brief de synthèse, pas un Word de tournage). Pas de Word Monica pour E2, E4, E15, E15bis (vidéos en ligne, pas d’incrustations Monica).
+
+Vidéos en ligne, transcripts encore absents : E2 (Joël), E4 (Fatoumata), E15 (Fatoumata), E15bis (Soizic, loi PACTE). Finale Monica en clôture du grain T13.
 
 Jusqu’à E13, les codes du tournage sont inchangés. E13bis devient E14 (Yoann). Ensuite chaque code avance d’un cran : l’ancien E14 Fatoumata est E15, l’ancien E15 Arielle est E16, et ainsi de suite jusqu’à l’ancien E23 Eneli, qui est E24. E12 reste Stéphanie Augéroussel (SATT).
